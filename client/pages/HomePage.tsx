@@ -420,43 +420,81 @@ export default function HomePage() {
 
       {/* Contact */}
       <section
-        className="grid min-h-[760px] overflow-hidden bg-publiex-gradient text-white lg:grid-cols-[1fr_0.85fr] xl:min-h-[1045px]"
+        className="grid min-h-[760px] items-center gap-12 overflow-hidden bg-publiex-gradient px-5 py-20 text-white md:px-10 lg:grid-cols-[0.95fr_1.05fr] lg:px-24 xl:min-h-[1045px] xl:px-[173px]"
         id="contacto"
       >
-        <div className="px-5 py-20 md:px-10 lg:px-24 xl:py-[209px] xl:pl-[173px]">
+        <div>
           <SectionLabel>Solicitar propuesta</SectionLabel>
-          <h2 className="font-raleway text-[clamp(2.5rem,5.6vw,5rem)] font-semibold leading-tight md:leading-[82px]">
+          <h2 className="max-w-[640px] font-raleway text-[clamp(2.5rem,5.6vw,5rem)] font-semibold leading-tight md:leading-[82px]">
             Cuéntenos qué quiere lograr.
             <span className="block text-publiex-red">
               Nosotros encontramos dónde.
             </span>
           </h2>
-          <p className="mt-7 max-w-2xl text-xl leading-tight">
-            Un formulario breve para que el equipo comercial reciba el contexto
-            correcto y responda con una recomendación construida para su marca.
+          <p className="mt-7 max-w-[651px] text-xl leading-tight md:text-[27px]">
+            Un formulario breve y útil para que el equipo comercial reciba el
+            contexto correcto y responda con una recomendación construida para
+            su marca.
           </p>
-          <form className="mt-10 grid max-w-3xl gap-4 sm:grid-cols-2">
-            <input className="min-h-12 bg-white px-4 text-black" placeholder="Nombre" />
-            <input className="min-h-12 bg-white px-4 text-black" placeholder="Empresa" />
-            <input className="min-h-12 bg-white px-4 text-black" placeholder="Correo" type="email" />
-            <input className="min-h-12 bg-white px-4 text-black" placeholder="Teléfono" />
-            <textarea
-              className="min-h-32 bg-white px-4 py-3 text-black sm:col-span-2"
-              placeholder="Objetivo de campaña"
-            />
-            <button
-              className="min-h-12 bg-publiex-red px-5 font-raleway text-sm font-extrabold uppercase text-white transition hover:bg-red-600 sm:w-max"
-              type="button"
-            >
-              Solicitar propuesta
-            </button>
-          </form>
         </div>
-        <img
-          alt="Formulario de solicitud de propuesta Publiex"
-          className="h-full min-h-[460px] w-full object-cover"
-          src={publiexAsset("figma-proposal-form.jpeg")}
-        />
+
+        {/* Proposal form */}
+        <form className="grid gap-5 bg-white p-6 text-black shadow-2xl md:grid-cols-2 md:p-10 xl:p-12">
+          <label className="grid gap-2 font-raleway text-sm font-bold uppercase">
+            Qué quiere lograr
+            <select className="min-h-12 border border-zinc-300 bg-white px-4 font-uni text-base font-normal normal-case text-black">
+              <option>Seleccione un objetivo</option>
+              <option>Generar reconocimiento de marca</option>
+              <option>Lanzar un producto o servicio</option>
+              <option>Aumentar tráfico a punto de venta</option>
+              <option>Dominar una zona estratégica</option>
+            </select>
+          </label>
+          <label className="grid gap-2 font-raleway text-sm font-bold uppercase">
+            Zona de interés
+            <select className="min-h-12 border border-zinc-300 bg-white px-4 font-uni text-base font-normal normal-case text-black">
+              <option>Seleccione una zona</option>
+              <option>Gran Área Metropolitana</option>
+              <option>San José</option>
+              <option>Alajuela</option>
+              <option>Heredia</option>
+              <option>Cartago</option>
+              <option>Cobertura nacional</option>
+            </select>
+          </label>
+          <label className="grid gap-2 font-raleway text-sm font-bold uppercase md:col-span-2">
+            Nivel de cobertura
+            <select className="min-h-12 border border-zinc-300 bg-white px-4 font-uni text-base font-normal normal-case text-black">
+              <option>Seleccione el nivel</option>
+              <option>Una ubicación clave</option>
+              <option>Circuito por zona</option>
+              <option>Cobertura por provincia</option>
+              <option>Cobertura nacional</option>
+            </select>
+          </label>
+          <label className="grid gap-2 font-raleway text-sm font-bold uppercase">
+            Name
+            <input className="min-h-12 border border-zinc-300 px-4 font-uni text-base font-normal normal-case" />
+          </label>
+          <label className="grid gap-2 font-raleway text-sm font-bold uppercase">
+            Email
+            <input className="min-h-12 border border-zinc-300 px-4 font-uni text-base font-normal normal-case" type="email" />
+          </label>
+          <label className="grid gap-2 font-raleway text-sm font-bold uppercase md:col-span-2">
+            Business
+            <input className="min-h-12 border border-zinc-300 px-4 font-uni text-base font-normal normal-case" />
+          </label>
+          <label className="grid gap-2 font-raleway text-sm font-bold uppercase md:col-span-2">
+            Note
+            <textarea className="min-h-32 border border-zinc-300 px-4 py-3 font-uni text-base font-normal normal-case" />
+          </label>
+          <button
+            className="min-h-12 bg-publiex-red px-5 font-raleway text-sm font-extrabold uppercase text-white transition hover:bg-red-600 md:col-span-2 md:w-max"
+            type="button"
+          >
+            Solicitar propuesta
+          </button>
+        </form>
       </section>
 
       <CampaignCta />
