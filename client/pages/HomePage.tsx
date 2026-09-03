@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 
+import { CampaignCta } from "@/components/site/CampaignCta";
 import { ImagePanel } from "@/components/site/ImagePanel";
 import { PrimaryLink } from "@/components/site/PrimaryLink";
 import { SectionLabel } from "@/components/site/SectionLabel";
@@ -457,6 +458,8 @@ export default function HomePage() {
           src={publiexAsset("figma-proposal-form.jpeg")}
         />
       </section>
+
+      <CampaignCta />
     </main>
   );
 }
