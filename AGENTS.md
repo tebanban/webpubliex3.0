@@ -1,164 +1,78 @@
-# Fusion Starter
+# Publiex Landing
 
-A production-ready full-stack React application template with integrated Express server, featuring React Router 6 SPA mode, TypeScript, Vitest, Zod and modern tooling.
+Static React landing site for Publiex, built from a Figma design.
 
-While the starter comes with a express server, only create endpoint when strictly neccesary, for example to encapsulate logic that must leave in the server, such as private keys handling, or certain DB operations, db...
+Always consider coding best practices. Investigate before changing behavior, and keep edits scoped to the current task.
+
+Comment major code sections with short, meaningful comments so the repo stays easy to maintain.
 
 ## Tech Stack
 
-- **PNPM**: Prefer pnpm
-- **Frontend**: React 18 + React Router 6 (spa) + TypeScript + Vite + TailwindCSS 3
-- **Backend**: Express server integrated with Vite dev server
+- **Package manager**: pnpm
+- **Frontend**: React 18 + React Router 6 SPA + TypeScript + Vite
+- **Styling**: TailwindCSS 3 utilities and custom Publiex tokens in `client/global.css`
 - **Testing**: Vitest
-- **UI**: Radix UI + TailwindCSS 3 + Lucide React icons
+- **UI helpers**: Radix/shadcn components are available in `client/components/ui`
+- **Icons**: Lucide React where an icon is needed
 
 ## Project Structure
 
-```
-client/                   # React SPA frontend
-├── pages/                # Route components (Index.tsx = home)
-├── components/ui/        # Pre-built UI component library
-├── App.tsx                # App entry point and with SPA routing setup
-└── global.css            # TailwindCSS 3 theming and global styles
+```text
+client/
+  App.tsx                  # React entry and route registration
+  global.css               # Tailwind imports, base styles, Publiex tokens
+  content/                 # Static page content used by route components
+  components/
+    layout/                # Site-wide Header, Footer, SiteLayout
+    site/                  # Publiex-specific reusable components
+    ui/                    # shadcn/Radix primitives kept for future UI work
+  hooks/                   # Shared React hooks
+  lib/                     # Utility helpers
+  pages/                   # Route components
 
-server/                   # Express API backend
-├── index.ts              # Main server setup (express config + routes)
-└── routes/               # API handlers
-
-shared/                   # Types used by both client & server
-└── api.ts                # Example of how to share api interfaces
-```
-
-## Key Features
-
-## SPA Routing System
-
-The routing system is powered by React Router 6:
-
-- `client/pages/Index.tsx` represents the home page.
-- Routes are defined in `client/App.tsx` using the `react-router-dom` import
-- Route files are located in the `client/pages/` directory
-
-For example, routes can be defined with:
-
-```typescript
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-<Routes>
-  <Route path="/" element={<Index />} />
-  {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-  <Route path="*" element={<NotFound />} />
-</Routes>;
+public/
+  images/publiex/          # Figma-exported images, logos, and footer assets
 ```
 
-### Styling System
+## Routing
 
-- **Primary**: TailwindCSS 3 utility classes
-- **Theme and design tokens**: Configure in `client/global.css` 
-- **UI components**: Pre-built library in `client/components/ui/`
-- **Utility**: `cn()` function combines `clsx` + `tailwind-merge` for conditional classes
+Routes are defined in `client/App.tsx` using React Router.
 
-```typescript
-// cn utility usage
-className={cn(
-  "base-classes",
-  { "conditional-class": condition },
-  props.className  // User overrides
-)}
-```
+Current pages:
 
-### Express Server Integration
+- `/` -> `HomePage`
+- `/products` -> `ProductsPage`
+- `/about` -> `AboutPage`
+- `/locations` -> `LocationsPage`
+- `/case-studies` -> `CaseStudiesPage`
 
-- **Development**: Single port (8080) for both frontend/backend
-- **Hot reload**: Both client and server code
-- **API endpoints**: Prefixed with `/api/`
+`SiteLayout` wraps the route pages with the shared header and footer.
 
-#### Example API Routes
-- `GET /api/ping` - Simple ping api
-- `GET /api/demo` - Demo endpoint  
+## Styling
 
-### Shared Types
-Import consistent types in both client and server:
-```typescript
-import { DemoResponse } from '@shared/api';
-```
-
-Path aliases:
-- `@shared/*` - Shared folder
-- `@/*` - Client folder
+- Prefer Tailwind utilities and the existing Publiex classes in `client/global.css`.
+- Use `publiexAsset(name)` from `client/lib/assets.ts` for assets under `public/images/publiex`.
+- Keep page-specific content arrays in `client/content`.
+- Keep reusable site components in `client/components/site`.
+- Avoid adding new global CSS unless it represents a real shared token or base rule.
 
 ## Development Commands
 
 ```bash
-pnpm dev        # Start dev server (client + server)
-pnpm build      # Production build
-pnpm start      # Start production server
+pnpm dev        # Start Vite dev server
+pnpm build      # Build static SPA into dist/spa
+pnpm start      # Preview production build locally
 pnpm typecheck  # TypeScript validation
-pnpm test          # Run Vitest tests
+pnpm test       # Run Vitest tests
 ```
 
-## Adding Features
+## Adding Pages
 
-### Add new colors to the theme
+1. Create the route component in `client/pages`.
+2. Add the route in `client/App.tsx` inside the `SiteLayout` route.
+3. Put shared copy/media arrays in `client/content` if the page needs structured content.
+4. Reuse `client/components/layout` and `client/components/site` before creating new components.
 
-Open `client/global.css` and `tailwind.config.ts` and add new tailwind colors.
+## Backend
 
-### New API Route
-1. **Optional**: Create a shared interface in `shared/api.ts`:
-```typescript
-export interface MyRouteResponse {
-  message: string;
-  // Add other response properties here
-}
-```
-
-2. Create a new route handler in `server/routes/my-route.ts`:
-```typescript
-import { RequestHandler } from "express";
-import { MyRouteResponse } from "@shared/api"; // Optional: for type safety
-
-export const handleMyRoute: RequestHandler = (req, res) => {
-  const response: MyRouteResponse = {
-    message: 'Hello from my endpoint!'
-  };
-  res.json(response);
-};
-```
-
-3. Register the route in `server/index.ts`:
-```typescript
-import { handleMyRoute } from "./routes/my-route";
-
-// Add to the createServer function:
-app.get("/api/my-endpoint", handleMyRoute);
-```
-
-4. Use in React components with type safety:
-```typescript
-import { MyRouteResponse } from '@shared/api'; // Optional: for type safety
-
-const response = await fetch('/api/my-endpoint');
-const data: MyRouteResponse = await response.json();
-```
-
-### New Page Route
-1. Create component in `client/pages/MyPage.tsx`
-2. Add route in `client/App.tsx`:
-```typescript
-<Route path="/my-page" element={<MyPage />} />
-```
-
-## Production Deployment
-
-- **Standard**: `pnpm build`
-- **Binary**: Self-contained executables (Linux, macOS, Windows)
-- **Cloud Deployment**: Use either Netlify or Vercel via their MCP integrations for easy deployment. Both providers work well with this starter template.
-
-## Architecture Notes
-
-- Single-port development with Vite + Express integration
-- TypeScript throughout (client, server, shared)
-- Full hot reload for rapid development
-- Production-ready with multiple deployment options
-- Comprehensive UI component library included
-- Type-safe API communication via shared interfaces
+There is no active backend in this project. Add API/server code only when strictly necessary, such as private key handling, privileged database access, or server-only integrations.
