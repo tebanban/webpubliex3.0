@@ -54,8 +54,8 @@ export default function HomePage() {
       >
         <div className="mx-auto grid min-h-[903px] w-full max-w-[1920px] lg:grid-cols-[0.95fr_1.05fr]">
           <div className="px-5 py-20 md:px-10 lg:py-[166px] xl:pl-[166px] xl:pr-16">
-            <SectionLabel>Buscar</SectionLabel>
-            <h2 className="max-w-[520px] font-raleway text-[clamp(2.4rem,5.4vw,4.965rem)] font-semibold uppercase leading-[1.03]">
+            
+            <h2 className="max-w-[520px] font-raleway text-[clamp(2.4rem,5.4vw,4.965rem)] font-semibold leading-[1.03]">
               Encuentre el lugar{" "}
               <span className="text-publiex-red">
                 donde su marca debe estar.
@@ -67,7 +67,7 @@ export default function HomePage() {
               técnica, métricas y disponibilidad confirmada.
             </p>
             <a
-              className="mt-9 inline-flex items-center gap-3 font-raleway text-sm font-extrabold uppercase underline underline-offset-4"
+              className="mt-9 inline-flex text-[16px] items-center gap-3 font-raleway text-sm  uppercase underline underline-offset-4"
               href="#contacto"
             >
               Buscar <ArrowRight aria-hidden className="size-4" />
@@ -93,7 +93,7 @@ export default function HomePage() {
           <div className="max-w-[660px] text-right xl:mr-[60px]">
             <SectionLabel>Impacto</SectionLabel>
             <h2 className="font-raleway text-[clamp(2.8rem,7vw,5.965rem)] font-semibold leading-none">
-              Afuera no <span className="text-publiex-red">HAY SKIP AD</span>
+              Afuera no <span className="text-publiex-red">hay skip ad</span>
             </h2>
             <p className="mt-8 max-w-[660px] text-xl leading-tight md:text-[31.44px]">
               Creamos presencia real para marcas que no quieren pasar
@@ -242,7 +242,7 @@ export default function HomePage() {
             className="h-full min-h-[520px] w-full object-cover"
             src={publiexAsset("figma-transport.jpeg")}
           />
-          <div className="px-5 py-20 md:px-10 lg:px-24 xl:py-[130px] xl:pl-[82px]">
+          <div className="px-5 py-20 md:px-10 lg:px-24 xl:py-32.5 xl:pl-20.5">
             <SectionLabel>Publicidad en transporte</SectionLabel>
             <h2 className="max-w-[732px] font-raleway text-[clamp(2.4rem,5.8vw,6.4rem)] font-semibold leading-[0.97]">
               Una marca que acompaña el recorrido se vuelve parte del día a día.
