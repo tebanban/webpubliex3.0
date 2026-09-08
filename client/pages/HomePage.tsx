@@ -19,7 +19,7 @@ export default function HomePage() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0047ba]/70 via-[#0047ba]/15 to-black/70" />
         <div className="relative mx-auto flex min-h-[calc(100vh-5rem)] w-full max-w-[1920px] items-end px-5 pb-12 pt-28 md:px-10 md:pb-20 xl:min-h-[1204px]">
-          <div className="mx-auto w-full max-w-[1180px] text-center">
+          <div className="mx-auto w-full max-w-295 text-center">
             <h1 className="font-raleway font-black uppercase leading-[0.996]">
               <span className="block text-[clamp(2.4rem,5.4vw,3.85rem)]">
                 Hacemos que su marca sea
@@ -28,14 +28,16 @@ export default function HomePage() {
                 imposible de ignorar
               </span>
             </h1>
-            <p className="mx-auto mt-7 max-w-[950px] font-raleway text-[clamp(1.1rem,2.3vw,1.965rem)] leading-tight">
+            <p className="mx-auto mt-7 max-w-237.5 font-raleway text-[clamp(1.1rem,2.3vw,1.965rem)] leading-tight">
               Grandes formatos, movilidad, tecnología y creatividad para hacer
               que su marca sea parte del paisaje y de la conversación.
             </p>
-            <div className="mt-10 flex flex-col items-center justify-center gap-5 sm:flex-row">
-              <PrimaryLink href="#contacto">Diseñar mi campaña</PrimaryLink>
+            <div className="mt-10 flex flex-col text-[18px] items-center justify-center gap-5 sm:flex-row">
+              <PrimaryLink href="#contacto" weight="normal">
+                Diseñar mi campaña
+              </PrimaryLink>
               <a
-                className="font-raleway text-sm font-extrabold uppercase underline underline-offset-4"
+                className="font-raleway text-[18px] font-normal uppercase underline underline-offset-4"
                 href="#ubicaciones"
               >
                 Explorar ubicaciones

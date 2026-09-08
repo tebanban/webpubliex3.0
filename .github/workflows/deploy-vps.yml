@@ -1,0 +1,54 @@
+name: Deploy landing page to VPS
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+
+env:
+  SSH_HOST: 67.205.19.7
+  SSH_USER: puadmin2
+  DEPLOY_PATH: ${{ secrets.VPS_DEPLOY_PATH || 'testing.publiexcr.com' }}
+
+jobs:
+  deploy:
+    name: Build and deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout source code.
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Install the project package manager and Node runtime.
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      # Build the static Vite site into dist/spa.
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build landing page
+        run: pnpm build
+
+      # Configure SSH access for the VPS.
+      - name: Configure SSH
+        run: |
+          umask 077
+          mkdir -p ~/.ssh
+          printf '%s\n' "${{ secrets.VPS_TESTING_WEBPUBLIEX_KEY }}" > ~/.ssh/deploy_key
+          ssh-keyscan -H "$SSH_HOST" >> ~/.ssh/known_hosts
+
+      # Sync only the generated build files to the domain folder.
+      - name: Deploy build files
+        run: |
+          ssh -i ~/.ssh/deploy_key "$SSH_USER@$SSH_HOST" "mkdir -p '$DEPLOY_PATH'"
+          rsync -az -e "ssh -i ~/.ssh/deploy_key" dist/spa/ "$SSH_USER@$SSH_HOST:$DEPLOY_PATH/"
