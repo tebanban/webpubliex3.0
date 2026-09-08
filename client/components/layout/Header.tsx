@@ -19,7 +19,7 @@ export function Header() {
         {/* Brand mark */}
         <Link
           aria-label="Publiex"
-          className="block h-[42px] w-[118px] md:h-[56px] md:w-[157px] xl:h-[75px] xl:w-[210px]"
+          className="block h-10.5 w-29.5 md:h-14 md:w-39.25 xl:h-18.75 xl:w-52.5"
           to="/"
         >
           <img
@@ -30,24 +30,40 @@ export function Header() {
         </Link>
 
         {/* Desktop navigation */}
-        <nav className="font-uni hidden items-center gap-7 text-[18.25px] font-normal uppercase tracking-normal lg:flex xl:gap-10">
+        <nav className="font-uni hidden items-center gap-7 text-[16px] font-normal uppercase leading-tight tracking-normal lg:flex xl:gap-10">
           {navItems.map(([label, href]) => (
             <Link
-              className="transition hover:text-publiex-red"
+              className="flex max-w-[14ch] flex-wrap justify-center gap-x-1.5 text-center whitespace-normal transition [overflow-wrap:normal] [word-break:normal] hover:text-publiex-red"
               key={href}
               to={href}
             >
-              {label}
+              {label.split(" ").map((word, index) => (
+                <span
+                  className="inline-block whitespace-nowrap [overflow-wrap:normal] [word-break:keep-all]"
+                  key={`${word}-${index}`}
+                >
+                  {index > 0 ? " " : ""}
+                  {word}
+                </span>
+              ))}
             </Link>
           ))}
         </nav>
 
         {/* Primary action */}
         <Link
-          className="hidden h-[29px] items-center bg-publiex-red px-4 font-raleway text-[17.81px] font-extrabold uppercase leading-none text-white transition hover:bg-red-600 md:inline-flex"
+          className="hidden min-h-7.25 max-w-[16ch] flex-wrap items-center justify-center gap-x-1.5 bg-publiex-red px-4 py-1 text-center font-raleway text-[17.81px] font-extrabold uppercase leading-tight text-white whitespace-normal transition [overflow-wrap:normal] [word-break:normal] hover:bg-red-600 md:inline-flex"
           to="/#contacto"
         >
-          Solicitar propuesta
+          {"Solicitar propuesta".split(" ").map((word, index) => (
+            <span
+              className="inline-block whitespace-nowrap [overflow-wrap:normal] [word-break:keep-all]"
+              key={`${word}-${index}`}
+            >
+              {index > 0 ? " " : ""}
+              {word}
+            </span>
+          ))}
         </Link>
 
         <button
