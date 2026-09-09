@@ -14,12 +14,12 @@ const navItems = [
 
 export function Header() {
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/35 bg-transparent text-white">
-      <div className="mx-auto flex h-16 w-full max-w-480 items-center justify-start px-5 md:h-18 md:px-10 xl:h-24 xl:px-44.5">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/35 bg-black/5 text-white">
+      <div className="mx-auto flex h-14 w-full max-w-480 items-center justify-start px-5 md:h-16 md:px-10 xl:h-20 xl:px-44.5">
         {/* Brand mark */}
         <Link
           aria-label="Publiex"
-          className="block h-8 w-22.5 md:h-10 md:w-28 xl:h-12 xl:w-33.5"
+          className="block h-7.5 w-21 md:h-9 md:w-25 xl:h-10 xl:w-28"
           to="/"
         >
           <img
@@ -30,7 +30,7 @@ export function Header() {
         </Link>
 
         {/* Desktop navigation */}
-        <nav className="font-uni ml-10 hidden items-stretch divide-x divide-white/35 text-sm font-normal uppercase leading-tight tracking-normal lg:flex xl:ml-16">
+        <nav className="font-uni ml-10 hidden items-stretch divide-x divide-white/35 border-x border-white/35 text-sm font-normal uppercase leading-tight tracking-normal lg:flex xl:ml-16">
           {navItems.map(([label, href]) => (
             <Link
               className="flex min-h-8 max-w-[14ch] flex-wrap items-center justify-center gap-x-1.5 px-4 text-center whitespace-normal break-normal transition hover:text-white/75 xl:px-5"

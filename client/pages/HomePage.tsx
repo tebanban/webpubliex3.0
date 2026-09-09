@@ -26,7 +26,7 @@ export default function HomePage() {
         >
           <source src={publiexAsset("hero_home.mp4")} type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-linear-to-b from-[#0047ba]/70 via-[#0047ba]/15 to-black/70" />
+        <div className="absolute inset-0 bg-linear-to-b from-[#0047ba]/65 via-[#0047ba]/15 to-black/75" />
         <div className="relative mx-auto flex h-full w-full max-w-480 items-end px-5 pb-12 pt-28 md:px-10 md:pb-20">
           <div className="mx-auto w-full max-w-295 text-center">
             <h1 className="font-raleway font-black uppercase leading-[0.996]">
