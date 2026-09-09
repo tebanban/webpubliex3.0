@@ -9,17 +9,18 @@ export default function AboutPage() {
         eyebrow="Quiénes somos"
         title={
           <>
-            27 años <span className="text-publiex-red">mirando hacia adelante.</span>
+            27 años{" "}
+            <span className="text-publiex-red">mirando hacia adelante.</span>
           </>
         }
         description="La página de nosotros reunirá trayectoria, equipo, enfoque operativo y la evolución de Publiex en publicidad exterior."
       />
 
       {/* Company snapshot */}
-      <section className="grid min-h-[680px] lg:grid-cols-2">
+      <section className="grid min-h-170 lg:grid-cols-2">
         <img
           alt="Estructura de publicidad exterior Publiex"
-          className="h-full min-h-[420px] w-full object-cover"
+          className="h-full min-h-105 w-full object-cover"
           src={publiexAsset("figma-about.jpeg")}
         />
         <div className="flex flex-col justify-center px-5 py-20 md:px-10 lg:px-24">

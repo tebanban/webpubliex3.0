@@ -3,9 +3,9 @@ import type { ReactNode } from "react";
 import { publiexAsset } from "@/lib/assets";
 
 const panelShape = {
-  solution: "aspect-square xl:h-[512px]",
-  case: "aspect-[486/567] xl:h-[567px]",
-  insight: "aspect-[573/728] xl:h-[728px]",
+  solution: "aspect-square xl:h-128",
+  case: "aspect-[486/567] xl:h-141.75",
+  insight: "aspect-[573/728] xl:h-182",
 };
 
 export function ImagePanel({
@@ -21,7 +21,7 @@ export function ImagePanel({
 }) {
   return (
     <article
-      className={`group relative min-h-[320px] overflow-hidden bg-zinc-900 ${panelShape[variant]}`}
+      className={`group relative min-h-80 overflow-hidden bg-zinc-900 ${panelShape[variant]}`}
     >
       <img
         alt={title}
@@ -29,7 +29,7 @@ export function ImagePanel({
         src={publiexAsset(image)}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-black/10 to-black/80" />
-      <div className="relative flex min-h-[320px] flex-col justify-end p-6 text-white md:min-h-full md:p-8">
+      <div className="relative flex min-h-80 flex-col justify-end p-6 text-white md:min-h-full md:p-8">
         {children}
       </div>
     </article>

@@ -10,7 +10,10 @@ export default function ProductsPage() {
         eyebrow="Soluciones publicitarias"
         title={
           <>
-            Un país. <span className="text-publiex-red">Infinitas formas de ser visto.</span>
+            Un país.{" "}
+            <span className="text-publiex-red">
+              Infinitas formas de ser visto.
+            </span>
           </>
         }
         description="La página de productos tendrá el inventario completo por formato, objetivo de campaña y contexto urbano."
@@ -18,10 +21,14 @@ export default function ProductsPage() {
 
       {/* Product categories */}
       <section className="px-5 py-20 md:px-10 lg:px-24">
-        <div className="mx-auto grid max-w-[1574px] gap-5 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mx-auto grid max-w-393.5 gap-5 md:grid-cols-2 xl:grid-cols-3">
           {solutions.map((solution) => (
-            <ImagePanel image={solution.image} key={solution.title} title={solution.title}>
-              <p className="max-w-md font-raleway text-2xl font-semibold leading-tight md:text-[34.44px] md:leading-[36px]">
+            <ImagePanel
+              image={solution.image}
+              key={solution.title}
+              title={solution.title}
+            >
+              <p className="max-w-md font-raleway text-2xl font-semibold leading-tight md:text-[34.44px] md:leading-9">
                 {solution.description}
               </p>
               <div className="mt-8 border-t border-white pt-5">
@@ -35,7 +42,7 @@ export default function ProductsPage() {
             </ImagePanel>
           ))}
         </div>
-        <div className="mx-auto mt-12 max-w-[1574px]">
+        <div className="mx-auto mt-12 max-w-393.5">
           <PrimaryLink href="/#contacto">Solicitar propuesta</PrimaryLink>
         </div>
       </section>

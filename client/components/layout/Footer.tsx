@@ -66,22 +66,22 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="relative min-h-[568px] overflow-hidden bg-publiex-gradient px-5 py-10 text-white md:px-10 lg:px-24 xl:py-[43px]">
+    <footer className="relative min-h-142 overflow-hidden bg-publiex-gradient px-5 py-10 text-white md:px-10 lg:px-24 xl:py-10.75">
       <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
         <img
           alt=""
           aria-hidden="true"
-          className="h-[1947px] w-[568px] rotate-90 object-fill"
+          className="h-486.75 w-142 rotate-90 object-fill"
           src={publiexAsset("footer-background.svg")}
         />
       </div>
 
-      <div className="relative mx-auto grid min-h-[488px] max-w-[1574px] grid-rows-[auto_1fr_auto]">
+      <div className="relative mx-auto grid min-h-122 max-w-393.5 grid-rows-[auto_1fr_auto]">
         {/* Footer top */}
-        <div className="relative flex min-h-[82px] items-start justify-center">
+        <div className="relative flex min-h-20.5 items-start justify-center">
           <Link
             aria-label="Publiex"
-            className="mt-[5px] block h-[67px] w-[185px]"
+            className="mt-1.25 block h-16.75 w-46.25"
             to="/"
           >
             <img
@@ -98,14 +98,14 @@ export function Footer() {
             <img
               alt=""
               aria-hidden="true"
-              className="h-[19px] w-[21px] object-contain"
+              className="h-4.75 w-5.25 object-contain"
               src={publiexAsset("footer-arrow.svg")}
             />
           </a>
         </div>
 
         {/* Footer menu columns */}
-        <div className="grid gap-10 pt-[58px] sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-[170px_170px_119px_172px] xl:justify-between">
+        <div className="grid gap-10 pt-14.5 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-[170px_170px_119px_172px] xl:justify-between">
           {footerGroups.map((group) => (
             <nav aria-label={group.title} key={group.title}>
               <h3 className="font-uni text-base font-bold uppercase leading-9 text-[#3e88bd]">
@@ -125,11 +125,11 @@ export function Footer() {
         </div>
 
         {/* Social links */}
-        <div className="flex justify-center gap-[44px] pb-[53px] pt-10">
+        <div className="flex justify-center gap-11 pb-13.25 pt-10">
           {socialLinks.map((item) => (
             <a
               aria-label={item.label}
-              className="block size-[54px] transition hover:opacity-80"
+              className="block size-13.5 transition hover:opacity-80"
               href={item.href}
               key={item.label}
               rel="noreferrer"

@@ -8,7 +8,6 @@ Open PowerShell (Windows) or Terminal (Mac/Linux) and run:
 ssh puadmin2@67.205.19.7
 ```
 
-
 ## 2. Update the App (Step-by-Step)
 
 **Every time you want to deploy new code:**
@@ -20,3 +19,4 @@ cd ~/testing.publiexcr.com/
 
 
 
+```

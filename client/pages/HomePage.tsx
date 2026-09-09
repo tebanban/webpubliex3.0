@@ -17,8 +17,8 @@ export default function HomePage() {
           className="absolute inset-0 size-full object-cover"
           src={publiexAsset("figma-home-hero.jpeg")}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0047ba]/70 via-[#0047ba]/15 to-black/70" />
-        <div className="relative mx-auto flex min-h-[calc(100vh-5rem)] w-full max-w-[1920px] items-end px-5 pb-12 pt-28 md:px-10 md:pb-20 xl:min-h-[1204px]">
+        <div className="absolute inset-0 bg-linear-to-b from-[#0047ba]/70 via-[#0047ba]/15 to-black/70" />
+        <div className="relative mx-auto flex min-h-[calc(100vh-5rem)] w-full max-w-480 items-end px-5 pb-12 pt-28 md:px-10 md:pb-20 xl:min-h-301">
           <div className="mx-auto w-full max-w-295 text-center">
             <h1 className="font-raleway font-black uppercase leading-[0.996]">
               <span className="block text-[clamp(2.4rem,5.4vw,3.85rem)]">
@@ -32,12 +32,12 @@ export default function HomePage() {
               Grandes formatos, movilidad, tecnología y creatividad para hacer
               que su marca sea parte del paisaje y de la conversación.
             </p>
-            <div className="mt-10 flex flex-col text-[18px] items-center justify-center gap-5 sm:flex-row">
+            <div className="mt-10 flex flex-col text-lg items-center justify-center gap-5 sm:flex-row">
               <PrimaryLink href="#contacto" weight="normal">
                 Diseñar mi campaña
               </PrimaryLink>
               <a
-                className="font-raleway text-[18px] font-normal uppercase underline underline-offset-4"
+                className="font-raleway text-lg font-normal uppercase underline underline-offset-4"
                 href="#ubicaciones"
               >
                 Explorar ubicaciones
@@ -52,22 +52,21 @@ export default function HomePage() {
         className="overflow-hidden bg-publiex-gradient text-white"
         id="ubicaciones"
       >
-        <div className="mx-auto grid min-h-[903px] w-full max-w-[1920px] lg:grid-cols-[0.95fr_1.05fr]">
-          <div className="px-5 py-20 md:px-10 lg:py-[166px] xl:pl-[166px] xl:pr-16">
-            
-            <h2 className="max-w-[520px] font-raleway text-[clamp(2.4rem,5.4vw,4.965rem)] font-semibold leading-[1.03]">
+        <div className="mx-auto grid min-h-225.75 w-full max-w-480 lg:grid-cols-[0.95fr_1.05fr]">
+          <div className="px-5 py-20 md:px-10 lg:py-41.5 xl:pl-41.5 xl:pr-16">
+            <h2 className="max-w-130 font-raleway text-[clamp(2.4rem,5.4vw,4.965rem)] font-semibold leading-[1.03]">
               Encuentre el lugar{" "}
               <span className="text-publiex-red">
                 donde su marca debe estar.
               </span>
             </h2>
-            <p className="font-uni mt-7 max-w-[670px] text-xl leading-tight md:text-[31.44px]">
+            <p className="font-uni mt-7 max-w-167.5 text-xl leading-tight md:text-[31.44px]">
               Explore una muestra de cobertura por formato y provincia. Cada
               consulta puede convertirse en una selección curada con ficha
               técnica, métricas y disponibilidad confirmada.
             </p>
             <a
-              className="mt-9 inline-flex text-[16px] items-center gap-3 font-raleway text-sm  uppercase underline underline-offset-4"
+              className="mt-9 inline-flex items-center gap-3 font-raleway text-sm  uppercase underline underline-offset-4"
               href="#contacto"
             >
               Buscar <ArrowRight aria-hidden className="size-4" />
@@ -75,7 +74,7 @@ export default function HomePage() {
           </div>
           <img
             alt="Pantalla digital Publiex en una zona urbana nocturna"
-            className="h-full min-h-[360px] w-full object-cover"
+            className="h-full min-h-90 w-full object-cover"
             src={publiexAsset("figma-location.jpeg")}
           />
         </div>
@@ -89,13 +88,13 @@ export default function HomePage() {
           src={publiexAsset("figma-skip-ad.jpeg")}
         />
         <div className="absolute inset-0 bg-black/30" />
-        <div className="relative mx-auto flex min-h-[720px] w-full max-w-[1920px] items-center justify-end px-5 py-20 md:px-10 lg:px-24 xl:min-h-[1137px] xl:items-start xl:pt-[177px]">
-          <div className="max-w-[660px] text-right xl:mr-[60px]">
+        <div className="relative mx-auto flex min-h-180 w-full max-w-480 items-center justify-end px-5 py-20 md:px-10 lg:px-24 xl:min-h-284.25 xl:items-start xl:pt-44.25">
+          <div className="max-w-165 text-right xl:mr-15">
             <SectionLabel>Impacto</SectionLabel>
             <h2 className="font-raleway text-[clamp(2.8rem,7vw,5.965rem)] font-semibold leading-none">
               Afuera no <span className="text-publiex-red">hay skip ad</span>
             </h2>
-            <p className="mt-8 max-w-[660px] text-xl leading-tight md:text-[31.44px]">
+            <p className="mt-8 max-w-165 text-xl leading-tight md:text-[31.44px]">
               Creamos presencia real para marcas que no quieren pasar
               desapercibidas. Combinamos ubicaciones estratégicas, creatividad,
               tecnología y datos para convertir cada recorrido en una
@@ -113,8 +112,8 @@ export default function HomePage() {
           src={publiexAsset("figma-about.jpeg")}
         />
         <div className="absolute inset-0 bg-black/35" />
-        <div className="relative mx-auto flex min-h-[700px] w-full max-w-[1920px] items-center justify-end px-5 py-20 md:px-10 lg:px-24 xl:min-h-[1062px]">
-          <div className="max-w-[710px] text-right xl:mr-[65px] xl:mt-[120px]">
+        <div className="relative mx-auto flex min-h-175 w-full max-w-480 items-center justify-end px-5 py-20 md:px-10 lg:px-24 xl:min-h-265.5">
+          <div className="max-w-177.5 text-right xl:mr-16.25 xl:mt-30">
             <SectionLabel>Quiénes somos</SectionLabel>
             <p className="font-raleway text-[clamp(4rem,14vw,16rem)] font-black leading-none text-publiex-red">
               27{" "}
@@ -139,8 +138,8 @@ export default function HomePage() {
         className="overflow-hidden bg-publiex-gradient text-white"
         id="soluciones"
       >
-        <div className="mx-auto w-full max-w-[1920px] px-5 py-20 md:px-10 lg:px-24 xl:min-h-[2140px] xl:pt-[71px]">
-          <div className="mx-auto max-w-[1574px]">
+        <div className="mx-auto w-full max-w-480 px-5 py-20 md:px-10 lg:px-24 xl:min-h-535 xl:pt-17.75">
+          <div className="mx-auto max-w-393.5">
             <SectionLabel>Soluciones publicitarias</SectionLabel>
             <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
               <h2 className="font-raleway text-[clamp(2.7rem,6.5vw,5.965rem)] font-medium leading-[1.04]">
@@ -156,14 +155,14 @@ export default function HomePage() {
                 Ver todas las soluciones
               </a>
             </div>
-            <div className="mt-[86px] grid gap-5 md:grid-cols-2 xl:grid-cols-3 xl:gap-4">
+            <div className="mt-21.5 grid gap-5 md:grid-cols-2 xl:grid-cols-3 xl:gap-4">
               {solutions.map((solution) => (
                 <ImagePanel
                   image={solution.image}
                   key={solution.title}
                   title={solution.title}
                 >
-                  <p className="max-w-md font-raleway text-2xl font-semibold leading-tight md:text-[34.44px] md:leading-[36px]">
+                  <p className="max-w-md font-raleway text-2xl font-semibold leading-tight md:text-[34.44px] md:leading-9">
                     {solution.description}
                   </p>
                   <div className="mt-8 border-t border-white pt-5">
@@ -183,15 +182,15 @@ export default function HomePage() {
 
       {/* Large format */}
       <section className="overflow-hidden">
-        <div className="mx-auto grid min-h-[720px] w-full max-w-[1920px] gap-0 lg:grid-cols-[51.5%_48.5%] xl:min-h-[1101px]">
+        <div className="mx-auto grid min-h-180 w-full max-w-480 gap-0 lg:grid-cols-[51.5%_48.5%] xl:min-h-275.25">
           <img
             alt="Mega formato Publiex en una vía principal"
-            className="h-full min-h-[520px] w-full object-cover"
+            className="h-full min-h-130 w-full object-cover"
             src={publiexAsset("figma-large-format.jpeg")}
           />
-          <div className="flex flex-col justify-center px-5 py-20 md:px-10 lg:px-[60px] xl:justify-start xl:py-[81px]">
+          <div className="flex flex-col justify-center px-5 py-20 md:px-10 lg:px-15 xl:justify-start xl:py-20.25">
             <SectionLabel dark>Gran formato</SectionLabel>
-            <h2 className="max-w-[744px] font-raleway text-[clamp(2.3rem,5vw,6.4rem)] font-semibold leading-[0.97]">
+            <h2 className="max-w-186 font-raleway text-[clamp(2.3rem,5vw,6.4rem)] font-semibold leading-[0.97]">
               Cuando una marca necesita dominar, el espacio debe estar a su
               altura.
             </h2>
@@ -208,10 +207,10 @@ export default function HomePage() {
 
       {/* Format highlights */}
       <section className="overflow-hidden">
-        <div className="mx-auto grid min-h-[720px] w-full max-w-[1920px] gap-0 lg:grid-cols-[51%_49%] xl:min-h-[1103px]">
-          <div className="px-5 py-20 md:px-10 lg:px-24 xl:py-[74px] xl:pl-[173px] xl:pr-[60px]">
+        <div className="mx-auto grid min-h-180 w-full max-w-480 gap-0 lg:grid-cols-[51%_49%] xl:min-h-275.75">
+          <div className="px-5 py-20 md:px-10 lg:px-24 xl:py-18.5 xl:pl-43.25 xl:pr-15">
             <SectionLabel dark>Mobiliario urbano</SectionLabel>
-            <h2 className="max-w-[744px] font-raleway text-[clamp(2.3rem,5vw,6.4rem)] font-semibold leading-[0.97]">
+            <h2 className="max-w-186 font-raleway text-[clamp(2.3rem,5vw,6.4rem)] font-semibold leading-[0.97]">
               Convierta una ruta completa en una secuencia de marca.
             </h2>
             <p className="mt-7 max-w-2xl text-xl leading-tight md:text-[27px]">
@@ -225,7 +224,7 @@ export default function HomePage() {
           </div>
           <img
             alt="Banner posts Publiex instalados en una carretera"
-            className="h-full min-h-[520px] w-full object-cover"
+            className="h-full min-h-130 w-full object-cover"
             src={publiexAsset("figma-urban-furniture.jpeg")}
           />
         </div>
@@ -236,15 +235,15 @@ export default function HomePage() {
         className="overflow-hidden bg-publiex-navy text-white"
         id="analitica"
       >
-        <div className="mx-auto grid min-h-[720px] w-full max-w-[1920px] lg:grid-cols-[52%_48%] xl:min-h-[1101px]">
+        <div className="mx-auto grid min-h-180 w-full max-w-480 lg:grid-cols-[52%_48%] xl:min-h-275.25">
           <img
             alt="Publicidad exterior en tren"
-            className="h-full min-h-[520px] w-full object-cover"
+            className="h-full min-h-130 w-full object-cover"
             src={publiexAsset("figma-transport.jpeg")}
           />
           <div className="px-5 py-20 md:px-10 lg:px-24 xl:py-32.5 xl:pl-20.5">
             <SectionLabel>Publicidad en transporte</SectionLabel>
-            <h2 className="max-w-[732px] font-raleway text-[clamp(2.4rem,5.8vw,6.4rem)] font-semibold leading-[0.97]">
+            <h2 className="max-w-183 font-raleway text-[clamp(2.4rem,5.8vw,6.4rem)] font-semibold leading-[0.97]">
               Una marca que acompaña el recorrido se vuelve parte del día a día.
             </h2>
             <p className="mt-7 max-w-2xl text-xl leading-tight md:text-[31.44px]">
@@ -263,15 +262,15 @@ export default function HomePage() {
 
       {/* Digital and special formats */}
       <section className="overflow-hidden border-t border-zinc-300">
-        <div className="mx-auto grid w-full max-w-[1920px] gap-10 px-5 py-20 md:px-10 lg:grid-cols-2 lg:px-24 xl:min-h-[1243px] xl:gap-[213px] xl:px-[93px] xl:py-[76px]">
+        <div className="mx-auto grid w-full max-w-480 gap-10 px-5 py-20 md:px-10 lg:grid-cols-2 lg:px-24 xl:min-h-310.75 xl:gap-53.25 xl:px-23.25 xl:py-19">
           <article>
             <img
               alt="Pantalla digital Publiex con contenido dinámico"
-              className="aspect-[756/518] w-full object-cover"
+              className="aspect-756/518 w-full object-cover"
               src={publiexAsset("figma-dooh-raw-1.jpeg")}
             />
             <SectionLabel dark>Pantallas digitales y DOOH</SectionLabel>
-            <h2 className="font-raleway text-[clamp(2rem,4vw,4.375rem)] font-semibold leading-tight md:leading-[80px]">
+            <h2 className="font-raleway text-[clamp(2rem,4vw,4.375rem)] font-semibold leading-tight md:leading-20">
               Mensajes que se mueven al ritmo de la ciudad.
             </h2>
             <p className="mt-5 max-w-2xl text-lg leading-tight md:text-xl">
@@ -285,11 +284,11 @@ export default function HomePage() {
           <article>
             <img
               alt="Proyecto especial de publicidad exterior Publiex"
-              className="aspect-[756/518] w-full object-cover"
+              className="aspect-756/518 w-full object-cover"
               src={publiexAsset("figma-special-projects.jpeg")}
             />
             <SectionLabel dark>Proyectos especiales</SectionLabel>
-            <h2 className="font-raleway text-[clamp(2rem,4vw,4.375rem)] font-semibold leading-tight md:leading-[80px]">
+            <h2 className="font-raleway text-[clamp(2rem,4vw,4.375rem)] font-semibold leading-tight md:leading-20">
               Cuando la idea sale del formato, empieza la conversación.
             </h2>
             <p className="mt-5 max-w-2xl text-lg leading-tight md:text-xl">
@@ -308,15 +307,15 @@ export default function HomePage() {
 
       {/* Audience analytics */}
       <section className="overflow-hidden bg-[linear-gradient(135deg,#ffffff_0%,#bbd1f3_100%)]">
-        <div className="mx-auto w-full max-w-[1920px] px-5 py-20 md:px-10 lg:px-24 xl:min-h-[990px] xl:py-[99px]">
-          <div className="mx-auto grid max-w-[1574px] gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+        <div className="mx-auto w-full max-w-480 px-5 py-20 md:px-10 lg:px-24 xl:min-h-247.5 xl:py-24.75">
+          <div className="mx-auto grid max-w-393.5 gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
             <div>
               <SectionLabel dark>Datos y audiencias</SectionLabel>
               <h2 className="font-raleway text-[clamp(2.7rem,6vw,7.465rem)] font-bold uppercase leading-[0.94]">
                 No compre espacios.
                 <span className="block lowercase">Conquiste audiencias.</span>
               </h2>
-              <p className="font-uni mt-7 max-w-[656px] text-xl leading-tight md:text-[31.44px]">
+              <p className="font-uni mt-7 max-w-164 text-xl leading-tight md:text-[31.44px]">
                 Traducimos ubicaciones, movilidad, rutas y exposición en
                 decisiones de campaña más claras.
               </p>
@@ -326,7 +325,7 @@ export default function HomePage() {
                 </PrimaryLink>
               </div>
             </div>
-            <div className="mx-auto flex aspect-square w-full max-w-[500px] flex-col items-center justify-center rounded-full bg-publiex-blue p-10 text-center text-white">
+            <div className="mx-auto flex aspect-square w-full max-w-125 flex-col items-center justify-center rounded-full bg-publiex-blue p-10 text-center text-white">
               <p className="font-raleway text-[clamp(2.5rem,5vw,5rem)] font-black text-publiex-red">
                 1.578.841
               </p>
@@ -339,7 +338,7 @@ export default function HomePage() {
               </p>
             </div>
           </div>
-          <div className="mx-auto mt-12 grid max-w-[980px] gap-5 md:grid-cols-3">
+          <div className="mx-auto mt-12 grid max-w-245 gap-5 md:grid-cols-3">
             {stats.map((stat) => (
               <article className="bg-white p-6 shadow-sm" key={stat.label}>
                 <h3 className="font-raleway text-sm font-bold uppercase">
@@ -363,10 +362,10 @@ export default function HomePage() {
         className="overflow-hidden bg-publiex-navy text-white"
         id="casos"
       >
-        <div className="mx-auto w-full max-w-[1920px] px-5 py-20 md:px-10 lg:px-24">
-          <div className="mx-auto max-w-[1574px]">
+        <div className="mx-auto w-full max-w-480 px-5 py-20 md:px-10 lg:px-24">
+          <div className="mx-auto max-w-393.5">
             <SectionLabel>Casos de éxito</SectionLabel>
-            <h2 className="font-raleway text-[clamp(2.4rem,5.5vw,4.965rem)] font-semibold leading-tight md:leading-[82px]">
+            <h2 className="font-raleway text-[clamp(2.4rem,5.5vw,4.965rem)] font-semibold leading-tight md:leading-20.5">
               Campañas que se volvieron{" "}
               <span className="text-publiex-red">parte del viaje.</span>
             </h2>
@@ -382,7 +381,7 @@ export default function HomePage() {
                     <span>{item.tag}</span>
                     <span>{item.type}</span>
                   </div>
-                  <h3 className="font-raleway text-2xl font-semibold leading-tight md:text-[39.44px] md:leading-[44px]">
+                  <h3 className="font-raleway text-2xl font-semibold leading-tight md:text-[39.44px] md:leading-11">
                     {item.title}
                   </h3>
                 </ImagePanel>
@@ -393,14 +392,14 @@ export default function HomePage() {
       </section>
 
       <section className="overflow-hidden" id="actualidad">
-        <div className="mx-auto w-full max-w-[1920px] px-5 py-20 md:px-10 lg:px-24">
-          <div className="mx-auto max-w-[1574px]">
+        <div className="mx-auto w-full max-w-480 px-5 py-20 md:px-10 lg:px-24">
+          <div className="mx-auto max-w-393.5">
             <SectionLabel dark>Actualidad e insights</SectionLabel>
-            <h2 className="font-raleway text-[clamp(2.4rem,5.5vw,4.965rem)] font-semibold leading-tight md:leading-[82px]">
+            <h2 className="font-raleway text-[clamp(2.4rem,5.5vw,4.965rem)] font-semibold leading-tight md:leading-20.5">
               Lo que hacemos. Lo que aprendemos.{" "}
               <span className="text-publiex-red">Lo que sigue.</span>
             </h2>
-            <div className="mt-12 grid gap-5 md:grid-cols-3 xl:grid-cols-[573px_481px_481px] xl:gap-[19px]">
+            <div className="mt-12 grid gap-5 md:grid-cols-3 xl:grid-cols-[573px_481px_481px] xl:gap-4.75">
               {insights.map((item) => (
                 <ImagePanel
                   image={item.image}
@@ -411,7 +410,7 @@ export default function HomePage() {
                   <p className="font-raleway text-xs font-bold uppercase">
                     {item.tag}
                   </p>
-                  <h3 className="mt-4 font-raleway text-2xl font-semibold leading-tight md:text-[41.44px] md:leading-[37px]">
+                  <h3 className="mt-4 font-raleway text-2xl font-semibold leading-tight md:text-[41.44px] md:leading-9.25">
                     {item.title}
                   </h3>
                   <p className="mt-4 text-sm leading-snug md:text-base">
@@ -426,11 +425,11 @@ export default function HomePage() {
 
       {/* Proposal paths */}
       <section className="overflow-hidden">
-        <div className="mx-auto w-full max-w-[1920px] xl:py-[85px]">
-          <div className="mx-auto grid max-w-[1574px] md:grid-cols-2">
-            <div className="bg-publiex-gradient px-5 py-16 text-white md:px-10 lg:px-[43px]">
+        <div className="mx-auto w-full max-w-480 xl:py-21.25">
+          <div className="mx-auto grid max-w-393.5 md:grid-cols-2">
+            <div className="bg-publiex-gradient px-5 py-16 text-white md:px-10 lg:px-10.75">
               <SectionLabel>Para agencias</SectionLabel>
-              <h2 className="font-raleway text-[clamp(2rem,4vw,3.375rem)] font-semibold leading-tight md:leading-[53px]">
+              <h2 className="font-raleway text-[clamp(2rem,4vw,3.375rem)] font-semibold leading-tight md:leading-13.25">
                 Acceso a inventario, especificaciones y propuestas en un solo
                 lugar.
               </h2>
@@ -445,9 +444,9 @@ export default function HomePage() {
                 </PrimaryLink>
               </div>
             </div>
-            <div className="bg-zinc-200 px-5 py-16 md:px-10 lg:px-[43px]">
+            <div className="bg-zinc-200 px-5 py-16 md:px-10 lg:px-10.75">
               <SectionLabel dark>Para propietarios</SectionLabel>
-              <h2 className="font-raleway text-[clamp(2rem,4vw,3.375rem)] font-semibold leading-tight md:leading-[53px]">
+              <h2 className="font-raleway text-[clamp(2rem,4vw,3.375rem)] font-semibold leading-tight md:leading-13.25">
                 Evalúe el potencial comercial de su terreno, edificio o espacio.
               </h2>
               <p className="mt-5 max-w-2xl text-lg leading-tight">
@@ -469,16 +468,16 @@ export default function HomePage() {
         className="overflow-hidden bg-publiex-gradient text-white"
         id="contacto"
       >
-        <div className="mx-auto grid min-h-[760px] w-full max-w-[1920px] items-center gap-12 px-5 py-20 md:px-10 lg:grid-cols-[0.95fr_1.05fr] lg:px-24 xl:min-h-[1045px] xl:px-[173px]">
+        <div className="mx-auto grid min-h-190 w-full max-w-480 items-center gap-12 px-5 py-20 md:px-10 lg:grid-cols-[0.95fr_1.05fr] lg:px-24 xl:min-h-261.25 xl:px-43.25">
           <div>
             <SectionLabel>Solicitar propuesta</SectionLabel>
-            <h2 className="max-w-[640px] font-raleway text-[clamp(2.5rem,5.6vw,5rem)] font-semibold leading-tight md:leading-[82px]">
+            <h2 className="max-w-160 font-raleway text-[clamp(2.5rem,5.6vw,5rem)] font-semibold leading-tight md:leading-20.5">
               Cuéntenos qué quiere lograr.
               <span className="block text-publiex-red">
                 Nosotros encontramos dónde.
               </span>
             </h2>
-            <p className="mt-7 max-w-[651px] text-xl leading-tight md:text-[27px]">
+            <p className="mt-7 max-w-162.75 text-xl leading-tight md:text-[27px]">
               Un formulario breve y útil para que el equipo comercial reciba el
               contexto correcto y responda con una recomendación construida para
               su marca.

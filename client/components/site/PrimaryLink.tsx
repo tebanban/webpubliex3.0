@@ -25,7 +25,7 @@ export function PrimaryLink({
 }) {
   return (
     <a
-      className={`inline-flex min-h-12 items-center justify-center gap-2 px-5 font-raleway text-sm uppercase transition md:min-h-[50px] md:text-[19.44px] ${weights[weight]} ${tones[tone]}`}
+      className={`inline-flex min-h-12 items-center justify-center gap-2 px-5 font-raleway text-sm uppercase transition md:min-h-12.5 md:text-[19.44px] ${weights[weight]} ${tones[tone]}`}
       href={href}
     >
       {children}

@@ -15,7 +15,7 @@ const navItems = [
 export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-black/10 bg-white">
-      <div className="mx-auto flex h-20 w-full max-w-[1920px] items-center justify-between px-5 md:px-10 xl:h-[158px] xl:px-[178px]">
+      <div className="mx-auto flex h-20 w-full max-w-480 items-center justify-between px-5 md:px-10 xl:h-39.5 xl:px-44.5">
         {/* Brand mark */}
         <Link
           aria-label="Publiex"
@@ -30,7 +30,7 @@ export function Header() {
         </Link>
 
         {/* Desktop navigation */}
-        <nav className="font-uni hidden items-center gap-7 text-[16px] font-normal uppercase leading-tight tracking-normal lg:flex xl:gap-10">
+        <nav className="font-uni hidden items-center gap-7 text-base font-normal uppercase leading-tight tracking-normal lg:flex xl:gap-10">
           {navItems.map(([label, href]) => (
             <Link
               className="flex max-w-[14ch] flex-wrap justify-center gap-x-1.5 text-center whitespace-normal transition [overflow-wrap:normal] [word-break:normal] hover:text-publiex-red"
