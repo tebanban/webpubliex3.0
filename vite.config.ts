@@ -6,7 +6,7 @@ import path from "node:path";
 export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
-    port: 8080,
+    port: 3000,
     fs: {
       allow: ["./client", "index.html"],
       deny: [".env", ".env.*", "*.{crt,pem}", "**/.git/**"],

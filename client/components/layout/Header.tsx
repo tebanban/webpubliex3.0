@@ -14,32 +14,32 @@ const navItems = [
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-black/10 bg-white">
-      <div className="mx-auto flex h-20 w-full max-w-480 items-center justify-between px-5 md:px-10 xl:h-39.5 xl:px-44.5">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/35 bg-transparent text-white">
+      <div className="mx-auto flex h-16 w-full max-w-480 items-center justify-start px-5 md:h-18 md:px-10 xl:h-24 xl:px-44.5">
         {/* Brand mark */}
         <Link
           aria-label="Publiex"
-          className="block h-10.5 w-29.5 md:h-14 md:w-39.25 xl:h-18.75 xl:w-52.5"
+          className="block h-8 w-22.5 md:h-10 md:w-28 xl:h-12 xl:w-33.5"
           to="/"
         >
           <img
             alt="Publiex"
-            className="size-full object-contain"
+            className="size-full object-contain brightness-0 invert"
             src={publiexAsset("publiex-logo.svg")}
           />
         </Link>
 
         {/* Desktop navigation */}
-        <nav className="font-uni hidden items-center gap-7 text-base font-normal uppercase leading-tight tracking-normal lg:flex xl:gap-10">
+        <nav className="font-uni ml-10 hidden items-stretch divide-x divide-white/35 text-sm font-normal uppercase leading-tight tracking-normal lg:flex xl:ml-16">
           {navItems.map(([label, href]) => (
             <Link
-              className="flex max-w-[14ch] flex-wrap justify-center gap-x-1.5 text-center whitespace-normal transition [overflow-wrap:normal] [word-break:normal] hover:text-publiex-red"
+              className="flex min-h-8 max-w-[14ch] flex-wrap items-center justify-center gap-x-1.5 px-4 text-center whitespace-normal break-normal transition hover:text-white/75 xl:px-5"
               key={href}
               to={href}
             >
               {label.split(" ").map((word, index) => (
                 <span
-                  className="inline-block whitespace-nowrap [overflow-wrap:normal] [word-break:keep-all]"
+                  className="inline-block whitespace-nowrap wrap-normal break-keep"
                   key={`${word}-${index}`}
                 >
                   {index > 0 ? " " : ""}
@@ -52,12 +52,12 @@ export function Header() {
 
         {/* Primary action */}
         <Link
-          className="hidden min-h-7.25 max-w-[16ch] flex-wrap items-center justify-center gap-x-1.5 bg-publiex-red px-4 py-1 text-center font-raleway text-[17.81px] font-extrabold uppercase leading-tight text-white whitespace-normal transition [overflow-wrap:normal] [word-break:normal] hover:bg-red-600 md:inline-flex"
+          className="ml-auto hidden min-h-7.25 max-w-[16ch] flex-wrap items-center justify-center gap-x-1.5 bg-publiex-red px-4 py-1 text-center font-raleway text-sm font-extrabold uppercase leading-tight text-white whitespace-normal break-normal transition hover:bg-red-600 md:inline-flex"
           to="/#contacto"
         >
           {"Solicitar propuesta".split(" ").map((word, index) => (
             <span
-              className="inline-block whitespace-nowrap [overflow-wrap:normal] [word-break:keep-all]"
+              className="inline-block whitespace-nowrap wrap-normal break-keep"
               key={`${word}-${index}`}
             >
               {index > 0 ? " " : ""}
@@ -68,7 +68,7 @@ export function Header() {
 
         <button
           aria-label="Abrir navegación"
-          className="inline-flex size-11 items-center justify-center border border-black/15 lg:hidden"
+          className="ml-auto inline-flex size-10 items-center justify-center border border-white/30 text-white lg:hidden md:ml-4"
           type="button"
         >
           <Menu className="size-5" />

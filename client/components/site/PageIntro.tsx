@@ -10,7 +10,7 @@ type PageIntroProps = {
 
 export function PageIntro({ eyebrow, title, description }: PageIntroProps) {
   return (
-    <section className="bg-publiex-gradient px-5 py-24 text-white md:px-10 lg:px-24 xl:py-32">
+    <section className="bg-publiex-gradient px-5 pb-24 pt-36 text-white md:px-10 lg:px-24 xl:pb-32 xl:pt-56">
       <div className="mx-auto max-w-393.5">
         {/* Page masthead */}
         <SectionLabel>{eyebrow}</SectionLabel>
