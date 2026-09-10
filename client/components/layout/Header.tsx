@@ -1,7 +1,9 @@
+import { useEffect, useState } from "react";
 import { Menu } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import { publiexAsset } from "@/lib/assets";
+import { cn } from "@/lib/utils";
 
 const navItems = [
   ["Nosotros", "/about"],
@@ -13,8 +15,43 @@ const navItems = [
 ];
 
 export function Header() {
+  const { pathname } = useLocation();
+  const [isPastHero, setIsPastHero] = useState(pathname !== "/");
+
+  useEffect(() => {
+    const updateHeaderTheme = () => {
+      const hero = document.getElementById("inicio");
+
+      if (!hero) {
+        setIsPastHero(true);
+        return;
+      }
+
+      const headerHeight =
+        document.querySelector("header")?.getBoundingClientRect().height ?? 0;
+
+      setIsPastHero(hero.getBoundingClientRect().bottom <= headerHeight);
+    };
+
+    updateHeaderTheme();
+    window.addEventListener("scroll", updateHeaderTheme, { passive: true });
+    window.addEventListener("resize", updateHeaderTheme);
+
+    return () => {
+      window.removeEventListener("scroll", updateHeaderTheme);
+      window.removeEventListener("resize", updateHeaderTheme);
+    };
+  }, [pathname]);
+
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/35 bg-black/5 text-white">
+    <header
+      className={cn(
+        "fixed inset-x-0 top-0 z-50 border-b transition-colors duration-300",
+        isPastHero
+          ? "border-zinc-200 bg-white text-zinc-800 shadow-sm"
+          : "border-white/35 bg-black/5 text-white",
+      )}
+    >
       <div className="mx-auto flex h-14 w-full max-w-480 items-center justify-start px-5 md:h-16 md:px-10 xl:h-20 xl:px-44.5">
         {/* Brand mark */}
         <Link
@@ -24,16 +61,29 @@ export function Header() {
         >
           <img
             alt="Publiex"
-            className="size-full object-contain brightness-0 invert"
+            className={cn(
+              "size-full object-contain transition duration-300",
+              !isPastHero && "brightness-0 invert",
+            )}
             src={publiexAsset("publiex-logo.svg")}
           />
         </Link>
 
         {/* Desktop navigation */}
-        <nav className="font-uni ml-10 hidden items-stretch divide-x divide-white/35 border-x border-white/35 text-sm font-normal uppercase leading-tight tracking-normal lg:flex xl:ml-16">
+        <nav
+          className={cn(
+            "font-uni ml-10 hidden items-stretch divide-x border-x text-sm font-normal uppercase leading-tight tracking-normal transition-colors duration-300 lg:flex xl:ml-16",
+            isPastHero
+              ? "divide-zinc-300 border-zinc-300"
+              : "divide-white/35 border-white/35",
+          )}
+        >
           {navItems.map(([label, href]) => (
             <Link
-              className="flex min-h-8 max-w-[14ch] flex-wrap items-center justify-center gap-x-1.5 px-4 text-center whitespace-normal break-normal transition hover:text-white/75 xl:px-5"
+              className={cn(
+                "flex min-h-8 max-w-[14ch] flex-wrap items-center justify-center gap-x-1.5 px-4 text-center whitespace-normal break-normal transition xl:px-5",
+                isPastHero ? "hover:text-zinc-950" : "hover:text-white/75",
+              )}
               key={href}
               to={href}
             >
@@ -68,7 +118,12 @@ export function Header() {
 
         <button
           aria-label="Abrir navegación"
-          className="ml-auto inline-flex size-10 items-center justify-center border border-white/30 text-white lg:hidden md:ml-4"
+          className={cn(
+            "ml-auto inline-flex size-10 items-center justify-center border transition-colors duration-300 lg:hidden md:ml-4",
+            isPastHero
+              ? "border-zinc-300 text-zinc-800"
+              : "border-white/30 text-white",
+          )}
           type="button"
         >
           <Menu className="size-5" />
