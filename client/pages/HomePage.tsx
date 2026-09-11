@@ -1,3 +1,4 @@
+﻿import { useEffect, useRef } from "react";
 import { ArrowRight } from "lucide-react";
 
 import { CampaignCta } from "@/components/site/CampaignCta";
@@ -8,17 +9,69 @@ import { cases, insights, solutions, stats } from "@/content/home";
 import { publiexAsset } from "@/lib/assets";
 
 export default function HomePage() {
+  const heroRef = useRef<HTMLElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const hero = heroRef.current;
+    const video = videoRef.current;
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+
+    if (!hero || !video || prefersReducedMotion) {
+      return;
+    }
+
+    let animationFrame = 0;
+
+    const updateParallax = () => {
+      animationFrame = 0;
+      const { bottom, top } = hero.getBoundingClientRect();
+
+      if (bottom < 0 || top > window.innerHeight) {
+        return;
+      }
+
+      const offset = Math.min(Math.max(-top * 0.3, 0), 160);
+      video.style.transform = `translate3d(0, ${offset}px, 0) scale(1.08)`;
+    };
+
+    const requestParallaxUpdate = () => {
+      if (animationFrame) {
+        return;
+      }
+
+      animationFrame = window.requestAnimationFrame(updateParallax);
+    };
+
+    updateParallax();
+    window.addEventListener("scroll", requestParallaxUpdate, { passive: true });
+    window.addEventListener("resize", requestParallaxUpdate);
+
+    return () => {
+      window.removeEventListener("scroll", requestParallaxUpdate);
+      window.removeEventListener("resize", requestParallaxUpdate);
+
+      if (animationFrame) {
+        window.cancelAnimationFrame(animationFrame);
+      }
+    };
+  }, []);
+
   return (
     <main className="bg-white text-black">
       {/* Hero */}
       <section
         className="relative h-270 overflow-hidden text-white"
         id="inicio"
+        ref={heroRef}
       >
         <video
+          ref={videoRef}
           aria-hidden="true"
           autoPlay
-          className="absolute inset-0 size-full object-cover"
+          className="absolute inset-0 size-full origin-center object-cover will-change-transform"
           loop
           muted
           playsInline
@@ -38,12 +91,12 @@ export default function HomePage() {
               </span>
             </h1>
             <p className="mx-auto mt-7 max-w-237.5 font-raleway text-[clamp(1.1rem,2.3vw,1.965rem)] leading-tight">
-              Grandes formatos, movilidad, tecnología y creatividad para hacer
+              Grandes formatos, movilidad, tecnologí­a y creatividad para hacer
               que su marca sea parte del paisaje y de la conversación.
             </p>
             <div className="mt-10 flex flex-col text-lg items-center justify-center gap-5 sm:flex-row">
               <PrimaryLink href="#contacto" weight="normal">
-                Diseñar mi campaña
+                Disear mi campaña
               </PrimaryLink>
               <a
                 className="font-raleway text-lg font-normal uppercase underline underline-offset-4"
@@ -93,7 +146,7 @@ export default function HomePage() {
       <section className="relative overflow-hidden text-white">
         <img
           alt="Valla iluminada en una carretera de Costa Rica durante la noche"
-          className="absolute inset-0 size-full object-cover"
+          className="absolute inset-0 size-full origin-center object-cover will-change-transform"
           src={publiexAsset("figma-skip-ad.jpeg")}
         />
         <div className="absolute inset-0 bg-black/30" />
@@ -105,8 +158,8 @@ export default function HomePage() {
             </h2>
             <p className="mt-8 max-w-165 text-xl leading-tight md:text-[31.44px]">
               Creamos presencia real para marcas que no quieren pasar
-              desapercibidas. Combinamos ubicaciones estratégicas, creatividad,
-              tecnología y datos para convertir cada recorrido en una
+              desapercibidas. Combinamos ubicaciones estratÃ©gicas, creatividad,
+              tecnologí­a y datos para convertir cada recorrido en una
               oportunidad de conexión.
             </p>
           </div>
@@ -117,7 +170,7 @@ export default function HomePage() {
       <section className="relative overflow-hidden text-white" id="nosotros">
         <img
           alt="Estructura de publicidad exterior Publiex"
-          className="absolute inset-0 size-full object-cover"
+          className="absolute inset-0 size-full origin-center object-cover will-change-transform"
           src={publiexAsset("figma-about.jpeg")}
         />
         <div className="absolute inset-0 bg-black/35" />
@@ -135,7 +188,7 @@ export default function HomePage() {
             </h2>
             <p className="font-uni mt-8 text-xl leading-tight md:text-[31.44px]">
               Somos una empresa especializada desde 1999 en publicidad exterior
-              con más de 27 años de trayectoria en Costa Rica, dándole a cada
+              con mÃ¡s de 27 años de trayectoria en Costa Rica, dándole a cada
               cliente la solución para hacer crecer sus marcas.
             </p>
           </div>
@@ -152,7 +205,7 @@ export default function HomePage() {
             <SectionLabel>Soluciones publicitarias</SectionLabel>
             <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
               <h2 className="font-raleway text-[clamp(2.7rem,6.5vw,5.965rem)] font-medium leading-[1.04]">
-                Un país.
+                Un paí­s.
                 <span className="block text-publiex-red">
                   Infinitas formas de ser visto.
                 </span>
@@ -193,7 +246,7 @@ export default function HomePage() {
       <section className="overflow-hidden">
         <div className="mx-auto grid min-h-180 w-full max-w-480 gap-0 lg:grid-cols-[51.5%_48.5%] xl:min-h-275.25">
           <img
-            alt="Mega formato Publiex en una vía principal"
+            alt="Mega formato Publiex en una vÃ­a principal"
             className="h-full min-h-130 w-full object-cover"
             src={publiexAsset("figma-large-format.jpeg")}
           />
@@ -253,12 +306,13 @@ export default function HomePage() {
           <div className="px-5 py-20 md:px-10 lg:px-24 xl:py-32.5 xl:pl-20.5">
             <SectionLabel>Publicidad en transporte</SectionLabel>
             <h2 className="max-w-183 font-raleway text-[clamp(2.4rem,5.8vw,6.4rem)] font-semibold leading-[0.97]">
-              Una marca que acompaña el recorrido se vuelve parte del día a día.
+              Una marca que acompaÃ±a el recorrido se vuelve parte del dÃ­a a
+              dÃ­a.
             </h2>
             <p className="mt-7 max-w-2xl text-xl leading-tight md:text-[31.44px]">
-              Desde la dominación exterior hasta las experiencias interiores, el
-              tren combina alcance urbano, permanencia y múltiples momentos de
-              contacto.
+              Desde la dominación exterior hasta las experiencias interiores,
+              el tren combina alcance urbano, permanencia y múltiples momentos
+              de contacto.
             </p>
             <div className="mt-9">
               <PrimaryLink href="#contacto" tone="white">
@@ -274,7 +328,7 @@ export default function HomePage() {
         <div className="mx-auto grid w-full max-w-480 gap-10 px-5 py-20 md:px-10 lg:grid-cols-2 lg:px-24 xl:min-h-310.75 xl:gap-53.25 xl:px-23.25 xl:py-19">
           <article>
             <img
-              alt="Pantalla digital Publiex con contenido dinámico"
+              alt="Pantalla digital Publiex con contenido dinÃ¡mico"
               className="aspect-756/518 w-full object-cover"
               src={publiexAsset("figma-dooh-raw-1.jpeg")}
             />
@@ -283,7 +337,7 @@ export default function HomePage() {
               Mensajes que se mueven al ritmo de la ciudad.
             </h2>
             <p className="mt-5 max-w-2xl text-lg leading-tight md:text-xl">
-              Contenido flexible y de alto impacto para activar campañas
+              Contenido flexible y de alto impacto para activar campaÃ±as
               relevantes en los momentos que importan.
             </p>
             <div className="mt-8">
@@ -298,12 +352,12 @@ export default function HomePage() {
             />
             <SectionLabel dark>Proyectos especiales</SectionLabel>
             <h2 className="font-raleway text-[clamp(2rem,4vw,4.375rem)] font-semibold leading-tight md:leading-20">
-              Cuando la idea sale del formato, empieza la conversación.
+              Cuando la idea sale del formato, empieza la conversaciÃ³n.
             </h2>
             <p className="mt-5 max-w-2xl text-lg leading-tight md:text-xl">
-              Salientes, volumétricos, sobrepuestos e iluminación LED convierten
-              una ubicación en una ejecución que la audiencia recuerda y
-              comparte.
+              Salientes, volumétricos, sobrepuestos e iluminación LED
+              convierten una ubicación en una ejecución que la audiencia
+              recuerda y comparte.
             </p>
             <div className="mt-8">
               <PrimaryLink href="#contacto">
@@ -339,10 +393,10 @@ export default function HomePage() {
                 1.578.841
               </p>
               <p className="mt-4 font-raleway text-lg font-bold uppercase">
-                Audiencia única estimada
+                Audiencia Única estimada
               </p>
               <p className="mt-3 max-w-xs text-sm">
-                Estimación basada en dispositivos móviles únicos detectados
+                Estimación basada en dispositivos mÃ³viles Ãºnicos detectados
                 frente a los activos.
               </p>
             </div>
@@ -373,7 +427,7 @@ export default function HomePage() {
       >
         <div className="mx-auto w-full max-w-480 px-5 py-20 md:px-10 lg:px-24">
           <div className="mx-auto max-w-393.5">
-            <SectionLabel>Casos de éxito</SectionLabel>
+            <SectionLabel>Casos de Éxito</SectionLabel>
             <h2 className="font-raleway text-[clamp(2.4rem,5.5vw,4.965rem)] font-semibold leading-tight md:leading-20.5">
               Campañas que se volvieron{" "}
               <span className="text-publiex-red">parte del viaje.</span>
@@ -456,7 +510,8 @@ export default function HomePage() {
             <div className="bg-zinc-200 px-5 py-16 md:px-10 lg:px-10.75">
               <SectionLabel dark>Para propietarios</SectionLabel>
               <h2 className="font-raleway text-[clamp(2rem,4vw,3.375rem)] font-semibold leading-tight md:leading-13.25">
-                Evalúe el potencial comercial de su terreno, edificio o espacio.
+                Evalúe el potencial comercial de su terreno, edificio o
+                espacio.
               </h2>
               <p className="mt-5 max-w-2xl text-lg leading-tight">
                 Un proceso claro, profesional y respaldado por Publiex para
@@ -483,26 +538,26 @@ export default function HomePage() {
             <h2 className="max-w-160 font-raleway text-[clamp(2.5rem,5.6vw,5rem)] font-semibold leading-tight md:leading-20.5">
               Cuéntenos qué quiere lograr.
               <span className="block text-publiex-red">
-                Nosotros encontramos dónde.
+                Nosotros encontramos dÃ³nde.
               </span>
             </h2>
             <p className="mt-7 max-w-162.75 text-xl leading-tight md:text-[27px]">
-              Un formulario breve y útil para que el equipo comercial reciba el
-              contexto correcto y responda con una recomendación construida para
-              su marca.
+              Un formulario breve y Ãºtil para que el equipo comercial reciba el
+              contexto correcto y responda con una recomendación construida
+              para su marca.
             </p>
           </div>
 
           {/* Proposal form */}
           <form className="grid gap-5 bg-white p-6 text-black shadow-2xl md:grid-cols-2 md:p-10 xl:p-12">
             <label className="grid gap-2 font-raleway text-sm font-bold uppercase">
-              Qué quiere lograr
+              QuÃ© quiere lograr
               <select className="min-h-12 border border-zinc-300 bg-white px-4 font-uni text-base font-normal normal-case text-black">
                 <option>Seleccione un objetivo</option>
                 <option>Generar reconocimiento de marca</option>
                 <option>Lanzar un producto o servicio</option>
                 <option>Aumentar tráfico a punto de venta</option>
-                <option>Dominar una zona estratégica</option>
+                <option>Dominar una zona estratÃ©gica</option>
               </select>
             </label>
             <label className="grid gap-2 font-raleway text-sm font-bold uppercase">
