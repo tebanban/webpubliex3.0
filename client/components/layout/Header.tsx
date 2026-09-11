@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+﻿import { useEffect, useState } from "react";
 import { Menu } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
@@ -9,21 +9,24 @@ const navItems = [
   ["Nosotros", "/about"],
   ["Soluciones publicitarias", "/products"],
   ["Explorar ubicaciones", "/locations"],
-  ["Analítica", "/#analitica"],
+  ["AnalÃ­tica", "/#analitica"],
   ["Actualidad", "/#actualidad"],
   ["Casos", "/case-studies"],
 ];
 
+const transparentHeroPaths = new Set(["/", "/products", "/case-studies"]);
+
 export function Header() {
   const { pathname } = useLocation();
-  const [isPastHero, setIsPastHero] = useState(pathname !== "/");
+  const hasTransparentHero = transparentHeroPaths.has(pathname);
+  const [isPastHero, setIsPastHero] = useState(!hasTransparentHero);
 
   useEffect(() => {
     const updateHeaderTheme = () => {
       const hero = document.getElementById("inicio");
 
       if (!hero) {
-        setIsPastHero(true);
+        setIsPastHero(!hasTransparentHero);
         return;
       }
 
@@ -41,7 +44,7 @@ export function Header() {
       window.removeEventListener("scroll", updateHeaderTheme);
       window.removeEventListener("resize", updateHeaderTheme);
     };
-  }, [pathname]);
+  }, [hasTransparentHero, pathname]);
 
   return (
     <header
@@ -117,7 +120,7 @@ export function Header() {
         </Link>
 
         <button
-          aria-label="Abrir navegación"
+          aria-label="Abrir navegaciÃ³n"
           className={cn(
             "ml-auto inline-flex size-10 items-center justify-center border transition-colors duration-300 lg:hidden md:ml-4",
             isPastHero

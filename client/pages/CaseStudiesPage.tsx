@@ -91,9 +91,12 @@ function CaseStudyCard({ study }: { study: CaseStudy }) {
 
 export default function CaseStudiesPage() {
   return (
-    <main className="bg-publiex-navy pt-14 text-white md:pt-16 xl:pt-20">
+    <main className="bg-publiex-navy text-white">
       {/* Hero */}
-      <section className="relative min-h-160 overflow-hidden md:min-h-180 xl:min-h-226">
+      <section
+        className="relative min-h-160 overflow-hidden md:min-h-180 xl:min-h-226"
+        id="inicio"
+      >
         <img
           alt="Campaña Publiex iluminada sobre una ruta nocturna"
           className="absolute inset-0 size-full object-cover"

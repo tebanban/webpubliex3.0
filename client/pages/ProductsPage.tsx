@@ -311,9 +311,12 @@ function ProductCard({ product }: { product: Product }) {
 
 export default function ProductsPage() {
   return (
-    <main className="bg-white pt-14 text-black md:pt-16 xl:pt-20">
+    <main className="bg-white text-black">
       {/* Hero */}
-      <section className="relative min-h-210 overflow-hidden text-white xl:min-h-249">
+      <section
+        className="relative min-h-210 overflow-hidden text-white xl:min-h-249"
+        id="inicio"
+      >
         <img
           alt="Valla Publiex en carretera"
           className="absolute inset-0 size-full object-cover"
