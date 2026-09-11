@@ -63,7 +63,7 @@ export default function HomePage() {
     <main className="bg-white text-black">
       {/* Hero */}
       <section
-        className="relative h-270 overflow-hidden text-white"
+        className="relative h-230 overflow-hidden text-white"
         id="inicio"
         ref={heroRef}
       >

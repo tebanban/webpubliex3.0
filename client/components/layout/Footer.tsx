@@ -66,17 +66,8 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="relative min-h-142 overflow-hidden bg-publiex-gradient px-5 py-10 text-white md:px-10 lg:px-24 xl:py-10.75">
-      <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
-        <img
-          alt=""
-          aria-hidden="true"
-          className="h-486.75 w-142 rotate-90 object-fill"
-          src={publiexAsset("footer-background.svg")}
-        />
-      </div>
-
-      <div className="relative mx-auto grid min-h-122 max-w-393.5 grid-rows-[auto_1fr_auto]">
+    <footer className="relative min-h-112 overflow-hidden bg-publiex-gradient px-5 py-8 text-white md:px-10 lg:px-24 xl:py-8">
+      <div className="relative mx-auto grid min-h-96 max-w-393.5 grid-rows-[auto_1fr_auto]">
         {/* Footer top */}
         <div className="relative flex min-h-20.5 items-start justify-center">
           <Link
@@ -105,13 +96,13 @@ export function Footer() {
         </div>
 
         {/* Footer menu columns */}
-        <div className="grid gap-10 pt-14.5 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-[170px_170px_119px_172px] xl:justify-between">
+        <div className="grid gap-8 pt-5 pb-2 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-[170px_170px_119px_172px] xl:justify-between">
           {footerGroups.map((group) => (
             <nav aria-label={group.title} key={group.title}>
-              <h3 className="font-uni text-base font-bold uppercase leading-9 text-[#3e88bd]">
+              <h3 className="font-uni text-base  uppercase leading-9 text-[#3e88bd]">
                 {group.title}
               </h3>
-              <ul className="text-base uppercase leading-9">
+              <ul className="text-base font-normal uppercase leading-9">
                 {group.links.map(([label, href]) => (
                   <li key={label}>
                     <a className="transition hover:text-white/80" href={href}>
@@ -125,7 +116,7 @@ export function Footer() {
         </div>
 
         {/* Social links */}
-        <div className="flex justify-center gap-11 pb-13.25 pt-10">
+        <div className="flex justify-center gap-11 border-t border-white/25  pt-7">
           {socialLinks.map((item) => (
             <a
               aria-label={item.label}
