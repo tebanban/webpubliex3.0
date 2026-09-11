@@ -9,7 +9,7 @@ const navItems = [
   ["Nosotros", "/about"],
   ["Soluciones publicitarias", "/products"],
   ["Explorar ubicaciones", "/locations"],
-  ["AnalÃ­tica", "/#analitica"],
+  ["Analítica", "/#analitica"],
   ["Actualidad", "/#actualidad"],
   ["Casos", "/case-studies"],
 ];
@@ -120,7 +120,7 @@ export function Header() {
         </Link>
 
         <button
-          aria-label="Abrir navegaciÃ³n"
+          aria-label="Abrir navegación"
           className={cn(
             "ml-auto inline-flex size-10 items-center justify-center border transition-colors duration-300 lg:hidden md:ml-4",
             isPastHero
