@@ -1,4 +1,4 @@
-﻿import { useEffect, useState } from "react";
+﻿import { useEffect, useRef, useState } from "react";
 import { Menu } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
@@ -20,22 +20,57 @@ export function Header() {
   const { pathname } = useLocation();
   const hasTransparentHero = transparentHeroPaths.has(pathname);
   const [isPastHero, setIsPastHero] = useState(!hasTransparentHero);
+  const [isHeaderHidden, setIsHeaderHidden] = useState(false);
+  const hasCrossedHeroMiddle = useRef(false);
+  const previousScrollY = useRef(0);
 
   useEffect(() => {
     const updateHeaderTheme = () => {
       const hero = document.getElementById("inicio");
+      const currentScrollY = window.scrollY;
+      const isScrollingUp = currentScrollY < previousScrollY.current - 2;
+      const isScrollingDown = currentScrollY > previousScrollY.current + 2;
 
       if (!hero) {
         setIsPastHero(!hasTransparentHero);
+        setIsHeaderHidden(false);
+        hasCrossedHeroMiddle.current = false;
+        previousScrollY.current = currentScrollY;
         return;
       }
 
       const headerHeight =
         document.querySelector("header")?.getBoundingClientRect().height ?? 0;
+      const heroRect = hero.getBoundingClientRect();
+      const heroTop = heroRect.top + currentScrollY;
+      const heroMiddleScrollY = heroTop + heroRect.height / 2 - headerHeight;
+      const hasReachedHeroMiddle = currentScrollY >= heroMiddleScrollY;
 
-      setIsPastHero(hero.getBoundingClientRect().bottom <= headerHeight);
+      if (!hasTransparentHero || currentScrollY <= 4) {
+        setIsPastHero(!hasTransparentHero);
+        setIsHeaderHidden(false);
+        hasCrossedHeroMiddle.current = false;
+        previousScrollY.current = currentScrollY;
+        return;
+      }
+
+      // Hide the header chrome when it reaches the hero copy on downward scroll.
+      if (isScrollingDown && hasReachedHeroMiddle) {
+        hasCrossedHeroMiddle.current = true;
+        setIsHeaderHidden(true);
+        setIsPastHero(false);
+      } else if (isScrollingUp && hasCrossedHeroMiddle.current) {
+        setIsHeaderHidden(false);
+        setIsPastHero(true);
+      } else if (!hasReachedHeroMiddle) {
+        setIsHeaderHidden(false);
+        setIsPastHero(false);
+      }
+
+      previousScrollY.current = currentScrollY;
     };
 
+    previousScrollY.current = window.scrollY;
     updateHeaderTheme();
     window.addEventListener("scroll", updateHeaderTheme, { passive: true });
     window.addEventListener("resize", updateHeaderTheme);
@@ -50,16 +85,21 @@ export function Header() {
     <header
       className={cn(
         "fixed inset-x-0 top-0 z-50 border-b transition-colors duration-300",
-        isPastHero
-          ? "border-zinc-200 bg-white text-zinc-800 shadow-sm"
-          : "border-white/35 bg-black/5 text-white",
+        isHeaderHidden
+          ? "pointer-events-none border-transparent bg-transparent text-white"
+          : isPastHero
+            ? "border-zinc-200 bg-white text-zinc-800 shadow-sm"
+            : "border-white/35 bg-black/5 text-white",
       )}
     >
       <div className="mx-auto flex h-14 w-full max-w-480 items-center justify-start px-5 md:h-16 md:px-10 xl:h-20 xl:px-44.5">
         {/* Brand mark */}
         <Link
           aria-label="Publiex"
-          className="block h-7.5 w-21 md:h-9 md:w-25 xl:h-10 xl:w-28"
+          className={cn(
+            "block h-7.5 w-21 transition duration-300 md:h-9 md:w-25 xl:h-10 xl:w-28",
+            isHeaderHidden && "pointer-events-none opacity-0",
+          )}
           to="/"
         >
           <img
@@ -75,7 +115,8 @@ export function Header() {
         {/* Desktop navigation */}
         <nav
           className={cn(
-            "font-uni ml-10 hidden items-stretch divide-x border-x text-sm font-normal uppercase leading-tight tracking-normal transition-colors duration-300 lg:flex xl:ml-16",
+            "font-uni ml-10 hidden items-stretch divide-x border-x text-sm font-normal uppercase leading-tight tracking-normal transition duration-300 lg:flex xl:ml-16",
+            isHeaderHidden && "pointer-events-none opacity-0",
             isPastHero
               ? "divide-zinc-300 border-zinc-300"
               : "divide-white/35 border-white/35",
@@ -105,7 +146,7 @@ export function Header() {
 
         {/* Primary action */}
         <Link
-          className="ml-auto hidden min-h-7.25 max-w-[16ch] flex-wrap items-center justify-center gap-x-1.5 bg-publiex-red px-4 py-1 text-center font-raleway text-sm font-extrabold uppercase leading-tight text-white whitespace-normal break-normal transition hover:bg-red-600 md:inline-flex"
+          className="pointer-events-auto ml-auto hidden min-h-7.25 max-w-[16ch] flex-wrap items-center justify-center gap-x-1.5 bg-publiex-red px-4 py-1 text-center font-raleway text-sm font-extrabold uppercase leading-tight text-white whitespace-normal break-normal transition hover:bg-red-600 md:inline-flex"
           to="/#contacto"
         >
           {"Solicitar propuesta".split(" ").map((word, index) => (
@@ -122,7 +163,8 @@ export function Header() {
         <button
           aria-label="Abrir navegación"
           className={cn(
-            "ml-auto inline-flex size-10 items-center justify-center border transition-colors duration-300 lg:hidden md:ml-4",
+            "ml-auto inline-flex size-10 items-center justify-center border transition duration-300 lg:hidden md:ml-4",
+            isHeaderHidden && "pointer-events-none opacity-0",
             isPastHero
               ? "border-zinc-300 text-zinc-800"
               : "border-white/30 text-white",
