@@ -477,14 +477,26 @@ export default function HomePage() {
         className="overflow-hidden bg-publiex-navy text-white"
         id="casos"
       >
-        <div className="mx-auto w-full max-w-480 px-5 py-20 md:px-10 lg:px-24">
+        <div className="mx-auto w-full max-w-480 px-5 py-20 md:px-10 lg:px-24 xl:min-h-285.25 xl:pb-24 xl:pt-17.75">
           <div className="mx-auto max-w-393.5">
-            <SectionLabel>Casos de éxito</SectionLabel>
-            <h2 className="font-raleway text-[clamp(2.4rem,5.5vw,4.965rem)] font-semibold leading-tight md:leading-20.5">
-              Campañas que se volvieron{" "}
-              <span className="text-publiex-red">parte del viaje.</span>
-            </h2>
-            <div className="mt-12 grid gap-5 md:grid-cols-3 xl:gap-10">
+            <div className="relative">
+              <SectionLabel>Casos de éxito</SectionLabel>
+              <h2 className="mt-14.5 max-w-273 font-raleway text-[clamp(2.4rem,5.5vw,4.965rem)] font-semibold leading-tight md:leading-20.5">
+                Campañas que se
+                <span className="block">
+                  volvieron{" "}
+                  <span className="text-publiex-red">parte del viaje</span>
+                </span>
+              </h2>
+              <a
+                className="mt-8 block w-full max-w-114.75 font-inter text-[16.45px] uppercase leading-normal text-white xl:absolute xl:right-0 xl:bottom-2 xl:mt-0"
+                href="/case-studies"
+              >
+                Ver todos los casos
+                <span className="mt-2 block border-t border-publiex-red" />
+              </a>
+            </div>
+            <div className="mt-16 grid gap-5 md:grid-cols-3 xl:mt-28 xl:grid-cols-[486px_486px_483px] xl:gap-10">
               {cases.map((item) => (
                 <ImagePanel
                   image={item.image}
@@ -492,7 +504,7 @@ export default function HomePage() {
                   title={item.title}
                   variant="case"
                 >
-                  <div className="absolute left-6 top-6 right-6 flex justify-between font-raleway text-xs font-bold uppercase">
+                  <div className="absolute left-4 top-3.5 right-4 flex justify-between font-raleway text-[15px] font-semibold uppercase leading-normal">
                     <span>{item.tag}</span>
                     <span>{item.type}</span>
                   </div>
