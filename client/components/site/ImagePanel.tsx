@@ -14,6 +14,12 @@ const panelHeight = {
   insight: "min-h-80",
 };
 
+const panelPadding = {
+  solution: "p-4 md:p-5",
+  case: "p-6 md:p-8",
+  insight: "p-6 md:p-8",
+};
+
 export function ImagePanel({
   image,
   title,
@@ -35,7 +41,9 @@ export function ImagePanel({
         src={publiexAsset(image)}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-black/10 to-black/80" />
-      <div className="relative flex h-full min-h-0 flex-col justify-end p-6 text-white md:p-8">
+      <div
+        className={`relative flex h-full min-h-0 flex-col justify-end text-white ${panelPadding[variant]}`}
+      >
         {children}
       </div>
     </article>

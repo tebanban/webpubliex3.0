@@ -200,7 +200,7 @@ export default function HomePage() {
         className="overflow-hidden bg-publiex-gradient text-white"
         id="soluciones"
       >
-        <div className="mx-auto w-full max-w-480 px-5 py-20 md:px-10 lg:px-24 xl:min-h-535 xl:pt-17.75">
+        <div className="mx-auto w-full max-w-480 px-5 py-10 md:px-10 lg:px-24 xl:min-h-535 xl:pt-17.75">
           <div className="mx-auto max-w-393.5">
             <SectionLabel>Soluciones publicitarias</SectionLabel>
             <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
@@ -224,16 +224,21 @@ export default function HomePage() {
                   key={solution.title}
                   title={solution.title}
                 >
-                  <p className="max-w-md font-raleway text-[clamp(1rem,6.7cqw,2.15rem)] font-semibold leading-tight">
-                    {solution.description}
-                  </p>
-                  <div className="mt-[clamp(0.75rem,5cqw,2rem)] border-t border-white pt-[clamp(0.75rem,3.8cqw,1.25rem)]">
-                    <p className="font-raleway text-[clamp(0.55rem,2.2cqw,0.7rem)] font-black uppercase tracking-[0.18em]">
-                      Explorar
+                  <h3 className="absolute right-4 top-4 max-w-[58%] text-right font-raleway text-[clamp(0.9rem,5cqw,1.625rem)] font-bold uppercase leading-tight md:right-5 md:top-5">
+                    {solution.title}
+                  </h3>
+                  <div className="w-full text-left">
+                    <p className="font-raleway text-[clamp(1rem,6.7cqw,2.15rem)] font-semibold leading-tight">
+                      {solution.description}
                     </p>
-                    <h3 className="mt-[clamp(0.25rem,1.8cqw,0.5rem)] font-raleway text-[clamp(0.9rem,5cqw,1.625rem)] font-bold uppercase">
-                      {solution.title}
-                    </h3>
+                    <div className="mt-[clamp(0.35rem,2.4cqw,0.9rem)] w-full border-t border-white pt-[clamp(0.35rem,2.2cqw,0.85rem)]">
+                      <a
+                        className="font-raleway text-[clamp(0.55rem,2.2cqw,0.7rem)] font-black uppercase tracking-[0.18em] transition hover:text-white/75"
+                        href="#contacto"
+                      >
+                        Explorar
+                      </a>
+                    </div>
                   </div>
                 </ImagePanel>
               ))}
@@ -244,7 +249,7 @@ export default function HomePage() {
 
       {/* Large format */}
       <section className="overflow-hidden">
-        <div className="mx-auto grid min-h-180 w-full max-w-480 gap-0 lg:grid-cols-[51.5%_48.5%] xl:min-h-275.25">
+        <div className="mx-auto grid min-h-180 w-full max-w-480 gap-0 lg:grid-cols-2 xl:min-h-275.25">
           <img
             alt="Mega formato Publiex en una vía principal"
             className="h-full min-h-130 w-full object-cover"
@@ -269,7 +274,7 @@ export default function HomePage() {
 
       {/* Format highlights */}
       <section className="overflow-hidden">
-        <div className="mx-auto grid min-h-180 w-full max-w-480 gap-0 lg:grid-cols-[51%_49%] xl:min-h-275.75">
+        <div className="mx-auto grid min-h-180 w-full max-w-480 gap-0 lg:grid-cols-2 xl:min-h-275.75">
           <div className="px-5 py-20 md:px-10 lg:px-24 xl:py-18.5 xl:pl-43.25 xl:pr-15">
             <SectionLabel dark>Mobiliario urbano</SectionLabel>
             <h2 className="max-w-186 font-raleway text-[clamp(2.3rem,5vw,6.4rem)] font-semibold leading-[0.97]">
@@ -294,10 +299,10 @@ export default function HomePage() {
 
       {/* Transport and special projects */}
       <section
-        className="overflow-hidden bg-publiex-navy text-white"
+        className="overflow-hidden bg-publiex-sports-gradient text-white"
         id="analitica"
       >
-        <div className="mx-auto grid min-h-180 w-full max-w-480 lg:grid-cols-[52%_48%] xl:min-h-275.25">
+        <div className="mx-auto grid min-h-180 w-full max-w-480 lg:grid-cols-2 xl:min-h-275.25">
           <img
             alt="Publicidad exterior en tren"
             className="h-full min-h-130 w-full object-cover"
@@ -373,13 +378,20 @@ export default function HomePage() {
           <div className="mx-auto grid max-w-393.5 gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
             <div>
               <SectionLabel dark>Datos y audiencias</SectionLabel>
-              <h2 className="font-raleway text-[clamp(2.7rem,6vw,7.465rem)] font-bold uppercase leading-[0.94]">
-                No compre espacios.
-                <span className="block lowercase">Conquiste audiencias.</span>
+              <h2 className="font-raleway font-bold leading-none">
+                <span className="block whitespace-nowrap text-[clamp(2.25rem,4vw,60px)] text-publiex-red">
+                  No compre espacios.
+                </span>
+                <span className="mt-3 block text-[clamp(4.5rem,11.75vw,225px)] leading-[0.86]">
+                  Conquiste
+                  <span className="block lowercase">audiencias</span>
+                </span>
               </h2>
-              <p className="font-uni mt-7 max-w-164 text-xl leading-tight md:text-[31.44px]">
+              <p className="font-uni mt-7 max-w-210 text-xl leading-tight md:text-[31px]">
                 Traducimos ubicaciones, movilidad, rutas y exposición en
-                decisiones de campaña más claras.
+                decisiones de campaña más claras. La información operativa
+                permite comprender el alcance de un ecosistema que conecta
+                trabajo, estudio y actividad económica.
               </p>
               <div className="mt-9">
                 <PrimaryLink href="#contacto" tone="blue">

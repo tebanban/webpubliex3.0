@@ -1,4 +1,4 @@
-/** @import must precede all other statements */
+﻿/** @import must precede all other statements */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Raleway:wght@400;600;700;800;900&display=swap");
 
 @import "tailwindcss";
@@ -178,5 +178,9 @@
 
   .bg-publiex-gradient {
     background-image: linear-gradient(338deg, #0f62e7 18.83%, #000023 160.7%);
+  }
+
+  .bg-publiex-sports-gradient {
+    background-image: linear-gradient(338deg, #002d76 18.83%, #000023 160.7%);
   }
 }
