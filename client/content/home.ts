@@ -1,4 +1,4 @@
-export const solutions = [
+﻿export const solutions = [
   {
     title: "Vallas unipolares",
     description: "Una presencia que se convirtió en punto de referencia.",

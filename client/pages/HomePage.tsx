@@ -217,7 +217,7 @@ export default function HomePage() {
                 Ver todas las soluciones
               </a>
             </div>
-            <div className="mt-21.5 grid gap-5 md:grid-cols-2 xl:grid-cols-3 xl:gap-4">
+            <div className="mt-21.5 grid grid-cols-1 gap-x-5 gap-y-5 md:grid-cols-2 xl:grid-cols-3">
               {solutions.map((solution) => (
                 <ImagePanel
                   image={solution.image}
