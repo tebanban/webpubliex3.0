@@ -523,8 +523,11 @@ export default function HomePage() {
           <div className="mx-auto max-w-393.5">
             <SectionLabel dark>Actualidad e insights</SectionLabel>
             <h2 className="font-raleway text-[clamp(2.4rem,5.5vw,4.965rem)] font-semibold leading-tight md:leading-20.5">
-              Lo que hacemos. Lo que aprendemos.{" "}
-              <span className="text-publiex-red">Lo que sigue.</span>
+              Lo que hacemos.
+              <span className="block">
+                Lo que aprendemos.{" "}
+                <span className="text-publiex-red">Lo que sigue.</span>
+              </span>
             </h2>
             <div className="mt-12 grid gap-5 md:grid-cols-3 xl:grid-cols-[573px_481px_481px] xl:gap-4.75">
               {insights.map((item) => (

@@ -24,7 +24,7 @@ const caseStudies = [
   {
     category: "DOOH",
     title: "Una pantalla que cambió con la ciudad",
-    image: "figma-dooh-raw-1.jpeg",
+    image: "case-screen.png",
     imageLayout: "top",
     body: [
       "Las pantallas digitales permiten adaptar mensajes sin perder presencia en calle. Este caso aprovecha contenido dinámico para mantener la campaña activa, flexible y alineada con distintos momentos de comunicación.",

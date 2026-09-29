@@ -77,7 +77,7 @@ export const cases = [
     tag: "Contexto",
     type: "DOOH",
     title: "Una pantalla que cambió con la ciudad.",
-    image: "figma-dooh-raw-1.jpeg",
+    image: "case-screen.png",
   },
 ];
 
