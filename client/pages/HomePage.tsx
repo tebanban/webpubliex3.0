@@ -556,17 +556,17 @@ export default function HomePage() {
       {/* Proposal paths */}
       <section className="overflow-hidden">
         <div className="mx-auto w-full max-w-480 xl:py-21.25">
-          <div className="mx-auto grid max-w-393.5 md:grid-cols-2">
+          <div className="mx-auto grid max-w-393.5 gap-5 md:grid-cols-2">
             <div className="bg-publiex-gradient px-5 py-16 text-white md:px-10 lg:px-10.75">
               <SectionLabel>Para agencias</SectionLabel>
               <h2 className="font-raleway text-[clamp(2rem,4vw,3.375rem)] font-semibold leading-tight md:leading-13.25">
-                Acceso a inventario, especificaciones y propuestas en un solo
-                lugar.
+                Más velocidad para planificar.
+                Más impacto para presentar.
               </h2>
               <p className="mt-5 max-w-2xl text-lg leading-tight">
-                Media kits, disponibilidad, propuestas co-brandeadas y
-                seguimiento de campañas para equipos que necesitan velocidad y
-                precisión.
+                Una experiencia diseñada para planners, compradores de medios 
+                y equipos comerciales que necesitan pasar de la búsqueda a 
+                la propuesta sin fricción.
               </p>
               <div className="mt-8">
                 <PrimaryLink href="#contacto" tone="white">
@@ -577,15 +577,16 @@ export default function HomePage() {
             <div className="bg-zinc-200 px-5 py-16 md:px-10 lg:px-10.75">
               <SectionLabel dark>Para propietarios</SectionLabel>
               <h2 className="font-raleway text-[clamp(2rem,4vw,3.375rem)] font-semibold leading-tight md:leading-13.25">
-                Evalúe el potencial comercial de su terreno, edificio o espacio.
+                Su espacio puede convertirse en un nuevo punto de referencia.
               </h2>
               <p className="mt-5 max-w-2xl text-lg leading-tight">
-                Un proceso claro, profesional y respaldado por Publiex para
-                valorar nuevas ubicaciones.
+                Una experiencia diseñada para planners, compradores de medios
+                 y equipos comerciales que necesitan pasar de la búsqueda a la
+                 propuesta sin fricción.
               </p>
               <div className="mt-8">
                 <PrimaryLink href="#contacto" tone="blue">
-                  Postular una ubicación
+                  Enviar mi ubicación
                 </PrimaryLink>
               </div>
             </div>

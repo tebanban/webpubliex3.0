@@ -91,17 +91,17 @@ export const insights = [
     image: "figma-insight-innovation.jpeg",
   },
   {
-    tag: "Sostenibilidad",
-    title: "Medir antes de comunicar.",
-    description:
-      "Datos, ubicación y criterio creativo para decidir dónde activar una campaña exterior.",
+    tag: "Insights OOH",
+    title: "De visibilidad a dominación visual.",
+    description:""
+      ,
     image: "figma-insight-sustainability.jpeg",
   },
   {
-    tag: "Insights OOH",
-    title: "De visibilidad a dominación visual.",
+    tag: "Sostenibilidad",
+    title: "Medir antes de comunicar.",
     description:
-      "Cómo convertir rutas, avenidas y puntos de espera en memoria de marca.",
+      "",
     image: "figma-insight-ooh.jpeg",
   },
 ];
