@@ -669,7 +669,7 @@ export default function HomePage() {
               <textarea className="min-h-32 border border-zinc-300 px-4 py-3 font-uni text-base font-normal normal-case" />
             </label>
             <button
-              className="min-h-12 bg-publiex-red px-5 font-raleway text-sm font-extrabold uppercase text-white transition hover:bg-red-600 md:col-span-2 md:w-max"
+              className="min-h-12 bg-publiex-red px-5 font-raleway rounded-l-41.5 text-sm font-extrabold uppercase text-white transition hover:bg-red-600 md:col-span-2 md:w-max"
               type="button"
             >
               Solicitar propuesta
