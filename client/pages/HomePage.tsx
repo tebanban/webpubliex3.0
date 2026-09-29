@@ -556,7 +556,7 @@ export default function HomePage() {
       {/* Proposal paths */}
       <section className="overflow-hidden">
         <div className="mx-auto w-full max-w-480 xl:py-21.25">
-          <div className="mx-auto grid max-w-393.5 gap-5 md:grid-cols-2">
+          <div className="mx-auto grid max-w-393.5 gap-15 md:grid-cols-2">
             <div className="bg-publiex-gradient px-5 py-16 text-white md:px-10 lg:px-10.75">
               <SectionLabel>Para agencias</SectionLabel>
               <h2 className="font-raleway text-[clamp(2rem,4vw,3.375rem)] font-semibold leading-tight md:leading-13.25">
