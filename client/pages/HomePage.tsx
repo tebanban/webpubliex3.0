@@ -1,5 +1,4 @@
 ﻿import { useEffect, useRef } from "react";
-import { ArrowRight } from "lucide-react";
 
 import { CampaignCta } from "@/components/site/CampaignCta";
 import { ImagePanel } from "@/components/site/ImagePanel";
@@ -115,23 +114,23 @@ export default function HomePage() {
         id="ubicaciones"
       >
         <div className="mx-auto grid w-full max-w-480 lg:grid-cols-[0.95fr_1.05fr]">
-          <div className="px-5 py-[clamp(5rem,8.6vw,10.375rem)] md:px-10 xl:pl-41.5 xl:pr-16">
-            <h2 className="max-w-130 font-raleway text-[clamp(2.4rem,5.4vw,4.965rem)] font-semibold leading-[1.03]">
+          <div className="px-5 py-[clamp(5rem,7.5vw,8.5rem)] md:px-10 xl:pl-41.5 xl:pr-16">
+            <h2 className="max-w-130 font-raleway text-[clamp(2.4rem,5.3vw,4.865rem)] font-semibold leading-[1.03]">
               Encuentre el lugar{" "}
               <span className="text-publiex-red">
                 donde su marca debe estar.
               </span>
             </h2>
-            <p className="font-uni mt-7 max-w-167.5 text-[clamp(1.25rem,1.65vw,1.965rem)] leading-tight">
+            <p className="font-uni mt-7 max-w-167.5 text-[clamp(1.20rem,1.4vw,1.765rem)] leading-tight">
               Explore una muestra de cobertura por formato y provincia. Cada
               consulta puede convertirse en una selección curada con ficha
               técnica, métricas y disponibilidad confirmada.
             </p>
             <a
-              className="mt-9 inline-flex items-center gap-3 font-raleway text-sm  uppercase underline underline-offset-4"
+              className="relative mt-9 inline-flex font-raleway text-sm uppercase after:absolute after:-bottom-1 after:right-0 after:h-px after:w-screen after:bg-publiex-red"
               href="#contacto"
             >
-              Buscar <ArrowRight aria-hidden className="size-4" />
+              Buscar
             </a>
           </div>
           <img
@@ -153,8 +152,9 @@ export default function HomePage() {
         <div className="relative mx-auto flex min-h-[clamp(45rem,59.2vw,71.0625rem)] w-full max-w-480 items-center justify-end px-5 py-[clamp(5rem,9.2vw,11.0625rem)] md:px-10 lg:px-24 xl:items-start">
           <div className="max-w-165 text-right xl:mr-15">
             <SectionLabel>Impacto</SectionLabel>
-            <h2 className="font-raleway text-[clamp(2.8rem,7vw,5.965rem)] font-semibold leading-none">
-              Afuera no <span className="text-publiex-red">hay skip ad</span>
+            <h2 className="text-right font-raleway text-[clamp(2.8rem,7vw,5.965rem)] font-semibold leading-none">
+              <span className="block">Afuera no</span>
+              <span className="block text-publiex-red">hay skip ad</span>
             </h2>
             <p className="mt-8 max-w-165 text-[clamp(1.25rem,1.65vw,1.965rem)] leading-tight">
               Creamos presencia real para marcas que no quieren pasar
