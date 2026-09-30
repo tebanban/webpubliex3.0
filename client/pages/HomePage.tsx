@@ -127,7 +127,7 @@ export default function HomePage() {
               técnica, métricas y disponibilidad confirmada.
             </p>
             <a
-              className="relative mt-9 inline-flex font-raleway text-sm uppercase after:absolute after:-bottom-1 after:right-0 after:h-px after:w-screen after:bg-publiex-red"
+              className="relative mt-9 inline-flex font-raleway text-sm uppercase after:absolute after:-bottom-1 after:right-0 after:h-px after:w-screen after:bg-[#f5333f] after:content-['']"
               href="#contacto"
             >
               Buscar
@@ -187,10 +187,18 @@ export default function HomePage() {
               mirando hacia adelante.
             </h2>
             <p className="font-uni mt-8 text-[clamp(1.25rem,1.65vw,1.965rem)] leading-tight">
-              Somos una empresa especializada desde 1999 en publicidad exterior
-              con más de 27 años de trayectoria en Costa Rica, dándole a cada
-              cliente la solución para hacer crecer sus marcas.
+              Somos una empresa especializada desde 1999 en el 
+              campo de la publicidad exterior (Out of Home Media) 
+              con más de 27 años de trayectoria en Costa Rica, 
+              dándole a cada cliente la solución a sus necesidades 
+              para hacer crecer sus marcas.
             </p>
+            <a
+              className="relative mt-8 inline-block pb-1 font-raleway text-sm font-bold uppercase text-white transition after:absolute after:bottom-0 after:left-0 after:h-px after:w-screen after:bg-[#f5333f] after:content-[''] hover:text-white/75"
+              href="/about"
+            >
+              Ver más
+            </a>
           </div>
         </div>
       </section>
