@@ -45,17 +45,17 @@ const socialLinks = [
   {
     label: "Instagram",
     icon: "footer-social-4.svg",
-    href: "https://www.instagram.com/",
+    href: "https://www.instagram.com/publiex_cr/",
   },
   {
     label: "Facebook",
     icon: "footer-social-5.svg",
-    href: "https://www.facebook.com/",
+    href: "https://www.facebook.com/PubliexCR/?locale=es_LA",
   },
   {
     label: "LinkedIn",
     icon: "footer-social-3.svg",
-    href: "https://www.linkedin.com/",
+    href: "https://cr.linkedin.com/company/publiex",
   },
   {
     label: "YouTube",
@@ -99,7 +99,7 @@ export function Footer() {
         <div className="grid gap-8 pt-5 pb-2 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-[220px_220px_180px_220px] xl:justify-between">
           {footerGroups.map((group) => (
             <nav aria-label={group.title} key={group.title}>
-              <h3 className="font-uni text-base  uppercase leading-9 text-[#3e88bd]">
+              <h3 className="font-uni text-base  uppercase leading-9 text-publiex-footer-heading">
                 {group.title}
               </h3>
               <ul className="text-base font-normal uppercase leading-9">

@@ -57,7 +57,7 @@ export default function LocationsPage() {
       </section>
 
       {/* Section 2, Inventory visual */}
-      <section className="overflow-hidden bg-[#eaedf2] px-5 py-[clamp(4rem,6.5vw,7.75rem)] md:px-10 lg:px-24">
+      <section className="overflow-hidden bg-publiex-muted-section px-5 py-[clamp(4rem,6.5vw,7.75rem)] md:px-10 lg:px-24">
         <div className="mx-auto max-w-393.5">
           <p className="font-raleway text-sm font-bold uppercase md:text-2xl">
             Inventario visual
@@ -138,7 +138,7 @@ export default function LocationsPage() {
       </section>
 
       {/* Section 4, Selection summary */}
-      <section className="overflow-hidden bg-[#eaedf2] px-5 py-[clamp(4rem,6.25vw,7.5rem)] md:px-10 lg:px-24">
+      <section className="overflow-hidden bg-publiex-muted-section px-5 py-[clamp(4rem,6.25vw,7.5rem)] md:px-10 lg:px-24">
         <div className="mx-auto max-w-393.5">
           <p className="font-raleway text-sm font-bold uppercase md:text-2xl">
             Mi selección

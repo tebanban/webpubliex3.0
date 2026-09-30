@@ -78,7 +78,7 @@ export default function HomePage() {
         >
           <source src={publiexAsset("hero_home.mp4")} type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-linear-to-b from-[#0047ba]/65 via-[#0047ba]/15 to-black/75" />
+        <div className="absolute inset-0 bg-publiex-hero-overlay" />
         <div className="relative mx-auto flex h-full w-full max-w-480 items-end px-5 pb-12 pt-28 md:px-10 md:pb-20">
           <div className="mx-auto w-full max-w-295 text-center">
             <h1 className="font-raleway font-black uppercase leading-[0.996]">
@@ -127,7 +127,7 @@ export default function HomePage() {
               técnica, métricas y disponibilidad confirmada.
             </p>
             <a
-              className="relative mt-9 inline-flex font-raleway text-sm uppercase after:absolute after:-bottom-1 after:right-0 after:h-px after:w-screen after:bg-[#f5333f] after:content-['']"
+              className="relative mt-9 inline-flex font-raleway text-sm uppercase after:absolute after:-bottom-1 after:right-0 after:h-px after:w-screen after:bg-publiex-red after:content-['']"
               href="/contact"
             >
               Buscar
@@ -193,7 +193,7 @@ export default function HomePage() {
               sus necesidades para hacer crecer sus marcas.
             </p>
             <a
-              className="relative mt-8 inline-block pb-1 font-raleway text-sm font-bold uppercase text-white transition after:absolute after:bottom-0 after:left-0 after:h-px after:w-screen after:bg-[#f5333f] after:content-[''] hover:text-white/75"
+              className="relative mt-8 inline-block pb-1 font-raleway text-sm font-bold uppercase text-white transition after:absolute after:bottom-0 after:left-0 after:h-px after:w-screen after:bg-publiex-red after:content-[''] hover:text-white/75"
               href="/about"
             >
               Ver más
@@ -219,7 +219,7 @@ export default function HomePage() {
                 </span>
               </h2>
               <a
-                className="relative pb-1 font-raleway text-sm font-extrabold uppercase after:absolute after:bottom-0 after:left-0 after:h-px after:w-screen after:bg-[#f5333f] after:content-['']"
+                className="relative pb-1 font-raleway text-sm font-extrabold uppercase after:absolute after:bottom-0 after:left-0 after:h-px after:w-screen after:bg-publiex-red after:content-['']"
                 href="/contact"
               >
                 Ver todas las soluciones
@@ -381,7 +381,7 @@ export default function HomePage() {
       </section>
 
       {/* Section 10, Audience analytics */}
-      <section className="overflow-hidden bg-[linear-gradient(135deg,#ffffff_0%,#bbd1f3_100%)]">
+      <section className="overflow-hidden bg-publiex-audience-gradient">
         <div className="mx-auto grid w-full max-w-480 gap-10 px-5 py-[clamp(4rem,4.2vw,5.0625rem)] md:px-10 lg:px-24 xl:grid-cols-[minmax(0,630fr)_minmax(0,630fr)_minmax(230px,280fr)] xl:items-start xl:gap-x-4.5">
           <div className="@container xl:pt-11.5">
             <SectionLabel dark>Datos y audiencias</SectionLabel>
@@ -482,7 +482,7 @@ export default function HomePage() {
 
       {/* Section 11, Work and insights */}
       <section
-        className="overflow-hidden bg-publiex-navy text-white"
+        className="overflow-hidden bg-publiex-blue-deep text-white"
         id="casos"
       >
         <div className="mx-auto w-full max-w-480 px-5 py-[clamp(4.5rem,5vw,6rem)] md:px-10 lg:px-24">
@@ -527,7 +527,10 @@ export default function HomePage() {
       </section>
 
       {/* Section 12, Actualidad e insights */}
-      <section className="overflow-hidden" id="actualidad">
+      <section
+        className="overflow-hidden bg-publiex-muted-section"
+        id="actualidad"
+      >
         <div className="mx-auto w-full max-w-480 px-5 py-20 md:px-10 lg:px-24">
           <div className="mx-auto max-w-393.5">
             <SectionLabel dark>Actualidad e insights</SectionLabel>

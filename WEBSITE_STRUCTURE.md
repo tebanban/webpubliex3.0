@@ -1,4 +1,4 @@
-# Publiex Website Structure
+﻿# Publiex Website Structure
 
 This document explains the current React structure for the Publiex OOH website.
 
@@ -19,6 +19,7 @@ Routes:
 - `/about`: about us page.
 - `/locations`: locations page.
 - `/case-studies`: case studies page.
+- `/contact`: contact / proposal request page.
 - `*`: not found page.
 
 Shared site components:
@@ -46,9 +47,7 @@ Use this structure for sections:
 <section className="relative w-full overflow-hidden">
   <div className="absolute inset-0">Background or bleeding visual</div>
 
-  <div className="relative mx-auto w-full max-w-[1920px]">
-    Section content
-  </div>
+  <div className="relative mx-auto w-full max-w-[1920px]">Section content</div>
 </section>
 ```
 
@@ -70,7 +69,7 @@ Do not put the main `max-width` on the outer section. The outer section should c
 
 File: `client/pages/HomePage.tsx`
 
-The homepage has 15 body sections. With the shared header and footer, the full rendered page has 17 main sections.
+The homepage has 14 body sections. With the shared header and footer, the full rendered page has 16 main sections. The proposal form now lives on its own `/contact` route.
 
 ### 1. Header
 
@@ -106,7 +105,7 @@ Main elements:
 - Blue/black overlay gradient.
 - Main headline.
 - Supporting text.
-- Primary CTA to `#contacto`.
+- Primary CTA to `/contact`.
 - Secondary link to `#ubicaciones`.
 
 ### 3. Location Finder
@@ -264,25 +263,7 @@ Main elements:
 - Agency CTA.
 - Property owner CTA.
 
-### 15. Proposal / Contact Form
-
-Purpose:
-
-- Collects campaign context for the commercial team.
-
-Current fields:
-
-- Que quiere lograr
-- Zona de interes
-- Nivel de cobertura
-- Name
-- Email
-- Business
-- Note
-
-Note: this section intentionally differs from the Figma screenshot because it now contains a real form instead of a static image.
-
-### 16. Campaign CTA
+### 15. Campaign CTA
 
 File: `client/components/site/CampaignCta.tsx`
 
@@ -296,7 +277,7 @@ Main elements:
 - Left message: "Hagamos que Costa Rica vea su campana".
 - Black rounded CTA shape aligned inside the `1920px` frame and allowed to bleed right.
 
-### 17. Footer
+### 16. Footer
 
 File: `client/components/layout/Footer.tsx`
 
@@ -382,6 +363,28 @@ Current sections:
    - Grid of case cards driven by `cases`.
    - Uses `ImagePanel`.
    - Ends with a "Crear una campana" CTA.
+
+## Contact Page
+
+File: `client/pages/ContactPage.tsx`
+
+Current sections:
+
+1. Contact Form
+   - Blue gradient background.
+   - Uses the same proposal form layout originally prototyped as homepage section 15.
+   - Rendered inside `SiteLayout`, so it includes the shared header and footer.
+   - All proposal CTAs and old `#contacto` links now route to `/contact`.
+
+Current fields:
+
+- Qué quiere lograr
+- Zona de interés
+- Nivel de cobertura
+- Nombre
+- Correo electrónico
+- Empresa
+- Nota
 
 ## Maintenance Notes
 

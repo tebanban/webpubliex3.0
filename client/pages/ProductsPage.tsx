@@ -350,7 +350,7 @@ function ProductCard({ product }: { product: Product }) {
         </div>
       </div>
       <a
-        className="mt-3 block w-fit font-raleway text-[clamp(0.6rem,0.9vw,1.6525rem)] font-extrabold uppercase text-[#0f62e7] transition hover:text-publiex-blue/75"
+        className="mt-3 block w-fit font-raleway text-[clamp(0.6rem,0.9vw,1.6525rem)] font-extrabold uppercase text-publiex-blue-light transition hover:text-publiex-blue/75"
         href="/contact"
       >
         {product.link}
@@ -401,7 +401,7 @@ export default function ProductsPage() {
       {/* Section 2, Product families */}
       {productGroups.map((group) => (
         <section
-          className="overflow-hidden bg-[#e9e9e9] px-5 py-[clamp(3rem,4vw,6rem)] md:px-10 lg:px-24"
+          className="overflow-hidden bg-publiex-light-panel px-5 py-[clamp(3rem,4vw,6rem)] md:px-10 lg:px-24"
           id={group.id}
           key={group.id}
         >
