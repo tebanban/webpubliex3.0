@@ -1,4 +1,6 @@
-﻿import { publiexAsset } from "@/lib/assets";
+﻿import { useState } from "react";
+
+import { publiexAsset } from "@/lib/assets";
 
 const formatTabs = [
   ["Gran formato", "#gran-formato"],
@@ -234,6 +236,8 @@ const campaignSystems = [
 type Product = (typeof productGroups)[number]["products"][number];
 
 function ProductCard({ product }: { product: Product }) {
+  const [activeTagIndex, setActiveTagIndex] = useState(0);
+
   return (
     <article className="bg-white p-2 shadow-sm md:p-8 xl:p-16">
       {/* Product summary */}
@@ -253,10 +257,10 @@ function ProductCard({ product }: { product: Product }) {
           <p className="font-raleway text-[clamp(0.75rem,0.95vw,0.875rem)] font-extrabold uppercase">
             Beneficios principales
           </p>
-          <ul className="mt-4 font-raleway text-[clamp(1rem,1.2vw,1.25rem)] leading-[1.8]">
-            {product.benefits.map((benefit, index) => (
+          <ul className="mt-3 font-raleway text-[clamp(1rem,1.2vw,1.25rem)] leading-[1.8]">
+            {product.benefits.map((benefit) => (
               <li
-                className="flex gap-3 border-b border-zinc-300 py-[clamp(0.75rem,1.35vw,1.6rem)] last:border-b-0"
+                className="flex gap-3 border-b border-zinc-300 py-[clamp(0.75rem,1.2vw,1.6rem)] last:border-b-0"
                 key={benefit}
               >
                 <span
@@ -281,7 +285,7 @@ function ProductCard({ product }: { product: Product }) {
       </div>
 
       {/* Product image feature */}
-      <div className="relative mt-10 min-h-[clamp(30rem,42.8vw,51.375rem)] overflow-hidden text-white">
+      <div className="relative mt-6 min-h-[clamp(30rem,42.8vw,51.375rem)] overflow-hidden text-white">
         <img
           alt={product.title}
           className="absolute inset-0 size-full object-cover"
@@ -298,13 +302,50 @@ function ProductCard({ product }: { product: Product }) {
           <p className="mt-8 max-w-157 font-raleway text-lg leading-tight md:text-xl">
             {product.overlayCopy}
           </p>
-          <div className="mt-8 h-1 w-full bg-white/45">
-            <div className="h-full w-1/4 bg-publiex-red" />
-          </div>
-          <div className="mt-3 flex flex-wrap gap-x-12 gap-y-2 font-raleway text-[clamp(0.6rem,0.9vw,1.6525rem)] font-bold uppercase">
-            {product.tags.map((tag) => (
-              <span key={tag}>{tag}</span>
+          <div
+            className="mt-8 grid h-1 w-full gap-0.5"
+            style={{
+              gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
+            }}
+          >
+            {Array.from({ length: 4 }).map((_, index) => (
+              <div
+                aria-hidden="true"
+                className={
+                  product.tags[index]
+                    ? index === activeTagIndex
+                      ? "bg-publiex-red"
+                      : "bg-white/45"
+                    : "bg-transparent"
+                }
+                key={product.tags[index] ?? `empty-${index}`}
+              />
             ))}
+          </div>
+          <div
+            className="mt-3 grid gap-x-4 gap-y-2 font-raleway text-[clamp(0.6rem,0.9vw,1.6525rem)] font-bold uppercase"
+            style={{
+              gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
+            }}
+          >
+            {Array.from({ length: 4 }).map((_, index) => {
+              const tag = product.tags[index];
+
+              return tag ? (
+                <button
+                  className={`text-center leading-tight transition hover:text-white/75 ${
+                    index === activeTagIndex ? "text-white" : "text-white/75"
+                  }`}
+                  key={tag}
+                  onClick={() => setActiveTagIndex(index)}
+                  type="button"
+                >
+                  {tag}
+                </button>
+              ) : (
+                <span aria-hidden="true" key={`empty-${index}`} />
+              );
+            })}
           </div>
         </div>
       </div>
