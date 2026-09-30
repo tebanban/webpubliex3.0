@@ -96,7 +96,7 @@ export function Footer() {
         </div>
 
         {/* Footer menu columns */}
-        <div className="grid gap-8 pt-5 pb-2 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-[170px_170px_119px_172px] xl:justify-between">
+        <div className="grid gap-8 pt-5 pb-2 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-[220px_220px_180px_220px] xl:justify-between">
           {footerGroups.map((group) => (
             <nav aria-label={group.title} key={group.title}>
               <h3 className="font-uni text-base  uppercase leading-9 text-[#3e88bd]">
@@ -105,7 +105,10 @@ export function Footer() {
               <ul className="text-base font-normal uppercase leading-9">
                 {group.links.map(([label, href]) => (
                   <li key={label}>
-                    <a className="transition hover:text-white/80" href={href}>
+                    <a
+                      className="whitespace-nowrap transition hover:text-white/80"
+                      href={href}
+                    >
                       {label}
                     </a>
                   </li>

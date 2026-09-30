@@ -314,7 +314,7 @@ export default function ProductsPage() {
     <main className="bg-white text-black">
       {/* Hero */}
       <section
-        className="relative min-h-[clamp(40rem,51.9vw,62.25rem)] overflow-hidden text-white"
+        className="relative min-h-[clamp(35rem,47vw,56rem)] overflow-hidden text-white"
         id="inicio"
       >
         <img
@@ -323,7 +323,7 @@ export default function ProductsPage() {
           src={publiexAsset("products-hero.png")}
         />
         <div className="absolute inset-0 bg-linear-to-b from-black/20 via-black/35 to-black/80" />
-        <div className="relative mx-auto flex min-h-[clamp(40rem,51.9vw,62.25rem)] w-full max-w-480 flex-col items-center justify-end px-5 pb-[clamp(5rem,5.2vw,6.25rem)] text-center md:px-10">
+        <div className="relative mx-auto flex min-h-[clamp(35rem,47vw,56rem)] w-full max-w-480 flex-col items-center justify-end px-5 pb-[clamp(5rem,5.2vw,6.25rem)] text-center md:px-10">
           <h1 className="max-w-350 font-raleway text-[clamp(2.7rem,5.4vw,4.85rem)] font-extrabold uppercase leading-[0.996]">
             No elija un formato.
             <span className="block">Elija lo que quiere lograr.</span>
