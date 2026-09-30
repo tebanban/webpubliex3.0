@@ -57,7 +57,7 @@ export default function AboutPage() {
             <img
               alt="Valla Publiex de gran formato en Costa Rica"
               className="size-full object-cover object-center"
-              src={publiexAsset("about-hero-billboard.png")}
+              src={publiexAsset("About-hero.png")}
             />
           </div>
         </div>
@@ -91,7 +91,7 @@ export default function AboutPage() {
             <img
               alt="Equipo reunido revisando una propuesta de campaña"
               className="size-full object-cover object-center"
-              src={publiexAsset("about-team-culture.png")}
+              src={publiexAsset("about-team.png")}
             />
           </div>
           <div className="flex flex-col justify-center px-5 py-[clamp(5rem,7vw,8rem)] md:px-10 lg:px-24 xl:pl-25 xl:pr-36">

@@ -28,9 +28,9 @@ export default function LocationsPage() {
   return (
     <main className="bg-white pt-14 text-black md:pt-16 xl:pt-20">
       {/* Section 1, Hero */}
-      <section className="overflow-hidden bg-publiex-gradient text-white">
+      <section className="overflow-hidden bg-white text-white">
         <div className="mx-auto grid w-full max-w-480 lg:grid-cols-[51%_49%]">
-          <div className="flex flex-col justify-center px-5 py-[clamp(5rem,7vw,8rem)] md:px-10 lg:px-24 xl:pl-47.5 xl:pr-18">
+          <div className="flex flex-col justify-center bg-publiex-blue-deep px-5 py-[clamp(5rem,7vw,8rem)] md:px-10 lg:px-24 xl:pl-47.5 xl:pr-18">
             <p className="font-raleway text-sm font-bold uppercase md:text-2xl">
               Publiex explora
             </p>
@@ -89,7 +89,7 @@ export default function LocationsPage() {
       </section>
 
       {/* Section 3, Featured location */}
-      <section className="overflow-hidden bg-publiex-navy px-5 py-[clamp(4rem,6.25vw,7.5rem)] text-white md:px-10 lg:px-24">
+      <section className="overflow-hidden bg-publiex-blue-deep px-5 py-[clamp(4rem,6.25vw,7.5rem)] text-white md:px-10 lg:px-24">
         <div className="mx-auto max-w-393.5">
           <h2 className="max-w-300 font-raleway text-[clamp(2.4rem,5.4vw,4.965rem)] font-semibold leading-[1.04]">
             Encuentre el lugar donde su marca puede{" "}
@@ -100,7 +100,7 @@ export default function LocationsPage() {
               <img
                 alt="Previsualización de ubicación para campaña Publiex"
                 className="absolute inset-0 size-full object-cover opacity-65"
-                src={publiexAsset("locations-feature-screen.png")}
+                src={publiexAsset("Locations-campaign2.png")}
               />
               <div className="absolute inset-0 bg-black/45" />
               <div className="relative flex min-h-[clamp(30rem,33.3vw,40rem)] flex-col items-center justify-center px-6 text-center">
