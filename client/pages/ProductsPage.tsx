@@ -272,14 +272,14 @@ function ProductCard({ product }: { product: Product }) {
       </div>
 
       {/* Product image feature */}
-      <div className="relative mt-10 min-h-120 overflow-hidden text-white md:min-h-160 xl:min-h-205.5">
+      <div className="relative mt-10 min-h-[clamp(30rem,42.8vw,51.375rem)] overflow-hidden text-white">
         <img
           alt={product.title}
           className="absolute inset-0 size-full object-cover"
           src={publiexAsset(product.image)}
         />
         <div className="absolute inset-0 bg-linear-to-b from-transparent via-black/35 to-black/85" />
-        <div className="relative flex min-h-120 flex-col justify-end p-6 md:min-h-160 md:p-10 xl:min-h-205.5 xl:p-13">
+        <div className="relative flex min-h-[clamp(30rem,42.8vw,51.375rem)] flex-col justify-end p-[clamp(1.5rem,2.7vw,3.25rem)]">
           <p className="font-raleway text-xl font-extrabold uppercase">
             {product.tags[0]}
           </p>
@@ -314,7 +314,7 @@ export default function ProductsPage() {
     <main className="bg-white text-black">
       {/* Hero */}
       <section
-        className="relative min-h-210 overflow-hidden text-white xl:min-h-249"
+        className="relative min-h-[clamp(40rem,51.9vw,62.25rem)] overflow-hidden text-white"
         id="inicio"
       >
         <img
@@ -323,18 +323,18 @@ export default function ProductsPage() {
           src={publiexAsset("products-hero.png")}
         />
         <div className="absolute inset-0 bg-linear-to-b from-black/20 via-black/35 to-black/80" />
-        <div className="relative mx-auto flex min-h-210 w-full max-w-480 flex-col items-center justify-end px-5 pb-25 text-center md:px-10 xl:min-h-249">
+        <div className="relative mx-auto flex min-h-[clamp(40rem,51.9vw,62.25rem)] w-full max-w-480 flex-col items-center justify-end px-5 pb-[clamp(5rem,5.2vw,6.25rem)] text-center md:px-10">
           <h1 className="max-w-350 font-raleway text-[clamp(2.7rem,5.4vw,4.85rem)] font-extrabold uppercase leading-[0.996]">
             No elija un formato.
             <span className="block">Elija lo que quiere lograr.</span>
           </h1>
-          <p className="mt-8 max-w-240 font-raleway text-xl leading-tight md:text-[31.44px]">
+          <p className="mt-8 max-w-240 font-raleway text-[clamp(1.25rem,1.65vw,1.965rem)] leading-tight">
             Publiex integra escala, frecuencia, movimiento, tecnología y
             creatividad para construir la presencia que necesita cada marca.
           </p>
         </div>
         <nav className="absolute inset-x-0 bottom-0 bg-publiex-blue/95 px-5 py-5 md:px-10">
-          <div className="mx-auto flex max-w-380 flex-wrap justify-center gap-x-12 gap-y-3 font-raleway text-sm font-semibold uppercase md:text-[26.44px]">
+          <div className="mx-auto flex max-w-380 flex-wrap justify-center gap-x-12 gap-y-3 font-raleway text-[clamp(0.875rem,1.38vw,1.6525rem)] font-semibold uppercase">
             {formatTabs.map(([label, href]) => (
               <a
                 className="transition hover:text-white/70"
@@ -351,7 +351,7 @@ export default function ProductsPage() {
       {/* Product families */}
       {productGroups.map((group) => (
         <section
-          className="overflow-hidden bg-[#e9e9e9] px-5 py-16 md:px-10 lg:px-24 xl:py-30"
+          className="overflow-hidden bg-[#e9e9e9] px-5 py-[clamp(4rem,6.25vw,7.5rem)] md:px-10 lg:px-24"
           id={group.id}
           key={group.id}
         >
@@ -379,7 +379,7 @@ export default function ProductsPage() {
       ))}
 
       {/* Campaign architecture */}
-      <section className="overflow-hidden bg-publiex-gradient px-5 py-16 text-white md:px-10 lg:px-24 xl:py-30">
+      <section className="overflow-hidden bg-publiex-gradient px-5 py-[clamp(4rem,6.25vw,7.5rem)] text-white md:px-10 lg:px-24">
         <div className="mx-auto max-w-393.5">
           <p className="font-raleway text-sm font-bold uppercase md:text-xl">
             Arquitectura de campaña
@@ -397,14 +397,14 @@ export default function ProductsPage() {
                 <h3 className="font-raleway text-[clamp(1.8rem,3vw,2.85rem)] font-black leading-none">
                   {system.title}
                 </h3>
-                <p className="mt-10 font-raleway text-xl leading-tight md:text-[30px]">
+                <p className="mt-10 font-raleway text-[clamp(1.25rem,1.56vw,1.875rem)] leading-tight">
                   {system.copy}
                 </p>
               </article>
             ))}
           </div>
           <a
-            className="mt-16 inline-flex min-h-20.75 items-center bg-white px-8 font-raleway text-xl font-semibold uppercase text-black transition hover:bg-zinc-100 md:text-[30px]"
+            className="mt-16 inline-flex min-h-20.75 items-center bg-white px-8 font-raleway text-[clamp(1.25rem,1.56vw,1.875rem)] font-semibold uppercase text-black transition hover:bg-zinc-100"
             href="/#contacto"
           >
             Recibir una combinación recomendada

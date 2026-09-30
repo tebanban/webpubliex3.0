@@ -1,6 +1,6 @@
 ﻿export function CampaignCta() {
   return (
-    <section className="relative h-64.5 overflow-hidden bg-publiex-red text-white sm:h-80 md:h-107.5 xl:h-143.5">
+    <section className="relative h-[clamp(16.125rem,29.9vw,35.875rem)] overflow-hidden bg-publiex-red text-white">
       <div className="relative mx-auto h-full w-full max-w-480">
         {/* Campaign prompt */}
         <h2 className="absolute left-[9.01%] top-[34.3%] max-w-[39%] font-raleway text-[clamp(2rem,4.17vw,5rem)] font-semibold leading-[1.025]">

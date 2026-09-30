@@ -18,7 +18,7 @@ export default defineConfig(({ mode }) => ({
   plugins: [react()],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./client"),
+      "@": path.resolve(import.meta.dirname, "./client"),
     },
   },
 }));

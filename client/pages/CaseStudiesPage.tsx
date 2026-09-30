@@ -94,7 +94,7 @@ export default function CaseStudiesPage() {
     <main className="bg-publiex-navy text-white">
       {/* Hero */}
       <section
-        className="relative min-h-160 overflow-hidden md:min-h-180 xl:min-h-226"
+        className="relative min-h-[clamp(40rem,47.1vw,56.5rem)] overflow-hidden"
         id="inicio"
       >
         <img
@@ -103,7 +103,7 @@ export default function CaseStudiesPage() {
           src={publiexAsset("cases-hero.png")}
         />
         <div className="absolute inset-0 bg-linear-to-b from-black/10 via-black/25 to-black/75" />
-        <div className="relative mx-auto flex min-h-160 w-full max-w-480 items-end justify-center px-5 pb-8 text-center md:min-h-180 md:px-10 xl:min-h-226">
+        <div className="relative mx-auto flex min-h-[clamp(40rem,47.1vw,56.5rem)] w-full max-w-480 items-end justify-center px-5 pb-[clamp(2rem,3vw,3.5rem)] text-center md:px-10">
           <h1 className="font-raleway text-[clamp(3rem,8vw,8.85rem)] font-semibold uppercase leading-[0.996]">
             Casos de éxito
           </h1>
@@ -111,7 +111,7 @@ export default function CaseStudiesPage() {
       </section>
 
       {/* Case list */}
-      <section className="overflow-hidden bg-publiex-navy px-5 py-16 md:px-10 lg:px-24 xl:py-30">
+      <section className="overflow-hidden bg-publiex-navy px-5 py-[clamp(4rem,6.25vw,7.5rem)] md:px-10 lg:px-24">
         <div className="mx-auto max-w-393.5">
           <p className="font-raleway text-sm font-bold uppercase md:text-2xl">
             Noticias

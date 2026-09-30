@@ -16,7 +16,7 @@ function LocationButton({
 
   return (
     <a
-      className={`inline-flex min-h-12.5 items-center justify-center font-raleway text-sm font-bold uppercase leading-8 transition md:text-xl ${styles[variant]}`}
+      className={`inline-flex min-h-12.5 items-center justify-center font-raleway text-[clamp(0.875rem,1.04vw,1.25rem)] font-bold uppercase leading-8 transition ${styles[variant]}`}
       href={href}
     >
       {children}
@@ -29,8 +29,8 @@ export default function LocationsPage() {
     <main className="bg-white pt-14 text-black md:pt-16 xl:pt-20">
       {/* Hero */}
       <section className="overflow-hidden bg-publiex-gradient text-white">
-        <div className="mx-auto grid w-full max-w-480 lg:min-h-211.75 lg:grid-cols-[51%_49%]">
-          <div className="flex flex-col justify-center px-5 py-20 md:px-10 lg:px-24 xl:pl-47.5 xl:pr-18">
+        <div className="mx-auto grid w-full max-w-480 lg:grid-cols-[51%_49%]">
+          <div className="flex flex-col justify-center px-5 py-[clamp(5rem,7vw,8rem)] md:px-10 lg:px-24 xl:pl-47.5 xl:pr-18">
             <p className="font-raleway text-sm font-bold uppercase md:text-2xl">
               Publiex explora
             </p>
@@ -40,13 +40,13 @@ export default function LocationsPage() {
                 justo donde Costa Rica se mueve.
               </span>
             </h1>
-            <p className="mt-10 max-w-184 font-raleway text-lg leading-tight md:text-[27.44px] md:leading-8">
+            <p className="mt-10 max-w-184 font-raleway text-[clamp(1.125rem,1.43vw,1.715rem)] leading-tight">
               Explore una muestra del inventario de Publiex, descubra qué puede
               lograr cada formato y construya una selección preliminar para su
               campaña.
             </p>
           </div>
-          <div className="min-h-120 lg:min-h-211.75">
+          <div className="min-h-[clamp(30rem,44.1vw,52.9375rem)]">
             <img
               alt="Valla Publiex ubicada en un corredor urbano de Costa Rica"
               className="size-full object-cover object-center"
@@ -57,7 +57,7 @@ export default function LocationsPage() {
       </section>
 
       {/* Inventory visual */}
-      <section className="overflow-hidden bg-[#eaedf2] px-5 py-16 md:px-10 lg:px-24 xl:py-31">
+      <section className="overflow-hidden bg-[#eaedf2] px-5 py-[clamp(4rem,6.5vw,7.75rem)] md:px-10 lg:px-24">
         <div className="mx-auto max-w-393.5">
           <p className="font-raleway text-sm font-bold uppercase md:text-2xl">
             Inventario visual
@@ -89,21 +89,21 @@ export default function LocationsPage() {
       </section>
 
       {/* Featured location */}
-      <section className="overflow-hidden bg-publiex-navy px-5 py-16 text-white md:px-10 lg:px-24 xl:py-30">
+      <section className="overflow-hidden bg-publiex-navy px-5 py-[clamp(4rem,6.25vw,7.5rem)] text-white md:px-10 lg:px-24">
         <div className="mx-auto max-w-393.5">
           <h2 className="max-w-300 font-raleway text-[clamp(2.4rem,5.4vw,4.965rem)] font-semibold leading-[1.04]">
             Encuentre el lugar donde su marca puede{" "}
             <span className="text-publiex-red">generar impacto.</span>
           </h2>
           <div className="mt-14 grid gap-10 lg:grid-cols-[1.35fr_0.65fr] lg:items-center">
-            <div className="relative min-h-120 overflow-hidden bg-black md:min-h-160">
+            <div className="relative min-h-[clamp(30rem,33.3vw,40rem)] overflow-hidden bg-black">
               <img
                 alt="Previsualización de ubicación para campaña Publiex"
                 className="absolute inset-0 size-full object-cover opacity-65"
                 src={publiexAsset("locations-feature-screen.png")}
               />
               <div className="absolute inset-0 bg-black/45" />
-              <div className="relative flex min-h-120 flex-col items-center justify-center px-6 text-center md:min-h-160">
+              <div className="relative flex min-h-[clamp(30rem,33.3vw,40rem)] flex-col items-center justify-center px-6 text-center">
                 <p className="font-raleway text-[clamp(1.8rem,3.5vw,2.75rem)] font-bold">
                   Su campaña aparecerá aquí
                 </p>
@@ -138,7 +138,7 @@ export default function LocationsPage() {
       </section>
 
       {/* Selection summary */}
-      <section className="overflow-hidden bg-[#eaedf2] px-5 py-16 md:px-10 lg:px-24 xl:py-30">
+      <section className="overflow-hidden bg-[#eaedf2] px-5 py-[clamp(4rem,6.25vw,7.5rem)] md:px-10 lg:px-24">
         <div className="mx-auto max-w-393.5">
           <p className="font-raleway text-sm font-bold uppercase md:text-2xl">
             Mi selección
