@@ -258,7 +258,7 @@ export default function HomePage() {
 
       {/* Large format */}
       <section className="overflow-hidden">
-        <div className="mx-auto grid min-h-[clamp(45rem,57.3vw,68.8125rem)] w-full max-w-480 gap-0 lg:grid-cols-2">
+        <div className="mx-auto grid min-h-[clamp(36.25rem,40vw,52.1875rem)] w-full max-w-480 gap-0 lg:grid-cols-2">
           <img
             alt="Mega formato Publiex en una vía principal"
             className="h-full min-h-130 w-full object-cover"
@@ -283,7 +283,7 @@ export default function HomePage() {
 
       {/* Format highlights */}
       <section className="overflow-hidden">
-        <div className="mx-auto grid min-h-[clamp(45rem,57.4vw,68.9375rem)] w-full max-w-480 gap-0 lg:grid-cols-2">
+        <div className="mx-auto grid min-h-[clamp(36.25rem,40vw,52.1875rem)] w-full max-w-480 gap-0 lg:grid-cols-2">
           <div className="px-5 py-[clamp(4.625rem,4.2vw,5rem)] md:px-10 lg:px-24 xl:pl-43.25 xl:pr-15">
             <SectionLabel dark>Mobiliario urbano</SectionLabel>
             <h2 className="max-w-186 font-raleway text-[clamp(2.3rem,5vw,6.4rem)] font-semibold leading-[0.97]">
@@ -311,7 +311,7 @@ export default function HomePage() {
         className="overflow-hidden bg-publiex-sports-gradient text-white"
         id="analitica"
       >
-        <div className="mx-auto grid min-h-[clamp(45rem,57.3vw,68.8125rem)] w-full max-w-460 lg:grid-cols-2">
+        <div className="mx-auto grid min-h-[clamp(36.25rem,40vw,52.1875rem)] w-full max-w-460 lg:grid-cols-2">
           <img
             alt="Publicidad exterior en tren"
             className="h-full min-h-130 w-full object-cover"
@@ -346,7 +346,7 @@ export default function HomePage() {
               src={publiexAsset("figma-dooh-raw-1.jpeg")}
             />
             <SectionLabel dark>Pantallas digitales y DOOH</SectionLabel>
-            <h2 className="font-raleway text-[clamp(2rem,4vw,4.375rem)] font-semibold leading-[1.04]">
+            <h2 className="font-raleway text-[clamp(1.8rem,3.7vw,3.9rem)] font-semibold leading-[1.04]">
               Mensajes que se mueven al ritmo de la ciudad.
             </h2>
             <p className="mt-5 max-w-2xl text-lg leading-tight md:text-xl">
@@ -364,7 +364,7 @@ export default function HomePage() {
               src={publiexAsset("figma-special-projects.jpeg")}
             />
             <SectionLabel dark>Proyectos especiales</SectionLabel>
-            <h2 className="font-raleway text-[clamp(2rem,4vw,4.375rem)] font-semibold leading-[1.04]">
+            <h2 className="font-raleway text-[clamp(1.8rem,3.7vw,3.9rem)] font-semibold leading-[1.04]">
               Cuando la idea sale del formato, empieza la conversación.
             </h2>
             <p className="mt-5 max-w-2xl text-lg leading-tight md:text-xl">
@@ -430,14 +430,14 @@ export default function HomePage() {
               <h3 className="font-raleway text-[18px] font-semibold uppercase leading-5.5">
                 Impresiones vistas
               </h3>
-              <p className="mt-1 font-raleway text-[45px] font-bold leading-[52px]">
+              <p className="mt-1 font-raleway text-[45px] font-bold leading-13">
                 339,3 M
               </p>
-              <p className="mt-4 max-w-51.25 font-raleway text-[17px] leading-[21px]">
+              <p className="mt-4 max-w-51.25 font-raleway text-[17px] leading-5.25">
                 impactos estimados con oportunidad efectiva de visualización de
                 la campaña
               </p>
-              <p className="mt-2.5 border-t border-publiex-blue pt-2.5 font-raleway text-[12px] font-bold leading-[15px] text-publiex-blue">
+              <p className="mt-2.5 border-t border-publiex-blue pt-2.5 font-raleway text-[12px] font-bold leading-3.75 text-publiex-blue">
                 ESTIMACIÓN · 100% SOT
               </p>
             </article>
@@ -446,7 +446,7 @@ export default function HomePage() {
               <h3 className="font-raleway text-[18px] font-semibold uppercase leading-5.5">
                 Permanencia media
               </h3>
-              <p className="mt-1 font-raleway text-[60px] font-bold leading-[53px]">
+              <p className="mt-1 font-raleway text-[60px] font-bold leading-13.25">
                 22 <span className="text-[38px]">s</span>
               </p>
               <p className="mt-3.5 max-w-50 font-raleway text-[17px] lowercase leading-[21px]">
