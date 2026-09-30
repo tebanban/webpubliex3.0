@@ -187,11 +187,10 @@ export default function HomePage() {
               mirando hacia adelante.
             </h2>
             <p className="font-uni mt-8 text-[clamp(1.25rem,1.65vw,1.965rem)] leading-tight">
-              Somos una empresa especializada desde 1999 en el 
-              campo de la publicidad exterior (Out of Home Media) 
-              con más de 27 años de trayectoria en Costa Rica, 
-              dándole a cada cliente la solución a sus necesidades 
-              para hacer crecer sus marcas.
+              Somos una empresa especializada desde 1999 en el campo de la
+              publicidad exterior (Out of Home Media) con más de 27 años de
+              trayectoria en Costa Rica, dándole a cada cliente la solución a
+              sus necesidades para hacer crecer sus marcas.
             </p>
             <a
               className="relative mt-8 inline-block pb-1 font-raleway text-sm font-bold uppercase text-white transition after:absolute after:bottom-0 after:left-0 after:h-px after:w-screen after:bg-[#f5333f] after:content-[''] hover:text-white/75"
@@ -565,35 +564,34 @@ export default function HomePage() {
       {/* Proposal paths */}
       <section className="overflow-hidden">
         <div className="mx-auto w-full max-w-480 py-[clamp(0rem,4.4vw,5.3125rem)]">
-          <div className="mx-auto grid max-w-393.5 gap-15 md:grid-cols-2">
-            <div className="bg-publiex-gradient px-5 py-16 text-white md:px-10 lg:px-10.75">
+          <div className="mx-auto grid w-full max-w-393.5 gap-[clamp(1.25rem,3.6vw,5.25rem)] px-5 md:grid-cols-2 md:px-10 lg:px-0">
+            <div className="bg-publiex-gradient px-[clamp(1.25rem,2.25vw,2.6875rem)] py-[clamp(3rem,4.4vw,5.3125rem)] text-white">
               <SectionLabel>Para agencias</SectionLabel>
-              <h2 className="font-raleway text-[clamp(2rem,4vw,3.375rem)] font-semibold leading-tight md:leading-13.25">
-                Más velocidad para planificar.
-                Más impacto para presentar.
+              <h2 className="font-raleway text-[clamp(1.75rem,3vw,3.375rem)] font-semibold leading-tight md:leading-[0.98]">
+                Más velocidad para planificar. Más impacto para presentar.
               </h2>
-              <p className="mt-5 max-w-2xl text-lg leading-tight">
-                Una experiencia diseñada para planners, compradores de medios 
-                y equipos comerciales que necesitan pasar de la búsqueda a 
-                la propuesta sin fricción.
+              <p className="mt-[clamp(1rem,1.4vw,1.25rem)] max-w-2xl text-[clamp(0.95rem,1.2vw,1.125rem)] leading-tight">
+                Una experiencia diseñada para planners, compradores de medios y
+                equipos comerciales que necesitan pasar de la búsqueda a la
+                propuesta sin fricción.
               </p>
-              <div className="mt-8">
+              <div className="mt-[clamp(1.5rem,2vw,2rem)]">
                 <PrimaryLink href="#contacto" tone="white">
                   Acceso para agencias
                 </PrimaryLink>
               </div>
             </div>
-            <div className="bg-zinc-200 px-5 py-16 md:px-10 lg:px-10.75">
+            <div className="bg-zinc-200 px-[clamp(1.25rem,2.25vw,2.6875rem)] py-[clamp(3rem,4.4vw,5.3125rem)]">
               <SectionLabel dark>Para propietarios</SectionLabel>
-              <h2 className="font-raleway text-[clamp(2rem,4vw,3.375rem)] font-semibold leading-tight md:leading-13.25">
+              <h2 className="font-raleway text-[clamp(1.75rem,3vw,3.375rem)] font-semibold leading-tight md:leading-[0.98]">
                 Su espacio puede convertirse en un nuevo punto de referencia.
               </h2>
-              <p className="mt-5 max-w-2xl text-lg leading-tight">
-                Una experiencia diseñada para planners, compradores de medios
-                 y equipos comerciales que necesitan pasar de la búsqueda a la
-                 propuesta sin fricción.
+              <p className="mt-[clamp(1rem,1.4vw,1.25rem)] max-w-2xl text-[clamp(0.95rem,1.2vw,1.125rem)] leading-tight">
+                Una experiencia diseñada para planners, compradores de medios y
+                equipos comerciales que necesitan pasar de la búsqueda a la
+                propuesta sin fricción.
               </p>
-              <div className="mt-8">
+              <div className="mt-[clamp(1.5rem,2vw,2rem)]">
                 <PrimaryLink href="#contacto" tone="blue">
                   Enviar mi ubicación
                 </PrimaryLink>

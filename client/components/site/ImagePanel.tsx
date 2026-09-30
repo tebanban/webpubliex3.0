@@ -5,7 +5,7 @@ import { publiexAsset } from "@/lib/assets";
 const panelShape = {
   solution: "aspect-square w-full min-w-0",
   case: "aspect-[486/567] w-full min-w-0",
-  insight: "aspect-[573/728] w-full min-w-0",
+  insight: "aspect-[573/728] w-full min-w-0 xl:aspect-auto xl:h-182",
 };
 
 const panelHeight = {
