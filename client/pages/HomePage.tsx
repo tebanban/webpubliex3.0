@@ -213,13 +213,14 @@ export default function HomePage() {
             <SectionLabel>Soluciones publicitarias</SectionLabel>
             <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
               <h2 className="font-raleway text-[clamp(2.7rem,6.5vw,5.965rem)] font-medium leading-[1.04]">
-                Un país.
-                <span className="block text-publiex-red">
-                  Infinitas formas de ser visto.
+                <span className="block">Un país.</span>
+                <span className="block">
+                  Infinitas formas de{" "}
+                  <span className="text-publiex-red">ser visto.</span>
                 </span>
               </h2>
               <a
-                className="font-raleway text-sm font-extrabold uppercase underline underline-offset-4"
+                className="relative pb-1 font-raleway text-sm font-extrabold uppercase after:absolute after:bottom-0 after:left-0 after:h-px after:w-screen after:bg-[#f5333f] after:content-['']"
                 href="#contacto"
               >
                 Ver todas las soluciones
@@ -236,10 +237,10 @@ export default function HomePage() {
                     {solution.title}
                   </h3>
                   <div className="w-full text-left">
-                    <p className="font-raleway text-[clamp(1rem,6.7cqw,2.15rem)] font-semibold leading-tight">
+                    <p className="font-raleway text-[clamp(1rem,6.5cqw,2.0rem)] font-semibold leading-tight">
                       {solution.description}
                     </p>
-                    <div className="mt-[clamp(0.35rem,2.4cqw,0.9rem)] w-full border-t border-white pt-[clamp(0.35rem,2.2cqw,0.85rem)]">
+                    <div className="mt-[clamp(0.2rem,1.2cqw,0.50rem)] w-full border-t border-white pt-[clamp(0.35rem,2.2cqw,0.85rem)]">
                       <a
                         className="font-raleway text-[clamp(0.55rem,2.2cqw,0.7rem)] font-black uppercase tracking-[0.18em] transition hover:text-white/75"
                         href="#contacto"

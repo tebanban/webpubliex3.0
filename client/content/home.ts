@@ -23,7 +23,7 @@
   {
     title: "Pantallas digitales",
     description: "Contenido que responde al ritmo de la ciudad.",
-    image: "figma-dooh-raw-1.jpeg",
+    image: "figma-card-digital.png",
   },
   {
     title: "Publicidad en transporte",
