@@ -299,7 +299,7 @@ function ProductCard({ product }: { product: Product }) {
           </div>
           <a
             className="mt-8 w-fit font-raleway text-sm font-extrabold uppercase text-[#0f62e7] transition hover:text-white md:text-xl"
-            href="/#contacto"
+            href="/contact"
           >
             {product.link}
           </a>
@@ -405,7 +405,7 @@ export default function ProductsPage() {
           </div>
           <a
             className="mt-16 inline-flex min-h-20.75 items-center bg-white px-8 font-raleway text-[clamp(1.25rem,1.56vw,1.875rem)] font-semibold uppercase text-black transition hover:bg-zinc-100"
-            href="/#contacto"
+            href="/contact"
           >
             Recibir una combinación recomendada
           </a>

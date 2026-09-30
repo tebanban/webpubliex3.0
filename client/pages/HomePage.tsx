@@ -94,7 +94,7 @@ export default function HomePage() {
               que su marca sea parte del paisaje y de la conversación.
             </p>
             <div className="mt-10 flex flex-col text-lg items-center justify-center gap-5 sm:flex-row">
-              <PrimaryLink href="#contacto" weight="normal">
+              <PrimaryLink href="/contact" weight="normal">
                 Diseñar mi campaña
               </PrimaryLink>
               <a
@@ -128,7 +128,7 @@ export default function HomePage() {
             </p>
             <a
               className="relative mt-9 inline-flex font-raleway text-sm uppercase after:absolute after:-bottom-1 after:right-0 after:h-px after:w-screen after:bg-[#f5333f] after:content-['']"
-              href="#contacto"
+              href="/contact"
             >
               Buscar
             </a>
@@ -220,7 +220,7 @@ export default function HomePage() {
               </h2>
               <a
                 className="relative pb-1 font-raleway text-sm font-extrabold uppercase after:absolute after:bottom-0 after:left-0 after:h-px after:w-screen after:bg-[#f5333f] after:content-['']"
-                href="#contacto"
+                href="/contact"
               >
                 Ver todas las soluciones
               </a>
@@ -242,7 +242,7 @@ export default function HomePage() {
                     <div className="mt-[clamp(0.2rem,1.2cqw,0.50rem)] w-full border-t border-white pt-[clamp(0.35rem,2.2cqw,0.85rem)]">
                       <a
                         className="font-raleway text-[clamp(0.55rem,2.2cqw,0.7rem)] font-black uppercase tracking-[0.18em] transition hover:text-white/75"
-                        href="#contacto"
+                        href="/contact"
                       >
                         Explorar
                       </a>
@@ -274,7 +274,7 @@ export default function HomePage() {
               impacto en rutas, intersecciones y puntos urbanos estratégicos.
             </p>
             <div className="mt-9">
-              <PrimaryLink href="#contacto">Explorar gran formato</PrimaryLink>
+              <PrimaryLink href="/contact">Explorar gran formato</PrimaryLink>
             </div>
           </div>
         </div>
@@ -294,7 +294,7 @@ export default function HomePage() {
               rotondas y rutas estratégicas.
             </p>
             <div className="mt-9">
-              <PrimaryLink href="#contacto">Explorar banner posts</PrimaryLink>
+              <PrimaryLink href="/contact">Explorar banner posts</PrimaryLink>
             </div>
           </div>
           <img
@@ -327,7 +327,7 @@ export default function HomePage() {
               contacto.
             </p>
             <div className="mt-9">
-              <PrimaryLink href="#contacto" tone="white">
+              <PrimaryLink href="/contact" tone="white">
                 Descubrir soluciones en trenes
               </PrimaryLink>
             </div>
@@ -353,7 +353,7 @@ export default function HomePage() {
               relevantes en los momentos que importan.
             </p>
             <div className="mt-8">
-              <PrimaryLink href="#contacto">Explorar DOOH</PrimaryLink>
+              <PrimaryLink href="/contact">Explorar DOOH</PrimaryLink>
             </div>
           </article>
           <article>
@@ -372,7 +372,7 @@ export default function HomePage() {
               comparte.
             </p>
             <div className="mt-8">
-              <PrimaryLink href="#contacto">
+              <PrimaryLink href="/contact">
                 Explorar proyectos especiales
               </PrimaryLink>
             </div>
@@ -401,7 +401,7 @@ export default function HomePage() {
               estudio y actividad económica.
             </p>
             <div className="mt-6.75">
-              <PrimaryLink href="#contacto" tone="blue">
+              <PrimaryLink href="/contact" tone="blue">
                 Planificar con datos
               </PrimaryLink>
             </div>
@@ -576,7 +576,7 @@ export default function HomePage() {
                 propuesta sin fricción.
               </p>
               <div className="mt-[clamp(1.5rem,2vw,2rem)]">
-                <PrimaryLink href="#contacto" tone="white">
+                <PrimaryLink href="/contact" tone="white">
                   Acceso para agencias
                 </PrimaryLink>
               </div>
@@ -592,96 +592,12 @@ export default function HomePage() {
                 propuesta sin fricción.
               </p>
               <div className="mt-[clamp(1.5rem,2vw,2rem)]">
-                <PrimaryLink href="#contacto" tone="blue">
+                <PrimaryLink href="/contact" tone="blue">
                   Enviar mi ubicación
                 </PrimaryLink>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Contact */}
-      <section
-        className="overflow-hidden bg-publiex-gradient text-white"
-        id="contacto"
-      >
-        <div className="mx-auto grid w-full max-w-480 items-center gap-12 px-5 py-[clamp(5rem,8vw,9.5rem)] md:px-10 lg:grid-cols-[0.95fr_1.05fr] lg:px-24 xl:px-43.25">
-          <div>
-            <SectionLabel>Solicitar propuesta</SectionLabel>
-            <h2 className="max-w-160 font-raleway text-[clamp(2.5rem,5.6vw,5rem)] font-semibold leading-tight md:leading-20.5">
-              Cuéntenos qué quiere lograr.
-              <span className="block text-publiex-red">
-                Nosotros encontramos dónde.
-              </span>
-            </h2>
-            <p className="mt-7 max-w-162.75 text-[clamp(1.25rem,1.4vw,1.6875rem)] leading-tight">
-              Un formulario breve y útil para que el equipo comercial reciba el
-              contexto correcto y responda con una recomendación construida para
-              su marca.
-            </p>
-          </div>
-
-          {/* Proposal form */}
-          <form className="grid gap-5 bg-white p-6 text-black shadow-2xl md:grid-cols-2 md:p-10 xl:p-12">
-            <label className="grid gap-2 font-raleway text-sm font-bold uppercase">
-              Qué quiere lograr
-              <select className="min-h-12 border border-zinc-300 bg-white px-4 font-uni text-base font-normal normal-case text-black">
-                <option>Seleccione un objetivo</option>
-                <option>Generar reconocimiento de marca</option>
-                <option>Lanzar un producto o servicio</option>
-                <option>Aumentar tráfico a punto de venta</option>
-                <option>Dominar una zona estratégica</option>
-              </select>
-            </label>
-            <label className="grid gap-2 font-raleway text-sm font-bold uppercase">
-              Zona de interés
-              <select className="min-h-12 border border-zinc-300 bg-white px-4 font-uni text-base font-normal normal-case text-black">
-                <option>Seleccione una zona</option>
-                <option>Gran Área Metropolitana</option>
-                <option>San José</option>
-                <option>Alajuela</option>
-                <option>Heredia</option>
-                <option>Cartago</option>
-                <option>Cobertura nacional</option>
-              </select>
-            </label>
-            <label className="grid gap-2 font-raleway text-sm font-bold uppercase md:col-span-2">
-              Nivel de cobertura
-              <select className="min-h-12 border border-zinc-300 bg-white px-4 font-uni text-base font-normal normal-case text-black">
-                <option>Seleccione el nivel</option>
-                <option>Una ubicación clave</option>
-                <option>Circuito por zona</option>
-                <option>Cobertura por provincia</option>
-                <option>Cobertura nacional</option>
-              </select>
-            </label>
-            <label className="grid gap-2 font-raleway text-sm font-bold uppercase">
-              Nombre
-              <input className="min-h-12 border border-zinc-300 px-4 font-uni text-base font-normal normal-case" />
-            </label>
-            <label className="grid gap-2 font-raleway text-sm font-bold uppercase">
-              Correo electrónico
-              <input
-                className="min-h-12 border border-zinc-300 px-4 font-uni text-base font-normal normal-case"
-                type="email"
-              />
-            </label>
-            <label className="grid gap-2 font-raleway text-sm font-bold uppercase md:col-span-2">
-              Empresa
-              <input className="min-h-12 border border-zinc-300 px-4 font-uni text-base font-normal normal-case" />
-            </label>
-            <label className="grid gap-2 font-raleway text-sm font-bold uppercase md:col-span-2">
-              Nota
-              <textarea className="min-h-32 border border-zinc-300 px-4 py-3 font-uni text-base font-normal normal-case" />
-            </label>
-            <button
-              className="min-h-12 bg-publiex-red px-5 font-raleway rounded-l-41.5 text-sm font-extrabold uppercase text-white transition hover:bg-red-600 md:col-span-2 md:w-max"
-              type="button"
-            >
-              Solicitar propuesta
-            </button>
-          </form>
         </div>
       </section>
 

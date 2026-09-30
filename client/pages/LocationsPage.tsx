@@ -125,10 +125,10 @@ export default function LocationsPage() {
                 <p>Lectura: vehicular y peatonal</p>
               </div>
               <div className="mt-8 flex flex-col items-start gap-5">
-                <LocationButton href="/#contacto">
+                <LocationButton href="/contact">
                   Agregar y solicitar propuestas
                 </LocationButton>
-                <LocationButton href="/#contacto" variant="underline">
+                <LocationButton href="/contact" variant="underline">
                   Solicitar apoyo creativo
                 </LocationButton>
               </div>

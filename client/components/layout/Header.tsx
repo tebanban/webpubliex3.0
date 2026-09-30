@@ -147,7 +147,7 @@ export function Header() {
         {/* Primary action */}
         <Link
           className="pointer-events-auto ml-auto hidden min-h-7.25 max-w-[16ch] flex-wrap items-center justify-center gap-x-1.5 bg-publiex-red px-4 py-1 text-center font-raleway text-sm font-extrabold uppercase leading-tight text-white whitespace-normal break-normal transition hover:bg-red-600 md:inline-flex"
-          to="/#contacto"
+          to="/contact"
         >
           {"Solicitar propuesta".split(" ").map((word, index) => (
             <span

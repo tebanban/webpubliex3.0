@@ -109,7 +109,7 @@ export default function AboutPage() {
               propietarios.
             </p>
             <div className="mt-9">
-              <AboutButton href="/#contacto">Conversemos</AboutButton>
+              <AboutButton href="/contact">Conversemos</AboutButton>
             </div>
           </div>
         </div>
@@ -152,7 +152,7 @@ export default function AboutPage() {
             <AboutButton href="/#actualidad" tone="white">
               Ver actualidad e insights
             </AboutButton>
-            <AboutButton href="/#contacto" tone="text">
+            <AboutButton href="/contact" tone="text">
               Trabajar con Publiex
             </AboutButton>
           </div>

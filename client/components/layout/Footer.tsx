@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 
 import { publiexAsset } from "@/lib/assets";
 
@@ -18,8 +18,8 @@ const footerGroups = [
     links: [
       ["Ubicaciones", "/locations"],
       ["Audiencias", "/#analitica"],
-      ["Solicitar media kit", "/#contacto"],
-      ["Cotizar", "/#contacto"],
+      ["Solicitar media kit", "/contact"],
+      ["Cotizar", "/contact"],
     ],
   },
   {
@@ -27,7 +27,7 @@ const footerGroups = [
     links: [
       ["Nosotros", "/about"],
       ["Sostenibilidad", "/about"],
-      ["Agencias", "/#contacto"],
+      ["Agencias", "/contact"],
       ["Sistema visual", "/about"],
     ],
   },
@@ -36,7 +36,7 @@ const footerGroups = [
     links: [
       ["ventas@publiexcr.com", "mailto:ventas@publiexcr.com"],
       ["+506 2525-1010", "tel:+50625251010"],
-      ["Agendar reunión", "/#contacto"],
+      ["Agendar reunión", "/contact"],
     ],
   },
 ];

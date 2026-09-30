@@ -12,7 +12,7 @@
         {/* Campaign action */}
         <a
           className="absolute left-[53.33%] top-[34.3%] flex h-[39.37%] min-h-25.5 w-[56.3%] min-w-121.5 items-center justify-start rounded-l-4xl bg-black pl-[clamp(3rem,5.3vw,6.375rem)] pr-8 text-center font-raleway text-[clamp(2rem,4.17vw,5rem)] font-black uppercase leading-[1.025] text-white transition hover:bg-zinc-900"
-          href="#contacto"
+          href="/contact"
         >
           <span className="w-[min(28vw,481px)] min-w-57.5">
             <span className="block font-semibold">Solicitar</span>
