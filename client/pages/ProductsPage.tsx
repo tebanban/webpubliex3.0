@@ -235,36 +235,45 @@ type Product = (typeof productGroups)[number]["products"][number];
 
 function ProductCard({ product }: { product: Product }) {
   return (
-    <article className="bg-white p-5 shadow-sm md:p-8 xl:p-16">
+    <article className="bg-white p-2 shadow-sm md:p-8 xl:p-16">
       {/* Product summary */}
-      <div className="grid gap-8 lg:grid-cols-[1.1fr_0.72fr_0.9fr]">
+      <div className="grid gap-[clamp(1.5rem,3vw,3rem)] lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)_minmax(0,1fr)]">
         <div>
-          <p className="font-raleway text-sm font-bold uppercase text-publiex-red md:text-xl">
+          <p className="font-raleway text-[clamp(0.875rem,1.05vw,1.25rem)] font-bold uppercase text-publiex-red">
             {product.badge}
           </p>
-          <h3 className="mt-5 font-raleway text-[clamp(2.2rem,4.6vw,4.85rem)] font-semibold leading-[0.996]">
+          <h3 className="mt-5 font-raleway text-[clamp(2.1rem,4.2vw,4.85rem)] font-semibold leading-[0.996]">
             {product.title}
           </h3>
-          <p className="mt-6 max-w-157 font-raleway text-lg leading-tight md:text-xl">
+          <p className="mt-6 max-w-157 font-raleway text-[clamp(1rem,1.2vw,1.25rem)] leading-tight">
             {product.description}
           </p>
         </div>
         <div>
-          <p className="font-raleway text-sm font-extrabold uppercase">
+          <p className="font-raleway text-[clamp(0.75rem,0.95vw,0.875rem)] font-extrabold uppercase">
             Beneficios principales
           </p>
-          <ul className="mt-4 list-disc pl-5 font-raleway text-lg leading-9 md:text-xl">
-            {product.benefits.map((benefit) => (
-              <li key={benefit}>{benefit}</li>
+          <ul className="mt-4 font-raleway text-[clamp(1rem,1.2vw,1.25rem)] leading-[1.8]">
+            {product.benefits.map((benefit, index) => (
+              <li
+                className="flex gap-3 border-b border-zinc-300 py-[clamp(0.75rem,1.35vw,1.6rem)] last:border-b-0"
+                key={benefit}
+              >
+                <span
+                  aria-hidden="true"
+                  className="mt-[0.65em] size-1.5 shrink-0 rounded-full bg-black"
+                />
+                <span>{benefit}</span>
+              </li>
             ))}
           </ul>
         </div>
-        <div className="font-raleway text-lg leading-tight md:text-xl">
-          <p className="font-extrabold uppercase text-sm">
+        <div className="font-raleway text-[clamp(1rem,1.2vw,1.25rem)] leading-tight">
+          <p className="text-[clamp(0.75rem,0.95vw,0.875rem)] font-extrabold uppercase">
             Funciona mejor para
           </p>
           <p className="mt-4">{product.bestFor}</p>
-          <p className="mt-8 font-extrabold uppercase text-sm">
+          <p className="mt-8 text-[clamp(0.75rem,0.95vw,0.875rem)] font-extrabold uppercase">
             Qué lo diferencia
           </p>
           <p className="mt-4">{product.difference}</p>
@@ -279,7 +288,7 @@ function ProductCard({ product }: { product: Product }) {
           src={publiexAsset(product.image)}
         />
         <div className="absolute inset-0 bg-linear-to-b from-transparent via-black/35 to-black/85" />
-        <div className="relative flex min-h-[clamp(30rem,42.8vw,51.375rem)] flex-col justify-end p-[clamp(1.5rem,2.7vw,3.25rem)]">
+        <div className="relative flex min-h-[clamp(30rem,42.8vw,51.375rem)] flex-col justify-end px-[clamp(1.5rem,2.7vw,3.25rem)] pb-[clamp(1rem,1.5vw,1.75rem)] pt-[clamp(1.5rem,2.7vw,3.25rem)]">
           <p className="font-raleway text-xl font-extrabold uppercase">
             {product.tags[0]}
           </p>
@@ -292,19 +301,19 @@ function ProductCard({ product }: { product: Product }) {
           <div className="mt-8 h-1 w-full bg-white/45">
             <div className="h-full w-1/4 bg-publiex-red" />
           </div>
-          <div className="mt-6 flex flex-wrap gap-x-12 gap-y-3 font-raleway text-sm font-bold uppercase md:text-xl">
+          <div className="mt-3 flex flex-wrap gap-x-12 gap-y-2 font-raleway text-[clamp(0.6rem,0.9vw,1.6525rem)] font-bold uppercase">
             {product.tags.map((tag) => (
               <span key={tag}>{tag}</span>
             ))}
           </div>
-          <a
-            className="mt-8 w-fit font-raleway text-sm font-extrabold uppercase text-[#0f62e7] transition hover:text-white md:text-xl"
-            href="/contact"
-          >
-            {product.link}
-          </a>
         </div>
       </div>
+      <a
+        className="mt-3 block w-fit font-raleway text-[clamp(0.6rem,0.9vw,1.6525rem)] font-extrabold uppercase text-[#0f62e7] transition hover:text-publiex-blue/75"
+        href="/contact"
+      >
+        {product.link}
+      </a>
     </article>
   );
 }
@@ -334,7 +343,7 @@ export default function ProductsPage() {
           </p>
         </div>
         <nav className="absolute inset-x-0 bottom-0 flex min-h-19.75 items-center bg-publiex-blue px-5 md:px-10">
-          <div className="mx-auto flex w-full max-w-380 flex-nowrap items-center justify-between gap-x-[clamp(0.75rem,2.5vw,4.375rem)] overflow-hidden font-raleway text-[clamp(0.72rem,1.15vw,1.6525rem)] font-semibold uppercase">
+          <div className="mx-auto flex w-full max-w-380 flex-nowrap items-center justify-between gap-x-[clamp(0.75rem,2.5vw,4.375rem)] overflow-hidden font-raleway text-[clamp(0.6rem,0.9vw,1.6525rem)] font-semibold uppercase">
             {formatTabs.map(([label, href]) => (
               <a
                 className="shrink-0 whitespace-nowrap transition hover:text-white/70"
