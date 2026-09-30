@@ -312,9 +312,9 @@ function ProductCard({ product }: { product: Product }) {
 export default function ProductsPage() {
   return (
     <main className="bg-white text-black">
-      {/* Hero */}
+      {/* Section 1, Hero */}
       <section
-        className="relative min-h-[clamp(35rem,47vw,56rem)] overflow-hidden text-white"
+        className="relative min-h-[clamp(35rem,48vw,56rem)] overflow-hidden text-white"
         id="inicio"
       >
         <img
@@ -323,7 +323,7 @@ export default function ProductsPage() {
           src={publiexAsset("products-hero.png")}
         />
         <div className="absolute inset-0 bg-linear-to-b from-black/20 via-black/35 to-black/80" />
-        <div className="relative mx-auto flex min-h-[clamp(35rem,47vw,56rem)] w-full max-w-480 flex-col items-center justify-end px-5 pb-[clamp(5rem,5.2vw,6.25rem)] text-center md:px-10">
+        <div className="relative mx-auto flex min-h-[clamp(35rem,48vw,56rem)] w-full max-w-480 flex-col items-center justify-end px-5 pb-[clamp(5rem,5.2vw,6.25rem)] text-center md:px-10">
           <h1 className="max-w-350 font-raleway text-[clamp(2.7rem,5.4vw,4.85rem)] font-extrabold uppercase leading-[0.996]">
             No elija un formato.
             <span className="block">Elija lo que quiere lograr.</span>
@@ -333,11 +333,11 @@ export default function ProductsPage() {
             creatividad para construir la presencia que necesita cada marca.
           </p>
         </div>
-        <nav className="absolute inset-x-0 bottom-0 bg-publiex-blue/95 px-5 py-5 md:px-10">
-          <div className="mx-auto flex max-w-380 flex-wrap justify-center gap-x-12 gap-y-3 font-raleway text-[clamp(0.875rem,1.38vw,1.6525rem)] font-semibold uppercase">
+        <nav className="absolute inset-x-0 bottom-0 flex min-h-19.75 items-center bg-publiex-blue px-5 md:px-10">
+          <div className="mx-auto flex w-full max-w-380 flex-nowrap items-center justify-between gap-x-[clamp(0.75rem,2.5vw,4.375rem)] overflow-hidden font-raleway text-[clamp(0.72rem,1.15vw,1.6525rem)] font-semibold uppercase">
             {formatTabs.map(([label, href]) => (
               <a
-                className="transition hover:text-white/70"
+                className="shrink-0 whitespace-nowrap transition hover:text-white/70"
                 href={href}
                 key={href}
               >
@@ -348,10 +348,10 @@ export default function ProductsPage() {
         </nav>
       </section>
 
-      {/* Product families */}
+      {/* Section 2, Product families */}
       {productGroups.map((group) => (
         <section
-          className="overflow-hidden bg-[#e9e9e9] px-5 py-[clamp(4rem,6.25vw,7.5rem)] md:px-10 lg:px-24"
+          className="overflow-hidden bg-[#e9e9e9] px-5 py-[clamp(3rem,4vw,6rem)] md:px-10 lg:px-24"
           id={group.id}
           key={group.id}
         >
@@ -378,7 +378,7 @@ export default function ProductsPage() {
         </section>
       ))}
 
-      {/* Campaign architecture */}
+      {/* Section 3, Campaign architecture */}
       <section className="overflow-hidden bg-publiex-gradient px-5 py-[clamp(4rem,6.25vw,7.5rem)] text-white md:px-10 lg:px-24">
         <div className="mx-auto max-w-393.5">
           <p className="font-raleway text-sm font-bold uppercase md:text-xl">

@@ -28,7 +28,7 @@ function AboutButton({
 export default function AboutPage() {
   return (
     <main className="bg-white pt-14 text-black md:pt-16 xl:pt-20">
-      {/* Hero story */}
+      {/* Section 1, Hero story */}
       <section className="overflow-hidden bg-publiex-gradient text-white">
         <div className="mx-auto grid w-full max-w-480 lg:grid-cols-[48%_52%]">
           <div className="flex flex-col justify-center px-5 py-[clamp(5rem,7vw,8rem)] md:px-10 lg:px-24 xl:pl-43.25 xl:pr-16">
@@ -63,7 +63,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* History overview */}
+      {/* Section 2, History overview */}
       <section className="overflow-hidden bg-white" id="historia">
         <div className="mx-auto flex w-full max-w-480 flex-col items-center px-5 py-[clamp(4rem,4.2vw,5rem)] text-center md:px-10 lg:px-24 xl:justify-center">
           <p className="self-start font-raleway text-sm font-bold uppercase md:text-xl">
@@ -84,7 +84,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team culture */}
+      {/* Section 3, Team culture */}
       <section className="overflow-hidden bg-publiex-gradient text-white">
         <div className="mx-auto grid w-full max-w-480 lg:grid-cols-[51%_49%]">
           <div className="min-h-[clamp(30rem,48vw,57.5625rem)]">
@@ -115,7 +115,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Commitments */}
+      {/* Section 4, Commitments */}
       <section className="overflow-hidden bg-white">
         <div className="mx-auto grid w-full max-w-480 gap-10 px-5 py-[clamp(4rem,5.6vw,6.75rem)] md:px-10 lg:grid-cols-[1fr_1fr] lg:px-24 xl:px-43.25">
           <div>
@@ -136,7 +136,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Trust CTA */}
+      {/* Section 5, Trust CTA */}
       <section className="overflow-hidden bg-publiex-red text-white">
         <div className="mx-auto flex w-full max-w-480 flex-col justify-center px-5 py-[clamp(4rem,5.4vw,6.5rem)] md:px-10 lg:px-24 xl:px-43.25">
           <p className="font-raleway text-sm font-bold uppercase md:text-xl">

@@ -92,7 +92,7 @@ function CaseStudyCard({ study }: { study: CaseStudy }) {
 export default function CaseStudiesPage() {
   return (
     <main className="bg-publiex-navy text-white">
-      {/* Hero */}
+      {/* Section 1, Hero */}
       <section
         className="relative min-h-[clamp(40rem,47.1vw,56.5rem)] overflow-hidden"
         id="inicio"
@@ -110,7 +110,7 @@ export default function CaseStudiesPage() {
         </div>
       </section>
 
-      {/* Case list */}
+      {/* Section 2, Case list */}
       <section className="overflow-hidden bg-publiex-navy px-5 py-[clamp(4rem,6.25vw,7.5rem)] md:px-10 lg:px-24">
         <div className="mx-auto max-w-393.5">
           <p className="font-raleway text-sm font-bold uppercase md:text-2xl">

@@ -3,7 +3,7 @@
 export default function ContactPage() {
   return (
     <main className="bg-white text-black">
-      {/* Contact form */}
+      {/* Section 1, Contact form */}
       <section className="overflow-hidden bg-publiex-gradient text-white">
         <div className="mx-auto grid min-h-screen w-full max-w-480 items-center gap-12 px-5 pb-[clamp(5rem,8vw,9.5rem)] pt-[clamp(9rem,11vw,13rem)] md:px-10 lg:grid-cols-[0.95fr_1.05fr] lg:px-24 xl:px-43.25">
           <div>

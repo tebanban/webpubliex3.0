@@ -27,7 +27,7 @@ function LocationButton({
 export default function LocationsPage() {
   return (
     <main className="bg-white pt-14 text-black md:pt-16 xl:pt-20">
-      {/* Hero */}
+      {/* Section 1, Hero */}
       <section className="overflow-hidden bg-publiex-gradient text-white">
         <div className="mx-auto grid w-full max-w-480 lg:grid-cols-[51%_49%]">
           <div className="flex flex-col justify-center px-5 py-[clamp(5rem,7vw,8rem)] md:px-10 lg:px-24 xl:pl-47.5 xl:pr-18">
@@ -56,7 +56,7 @@ export default function LocationsPage() {
         </div>
       </section>
 
-      {/* Inventory visual */}
+      {/* Section 2, Inventory visual */}
       <section className="overflow-hidden bg-[#eaedf2] px-5 py-[clamp(4rem,6.5vw,7.75rem)] md:px-10 lg:px-24">
         <div className="mx-auto max-w-393.5">
           <p className="font-raleway text-sm font-bold uppercase md:text-2xl">
@@ -88,7 +88,7 @@ export default function LocationsPage() {
         </div>
       </section>
 
-      {/* Featured location */}
+      {/* Section 3, Featured location */}
       <section className="overflow-hidden bg-publiex-navy px-5 py-[clamp(4rem,6.25vw,7.5rem)] text-white md:px-10 lg:px-24">
         <div className="mx-auto max-w-393.5">
           <h2 className="max-w-300 font-raleway text-[clamp(2.4rem,5.4vw,4.965rem)] font-semibold leading-[1.04]">
@@ -137,7 +137,7 @@ export default function LocationsPage() {
         </div>
       </section>
 
-      {/* Selection summary */}
+      {/* Section 4, Selection summary */}
       <section className="overflow-hidden bg-[#eaedf2] px-5 py-[clamp(4rem,6.25vw,7.5rem)] md:px-10 lg:px-24">
         <div className="mx-auto max-w-393.5">
           <p className="font-raleway text-sm font-bold uppercase md:text-2xl">

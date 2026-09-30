@@ -60,7 +60,7 @@ export default function HomePage() {
 
   return (
     <main className="bg-white text-black">
-      {/* Hero */}
+      {/* Section 1, Hero */}
       <section
         className="relative h-[clamp(36rem,47.9vw,57.5rem)] overflow-hidden text-white"
         id="inicio"
@@ -108,7 +108,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Location finder */}
+      {/* Section 2, Location finder */}
       <section
         className="overflow-hidden bg-publiex-gradient text-white"
         id="ubicaciones"
@@ -141,7 +141,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Impact statement */}
+      {/* Section 3, Impact statement */}
       <section className="relative overflow-hidden text-white">
         <img
           alt="Valla iluminada en una carretera de Costa Rica durante la noche"
@@ -166,7 +166,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Company story */}
+      {/* Section 4, Company story */}
       <section className="relative overflow-hidden text-white" id="nosotros">
         <img
           alt="Estructura de publicidad exterior Publiex"
@@ -202,7 +202,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Advertising solutions */}
+      {/* Section 5, Advertising solutions */}
       <section
         className="overflow-hidden bg-publiex-gradient text-white"
         id="soluciones"
@@ -255,7 +255,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Large format */}
+      {/* Section 6, Large format */}
       <section className="overflow-hidden">
         <div className="mx-auto grid min-h-[clamp(36.25rem,40vw,52.1875rem)] w-full max-w-480 gap-0 lg:grid-cols-2">
           <img
@@ -280,7 +280,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Format highlights */}
+      {/* Section 7, Format highlights */}
       <section className="overflow-hidden">
         <div className="mx-auto grid min-h-[clamp(36.25rem,40vw,52.1875rem)] w-full max-w-480 gap-0 lg:grid-cols-2">
           <div className="px-5 py-[clamp(4.625rem,4.2vw,5rem)] md:px-10 lg:px-24 xl:pl-43.25 xl:pr-15">
@@ -305,7 +305,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Transport and special projects */}
+      {/* Section 8, Transport and special projects */}
       <section
         className="overflow-hidden bg-publiex-sports-gradient text-white"
         id="analitica"
@@ -335,7 +335,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Digital and special formats */}
+      {/* Section 9, Digital and special formats */}
       <section className="overflow-hidden border-t border-zinc-300">
         <div className="mx-auto grid w-full max-w-480 gap-10 px-5 pb-[clamp(2.5rem,3vw,3.5rem)] pt-[clamp(4rem,4vw,4.75rem)] md:px-10 lg:grid-cols-2 lg:px-24 xl:gap-53.25 xl:px-23.25">
           <article>
@@ -380,7 +380,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Audience analytics */}
+      {/* Section 10, Audience analytics */}
       <section className="overflow-hidden bg-[linear-gradient(135deg,#ffffff_0%,#bbd1f3_100%)]">
         <div className="mx-auto grid w-full max-w-480 gap-10 px-5 py-[clamp(4rem,4.2vw,5.0625rem)] md:px-10 lg:px-24 xl:grid-cols-[minmax(0,630fr)_minmax(0,630fr)_minmax(230px,280fr)] xl:items-start xl:gap-x-4.5">
           <div className="@container xl:pt-11.5">
@@ -480,7 +480,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Work and insights */}
+      {/* Section 11, Work and insights */}
       <section
         className="overflow-hidden bg-publiex-navy text-white"
         id="casos"
@@ -526,6 +526,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Section 12, Actualidad e insights */}
       <section className="overflow-hidden" id="actualidad">
         <div className="mx-auto w-full max-w-480 px-5 py-20 md:px-10 lg:px-24">
           <div className="mx-auto max-w-393.5">
@@ -561,7 +562,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Proposal paths */}
+      {/* Section 13, Proposal paths */}
       <section className="overflow-hidden">
         <div className="mx-auto w-full max-w-480 py-[clamp(0rem,4.4vw,5.3125rem)]">
           <div className="mx-auto grid w-full max-w-393.5 gap-[clamp(1.25rem,3.6vw,5.25rem)] px-5 md:grid-cols-2 md:px-10 lg:px-0">
@@ -601,6 +602,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Section 14, Campaign CTA */}
       <CampaignCta />
     </main>
   );
