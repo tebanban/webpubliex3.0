@@ -359,6 +359,38 @@ Current sections:
      - "Ver actualidad e insights", linking to `/#actualidad`.
      - "Trabajar con Publiex", linking to `/contact`.
 
+## Actualidad Page
+
+File: `client/pages/ActualidadPage.tsx`
+
+Current sections:
+
+1. Hero
+   - Deep-blue background using `bg-publiex-blue-deep`.
+   - Eyebrow: Actualidad e insights.
+   - Headline: "Ideas, proyectos y perspectivas que mueven el exterior."
+   - Intro copy for news, cases, innovation, sustainability, and OOH/DOOH planning content.
+
+2. Featured Story
+   - Two-column feature story layout.
+   - Left image: `actualidad-raw-01.jpeg`.
+   - Right headline and summary for the featured story about advertising in movement.
+
+3. Editorial Grid
+   - Gray background.
+   - Category filter chips.
+   - Six article cards driven by the local `articles` array.
+   - Article assets are stored locally as `actualidad-raw-*` files in `public/images/publiex`.
+
+4. Press Room
+   - Red background.
+   - Corporate/media information CTA.
+   - Links to contact Publiex and consult the visual system.
+
+5. Newsletter
+   - Deep-blue background.
+   - Email subscription form scaffold.
+
 ## Locations Page
 
 File: `client/pages/LocationsPage.tsx`

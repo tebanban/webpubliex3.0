@@ -10,7 +10,7 @@ const navItems = [
   ["Soluciones publicitarias", "/products"],
   ["Explorar ubicaciones", "/locations"],
   ["Analítica", "/#analitica"],
-  ["Actualidad", "/#actualidad"],
+  ["Actualidad", "/actualidad"],
   ["Casos", "/case-studies"],
 ];
 
