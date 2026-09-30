@@ -319,16 +319,45 @@ File: `client/pages/AboutPage.tsx`
 
 Current sections:
 
-1. `PageIntro`
-   - Eyebrow: Quienes somos.
-   - Title: "27 anos mirando hacia adelante."
-   - Description explaining that the page will expand company history, team, operations, and evolution.
+1. Hero Story
+   - Two-column layout inside the `1920px` frame.
+   - Left content column uses `bg-publiex-blue-deep`.
+   - Eyebrow: Conozca Publiex.
+   - Headline: "Experiencia que se ve. Respaldo que se siente."
+   - Body copy about Publiex's work since 1999.
+   - CTA: "Descubrir nuestra historia", linking to `#historia`.
+   - Right image: `about-hero-billboard.png`.
 
-2. Company Snapshot
-   - Two-column section.
-   - Left image: `figma-about.jpeg`.
-   - Right text block about experience, coverage, and criteria.
-   - CTA: "Conversar con Publiex".
+2. History Overview
+   - White background.
+   - Anchor: `#historia`.
+   - Eyebrow: Nuestra historia.
+   - Headline about a Costa Rican company built to make big ideas visible.
+   - Paragraph describing Publiex's evolution across large format, urban furniture, transit, DOOH, and special projects.
+
+3. Team Culture
+   - Two-column layout with image left and text right.
+   - Section background uses `bg-publiex-blue-deep`.
+   - Left image: `about-team-culture.png`.
+   - Eyebrow: Equipo y cultura.
+   - Headline: "La calidad visible comienza con el trabajo que nadie ve."
+   - Body copy about coordination, safety, maintenance, and the team behind campaign execution.
+   - CTA: "Conversemos", linking to `/contact`.
+
+4. Commitments
+   - White background.
+   - Two-column text layout.
+   - Eyebrow: Nuestra historia.
+   - Headline: "Compromisos que deben poder demostrarse."
+   - Paragraph explaining the standard for documented and clearly explainable campaign figures.
+
+5. Trust CTA
+   - Red background.
+   - Eyebrow: Construyamos confianza.
+   - Headline: "Una trayectoria sólida. Una visión que sigue avanzando."
+   - CTAs:
+     - "Ver actualidad e insights", linking to `/#actualidad`.
+     - "Trabajar con Publiex", linking to `/contact`.
 
 ## Locations Page
 

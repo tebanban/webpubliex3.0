@@ -29,9 +29,9 @@ export default function AboutPage() {
   return (
     <main className="bg-white pt-14 text-black md:pt-16 xl:pt-20">
       {/* Section 1, Hero story */}
-      <section className="overflow-hidden bg-publiex-gradient text-white">
+      <section className="overflow-hidden bg-white text-white">
         <div className="mx-auto grid w-full max-w-480 lg:grid-cols-[48%_52%]">
-          <div className="flex flex-col justify-center px-5 py-[clamp(5rem,7vw,8rem)] md:px-10 lg:px-24 xl:pl-43.25 xl:pr-16">
+          <div className="flex flex-col justify-center bg-publiex-blue-deep px-5 py-[clamp(5rem,7vw,8rem)] md:px-10 lg:px-24 xl:pl-43.25 xl:pr-16">
             <p className="font-raleway text-sm font-bold uppercase leading-none md:text-xl">
               Conozca Publiex
             </p>
@@ -85,7 +85,7 @@ export default function AboutPage() {
       </section>
 
       {/* Section 3, Team culture */}
-      <section className="overflow-hidden bg-publiex-gradient text-white">
+      <section className="overflow-hidden bg-publiex-blue-deep text-white">
         <div className="mx-auto grid w-full max-w-480 lg:grid-cols-[51%_49%]">
           <div className="min-h-[clamp(30rem,48vw,57.5625rem)]">
             <img

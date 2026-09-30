@@ -95,7 +95,7 @@ const productGroups = [
       },
       {
         title: "Banner Posts",
-        image: "figma-urban-furniture.jpeg",
+        image: "products-bannerpost.png",
         badge: "Presencia secuencial",
         description:
           "Piezas de alto recorrido visual instaladas en avenidas, rotondas y rutas urbanas estratégicas.",
@@ -166,7 +166,7 @@ const productGroups = [
     products: [
       {
         title: "Pantallas Digitales",
-        image: "figma-dooh-raw-1.jpeg",
+        image: "products-digitalscreen.mp4",
         badge: "Agilidad + iluminación",
         description:
           "Pantallas de alta visibilidad que permiten alternar piezas, actualizar mensajes y aprovechar el movimiento creativo.",
@@ -182,7 +182,7 @@ const productGroups = [
         overlayTitle: "Mensajes que pueden cambiar con la campaña.",
         overlayCopy:
           "DOOH aporta iluminación, movimiento creativo y agilidad para alternar piezas durante el periodo contratado.",
-        tags: ["Contenido dinámico", "Actualización ágil", "Iluminación"],
+        tags: [""],
         link: "Planificar una campaña DOOH",
       },
     ],
@@ -237,6 +237,7 @@ type Product = (typeof productGroups)[number]["products"][number];
 
 function ProductCard({ product }: { product: Product }) {
   const [activeTagIndex, setActiveTagIndex] = useState(0);
+  const isVideo = product.image.endsWith(".mp4");
 
   return (
     <article className="bg-white p-2 shadow-sm md:p-8 xl:p-16">
@@ -286,11 +287,24 @@ function ProductCard({ product }: { product: Product }) {
 
       {/* Product image feature */}
       <div className="relative mt-6 min-h-[clamp(30rem,42.8vw,51.375rem)] overflow-hidden text-white">
-        <img
-          alt={product.title}
-          className="absolute inset-0 size-full object-cover"
-          src={publiexAsset(product.image)}
-        />
+        {isVideo ? (
+          <video
+            aria-label={product.title}
+            autoPlay
+            className="absolute inset-0 size-full object-cover"
+            loop
+            muted
+            playsInline
+          >
+            <source src={publiexAsset(product.image)} type="video/mp4" />
+          </video>
+        ) : (
+          <img
+            alt={product.title}
+            className="absolute inset-0 size-full object-cover"
+            src={publiexAsset(product.image)}
+          />
+        )}
         <div className="absolute inset-0 bg-linear-to-b from-transparent via-black/35 to-black/85" />
         <div className="relative flex min-h-[clamp(30rem,42.8vw,51.375rem)] flex-col justify-end px-[clamp(1.5rem,2.7vw,3.25rem)] pb-[clamp(1rem,1.5vw,1.75rem)] pt-[clamp(1.5rem,2.7vw,3.25rem)]">
           <p className="font-raleway text-xl font-extrabold uppercase">
@@ -410,7 +424,13 @@ export default function ProductsPage() {
               {group.eyebrow}
             </p>
             <h2 className="mt-8 max-w-300 font-raleway text-[clamp(2.4rem,5.4vw,4.85rem)] font-semibold leading-[0.996]">
-              {group.title.includes(group.redTitle) ? (
+              {group.id === "dooh" ? (
+                <>
+                  <span className="text-publiex-red">Contenido flexible</span>{" "}
+                  para una
+                  <span className="block">ciudad en movimiento.</span>
+                </>
+              ) : group.title.includes(group.redTitle) ? (
                 <>
                   {group.title.replace(group.redTitle, "")}
                   <span className="text-publiex-red">{group.redTitle}</span>
