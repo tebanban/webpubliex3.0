@@ -29,7 +29,7 @@ const networkStats = [
   },
   {
     value: "+2M",
-    label: "impresiones exteriores mensuales GAM",
+    label: "impresiones exteriores\nmensuales GAM",
     icon: "tren-6.svg",
   },
 ];
@@ -152,7 +152,7 @@ export default function InfoTrenesPage() {
                     {value}
                   </p>
                 </div>
-                <p className="mt-3 text-[clamp(1rem,1.25vw,1.5rem)] font-bold leading-tight">
+                <p className="mt-3 whitespace-pre-line text-[clamp(1rem,1.25vw,1.5rem)] font-bold leading-tight">
                   {label}
                 </p>
               </article>
@@ -184,7 +184,7 @@ export default function InfoTrenesPage() {
                 className="border border-black/40 p-8 font-raleway"
                 key={route.number}
               >
-                <p className="text-sm font-bold text-publiex-red">
+                <p className="text-xl font-bold text-publiex-red">
                   {route.number}
                 </p>
                 <h3 className="mt-7 min-h-20 text-[clamp(1.4rem,1.85vw,2.1875rem)] font-semibold leading-[1.18]">
@@ -233,13 +233,13 @@ export default function InfoTrenesPage() {
                   {format.copy}
                 </p>
                 <div className="font-raleway text-xs font-semibold uppercase tracking-[0.08em] text-[#8db8ff] lg:text-right">
-                  <p>Disponibilidad y recomendación</p>
                   <Link
-                    className="mt-3 inline-flex bg-publiex-red px-5 py-2 text-[clamp(1rem,1.48vw,1.7775rem)] font-bold text-white transition hover:bg-red-600"
+                    className="inline-flex bg-publiex-red px-5 py-2 text-[clamp(1rem,1.48vw,1.7775rem)] font-bold text-white transition hover:bg-red-600"
                     to="/contact"
                   >
                     Consultar
                   </Link>
+                  <p className="mt-3 whitespace-nowrap">Disponibilidad y recomendación</p>
                 </div>
               </article>
             ))}
@@ -273,7 +273,7 @@ export default function InfoTrenesPage() {
             <img
               alt="Tren Publiex con campaña exterior en movimiento"
               className="size-full object-cover object-center"
-              src={publiexAsset("info-trenes-cta.jpeg")}
+              src={publiexAsset("infotren-reach.png")}
             />
           </div>
         </div>
@@ -281,4 +281,8 @@ export default function InfoTrenesPage() {
     </main>
   );
 }
+
+
+
+
 
