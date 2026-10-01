@@ -338,7 +338,7 @@ export default function HomePage() {
       {/* Section 9, Digital and special formats */}
       <section className="overflow-hidden border-t border-zinc-300">
         <div className="mx-auto grid w-full max-w-480 gap-10 px-5 pb-[clamp(2.5rem,3vw,3.5rem)] pt-[clamp(4rem,4vw,4.75rem)] md:px-10 lg:grid-cols-2 lg:px-24 xl:gap-53.25 xl:px-23.25">
-          <article>
+          <article className="flex h-full flex-col">
             <img
               alt="Pantalla digital Publiex con contenido dinámico"
               className="aspect-756/518 w-full object-cover"
@@ -352,11 +352,11 @@ export default function HomePage() {
               Contenido flexible y de alto impacto para activar campañas
               relevantes en los momentos que importan.
             </p>
-            <div className="mt-8">
+            <div className="mt-auto pt-8">
               <PrimaryLink href="/contact">Explorar DOOH</PrimaryLink>
             </div>
           </article>
-          <article>
+          <article className="flex h-full flex-col">
             <img
               alt="Proyecto especial de publicidad exterior Publiex"
               className="aspect-756/518 w-full object-cover"
@@ -371,7 +371,7 @@ export default function HomePage() {
               una ubicación en una ejecución que la audiencia recuerda y
               comparte.
             </p>
-            <div className="mt-8">
+            <div className="mt-auto pt-8">
               <PrimaryLink href="/contact">
                 Explorar proyectos especiales
               </PrimaryLink>
@@ -569,7 +569,7 @@ export default function HomePage() {
       <section className="overflow-hidden">
         <div className="mx-auto w-full max-w-480 py-[clamp(0rem,4.4vw,5.3125rem)]">
           <div className="mx-auto grid w-full max-w-393.5 gap-[clamp(1.25rem,3.6vw,5.25rem)] px-5 md:grid-cols-2 md:px-10 lg:px-0">
-            <div className="bg-publiex-gradient px-[clamp(1.25rem,2.25vw,2.6875rem)] py-[clamp(3rem,4.4vw,5.3125rem)] text-white">
+            <div className="flex h-full flex-col bg-publiex-gradient px-[clamp(1.25rem,2.25vw,2.6875rem)] py-[clamp(3rem,4.4vw,5.3125rem)] text-white">
               <SectionLabel>Para agencias</SectionLabel>
               <h2 className="font-raleway text-[clamp(1.75rem,3vw,3.375rem)] font-semibold leading-tight md:leading-[0.98]">
                 Más velocidad para planificar. Más impacto para presentar.
@@ -579,13 +579,13 @@ export default function HomePage() {
                 equipos comerciales que necesitan pasar de la búsqueda a la
                 propuesta sin fricción.
               </p>
-              <div className="mt-[clamp(1.5rem,2vw,2rem)]">
+              <div className="mt-auto pt-[clamp(1.5rem,2vw,2rem)]">
                 <PrimaryLink href="/contact" tone="white">
                   Acceso para agencias
                 </PrimaryLink>
               </div>
             </div>
-            <div className="bg-zinc-200 px-[clamp(1.25rem,2.25vw,2.6875rem)] py-[clamp(3rem,4.4vw,5.3125rem)]">
+            <div className="flex h-full flex-col bg-zinc-200 px-[clamp(1.25rem,2.25vw,2.6875rem)] py-[clamp(3rem,4.4vw,5.3125rem)]">
               <SectionLabel dark>Para propietarios</SectionLabel>
               <h2 className="font-raleway text-[clamp(1.75rem,3vw,3.375rem)] font-semibold leading-tight md:leading-[0.98]">
                 Su espacio puede convertirse en un nuevo punto de referencia.
@@ -595,7 +595,7 @@ export default function HomePage() {
                 equipos comerciales que necesitan pasar de la búsqueda a la
                 propuesta sin fricción.
               </p>
-              <div className="mt-[clamp(1.5rem,2vw,2rem)]">
+              <div className="mt-auto pt-[clamp(1.5rem,2vw,2rem)]">
                 <PrimaryLink href="/contact" tone="blue">
                   Enviar mi ubicación
                 </PrimaryLink>
