@@ -4,6 +4,12 @@ const caseStudies = [
   {
     category: "Landmark",
     title: "Una presencia que se convirtió en punto de referencia",
+    titleLines: [
+      "Una presencia",
+      "que se convirtió",
+      "en punto de",
+      "referencia",
+    ],
     image: "casestudies-landmark.png",
     layout: "imageTop",
     body: [
@@ -56,7 +62,13 @@ function CaseTitle({ study }: { study: CaseStudy }) {
         {study.category}
       </p>
       <h3 className="mt-4 max-w-165 font-raleway text-[clamp(2.25rem,4.55vw,5.45rem)] font-semibold leading-[1.05] text-black">
-        {study.title}
+        {"titleLines" in study
+          ? study.titleLines.map((line) => (
+              <span className="block whitespace-nowrap" key={line}>
+                {line}
+              </span>
+            ))
+          : study.title}
       </h3>
     </div>
   );
@@ -98,15 +110,15 @@ function CaseStudyCard({ study }: { study: CaseStudy }) {
     return (
       <article className="grid overflow-hidden bg-white lg:grid-cols-[minmax(0,0.98fr)_minmax(320px,0.82fr)]">
         {/* Case copy */}
-        <div className="flex flex-col justify-start px-[clamp(1.5rem,3.5vw,4.75rem)] py-[clamp(3rem,4.2vw,6rem)]">
+        <div className="flex flex-col justify-start px-[clamp(1.5rem,3.5vw,4.75rem)] py-[clamp(2.25rem,3.2vw,4.5rem)]">
           <CaseTitle study={study} />
-          <div className="mt-[clamp(2rem,3vw,4rem)] max-w-168">
+          <div className="mt-[clamp(2rem,3vw,4rem)] max-w-2xl">
             <CaseBody study={study} />
           </div>
         </div>
 
         {/* Case image */}
-        <div className="min-h-[clamp(32rem,57vw,68.375rem)] overflow-hidden p-[clamp(1.25rem,2.65vw,3.1875rem)] pl-0 max-lg:pl-[clamp(1.25rem,2.65vw,3.1875rem)] max-lg:pt-0">
+        <div className="min-h-[clamp(32rem,57vw,68.375rem)] overflow-hidden p-[clamp(1rem,2vw,2.5rem)] pl-0 max-lg:pl-[clamp(1rem,2vw,2.5rem)] max-lg:pt-0">
           <CaseMedia
             className="size-full object-cover object-center"
             study={study}
@@ -119,7 +131,7 @@ function CaseStudyCard({ study }: { study: CaseStudy }) {
   return (
     <article className="overflow-hidden bg-white">
       {/* Case image */}
-      <div className="px-[clamp(1.25rem,3.5vw,4.25rem)] pt-[clamp(1.25rem,2.65vw,3.1875rem)]">
+      <div className="px-[clamp(1.25rem,3.5vw,4.25rem)] pt-[clamp(1rem,2vw,2.5rem)]">
         <CaseMedia
           className="h-[clamp(18rem,32.5vw,39rem)] w-full object-cover object-center"
           study={study}
@@ -127,7 +139,7 @@ function CaseStudyCard({ study }: { study: CaseStudy }) {
       </div>
 
       {/* Case details */}
-      <div className="grid gap-8 px-[clamp(1.5rem,3.95vw,4.75rem)] pb-[clamp(3rem,4vw,4.75rem)] pt-[clamp(2.25rem,3.6vw,4.5rem)] lg:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)]">
+      <div className="grid gap-8 px-[clamp(1.5rem,3.95vw,4.75rem)] pb-[clamp(2.25rem,3vw,3.75rem)] pt-[clamp(1.75rem,2.7vw,3.375rem)] lg:grid-cols-2">
         <CaseTitle study={study} />
         <div className="self-end lg:max-w-168">
           <CaseBody study={study} />
@@ -151,7 +163,7 @@ export default function CaseStudiesPage() {
           src={publiexAsset("casestudies-hero.png")}
         />
         <div className="absolute inset-0 bg-linear-to-b from-black/5 via-black/15 to-black/65" />
-        <div className="relative mx-auto flex min-h-[clamp(24rem,36vw,48rem)] w-full max-w-480 items-end justify-center px-5 pb-[clamp(2rem,3vw,3.5rem)] text-center md:px-10">
+        <div className="relative mx-auto flex min-h-[clamp(24rem,36vw,48rem)] w-full max-w-480 items-end justify-center px-5 pb-[clamp(1.5rem,2.25vw,2.75rem)] text-center md:px-10">
           <h1 className="font-raleway text-[clamp(3rem,7.4vw,8.85rem)] font-semibold uppercase leading-[0.996]">
             Casos de éxito
           </h1>
@@ -159,14 +171,18 @@ export default function CaseStudiesPage() {
       </section>
 
       {/* Section 2, Case list */}
-      <section className="overflow-hidden bg-publiex-blue-deep px-5 py-[clamp(4rem,6.25vw,7.5rem)] md:px-10 lg:px-24">
+      <section className="overflow-hidden bg-publiex-blue-deep px-5 py-[clamp(3rem,5vw,6rem)] md:px-10 lg:px-24">
         <div className="mx-auto max-w-393.5">
           <p className="font-raleway text-sm font-bold uppercase md:text-2xl">
             Noticias
           </p>
-          <h2 className="mt-8 max-w-220 font-raleway text-[clamp(2.2rem,5.2vw,4.7rem)] font-semibold leading-[1.04]">
-            Campañas que se volvieron
-            <span className="block text-publiex-red">parte del viaje</span>
+          <h2 className="mt-8 max-w-300 font-raleway text-[clamp(2.2rem,5.2vw,4.7rem)] font-semibold leading-[1.04]">
+            <span className="block md:whitespace-nowrap">
+              Campañas que se volvieron
+            </span>
+            <span className="block text-publiex-red md:whitespace-nowrap">
+              parte del viaje
+            </span>
           </h2>
           <div className="mt-12 grid gap-8 xl:gap-16">
             {caseStudies.map((study) => (
