@@ -4,7 +4,7 @@ const caseStudies = [
   {
     category: "Landmark",
     title: "Una presencia que se convirtió en punto de referencia",
-    image: "cases-figma-landmark.jpeg",
+    image: "casestudies-landmark.png",
     layout: "imageTop",
     body: [
       "Una ubicación dominante puede cambiar la forma en que una marca aparece en la ciudad. Este caso muestra cómo un formato de gran escala ayuda a construir recordación, lectura inmediata y presencia sostenida en un corredor de alto tránsito.",
@@ -15,7 +15,7 @@ const caseStudies = [
   {
     category: "Trenes",
     title: "Un lanzamiento que recorrió la GAM",
-    image: "cases-figma-train.jpeg",
+    image: "casestudies-tren.png",
     layout: "imageRight",
     body: [
       "La publicidad en movimiento permite que una marca acompañe a las personas durante el trayecto. En este lanzamiento, el tren funcionó como una plataforma móvil capaz de multiplicar puntos de contacto y reforzar presencia en distintos momentos del día.",
@@ -26,7 +26,8 @@ const caseStudies = [
   {
     category: "DOOH",
     title: "Una pantalla que cambió con la ciudad",
-    image: "cases-figma-dooh.jpeg",
+    image: "casestudies-dooh.mp4",
+    mediaType: "video",
     layout: "imageTop",
     body: [
       "Las pantallas digitales permiten adaptar mensajes sin perder presencia en calle. Este caso aprovecha contenido dinámico para mantener la campaña activa, flexible y alineada con distintos momentos de comunicación.",
@@ -61,6 +62,37 @@ function CaseTitle({ study }: { study: CaseStudy }) {
   );
 }
 
+function CaseMedia({
+  className,
+  study,
+}: {
+  className: string;
+  study: CaseStudy;
+}) {
+  if ("mediaType" in study && study.mediaType === "video") {
+    return (
+      <video
+        aria-label={study.title}
+        autoPlay
+        className={className}
+        loop
+        muted
+        playsInline
+      >
+        <source src={publiexAsset(study.image)} type="video/mp4" />
+      </video>
+    );
+  }
+
+  return (
+    <img
+      alt={study.title}
+      className={className}
+      src={publiexAsset(study.image)}
+    />
+  );
+}
+
 function CaseStudyCard({ study }: { study: CaseStudy }) {
   if (study.layout === "imageRight") {
     return (
@@ -75,10 +107,9 @@ function CaseStudyCard({ study }: { study: CaseStudy }) {
 
         {/* Case image */}
         <div className="min-h-[clamp(32rem,57vw,68.375rem)] overflow-hidden p-[clamp(1.25rem,2.65vw,3.1875rem)] pl-0 max-lg:pl-[clamp(1.25rem,2.65vw,3.1875rem)] max-lg:pt-0">
-          <img
-            alt={study.title}
+          <CaseMedia
             className="size-full object-cover object-center"
-            src={publiexAsset(study.image)}
+            study={study}
           />
         </div>
       </article>
@@ -89,10 +120,9 @@ function CaseStudyCard({ study }: { study: CaseStudy }) {
     <article className="overflow-hidden bg-white">
       {/* Case image */}
       <div className="px-[clamp(1.25rem,3.5vw,4.25rem)] pt-[clamp(1.25rem,2.65vw,3.1875rem)]">
-        <img
-          alt={study.title}
+        <CaseMedia
           className="h-[clamp(18rem,32.5vw,39rem)] w-full object-cover object-center"
-          src={publiexAsset(study.image)}
+          study={study}
         />
       </div>
 
@@ -112,16 +142,16 @@ export default function CaseStudiesPage() {
     <main className="bg-publiex-blue-deep text-white">
       {/* Section 1, Hero */}
       <section
-        className="relative min-h-[clamp(30rem,40vw,50rem)] overflow-hidden"
+        className="relative min-h-[clamp(24rem,36vw,48rem)] overflow-hidden"
         id="inicio"
       >
         <img
           alt="Campaña Publiex iluminada sobre una ruta nocturna"
           className="absolute inset-0 size-full object-cover object-center"
-          src={publiexAsset("cases-figma-hero.jpeg")}
+          src={publiexAsset("casestudies-hero.png")}
         />
         <div className="absolute inset-0 bg-linear-to-b from-black/5 via-black/15 to-black/65" />
-        <div className="relative mx-auto flex min-h-[clamp(36rem,47.1vw,56.5rem)] w-full max-w-480 items-end justify-center px-5 pb-[clamp(2rem,3vw,3.5rem)] text-center md:px-10">
+        <div className="relative mx-auto flex min-h-[clamp(24rem,36vw,48rem)] w-full max-w-480 items-end justify-center px-5 pb-[clamp(2rem,3vw,3.5rem)] text-center md:px-10">
           <h1 className="font-raleway text-[clamp(3rem,7.4vw,8.85rem)] font-semibold uppercase leading-[0.996]">
             Casos de éxito
           </h1>
@@ -134,7 +164,7 @@ export default function CaseStudiesPage() {
           <p className="font-raleway text-sm font-bold uppercase md:text-2xl">
             Noticias
           </p>
-          <h2 className="mt-8 max-w-220 font-raleway text-[clamp(2.4rem,5.4vw,4.965rem)] font-semibold leading-[1.04]">
+          <h2 className="mt-8 max-w-220 font-raleway text-[clamp(2.2rem,5.2vw,4.7rem)] font-semibold leading-[1.04]">
             Campañas que se volvieron
             <span className="block text-publiex-red">parte del viaje</span>
           </h2>
