@@ -47,7 +47,7 @@ if (!filter_var($data["correo"], FILTER_VALIDATE_EMAIL)) {
 }
 
 // Mailbox configuration. The sender should exist in the hosting control panel.
-$to = "ventas@publiexcr.com";
+$to = "trafico1@publiexcr.com";
 $from_email = "website@publiexcr.com";
 
 // Sanitize values before using them in headers or the HTML message.
