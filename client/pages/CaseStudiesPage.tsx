@@ -110,7 +110,7 @@ function CaseStudyCard({ study }: { study: CaseStudy }) {
     return (
       <article className="grid overflow-hidden bg-white lg:grid-cols-[minmax(0,0.98fr)_minmax(320px,0.82fr)]">
         {/* Case copy */}
-        <div className="flex flex-col justify-start px-[clamp(1.5rem,3.5vw,4.75rem)] py-[clamp(2.25rem,3.2vw,4.5rem)]">
+        <div className="flex flex-col justify-center px-[clamp(1.5rem,3.5vw,4.75rem)] py-[clamp(2.25rem,3.2vw,4.5rem)]">
           <CaseTitle study={study} />
           <div className="mt-[clamp(2rem,3vw,4rem)] max-w-2xl">
             <CaseBody study={study} />
@@ -118,7 +118,7 @@ function CaseStudyCard({ study }: { study: CaseStudy }) {
         </div>
 
         {/* Case image */}
-        <div className="min-h-[clamp(32rem,57vw,68.375rem)] overflow-hidden p-[clamp(1rem,2vw,2.5rem)] pl-0 max-lg:pl-[clamp(1rem,2vw,2.5rem)] max-lg:pt-0">
+        <div className="min-h-[clamp(18rem,34vw,38rem)] overflow-hidden p-[clamp(1rem,2vw,2.5rem)] pl-0 max-lg:pl-[clamp(1rem,2vw,2.5rem)] max-lg:pt-0">
           <CaseMedia
             className="size-full object-cover object-center"
             study={study}
@@ -141,7 +141,7 @@ function CaseStudyCard({ study }: { study: CaseStudy }) {
       {/* Case details */}
       <div className="grid gap-8 px-[clamp(1.5rem,3.95vw,4.75rem)] pb-[clamp(2.25rem,3vw,3.75rem)] pt-[clamp(1.75rem,2.7vw,3.375rem)] lg:grid-cols-2">
         <CaseTitle study={study} />
-        <div className="self-end lg:max-w-168">
+        <div className="self-end lg:max-w-2xl">
           <CaseBody study={study} />
         </div>
       </div>
@@ -154,7 +154,7 @@ export default function CaseStudiesPage() {
     <main className="bg-publiex-blue-deep text-white">
       {/* Section 1, Hero */}
       <section
-        className="relative min-h-[clamp(24rem,36vw,48rem)] overflow-hidden"
+        className="relative min-h-[clamp(24rem,36vw,48rem)] overflow-hidden bg-publiex-blue-deep"
         id="inicio"
       >
         <img
