@@ -429,6 +429,34 @@ Current sections:
      - DOOH: image-top layout using `cases-figma-dooh.jpeg`.
    - Case content is driven by the local `caseStudies` array.
 
+## Info Trenes Page
+
+File: `client/pages/InfoTrenesPage.tsx`
+
+Current sections:
+
+1. Hero
+   - Deep-blue image hero using `info-trenes-hero.jpeg`.
+   - Headline: "Su marca viaja con Costa Rica".
+   - CTAs to `/contact` and `#formatos`.
+
+2. Network Scale
+   - Gray background.
+   - Six metric blocks for annual passengers, active trains, daily services, stops, cantons, and monthly exterior impressions.
+
+3. Routes
+   - White background.
+   - Three route cards for San José-Cartago, San José-Heredia-Alajuela, and Curridabat-Pavas-Belén.
+
+4. Formats
+   - Deep-blue background.
+   - Format list for Dominio Total, Línea Integral, Ventanas Panorámicas, Experiencia Total, Pasillo Activo, and Audio Experiencia.
+   - Each row includes a consultation CTA.
+
+5. Campaign Ecosystem CTA
+   - Red text block paired with train image `info-trenes-cta.jpeg`.
+   - CTA links to `/contact`.
+
 ## Contact Page
 
 File: `client/pages/ContactPage.tsx`

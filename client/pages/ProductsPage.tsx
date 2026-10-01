@@ -365,7 +365,7 @@ function ProductCard({ product }: { product: Product }) {
       </div>
       <a
         className="mt-3 block w-fit font-raleway text-[clamp(0.6rem,0.9vw,1.6525rem)] font-extrabold uppercase text-publiex-blue-light transition hover:text-publiex-blue/75"
-        href="/contact"
+        href={product.title === "Trenes" ? "/info-trenes" : "/contact"}
       >
         {product.link}
       </a>
