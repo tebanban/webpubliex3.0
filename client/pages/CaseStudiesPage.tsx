@@ -118,7 +118,7 @@ function CaseStudyCard({ study }: { study: CaseStudy }) {
         </div>
 
         {/* Case image */}
-        <div className="min-h-[clamp(18rem,34vw,38rem)] overflow-hidden p-[clamp(1rem,2vw,2.5rem)] pl-0 max-lg:pl-[clamp(1rem,2vw,2.5rem)] max-lg:pt-0">
+        <div className="min-h-[clamp(16rem,32vw,36rem)] overflow-hidden p-[clamp(0.8rem,1.7vw,2.2rem)] pl-0 max-lg:pl-[clamp(1rem,2vw,2.5rem)] max-lg:pt-0">
           <CaseMedia
             className="size-full object-cover object-center"
             study={study}
@@ -141,7 +141,11 @@ function CaseStudyCard({ study }: { study: CaseStudy }) {
       {/* Case details */}
       <div className="grid gap-8 px-[clamp(1.5rem,3.95vw,4.75rem)] pb-[clamp(2.25rem,3vw,3.75rem)] pt-[clamp(1.75rem,2.7vw,3.375rem)] lg:grid-cols-2">
         <CaseTitle study={study} />
-        <div className="self-end lg:max-w-2xl">
+        <div
+          className={`lg:max-w-2xl ${
+            "titleLines" in study ? "self-start lg:pt-11" : "self-center"
+          }`}
+        >
           <CaseBody study={study} />
         </div>
       </div>
