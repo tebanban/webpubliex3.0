@@ -197,7 +197,6 @@
       var(--publiex-navy) 144.33%
     );
     background-blend-mode: multiply;
-    mix-blend-mode: multiply;
   }
 
   .bg-publiex-navy {
@@ -244,6 +243,5 @@
       var(--publiex-navy) 144.33%
     );
     background-blend-mode: multiply;
-    mix-blend-mode: multiply;
   }
 }

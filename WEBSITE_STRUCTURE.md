@@ -414,16 +414,20 @@ File: `client/pages/CaseStudiesPage.tsx`
 
 Current sections:
 
-1. `PageIntro`
-   - Eyebrow: Casos de exito.
-   - Title: "Campanas que se volvieron parte del viaje."
-   - Description explaining future objective, format, location, metrics, and results details.
+1. Hero
+   - Full-width photographic hero using `cases-figma-hero.jpeg`.
+   - Transparent header behavior is preserved for this route.
+   - Large centered title: "Casos de éxito".
 
-2. Featured Cases
-   - Navy background.
-   - Grid of case cards driven by `cases`.
-   - Uses `ImagePanel`.
-   - Ends with a "Crear una campana" CTA.
+2. Case List
+   - Deep-blue background using `bg-publiex-blue-deep`.
+   - Eyebrow: Noticias.
+   - Headline: "Campañas que se volvieron parte del viaje".
+   - Three large white case blocks:
+     - Landmark: image-top layout using `cases-figma-landmark.jpeg`.
+     - Trenes: alternating image-right layout using `cases-figma-train.jpeg`.
+     - DOOH: image-top layout using `cases-figma-dooh.jpeg`.
+   - Case content is driven by the local `caseStudies` array.
 
 ## Contact Page
 
