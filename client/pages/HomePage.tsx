@@ -327,7 +327,7 @@ export default function HomePage() {
               contacto.
             </p>
             <div className="mt-9">
-              <PrimaryLink href="/contact" tone="white">
+              <PrimaryLink href="/info-trenes" tone="white">
                 Descubrir soluciones en trenes
               </PrimaryLink>
             </div>

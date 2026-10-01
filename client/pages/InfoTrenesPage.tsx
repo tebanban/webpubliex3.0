@@ -1,38 +1,36 @@
 ﻿import { Link } from "react-router-dom";
-import { Binoculars, MapPin, Route, TrainFront, Users } from "lucide-react";
-
 import { publiexAsset } from "@/lib/assets";
 
 const networkStats = [
   {
     value: "+3,5M",
     label: "pasajeros al año",
-    icon: Users,
+    icon: "tren-1.svg",
   },
   {
     value: "14",
     label: "trenes en operación activa",
-    icon: TrainFront,
+    icon: "tren-2.svg",
   },
   {
     value: "96",
     label: "servicios por día",
-    icon: Route,
+    icon: "tren-3.svg",
   },
   {
     value: "33",
     label: "paradas en la red",
-    icon: MapPin,
+    icon: "tren-4.svg",
   },
   {
     value: "14",
     label: "cantones de influencia",
-    icon: Route,
+    icon: "tren-5.svg",
   },
   {
     value: "+2M",
     label: "impresiones exteriores mensuales GAM",
-    icon: Binoculars,
+    icon: "tren-6.svg",
   },
 ];
 
@@ -100,7 +98,7 @@ export default function InfoTrenesPage() {
           className="absolute inset-0 size-full object-cover object-[64%_center] opacity-90"
           src={publiexAsset("info-trenes-hero.jpeg")}
         />
-        <div className="absolute inset-0 bg-linear-to-r from-[#00133a]/95 via-[#00133a]/72 to-black/10" />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.88)_0%,rgba(0,0,0,0.72)_32%,rgba(0,0,0,0)_58%)]" />
         <div className="relative mx-auto flex min-h-[clamp(38rem,39.6vw,47rem)] w-full max-w-480 flex-col justify-center px-5 py-20 md:px-10 lg:px-24 xl:px-47.5">
           <p className="font-raleway text-sm font-bold uppercase md:text-xl">
             El nuevo ecosistema de publicidad en movimiento
@@ -138,15 +136,22 @@ export default function InfoTrenesPage() {
             La escala de la red
           </p>
           <div className="mt-12 grid gap-px bg-zinc-300 md:grid-cols-2 xl:grid-cols-3">
-            {networkStats.map(({ value, label, icon: Icon }) => (
+            {networkStats.map(({ value, label, icon }) => (
               <article
                 className="bg-publiex-muted-section p-8 font-raleway"
                 key={label}
               >
-                <Icon className="size-12 text-publiex-red" strokeWidth={1.5} />
-                <p className="mt-7 text-[clamp(2.7rem,4.2vw,4.965rem)] font-bold leading-none">
-                  {value}
-                </p>
+                <div className="flex items-center gap-5">
+                  <img
+                    alt=""
+                    aria-hidden="true"
+                    className="h-[clamp(2.5rem,3.2vw,3.75rem)] w-[clamp(3.25rem,4.3vw,5rem)] shrink-0 object-contain object-left"
+                    src={publiexAsset(icon)}
+                  />
+                  <p className="text-[clamp(2.7rem,4.2vw,4.965rem)] font-bold leading-none">
+                    {value}
+                  </p>
+                </div>
                 <p className="mt-3 text-[clamp(1rem,1.25vw,1.5rem)] font-bold leading-tight">
                   {label}
                 </p>
@@ -276,3 +281,4 @@ export default function InfoTrenesPage() {
     </main>
   );
 }
+
