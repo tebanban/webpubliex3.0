@@ -36,6 +36,7 @@ The React form currently sends:
 - `cobertura`: coverage level. Optional.
 - `nombre`: contact name. Required.
 - `correo`: contact email. Required and validated as email.
+- `telefono`: contact phone number. Optional.
 - `empresa`: company name. Required.
 - `nota`: additional message. Optional.
 - `website`: hidden honeypot field for basic spam filtering.

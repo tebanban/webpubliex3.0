@@ -54,6 +54,7 @@ $from_email = "website@publiexcr.com";
 $name = trim(preg_replace('/[\r\n]+/', ' ', $data["nombre"]));
 $user_email = trim(preg_replace('/[\r\n]+/', '', $data["correo"]));
 $company = htmlspecialchars(trim($data["empresa"]), ENT_QUOTES, "UTF-8");
+$phone = htmlspecialchars(trim($data["telefono"] ?? "No especificado"), ENT_QUOTES, "UTF-8");
 $goal = htmlspecialchars(trim($data["objetivo"]), ENT_QUOTES, "UTF-8");
 $zone = htmlspecialchars(trim($data["zona"] ?? "No especificada"), ENT_QUOTES, "UTF-8");
 $coverage = htmlspecialchars(trim($data["cobertura"] ?? "No especificado"), ENT_QUOTES, "UTF-8");
@@ -76,6 +77,7 @@ $email_content = "
     <h3>Nueva solicitud desde el sitio web de Publiex</h3>
     <p><strong>Nombre:</strong> {$safe_name}</p>
     <p><strong>Correo:</strong> {$safe_email}</p>
+    <p><strong>Telefono:</strong> {$phone}</p>
     <p><strong>Empresa:</strong> {$company}</p>
     <p><strong>Objetivo:</strong> {$goal}</p>
     <p><strong>Zona de interes:</strong> {$zone}</p>
@@ -98,6 +100,7 @@ $confirmation_content = "
     <p>Hola {$safe_name},</p>
     <p>Recibimos su solicitud y nuestro equipo le dará seguimiento pronto.</p>
     <p><strong>Empresa:</strong> {$company}</p>
+    <p><strong>Telefono:</strong> {$phone}</p>
     <p><strong>Objetivo:</strong> {$goal}</p>
     <p><strong>Zona de interes:</strong> {$zone}</p>
     <p><strong>Nivel de cobertura:</strong> {$coverage}</p>

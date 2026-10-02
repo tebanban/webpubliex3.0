@@ -8,6 +8,7 @@ type ContactFormData = {
   cobertura: string;
   nombre: string;
   correo: string;
+  telefono: string;
   empresa: string;
   nota: string;
   website: string;
@@ -21,6 +22,7 @@ const initialFormData: ContactFormData = {
   cobertura: "",
   nombre: "",
   correo: "",
+  telefono: "",
   empresa: "",
   nota: "",
   website: "",
@@ -252,6 +254,17 @@ export default function ContactPage() {
                   {errors.empresa}
                 </span>
               )}
+            </label>
+            <label className="grid gap-2 font-raleway text-sm font-bold uppercase md:col-span-2">
+              Teléfono
+              <input
+                className={inputClassName}
+                name="telefono"
+                type="tel"
+                value={formData.telefono}
+                onChange={handleChange}
+                disabled={status === "submitting"}
+              />
             </label>
             <label className="grid gap-2 font-raleway text-sm font-bold uppercase md:col-span-2">
               Nota
