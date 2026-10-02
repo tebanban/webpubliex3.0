@@ -580,7 +580,7 @@ export default function HomePage() {
                 propuesta sin fricción.
               </p>
               <div className="mt-auto pt-[clamp(1.5rem,2vw,2rem)]">
-                <PrimaryLink href="/contact" tone="white">
+                <PrimaryLink href="/agencies" tone="white">
                   Acceso para agencias
                 </PrimaryLink>
               </div>
@@ -596,7 +596,7 @@ export default function HomePage() {
                 propuesta sin fricción.
               </p>
               <div className="mt-auto pt-[clamp(1.5rem,2vw,2rem)]">
-                <PrimaryLink href="/contact" tone="blue">
+                <PrimaryLink href="/landlords" tone="blue">
                   Enviar mi ubicación
                 </PrimaryLink>
               </div>
@@ -610,3 +610,6 @@ export default function HomePage() {
     </main>
   );
 }
+
+
+
