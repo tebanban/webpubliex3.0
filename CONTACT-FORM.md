@@ -11,7 +11,8 @@ The feature has two parts:
 - `client/pages/ContactPage.tsx`: renders the proposal form, validates input,
   shows submit status, and sends a JSON `POST` request to `/send-mail.php`.
 - `public/send-mail.php`: receives the JSON payload, validates it again on the
-  server, builds an HTML email, and calls PHP `mail()`.
+  server, builds an internal HTML email, sends it with PHP `mail()`, and then
+  sends a confirmation email to the submitted sender address.
 
 Vite copies everything in `public/` to the production output. After running
 `pnpm build`, the endpoint is available at:
@@ -47,7 +48,7 @@ be bypassed.
 The current PHP configuration is:
 
 ```php
-$to = "ventas@publiexcr.com";
+$to = "trafico1@publiexcr.com";
 $from_email = "website@publiexcr.com";
 ```
 
@@ -55,8 +56,14 @@ Before deploying, confirm that `website@publiexcr.com` exists in the hosting
 control panel. Many hosts reject or silently drop messages when the `From`
 address is not a valid mailbox for the domain.
 
-The visitor email is used as `Reply-To`, so the commercial team can reply
-directly from the received message.
+The visitor email is used as `Reply-To` on the internal notification, so the
+commercial team can reply directly from the received message.
+
+After the internal notification is sent, the endpoint sends a separate
+confirmation email to the visitor. The internal notification is the primary
+success condition: if the confirmation email fails but the internal email was
+delivered, the endpoint still returns `sent: true` with `confirmationSent:
+false`.
 
 ## How To Implement This In Another Static React Site
 
@@ -101,7 +108,10 @@ server or test after deployment.
 - `Correo invalido`: the submitted email failed server-side validation.
 - `Error del servidor al enviar correo`: PHP `mail()` returned false. Check the
   host mail configuration and confirm the sender mailbox exists.
-- Message does not arrive but the request succeeds: check spam folders, DNS mail
+- Internal message arrives but sender confirmation does not: check the sender
+  mailbox spam folder and review whether the recipient provider filtered the
+  automatic confirmation.
+- No message arrives but the request succeeds: check spam folders, DNS mail
   records, sender reputation, and whether the host allows PHP `mail()`.
 
 ## Production Checklist
@@ -113,4 +123,5 @@ server or test after deployment.
 - Deploy to a PHP-capable host.
 - Confirm `website@publiexcr.com` exists.
 - Send a test submission from the live domain.
-- Confirm the message arrives at `ventas@publiexcr.com`.
+- Confirm the message arrives at `trafico1@publiexcr.com`.
+- Confirm the submitted sender email receives the automatic confirmation.
