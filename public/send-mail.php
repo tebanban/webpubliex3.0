@@ -80,7 +80,7 @@ $email_content = "
     <p><strong>Telefono:</strong> {$phone}</p>
     <p><strong>Empresa:</strong> {$company}</p>
     <p><strong>Objetivo:</strong> {$goal}</p>
-    <p><strong>Zona de interes:</strong> {$zone}</p>
+    <p><strong>Zona de interés:</strong> {$zone}</p>
     <p><strong>Nivel de cobertura:</strong> {$coverage}</p>
     <p><strong>Nota:</strong><br>" . nl2br($note) . "</p>
 </body>
@@ -98,7 +98,7 @@ $confirmation_content = "
 <body>
     <h3>Gracias por contactar a Publiex</h3>
     <p>Hola {$safe_name},</p>
-    <p>Recibimos su solicitud y nuestro equipo le dará seguimiento pronto.</p>
+    <p>Recibimos su solicitud y nuestro equipo le dará seguimiento de inmediato.</p>
     <p><strong>Empresa:</strong> {$company}</p>
     <p><strong>Telefono:</strong> {$phone}</p>
     <p><strong>Objetivo:</strong> {$goal}</p>

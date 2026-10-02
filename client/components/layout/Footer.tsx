@@ -27,7 +27,7 @@ const footerGroups = [
     links: [
       ["Nosotros", "/about"],
       ["Sostenibilidad", "/about"],
-      ["Agencias", "/contact"],
+      ["Agencias", "/agencies"],
       ["Sistema visual", "/about"],
     ],
   },
@@ -142,3 +142,4 @@ export function Footer() {
     </footer>
   );
 }
+
