@@ -1,5 +1,10 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { GoogleMap, MarkerF, useJsApiLoader } from "@react-google-maps/api";
+import {
+  GoogleMap,
+  MarkerClustererF,
+  MarkerF,
+  useJsApiLoader,
+} from "@react-google-maps/api";
 
 import {
   categoryStyles,
@@ -23,17 +28,85 @@ const defaultFilters: LocationFilters = {
 };
 
 const mapCenter = { lat: 9.96, lng: -84.05 };
+const defaultMapZoom = 9;
+const markerCodeZoom = 16;
+const clusterMaxZoom = markerCodeZoom - 1;
+
 const mapOptions: google.maps.MapOptions = {
   clickableIcons: false,
   fullscreenControl: false,
   mapTypeControl: false,
+  minZoom: 8,
   streetViewControl: false,
   styles: [
     {
       featureType: "poi.business",
       stylers: [{ visibility: "off" }],
     },
+    {
+      elementType: "labels.text.fill",
+      stylers: [{ color: "#1f2937" }, { weight: 1.4 }],
+    },
+    {
+      elementType: "labels.text.stroke",
+      stylers: [{ color: "#ffffff" }, { weight: 3.5 }],
+    },
+    {
+      featureType: "road",
+      elementType: "labels.text.fill",
+      stylers: [{ color: "#111827" }],
+    },
+    {
+      featureType: "administrative.locality",
+      elementType: "labels.text.fill",
+      stylers: [{ color: "#0f172a" }],
+    },
   ],
+};
+
+function getClusterIcon(color: string) {
+  const svg = `
+    <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+      <circle cx="36" cy="36" r="33" fill="${color}" fill-opacity="0.22"/>
+      <circle cx="36" cy="36" r="24" fill="${color}" fill-opacity="0.45"/>
+      <circle cx="36" cy="36" r="15" fill="${color}"/>
+    </svg>`;
+
+  return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
+}
+
+const clusterStyles = [
+  {
+    url: getClusterIcon("#2859c7"),
+    height: 56,
+    width: 56,
+    textColor: "#ffffff",
+    textSize: 15,
+  },
+  {
+    url: getClusterIcon("#e31f26"),
+    height: 64,
+    width: 64,
+    textColor: "#ffffff",
+    textSize: 16,
+  },
+  {
+    url: getClusterIcon("#7f1218"),
+    height: 72,
+    width: 72,
+    textColor: "#ffffff",
+    textSize: 17,
+  },
+];
+
+const clusterCalculator = (markers: google.maps.Marker[]) => {
+  const count = markers.length;
+
+  return {
+    text: String(count),
+    index: count >= 20 ? 3 : count >= 8 ? 2 : 1,
+    title: `${count} ubicaciones Publiex`,
+  };
 };
 
 function LocationButton({
@@ -101,6 +174,7 @@ function GoogleLocationsMap({
   onSelectLocation: (location: PubliexLocation) => void;
 }) {
   const mapRef = useRef<google.maps.Map | null>(null);
+  const [mapZoom, setMapZoom] = useState(defaultMapZoom);
   const { isLoaded, loadError } = useJsApiLoader({
     googleMapsApiKey,
   });
@@ -109,8 +183,19 @@ function GoogleLocationsMap({
     if (!mapRef.current || !selectedLocation) return;
 
     mapRef.current.panTo(selectedLocation.position);
-    mapRef.current.setZoom(11);
+    mapRef.current.setZoom(markerCodeZoom);
   }, [selectedLocation]);
+
+  const getMarkerIcon = (selected: boolean): google.maps.Icon => {
+    const width = selected ? 42 : 34;
+    const height = selected ? 46 : 37;
+
+    return {
+      url: publiexAsset("marker2.svg"),
+      scaledSize: new google.maps.Size(width, height),
+      anchor: new google.maps.Point(width / 2, height),
+    };
+  };
 
   if (loadError) {
     return <StaticMapFallback locations={locations} />;
@@ -130,23 +215,41 @@ function GoogleLocationsMap({
       mapContainerClassName="size-full min-h-[32rem]"
       onLoad={(map) => {
         mapRef.current = map;
+        setMapZoom(map.getZoom() ?? defaultMapZoom);
+      }}
+      onZoomChanged={() => {
+        if (!mapRef.current) return;
+
+        setMapZoom(mapRef.current.getZoom() ?? defaultMapZoom);
       }}
       options={mapOptions}
-      zoom={8}
+      zoom={defaultMapZoom}
     >
-      {locations.map((location, index) => (
-        <MarkerF
-          key={location.id}
-          label={{
-            text: String(index + 1),
-            color: "white",
-            fontWeight: "700",
-          }}
-          onClick={() => onSelectLocation(location)}
-          position={location.position}
-          zIndex={selectedLocation?.id === location.id ? 20 : 10}
-        />
-      ))}
+      <MarkerClustererF
+        averageCenter
+        calculator={clusterCalculator}
+        gridSize={56}
+        maxZoom={clusterMaxZoom}
+        minimumClusterSize={3}
+        styles={clusterStyles}
+        title="Zona de ubicaciones Publiex"
+      >
+        {(clusterer) => (
+          <>
+            {locations.map((location) => (
+              <MarkerF
+                clusterer={clusterer}
+                icon={getMarkerIcon(selectedLocation?.id === location.id)}
+                key={location.id}
+                onClick={() => onSelectLocation(location)}
+                position={location.position}
+                title={location.title}
+                zIndex={selectedLocation?.id === location.id ? 20 : 10}
+              />
+            ))}
+          </>
+        )}
+      </MarkerClustererF>
     </GoogleMap>
   );
 }
@@ -159,17 +262,17 @@ function StaticMapFallback({ locations }: { locations: PubliexLocation[] }) {
         className="absolute inset-0 size-full object-cover"
         src={publiexAsset("Locations-map.png")}
       />
-      <div className="absolute left-[2.5%] top-6 font-raleway text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
+      <div className="absolute left-[2.5%] top-6 font-raleway text-sm font-semibold uppercase tracking-[0.14em] text-slate-500">
         Océano Pacífico
       </div>
-      <div className="absolute right-[2.5%] top-6 font-raleway text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
+      <div className="absolute right-[2.5%] top-6 font-raleway text-sm font-semibold uppercase tracking-[0.14em] text-slate-500">
         Mar Caribe
       </div>
       <div className="absolute inset-x-[3%] bottom-7 bg-white/95 px-6 py-5 font-raleway shadow-sm">
-        <p className="text-sm font-extrabold uppercase tracking-[0.08em]">
+        <p className="text-base font-extrabold uppercase tracking-[0.08em]">
           {locations.length} medios filtrados
         </p>
-        <p className="mt-2 text-xs leading-tight text-zinc-600 md:text-sm">
+        <p className="mt-2 text-sm leading-tight text-zinc-600 md:text-base">
           Configure VITE_GOOGLE_MAPS_API_KEY para activar el mapa interactivo de
           Google Maps.
         </p>
@@ -200,7 +303,7 @@ function LocationCard({
             className="size-full object-cover"
             src={location.image}
           />
-          <p className="absolute left-4 top-4 text-xs font-extrabold uppercase text-white">
+          <p className="absolute left-4 top-4 text-sm font-extrabold uppercase text-white">
             {location.code}
           </p>
           <span className="absolute right-4 top-4 flex size-10 items-center justify-center rounded-full bg-white text-2xl font-black text-publiex-blue">
@@ -208,19 +311,19 @@ function LocationCard({
           </span>
         </div>
         <div className="p-5">
-          <p className="text-xs font-extrabold uppercase text-publiex-blue">
+          <p className="text-sm font-extrabold uppercase text-publiex-blue">
             {location.category} · {location.province}
           </p>
           <h3 className="mt-4 text-[clamp(1.4rem,1.6vw,2rem)] font-semibold leading-tight">
             {location.title}
           </h3>
-          <p className="mt-3 text-sm leading-tight text-zinc-600">
+          <p className="mt-3 text-base leading-tight text-zinc-600">
             {location.description}
           </p>
         </div>
       </button>
       {selected ? (
-        <div className="grid grid-cols-2 gap-3 px-5 pb-5 text-xs font-extrabold uppercase">
+        <div className="grid grid-cols-2 gap-3 px-5 pb-5 text-sm font-extrabold uppercase">
           <a
             className="flex items-center justify-between border-t border-zinc-300 pt-5 text-publiex-blue"
             href="/contact"
@@ -340,20 +443,20 @@ export default function LocationsPage() {
       {/* Section 2, Interactive inventory map */}
       <section className="overflow-hidden bg-publiex-muted-section px-5 py-[clamp(3rem,5vw,6rem)] md:px-10 lg:px-24">
         <div className="mx-auto w-full max-w-480">
-          <div className="grid min-h-[clamp(42rem,46.9vw,56.25rem)] overflow-hidden bg-white shadow-sm lg:grid-cols-[10%_70%_20%]">
+          <div className="grid min-h-[clamp(42rem,46.9vw,56.25rem)] overflow-hidden bg-white shadow-sm lg:grid-cols-[14rem_minmax(0,1fr)_20rem] xl:grid-cols-[18rem_minmax(0,1fr)_24rem]">
             <aside className="flex flex-col border-b border-zinc-200 bg-zinc-50 px-4 py-7 font-raleway xl:px-5 lg:border-b-0 lg:border-r">
-              <h2 className="text-[clamp(1.1rem,1.1vw,1.35rem)] font-extrabold uppercase tracking-wide">
+              <h2 className="text-[clamp(1.25rem,1.25vw,1.55rem)] font-extrabold uppercase tracking-wide">
                 Refinar búsqueda
               </h2>
 
               <div className="mt-8 space-y-6">
                 {filterGroups.map((filter) => (
                   <label className="block" key={filter.label}>
-                    <span className="block text-xs font-extrabold uppercase tracking-[0.16em] text-zinc-600">
+                    <span className="block text-sm font-extrabold uppercase tracking-[0.12em] text-zinc-600">
                       {filter.label}
                     </span>
                     <select
-                      className="mt-3 h-8 w-full border border-zinc-300 bg-white px-2 text-xs font-bold text-black shadow-inner"
+                      className="mt-3 h-10 w-full border border-zinc-300 bg-white px-3 text-sm font-bold text-black shadow-inner"
                       onChange={(event) =>
                         setFilters((currentFilters) => ({
                           ...currentFilters,
@@ -370,10 +473,10 @@ export default function LocationsPage() {
                 ))}
               </div>
 
-              <label className="mt-7 flex items-center gap-2 border-y border-zinc-300 py-5 text-xs font-extrabold uppercase tracking-[0.14em] text-zinc-700">
+              <label className="mt-7 flex items-center gap-3 border-y border-zinc-300 py-5 text-sm font-extrabold uppercase tracking-[0.1em] text-zinc-700">
                 <input
                   checked={filters.illuminated}
-                  className="size-3.5"
+                  className="size-4"
                   onChange={(event) =>
                     setFilters((currentFilters) => ({
                       ...currentFilters,
@@ -386,10 +489,10 @@ export default function LocationsPage() {
               </label>
 
               <div className="mt-8">
-                <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-zinc-600">
+                <p className="text-sm font-extrabold uppercase tracking-[0.12em] text-zinc-600">
                   Categorías
                 </p>
-                <div className="mt-6 space-y-6 text-[clamp(0.95rem,0.95vw,1.2rem)] text-zinc-800">
+                <div className="mt-6 space-y-5 text-base text-zinc-800 xl:text-lg">
                   {Object.entries(categoryStyles).map(([label, color]) => (
                     <div className="flex items-center gap-4" key={label}>
                       <span className={`size-3 rounded-full ${color}`} />
@@ -400,7 +503,7 @@ export default function LocationsPage() {
               </div>
 
               <button
-                className="mt-auto w-fit border-b border-black pb-3 pt-12 text-xs font-extrabold uppercase tracking-[0.14em] text-zinc-700"
+                className="mt-auto w-fit border-b border-black pb-3 pt-12 text-sm font-extrabold uppercase tracking-[0.1em] text-zinc-700"
                 onClick={() => setFilters(defaultFilters)}
                 type="button"
               >
@@ -417,8 +520,8 @@ export default function LocationsPage() {
             </div>
 
             <aside className="border-t border-zinc-200 bg-white font-raleway lg:border-l lg:border-t-0">
-              <div className="flex items-center justify-between border-b border-zinc-200 px-4 py-5 text-xs text-zinc-500 xl:px-5">
-                <p className="text-sm font-extrabold text-black">
+              <div className="flex items-center justify-between gap-4 border-b border-zinc-200 px-4 py-5 text-sm text-zinc-500 xl:px-5">
+                <p className="text-base font-extrabold text-black">
                   {filteredLocations.length} medios encontrados
                 </p>
                 <p>Muestra pública · Costa Rica</p>
@@ -435,7 +538,7 @@ export default function LocationsPage() {
                     />
                   ))
                 ) : (
-                  <div className="border border-dashed border-zinc-300 p-5 text-sm leading-tight text-zinc-600">
+                  <div className="border border-dashed border-zinc-300 p-5 text-base leading-tight text-zinc-600">
                     No hay medios para estos filtros. Ajuste la búsqueda o limpie
                     los filtros para ver más opciones.
                   </div>
@@ -465,7 +568,7 @@ export default function LocationsPage() {
                 <p className="font-raleway text-[clamp(1.8rem,3.5vw,2.75rem)] font-bold">
                   Su campaña aparecerá aquí
                 </p>
-                <p className="mt-3 font-raleway text-sm opacity-80 md:text-base">
+                <p className="mt-3 font-raleway text-base opacity-80 md:text-lg">
                   Previsualización conceptual para evaluar presencia y lectura.
                 </p>
               </div>
@@ -477,7 +580,7 @@ export default function LocationsPage() {
               <h3 className="mt-4 font-raleway text-[clamp(2.7rem,5.4vw,4.965rem)] font-bold leading-[1.04]">
                 {selectedLocation.title}
               </h3>
-              <div className="mt-8 border-y border-white/35 py-5 font-raleway text-sm uppercase leading-7 md:text-base">
+              <div className="mt-8 border-y border-white/35 py-5 font-raleway text-base uppercase leading-8 md:text-lg">
                 <p>Formato: {selectedLocation.category.toLowerCase()}</p>
                 <p>Contexto: {selectedLocation.context}</p>
                 <p>Lectura: {selectedLocation.reading}</p>
@@ -515,13 +618,13 @@ export default function LocationsPage() {
                 src={selectedLocation.image}
               />
               <div className="p-4 font-raleway">
-                <p className="text-xs font-bold uppercase text-publiex-blue">
+                <p className="text-sm font-bold uppercase text-publiex-blue">
                   {selectedLocation.code}
                 </p>
-                <h3 className="mt-2 text-lg font-bold leading-tight">
+                <h3 className="mt-2 text-xl font-bold leading-tight">
                   {selectedLocation.title}
                 </h3>
-                <p className="mt-2 text-sm leading-tight text-zinc-600">
+                <p className="mt-2 text-base leading-tight text-zinc-600">
                   {selectedLocation.category} para revisión preliminar.
                 </p>
               </div>
