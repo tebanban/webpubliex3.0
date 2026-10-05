@@ -59,8 +59,8 @@ export default function LocationsPage() {
       {/* Section 2, Inventory visual */}
       <section className="overflow-hidden bg-publiex-muted-section px-5 py-[clamp(3rem,5vw,6rem)] md:px-10 lg:px-24">
         <div className="mx-auto w-full max-w-480">
-          <div className="grid min-h-[clamp(42rem,46.9vw,56.25rem)] overflow-hidden bg-white shadow-sm lg:grid-cols-[minmax(220px,280px)_minmax(0,1fr)_minmax(320px,520px)]">
-            <aside className="flex flex-col border-b border-zinc-200 bg-zinc-50 px-6 py-7 font-raleway lg:border-b-0 lg:border-r">
+          <div className="grid min-h-[clamp(42rem,46.9vw,56.25rem)] overflow-hidden bg-white shadow-sm lg:grid-cols-[10%_70%_20%]">
+            <aside className="flex flex-col border-b border-zinc-200 bg-zinc-50 px-4 py-7 font-raleway xl:px-5 lg:border-b-0 lg:border-r">
               <h2 className="text-[clamp(1.1rem,1.1vw,1.35rem)] font-extrabold uppercase tracking-wide">
                 Refinar búsqueda
               </h2>
@@ -173,14 +173,14 @@ export default function LocationsPage() {
             </div>
 
             <aside className="border-t border-zinc-200 bg-white font-raleway lg:border-l lg:border-t-0">
-              <div className="flex items-center justify-between border-b border-zinc-200 px-5 py-5 text-xs text-zinc-500">
+              <div className="flex items-center justify-between border-b border-zinc-200 px-4 py-5 text-xs text-zinc-500 xl:px-5">
                 <p className="text-sm font-extrabold text-black">
                   8 medios encontrados
                 </p>
                 <p>Muestra pública · Costa Rica</p>
               </div>
 
-              <div className="max-h-[clamp(36rem,44vw,53rem)] space-y-5 overflow-y-auto p-5">
+              <div className="max-h-[clamp(36rem,44vw,53rem)] space-y-5 overflow-y-auto p-4 xl:p-5">
                 <article className="border border-publiex-blue bg-white">
                   <div className="relative h-[clamp(10rem,11.8vw,14.2rem)] overflow-hidden bg-black">
                     <img
@@ -350,3 +350,4 @@ export default function LocationsPage() {
     </main>
   );
 }
+
