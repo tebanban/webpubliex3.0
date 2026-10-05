@@ -1,1890 +1,1860 @@
 ﻿[
-    {
-        "id":  "al1",
-        "code":  "AL1",
-        "name":  "AL1 El Coyol",
-        "province":  "Alajuela",
-        "wkt":  "POINT (-84.2237502 9.9978448)",
-        "position":  {
-                         "lat":  9.9978448,
-                         "lng":  -84.2237502
-                     },
-        "address":  "1 km oeste del Aeropuerto Internacional Juan Santamaría",
-        "faceDirection":  "San José - La Garita",
-        "backDirection":  "La Garita - San José",
-        "dimensions":  "14.40 x 5.00 m",
-        "area":  "72 m2"
-    },
-    {
-        "id":  "al2",
-        "code":  "AL2",
-        "name":  "AL2 Río Segundo",
-        "province":  "Alajuela",
-        "wkt":  "POINT (-84.1845632 10.0013315)",
-        "position":  {
-                         "lat":  10.0013315,
-                         "lng":  -84.1845632
-                     },
-        "address":  "Autopista General Cañas 200 mts oeste del peaje de Río Segundo",
-        "faceDirection":  "San José - Alajuela",
-        "backDirection":  "Alajuela - San José",
-        "dimensions":  "12.60 x 5.00 m",
-        "area":  "63 m2"
-    },
-    {
-        "id":  "al3",
-        "code":  "AL3",
-        "name":  "AL3 Radial Belén La Panasonic",
-        "province":  "Alajuela",
-        "wkt":  "POINT (-84.1966868 9.9789788)",
-        "position":  {
-                         "lat":  9.9789788,
-                         "lng":  -84.1966868
-                     },
-        "address":  "Costado norte de la Panasonic",
-        "faceDirection":  "Belén - Santa Ana",
-        "backDirection":  "Santa Ana - Belén",
-        "dimensions":  "7.20 x 9.00 m",
-        "area":  "63 m2"
-    },
-    {
-        "id":  "al4",
-        "code":  "AL4",
-        "name":  "AL4. Radial Alajuela",
-        "province":  "Alajuela",
-        "wkt":  "POINT (-84.2127156 10.0076393)",
-        "position":  {
-                         "lat":  10.0076393,
-                         "lng":  -84.2127156
-                     },
-        "address":  "Costado norte de Mall Internacional",
-        "faceDirection":  "Alajuela - San José",
-        "backDirection":  "San José - Alajuela",
-        "dimensions":  "14.40 x 6.0 m",
-        "area":  "72 m2"
-    },
-    {
-        "id":  "al5",
-        "code":  "AL5",
-        "name":  "AL5. Radial Belén-Santa Ana",
-        "province":  "Alajuela",
-        "wkt":  "POINT (-84.1979474 9.9787463)",
-        "position":  {
-                         "lat":  9.9787463,
-                         "lng":  -84.1979474
-                     },
-        "address":  "Costado norte de la Panasonic",
-        "faceDirection":  "Belén - Santa Ana",
-        "backDirection":  "Santa Ana - Belén",
-        "dimensions":  "12.60 x 5.00 m",
-        "area":  "63 m2"
-    },
-    {
-        "id":  "al6",
-        "code":  "AL6",
-        "name":  "AL6. Ruta 27 Cruce de Orotina",
-        "province":  "Alajuela",
-        "wkt":  "POINT (-84.5104837 9.9115098)",
-        "position":  {
-                         "lat":  9.9115098,
-                         "lng":  -84.5104837
-                     },
-        "address":  "500 oeste del cruce hacia Orotina",
-        "faceDirection":  "San José - Caldera",
-        "backDirection":  "Caldera - San José",
-        "dimensions":  "12.60 x 5.00 m",
-        "area":  "63 m2"
-    },
-    {
-        "id":  "al7",
-        "code":  "AL7",
-        "name":  "AL7. Ruta 27 Rotonda de Turrúcares",
-        "province":  "Alajuela",
-        "wkt":  "POINT (-84.3153691 9.9649937)",
-        "position":  {
-                         "lat":  9.9649937,
-                         "lng":  -84.3153691
-                     },
-        "address":  "Contiguo a la rotonda de Turrúcares",
-        "faceDirection":  "San José - Caldera",
-        "backDirection":  "Caldera - San José",
-        "dimensions":  "12.60 x 5.00 m",
-        "area":  "63 m2"
-    },
-    {
-        "id":  "al8",
-        "code":  "AL8",
-        "name":  "AL8. Ruta 27 Balsa de Atenas",
-        "province":  "Alajuela",
-        "wkt":  "POINT (-84.3611598 9.9516314)",
-        "position":  {
-                         "lat":  9.9516314,
-                         "lng":  -84.3611598
-                     },
-        "address":  "400 oeste del peaje de Atenas",
-        "faceDirection":  "San José - Caldera",
-        "backDirection":  "Caldera - San José",
-        "dimensions":  "12.60 x 5.00 m",
-        "area":  "63 m2"
-    },
-    {
-        "id":  "al9",
-        "code":  "AL9",
-        "name":  "AL9. Ruta 27 Balsa de Atenas",
-        "province":  "Alajuela",
-        "wkt":  "POINT (-84.3737448 9.94369)",
-        "position":  {
-                         "lat":  9.94369,
-                         "lng":  -84.3737448
-                     },
-        "address":  "2 km oeste del peaje de Atenas",
-        "faceDirection":  "San José -Caldera",
-        "backDirection":  "Caldera - San José",
-        "dimensions":  "12.60 x 5.00 m",
-        "area":  "63 m2"
-    },
-    {
-        "id":  "al10",
-        "code":  "AL10",
-        "name":  "AL10. Ruta 27 Peaje de Orotina",
-        "province":  "Alajuela",
-        "wkt":  "POINT (-84.568162 9.8882785)",
-        "position":  {
-                         "lat":  9.8882785,
-                         "lng":  -84.568162
-                     },
-        "address":  "100 mts este del peaje de Orotina",
-        "faceDirection":  "San José - Caldera",
-        "backDirection":  "Caldera - San José",
-        "dimensions":  "12.60 x 5.00 m",
-        "area":  "63 m2"
-    },
-    {
-        "id":  "al12",
-        "code":  "AL12",
-        "name":  "AL12. Ruta 27 Siquiares",
-        "province":  "Alajuela",
-        "wkt":  "POINT (-84.2805541 9.9657545)",
-        "position":  {
-                         "lat":  9.9657545,
-                         "lng":  -84.2805541
-                     },
-        "address":  "Costado sur del puente nuevo de Siquiares",
-        "faceDirection":  "San José - Caldera",
-        "backDirection":  "Caldera - San José",
-        "dimensions":  "12.60 x 5.00 m",
-        "area":  "63 m2"
-    },
-    {
-        "id":  "al13",
-        "code":  "AL13",
-        "name":  "AL13. Radial Belén Proyecto Goal",
-        "province":  "Alajuela",
-        "wkt":  "POINT (-84.2000932 9.9735581)",
-        "position":  {
-                         "lat":  9.9735581,
-                         "lng":  -84.2000932
-                     },
-        "address":  "Instalaciones de Proyecto Goal",
-        "faceDirection":  "Belén - Santa Ana",
-        "backDirection":  "Santa Ana - Belén",
-        "dimensions":  "12.60 x 5.00 m",
-        "area":  "63 m2"
-    },
-    {
-        "id":  "al14",
-        "code":  "AL14",
-        "name":  "AL14. Radial Belén El Rodeo",
-        "province":  "Alajuela",
-        "wkt":  "POINT (-84.1999483 9.9758088)",
-        "position":  {
-                         "lat":  9.9758088,
-                         "lng":  -84.1999483
-                     },
-        "address":  "Costado sur restaurante El Rodeo",
-        "faceDirection":  "Belén - Santa Ana",
-        "backDirection":  "Santa Ana - Belén",
-        "dimensions":  "7.20 x 9.00 m",
-        "area":  "64 m2"
-    },
-    {
-        "id":  "al15",
-        "code":  "AL15",
-        "name":  "AL15. Bernardo Soto El Coyol",
-        "province":  "Alajuela",
-        "wkt":  "POINT (-84.2527235 9.9941361)",
-        "position":  {
-                         "lat":  9.9941361,
-                         "lng":  -84.2527235
-                     },
-        "address":  "Autopista Bernardo Soto 600 este de la Dos Pinos",
-        "faceDirection":  "Aeropuerto - La Garita",
-        "backDirection":  "La Garita - Aeropuerto",
-        "dimensions":  "14.40 x 5.00 m",
-        "area":  "72 m2"
-    },
-    {
-        "id":  "al16",
-        "code":  "AL16",
-        "name":  "AL16. Radial Belén Proyecto Goal",
-        "province":  "Alajuela",
-        "wkt":  "POINT (-84.2000234 9.9746465)",
-        "position":  {
-                         "lat":  9.9746465,
-                         "lng":  -84.2000234
-                     },
-        "address":  "Instalaciones de Proyecto Goal",
-        "faceDirection":  "Belén - Santa Ana",
-        "backDirection":  "Santa Ana - Belén",
-        "dimensions":  "7.20 x 9.00 m",
-        "area":  "64 m2"
-    },
-    {
-        "id":  "al17",
-        "code":  "AL17",
-        "name":  "AL17. Radial Alajuela",
-        "province":  "Alajuela",
-        "wkt":  "POINT (-84.2130884 10.0084448)",
-        "position":  {
-                         "lat":  10.0084448,
-                         "lng":  -84.2130884
-                     },
-        "address":  "Radial Alajuela 500 mts norte de City Mall",
-        "faceDirection":  "Aeropuerto - Alajuela",
-        "backDirection":  "Alajuela - Aeropuerto",
-        "dimensions":  "7.20 x 9.00 m",
-        "area":  "64.8 m2"
-    },
-    {
-        "id":  "al18",
-        "code":  "AL18",
-        "name":  "AL18 Radial Alajuela",
-        "province":  "Alajuela",
-        "wkt":  "POINT (-84.2133003 10.0090682)",
-        "position":  {
-                         "lat":  10.0090682,
-                         "lng":  -84.2133003
-                     },
-        "address":  "Radial Alajuela 600 mts norte de City Mall",
-        "faceDirection":  "Aeropuerto - Alajuela",
-        "backDirection":  "Alajuela - Aeropuerto",
-        "dimensions":  "7.20 x 9.00 m",
-        "area":  "64.8 m2"
-    },
-    {
-        "id":  "al20",
-        "code":  "AL20",
-        "name":  "AL20. Landmark Aeropuerto Juan Santamaría.",
-        "province":  "Alajuela",
-        "wkt":  "POINT (-84.1970984 9.9999772)",
-        "position":  {
-                         "lat":  9.9999772,
-                         "lng":  -84.1970984
-                     },
-        "address":  "Frente al Aeropuerto Juan Santamaría",
-        "faceDirection":  "San José - Alajuela",
-        "backDirection":  "",
-        "dimensions":  "8.50 x 33.30 m",
-        "area":  "283 m2"
-    },
-    {
-        "id":  "ct1",
-        "code":  "CT1",
-        "name":  "CT1. Florencio del Castillo Terramall",
-        "province":  "Cartago",
-        "wkt":  "POINT (-83.9984125 9.9001826)",
-        "position":  {
-                         "lat":  9.9001826,
-                         "lng":  -83.9984125
-                     },
-        "address":  "500 mts oeste de Terramall",
-        "faceDirection":  "San José - Cartago",
-        "backDirection":  "Cartago - San José",
-        "dimensions":  "14.40 x 5.00 m",
-        "area":  "72 m2"
-    },
-    {
-        "id":  "ct2",
-        "code":  "CT2",
-        "name":  "CT2. Florencio del Castillo Tres Ríos",
-        "province":  "Cartago",
-        "wkt":  "POINT (-84.0025055 9.9001483)",
-        "position":  {
-                         "lat":  9.9001483,
-                         "lng":  -84.0025055
-                     },
-        "address":  "800 mts oeste de Terramall",
-        "faceDirection":  "Cartago - San José",
-        "backDirection":  "San José - Cartago",
-        "dimensions":  "14.40 x 5.00 m",
-        "area":  "72 m2"
-    },
-    {
-        "id":  "ct3",
-        "code":  "CT3",
-        "name":  "CT3. La Lima Laboratorios Stein",
-        "province":  "Cartago",
-        "wkt":  "POINT (-83.9407933 9.8816625)",
-        "position":  {
-                         "lat":  9.8816625,
-                         "lng":  -83.9407933
-                     },
-        "address":  "Costado sur de Laboratorios Stein",
-        "faceDirection":  "San José - Cartago",
-        "backDirection":  "Cartago - San José",
-        "dimensions":  "7.20 x 9.00 m",
-        "area":  "64.8 m2"
-    },
-    {
-        "id":  "ct4",
-        "code":  "CT4",
-        "name":  "CT4. Paseo Metropoli",
-        "province":  "Cartago",
-        "wkt":  "POINT (-83.9422095 9.867763)",
-        "position":  {
-                         "lat":  9.867763,
-                         "lng":  -83.9422095
-                     },
-        "address":  "Contiguo a Paseo Metrópoli",
-        "faceDirection":  "Cartago - San José",
-        "backDirection":  "San José - Cartago",
-        "dimensions":  "12.60 x 5.00 m",
-        "area":  "63 m2"
-    },
-    {
-        "id":  "gc6",
-        "code":  "GC6",
-        "name":  "GC6. Guardia de Liberia",
-        "province":  "Guanacaste",
-        "wkt":  "POINT (-85.5915481 10.5576792)",
-        "position":  {
-                         "lat":  10.5576792,
-                         "lng":  -85.5915481
-                     },
-        "address":  "500 mts al este del Doit Center",
-        "faceDirection":  "Liberia - Santa Cruz",
-        "backDirection":  "Santa Cruz - Liberia",
-        "dimensions":  "12.60 x 5.00 m",
-        "area":  "63 m2"
-    },
-    {
-        "id":  "gc7",
-        "code":  "GC7",
-        "name":  "GC6 Limonal de Abangares",
-        "province":  "Guanacaste",
-        "wkt":  "POINT (-85.0155329 10.2582896)",
-        "position":  {
-                         "lat":  10.2582896,
-                         "lng":  -85.0155329
-                     },
-        "address":  "Limonal de Abangares",
-        "faceDirection":  "San José - Liberia",
-        "backDirection":  "",
-        "dimensions":  "10.80 x 3.60 m",
-        "area":  "38.8 m2"
-    },
-    {
-        "id":  "hd1",
-        "code":  "HD1",
-        "name":  "HD1 Pequeño Mundo",
-        "province":  "Heredia",
-        "wkt":  "POINT (-84.1113389 9.9776262)",
-        "position":  {
-                         "lat":  9.9776262,
-                         "lng":  -84.1113389
-                     },
-        "address":  "400 mts al sur de Pricemart",
-        "faceDirection":  "San José - Heredia",
-        "backDirection":  "Heredia - San José",
-        "dimensions":  "14.40 x 5.00 m",
-        "area":  "72 m2"
-    },
-    {
-        "id":  "hd2",
-        "code":  "HD2",
-        "name":  "HD2 Puente Rio Virilla",
-        "province":  "Heredia",
-        "wkt":  "POINT (-84.1105127 9.9620534)",
-        "position":  {
-                         "lat":  9.9620534,
-                         "lng":  -84.1105127
-                     },
-        "address":  "200 mts sur de Jardines del Recuerdo",
-        "faceDirection":  "Heredia - San José",
-        "backDirection":  "San José - Heredia",
-        "dimensions":  "14.40 x 5.00 m",
-        "area":  "72 m2"
-    },
-    {
-        "id":  "hd4",
-        "code":  "HD4",
-        "name":  "HD4 Heredia Centro Comercial 2000",
-        "province":  "Heredia",
-        "wkt":  "POINT (-84.1114032 9.9770504)",
-        "position":  {
-                         "lat":  9.9770504,
-                         "lng":  -84.1114032
-                     },
-        "address":  "600 mts al sur de Pricemart",
-        "faceDirection":  "Heredia - San José",
-        "backDirection":  "San José - Heredia",
-        "dimensions":  "14.40 x 6.00 m",
-        "area":  "86.4 m2"
-    },
-    {
-        "id":  "hd5",
-        "code":  "HD5",
-        "name":  "HD5 General Cañas",
-        "province":  "Heredia",
-        "wkt":  "POINT (-84.164967 9.9884569)",
-        "position":  {
-                         "lat":  9.9884569,
-                         "lng":  -84.164967
-                     },
-        "address":  "Autopista General Cañas 400 mts sur de la Firestone.",
-        "faceDirection":  "Alajuela - San José",
-        "backDirection":  "San José - Alajuela",
-        "dimensions":  "14.40 x 6.00 m",
-        "area":  "86.4 m2"
-    },
-    {
-        "id":  "hd6",
-        "code":  "HD6",
-        "name":  "HD6 Heredia Lagunilla",
-        "province":  "Heredia",
-        "wkt":  "POINT (-84.1187954 9.967181)",
-        "position":  {
-                         "lat":  9.967181,
-                         "lng":  -84.1187954
-                     },
-        "address":  "1 km al oeste de Jardines del Recuerdo.",
-        "faceDirection":  "Lagunilla - Barreal",
-        "backDirection":  "Barreal - Lagunilla",
-        "dimensions":  "12.60 x 5.00 m",
-        "area":  "63 m2"
-    },
-    {
-        "id":  "hd8",
-        "code":  "HD8",
-        "name":  "HD8.General Cañas EPA",
-        "province":  "Heredia",
-        "wkt":  "POINT (-84.1632611 9.9838869)",
-        "position":  {
-                         "lat":  9.9838869,
-                         "lng":  -84.1632611
-                     },
-        "address":  "Autopista General Cañas Frente a EPA",
-        "faceDirection":  "Alajuela - San José",
-        "backDirection":  "San José - Alajuela",
-        "dimensions":  "14.40 x 6.00 m",
-        "area":  "86.4"
-    },
-    {
-        "id":  "hd7",
-        "code":  "HD7",
-        "name":  "HD7.Heredia Oxígeno",
-        "province":  "Heredia",
-        "wkt":  "POINT (-84.1300982 9.9934876)",
-        "position":  {
-                         "lat":  9.9934876,
-                         "lng":  -84.1300982
-                     },
-        "address":  "Costado sur de Oxìgeno.",
-        "faceDirection":  "La Aurora - Heredia",
-        "backDirection":  "Heredia - La Aurora",
-        "dimensions":  "8.50 x 11.00 m",
-        "area":  "93.5 m2"
-    },
-    {
-        "id":  "hd9",
-        "code":  "HD9",
-        "name":  "HD9. General Cañas Heredia",
-        "province":  "Heredia",
-        "wkt":  "POINT (-84.1501236 9.9738857)",
-        "position":  {
-                         "lat":  9.9738857,
-                         "lng":  -84.1501236
-                     },
-        "address":  "Autopista General Cañas Frente a Plaza Los Arcos.",
-        "faceDirection":  "Alajuela - San José",
-        "backDirection":  "San José - Alajuela",
-        "dimensions":  "12.60 x 5.00 m",
-        "area":  "63 m2"
-    },
-    {
-        "id":  "hd10",
-        "code":  "HD10",
-        "name":  "HD10 Cervecería San Joaquín",
-        "province":  "Heredia",
-        "wkt":  "POINT (-84.1711736 10.0038884)",
-        "position":  {
-                         "lat":  10.0038884,
-                         "lng":  -84.1711736
-                     },
-        "address":  "San Joaquín de Flores Cruce de la Cervecería",
-        "faceDirection":  "Alajuela - Heredia",
-        "backDirection":  "Heredia - Alajuela",
-        "dimensions":  "7.20 x 9.00 m",
-        "area":  "64.8 m2"
-    },
-    {
-        "id":  "hd11",
-        "code":  "HD11",
-        "name":  "HD11 Puente Río Virilla",
-        "province":  "Heredia",
-        "wkt":  "POINT (-84.1101292 9.9615145)",
-        "position":  {
-                         "lat":  9.9615145,
-                         "lng":  -84.1101292
-                     },
-        "address":  "Contiguo al puente Virilla",
-        "faceDirection":  "Heredia - San José",
-        "backDirection":  "San José - Heredia",
-        "dimensions":  "7.20 x 9.00 m",
-        "area":  "64.8 m2"
-    },
-    {
-        "id":  "hd12",
-        "code":  "HD12",
-        "name":  "HD12 Heredia Sto. Domingo",
-        "province":  "Heredia",
-        "wkt":  "POINT (-84.0862548 9.970013)",
-        "position":  {
-                         "lat":  9.970013,
-                         "lng":  -84.0862548
-                     },
-        "address":  "100 mts al este del Cementerio de Santo Domingo",
-        "faceDirection":  "Tibás - Santo Domingo",
-        "backDirection":  "Santo Domingo - Tibás",
-        "dimensions":  "7.20 x 9.00 m",
-        "area":  "64.8 m2"
-    },
-    {
-        "id":  "hd13",
-        "code":  "HD13",
-        "name":  "HD13 La Aurora de Heredia.",
-        "province":  "Heredia",
-        "wkt":  "POINT (-84.1488522 9.9888055)",
-        "position":  {
-                         "lat":  9.9888055,
-                         "lng":  -84.1488522
-                     },
-        "address":  "Rotonda de Santa Verde",
-        "faceDirection":  "Heredia - Belén",
-        "backDirection":  "Belén - Heredia",
-        "dimensions":  "7.20 x 9.00 m",
-        "area":  "64.8 m2"
-    },
-    {
-        "id":  "hd14",
-        "code":  "HD14",
-        "name":  "HD14 Heredia Sto. Domingo.",
-        "province":  "Heredia",
-        "wkt":  "POINT (-84.0857667 9.9694318)",
-        "position":  {
-                         "lat":  9.9694318,
-                         "lng":  -84.0857667
-                     },
-        "address":  "200 este del Cementerio de Santo Domingo",
-        "faceDirection":  "Santo Domingo - Tibás",
-        "backDirection":  "Tibás - Santo Domingo",
-        "dimensions":  "7.20 x 9.00 m",
-        "area":  "64.8 m2"
-    },
-    {
-        "id":  "hd15",
-        "code":  "HD15",
-        "name":  "HD15 General Cañas Centro Convenciones",
-        "province":  "Heredia",
-        "wkt":  "POINT (-84.1565502 9.977959)",
-        "position":  {
-                         "lat":  9.977959,
-                         "lng":  -84.1565502
-                     },
-        "address":  "300 al este del Real Cariari",
-        "faceDirection":  "San José - Alajuela",
-        "backDirection":  "Alajuela - San José",
-        "dimensions":  "7.20 x 9.00 m",
-        "area":  "64.8 m2"
-    },
-    {
-        "id":  "hd16",
-        "code":  "HD16",
-        "name":  "HD16 General Cañas Centro Convenciones",
-        "province":  "Heredia",
-        "wkt":  "POINT (-84.1558957 9.9776844)",
-        "position":  {
-                         "lat":  9.9776844,
-                         "lng":  -84.1558957
-                     },
-        "address":  "400 al este del Real Cariari",
-        "faceDirection":  "San José - Alajuela",
-        "backDirection":  "Alajuela - San José",
-        "dimensions":  "7.20 x 9.00 m",
-        "area":  "64.8 m2"
-    },
-    {
-        "id":  "hd17",
-        "code":  "HD17",
-        "name":  "HD17 General Cañas Centro Convenciones",
-        "province":  "Heredia",
-        "wkt":  "POINT (-84.1553486 9.977452)",
-        "position":  {
-                         "lat":  9.977452,
-                         "lng":  -84.1553486
-                     },
-        "address":  "500 al este del Real Cariari",
-        "faceDirection":  "San José - Alajuela",
-        "backDirection":  "Alajuela - San José",
-        "dimensions":  "7.20 x 9.00 m",
-        "area":  "64.8 m2"
-    },
-    {
-        "id":  "hd18",
-        "code":  "HD18",
-        "name":  "HD18 General Cañas Centro Convenciones",
-        "province":  "Heredia",
-        "wkt":  "POINT (-84.1547585 9.9770927)",
-        "position":  {
-                         "lat":  9.9770927,
-                         "lng":  -84.1547585
-                     },
-        "address":  "600 al este del Real Cariari",
-        "faceDirection":  "San José - Alajuela",
-        "backDirection":  "Alajuela - San José",
-        "dimensions":  "7.20 x 9.00 m",
-        "area":  "64.8 m2"
-    },
-    {
-        "id":  "hd19",
-        "code":  "HD19",
-        "name":  "HD19 General Cañas Centro Convenciones",
-        "province":  "Heredia",
-        "wkt":  "POINT (-84.1540611 9.9766806)",
-        "position":  {
-                         "lat":  9.9766806,
-                         "lng":  -84.1540611
-                     },
-        "address":  "700 al este del Real Cariari",
-        "faceDirection":  "San José - Alajuela",
-        "backDirection":  "Alajuela - San José",
-        "dimensions":  "7.20 x 9.00 m",
-        "area":  "64.8 m2"
-    },
-    {
-        "id":  "hd20",
-        "code":  "HD20",
-        "name":  "HD20 San Joaquin Cervecería",
-        "province":  "Heredia",
-        "wkt":  "POINT (-84.1694382 10.0036771)",
-        "position":  {
-                         "lat":  10.0036771,
-                         "lng":  -84.1694382
-                     },
-        "address":  "Contiguo a la Cervecería",
-        "faceDirection":  "Alajuela - Heredia",
-        "backDirection":  "Heredia - Alajuela",
-        "dimensions":  "7.20 x 9.00 m",
-        "area":  "64.8 m2"
-    },
-    {
-        "id":  "hd21",
-        "code":  "HD21",
-        "name":  "HD21 Heredia Zona Franca Metro",
-        "province":  "Heredia",
-        "wkt":  "POINT (-84.148981 9.9800407)",
-        "position":  {
-                         "lat":  9.9800407,
-                         "lng":  -84.148981
-                     },
-        "address":  "Frente a Zona Franca Metro",
-        "faceDirection":  "Belén - Lagunilla",
-        "backDirection":  "Lagunilla - Belén",
-        "dimensions":  "12.60 x 5.00 m",
-        "area":  "63 m2"
-    },
-    {
-        "id":  "hd22",
-        "code":  "HD22",
-        "name":  "HD22 Heredia Real Cariari",
-        "province":  "Heredia",
-        "wkt":  "POINT (-84.1539216 9.98208)",
-        "position":  {
-                         "lat":  9.98208,
-                         "lng":  -84.1539216
-                     },
-        "address":  "Frente a Centro de negocios Eurocenter.",
-        "faceDirection":  "Belén - Heredia",
-        "backDirection":  "Heredia - Belén",
-        "dimensions":  "12.60 x 5.00 m",
-        "area":  "63 m2"
-    },
-    {
-        "id":  "hd23",
-        "code":  "HD23",
-        "name":  "HD23 Heredia Pirro",
-        "province":  "Heredia",
-        "wkt":  "POINT (-84.1134042 9.9941097)",
-        "position":  {
-                         "lat":  9.9941097,
-                         "lng":  -84.1134042
-                     },
-        "address":  "Puente del Pirro Contiguo a Autopits.",
-        "faceDirection":  "Heredia - San José",
-        "backDirection":  "",
-        "dimensions":  "7.20 x 9.00 m",
-        "area":  "64.8 m2"
-    },
-    {
-        "id":  "hd24",
-        "code":  "HD24",
-        "name":  "HD24 Heredia Pirro",
-        "province":  "Heredia",
-        "wkt":  "POINT (-84.1131681 9.994189)",
-        "position":  {
-                         "lat":  9.994189,
-                         "lng":  -84.1131681
-                     },
-        "address":  "Puente del Pirro Contiguo al Bodegón de la Cerámica",
-        "faceDirection":  "Heredia - San José",
-        "backDirection":  "",
-        "dimensions":  "7.20 x 9.00 m",
-        "area":  "64.8 m2"
-    },
-    {
-        "id":  "hd25",
-        "code":  "HD25",
-        "name":  "HD25 La Valencia de Heredia",
-        "province":  "Heredia",
-        "wkt":  "POINT (-84.1137099 9.9681638)",
-        "position":  {
-                         "lat":  9.9681638,
-                         "lng":  -84.1137099
-                     },
-        "address":  "La Valencia Contiguo a la McDonalds.",
-        "faceDirection":  "Heredia - San José",
-        "backDirection":  "San José - Heredia",
-        "dimensions":  "8.50 x 11.00 m",
-        "area":  "93.5 m2"
-    },
-    {
-        "id":  "hd26",
-        "code":  "HD26",
-        "name":  "HD26 Heredia San Francisco",
-        "province":  "Heredia",
-        "wkt":  "POINT (-84.1357148 9.996524)",
-        "position":  {
-                         "lat":  9.996524,
-                         "lng":  -84.1357148
-                     },
-        "address":  "San Francisco de Heredia 200 mts oeste de Oxígeno",
-        "faceDirection":  "Alajuela - Heredia",
-        "backDirection":  "Heredia - Alajuela",
-        "dimensions":  "7.20 x 9.00 m",
-        "area":  "72 m2"
-    },
-    {
-        "id":  "hd27",
-        "code":  "HD27",
-        "name":  "HD27 Heredia Skate Park Walmart",
-        "province":  "Heredia",
-        "wkt":  "POINT (-84.1283923 9.9959508)",
-        "position":  {
-                         "lat":  9.9959508,
-                         "lng":  -84.1283923
-                     },
-        "address":  "Contiguo a Walmart",
-        "faceDirection":  "Alajuela - Heredia",
-        "backDirection":  "Heredia - Alajuela",
-        "dimensions":  "7.20 x 9.00 m",
-        "area":  "64.8 m2"
-    },
-    {
-        "id":  "hd28",
-        "code":  "HD28",
-        "name":  "HD28 Puente del Río Virilla Repuestos Gigante",
-        "province":  "Heredia",
-        "wkt":  "POINT (-84.1106945 9.9626203)",
-        "position":  {
-                         "lat":  9.9626203,
-                         "lng":  -84.1106945
-                     },
-        "address":  "200 mts sur de Jardines del Recuerdo",
-        "faceDirection":  "Heredia - San José",
-        "backDirection":  "San José - Heredia",
-        "dimensions":  "8.50 x 11.00 m",
-        "area":  "93.5 m2"
-    },
-    {
-        "id":  "hd29",
-        "code":  "HD29",
-        "name":  "HD29 La Puebla Heredia",
-        "province":  "Heredia",
-        "wkt":  "POINT (-84.1094645 9.9935427)",
-        "position":  {
-                         "lat":  9.9935427,
-                         "lng":  -84.1094645
-                     },
-        "address":  "Plaza de Deportes La Puebla",
-        "faceDirection":  "Heredia - Tibás",
-        "backDirection":  "Tibás - Heredia",
-        "dimensions":  "8.50 x 11.00 m",
-        "area":  "93.5 m2"
-    },
-    {
-        "id":  "hd30",
-        "code":  "HD30",
-        "name":  "HD30 Walmart San Francisco de Heredia.",
-        "province":  "Heredia",
-        "wkt":  "POINT (-84.1283292 9.9955237)",
-        "position":  {
-                         "lat":  9.9955237,
-                         "lng":  -84.1283292
-                     },
-        "address":  "San Francisco de Heredia Contiguo a Walmart.",
-        "faceDirection":  "Heredia - Oxígeno",
-        "backDirection":  "Oxígeno - Heredia",
-        "dimensions":  "5.40 x 7.20 m",
-        "area":  "38.8 m2"
-    },
-    {
-        "id":  "pt2",
-        "code":  "PT2",
-        "name":  "PT2 Jacó",
-        "province":  "Puntarenas",
-        "wkt":  "POINT (-84.635582 9.7129276)",
-        "position":  {
-                         "lat":  9.7129276,
-                         "lng":  -84.635582
-                     },
-        "address":  "400 mts norte de la entrada a Punta Leona",
-        "faceDirection":  "Orotina - Jacó",
-        "backDirection":  "Jacó - Orotina",
-        "dimensions":  "12.60 x 5.00 m",
-        "area":  "63 m2"
-    },
-    {
-        "id":  "pt4",
-        "code":  "PT4",
-        "name":  "PT4 Jacó FYM.",
-        "province":  "Puntarenas",
-        "wkt":  "POINT (-84.6271062 9.6410096)",
-        "position":  {
-                         "lat":  9.6410096,
-                         "lng":  -84.6271062
-                     },
-        "address":  "Instalaciones del Centro Comercial FYM",
-        "faceDirection":  "Orotina - Jacó",
-        "backDirection":  "Jacó - Orotina",
-        "dimensions":  "12.60 x 5.00 m",
-        "area":  "64 m2"
-    },
-    {
-        "id":  "pt5",
-        "code":  "PT5",
-        "name":  "PT5 Jacó",
-        "province":  "Puntarenas",
-        "wkt":  "POINT (-84.6363223 9.7104107)",
-        "position":  {
-                         "lat":  9.7104107,
-                         "lng":  -84.6363223
-                     },
-        "address":  "Frente a Urbanización El Oasis",
-        "faceDirection":  "Orotina - Jacó",
-        "backDirection":  "Jacó - Orotina",
-        "dimensions":  "12.60 x 5.00 m",
-        "area":  "63 m2"
-    },
-    {
-        "id":  "pt9",
-        "code":  "PT9",
-        "name":  "PT9 Jacó",
-        "province":  "Puntarenas",
-        "wkt":  "POINT (-84.6349168 9.7057576)",
-        "position":  {
-                         "lat":  9.7057576,
-                         "lng":  -84.6349168
-                     },
-        "address":  "Frente a Urbanización Pez Vela",
-        "faceDirection":  "Orotina - Jacó",
-        "backDirection":  "Jacó - Orotina",
-        "dimensions":  "12.60 x 5.00 m",
-        "area":  "63 m2"
-    },
-    {
-        "id":  "pz2",
-        "code":  "PZ2",
-        "name":  "PZ2 Pérez Zeledón.",
-        "province":  "San José",
-        "wkt":  "POINT (-83.7069583 9.3845508)",
-        "position":  {
-                         "lat":  9.3845508,
-                         "lng":  -83.7069583
-                     },
-        "address":  "Entrada principal contiguo a Pasoca.",
-        "faceDirection":  "San José - Pérez Zeledón",
-        "backDirection":  "",
-        "dimensions":  "14.40 x 5.00 m",
-        "area":  "64.8 m2"
-    },
-    {
-        "id":  "sj1",
-        "code":  "SJ1",
-        "name":  "SJ1 San Francisco de Dos Ríos.",
-        "province":  "San José",
-        "wkt":  "POINT (-84.0581936 9.9113249)",
-        "position":  {
-                         "lat":  9.9113249,
-                         "lng":  -84.0581936
-                     },
-        "address":  "200 mts este de la Iglesia Católica de San Francisco",
-        "faceDirection":  "San José - San Francisco",
-        "backDirection":  "San Francisco - San José",
-        "dimensions":  "14.40 x 5.00 m",
-        "area":  "72 m2"
-    },
-    {
-        "id":  "sj3",
-        "code":  "SJ3",
-        "name":  "SJ3 Santa Ana Fórum 1",
-        "province":  "San José",
-        "wkt":  "POINT (-84.1923845 9.9434575)",
-        "position":  {
-                         "lat":  9.9434575,
-                         "lng":  -84.1923845
-                     },
-        "address":  "Autopista Próspero Fernández 300 mts este de Fórum 1",
-        "faceDirection":  "Santa Ana - San José",
-        "backDirection":  "San José - Santa Ana",
-        "dimensions":  "14.40 x 5.00 m",
-        "area":  "72 m2"
-    },
-    {
-        "id":  "sj4",
-        "code":  "SJ4",
-        "name":  "SJ4 Ruta 32 Tibás.",
-        "province":  "San José",
-        "wkt":  "POINT (-84.0741098 9.9466172)",
-        "position":  {
-                         "lat":  9.9466172,
-                         "lng":  -84.0741098
-                     },
-        "address":  "800 mts norte de la República",
-        "faceDirection":  "Tibás - San José",
-        "backDirection":  "San José - Tibás",
-        "dimensions":  "14.40 x 5.00 m",
-        "area":  "72 m2"
-    },
-    {
-        "id":  "sj5",
-        "code":  "SJ5",
-        "name":  "SJ5 La Uruca la Pozuelo",
-        "province":  "San José",
-        "wkt":  "POINT (-84.1090107 9.9523765)",
-        "position":  {
-                         "lat":  9.9523765,
-                         "lng":  -84.1090107
-                     },
-        "address":  "La Uruca costado sur de la Pozuelo.",
-        "faceDirection":  "La Uruca - Heredia",
-        "backDirection":  "Heredia - La Uruca",
-        "dimensions":  "14.40 x 5.00 m",
-        "area":  "72 m2"
-    },
-    {
-        "id":  "sj6",
-        "code":  "SJ6",
-        "name":  "SJ6 La Uruca - Puente Juan Pablo II",
-        "province":  "San José",
-        "wkt":  "POINT (-84.1124868 9.9505906)",
-        "position":  {
-                         "lat":  9.9505906,
-                         "lng":  -84.1124868
-                     },
-        "address":  "Costado Sur del puente Juan Pablo II.",
-        "faceDirection":  "San José - Alajuela",
-        "backDirection":  "Alajuela - San José",
-        "dimensions":  "14.40 x 5.00 m",
-        "area":  "64.80 m2"
-    },
-    {
-        "id":  "sj8",
-        "code":  "SJ8",
-        "name":  "SJ8 Zapote.",
-        "province":  "San José",
-        "wkt":  "POINT (-84.0527862 9.9197375)",
-        "position":  {
-                         "lat":  9.9197375,
-                         "lng":  -84.0527862
-                     },
-        "address":  "Costado este de la Iglesia Católica de Zapote",
-        "faceDirection":  "Curridabat - San José",
-        "backDirection":  "San José - Curridabat",
-        "dimensions":  "14.40 x 5.00 m",
-        "area":  "72 m2"
-    },
-    {
-        "id":  "sj9",
-        "code":  "SJ9",
-        "name":  "SJ9 Autopista Próspero Fernández",
-        "province":  "San José",
-        "wkt":  "POINT (-84.1204155 9.9350772)",
-        "position":  {
-                         "lat":  9.9350772,
-                         "lng":  -84.1204155
-                     },
-        "address":  "400 metros este del Cruce de Escazú.",
-        "faceDirection":  "San José - Escazú",
-        "backDirection":  "Escazú - San José",
-        "dimensions":  "7.20 x 9.00 m",
-        "area":  "64.8 m2"
-    },
-    {
-        "id":  "sj10",
-        "code":  "SJ10",
-        "name":  "SJ10 Circunvalación Guadalupe",
-        "province":  "San José",
-        "wkt":  "POINT (-84.0614337 9.9449686)",
-        "position":  {
-                         "lat":  9.9449686,
-                         "lng":  -84.0614337
-                     },
-        "address":  "300 mts oeste de la rotonda de Guadalupe.",
-        "faceDirection":  "Calle Blancos - San Pedro",
-        "backDirection":  "San Pedro - Calle Blancos",
-        "dimensions":  "14.40 x 5.00 m",
-        "area":  "72 m2"
-    },
-    {
-        "id":  "sj11",
-        "code":  "SJ11",
-        "name":  "SJ11 Radial Santa Ana-Belén",
-        "province":  "San José",
-        "wkt":  "POINT (-84.1928029 9.9496923)",
-        "position":  {
-                         "lat":  9.9496923,
-                         "lng":  -84.1928029
-                     },
-        "address":  "Radial Belén - Santa Ana costado este del banco Davivienda.",
-        "faceDirection":  "Belén - Santa Ana",
-        "backDirection":  "Santa Ana - Belén",
-        "dimensions":  "14.40 x 5.00 m",
-        "area":  "72 m2"
-    },
-    {
-        "id":  "sj12",
-        "code":  "SJ12",
-        "name":  "SJ12 Autopista Próspero Fernández",
-        "province":  "San José",
-        "wkt":  "POINT (-84.1596803 9.9480465)",
-        "position":  {
-                         "lat":  9.9480465,
-                         "lng":  -84.1596803
-                     },
-        "address":  "600 mts oeste de Multipplaza Escazú",
-        "faceDirection":  "Santa Ana - Escazú",
-        "backDirection":  "Escazú - Santa Ana",
-        "dimensions":  "14.40 x 5.00 m",
-        "area":  "72 m2"
-    },
-    {
-        "id":  "sj13",
-        "code":  "SJ13",
-        "name":  "SJ13 La Uruca",
-        "province":  "San José",
-        "wkt":  "POINT (-84.1102767 9.9484454)",
-        "position":  {
-                         "lat":  9.9484454,
-                         "lng":  -84.1102767
-                     },
-        "address":  "Juan Pablo II",
-        "faceDirection":  "Puente Juan Pablo II Diagonal a Denny\u0027s",
-        "backDirection":  "Alajuela - San José",
-        "dimensions":  "San José - Alajuela",
-        "area":  "14.40 x 5.00 m"
-    },
-    {
-        "id":  "sj14",
-        "code":  "SJ14",
-        "name":  "SJ14 Circunvalación La Uruca",
-        "province":  "San José",
-        "wkt":  "POINT (-84.1041505 9.9481019)",
-        "position":  {
-                         "lat":  9.9481019,
-                         "lng":  -84.1041505
-                     },
-        "address":  "300 mts norte del San José Palacio.",
-        "faceDirection":  "Los Hatillos - La Uruca",
-        "backDirection":  "La Uruca - Los Hatillos",
-        "dimensions":  "14.40 x 5.00 m",
-        "area":  "72 m2"
-    },
-    {
-        "id":  "sj15",
-        "code":  "SJ15",
-        "name":  "SJ15 Zapote Registro Nacional",
-        "province":  "San José",
-        "wkt":  "POINT (-84.049648 9.918818)",
-        "position":  {
-                         "lat":  9.918818,
-                         "lng":  -84.049648
-                     },
-        "address":  "Zapote frente al Registro Nacional.",
-        "faceDirection":  "Cartago - San José",
-        "backDirection":  "San José - Cartago",
-        "dimensions":  "14.40 x 5.00 m",
-        "area":  "72 m2"
-    },
-    {
-        "id":  "sj16",
-        "code":  "SJ16",
-        "name":  "SJ16 Radial Belén-Santa Ana Autopits",
-        "province":  "San José",
-        "wkt":  "POINT (-84.1920251 9.9472618)",
-        "position":  {
-                         "lat":  9.9472618,
-                         "lng":  -84.1920251
-                     },
-        "address":  "Radial Belén - Santa Ana contiguo a Autopits",
-        "faceDirection":  "Belén - Santa Ana",
-        "backDirection":  "Santa Ana - Belén",
-        "dimensions":  "7.20 x 9.00 m",
-        "area":  "64.8 m2"
-    },
-    {
-        "id":  "sj17",
-        "code":  "SJ17",
-        "name":  "SJ17 Tibás Neón Nieto",
-        "province":  "San José",
-        "wkt":  "POINT (-84.0862119 9.9647401)",
-        "position":  {
-                         "lat":  9.9647401,
-                         "lng":  -84.0862119
-                     },
-        "address":  "25 mts sur de la Neón Nieto",
-        "faceDirection":  "Tibás - Heredia",
-        "backDirection":  "Heredia - Tibás",
-        "dimensions":  "14.40 x 5.00 m",
-        "area":  "72 m2"
-    },
-    {
-        "id":  "sj18",
-        "code":  "SJ18",
-        "name":  "SJ18 Desamparados",
-        "province":  "San José",
-        "wkt":  "POINT (-84.0693891 9.9041856)",
-        "position":  {
-                         "lat":  9.9041856,
-                         "lng":  -84.0693891
-                     },
-        "address":  "Costado norte del Cementerio de Desamparados.",
-        "faceDirection":  "San José - Desamparados",
-        "backDirection":  "Desamparados - San José",
-        "dimensions":  "12.60 x 5.00 m",
-        "area":  "63 m2"
-    },
-    {
-        "id":  "sj19",
-        "code":  "SJ19",
-        "name":  "SJ19 Zapote",
-        "province":  "San José",
-        "wkt":  "POINT (-84.0590384 9.9215421)",
-        "position":  {
-                         "lat":  9.9215421,
-                         "lng":  -84.0590384
-                     },
-        "address":  "Garantías Sociales",
-        "faceDirection":  "Zapote Rotonda de las Garantías Sociales",
-        "backDirection":  "San José - Zapote",
-        "dimensions":  "Zapote - San José",
-        "area":  "12.60 x 5.00 m"
-    },
-    {
-        "id":  "sj20",
-        "code":  "SJ20",
-        "name":  "SJ20 La Uruca",
-        "province":  "San José",
-        "wkt":  "POINT (-84.1068703 9.9520278)",
-        "position":  {
-                         "lat":  9.9520278,
-                         "lng":  -84.1068703
-                     },
-        "address":  "Toyota",
-        "faceDirection":  "La Uruca 100 metros este de Ciudad Toyota",
-        "backDirection":  "La Uruca - Heredia",
-        "dimensions":  "Heredia - La Uruca",
-        "area":  "12.60 x 5.00 m"
-    },
-    {
-        "id":  "sj21",
-        "code":  "SJ21",
-        "name":  "SJ21 Circunvalación",
-        "province":  "San José",
-        "wkt":  "POINT (-84.1165853 9.9343533)",
-        "position":  {
-                         "lat":  9.9343533,
-                         "lng":  -84.1165853
-                     },
-        "address":  "UCIMED",
-        "faceDirection":  "200 oeste de la UCIMED.",
-        "backDirection":  "La Uruca - Los Hatillos",
-        "dimensions":  "Los Hatillos - La Uruca",
-        "area":  "12.60 x 5.00 m"
-    },
-    {
-        "id":  "sj22",
-        "code":  "SJ22",
-        "name":  "SJ22 Circunvalación",
-        "province":  "San José",
-        "wkt":  "POINT (-84.0823066 9.91077)",
-        "position":  {
-                         "lat":  9.91077,
-                         "lng":  -84.0823066
-                     },
-        "address":  "San Sebastián",
-        "faceDirection":  "300 mts oeste de la rotonda de San Sebastián.",
-        "backDirection":  "Los Hatillos - Zapote",
-        "dimensions":  "Zapote - Los Hatillos",
-        "area":  "12.60 x 5.00 m"
-    },
-    {
-        "id":  "sj23",
-        "code":  "SJ23",
-        "name":  "SJ23 Ruta 27 Plaza Obelisco",
-        "province":  "San José",
-        "wkt":  "POINT (-84.2022121 9.9396795)",
-        "position":  {
-                         "lat":  9.9396795,
-                         "lng":  -84.2022121
-                     },
-        "address":  "2 km al oeste de Fórum I",
-        "faceDirection":  "San José - Caldera",
-        "backDirection":  "Caldera - San José",
-        "dimensions":  "12.60 x 5.00 m",
-        "area":  "63 m2"
-    },
-    {
-        "id":  "sj24",
-        "code":  "SJ24",
-        "name":  "SJ24 Moravia Romanas Ballar",
-        "province":  "San José",
-        "wkt":  "POINT (-84.0548462 9.9559799)",
-        "position":  {
-                         "lat":  9.9559799,
-                         "lng":  -84.0548462
-                     },
-        "address":  "Recta Los Colegios contiguo a Romanas Ballar",
-        "faceDirection":  "Moravia - Guadalupe",
-        "backDirection":  "Guadalupe - Moravia",
-        "dimensions":  "12.60 x 5.00 m",
-        "area":  "63 m2"
-    },
-    {
-        "id":  "sj25",
-        "code":  "SJ25",
-        "name":  "SJ25 La Florida de Tibás",
-        "province":  "San José",
-        "wkt":  "POINT (-84.0678495 9.9620455)",
-        "position":  {
-                         "lat":  9.9620455,
-                         "lng":  -84.0678495
-                     },
-        "address":  "900 mts al oeste de la Iglesia Católica de Tibás.",
-        "faceDirection":  "Moravia - Tibás",
-        "backDirection":  "Tibás - Moravia",
-        "dimensions":  "12.60 x 5.00 m",
-        "area":  "63 m2"
-    },
-    {
-        "id":  "sj26",
-        "code":  "SJ26",
-        "name":  "SJ26 Moravia Saint Francis",
-        "province":  "San José",
-        "wkt":  "POINT (-84.0549964 9.960323)",
-        "position":  {
-                         "lat":  9.960323,
-                         "lng":  -84.0549964
-                     },
-        "address":  "Frente al Colegio Saint Francis.",
-        "faceDirection":  "Moravia - Guadalupe",
-        "backDirection":  "Guadalupe - Moravia",
-        "dimensions":  "12.60 x 5.00 m",
-        "area":  "63 m2"
-    },
-    {
-        "id":  "sj27",
-        "code":  "SJ27",
-        "name":  "SJ27 Curridabat La Galera",
-        "province":  "San José",
-        "wkt":  "POINT (-84.0302181 9.9143687)",
-        "position":  {
-                         "lat":  9.9143687,
-                         "lng":  -84.0302181
-                     },
-        "address":  "Cruce de la antigua Galera.",
-        "faceDirection":  "San José - Cartago",
-        "backDirection":  "Cartago - San José",
-        "dimensions":  "12.60 x 5.00 m",
-        "area":  "63 m2"
-    },
-    {
-        "id":  "sj28",
-        "code":  "SJ28",
-        "name":  "SJ28 Moravia Plaza Lincoln.",
-        "province":  "San José",
-        "wkt":  "POINT (-84.0580809 9.9627006)",
-        "position":  {
-                         "lat":  9.9627006,
-                         "lng":  -84.0580809
-                     },
-        "address":  "Costado norte de Plaza Lincoln.",
-        "faceDirection":  "Tibás - Moravia",
-        "backDirection":  "Moravia - Tibás",
-        "dimensions":  "12.60 x 5.00 m",
-        "area":  "63 m2"
-    },
-    {
-        "id":  "sj29",
-        "code":  "SJ29",
-        "name":  "SJ29 Radial Belén-Santa Ana.",
-        "province":  "San José",
-        "wkt":  "POINT (-84.1921431 9.9475154)",
-        "position":  {
-                         "lat":  9.9475154,
-                         "lng":  -84.1921431
-                     },
-        "address":  "Radial Belén - Santa Ana contiguo a Grupo Q.",
-        "faceDirection":  "Belén - Santa Ana",
-        "backDirection":  "Santa Ana - Belén",
-        "dimensions":  "7.20 x 9.00 m",
-        "area":  "64.8 m2"
-    },
-    {
-        "id":  "sj30",
-        "code":  "SJ30",
-        "name":  "SJ30 Circunvalación Guadalupe",
-        "province":  "San José",
-        "wkt":  "POINT (-84.0608811 9.9433941)",
-        "position":  {
-                         "lat":  9.9433941,
-                         "lng":  -84.0608811
-                     },
-        "address":  "Rotonda de Guadalupe frente a Walmart.",
-        "faceDirection":  "Calle Blancos - San Pedro",
-        "backDirection":  "San Pedro - Calle Blancos",
-        "dimensions":  "12.60 x 5.00 m",
-        "area":  "63 m2"
-    },
-    {
-        "id":  "sj31",
-        "code":  "SJ31",
-        "name":  "SJ31 Circunvalación Guadalupe",
-        "province":  "San José",
-        "wkt":  "POINT (-84.0611922 9.9429555)",
-        "position":  {
-                         "lat":  9.9429555,
-                         "lng":  -84.0611922
-                     },
-        "address":  "Contiguo a rotonda de Guadalupe frente a Walmart.",
-        "faceDirection":  "Guadalupe - San José",
-        "backDirection":  "San José - Guadalupe",
-        "dimensions":  "12.60 x 5.00 m",
-        "area":  "63 m2"
-    },
-    {
-        "id":  "sj32",
-        "code":  "SJ32",
-        "name":  "SJ32. Moravia Centro",
-        "province":  "San José",
-        "wkt":  "POINT (-84.0483016 9.9567725)",
-        "position":  {
-                         "lat":  9.9567725,
-                         "lng":  -84.0483016
-                     },
-        "address":  "50 mts sur de la Princesa Marina",
-        "faceDirection":  "Moravia - Guadalupe",
-        "backDirection":  "Guadalupe - Moravia",
-        "dimensions":  "12.60 x 5.00 m",
-        "area":  "63 m2"
-    },
-    {
-        "id":  "sj33",
-        "code":  "SJ33",
-        "name":  "SJ33 Moravia Plaza Lincoln.",
-        "province":  "San José",
-        "wkt":  "POINT (-84.0559191 9.9633612)",
-        "position":  {
-                         "lat":  9.9633612,
-                         "lng":  -84.0559191
-                     },
-        "address":  "Costado norte de Plaza Lincoln",
-        "faceDirection":  "Tibás - Moravia",
-        "backDirection":  "Moravia - Tibás",
-        "dimensions":  "12.60 x 5.00 m",
-        "area":  "63 m2"
-    },
-    {
-        "id":  "sj34",
-        "code":  "SJ34",
-        "name":  "SJ34 Curridabat La Galera.",
-        "province":  "San José",
-        "wkt":  "POINT (-84.0311435 9.9153515)",
-        "position":  {
-                         "lat":  9.9153515,
-                         "lng":  -84.0311435
-                     },
-        "address":  "Cruce de la antigua Galera.",
-        "faceDirection":  "Cartago - San José",
-        "backDirection":  "San José - Cartago",
-        "dimensions":  "12.60 x 5.00 m",
-        "area":  "63 m2"
-    },
-    {
-        "id":  "sj35",
-        "code":  "SJ35",
-        "name":  "SJ35 Guadalupe.",
-        "province":  "San José",
-        "wkt":  "POINT (-84.0620505 9.9427441)",
-        "position":  {
-                         "lat":  9.9427441,
-                         "lng":  -84.0620505
-                     },
-        "address":  "100 este de la rotonda de Guadalupe",
-        "faceDirection":  "Guadalupe - San José",
-        "backDirection":  "San José - Guadalupe",
-        "dimensions":  "8.50 x 11.00 m",
-        "area":  "93.5 m2"
-    },
-    {
-        "id":  "sj36",
-        "code":  "SJ36",
-        "name":  "SJ36 Zapote Garantías Sociales",
-        "province":  "San José",
-        "wkt":  "POINT (-84.0590145 9.9207428)",
-        "position":  {
-                         "lat":  9.9207428,
-                         "lng":  -84.0590145
-                     },
-        "address":  "Costado este de la rotonda",
-        "faceDirection":  "San José -Zapote",
-        "backDirection":  "Zapote - San José",
-        "dimensions":  "12.60 x 5.00 m",
-        "area":  "63 m2"
-    },
-    {
-        "id":  "sj37",
-        "code":  "SJ37",
-        "name":  "SJ37 Canal 7",
-        "province":  "San José",
-        "wkt":  "POINT (-84.1114676 9.9361552)",
-        "position":  {
-                         "lat":  9.9361552,
-                         "lng":  -84.1114676
-                     },
-        "address":  "La Sabana 150 mts al oeste de Canal 7",
-        "faceDirection":  "Pavas - La Sabana",
-        "backDirection":  "La Sabana - Pavas",
-        "dimensions":  "7.20 x 9.00 m",
-        "area":  "64.8 m2"
-    },
-    {
-        "id":  "sj38",
-        "code":  "SJ38",
-        "name":  "SJ38 Santa Ana Forum 1",
-        "province":  "San José",
-        "wkt":  "POINT (-84.1941226 9.943468)",
-        "position":  {
-                         "lat":  9.943468,
-                         "lng":  -84.1941226
-                     },
-        "address":  "Contiguo a plaza Fórum I",
-        "faceDirection":  "San José - Caldera",
-        "backDirection":  "Caldera - San José",
-        "dimensions":  "14.40 x 5.00 m",
-        "area":  "72 m2"
-    },
-    {
-        "id":  "sj39",
-        "code":  "SJ39",
-        "name":  "SJ39 Sabana Sur Yamuni",
-        "province":  "San José",
-        "wkt":  "POINT (-84.0967208 9.9318751)",
-        "position":  {
-                         "lat":  9.9318751,
-                         "lng":  -84.0967208
-                     },
-        "address":  "Costado sur de la Yamuni",
-        "faceDirection":  "San José - La Sabana",
-        "backDirection":  "La Sabana - San José",
-        "dimensions":  "7.20 x 5.40 m",
-        "area":  "38.8 m2"
-    },
-    {
-        "id":  "sj40",
-        "code":  "SJ40",
-        "name":  "SJ40 Sabana Sur Yamuni",
-        "province":  "San José",
-        "wkt":  "POINT (-84.096356 9.9317166)",
-        "position":  {
-                         "lat":  9.9317166,
-                         "lng":  -84.096356
-                     },
-        "address":  "Costado sur de la Yamuni",
-        "faceDirection":  "La Sabana - San José",
-        "backDirection":  "San José - La Sabana",
-        "dimensions":  "7.20 x 5.40 m",
-        "area":  "38.8 m2"
-    },
-    {
-        "id":  "sj41",
-        "code":  "SJ41",
-        "name":  "SJ41 Sabana Sur Universal",
-        "province":  "San José",
-        "wkt":  "POINT (-84.0988237 9.9324299)",
-        "position":  {
-                         "lat":  9.9324299,
-                         "lng":  -84.0988237
-                     },
-        "address":  "Frente a Torre Universal",
-        "faceDirection":  "San José - Escazú",
-        "backDirection":  "Escazú - San José",
-        "dimensions":  "5.40 x 7.20 m",
-        "area":  "38.8 m2"
-    },
-    {
-        "id":  "sj42",
-        "code":  "SJ42",
-        "name":  "SJ42 Sabana Sur Colegio de Médicos",
-        "province":  "San José",
-        "wkt":  "POINT (-84.1092092 9.9334233)",
-        "position":  {
-                         "lat":  9.9334233,
-                         "lng":  -84.1092092
-                     },
-        "address":  "Sabana Sur costado norte del Colegio de Médicos",
-        "faceDirection":  "Escazú - San José",
-        "backDirection":  "San José - Escazú",
-        "dimensions":  "5.40 x 7.20 m",
-        "area":  "38.8 m2"
-    },
-    {
-        "id":  "sj43",
-        "code":  "SJ43",
-        "name":  "SJ43 Sabana Sur MAG",
-        "province":  "San José",
-        "wkt":  "POINT (-84.1099602 9.9335316)",
-        "position":  {
-                         "lat":  9.9335316,
-                         "lng":  -84.1099602
-                     },
-        "address":  "Costado norte del MAG",
-        "faceDirection":  "La Sabana - Escazú",
-        "backDirection":  "Escazú - La Sabana",
-        "dimensions":  "5.40 x 7.20 m",
-        "area":  "38.8 m2"
-    },
-    {
-        "id":  "sj44",
-        "code":  "SJ44",
-        "name":  "SJ44 Sabana Sur Contraloría.",
-        "province":  "San José",
-        "wkt":  "POINT (-84.1020745 9.9326782)",
-        "position":  {
-                         "lat":  9.9326782,
-                         "lng":  -84.1020745
-                     },
-        "address":  "Sabana Sur costado norte de la Contraloría.",
-        "faceDirection":  "San José - Escazú",
-        "backDirection":  "Escazú - San José",
-        "dimensions":  "5.40 x 7.20 m",
-        "area":  "38.8 m2"
-    },
-    {
-        "id":  "sj45",
-        "code":  "SJ45",
-        "name":  "SJ45 Pavas La Artística.",
-        "province":  "San José",
-        "wkt":  "POINT (-84.1163975 9.9387073)",
-        "position":  {
-                         "lat":  9.9387073,
-                         "lng":  -84.1163975
-                     },
-        "address":  "Frente a La Artística.",
-        "faceDirection":  "La Sabana - Pavas",
-        "backDirection":  "Pavas - La Sabana",
-        "dimensions":  "8.50 x 11.00 m",
-        "area":  "93.5 m2"
-    },
-    {
-        "id":  "sj46",
-        "code":  "SJ46",
-        "name":  "SJ46 La California.",
-        "province":  "San José",
-        "wkt":  "POINT (-84.0657842 9.931854)",
-        "position":  {
-                         "lat":  9.931854,
-                         "lng":  -84.0657842
-                     },
-        "address":  "Diagonal a restaurante KFC.",
-        "faceDirection":  "San José - San Pedro",
-        "backDirection":  "San Pedro - San José",
-        "dimensions":  "7.20 x 9.00 m",
-        "area":  "64.8 m2"
-    },
-    {
-        "id":  "sj47",
-        "code":  "SJ47",
-        "name":  "SJ47 Los Yoses.",
-        "province":  "San José",
-        "wkt":  "POINT (-84.0629518 9.9318857)",
-        "position":  {
-                         "lat":  9.9318857,
-                         "lng":  -84.0629518
-                     },
-        "address":  "400 oeste del Automercado.",
-        "faceDirection":  "San José - San Pedro",
-        "backDirection":  "San Pedro - San José",
-        "dimensions":  "7.20 x 9.00 m",
-        "area":  "64.8 m2"
-    },
-    {
-        "id":  "sj49",
-        "code":  "SJ49",
-        "name":  "SJ49 Sabana Sur Contraloría.",
-        "province":  "San José",
-        "wkt":  "POINT (-84.1012753 9.9326202)",
-        "position":  {
-                         "lat":  9.9326202,
-                         "lng":  -84.1012753
-                     },
-        "address":  "Costado norte de la Contraloría",
-        "faceDirection":  "San José - Escazú",
-        "backDirection":  "Escazú - San José",
-        "dimensions":  "5.40 x 7.20 m",
-        "area":  "38.8 m2"
-    },
-    {
-        "id":  "sj48",
-        "code":  "SJ48",
-        "name":  "SJ48 Guachipelín de Escazú",
-        "province":  "San José",
-        "wkt":  "POINT (-84.1599781 9.9475418)",
-        "position":  {
-                         "lat":  9.9475418,
-                         "lng":  -84.1599781
-                     },
-        "address":  "600 mts oeste de Multiplaza",
-        "faceDirection":  "Santa Ana - Escazú",
-        "backDirection":  "Escazú - Santa Ana",
-        "dimensions":  "12.60 x 5.00 m",
-        "area":  "63 m2"
-    },
-    {
-        "id":  "sj50",
-        "code":  "SJ50",
-        "name":  "SJ50 Escazú - Los Anonos",
-        "province":  "San José",
-        "wkt":  "POINT (-84.1200883 9.9350983)",
-        "position":  {
-                         "lat":  9.9350983,
-                         "lng":  -84.1200883
-                     },
-        "address":  "400 mts oeste del cruce de Escazú.",
-        "faceDirection":  "Escazú - San José",
-        "backDirection":  "San José - Escazú",
-        "dimensions":  "8.50 x 11.00 m",
-        "area":  "93.5 m2"
-    },
-    {
-        "id":  "sj51",
-        "code":  "SJ51",
-        "name":  "SJ51 Guachipelín de Escazú",
-        "province":  "San José",
-        "wkt":  "POINT (-84.1621292 9.9480544)",
-        "position":  {
-                         "lat":  9.9480544,
-                         "lng":  -84.1621292
-                     },
-        "address":  "Guachipelín frente a Construplaza",
-        "faceDirection":  "San José - Santa Ana",
-        "backDirection":  "Santa Ana - San José",
-        "dimensions":  "12.60 x 5.00 m",
-        "area":  "63 m2"
-    },
-    {
-        "id":  "sj52",
-        "code":  "SJ52",
-        "name":  "SJ52 Guachipelín de Escazú",
-        "province":  "San José",
-        "wkt":  "POINT (-84.1552983 9.9406105)",
-        "position":  {
-                         "lat":  9.9406105,
-                         "lng":  -84.1552983
-                     },
-        "address":  "Guachipelín frente a Distrito Cuatro.",
-        "faceDirection":  "Escazú - Guachipelín",
-        "backDirection":  "Guachipelín - Escazú",
-        "dimensions":  "7.20 x 9.00 m",
-        "area":  "64.3 m2"
-    },
-    {
-        "id":  "sj53",
-        "code":  "SJ53",
-        "name":  "SJ53 Guachipelín de Escazú",
-        "province":  "San José",
-        "wkt":  "POINT (-84.1590098 9.9477166)",
-        "position":  {
-                         "lat":  9.9477166,
-                         "lng":  -84.1590098
-                     },
-        "address":  "Guachipelín 700 este de Multiplaza.",
-        "faceDirection":  "Santa Ana - Escazú",
-        "backDirection":  "Escazú - Santa Ana",
-        "dimensions":  "12.60 x 5.00 m",
-        "area":  "63 m2"
-    },
-    {
-        "id":  "sj54",
-        "code":  "SJ54",
-        "name":  "SJ54 Guachipelín de Escazú.",
-        "province":  "San José",
-        "wkt":  "POINT (-84.1533911 9.93868)",
-        "position":  {
-                         "lat":  9.93868,
-                         "lng":  -84.1533911
-                     },
-        "address":  "De Distrito Cuatro 100 metros al este",
-        "faceDirection":  "Escazú - Guachipelín",
-        "backDirection":  "Guachipelín - Escazú",
-        "dimensions":  "7.20 x 9.00 m",
-        "area":  "64.3 m2"
-    },
-    {
-        "id":  "sj55",
-        "code":  "SJ55",
-        "name":  "SJ55 San Pedro de Montes de Oca",
-        "province":  "San José",
-        "wkt":  "POINT (-84.0451302 9.9325605)",
-        "position":  {
-                         "lat":  9.9325605,
-                         "lng":  -84.0451302
-                     },
-        "address":  "Diagonal a la Universidad Latina en Lourdes de Montes de Oca",
-        "faceDirection":  "U Latina - San Pedro",
-        "backDirection":  "San Pedro - Vargas Araya",
-        "dimensions":  "7.20 x 9.00 m",
-        "area":  "64.8 m2"
-    },
-    {
-        "id":  "sj56",
-        "code":  "SJ56",
-        "name":  "SJ56 Landmark Zapote",
-        "province":  "San José",
-        "wkt":  "POINT (-84.0596796 9.9205895)",
-        "position":  {
-                         "lat":  9.9205895,
-                         "lng":  -84.0596796
-                     },
-        "address":  "Rotonda de las Garantías Sociales",
-        "faceDirection":  "San José - Zapote",
-        "backDirection":  "",
-        "dimensions":  "8.50 x 33.30 m",
-        "area":  "283 m2"
-    },
-    {
-        "id":  "sj57",
-        "code":  "SJ57",
-        "name":  "SJ57 Circunvalación San Sebastián",
-        "province":  "San José",
-        "wkt":  "POINT (-84.0903163 9.9101154)",
-        "position":  {
-                         "lat":  9.9101154,
-                         "lng":  -84.0903163
-                     },
-        "address":  "500 mts oeste de la Rotonda",
-        "faceDirection":  "Los Hatillos - Zapote",
-        "backDirection":  "Zapote - Los Hatillos",
-        "dimensions":  "8.50 x 11.00 m",
-        "area":  "93.5 m2"
-    },
-    {
-        "id":  "sj58",
-        "code":  "SJ58",
-        "name":  "SJ58 Landmark Curridabat",
-        "province":  "San José",
-        "wkt":  "POINT (-84.0371553 9.910915)",
-        "position":  {
-                         "lat":  9.910915,
-                         "lng":  -84.0371553
-                     },
-        "address":  "Cruce de Hacienda Vieja",
-        "faceDirection":  "Cartago - San José",
-        "backDirection":  "",
-        "dimensions":  "8.50 x 33.30 m",
-        "area":  "283 m2"
-    },
-    {
-        "id":  "sj59",
-        "code":  "SJ59",
-        "name":  "SJ59 Landmark Ruta 27",
-        "province":  "San José",
-        "wkt":  "POINT (-84.2320071 9.9475299)",
-        "position":  {
-                         "lat":  9.9475299,
-                         "lng":  -84.2320071
-                     },
-        "address":  "500 mts este del peaje de San Rafael",
-        "faceDirection":  "Caldera - San José",
-        "backDirection":  "",
-        "dimensions":  "8.50 x 33.30 m",
-        "area":  "283 m2"
-    },
-    {
-        "id":  "sj60",
-        "code":  "SJ60",
-        "name":  "SJ60 Landmark Santa Ana Ruta 27",
-        "province":  "San José",
-        "wkt":  "POINT (-84.19852 9.941855)",
-        "position":  {
-                         "lat":  9.941855,
-                         "lng":  -84.19852
-                     },
-        "address":  "Ruta 27 Hacienda del Sol",
-        "faceDirection":  "Santa Ana - San José",
-        "backDirection":  "San José - Santa Ana",
-        "dimensions":  "8.50 x 33.30 metros",
-        "area":  "284 m2"
-    },
-    {
-        "id":  "sj61",
-        "code":  "SJ61",
-        "name":  "SJ61 Landmark Lindora",
-        "province":  "San José",
-        "wkt":  "POINT (-84.1934351 9.9514187)",
-        "position":  {
-                         "lat":  9.9514187,
-                         "lng":  -84.1934351
-                     },
-        "address":  "Antiguas Instalaciones de Matra",
-        "faceDirection":  "Belén - Santa Ana",
-        "backDirection":  "",
-        "dimensions":  "4.90 x 71.10 m",
-        "area":  "348 m2"
-    },
-    {
-        "id":  "sj62",
-        "code":  "SJ62",
-        "name":  "SJ62 Landmark Alto de las Palomas",
-        "province":  "San José",
-        "wkt":  "POINT (-84.1697101 9.9432729)",
-        "position":  {
-                         "lat":  9.9432729,
-                         "lng":  -84.1697101
-                     },
-        "address":  "Ruta 27 frente a Villa Real",
-        "faceDirection":  "Santa Ana - San José",
-        "backDirection":  "San José - Santa Ana",
-        "dimensions":  "9.00 x 34.80 metros",
-        "area":  "310 m2"
-    }
+  {
+    "id": "al1",
+    "code": "AL1",
+    "name": "AL1 El Coyol",
+    "province": "Alajuela",
+    "wkt": "POINT (-84.2237502 9.9978448)",
+    "position": {
+      "lat": 9.9978448,
+      "lng": -84.2237502
+    },
+    "address": "1 km oeste del Aeropuerto Internacional Juan Santamaría",
+    "faceDirection": "San José - La Garita",
+    "backDirection": "La Garita - San José",
+    "dimensions": "14.40 x 5.00 m",
+    "area": "72 m2"
+  },
+  {
+    "id": "al2",
+    "code": "AL2",
+    "name": "AL2 Río Segundo",
+    "province": "Alajuela",
+    "wkt": "POINT (-84.1845632 10.0013315)",
+    "position": {
+      "lat": 10.0013315,
+      "lng": -84.1845632
+    },
+    "address": "Autopista General Cañas 200 mts oeste del peaje de Río Segundo",
+    "faceDirection": "San José - Alajuela",
+    "backDirection": "Alajuela - San José",
+    "dimensions": "12.60 x 5.00 m",
+    "area": "63 m2"
+  },
+  {
+    "id": "al3",
+    "code": "AL3",
+    "name": "AL3 Radial Belén La Panasonic",
+    "province": "Alajuela",
+    "wkt": "POINT (-84.1966868 9.9789788)",
+    "position": {
+      "lat": 9.9789788,
+      "lng": -84.1966868
+    },
+    "address": "Costado norte de la Panasonic",
+    "faceDirection": "Belén - Santa Ana",
+    "backDirection": "Santa Ana - Belén",
+    "dimensions": "7.20 x 9.00 m",
+    "area": "63 m2"
+  },
+  {
+    "id": "al4",
+    "code": "AL4",
+    "name": "AL4. Radial Alajuela",
+    "province": "Alajuela",
+    "wkt": "POINT (-84.2127156 10.0076393)",
+    "position": {
+      "lat": 10.0076393,
+      "lng": -84.2127156
+    },
+    "address": "Costado norte de Mall Internacional",
+    "faceDirection": "Alajuela - San José",
+    "backDirection": "San José - Alajuela",
+    "dimensions": "14.40 x 6.0 m",
+    "area": "72 m2"
+  },
+  {
+    "id": "al5",
+    "code": "AL5",
+    "name": "AL5. Radial Belén-Santa Ana",
+    "province": "Alajuela",
+    "wkt": "POINT (-84.1979474 9.9787463)",
+    "position": {
+      "lat": 9.9787463,
+      "lng": -84.1979474
+    },
+    "address": "Costado norte de la Panasonic",
+    "faceDirection": "Belén - Santa Ana",
+    "backDirection": "Santa Ana - Belén",
+    "dimensions": "12.60 x 5.00 m",
+    "area": "63 m2"
+  },
+  {
+    "id": "al6",
+    "code": "AL6",
+    "name": "AL6. Ruta 27 Cruce de Orotina",
+    "province": "Alajuela",
+    "wkt": "POINT (-84.5104837 9.9115098)",
+    "position": {
+      "lat": 9.9115098,
+      "lng": -84.5104837
+    },
+    "address": "500 oeste del cruce hacia Orotina",
+    "faceDirection": "San José - Caldera",
+    "backDirection": "Caldera - San José",
+    "dimensions": "12.60 x 5.00 m",
+    "area": "63 m2"
+  },
+  {
+    "id": "al7",
+    "code": "AL7",
+    "name": "AL7. Ruta 27 Rotonda de Turrúcares",
+    "province": "Alajuela",
+    "wkt": "POINT (-84.3153691 9.9649937)",
+    "position": {
+      "lat": 9.9649937,
+      "lng": -84.3153691
+    },
+    "address": "Contiguo a la rotonda de Turrúcares",
+    "faceDirection": "San José - Caldera",
+    "backDirection": "Caldera - San José",
+    "dimensions": "12.60 x 5.00 m",
+    "area": "63 m2"
+  },
+  {
+    "id": "al8",
+    "code": "AL8",
+    "name": "AL8. Ruta 27 Balsa de Atenas",
+    "province": "Alajuela",
+    "wkt": "POINT (-84.3611598 9.9516314)",
+    "position": {
+      "lat": 9.9516314,
+      "lng": -84.3611598
+    },
+    "address": "400 oeste del peaje de Atenas",
+    "faceDirection": "San José - Caldera",
+    "backDirection": "Caldera - San José",
+    "dimensions": "12.60 x 5.00 m",
+    "area": "63 m2"
+  },
+  {
+    "id": "al9",
+    "code": "AL9",
+    "name": "AL9. Ruta 27 Balsa de Atenas",
+    "province": "Alajuela",
+    "wkt": "POINT (-84.3737448 9.94369)",
+    "position": {
+      "lat": 9.94369,
+      "lng": -84.3737448
+    },
+    "address": "2 km oeste del peaje de Atenas",
+    "faceDirection": "San José -Caldera",
+    "backDirection": "Caldera - San José",
+    "dimensions": "12.60 x 5.00 m",
+    "area": "63 m2"
+  },
+  {
+    "id": "al10",
+    "code": "AL10",
+    "name": "AL10. Ruta 27 Peaje de Orotina",
+    "province": "Alajuela",
+    "wkt": "POINT (-84.568162 9.8882785)",
+    "position": {
+      "lat": 9.8882785,
+      "lng": -84.568162
+    },
+    "address": "100 mts este del peaje de Orotina",
+    "faceDirection": "San José - Caldera",
+    "backDirection": "Caldera - San José",
+    "dimensions": "12.60 x 5.00 m",
+    "area": "63 m2"
+  },
+  {
+    "id": "al12",
+    "code": "AL12",
+    "name": "AL12. Ruta 27 Siquiares",
+    "province": "Alajuela",
+    "wkt": "POINT (-84.2805541 9.9657545)",
+    "position": {
+      "lat": 9.9657545,
+      "lng": -84.2805541
+    },
+    "address": "Costado sur del puente nuevo de Siquiares",
+    "faceDirection": "San José - Caldera",
+    "backDirection": "Caldera - San José",
+    "dimensions": "12.60 x 5.00 m",
+    "area": "63 m2"
+  },
+  {
+    "id": "al13",
+    "code": "AL13",
+    "name": "AL13. Radial Belén Proyecto Goal",
+    "province": "Alajuela",
+    "wkt": "POINT (-84.2000932 9.9735581)",
+    "position": {
+      "lat": 9.9735581,
+      "lng": -84.2000932
+    },
+    "address": "Instalaciones de Proyecto Goal",
+    "faceDirection": "Belén - Santa Ana",
+    "backDirection": "Santa Ana - Belén",
+    "dimensions": "12.60 x 5.00 m",
+    "area": "63 m2"
+  },
+  {
+    "id": "al14",
+    "code": "AL14",
+    "name": "AL14. Radial Belén El Rodeo",
+    "province": "Alajuela",
+    "wkt": "POINT (-84.1999483 9.9758088)",
+    "position": {
+      "lat": 9.9758088,
+      "lng": -84.1999483
+    },
+    "address": "Costado sur restaurante El Rodeo",
+    "faceDirection": "Belén - Santa Ana",
+    "backDirection": "Santa Ana - Belén",
+    "dimensions": "7.20 x 9.00 m",
+    "area": "64 m2"
+  },
+  {
+    "id": "al15",
+    "code": "AL15",
+    "name": "AL15. Bernardo Soto El Coyol",
+    "province": "Alajuela",
+    "wkt": "POINT (-84.2527235 9.9941361)",
+    "position": {
+      "lat": 9.9941361,
+      "lng": -84.2527235
+    },
+    "address": "Autopista Bernardo Soto 600 este de la Dos Pinos",
+    "faceDirection": "Aeropuerto - La Garita",
+    "backDirection": "La Garita - Aeropuerto",
+    "dimensions": "14.40 x 5.00 m",
+    "area": "72 m2"
+  },
+  {
+    "id": "al16",
+    "code": "AL16",
+    "name": "AL16. Radial Belén Proyecto Goal",
+    "province": "Alajuela",
+    "wkt": "POINT (-84.2000234 9.9746465)",
+    "position": {
+      "lat": 9.9746465,
+      "lng": -84.2000234
+    },
+    "address": "Instalaciones de Proyecto Goal",
+    "faceDirection": "Belén - Santa Ana",
+    "backDirection": "Santa Ana - Belén",
+    "dimensions": "7.20 x 9.00 m",
+    "area": "64 m2"
+  },
+  {
+    "id": "al17",
+    "code": "AL17",
+    "name": "AL17. Radial Alajuela",
+    "province": "Alajuela",
+    "wkt": "POINT (-84.2130884 10.0084448)",
+    "position": {
+      "lat": 10.0084448,
+      "lng": -84.2130884
+    },
+    "address": "Radial Alajuela 500 mts norte de City Mall",
+    "faceDirection": "Aeropuerto - Alajuela",
+    "backDirection": "Alajuela - Aeropuerto",
+    "dimensions": "7.20 x 9.00 m",
+    "area": "64.8 m2"
+  },
+  {
+    "id": "al18",
+    "code": "AL18",
+    "name": "AL18 Radial Alajuela",
+    "province": "Alajuela",
+    "wkt": "POINT (-84.2133003 10.0090682)",
+    "position": {
+      "lat": 10.0090682,
+      "lng": -84.2133003
+    },
+    "address": "Radial Alajuela 600 mts norte de City Mall",
+    "faceDirection": "Aeropuerto - Alajuela",
+    "backDirection": "Alajuela - Aeropuerto",
+    "dimensions": "7.20 x 9.00 m",
+    "area": "64.8 m2"
+  },
+
+  {
+    "id": "ct1",
+    "code": "CT1",
+    "name": "CT1. Florencio del Castillo Terramall",
+    "province": "Cartago",
+    "wkt": "POINT (-83.9984125 9.9001826)",
+    "position": {
+      "lat": 9.9001826,
+      "lng": -83.9984125
+    },
+    "address": "500 mts oeste de Terramall",
+    "faceDirection": "San José - Cartago",
+    "backDirection": "Cartago - San José",
+    "dimensions": "14.40 x 5.00 m",
+    "area": "72 m2"
+  },
+  {
+    "id": "ct2",
+    "code": "CT2",
+    "name": "CT2. Florencio del Castillo Tres Ríos",
+    "province": "Cartago",
+    "wkt": "POINT (-84.0025055 9.9001483)",
+    "position": {
+      "lat": 9.9001483,
+      "lng": -84.0025055
+    },
+    "address": "800 mts oeste de Terramall",
+    "faceDirection": "Cartago - San José",
+    "backDirection": "San José - Cartago",
+    "dimensions": "14.40 x 5.00 m",
+    "area": "72 m2"
+  },
+  {
+    "id": "ct3",
+    "code": "CT3",
+    "name": "CT3. La Lima Laboratorios Stein",
+    "province": "Cartago",
+    "wkt": "POINT (-83.9407933 9.8816625)",
+    "position": {
+      "lat": 9.8816625,
+      "lng": -83.9407933
+    },
+    "address": "Costado sur de Laboratorios Stein",
+    "faceDirection": "San José - Cartago",
+    "backDirection": "Cartago - San José",
+    "dimensions": "7.20 x 9.00 m",
+    "area": "64.8 m2"
+  },
+  {
+    "id": "ct4",
+    "code": "CT4",
+    "name": "CT4. Paseo Metropoli",
+    "province": "Cartago",
+    "wkt": "POINT (-83.9422095 9.867763)",
+    "position": {
+      "lat": 9.867763,
+      "lng": -83.9422095
+    },
+    "address": "Contiguo a Paseo Metrópoli",
+    "faceDirection": "Cartago - San José",
+    "backDirection": "San José - Cartago",
+    "dimensions": "12.60 x 5.00 m",
+    "area": "63 m2"
+  },
+  {
+    "id": "gc6",
+    "code": "GC6",
+    "name": "GC6. Guardia de Liberia",
+    "province": "Guanacaste",
+    "wkt": "POINT (-85.5915481 10.5576792)",
+    "position": {
+      "lat": 10.5576792,
+      "lng": -85.5915481
+    },
+    "address": "500 mts al este del Doit Center",
+    "faceDirection": "Liberia - Santa Cruz",
+    "backDirection": "Santa Cruz - Liberia",
+    "dimensions": "12.60 x 5.00 m",
+    "area": "63 m2"
+  },
+  {
+    "id": "gc7",
+    "code": "GC7",
+    "name": "GC6 Limonal de Abangares",
+    "province": "Guanacaste",
+    "wkt": "POINT (-85.0155329 10.2582896)",
+    "position": {
+      "lat": 10.2582896,
+      "lng": -85.0155329
+    },
+    "address": "Limonal de Abangares",
+    "faceDirection": "San José - Liberia",
+    "backDirection": "",
+    "dimensions": "10.80 x 3.60 m",
+    "area": "38.8 m2"
+  },
+  {
+    "id": "hd1",
+    "code": "HD1",
+    "name": "HD1 Pequeño Mundo",
+    "province": "Heredia",
+    "wkt": "POINT (-84.1113389 9.9776262)",
+    "position": {
+      "lat": 9.9776262,
+      "lng": -84.1113389
+    },
+    "address": "400 mts al sur de Pricemart",
+    "faceDirection": "San José - Heredia",
+    "backDirection": "Heredia - San José",
+    "dimensions": "14.40 x 5.00 m",
+    "area": "72 m2"
+  },
+  {
+    "id": "hd2",
+    "code": "HD2",
+    "name": "HD2 Puente Rio Virilla",
+    "province": "Heredia",
+    "wkt": "POINT (-84.1105127 9.9620534)",
+    "position": {
+      "lat": 9.9620534,
+      "lng": -84.1105127
+    },
+    "address": "200 mts sur de Jardines del Recuerdo",
+    "faceDirection": "Heredia - San José",
+    "backDirection": "San José - Heredia",
+    "dimensions": "14.40 x 5.00 m",
+    "area": "72 m2"
+  },
+  {
+    "id": "hd4",
+    "code": "HD4",
+    "name": "HD4 Heredia Centro Comercial 2000",
+    "province": "Heredia",
+    "wkt": "POINT (-84.1114032 9.9770504)",
+    "position": {
+      "lat": 9.9770504,
+      "lng": -84.1114032
+    },
+    "address": "600 mts al sur de Pricemart",
+    "faceDirection": "Heredia - San José",
+    "backDirection": "San José - Heredia",
+    "dimensions": "14.40 x 6.00 m",
+    "area": "86.4 m2"
+  },
+  {
+    "id": "hd5",
+    "code": "HD5",
+    "name": "HD5 General Cañas",
+    "province": "Heredia",
+    "wkt": "POINT (-84.164967 9.9884569)",
+    "position": {
+      "lat": 9.9884569,
+      "lng": -84.164967
+    },
+    "address": "Autopista General Cañas 400 mts sur de la Firestone.",
+    "faceDirection": "Alajuela - San José",
+    "backDirection": "San José - Alajuela",
+    "dimensions": "14.40 x 6.00 m",
+    "area": "86.4 m2"
+  },
+  {
+    "id": "hd6",
+    "code": "HD6",
+    "name": "HD6 Heredia Lagunilla",
+    "province": "Heredia",
+    "wkt": "POINT (-84.1187954 9.967181)",
+    "position": {
+      "lat": 9.967181,
+      "lng": -84.1187954
+    },
+    "address": "1 km al oeste de Jardines del Recuerdo.",
+    "faceDirection": "Lagunilla - Barreal",
+    "backDirection": "Barreal - Lagunilla",
+    "dimensions": "12.60 x 5.00 m",
+    "area": "63 m2"
+  },
+  {
+    "id": "hd8",
+    "code": "HD8",
+    "name": "HD8.General Cañas EPA",
+    "province": "Heredia",
+    "wkt": "POINT (-84.1632611 9.9838869)",
+    "position": {
+      "lat": 9.9838869,
+      "lng": -84.1632611
+    },
+    "address": "Autopista General Cañas Frente a EPA",
+    "faceDirection": "Alajuela - San José",
+    "backDirection": "San José - Alajuela",
+    "dimensions": "14.40 x 6.00 m",
+    "area": "86.4"
+  },
+  {
+    "id": "hd7",
+    "code": "HD7",
+    "name": "HD7.Heredia Oxígeno",
+    "province": "Heredia",
+    "wkt": "POINT (-84.1300982 9.9934876)",
+    "position": {
+      "lat": 9.9934876,
+      "lng": -84.1300982
+    },
+    "address": "Costado sur de Oxìgeno.",
+    "faceDirection": "La Aurora - Heredia",
+    "backDirection": "Heredia - La Aurora",
+    "dimensions": "8.50 x 11.00 m",
+    "area": "93.5 m2"
+  },
+  {
+    "id": "hd9",
+    "code": "HD9",
+    "name": "HD9. General Cañas Heredia",
+    "province": "Heredia",
+    "wkt": "POINT (-84.1501236 9.9738857)",
+    "position": {
+      "lat": 9.9738857,
+      "lng": -84.1501236
+    },
+    "address": "Autopista General Cañas Frente a Plaza Los Arcos.",
+    "faceDirection": "Alajuela - San José",
+    "backDirection": "San José - Alajuela",
+    "dimensions": "12.60 x 5.00 m",
+    "area": "63 m2"
+  },
+  {
+    "id": "hd10",
+    "code": "HD10",
+    "name": "HD10 Cervecería San Joaquín",
+    "province": "Heredia",
+    "wkt": "POINT (-84.1711736 10.0038884)",
+    "position": {
+      "lat": 10.0038884,
+      "lng": -84.1711736
+    },
+    "address": "San Joaquín de Flores Cruce de la Cervecería",
+    "faceDirection": "Alajuela - Heredia",
+    "backDirection": "Heredia - Alajuela",
+    "dimensions": "7.20 x 9.00 m",
+    "area": "64.8 m2"
+  },
+  {
+    "id": "hd11",
+    "code": "HD11",
+    "name": "HD11 Puente Río Virilla",
+    "province": "Heredia",
+    "wkt": "POINT (-84.1101292 9.9615145)",
+    "position": {
+      "lat": 9.9615145,
+      "lng": -84.1101292
+    },
+    "address": "Contiguo al puente Virilla",
+    "faceDirection": "Heredia - San José",
+    "backDirection": "San José - Heredia",
+    "dimensions": "7.20 x 9.00 m",
+    "area": "64.8 m2"
+  },
+  {
+    "id": "hd12",
+    "code": "HD12",
+    "name": "HD12 Heredia Sto. Domingo",
+    "province": "Heredia",
+    "wkt": "POINT (-84.0862548 9.970013)",
+    "position": {
+      "lat": 9.970013,
+      "lng": -84.0862548
+    },
+    "address": "100 mts al este del Cementerio de Santo Domingo",
+    "faceDirection": "Tibás - Santo Domingo",
+    "backDirection": "Santo Domingo - Tibás",
+    "dimensions": "7.20 x 9.00 m",
+    "area": "64.8 m2"
+  },
+  {
+    "id": "hd13",
+    "code": "HD13",
+    "name": "HD13 La Aurora de Heredia.",
+    "province": "Heredia",
+    "wkt": "POINT (-84.1488522 9.9888055)",
+    "position": {
+      "lat": 9.9888055,
+      "lng": -84.1488522
+    },
+    "address": "Rotonda de Santa Verde",
+    "faceDirection": "Heredia - Belén",
+    "backDirection": "Belén - Heredia",
+    "dimensions": "7.20 x 9.00 m",
+    "area": "64.8 m2"
+  },
+  {
+    "id": "hd14",
+    "code": "HD14",
+    "name": "HD14 Heredia Sto. Domingo.",
+    "province": "Heredia",
+    "wkt": "POINT (-84.0857667 9.9694318)",
+    "position": {
+      "lat": 9.9694318,
+      "lng": -84.0857667
+    },
+    "address": "200 este del Cementerio de Santo Domingo",
+    "faceDirection": "Santo Domingo - Tibás",
+    "backDirection": "Tibás - Santo Domingo",
+    "dimensions": "7.20 x 9.00 m",
+    "area": "64.8 m2"
+  },
+  {
+    "id": "hd15",
+    "code": "HD15",
+    "name": "HD15 General Cañas Centro Convenciones",
+    "province": "Heredia",
+    "wkt": "POINT (-84.1565502 9.977959)",
+    "position": {
+      "lat": 9.977959,
+      "lng": -84.1565502
+    },
+    "address": "300 al este del Real Cariari",
+    "faceDirection": "San José - Alajuela",
+    "backDirection": "Alajuela - San José",
+    "dimensions": "7.20 x 9.00 m",
+    "area": "64.8 m2"
+  },
+  {
+    "id": "hd16",
+    "code": "HD16",
+    "name": "HD16 General Cañas Centro Convenciones",
+    "province": "Heredia",
+    "wkt": "POINT (-84.1558957 9.9776844)",
+    "position": {
+      "lat": 9.9776844,
+      "lng": -84.1558957
+    },
+    "address": "400 al este del Real Cariari",
+    "faceDirection": "San José - Alajuela",
+    "backDirection": "Alajuela - San José",
+    "dimensions": "7.20 x 9.00 m",
+    "area": "64.8 m2"
+  },
+  {
+    "id": "hd17",
+    "code": "HD17",
+    "name": "HD17 General Cañas Centro Convenciones",
+    "province": "Heredia",
+    "wkt": "POINT (-84.1553486 9.977452)",
+    "position": {
+      "lat": 9.977452,
+      "lng": -84.1553486
+    },
+    "address": "500 al este del Real Cariari",
+    "faceDirection": "San José - Alajuela",
+    "backDirection": "Alajuela - San José",
+    "dimensions": "7.20 x 9.00 m",
+    "area": "64.8 m2"
+  },
+  {
+    "id": "hd18",
+    "code": "HD18",
+    "name": "HD18 General Cañas Centro Convenciones",
+    "province": "Heredia",
+    "wkt": "POINT (-84.1547585 9.9770927)",
+    "position": {
+      "lat": 9.9770927,
+      "lng": -84.1547585
+    },
+    "address": "600 al este del Real Cariari",
+    "faceDirection": "San José - Alajuela",
+    "backDirection": "Alajuela - San José",
+    "dimensions": "7.20 x 9.00 m",
+    "area": "64.8 m2"
+  },
+  {
+    "id": "hd19",
+    "code": "HD19",
+    "name": "HD19 General Cañas Centro Convenciones",
+    "province": "Heredia",
+    "wkt": "POINT (-84.1540611 9.9766806)",
+    "position": {
+      "lat": 9.9766806,
+      "lng": -84.1540611
+    },
+    "address": "700 al este del Real Cariari",
+    "faceDirection": "San José - Alajuela",
+    "backDirection": "Alajuela - San José",
+    "dimensions": "7.20 x 9.00 m",
+    "area": "64.8 m2"
+  },
+  {
+    "id": "hd20",
+    "code": "HD20",
+    "name": "HD20 San Joaquin Cervecería",
+    "province": "Heredia",
+    "wkt": "POINT (-84.1694382 10.0036771)",
+    "position": {
+      "lat": 10.0036771,
+      "lng": -84.1694382
+    },
+    "address": "Contiguo a la Cervecería",
+    "faceDirection": "Alajuela - Heredia",
+    "backDirection": "Heredia - Alajuela",
+    "dimensions": "7.20 x 9.00 m",
+    "area": "64.8 m2"
+  },
+  {
+    "id": "hd21",
+    "code": "HD21",
+    "name": "HD21 Heredia Zona Franca Metro",
+    "province": "Heredia",
+    "wkt": "POINT (-84.148981 9.9800407)",
+    "position": {
+      "lat": 9.9800407,
+      "lng": -84.148981
+    },
+    "address": "Frente a Zona Franca Metro",
+    "faceDirection": "Belén - Lagunilla",
+    "backDirection": "Lagunilla - Belén",
+    "dimensions": "12.60 x 5.00 m",
+    "area": "63 m2"
+  },
+  {
+    "id": "hd22",
+    "code": "HD22",
+    "name": "HD22 Heredia Real Cariari",
+    "province": "Heredia",
+    "wkt": "POINT (-84.1539216 9.98208)",
+    "position": {
+      "lat": 9.98208,
+      "lng": -84.1539216
+    },
+    "address": "Frente a Centro de negocios Eurocenter.",
+    "faceDirection": "Belén - Heredia",
+    "backDirection": "Heredia - Belén",
+    "dimensions": "12.60 x 5.00 m",
+    "area": "63 m2"
+  },
+  {
+    "id": "hd23",
+    "code": "HD23",
+    "name": "HD23 Heredia Pirro",
+    "province": "Heredia",
+    "wkt": "POINT (-84.1134042 9.9941097)",
+    "position": {
+      "lat": 9.9941097,
+      "lng": -84.1134042
+    },
+    "address": "Puente del Pirro Contiguo a Autopits.",
+    "faceDirection": "Heredia - San José",
+    "backDirection": "",
+    "dimensions": "7.20 x 9.00 m",
+    "area": "64.8 m2"
+  },
+  {
+    "id": "hd24",
+    "code": "HD24",
+    "name": "HD24 Heredia Pirro",
+    "province": "Heredia",
+    "wkt": "POINT (-84.1131681 9.994189)",
+    "position": {
+      "lat": 9.994189,
+      "lng": -84.1131681
+    },
+    "address": "Puente del Pirro Contiguo al Bodegón de la Cerámica",
+    "faceDirection": "Heredia - San José",
+    "backDirection": "",
+    "dimensions": "7.20 x 9.00 m",
+    "area": "64.8 m2"
+  },
+  {
+    "id": "hd25",
+    "code": "HD25",
+    "name": "HD25 La Valencia de Heredia",
+    "province": "Heredia",
+    "wkt": "POINT (-84.1137099 9.9681638)",
+    "position": {
+      "lat": 9.9681638,
+      "lng": -84.1137099
+    },
+    "address": "La Valencia Contiguo a la McDonalds.",
+    "faceDirection": "Heredia - San José",
+    "backDirection": "San José - Heredia",
+    "dimensions": "8.50 x 11.00 m",
+    "area": "93.5 m2"
+  },
+  {
+    "id": "hd26",
+    "code": "HD26",
+    "name": "HD26 Heredia San Francisco",
+    "province": "Heredia",
+    "wkt": "POINT (-84.1357148 9.996524)",
+    "position": {
+      "lat": 9.996524,
+      "lng": -84.1357148
+    },
+    "address": "San Francisco de Heredia 200 mts oeste de Oxígeno",
+    "faceDirection": "Alajuela - Heredia",
+    "backDirection": "Heredia - Alajuela",
+    "dimensions": "7.20 x 9.00 m",
+    "area": "72 m2"
+  },
+  {
+    "id": "hd27",
+    "code": "HD27",
+    "name": "HD27 Heredia Skate Park Walmart",
+    "province": "Heredia",
+    "wkt": "POINT (-84.1283923 9.9959508)",
+    "position": {
+      "lat": 9.9959508,
+      "lng": -84.1283923
+    },
+    "address": "Contiguo a Walmart",
+    "faceDirection": "Alajuela - Heredia",
+    "backDirection": "Heredia - Alajuela",
+    "dimensions": "7.20 x 9.00 m",
+    "area": "64.8 m2"
+  },
+  {
+    "id": "hd28",
+    "code": "HD28",
+    "name": "HD28 Puente del Río Virilla Repuestos Gigante",
+    "province": "Heredia",
+    "wkt": "POINT (-84.1106945 9.9626203)",
+    "position": {
+      "lat": 9.9626203,
+      "lng": -84.1106945
+    },
+    "address": "200 mts sur de Jardines del Recuerdo",
+    "faceDirection": "Heredia - San José",
+    "backDirection": "San José - Heredia",
+    "dimensions": "8.50 x 11.00 m",
+    "area": "93.5 m2"
+  },
+  {
+    "id": "hd29",
+    "code": "HD29",
+    "name": "HD29 La Puebla Heredia",
+    "province": "Heredia",
+    "wkt": "POINT (-84.1094645 9.9935427)",
+    "position": {
+      "lat": 9.9935427,
+      "lng": -84.1094645
+    },
+    "address": "Plaza de Deportes La Puebla",
+    "faceDirection": "Heredia - Tibás",
+    "backDirection": "Tibás - Heredia",
+    "dimensions": "8.50 x 11.00 m",
+    "area": "93.5 m2"
+  },
+  {
+    "id": "hd30",
+    "code": "HD30",
+    "name": "HD30 Walmart San Francisco de Heredia.",
+    "province": "Heredia",
+    "wkt": "POINT (-84.1283292 9.9955237)",
+    "position": {
+      "lat": 9.9955237,
+      "lng": -84.1283292
+    },
+    "address": "San Francisco de Heredia Contiguo a Walmart.",
+    "faceDirection": "Heredia - Oxígeno",
+    "backDirection": "Oxígeno - Heredia",
+    "dimensions": "5.40 x 7.20 m",
+    "area": "38.8 m2"
+  },
+  {
+    "id": "pt2",
+    "code": "PT2",
+    "name": "PT2 Jacó",
+    "province": "Puntarenas",
+    "wkt": "POINT (-84.635582 9.7129276)",
+    "position": {
+      "lat": 9.7129276,
+      "lng": -84.635582
+    },
+    "address": "400 mts norte de la entrada a Punta Leona",
+    "faceDirection": "Orotina - Jacó",
+    "backDirection": "Jacó - Orotina",
+    "dimensions": "12.60 x 5.00 m",
+    "area": "63 m2"
+  },
+  {
+    "id": "pt4",
+    "code": "PT4",
+    "name": "PT4 Jacó FYM.",
+    "province": "Puntarenas",
+    "wkt": "POINT (-84.6271062 9.6410096)",
+    "position": {
+      "lat": 9.6410096,
+      "lng": -84.6271062
+    },
+    "address": "Instalaciones del Centro Comercial FYM",
+    "faceDirection": "Orotina - Jacó",
+    "backDirection": "Jacó - Orotina",
+    "dimensions": "12.60 x 5.00 m",
+    "area": "64 m2"
+  },
+  {
+    "id": "pt5",
+    "code": "PT5",
+    "name": "PT5 Jacó",
+    "province": "Puntarenas",
+    "wkt": "POINT (-84.6363223 9.7104107)",
+    "position": {
+      "lat": 9.7104107,
+      "lng": -84.6363223
+    },
+    "address": "Frente a Urbanización El Oasis",
+    "faceDirection": "Orotina - Jacó",
+    "backDirection": "Jacó - Orotina",
+    "dimensions": "12.60 x 5.00 m",
+    "area": "63 m2"
+  },
+  {
+    "id": "pt9",
+    "code": "PT9",
+    "name": "PT9 Jacó",
+    "province": "Puntarenas",
+    "wkt": "POINT (-84.6349168 9.7057576)",
+    "position": {
+      "lat": 9.7057576,
+      "lng": -84.6349168
+    },
+    "address": "Frente a Urbanización Pez Vela",
+    "faceDirection": "Orotina - Jacó",
+    "backDirection": "Jacó - Orotina",
+    "dimensions": "12.60 x 5.00 m",
+    "area": "63 m2"
+  },
+  {
+    "id": "pz2",
+    "code": "PZ2",
+    "name": "PZ2 Pérez Zeledón.",
+    "province": "San José",
+    "wkt": "POINT (-83.7069583 9.3845508)",
+    "position": {
+      "lat": 9.3845508,
+      "lng": -83.7069583
+    },
+    "address": "Entrada principal contiguo a Pasoca.",
+    "faceDirection": "San José - Pérez Zeledón",
+    "backDirection": "",
+    "dimensions": "14.40 x 5.00 m",
+    "area": "64.8 m2"
+  },
+  {
+    "id": "sj1",
+    "code": "SJ1",
+    "name": "SJ1 San Francisco de Dos Ríos.",
+    "province": "San José",
+    "wkt": "POINT (-84.0581936 9.9113249)",
+    "position": {
+      "lat": 9.9113249,
+      "lng": -84.0581936
+    },
+    "address": "200 mts este de la Iglesia Católica de San Francisco",
+    "faceDirection": "San José - San Francisco",
+    "backDirection": "San Francisco - San José",
+    "dimensions": "14.40 x 5.00 m",
+    "area": "72 m2"
+  },
+  {
+    "id": "sj3",
+    "code": "SJ3",
+    "name": "SJ3 Santa Ana Fórum 1",
+    "province": "San José",
+    "wkt": "POINT (-84.1923845 9.9434575)",
+    "position": {
+      "lat": 9.9434575,
+      "lng": -84.1923845
+    },
+    "address": "Autopista Próspero Fernández 300 mts este de Fórum 1",
+    "faceDirection": "Santa Ana - San José",
+    "backDirection": "San José - Santa Ana",
+    "dimensions": "14.40 x 5.00 m",
+    "area": "72 m2"
+  },
+  {
+    "id": "sj4",
+    "code": "SJ4",
+    "name": "SJ4 Ruta 32 Tibás.",
+    "province": "San José",
+    "wkt": "POINT (-84.0741098 9.9466172)",
+    "position": {
+      "lat": 9.9466172,
+      "lng": -84.0741098
+    },
+    "address": "800 mts norte de la República",
+    "faceDirection": "Tibás - San José",
+    "backDirection": "San José - Tibás",
+    "dimensions": "14.40 x 5.00 m",
+    "area": "72 m2"
+  },
+  {
+    "id": "sj5",
+    "code": "SJ5",
+    "name": "SJ5 La Uruca la Pozuelo",
+    "province": "San José",
+    "wkt": "POINT (-84.1090107 9.9523765)",
+    "position": {
+      "lat": 9.9523765,
+      "lng": -84.1090107
+    },
+    "address": "La Uruca costado sur de la Pozuelo.",
+    "faceDirection": "La Uruca - Heredia",
+    "backDirection": "Heredia - La Uruca",
+    "dimensions": "14.40 x 5.00 m",
+    "area": "72 m2"
+  },
+  {
+    "id": "sj6",
+    "code": "SJ6",
+    "name": "SJ6 La Uruca - Puente Juan Pablo II",
+    "province": "San José",
+    "wkt": "POINT (-84.1124868 9.9505906)",
+    "position": {
+      "lat": 9.9505906,
+      "lng": -84.1124868
+    },
+    "address": "Costado Sur del puente Juan Pablo II.",
+    "faceDirection": "San José - Alajuela",
+    "backDirection": "Alajuela - San José",
+    "dimensions": "14.40 x 5.00 m",
+    "area": "64.80 m2"
+  },
+  {
+    "id": "sj8",
+    "code": "SJ8",
+    "name": "SJ8 Zapote.",
+    "province": "San José",
+    "wkt": "POINT (-84.0527862 9.9197375)",
+    "position": {
+      "lat": 9.9197375,
+      "lng": -84.0527862
+    },
+    "address": "Costado este de la Iglesia Católica de Zapote",
+    "faceDirection": "Curridabat - San José",
+    "backDirection": "San José - Curridabat",
+    "dimensions": "14.40 x 5.00 m",
+    "area": "72 m2"
+  },
+  {
+    "id": "sj9",
+    "code": "SJ9",
+    "name": "SJ9 Autopista Próspero Fernández",
+    "province": "San José",
+    "wkt": "POINT (-84.1204155 9.9350772)",
+    "position": {
+      "lat": 9.9350772,
+      "lng": -84.1204155
+    },
+    "address": "400 metros este del Cruce de Escazú.",
+    "faceDirection": "San José - Escazú",
+    "backDirection": "Escazú - San José",
+    "dimensions": "7.20 x 9.00 m",
+    "area": "64.8 m2"
+  },
+  {
+    "id": "sj10",
+    "code": "SJ10",
+    "name": "SJ10 Circunvalación Guadalupe",
+    "province": "San José",
+    "wkt": "POINT (-84.0614337 9.9449686)",
+    "position": {
+      "lat": 9.9449686,
+      "lng": -84.0614337
+    },
+    "address": "300 mts oeste de la rotonda de Guadalupe.",
+    "faceDirection": "Calle Blancos - San Pedro",
+    "backDirection": "San Pedro - Calle Blancos",
+    "dimensions": "14.40 x 5.00 m",
+    "area": "72 m2"
+  },
+  {
+    "id": "sj11",
+    "code": "SJ11",
+    "name": "SJ11 Radial Santa Ana-Belén",
+    "province": "San José",
+    "wkt": "POINT (-84.1928029 9.9496923)",
+    "position": {
+      "lat": 9.9496923,
+      "lng": -84.1928029
+    },
+    "address": "Radial Belén - Santa Ana costado este del banco Davivienda.",
+    "faceDirection": "Belén - Santa Ana",
+    "backDirection": "Santa Ana - Belén",
+    "dimensions": "14.40 x 5.00 m",
+    "area": "72 m2"
+  },
+  {
+    "id": "sj12",
+    "code": "SJ12",
+    "name": "SJ12 Autopista Próspero Fernández",
+    "province": "San José",
+    "wkt": "POINT (-84.1596803 9.9480465)",
+    "position": {
+      "lat": 9.9480465,
+      "lng": -84.1596803
+    },
+    "address": "600 mts oeste de Multipplaza Escazú",
+    "faceDirection": "Santa Ana - Escazú",
+    "backDirection": "Escazú - Santa Ana",
+    "dimensions": "14.40 x 5.00 m",
+    "area": "72 m2"
+  },
+  {
+    "id": "sj13",
+    "code": "SJ13",
+    "name": "SJ13 La Uruca",
+    "province": "San José",
+    "wkt": "POINT (-84.1102767 9.9484454)",
+    "position": {
+      "lat": 9.9484454,
+      "lng": -84.1102767
+    },
+    "address": "Juan Pablo II",
+    "faceDirection": "Puente Juan Pablo II Diagonal a Denny\u0027s",
+    "backDirection": "Alajuela - San José",
+    "dimensions": "San José - Alajuela",
+    "area": "14.40 x 5.00 m"
+  },
+  {
+    "id": "sj14",
+    "code": "SJ14",
+    "name": "SJ14 Circunvalación La Uruca",
+    "province": "San José",
+    "wkt": "POINT (-84.1041505 9.9481019)",
+    "position": {
+      "lat": 9.9481019,
+      "lng": -84.1041505
+    },
+    "address": "300 mts norte del San José Palacio.",
+    "faceDirection": "Los Hatillos - La Uruca",
+    "backDirection": "La Uruca - Los Hatillos",
+    "dimensions": "14.40 x 5.00 m",
+    "area": "72 m2"
+  },
+  {
+    "id": "sj15",
+    "code": "SJ15",
+    "name": "SJ15 Zapote Registro Nacional",
+    "province": "San José",
+    "wkt": "POINT (-84.049648 9.918818)",
+    "position": {
+      "lat": 9.918818,
+      "lng": -84.049648
+    },
+    "address": "Zapote frente al Registro Nacional.",
+    "faceDirection": "Cartago - San José",
+    "backDirection": "San José - Cartago",
+    "dimensions": "14.40 x 5.00 m",
+    "area": "72 m2"
+  },
+  {
+    "id": "sj16",
+    "code": "SJ16",
+    "name": "SJ16 Radial Belén-Santa Ana Autopits",
+    "province": "San José",
+    "wkt": "POINT (-84.1920251 9.9472618)",
+    "position": {
+      "lat": 9.9472618,
+      "lng": -84.1920251
+    },
+    "address": "Radial Belén - Santa Ana contiguo a Autopits",
+    "faceDirection": "Belén - Santa Ana",
+    "backDirection": "Santa Ana - Belén",
+    "dimensions": "7.20 x 9.00 m",
+    "area": "64.8 m2"
+  },
+  {
+    "id": "sj17",
+    "code": "SJ17",
+    "name": "SJ17 Tibás Neón Nieto",
+    "province": "San José",
+    "wkt": "POINT (-84.0862119 9.9647401)",
+    "position": {
+      "lat": 9.9647401,
+      "lng": -84.0862119
+    },
+    "address": "25 mts sur de la Neón Nieto",
+    "faceDirection": "Tibás - Heredia",
+    "backDirection": "Heredia - Tibás",
+    "dimensions": "14.40 x 5.00 m",
+    "area": "72 m2"
+  },
+  {
+    "id": "sj18",
+    "code": "SJ18",
+    "name": "SJ18 Desamparados",
+    "province": "San José",
+    "wkt": "POINT (-84.0693891 9.9041856)",
+    "position": {
+      "lat": 9.9041856,
+      "lng": -84.0693891
+    },
+    "address": "Costado norte del Cementerio de Desamparados.",
+    "faceDirection": "San José - Desamparados",
+    "backDirection": "Desamparados - San José",
+    "dimensions": "12.60 x 5.00 m",
+    "area": "63 m2"
+  },
+  {
+    "id": "sj19",
+    "code": "SJ19",
+    "name": "SJ19 Zapote",
+    "province": "San José",
+    "wkt": "POINT (-84.0590384 9.9215421)",
+    "position": {
+      "lat": 9.9215421,
+      "lng": -84.0590384
+    },
+    "address": "Garantías Sociales",
+    "faceDirection": "Zapote Rotonda de las Garantías Sociales",
+    "backDirection": "San José - Zapote",
+    "dimensions": "Zapote - San José",
+    "area": "12.60 x 5.00 m"
+  },
+  {
+    "id": "sj20",
+    "code": "SJ20",
+    "name": "SJ20 La Uruca",
+    "province": "San José",
+    "wkt": "POINT (-84.1068703 9.9520278)",
+    "position": {
+      "lat": 9.9520278,
+      "lng": -84.1068703
+    },
+    "address": "Toyota",
+    "faceDirection": "La Uruca 100 metros este de Ciudad Toyota",
+    "backDirection": "La Uruca - Heredia",
+    "dimensions": "Heredia - La Uruca",
+    "area": "12.60 x 5.00 m"
+  },
+  {
+    "id": "sj21",
+    "code": "SJ21",
+    "name": "SJ21 Circunvalación",
+    "province": "San José",
+    "wkt": "POINT (-84.1165853 9.9343533)",
+    "position": {
+      "lat": 9.9343533,
+      "lng": -84.1165853
+    },
+    "address": "UCIMED",
+    "faceDirection": "200 oeste de la UCIMED.",
+    "backDirection": "La Uruca - Los Hatillos",
+    "dimensions": "Los Hatillos - La Uruca",
+    "area": "12.60 x 5.00 m"
+  },
+  {
+    "id": "sj22",
+    "code": "SJ22",
+    "name": "SJ22 Circunvalación",
+    "province": "San José",
+    "wkt": "POINT (-84.0823066 9.91077)",
+    "position": {
+      "lat": 9.91077,
+      "lng": -84.0823066
+    },
+    "address": "San Sebastián",
+    "faceDirection": "300 mts oeste de la rotonda de San Sebastián.",
+    "backDirection": "Los Hatillos - Zapote",
+    "dimensions": "Zapote - Los Hatillos",
+    "area": "12.60 x 5.00 m"
+  },
+  {
+    "id": "sj23",
+    "code": "SJ23",
+    "name": "SJ23 Ruta 27 Plaza Obelisco",
+    "province": "San José",
+    "wkt": "POINT (-84.2022121 9.9396795)",
+    "position": {
+      "lat": 9.9396795,
+      "lng": -84.2022121
+    },
+    "address": "2 km al oeste de Fórum I",
+    "faceDirection": "San José - Caldera",
+    "backDirection": "Caldera - San José",
+    "dimensions": "12.60 x 5.00 m",
+    "area": "63 m2"
+  },
+  {
+    "id": "sj24",
+    "code": "SJ24",
+    "name": "SJ24 Moravia Romanas Ballar",
+    "province": "San José",
+    "wkt": "POINT (-84.0548462 9.9559799)",
+    "position": {
+      "lat": 9.9559799,
+      "lng": -84.0548462
+    },
+    "address": "Recta Los Colegios contiguo a Romanas Ballar",
+    "faceDirection": "Moravia - Guadalupe",
+    "backDirection": "Guadalupe - Moravia",
+    "dimensions": "12.60 x 5.00 m",
+    "area": "63 m2"
+  },
+  {
+    "id": "sj25",
+    "code": "SJ25",
+    "name": "SJ25 La Florida de Tibás",
+    "province": "San José",
+    "wkt": "POINT (-84.0678495 9.9620455)",
+    "position": {
+      "lat": 9.9620455,
+      "lng": -84.0678495
+    },
+    "address": "900 mts al oeste de la Iglesia Católica de Tibás.",
+    "faceDirection": "Moravia - Tibás",
+    "backDirection": "Tibás - Moravia",
+    "dimensions": "12.60 x 5.00 m",
+    "area": "63 m2"
+  },
+  {
+    "id": "sj26",
+    "code": "SJ26",
+    "name": "SJ26 Moravia Saint Francis",
+    "province": "San José",
+    "wkt": "POINT (-84.0549964 9.960323)",
+    "position": {
+      "lat": 9.960323,
+      "lng": -84.0549964
+    },
+    "address": "Frente al Colegio Saint Francis.",
+    "faceDirection": "Moravia - Guadalupe",
+    "backDirection": "Guadalupe - Moravia",
+    "dimensions": "12.60 x 5.00 m",
+    "area": "63 m2"
+  },
+  {
+    "id": "sj27",
+    "code": "SJ27",
+    "name": "SJ27 Curridabat La Galera",
+    "province": "San José",
+    "wkt": "POINT (-84.0302181 9.9143687)",
+    "position": {
+      "lat": 9.9143687,
+      "lng": -84.0302181
+    },
+    "address": "Cruce de la antigua Galera.",
+    "faceDirection": "San José - Cartago",
+    "backDirection": "Cartago - San José",
+    "dimensions": "12.60 x 5.00 m",
+    "area": "63 m2"
+  },
+  {
+    "id": "sj28",
+    "code": "SJ28",
+    "name": "SJ28 Moravia Plaza Lincoln.",
+    "province": "San José",
+    "wkt": "POINT (-84.0580809 9.9627006)",
+    "position": {
+      "lat": 9.9627006,
+      "lng": -84.0580809
+    },
+    "address": "Costado norte de Plaza Lincoln.",
+    "faceDirection": "Tibás - Moravia",
+    "backDirection": "Moravia - Tibás",
+    "dimensions": "12.60 x 5.00 m",
+    "area": "63 m2"
+  },
+  {
+    "id": "sj29",
+    "code": "SJ29",
+    "name": "SJ29 Radial Belén-Santa Ana.",
+    "province": "San José",
+    "wkt": "POINT (-84.1921431 9.9475154)",
+    "position": {
+      "lat": 9.9475154,
+      "lng": -84.1921431
+    },
+    "address": "Radial Belén - Santa Ana contiguo a Grupo Q.",
+    "faceDirection": "Belén - Santa Ana",
+    "backDirection": "Santa Ana - Belén",
+    "dimensions": "7.20 x 9.00 m",
+    "area": "64.8 m2"
+  },
+  {
+    "id": "sj30",
+    "code": "SJ30",
+    "name": "SJ30 Circunvalación Guadalupe",
+    "province": "San José",
+    "wkt": "POINT (-84.0608811 9.9433941)",
+    "position": {
+      "lat": 9.9433941,
+      "lng": -84.0608811
+    },
+    "address": "Rotonda de Guadalupe frente a Walmart.",
+    "faceDirection": "Calle Blancos - San Pedro",
+    "backDirection": "San Pedro - Calle Blancos",
+    "dimensions": "12.60 x 5.00 m",
+    "area": "63 m2"
+  },
+  {
+    "id": "sj31",
+    "code": "SJ31",
+    "name": "SJ31 Circunvalación Guadalupe",
+    "province": "San José",
+    "wkt": "POINT (-84.0611922 9.9429555)",
+    "position": {
+      "lat": 9.9429555,
+      "lng": -84.0611922
+    },
+    "address": "Contiguo a rotonda de Guadalupe frente a Walmart.",
+    "faceDirection": "Guadalupe - San José",
+    "backDirection": "San José - Guadalupe",
+    "dimensions": "12.60 x 5.00 m",
+    "area": "63 m2"
+  },
+  {
+    "id": "sj32",
+    "code": "SJ32",
+    "name": "SJ32. Moravia Centro",
+    "province": "San José",
+    "wkt": "POINT (-84.0483016 9.9567725)",
+    "position": {
+      "lat": 9.9567725,
+      "lng": -84.0483016
+    },
+    "address": "50 mts sur de la Princesa Marina",
+    "faceDirection": "Moravia - Guadalupe",
+    "backDirection": "Guadalupe - Moravia",
+    "dimensions": "12.60 x 5.00 m",
+    "area": "63 m2"
+  },
+  {
+    "id": "sj33",
+    "code": "SJ33",
+    "name": "SJ33 Moravia Plaza Lincoln.",
+    "province": "San José",
+    "wkt": "POINT (-84.0559191 9.9633612)",
+    "position": {
+      "lat": 9.9633612,
+      "lng": -84.0559191
+    },
+    "address": "Costado norte de Plaza Lincoln",
+    "faceDirection": "Tibás - Moravia",
+    "backDirection": "Moravia - Tibás",
+    "dimensions": "12.60 x 5.00 m",
+    "area": "63 m2"
+  },
+  {
+    "id": "sj34",
+    "code": "SJ34",
+    "name": "SJ34 Curridabat La Galera.",
+    "province": "San José",
+    "wkt": "POINT (-84.0311435 9.9153515)",
+    "position": {
+      "lat": 9.9153515,
+      "lng": -84.0311435
+    },
+    "address": "Cruce de la antigua Galera.",
+    "faceDirection": "Cartago - San José",
+    "backDirection": "San José - Cartago",
+    "dimensions": "12.60 x 5.00 m",
+    "area": "63 m2"
+  },
+  {
+    "id": "sj35",
+    "code": "SJ35",
+    "name": "SJ35 Guadalupe.",
+    "province": "San José",
+    "wkt": "POINT (-84.0620505 9.9427441)",
+    "position": {
+      "lat": 9.9427441,
+      "lng": -84.0620505
+    },
+    "address": "100 este de la rotonda de Guadalupe",
+    "faceDirection": "Guadalupe - San José",
+    "backDirection": "San José - Guadalupe",
+    "dimensions": "8.50 x 11.00 m",
+    "area": "93.5 m2"
+  },
+  {
+    "id": "sj36",
+    "code": "SJ36",
+    "name": "SJ36 Zapote Garantías Sociales",
+    "province": "San José",
+    "wkt": "POINT (-84.0590145 9.9207428)",
+    "position": {
+      "lat": 9.9207428,
+      "lng": -84.0590145
+    },
+    "address": "Costado este de la rotonda",
+    "faceDirection": "San José -Zapote",
+    "backDirection": "Zapote - San José",
+    "dimensions": "12.60 x 5.00 m",
+    "area": "63 m2"
+  },
+  {
+    "id": "sj37",
+    "code": "SJ37",
+    "name": "SJ37 Canal 7",
+    "province": "San José",
+    "wkt": "POINT (-84.1114676 9.9361552)",
+    "position": {
+      "lat": 9.9361552,
+      "lng": -84.1114676
+    },
+    "address": "La Sabana 150 mts al oeste de Canal 7",
+    "faceDirection": "Pavas - La Sabana",
+    "backDirection": "La Sabana - Pavas",
+    "dimensions": "7.20 x 9.00 m",
+    "area": "64.8 m2"
+  },
+  {
+    "id": "sj38",
+    "code": "SJ38",
+    "name": "SJ38 Santa Ana Forum 1",
+    "province": "San José",
+    "wkt": "POINT (-84.1941226 9.943468)",
+    "position": {
+      "lat": 9.943468,
+      "lng": -84.1941226
+    },
+    "address": "Contiguo a plaza Fórum I",
+    "faceDirection": "San José - Caldera",
+    "backDirection": "Caldera - San José",
+    "dimensions": "14.40 x 5.00 m",
+    "area": "72 m2"
+  },
+  {
+    "id": "sj39",
+    "code": "SJ39",
+    "name": "SJ39 Sabana Sur Yamuni",
+    "province": "San José",
+    "wkt": "POINT (-84.0967208 9.9318751)",
+    "position": {
+      "lat": 9.9318751,
+      "lng": -84.0967208
+    },
+    "address": "Costado sur de la Yamuni",
+    "faceDirection": "San José - La Sabana",
+    "backDirection": "La Sabana - San José",
+    "dimensions": "7.20 x 5.40 m",
+    "area": "38.8 m2"
+  },
+  {
+    "id": "sj40",
+    "code": "SJ40",
+    "name": "SJ40 Sabana Sur Yamuni",
+    "province": "San José",
+    "wkt": "POINT (-84.096356 9.9317166)",
+    "position": {
+      "lat": 9.9317166,
+      "lng": -84.096356
+    },
+    "address": "Costado sur de la Yamuni",
+    "faceDirection": "La Sabana - San José",
+    "backDirection": "San José - La Sabana",
+    "dimensions": "7.20 x 5.40 m",
+    "area": "38.8 m2"
+  },
+  {
+    "id": "sj41",
+    "code": "SJ41",
+    "name": "SJ41 Sabana Sur Universal",
+    "province": "San José",
+    "wkt": "POINT (-84.0988237 9.9324299)",
+    "position": {
+      "lat": 9.9324299,
+      "lng": -84.0988237
+    },
+    "address": "Frente a Torre Universal",
+    "faceDirection": "San José - Escazú",
+    "backDirection": "Escazú - San José",
+    "dimensions": "5.40 x 7.20 m",
+    "area": "38.8 m2"
+  },
+  {
+    "id": "sj42",
+    "code": "SJ42",
+    "name": "SJ42 Sabana Sur Colegio de Médicos",
+    "province": "San José",
+    "wkt": "POINT (-84.1092092 9.9334233)",
+    "position": {
+      "lat": 9.9334233,
+      "lng": -84.1092092
+    },
+    "address": "Sabana Sur costado norte del Colegio de Médicos",
+    "faceDirection": "Escazú - San José",
+    "backDirection": "San José - Escazú",
+    "dimensions": "5.40 x 7.20 m",
+    "area": "38.8 m2"
+  },
+  {
+    "id": "sj43",
+    "code": "SJ43",
+    "name": "SJ43 Sabana Sur MAG",
+    "province": "San José",
+    "wkt": "POINT (-84.1099602 9.9335316)",
+    "position": {
+      "lat": 9.9335316,
+      "lng": -84.1099602
+    },
+    "address": "Costado norte del MAG",
+    "faceDirection": "La Sabana - Escazú",
+    "backDirection": "Escazú - La Sabana",
+    "dimensions": "5.40 x 7.20 m",
+    "area": "38.8 m2"
+  },
+  {
+    "id": "sj44",
+    "code": "SJ44",
+    "name": "SJ44 Sabana Sur Contraloría.",
+    "province": "San José",
+    "wkt": "POINT (-84.1020745 9.9326782)",
+    "position": {
+      "lat": 9.9326782,
+      "lng": -84.1020745
+    },
+    "address": "Sabana Sur costado norte de la Contraloría.",
+    "faceDirection": "San José - Escazú",
+    "backDirection": "Escazú - San José",
+    "dimensions": "5.40 x 7.20 m",
+    "area": "38.8 m2"
+  },
+  {
+    "id": "sj45",
+    "code": "SJ45",
+    "name": "SJ45 Pavas La Artística.",
+    "province": "San José",
+    "wkt": "POINT (-84.1163975 9.9387073)",
+    "position": {
+      "lat": 9.9387073,
+      "lng": -84.1163975
+    },
+    "address": "Frente a La Artística.",
+    "faceDirection": "La Sabana - Pavas",
+    "backDirection": "Pavas - La Sabana",
+    "dimensions": "8.50 x 11.00 m",
+    "area": "93.5 m2"
+  },
+  {
+    "id": "sj46",
+    "code": "SJ46",
+    "name": "SJ46 La California.",
+    "province": "San José",
+    "wkt": "POINT (-84.0657842 9.931854)",
+    "position": {
+      "lat": 9.931854,
+      "lng": -84.0657842
+    },
+    "address": "Diagonal a restaurante KFC.",
+    "faceDirection": "San José - San Pedro",
+    "backDirection": "San Pedro - San José",
+    "dimensions": "7.20 x 9.00 m",
+    "area": "64.8 m2"
+  },
+  {
+    "id": "sj47",
+    "code": "SJ47",
+    "name": "SJ47 Los Yoses.",
+    "province": "San José",
+    "wkt": "POINT (-84.0629518 9.9318857)",
+    "position": {
+      "lat": 9.9318857,
+      "lng": -84.0629518
+    },
+    "address": "400 oeste del Automercado.",
+    "faceDirection": "San José - San Pedro",
+    "backDirection": "San Pedro - San José",
+    "dimensions": "7.20 x 9.00 m",
+    "area": "64.8 m2"
+  },
+  {
+    "id": "sj49",
+    "code": "SJ49",
+    "name": "SJ49 Sabana Sur Contraloría.",
+    "province": "San José",
+    "wkt": "POINT (-84.1012753 9.9326202)",
+    "position": {
+      "lat": 9.9326202,
+      "lng": -84.1012753
+    },
+    "address": "Costado norte de la Contraloría",
+    "faceDirection": "San José - Escazú",
+    "backDirection": "Escazú - San José",
+    "dimensions": "5.40 x 7.20 m",
+    "area": "38.8 m2"
+  },
+  {
+    "id": "sj48",
+    "code": "SJ48",
+    "name": "SJ48 Guachipelín de Escazú",
+    "province": "San José",
+    "wkt": "POINT (-84.1599781 9.9475418)",
+    "position": {
+      "lat": 9.9475418,
+      "lng": -84.1599781
+    },
+    "address": "600 mts oeste de Multiplaza",
+    "faceDirection": "Santa Ana - Escazú",
+    "backDirection": "Escazú - Santa Ana",
+    "dimensions": "12.60 x 5.00 m",
+    "area": "63 m2"
+  },
+  {
+    "id": "sj50",
+    "code": "SJ50",
+    "name": "SJ50 Escazú - Los Anonos",
+    "province": "San José",
+    "wkt": "POINT (-84.1200883 9.9350983)",
+    "position": {
+      "lat": 9.9350983,
+      "lng": -84.1200883
+    },
+    "address": "400 mts oeste del cruce de Escazú.",
+    "faceDirection": "Escazú - San José",
+    "backDirection": "San José - Escazú",
+    "dimensions": "8.50 x 11.00 m",
+    "area": "93.5 m2"
+  },
+  {
+    "id": "sj51",
+    "code": "SJ51",
+    "name": "SJ51 Guachipelín de Escazú",
+    "province": "San José",
+    "wkt": "POINT (-84.1621292 9.9480544)",
+    "position": {
+      "lat": 9.9480544,
+      "lng": -84.1621292
+    },
+    "address": "Guachipelín frente a Construplaza",
+    "faceDirection": "San José - Santa Ana",
+    "backDirection": "Santa Ana - San José",
+    "dimensions": "12.60 x 5.00 m",
+    "area": "63 m2"
+  },
+  {
+    "id": "sj52",
+    "code": "SJ52",
+    "name": "SJ52 Guachipelín de Escazú",
+    "province": "San José",
+    "wkt": "POINT (-84.1552983 9.9406105)",
+    "position": {
+      "lat": 9.9406105,
+      "lng": -84.1552983
+    },
+    "address": "Guachipelín frente a Distrito Cuatro.",
+    "faceDirection": "Escazú - Guachipelín",
+    "backDirection": "Guachipelín - Escazú",
+    "dimensions": "7.20 x 9.00 m",
+    "area": "64.3 m2"
+  },
+  {
+    "id": "sj53",
+    "code": "SJ53",
+    "name": "SJ53 Guachipelín de Escazú",
+    "province": "San José",
+    "wkt": "POINT (-84.1590098 9.9477166)",
+    "position": {
+      "lat": 9.9477166,
+      "lng": -84.1590098
+    },
+    "address": "Guachipelín 700 este de Multiplaza.",
+    "faceDirection": "Santa Ana - Escazú",
+    "backDirection": "Escazú - Santa Ana",
+    "dimensions": "12.60 x 5.00 m",
+    "area": "63 m2"
+  },
+  {
+    "id": "sj54",
+    "code": "SJ54",
+    "name": "SJ54 Guachipelín de Escazú.",
+    "province": "San José",
+    "wkt": "POINT (-84.1533911 9.93868)",
+    "position": {
+      "lat": 9.93868,
+      "lng": -84.1533911
+    },
+    "address": "De Distrito Cuatro 100 metros al este",
+    "faceDirection": "Escazú - Guachipelín",
+    "backDirection": "Guachipelín - Escazú",
+    "dimensions": "7.20 x 9.00 m",
+    "area": "64.3 m2"
+  },
+  {
+    "id": "sj55",
+    "code": "SJ55",
+    "name": "SJ55 San Pedro de Montes de Oca",
+    "province": "San José",
+    "wkt": "POINT (-84.0451302 9.9325605)",
+    "position": {
+      "lat": 9.9325605,
+      "lng": -84.0451302
+    },
+    "address": "Diagonal a la Universidad Latina en Lourdes de Montes de Oca",
+    "faceDirection": "U Latina - San Pedro",
+    "backDirection": "San Pedro - Vargas Araya",
+    "dimensions": "7.20 x 9.00 m",
+    "area": "64.8 m2"
+  },
+  {
+    "id": "sj56",
+    "code": "SJ56",
+    "name": "SJ56 Landmark Zapote",
+    "province": "San José",
+    "wkt": "POINT (-84.0596796 9.9205895)",
+    "position": {
+      "lat": 9.9205895,
+      "lng": -84.0596796
+    },
+    "address": "Rotonda de las Garantías Sociales",
+    "faceDirection": "San José - Zapote",
+    "backDirection": "",
+    "dimensions": "8.50 x 33.30 m",
+    "area": "283 m2"
+  },
+  {
+    "id": "sj57",
+    "code": "SJ57",
+    "name": "SJ57 Circunvalación San Sebastián",
+    "province": "San José",
+    "wkt": "POINT (-84.0903163 9.9101154)",
+    "position": {
+      "lat": 9.9101154,
+      "lng": -84.0903163
+    },
+    "address": "500 mts oeste de la Rotonda",
+    "faceDirection": "Los Hatillos - Zapote",
+    "backDirection": "Zapote - Los Hatillos",
+    "dimensions": "8.50 x 11.00 m",
+    "area": "93.5 m2"
+  },
+  {
+    "id": "sj58",
+    "code": "SJ58",
+    "name": "SJ58 Landmark Curridabat",
+    "province": "San José",
+    "wkt": "POINT (-84.0371553 9.910915)",
+    "position": {
+      "lat": 9.910915,
+      "lng": -84.0371553
+    },
+    "address": "Cruce de Hacienda Vieja",
+    "faceDirection": "Cartago - San José",
+    "backDirection": "",
+    "dimensions": "8.50 x 33.30 m",
+    "area": "283 m2"
+  },
+  {
+    "id": "sj59",
+    "code": "SJ59",
+    "name": "SJ59 Landmark Ruta 27",
+    "province": "San José",
+    "wkt": "POINT (-84.2320071 9.9475299)",
+    "position": {
+      "lat": 9.9475299,
+      "lng": -84.2320071
+    },
+    "address": "500 mts este del peaje de San Rafael",
+    "faceDirection": "Caldera - San José",
+    "backDirection": "",
+    "dimensions": "8.50 x 33.30 m",
+    "area": "283 m2"
+  },
+
+  {
+    "id": "sj61",
+    "code": "SJ61",
+    "name": "SJ61 Landmark Lindora",
+    "province": "San José",
+    "wkt": "POINT (-84.1934351 9.9514187)",
+    "position": {
+      "lat": 9.9514187,
+      "lng": -84.1934351
+    },
+    "address": "Antiguas Instalaciones de Matra",
+    "faceDirection": "Belén - Santa Ana",
+    "backDirection": "",
+    "dimensions": "4.90 x 71.10 m",
+    "area": "348 m2"
+  },
+  {
+    "id": "sj62",
+    "code": "SJ62",
+    "name": "SJ62 Landmark Alto de las Palomas",
+    "province": "San José",
+    "wkt": "POINT (-84.1697101 9.9432729)",
+    "position": {
+      "lat": 9.9432729,
+      "lng": -84.1697101
+    },
+    "address": "Ruta 27 frente a Villa Real",
+    "faceDirection": "Santa Ana - San José",
+    "backDirection": "San José - Santa Ana",
+    "dimensions": "9.00 x 34.80 metros",
+    "area": "310 m2"
+  }
 ]
