@@ -10,7 +10,9 @@
     "format.fix": "prettier --write .",
     "typecheck": "tsc"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@react-google-maps/api": "^2.20.8"
+  },
   "devDependencies": {
     "@hookform/resolvers": "^5.4.0",
     "@radix-ui/react-accordion": "^1.2.17",

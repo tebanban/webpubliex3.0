@@ -1,4 +1,40 @@
-﻿import { publiexAsset } from "@/lib/assets";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { GoogleMap, MarkerF, useJsApiLoader } from "@react-google-maps/api";
+
+import {
+  categoryStyles,
+  publiexLocations,
+  type PubliexLocation,
+} from "@/content/locations";
+import { publiexAsset } from "@/lib/assets";
+
+type LocationFilters = {
+  province: string;
+  solution: string;
+  objective: string;
+  illuminated: boolean;
+};
+
+const defaultFilters: LocationFilters = {
+  province: "Todas",
+  solution: "Todas",
+  objective: "Todos",
+  illuminated: false,
+};
+
+const mapCenter = { lat: 9.96, lng: -84.05 };
+const mapOptions: google.maps.MapOptions = {
+  clickableIcons: false,
+  fullscreenControl: false,
+  mapTypeControl: false,
+  streetViewControl: false,
+  styles: [
+    {
+      featureType: "poi.business",
+      stylers: [{ visibility: "off" }],
+    },
+  ],
+};
 
 function LocationButton({
   children,
@@ -24,7 +60,252 @@ function LocationButton({
   );
 }
 
+function getUniqueOptions(key: "province" | "solution" | "objective") {
+  return Array.from(new Set(publiexLocations.map((location) => location[key])));
+}
+
+function LocationsMap({
+  locations,
+  selectedLocation,
+  onSelectLocation,
+}: {
+  locations: PubliexLocation[];
+  selectedLocation: PubliexLocation;
+  onSelectLocation: (location: PubliexLocation) => void;
+}) {
+  const googleMapsApiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
+
+  if (!googleMapsApiKey) {
+    return <StaticMapFallback locations={locations} />;
+  }
+
+  return (
+    <GoogleLocationsMap
+      googleMapsApiKey={googleMapsApiKey}
+      locations={locations}
+      onSelectLocation={onSelectLocation}
+      selectedLocation={selectedLocation}
+    />
+  );
+}
+
+function GoogleLocationsMap({
+  googleMapsApiKey,
+  locations,
+  selectedLocation,
+  onSelectLocation,
+}: {
+  googleMapsApiKey: string;
+  locations: PubliexLocation[];
+  selectedLocation: PubliexLocation;
+  onSelectLocation: (location: PubliexLocation) => void;
+}) {
+  const mapRef = useRef<google.maps.Map | null>(null);
+  const { isLoaded, loadError } = useJsApiLoader({
+    googleMapsApiKey,
+  });
+
+  useEffect(() => {
+    if (!mapRef.current || !selectedLocation) return;
+
+    mapRef.current.panTo(selectedLocation.position);
+    mapRef.current.setZoom(11);
+  }, [selectedLocation]);
+
+  if (loadError) {
+    return <StaticMapFallback locations={locations} />;
+  }
+
+  if (!isLoaded) {
+    return (
+      <div className="flex size-full min-h-[32rem] items-center justify-center bg-[#d9e8ed] font-raleway text-sm font-extrabold uppercase tracking-[0.16em] text-slate-600">
+        Cargando mapa
+      </div>
+    );
+  }
+
+  return (
+    <GoogleMap
+      center={selectedLocation?.position ?? mapCenter}
+      mapContainerClassName="size-full min-h-[32rem]"
+      onLoad={(map) => {
+        mapRef.current = map;
+      }}
+      options={mapOptions}
+      zoom={8}
+    >
+      {locations.map((location, index) => (
+        <MarkerF
+          key={location.id}
+          label={{
+            text: String(index + 1),
+            color: "white",
+            fontWeight: "700",
+          }}
+          onClick={() => onSelectLocation(location)}
+          position={location.position}
+          zIndex={selectedLocation?.id === location.id ? 20 : 10}
+        />
+      ))}
+    </GoogleMap>
+  );
+}
+
+function StaticMapFallback({ locations }: { locations: PubliexLocation[] }) {
+  return (
+    <div className="relative min-h-[32rem] overflow-hidden bg-[#d9e8ed]">
+      <img
+        alt="Mapa comercial de muestra con ubicaciones Publiex"
+        className="absolute inset-0 size-full object-cover"
+        src={publiexAsset("Locations-map.png")}
+      />
+      <div className="absolute left-[2.5%] top-6 font-raleway text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
+        Océano Pacífico
+      </div>
+      <div className="absolute right-[2.5%] top-6 font-raleway text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
+        Mar Caribe
+      </div>
+      <div className="absolute inset-x-[3%] bottom-7 bg-white/95 px-6 py-5 font-raleway shadow-sm">
+        <p className="text-sm font-extrabold uppercase tracking-[0.08em]">
+          {locations.length} medios filtrados
+        </p>
+        <p className="mt-2 text-xs leading-tight text-zinc-600 md:text-sm">
+          Configure VITE_GOOGLE_MAPS_API_KEY para activar el mapa interactivo de
+          Google Maps.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function LocationCard({
+  location,
+  selected,
+  onSelect,
+}: {
+  location: PubliexLocation;
+  selected: boolean;
+  onSelect: () => void;
+}) {
+  return (
+    <article
+      className={`border bg-white transition ${
+        selected ? "border-publiex-blue" : "border-zinc-200 hover:border-zinc-400"
+      }`}
+    >
+      <button className="block w-full text-left" onClick={onSelect} type="button">
+        <div className="relative h-[clamp(10rem,11.8vw,14.2rem)] overflow-hidden bg-black">
+          <img
+            alt={location.imageAlt}
+            className="size-full object-cover"
+            src={location.image}
+          />
+          <p className="absolute left-4 top-4 text-xs font-extrabold uppercase text-white">
+            {location.code}
+          </p>
+          <span className="absolute right-4 top-4 flex size-10 items-center justify-center rounded-full bg-white text-2xl font-black text-publiex-blue">
+            {selected ? "✓" : "+"}
+          </span>
+        </div>
+        <div className="p-5">
+          <p className="text-xs font-extrabold uppercase text-publiex-blue">
+            {location.category} · {location.province}
+          </p>
+          <h3 className="mt-4 text-[clamp(1.4rem,1.6vw,2rem)] font-semibold leading-tight">
+            {location.title}
+          </h3>
+          <p className="mt-3 text-sm leading-tight text-zinc-600">
+            {location.description}
+          </p>
+        </div>
+      </button>
+      {selected ? (
+        <div className="grid grid-cols-2 gap-3 px-5 pb-5 text-xs font-extrabold uppercase">
+          <a
+            className="flex items-center justify-between border-t border-zinc-300 pt-5 text-publiex-blue"
+            href="/contact"
+          >
+            Ver ubicación <span aria-hidden="true">↗</span>
+          </a>
+          <a
+            className="flex items-center justify-between bg-publiex-red px-4 py-5 text-white"
+            href="/contact"
+          >
+            Ver mi campaña aquí <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      ) : (
+        <span className="mx-5 mb-5 block h-1 bg-publiex-red" />
+      )}
+    </article>
+  );
+}
+
 export default function LocationsPage() {
+  const [filters, setFilters] = useState<LocationFilters>(defaultFilters);
+  const [selectedLocationId, setSelectedLocationId] = useState(
+    publiexLocations[0].id,
+  );
+
+  const filterGroups = useMemo(
+    () => [
+      {
+        key: "province" as const,
+        label: "Provincia",
+        options: ["Todas", ...getUniqueOptions("province")],
+      },
+      {
+        key: "solution" as const,
+        label: "Solución",
+        options: ["Todas", ...getUniqueOptions("solution")],
+      },
+      {
+        key: "objective" as const,
+        label: "Objetivo",
+        options: ["Todos", ...getUniqueOptions("objective")],
+      },
+    ],
+    [],
+  );
+
+  const filteredLocations = useMemo(
+    () =>
+      publiexLocations.filter((location) => {
+        const matchesProvince =
+          filters.province === "Todas" || location.province === filters.province;
+        const matchesSolution =
+          filters.solution === "Todas" || location.solution === filters.solution;
+        const matchesObjective =
+          filters.objective === "Todos" || location.objective === filters.objective;
+        const matchesLighting = !filters.illuminated || location.illuminated;
+
+        return (
+          matchesProvince &&
+          matchesSolution &&
+          matchesObjective &&
+          matchesLighting
+        );
+      }),
+    [filters],
+  );
+
+  const selectedLocation =
+    filteredLocations.find((location) => location.id === selectedLocationId) ??
+    filteredLocations[0] ??
+    publiexLocations[0];
+
+  useEffect(() => {
+    if (!filteredLocations.length) return;
+
+    const selectedStillVisible = filteredLocations.some(
+      (location) => location.id === selectedLocationId,
+    );
+
+    if (!selectedStillVisible) {
+      setSelectedLocationId(filteredLocations[0].id);
+    }
+  }, [filteredLocations, selectedLocationId]);
+
   return (
     <main className="bg-white pt-14 text-black md:pt-16 xl:pt-20">
       {/* Section 1, Hero */}
@@ -56,7 +337,7 @@ export default function LocationsPage() {
         </div>
       </section>
 
-      {/* Section 2, Inventory visual */}
+      {/* Section 2, Interactive inventory map */}
       <section className="overflow-hidden bg-publiex-muted-section px-5 py-[clamp(3rem,5vw,6rem)] md:px-10 lg:px-24">
         <div className="mx-auto w-full max-w-480">
           <div className="grid min-h-[clamp(42rem,46.9vw,56.25rem)] overflow-hidden bg-white shadow-sm lg:grid-cols-[10%_70%_20%]">
@@ -66,47 +347,20 @@ export default function LocationsPage() {
               </h2>
 
               <div className="mt-8 space-y-6">
-                {[
-                  {
-                    label: "Provincia",
-                    defaultValue: "Todas",
-                    options: [
-                      "Todas",
-                      "San José",
-                      "Alajuela",
-                      "Cartago",
-                      "Heredia",
-                      "Guanacaste",
-                      "Puntarenas",
-                      "Limón",
-                    ],
-                  },
-                  {
-                    label: "Solución",
-                    defaultValue: "Todas",
-                    options: [
-                      "Todas",
-                      "Vallas Unipolares",
-                      "Mega Landmarks",
-                      "Circuitos Rotativos",
-                      "Banner Post",
-                      "Puentes y formatos urbanos",
-                      "Pantallas Digitales",
-                    ],
-                  },
-                  {
-                    label: "Objetivo",
-                    defaultValue: "Todos",
-                    options: ["Todos"],
-                  },
-                ].map((filter) => (
+                {filterGroups.map((filter) => (
                   <label className="block" key={filter.label}>
                     <span className="block text-xs font-extrabold uppercase tracking-[0.16em] text-zinc-600">
                       {filter.label}
                     </span>
                     <select
                       className="mt-3 h-8 w-full border border-zinc-300 bg-white px-2 text-xs font-bold text-black shadow-inner"
-                      defaultValue={filter.defaultValue}
+                      onChange={(event) =>
+                        setFilters((currentFilters) => ({
+                          ...currentFilters,
+                          [filter.key]: event.target.value,
+                        }))
+                      }
+                      value={filters[filter.key]}
                     >
                       {filter.options.map((option) => (
                         <option key={option}>{option}</option>
@@ -117,7 +371,17 @@ export default function LocationsPage() {
               </div>
 
               <label className="mt-7 flex items-center gap-2 border-y border-zinc-300 py-5 text-xs font-extrabold uppercase tracking-[0.14em] text-zinc-700">
-                <input className="size-3.5" type="checkbox" />
+                <input
+                  checked={filters.illuminated}
+                  className="size-3.5"
+                  onChange={(event) =>
+                    setFilters((currentFilters) => ({
+                      ...currentFilters,
+                      illuminated: event.target.checked,
+                    }))
+                  }
+                  type="checkbox"
+                />
                 Impacto nocturno o iluminado
               </label>
 
@@ -126,13 +390,7 @@ export default function LocationsPage() {
                   Categorías
                 </p>
                 <div className="mt-6 space-y-6 text-[clamp(0.95rem,0.95vw,1.2rem)] text-zinc-800">
-                  {[
-                    ["bg-[#2859c7]", "Valla unipolar"],
-                    ["bg-publiex-red", "Mega landmark"],
-                    ["bg-[#3f2b78]", "Circuito rotativo"],
-                    ["bg-[#4597bf]", "DOOH"],
-                    ["bg-[#3d8b62]", "Trenes"],
-                  ].map(([color, label]) => (
+                  {Object.entries(categoryStyles).map(([label, color]) => (
                     <div className="flex items-center gap-4" key={label}>
                       <span className={`size-3 rounded-full ${color}`} />
                       <span>{label}</span>
@@ -143,6 +401,7 @@ export default function LocationsPage() {
 
               <button
                 className="mt-auto w-fit border-b border-black pb-3 pt-12 text-xs font-extrabold uppercase tracking-[0.14em] text-zinc-700"
+                onClick={() => setFilters(defaultFilters)}
                 type="button"
               >
                 Limpiar filtros
@@ -150,107 +409,37 @@ export default function LocationsPage() {
             </aside>
 
             <div className="relative min-h-[32rem] overflow-hidden bg-[#d9e8ed]">
-              <img
-                alt="Mapa comercial de muestra con ubicaciones Publiex"
-                className="absolute inset-0 size-full object-cover"
-                src={publiexAsset("Locations-map.png")}
+              <LocationsMap
+                locations={filteredLocations}
+                onSelectLocation={(location) => setSelectedLocationId(location.id)}
+                selectedLocation={selectedLocation}
               />
-              <div className="absolute left-[2.5%] top-6 font-raleway text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
-                Océano Pacífico
-              </div>
-              <div className="absolute right-[2.5%] top-6 font-raleway text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
-                Mar Caribe
-              </div>
-              <div className="absolute inset-x-[3%] bottom-7 bg-white/95 px-6 py-5 font-raleway shadow-sm">
-                <p className="text-sm font-extrabold uppercase tracking-[0.08em]">
-                  Mapa comercial de muestra
-                </p>
-                <p className="mt-2 text-xs leading-tight text-zinc-600 md:text-sm">
-                  Los puntos ilustran zonas y corredores. Las coordenadas
-                  exactas se publicarán únicamente tras validación interna.
-                </p>
-              </div>
             </div>
 
             <aside className="border-t border-zinc-200 bg-white font-raleway lg:border-l lg:border-t-0">
               <div className="flex items-center justify-between border-b border-zinc-200 px-4 py-5 text-xs text-zinc-500 xl:px-5">
                 <p className="text-sm font-extrabold text-black">
-                  8 medios encontrados
+                  {filteredLocations.length} medios encontrados
                 </p>
                 <p>Muestra pública · Costa Rica</p>
               </div>
 
               <div className="max-h-[clamp(36rem,44vw,53rem)] space-y-5 overflow-y-auto p-4 xl:p-5">
-                <article className="border border-publiex-blue bg-white">
-                  <div className="relative h-[clamp(10rem,11.8vw,14.2rem)] overflow-hidden bg-black">
-                    <img
-                      alt="Vista nocturna de valla unipolar en corredor urbano"
-                      className="size-full object-cover"
-                      src={publiexAsset("Locations-campaign2.png")}
+                {filteredLocations.length ? (
+                  filteredLocations.map((location) => (
+                    <LocationCard
+                      key={location.id}
+                      location={location}
+                      onSelect={() => setSelectedLocationId(location.id)}
+                      selected={selectedLocation.id === location.id}
                     />
-                    <p className="absolute left-4 top-4 text-xs font-extrabold uppercase text-white">
-                      SJ · Muestra 01
-                    </p>
-                    <span className="absolute right-4 top-4 flex size-10 items-center justify-center rounded-full bg-white text-2xl font-black text-publiex-blue">
-                      ✓
-                    </span>
+                  ))
+                ) : (
+                  <div className="border border-dashed border-zinc-300 p-5 text-sm leading-tight text-zinc-600">
+                    No hay medios para estos filtros. Ajuste la búsqueda o limpie
+                    los filtros para ver más opciones.
                   </div>
-                  <div className="p-5">
-                    <p className="text-xs font-extrabold uppercase text-publiex-blue">
-                      Valla unipolar · San José
-                    </p>
-                    <h3 className="mt-4 text-[clamp(1.4rem,1.6vw,2rem)] font-semibold leading-tight">
-                      Sabana · corredor urbano
-                    </h3>
-                    <p className="mt-3 text-sm leading-tight text-zinc-600">
-                      Presencia sostenida en un corredor metropolitano de alta
-                      actividad.
-                    </p>
-                    <div className="mt-5 grid grid-cols-2 gap-3 text-xs font-extrabold uppercase">
-                      <a
-                        className="flex items-center justify-between border-t border-zinc-300 pt-5 text-publiex-blue"
-                        href="/contact"
-                      >
-                        Ver ubicación <span aria-hidden="true">↗</span>
-                      </a>
-                      <a
-                        className="flex items-center justify-between bg-publiex-red px-4 py-5 text-white"
-                        href="/contact"
-                      >
-                        Ver mi campaña aquí <span aria-hidden="true">→</span>
-                      </a>
-                    </div>
-                  </div>
-                </article>
-
-                <article className="border border-zinc-200 bg-white">
-                  <div className="relative h-[clamp(10rem,11.8vw,14.2rem)] overflow-hidden">
-                    <img
-                      alt="Mega landmark en carretera para muestra de inventario"
-                      className="size-full object-cover"
-                      src={publiexAsset("locations-selection-thumb.png")}
-                    />
-                    <p className="absolute left-4 top-4 text-xs font-extrabold uppercase text-white">
-                      SJ · Muestra 02
-                    </p>
-                    <span className="absolute right-4 top-4 flex size-10 items-center justify-center rounded-full bg-white text-2xl font-black text-publiex-blue">
-                      +
-                    </span>
-                  </div>
-                  <div className="p-5">
-                    <p className="text-xs font-extrabold uppercase text-publiex-blue">
-                      Mega landmark · San José
-                    </p>
-                    <h3 className="mt-4 text-[clamp(1.4rem,1.6vw,2rem)] font-semibold leading-tight">
-                      Escazú · alto impacto
-                    </h3>
-                    <p className="mt-3 text-sm leading-tight text-zinc-600">
-                      Escala y exclusividad para convertir el entorno en
-                      territorio de marca.
-                    </p>
-                    <span className="mt-5 block h-1 bg-publiex-red" />
-                  </div>
-                </article>
+                )}
               </div>
             </aside>
           </div>
@@ -267,9 +456,9 @@ export default function LocationsPage() {
           <div className="mt-14 grid gap-10 lg:grid-cols-[1.35fr_0.65fr] lg:items-center">
             <div className="relative min-h-[clamp(30rem,33.3vw,40rem)] overflow-hidden bg-black">
               <img
-                alt="Previsualización de ubicación para campaña Publiex"
+                alt={selectedLocation.imageAlt}
                 className="absolute inset-0 size-full object-cover opacity-65"
-                src={publiexAsset("Locations-campaign2.png")}
+                src={selectedLocation.image}
               />
               <div className="absolute inset-0 bg-black/45" />
               <div className="relative flex min-h-[clamp(30rem,33.3vw,40rem)] flex-col items-center justify-center px-6 text-center">
@@ -283,15 +472,15 @@ export default function LocationsPage() {
             </div>
             <aside>
               <p className="font-raleway text-sm font-bold uppercase text-publiex-blue md:text-2xl">
-                SJ · Muestra 01 · Valla unipolar
+                {selectedLocation.code} · {selectedLocation.category}
               </p>
               <h3 className="mt-4 font-raleway text-[clamp(2.7rem,5.4vw,4.965rem)] font-bold leading-[1.04]">
-                Sabana · corredor urbano
+                {selectedLocation.title}
               </h3>
               <div className="mt-8 border-y border-white/35 py-5 font-raleway text-sm uppercase leading-7 md:text-base">
-                <p>Formato: valla unipolar</p>
-                <p>Contexto: ruta urbana de alto tránsito</p>
-                <p>Lectura: vehicular y peatonal</p>
+                <p>Formato: {selectedLocation.category.toLowerCase()}</p>
+                <p>Contexto: {selectedLocation.context}</p>
+                <p>Lectura: {selectedLocation.reading}</p>
               </div>
               <div className="mt-8 flex flex-col items-start gap-5">
                 <LocationButton href="/contact">
@@ -321,19 +510,19 @@ export default function LocationsPage() {
           <div className="mt-14 grid gap-8 lg:grid-cols-[0.55fr_1.45fr] lg:items-start xl:px-40">
             <article className="bg-white shadow-sm">
               <img
-                alt="Miniatura de ubicación seleccionada"
+                alt={selectedLocation.imageAlt}
                 className="h-37 w-full object-cover object-center"
-                src={publiexAsset("locations-selection-thumb.png")}
+                src={selectedLocation.image}
               />
               <div className="p-4 font-raleway">
                 <p className="text-xs font-bold uppercase text-publiex-blue">
-                  Muestra 01
+                  {selectedLocation.code}
                 </p>
                 <h3 className="mt-2 text-lg font-bold leading-tight">
-                  Sabana · corredor urbano
+                  {selectedLocation.title}
                 </h3>
                 <p className="mt-2 text-sm leading-tight text-zinc-600">
-                  Valla unipolar para revisión preliminar.
+                  {selectedLocation.category} para revisión preliminar.
                 </p>
               </div>
             </article>
