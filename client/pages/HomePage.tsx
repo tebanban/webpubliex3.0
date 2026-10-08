@@ -62,7 +62,7 @@ export default function HomePage() {
     <main className="bg-white text-black">
       {/* Section 1, Hero */}
       <section
-        className="relative h-[clamp(36rem,47.9vw,57.5rem)] overflow-hidden text-white"
+        className="relative h-[clamp(40rem,54vw,64rem)] overflow-hidden text-white"
         id="inicio"
         ref={heroRef}
       >
@@ -414,7 +414,7 @@ export default function HomePage() {
               <p className="font-raleway text-[clamp(0.75rem,0.9vw,1.201rem)] font-semibold uppercase">
                 Audiencia única estimada
               </p>
-              <p className="mt-4 font-raleway text-[clamp(2.8rem,4.2vw,4.998rem)] font-black leading-none text-publiex-red">
+              <p className="mt-4 font-raleway text-[clamp(2.7rem,3.9vw,4.7rem)] font-black leading-none text-publiex-red">
                 1.578.841
               </p>
               <p className="mt-4 max-w-86.25 font-raleway text-[clamp(0.8rem,1vw,1.201rem)] font-semibold leading-tight">
