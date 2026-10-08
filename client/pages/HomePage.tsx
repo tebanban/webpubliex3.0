@@ -79,7 +79,7 @@ export default function HomePage() {
           <source src={publiexAsset("hero_home.mp4")} type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-publiex-hero-overlay" />
-        <div className="relative mx-auto flex h-full w-full max-w-480 items-end px-5 pb-12 pt-28 md:px-10 md:pb-20">
+        <div className="relative mx-auto flex h-full w-full max-w-480 items-end px-5 pb-6 pt-28 md:px-10 md:pb-10">
           <div className="mx-auto w-full max-w-295 text-center">
             <h1 className="font-raleway font-black uppercase leading-[0.996]">
               <span className="block text-[clamp(2.4rem,5.4vw,3.85rem)]">
@@ -89,11 +89,11 @@ export default function HomePage() {
                 imposible de ignorar
               </span>
             </h1>
-            <p className="mx-auto mt-7 max-w-237.5 font-raleway text-[clamp(1.1rem,2.3vw,1.965rem)] leading-tight">
+            <p className="mx-auto mt-4 max-w-237.5 font-raleway text-[clamp(1.1rem,2.3vw,1.965rem)] leading-tight">
               Grandes formatos, movilidad, tecnología y creatividad para hacer
               que su marca sea parte del paisaje y de la conversación.
             </p>
-            <div className="mt-10 flex flex-col text-lg items-center justify-center gap-5 sm:flex-row">
+            <div className="mt-7 flex flex-col text-lg items-center justify-center gap-5 sm:flex-row">
               <PrimaryLink href="/contact" weight="normal">
                 Diseñar mi campaña
               </PrimaryLink>
