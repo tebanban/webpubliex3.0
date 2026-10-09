@@ -242,7 +242,7 @@ export default function HomePage() {
                     <div className="mt-[clamp(0.2rem,1.2cqw,0.50rem)] w-full border-t border-white pt-[clamp(0.35rem,2.2cqw,0.85rem)]">
                       <a
                         className="font-raleway text-[clamp(0.55rem,2.2cqw,0.7rem)] font-black uppercase tracking-[0.18em] transition hover:text-white/75"
-                        href="/products"
+                        href={solution.href}
                       >
                         Explorar
                       </a>

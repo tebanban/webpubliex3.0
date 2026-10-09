@@ -3,37 +3,44 @@
     title: "Vallas unipolares",
     description: "Una presencia que se convirtió en punto de referencia.",
     image: "figma-card-vallas.jpeg",
+    href: "/products#vallas-unipolares",
   },
   {
     title: "Mega landmarks",
     description: "Ocupe el paisaje. Conviértase en referencia.",
     image: "figma-card-mega-landmarks.jpeg",
+    href: "/products#mega-landmarks",
   },
   {
     title: "Circuitos rotativos",
     description:
       "Más recorridos. Más frecuencia. Más oportunidades de ser visto.",
     image: "figma-card-circuitos.jpeg",
+    href: "/products#circuitos-rotativos",
   },
   {
     title: "Banner posts",
     description: "Una avenida completa hablando de su marca.",
     image: "figma-card-banner-posts.jpeg",
+    href: "/products#banner-posts",
   },
   {
     title: "Pantallas digitales",
     description: "Contenido que responde al ritmo de la ciudad.",
     image: "figma-card-digital.png",
+    href: "/products#pantallas-digitales",
   },
   {
     title: "Publicidad en transporte",
     description: "Su marca viaja con Costa Rica.",
     image: "figma-card-transport.jpeg",
+    href: "/products#trenes",
   },
   {
     title: "Proyectos especiales",
     description: "Ideas que convierten el medio en experiencia.",
     image: "figma-card-special-projects.jpeg",
+    href: "/products#innovaciones-a-la-medida",
   },
 ];
 

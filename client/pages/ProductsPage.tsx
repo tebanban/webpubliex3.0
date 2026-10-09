@@ -18,6 +18,7 @@ const productGroups = [
     redTitle: "rutas, zonas y ciudades.",
     products: [
       {
+        id: "vallas-unipolares",
         title: "Vallas Unipolares",
         image: "products-vallas-unipolares.png",
         badge: "Presencia permanente",
@@ -44,6 +45,7 @@ const productGroups = [
         link: "Alcance territorial",
       },
       {
+        id: "mega-landmarks",
         title: "Mega Landmarks",
         image: "products-mega-landmarks.png",
         badge: "Dominación visual",
@@ -73,6 +75,7 @@ const productGroups = [
     redTitle: "Continuidad de marca",
     products: [
       {
+        id: "circuitos-rotativos",
         title: "Circuitos Rotativos",
         image: "products-circuitos-rotativos.png",
         badge: "Cobertura multiplicada",
@@ -94,6 +97,7 @@ const productGroups = [
         link: "Diseñar circuito",
       },
       {
+        id: "banner-posts",
         title: "Banner Posts",
         image: "products-bannerpost.png",
         badge: "Presencia secuencial",
@@ -111,6 +115,7 @@ const productGroups = [
         link: "Explorar banner posts",
       },
       {
+        id: "puentes-formatos-urbanos",
         title: "Puentes y formatos urbanos",
         image: "products-puentes-formatos-urbanos.png",
         badge: "Integración urbana",
@@ -136,6 +141,7 @@ const productGroups = [
     redTitle: "vida cotidiana.",
     products: [
       {
+        id: "trenes",
         title: "Trenes",
         image: "products-trenes.png",
         badge: "Movimiento + permanencia",
@@ -165,6 +171,7 @@ const productGroups = [
     redTitle: "Contenido flexible",
     products: [
       {
+        id: "pantallas-digitales",
         title: "Pantallas Digitales",
         image: "products-digitalscreen.mp4",
         badge: "Agilidad + iluminación",
@@ -194,6 +201,7 @@ const productGroups = [
     redTitle: "convertirse en conversación.",
     products: [
       {
+        id: "innovaciones-a-la-medida",
         title: "Innovaciones a la medida",
         image: "products-proyectos-especiales.png",
         badge: "Movimiento + permanencia",
@@ -240,7 +248,7 @@ function ProductCard({ product }: { product: Product }) {
   const isVideo = product.image.endsWith(".mp4");
 
   return (
-    <article className="bg-white p-2 shadow-sm md:p-8 xl:p-16">
+    <article className="bg-white p-2 shadow-sm md:p-8 xl:p-16" id={product.id}>
       {/* Product summary */}
       <div className="grid gap-[clamp(1.5rem,3vw,3rem)] lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)_minmax(0,1fr)]">
         <div>
