@@ -294,7 +294,9 @@ export default function HomePage() {
               rotondas y rutas estratégicas.
             </p>
             <div className="mt-9">
-              <PrimaryLink href="/contact">Explorar banner posts</PrimaryLink>
+              <PrimaryLink href="/products#banner-posts">
+                Explorar banner posts
+              </PrimaryLink>
             </div>
           </div>
           <img

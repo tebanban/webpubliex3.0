@@ -432,7 +432,14 @@ export default function ProductsPage() {
               {group.eyebrow}
             </p>
             <h2 className="mt-8 max-w-300 font-raleway text-[clamp(2.4rem,5.4vw,4.85rem)] font-semibold leading-[0.996]">
-              {group.id === "dooh" ? (
+              {group.id === "mobiliario-urbano" ? (
+                <>
+                  <span className="block text-publiex-red">
+                    Continuidad de marca
+                  </span>
+                  <span className="block">a escala humana</span>
+                </>
+              ) : group.id === "dooh" ? (
                 <>
                   <span className="text-publiex-red">Contenido flexible</span>{" "}
                   para una
