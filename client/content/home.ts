@@ -73,18 +73,21 @@ export const cases = [
     type: "Landmark",
     title: "Una presencia que se convirtió en punto de referencia.",
     image: "figma-case-landmark.jpeg",
+    href: "/case-studies#landmark",
   },
   {
     tag: "Movilidad",
     type: "Trenes",
     title: "Un lanzamiento que recorrió la GAM.",
     image: "figma-case-train.jpeg",
+    href: "/case-studies#trenes",
   },
   {
     tag: "Contexto",
     type: "DOOH",
     title: "Una pantalla que cambió con la ciudad.",
     image: "case-screen.png",
+    href: "/case-studies#dooh",
   },
 ];
 
@@ -96,6 +99,7 @@ export const insights = [
     description:
       "Una mirada a las posibilidades de integrar presencia exterior, experiencias interiores y frecuencia urbana.",
     image: "figma-insight-innovation.jpeg",
+    href: "/actualidad#publicidad-en-movimiento",
   },
   {
     tag: "Insights OOH",
@@ -103,6 +107,7 @@ export const insights = [
     description:""
       ,
     image: "figma-insight-sustainability.jpeg",
+    href: "/actualidad#dominacion-visual",
   },
   {
     tag: "Sostenibilidad",
@@ -110,5 +115,6 @@ export const insights = [
     description:
       "",
     image: "figma-insight-ooh.jpeg",
+    href: "/actualidad#medir-antes-de-comunicar",
   },
 ];

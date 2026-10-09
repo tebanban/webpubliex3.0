@@ -2,6 +2,7 @@
 
 const caseStudies = [
   {
+    id: "landmark",
     category: "Landmark",
     title: "Una presencia que se convirtió en punto de referencia",
     titleLines: [
@@ -19,6 +20,7 @@ const caseStudies = [
     ],
   },
   {
+    id: "trenes",
     category: "Trenes",
     title: "Un lanzamiento que recorrió la GAM",
     image: "casestudies-tren.png",
@@ -30,6 +32,7 @@ const caseStudies = [
     ],
   },
   {
+    id: "dooh",
     category: "DOOH",
     title: "Una pantalla que cambió con la ciudad",
     image: "casestudies-dooh.mp4",
@@ -108,7 +111,10 @@ function CaseMedia({
 function CaseStudyCard({ study }: { study: CaseStudy }) {
   if (study.layout === "imageRight") {
     return (
-      <article className="grid overflow-hidden bg-white lg:grid-cols-[minmax(0,0.98fr)_minmax(320px,0.82fr)]">
+      <article
+        className="grid overflow-hidden bg-white lg:grid-cols-[minmax(0,0.98fr)_minmax(320px,0.82fr)]"
+        id={study.id}
+      >
         {/* Case copy */}
         <div className="flex flex-col justify-center px-[clamp(1.5rem,3.5vw,4.75rem)] py-[clamp(2.25rem,3.2vw,4.5rem)]">
           <CaseTitle study={study} />
@@ -129,7 +135,7 @@ function CaseStudyCard({ study }: { study: CaseStudy }) {
   }
 
   return (
-    <article className="overflow-hidden bg-white">
+    <article className="overflow-hidden bg-white" id={study.id}>
       {/* Case image */}
       <div className="px-[clamp(1.25rem,3.5vw,4.25rem)] pt-[clamp(1rem,2vw,2.5rem)]">
         <CaseMedia

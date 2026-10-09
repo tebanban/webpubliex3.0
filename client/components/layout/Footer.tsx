@@ -6,11 +6,11 @@ const footerGroups = [
   {
     title: "Soluciones",
     links: [
-      ["Vallas y unipolares", "/products"],
-      ["Mega Landmarks", "/products"],
-      ["Banner posts", "/products"],
-      ["DOOH", "/products"],
-      ["Trenes", "/products"],
+      ["Vallas y unipolares", "/products#vallas-unipolares"],
+      ["Mega Landmarks", "/products#mega-landmarks"],
+      ["Banner posts", "/products#banner-posts"],
+      ["DOOH", "/products#pantallas-digitales"],
+      ["Trenes", "/products#trenes"],
     ],
   },
   {
@@ -26,9 +26,9 @@ const footerGroups = [
     title: "Publiex",
     links: [
       ["Nosotros", "/about"],
-      ["Sostenibilidad", "/about"],
+      ["Responsabilidad Empresarial", "/about"],
+      ["Actualidad e Insights", "/actualidad"],
       ["Agencias", "/agencies"],
-      ["Sistema visual", "/about"],
     ],
   },
   {

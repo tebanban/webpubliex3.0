@@ -15,6 +15,7 @@ const articleFilters = [
 
 const articles = [
   {
+    id: "publicidad-en-movimiento",
     category: "Innovación",
     date: "5 agosto 2026",
     title:
@@ -24,6 +25,7 @@ const articles = [
     image: "actualidad-raw-02.jpeg",
   },
   {
+    id: "dominacion-visual",
     category: "Insights OOH",
     date: "30 julio 2026",
     title:
@@ -33,6 +35,7 @@ const articles = [
     image: "actualidad-raw-03.jpeg",
   },
   {
+    id: "medir-antes-de-comunicar",
     category: "Sostenibilidad",
     date: "24 julio 2026",
     title:
@@ -42,6 +45,7 @@ const articles = [
     image: "actualidad-raw-05.jpeg",
   },
   {
+    id: "circuitos-urbanos",
     category: "Educación OOH",
     date: "18 julio 2026",
     title:
@@ -51,6 +55,7 @@ const articles = [
     image: "actualidad-raw-13.jpeg",
   },
   {
+    id: "creatividad-transforma-formato",
     category: "Casos y campañas",
     date: "10 julio 2026",
     title: "Cuando la creatividad transforma el formato",
@@ -59,6 +64,7 @@ const articles = [
     image: "actualidad-raw-15.png",
   },
   {
+    id: "dooh-flexibilidad-creativa",
     category: "Innovación",
     date: "2 julio 2026",
     title: "DOOH: flexibilidad creativa para una ciudad que cambia",
@@ -70,7 +76,7 @@ const articles = [
 
 function ArticleCard({ article }: { article: (typeof articles)[number] }) {
   return (
-    <article className="font-raleway">
+    <article className="font-raleway" id={article.id}>
       <div className="aspect-[497/330] overflow-hidden bg-zinc-300">
         <img
           alt={article.title}

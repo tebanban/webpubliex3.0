@@ -120,7 +120,7 @@ export default function AboutPage() {
         <div className="mx-auto grid w-full max-w-480 gap-10 px-5 py-[clamp(4rem,5.6vw,6.75rem)] md:px-10 lg:grid-cols-[1fr_1fr] lg:px-24 xl:px-43.25">
           <div>
             <p className="font-raleway text-sm font-bold uppercase md:text-xl">
-              Nuestra historia
+              Responsabilidad empresarial
             </p>
             <h2 className="mt-8 max-w-165 font-raleway text-[clamp(2.4rem,5.4vw,4.85rem)] font-semibold leading-[0.996]">
               Compromisos que deben poder{" "}
@@ -149,7 +149,7 @@ export default function AboutPage() {
             </span>
           </h2>
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            <AboutButton href="/#actualidad" tone="white">
+            <AboutButton href="/actualidad" tone="white">
               Ver actualidad e insights
             </AboutButton>
             <AboutButton href="/contact" tone="text">

@@ -355,7 +355,9 @@ export default function HomePage() {
               relevantes en los momentos que importan.
             </p>
             <div className="mt-auto pt-8">
-              <PrimaryLink href="/contact">Explorar DOOH</PrimaryLink>
+              <PrimaryLink href="/products#pantallas-digitales">
+                Explorar DOOH
+              </PrimaryLink>
             </div>
           </article>
           <article className="flex h-full flex-col">
@@ -374,7 +376,7 @@ export default function HomePage() {
               comparte.
             </p>
             <div className="mt-auto pt-8">
-              <PrimaryLink href="/contact">
+              <PrimaryLink href="/products#innovaciones-a-la-medida">
                 Explorar proyectos especiales
               </PrimaryLink>
             </div>
@@ -508,20 +510,25 @@ export default function HomePage() {
             </div>
             <div className="mt-16 grid gap-5 md:grid-cols-3 xl:mt-28 xl:grid-cols-[486px_486px_483px] xl:gap-10">
               {cases.map((item) => (
-                <ImagePanel
-                  image={item.image}
+                <a
+                  className="block transition hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+                  href={item.href}
                   key={item.title}
-                  title={item.title}
-                  variant="case"
                 >
-                  <div className="absolute left-4 top-3.5 right-4 flex justify-between font-raleway text-[15px] font-semibold uppercase leading-normal">
-                    <span>{item.tag}</span>
-                    <span>{item.type}</span>
-                  </div>
-                  <h3 className="font-raleway text-[clamp(1.5rem,2.05vw,2.465rem)] font-semibold leading-[1.1]">
-                    {item.title}
-                  </h3>
-                </ImagePanel>
+                  <ImagePanel
+                    image={item.image}
+                    title={item.title}
+                    variant="case"
+                  >
+                    <div className="absolute left-4 top-3.5 right-4 flex justify-between font-raleway text-[15px] font-semibold uppercase leading-normal">
+                      <span>{item.tag}</span>
+                      <span>{item.type}</span>
+                    </div>
+                    <h3 className="font-raleway text-[clamp(1.5rem,2.05vw,2.465rem)] font-semibold leading-[1.1]">
+                      {item.title}
+                    </h3>
+                  </ImagePanel>
+                </a>
               ))}
             </div>
           </div>
@@ -545,22 +552,27 @@ export default function HomePage() {
             </h2>
             <div className="mt-12 grid gap-5 md:grid-cols-3 xl:grid-cols-[573px_481px_481px] xl:gap-4.75">
               {insights.map((item) => (
-                <ImagePanel
-                  image={item.image}
+                <a
+                  className="block transition hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-publiex-blue"
+                  href={item.href}
                   key={item.title}
-                  title={item.title}
-                  variant="insight"
                 >
-                  <p className="font-raleway text-xs font-bold uppercase">
-                    {item.tag}
-                  </p>
-                  <h3 className="mt-4 font-raleway text-[clamp(1.5rem,2.16vw,2.59rem)] font-semibold leading-[1.05]">
-                    {item.title}
-                  </h3>
-                  <p className="mt-4 text-sm leading-snug md:text-base">
-                    {item.description}
-                  </p>
-                </ImagePanel>
+                  <ImagePanel
+                    image={item.image}
+                    title={item.title}
+                    variant="insight"
+                  >
+                    <p className="font-raleway text-xs font-bold uppercase">
+                      {item.tag}
+                    </p>
+                    <h3 className="mt-4 font-raleway text-[clamp(1.5rem,2.16vw,2.59rem)] font-semibold leading-[1.05]">
+                      {item.title}
+                    </h3>
+                    <p className="mt-4 text-sm leading-snug md:text-base">
+                      {item.description}
+                    </p>
+                  </ImagePanel>
+                </a>
               ))}
             </div>
           </div>
