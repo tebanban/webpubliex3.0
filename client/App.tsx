@@ -23,11 +23,33 @@ import ProductsPage from "./pages/ProductsPage";
 const queryClient = new QueryClient();
 
 function ScrollToTop() {
-  const { pathname } = useLocation();
+  const { hash, pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
-  }, [pathname]);
+    if (!hash) {
+      window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+      return;
+    }
+
+    // Align hash targets below the fixed header after route content renders.
+    window.requestAnimationFrame(() => {
+      const target = document.getElementById(decodeURIComponent(hash.slice(1)));
+
+      if (!target) {
+        return;
+      }
+
+      const headerHeight =
+        document.querySelector("header")?.getBoundingClientRect().height ?? 0;
+      const top = target.getBoundingClientRect().top + window.scrollY;
+
+      window.scrollTo({
+        top: Math.max(top - headerHeight, 0),
+        left: 0,
+        behavior: "auto",
+      });
+    });
+  }, [hash, pathname]);
 
   return null;
 }

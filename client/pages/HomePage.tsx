@@ -94,12 +94,12 @@ export default function HomePage() {
               que su marca sea parte del paisaje y de la conversación.
             </p>
             <div className="mt-7 flex flex-col text-lg items-center justify-center gap-5 sm:flex-row">
-              <PrimaryLink href="/contact" weight="normal">
+              <PrimaryLink href="/products" weight="normal">
                 Diseñar mi campaña
               </PrimaryLink>
               <a
                 className="font-raleway text-lg font-normal uppercase underline underline-offset-4"
-                href="#ubicaciones"
+                href="locations"
               >
                 Explorar ubicaciones
               </a>
@@ -184,7 +184,7 @@ export default function HomePage() {
               </span>
             </p>
             <h2 className="font-raleway text-[clamp(2.5rem,6vw,4.965rem)] font-bold lowercase leading-[1.04]">
-              mirando hacia adelante.
+              viendo hacia adelante.
             </h2>
             <p className="font-uni mt-8 text-[clamp(1.25rem,1.65vw,1.965rem)] leading-tight">
               Somos una empresa especializada desde 1999 en el campo de la
@@ -220,7 +220,7 @@ export default function HomePage() {
               </h2>
               <a
                 className="relative pb-1 font-raleway text-sm font-extrabold uppercase after:absolute after:bottom-0 after:left-0 after:h-px after:w-screen after:bg-publiex-red after:content-['']"
-                href="/contact"
+                href="/products"
               >
                 Ver todas las soluciones
               </a>
@@ -242,7 +242,7 @@ export default function HomePage() {
                     <div className="mt-[clamp(0.2rem,1.2cqw,0.50rem)] w-full border-t border-white pt-[clamp(0.35rem,2.2cqw,0.85rem)]">
                       <a
                         className="font-raleway text-[clamp(0.55rem,2.2cqw,0.7rem)] font-black uppercase tracking-[0.18em] transition hover:text-white/75"
-                        href="/contact"
+                        href="/products"
                       >
                         Explorar
                       </a>
@@ -274,7 +274,7 @@ export default function HomePage() {
               impacto en rutas, intersecciones y puntos urbanos estratégicos.
             </p>
             <div className="mt-9">
-              <PrimaryLink href="/contact">Explorar gran formato</PrimaryLink>
+              <PrimaryLink href="/products">Explorar gran formato</PrimaryLink>
             </div>
           </div>
         </div>
@@ -610,6 +610,3 @@ export default function HomePage() {
     </main>
   );
 }
-
-
-
