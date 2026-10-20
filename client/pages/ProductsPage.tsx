@@ -173,7 +173,7 @@ const productGroups = [
       {
         id: "pantallas-digitales",
         title: "Pantallas Digitales",
-        image: "products-digitalscreen.mp4",
+        image: "products-digitalscreen.gif",
         badge: "Agilidad + iluminación",
         description:
           "Pantallas de alta visibilidad que permiten alternar piezas, actualizar mensajes y aprovechar el movimiento creativo.",
@@ -241,11 +241,43 @@ const campaignSystems = [
   },
 ];
 
+// Product-specific image sequences controlled by the feature tags.
+const productFeatureImages: Record<string, string[]> = {
+  "vallas-unipolares": [
+    "products-cobertura-progresiva.png",
+    "products-cobertura-estrategica.png",
+    "products-alcance-territorial.png",
+    "products-presencia-nocturna.png",
+  ],
+  "mega-landmarks": [
+    "products-escala-iconica.png",
+    "products-dominacion-zona.png",
+    "products-mega-landmarks.png",
+  ],
+  "circuitos-rotativos": [
+    "products-circuitos-rotativos.png",
+    "products-frecuencia-secuencial.png",
+    "products-frecuencia-secuencial.png",
+  ],
+  trenes: [
+    "products-trenes.png",
+    "products-contexto-urbano.JPG",
+    "products-diversidad-flota.JPG",
+  ],
+  "innovaciones-a-la-medida": [
+    "products-ruptura-visual.png",
+    "products-proyectos-especiales.png",
+    "products-impacto-luminico.png",
+  ],
+};
+
 type Product = (typeof productGroups)[number]["products"][number];
 
 function ProductCard({ product }: { product: Product }) {
   const [activeTagIndex, setActiveTagIndex] = useState(0);
-  const isVideo = product.image.endsWith(".mp4");
+  const activeImage =
+    productFeatureImages[product.id]?.[activeTagIndex] ?? product.image;
+  const isVideo = activeImage.endsWith(".mp4");
 
   return (
     <article className="bg-white p-2 shadow-sm md:p-8 xl:p-16" id={product.id}>
@@ -304,19 +336,19 @@ function ProductCard({ product }: { product: Product }) {
             muted
             playsInline
           >
-            <source src={publiexAsset(product.image)} type="video/mp4" />
+            <source src={publiexAsset(activeImage)} type="video/mp4" />
           </video>
         ) : (
           <img
             alt={product.title}
             className="absolute inset-0 size-full object-cover"
-            src={publiexAsset(product.image)}
+            src={publiexAsset(activeImage)}
           />
         )}
         <div className="absolute inset-0 bg-linear-to-b from-transparent via-black/35 to-black/85" />
         <div className="relative flex min-h-[clamp(30rem,42.8vw,51.375rem)] flex-col justify-end px-[clamp(1.5rem,2.7vw,3.25rem)] pb-[clamp(1rem,1.5vw,1.75rem)] pt-[clamp(1.5rem,2.7vw,3.25rem)]">
           <p className="font-raleway text-xl font-extrabold uppercase">
-            {product.tags[0]}
+            {product.tags[activeTagIndex]}
           </p>
           <h4 className="mt-8 max-w-265 font-raleway text-[clamp(2rem,5vw,4.85rem)] font-semibold leading-[0.996]">
             {product.overlayTitle}
