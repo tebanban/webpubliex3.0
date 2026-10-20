@@ -171,7 +171,7 @@ export default function HomePage() {
         <img
           alt="Estructura de publicidad exterior Publiex"
           className="absolute inset-0 size-full object-cover"
-          src={publiexAsset("figma-about.jpeg")}
+          src={publiexAsset("figma-about.jpg")}
         />
         <div className="absolute inset-0 bg-black/35" />
         <div className="relative mx-auto flex min-h-[clamp(43.75rem,55.3vw,66.375rem)] w-full max-w-480 items-center justify-end px-5 py-[clamp(5rem,8vw,9.5rem)] md:px-10 lg:px-24">
