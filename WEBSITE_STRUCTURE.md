@@ -326,7 +326,7 @@ Current sections:
    - Headline: "Experiencia que se ve. Respaldo que se siente."
    - Body copy about Publiex's work since 1999.
    - CTA: "Descubrir nuestra historia", linking to `#historia`.
-   - Right image: `about-hero-billboard.png`.
+   - Right image: `About-hero.png`.
 
 2. History Overview
    - White background.
@@ -415,7 +415,7 @@ File: `client/pages/CaseStudiesPage.tsx`
 Current sections:
 
 1. Hero
-   - Full-width photographic hero using `cases-figma-hero.jpeg`.
+   - Full-width photographic hero using `casestudies-hero.png`.
    - Transparent header behavior is preserved for this route.
    - Large centered title: "Casos de éxito".
 
@@ -424,9 +424,9 @@ Current sections:
    - Eyebrow: Noticias.
    - Headline: "Campañas que se volvieron parte del viaje".
    - Three large white case blocks:
-     - Landmark: image-top layout using `cases-figma-landmark.jpeg`.
-     - Trenes: alternating image-right layout using `cases-figma-train.jpeg`.
-     - DOOH: image-top layout using `cases-figma-dooh.jpeg`.
+     - Landmark: image-top layout using `casestudies-landmark.png`.
+     - Trenes: alternating image-right layout using `casestudies-tren.png`.
+     - DOOH: image-top layout using `casestudies-dooh.mp4`.
    - Case content is driven by the local `caseStudies` array.
 
 ## Info Trenes Page
@@ -454,7 +454,7 @@ Current sections:
    - Each row includes a consultation CTA.
 
 5. Campaign Ecosystem CTA
-   - Red text block paired with train image `info-trenes-cta.jpeg`.
+   - Red text block paired with train image `infotren-reach.png`.
    - CTA links to `/contact`.
 
 ## Contact Page
