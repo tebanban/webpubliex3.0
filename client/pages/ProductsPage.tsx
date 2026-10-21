@@ -369,6 +369,7 @@ function ProductCard({ product }: { product: Product }) {
             aria-label={product.title}
             autoPlay
             className="absolute inset-0 size-full object-cover"
+            key={activeImage}
             loop
             muted
             playsInline
@@ -379,6 +380,8 @@ function ProductCard({ product }: { product: Product }) {
           <img
             alt={product.title}
             className="absolute inset-0 size-full object-cover"
+            key={activeImage}
+            loading="eager"
             src={publiexAsset(activeImage)}
           />
         )}
@@ -424,6 +427,7 @@ function ProductCard({ product }: { product: Product }) {
 
               return tag ? (
                 <button
+                  aria-pressed={index === activeTagIndex}
                   className={`text-center leading-tight transition hover:text-white/75 ${
                     index === activeTagIndex ? "text-white" : "text-white/75"
                   }`}
