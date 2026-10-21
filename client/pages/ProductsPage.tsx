@@ -93,7 +93,11 @@ const productGroups = [
         overlayTitle: "Varias piezas. Una sola historia de marca.",
         overlayCopy:
           "La marca aparece en distintos puntos del trayecto y refuerza el mensaje por repetición contextual.",
-        tags: ["Cobertura multiplicada", "Secuencia", "Frecuencia"],
+        tags: [
+          "Frecuencia secuencial",
+          "Narrativa por etapas",
+          "Cobertura progresiva",
+        ],
         link: "Diseñar circuito",
       },
       {
@@ -159,7 +163,7 @@ const productGroups = [
         overlayTitle: "Acompaña a la ciudad mientras avanza.",
         overlayCopy:
           "El transporte permite presencia móvil, repetida y cercana a rutinas reales de movilidad.",
-        tags: ["Movilidad", "Cobertura", "Contacto diario"],
+        tags: ["Marca en movimiento", "Contexto urbano", "Diversidad de flota"],
         link: "Planificar campaña en trenes",
       },
     ],
@@ -244,7 +248,7 @@ const campaignSystems = [
 // Product-specific image sequences controlled by the feature tags.
 const productFeatureImages: Record<string, string[]> = {
   "vallas-unipolares": [
-    "products-cobertura-progresiva.png",
+    "products-vallas-unipolares.png",
     "products-cobertura-estrategica.png",
     "products-alcance-territorial.png",
     "products-presencia-nocturna.png",
@@ -255,9 +259,9 @@ const productFeatureImages: Record<string, string[]> = {
     "products-mega-landmarks.png",
   ],
   "circuitos-rotativos": [
+    "products-frecuencia-secuencial.png",
     "products-circuitos-rotativos.png",
-    "products-frecuencia-secuencial.png",
-    "products-frecuencia-secuencial.png",
+    "products-cobertura-progresiva.png",
   ],
   trenes: [
     "products-trenes.png",
@@ -271,12 +275,45 @@ const productFeatureImages: Record<string, string[]> = {
   ],
 };
 
+// Descriptive copy follows the active image feature in each product carousel.
+const productFeatureDescriptions: Record<string, string[]> = {
+  "vallas-unipolares": [
+    "La ubicación y la altura mantienen a la marca dentro del campo visual durante la aproximación.",
+    "Los corredores empresariales y comerciales conectan la campaña con audiencias de alto valor.",
+    "Una presencia clara en rutas interurbanas amplía la cobertura y acompaña viajes de mayor duración.",
+    "La iluminación extiende el valor del activo y conserva contraste en horarios nocturnos.",
+  ],
+  "mega-landmarks": [
+    "El gran formato y los elementos especiales convierten la campaña en un punto de referencia.",
+    "La amplitud del soporte y el contexto vial construyen reconocimiento desde diferentes aproximaciones.",
+    "Un frente amplio favorece mensajes simples, productos visibles y una lectura clara en movimiento.",
+  ],
+  "circuitos-rotativos": [
+    "La repetición entre varios puntos aumenta oportunidades de contacto y sostiene la recordación.",
+    "El circuito permite distribuir mensajes complementarios sin depender de una única ejecución.",
+    "La combinación de activos amplía la zona de influencia y genera continuidad territorial.",
+  ],
+  trenes: [
+    "El tren conecta movilidad, rutina y múltiples puntos de exposición dentro de un mismo medio.",
+    "La operación urbana inserta la marca en recorridos cotidianos de trabajo, estudio y conexión.",
+    "Cada tipo de tren ofrece superficies y momentos de contacto que pueden combinarse estratégicamente.",
+  ],
+  "innovaciones-a-la-medida": [
+    "Los elementos salientes transforman un gran formato en una ejecución con mayor capacidad de sorpresa.",
+    "Volumétricos, sobrepuestos e iluminación permiten construir una experiencia propia para la marca.",
+    "La iluminación convierte el activo en un foco visual dentro del paisaje nocturno.",
+  ],
+};
+
 type Product = (typeof productGroups)[number]["products"][number];
 
 function ProductCard({ product }: { product: Product }) {
   const [activeTagIndex, setActiveTagIndex] = useState(0);
   const activeImage =
     productFeatureImages[product.id]?.[activeTagIndex] ?? product.image;
+  const activeDescription =
+    productFeatureDescriptions[product.id]?.[activeTagIndex] ??
+    product.overlayCopy;
   const isVideo = activeImage.endsWith(".mp4");
 
   return (
@@ -354,7 +391,7 @@ function ProductCard({ product }: { product: Product }) {
             {product.overlayTitle}
           </h4>
           <p className="mt-8 max-w-157 font-raleway text-lg leading-tight md:text-xl">
-            {product.overlayCopy}
+            {activeDescription}
           </p>
           <div
             className="mt-8 grid h-1 w-full gap-0.5"
