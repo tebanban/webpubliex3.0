@@ -126,7 +126,7 @@ export const articles: Article[] = [
     title: "DOOH: flexibilidad creativa para una ciudad que cambia",
     description:
       "Una perspectiva práctica para transformar objetivos de campaña en decisiones de medios.",
-    image: "actualidad-raw-16.jpeg",
+    image: "actualidad-innovacion.jpeg",
     imageAlt: "Pantalla digital de publicidad exterior",
     intro:
       "Una perspectiva práctica para transformar objetivos de campaña en decisiones de medios.",
