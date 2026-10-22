@@ -107,15 +107,15 @@ const productGroups = [
         badge: "Presencia secuencial",
         description:
           "Piezas de alto recorrido visual instaladas en avenidas, rotondas y rutas urbanas estratégicas.",
-        benefits: ["Frecuencia", "Continuidad", "Escala urbana"],
+        benefits: ["Frecuencia"],
         bestFor:
           "Marcas que necesitan repetición visible en recorridos cotidianos y corredores comerciales.",
         difference:
           "Transforma una ruta completa en una secuencia de marca, no en un único impacto aislado.",
         overlayTitle: "Una avenida completa hablando de su marca.",
         overlayCopy:
-          "Cada punto suma continuidad y refuerza la presencia durante el trayecto urbano.",
-        tags: ["Continuidad", "Frecuencia", "Recorrido"],
+          "La acumulación de caras crea repetición visual y acompaña a peatones y vehículos durante el recorrido.",
+        tags: ["Continuidad urbana"],
         link: "Explorar banner posts",
       },
       {
@@ -132,8 +132,8 @@ const productGroups = [
           "Aprovecha estructuras urbanas existentes para aparecer en momentos naturales del recorrido.",
         overlayTitle: "Presencia integrada al trayecto cotidiano.",
         overlayCopy:
-          "El mensaje acompaña movimientos diarios con ubicaciones familiares para la audiencia.",
-        tags: ["Puentes", "Urbano", "Trayecto"],
+          "Los formatos urbanos aparecen dentro del flujo natural y refuerzan otros activos cercanos.",
+        tags: ["Visibilidad Transversal"],
         link: "Ver formatos urbanos",
       },
     ],
@@ -315,6 +315,8 @@ function ProductCard({ product }: { product: Product }) {
     productFeatureDescriptions[product.id]?.[activeTagIndex] ??
     product.overlayCopy;
   const isVideo = activeImage.endsWith(".mp4");
+  const showFeatureControls =
+    product.id !== "banner-posts" && product.id !== "puentes-formatos-urbanos";
 
   return (
     <article className="bg-white p-2 shadow-sm md:p-8 xl:p-16" id={product.id}>
@@ -396,52 +398,59 @@ function ProductCard({ product }: { product: Product }) {
           <p className="mt-8 max-w-157 font-raleway text-lg leading-tight md:text-xl">
             {activeDescription}
           </p>
-          <div
-            className="mt-8 grid h-1 w-full gap-0.5"
-            style={{
-              gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
-            }}
-          >
-            {Array.from({ length: 4 }).map((_, index) => (
+          {/* Hide carousel controls for these static product features. */}
+          {showFeatureControls && (
+            <>
               <div
-                aria-hidden="true"
-                className={
-                  product.tags[index]
-                    ? index === activeTagIndex
-                      ? "bg-publiex-red"
-                      : "bg-white/45"
-                    : "bg-transparent"
-                }
-                key={product.tags[index] ?? `empty-${index}`}
-              />
-            ))}
-          </div>
-          <div
-            className="mt-3 grid gap-x-4 gap-y-2 font-raleway text-[clamp(0.6rem,0.9vw,1.6525rem)] font-bold uppercase"
-            style={{
-              gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
-            }}
-          >
-            {Array.from({ length: 4 }).map((_, index) => {
-              const tag = product.tags[index];
+                className="mt-8 grid h-1 w-full gap-0.5"
+                style={{
+                  gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
+                }}
+              >
+                {Array.from({ length: 4 }).map((_, index) => (
+                  <div
+                    aria-hidden="true"
+                    className={
+                      product.tags[index]
+                        ? index === activeTagIndex
+                          ? "bg-publiex-red"
+                          : "bg-white/45"
+                        : "bg-transparent"
+                    }
+                    key={product.tags[index] ?? `empty-${index}`}
+                  />
+                ))}
+              </div>
+              <div
+                className="mt-3 grid gap-x-4 gap-y-2 font-raleway text-[clamp(0.6rem,0.9vw,1.6525rem)] font-bold uppercase"
+                style={{
+                  gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
+                }}
+              >
+                {Array.from({ length: 4 }).map((_, index) => {
+                  const tag = product.tags[index];
 
-              return tag ? (
-                <button
-                  aria-pressed={index === activeTagIndex}
-                  className={`text-center leading-tight transition hover:text-white/75 ${
-                    index === activeTagIndex ? "text-white" : "text-white/75"
-                  }`}
-                  key={tag}
-                  onClick={() => setActiveTagIndex(index)}
-                  type="button"
-                >
-                  {tag}
-                </button>
-              ) : (
-                <span aria-hidden="true" key={`empty-${index}`} />
-              );
-            })}
-          </div>
+                  return tag ? (
+                    <button
+                      aria-pressed={index === activeTagIndex}
+                      className={`text-center leading-tight transition hover:text-white/75 ${
+                        index === activeTagIndex
+                          ? "text-white"
+                          : "text-white/75"
+                      }`}
+                      key={tag}
+                      onClick={() => setActiveTagIndex(index)}
+                      type="button"
+                    >
+                      {tag}
+                    </button>
+                  ) : (
+                    <span aria-hidden="true" key={`empty-${index}`} />
+                  );
+                })}
+              </div>
+            </>
+          )}
         </div>
       </div>
       <a
