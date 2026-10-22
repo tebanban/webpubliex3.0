@@ -57,7 +57,7 @@ export default function AboutPage() {
             <img
               alt="Valla Publiex de gran formato en Costa Rica"
               className="size-full object-cover object-center"
-              src={publiexAsset("About-hero.png")}
+              src={publiexAsset("about-hero.png")}
             />
           </div>
         </div>
