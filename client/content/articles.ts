@@ -66,15 +66,15 @@ export const articles: Article[] = [
     title:
       "Medir antes de comunicar: una ruta responsable para la sostenibilidad en OOH",
     description:
-      "Qué información debe documentar una empresa de publicidad exterior para construir indicadores verificables.",
-    image: "actualidad-raw-05.jpeg",
+      "La credibilidad comienza con una línea base, una metodología y evidencia que pueda explicarse",
+    image: "actualidad-sostenibilidad.webp",
     imageAlt: "Soporte de publicidad exterior integrado a su entorno",
     intro:
-      "Una comunicación responsable sobre sostenibilidad empieza por documentar las decisiones y sus resultados.",
+      "La credibilidad comienza con una línea base, una metodología y evidencia que pueda explicarse",
     paragraphs: [
-      "Antes de comunicar un compromiso ambiental, conviene definir qué se está midiendo. Los materiales, el consumo de energía, el mantenimiento y el destino de las piezas al terminar una campaña son aspectos que requieren información específica.",
-      "Un registro útil identifica el alcance, el periodo y la fuente de cada dato. También distingue entre acciones ejecutadas, objetivos futuros y resultados verificados, para que el mensaje refleje lo que realmente puede demostrarse.",
-      "Pedir esta información desde la planificación facilita conversaciones más claras entre la marca, sus proveedores y el equipo creativo. La transparencia permite comunicar avances con información documentada.",
+      "Los compromisos ambientales y sociales adquieren valor cuando pueden demostrarse. Antes de publicar porcentajes o metas, una empresa debe definir qué mide, durante qué periodo, con qué fuente y quién valida el resultado.",
+      "En publicidad exterior, una línea base puede incluir materiales utilizados y recuperados, destino final, consumo energético, mantenimiento, seguridad ocupacional, empleo, compras nacionales y participación comunitaria.",
+      "El siguiente paso es asignar responsables, periodicidad y controles. Solo entonces las cifras pueden convertirse en indicadores públicos claros, comparables y útiles para clientes, aliados y comunidades.",
     ],
     quote:
       "La confianza se construye con información que puede explicarse y verificarse.",
