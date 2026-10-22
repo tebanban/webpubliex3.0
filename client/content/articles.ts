@@ -37,7 +37,6 @@ export const articles: Article[] = [
     quote:
       "Una buena decisión de OOH comienza por definir qué debe lograr la marca en la vida real.",
   },
-  // Draft article bodies extend the existing previews until final editorial copy is supplied.
   {
     id: "dominacion-visual",
     category: "Insights OOH",
@@ -46,18 +45,19 @@ export const articles: Article[] = [
     title:
       "De visibilidad a dominación visual: cuándo una ubicación se convierte en territorio de marca",
     description:
-      "Escala, contexto, continuidad y creatividad: cuatro variables para planificar gran formato con intención.",
-    image: "actualidad-raw-03.jpeg",
+      "La escala funciona mejor cuando se combina con contexto, continuidad y una idea creativa clara.",
+    image: "actualidad-insights-ooh.webp",
     imageAlt: "Publicidad exterior de gran formato en un entorno urbano",
     intro:
-      "Una ubicación puede hacer visible un mensaje y también convertirse en una referencia para la marca.",
+      "La escala funciona mejor cuando se combina con contexto, continuidad y una idea creativa clara.",
     paragraphs: [
-      "La dominación visual comienza por comprender el entorno. La escala del soporte, los accesos y la distancia de lectura determinan cómo se descubre un mensaje y cuánto espacio tiene para comunicar su idea.",
-      "Una pieza de gran formato necesita una jerarquía clara: una idea principal, una marca reconocible y un contraste que facilite la lectura. Cada elemento debe aportar al objetivo de la campaña.",
-      "La ubicación se convierte en territorio de marca cuando el formato, el mensaje y el contexto trabajan juntos. Planificar esa relación permite elegir entre una presencia puntual y una secuencia de contactos en rutas complementarias.",
+      "Una ubicación de gran formato no se evalúa solo por sus dimensiones. La aproximación, el ángulo de lectura, el entorno, el flujo y la posibilidad de extender visualmente la idea determinan su verdadero potencial.",
+      "Los mega landmarks pueden convertir una estructura en referencia urbana. Las vallas de aproximación y los circuitos complementarios ayudan a construir anticipación, frecuencia y continuidad alrededor del punto dominante.",
+      "La planificación debe comenzar por el objetivo de campaña y no por el formato aislado. Cuando cada pieza cumple un papel, la marca deja de ocupar un soporte y empieza a apropiarse del recorrido.",
     ],
     quote: "La escala gana atención cuando está al servicio de una idea clara.",
   },
+  // Draft article bodies extend the existing previews until final editorial copy is supplied.
   {
     id: "medir-antes-de-comunicar",
     category: "Sostenibilidad",
