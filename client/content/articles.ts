@@ -24,7 +24,7 @@ export const articles: Article[] = [
       "Publicidad en movimiento: cómo acompañar a la audiencia durante su recorrido",
     description:
       "Una mirada a las posibilidades de integrar presencia exterior, experiencias interiores y frecuencia urbana.",
-    image: "actualidad-raw-02.jpeg",
+    image: "article-publicidad-en-movimiento.png",
     heroImage: "article-publicidad-en-movimiento.png",
     imageAlt: "Tren con publicidad exterior al atardecer",
     intro:
@@ -88,7 +88,7 @@ export const articles: Article[] = [
       "Circuitos urbanos: por qué la repetición convierte un recorrido en una experiencia de marca",
     description:
       "Una perspectiva práctica para transformar objetivos de campaña en decisiones de medios.",
-    image: "actualidad-educacion.webp",
+    image: "actualidad-educacion.png",
     imageAlt: "Publicidad en un corredor urbano",
     intro:
       "Una perspectiva práctica para transformar objetivos de campaña en decisiones de medios.",
@@ -105,16 +105,15 @@ export const articles: Article[] = [
     publishedAt: "2026-07-10",
     title: "Cuando la creatividad transforma el formato",
     description:
-      "Volumetría, iluminación y elementos salientes pueden convertir el medio en parte de la idea.",
-    image: "actualidad-raw-15.png",
+      "El soporte puede formar parte de la idea cuando la creatividad considera el espacio y su contexto.",
+    image: "actualidad-casos.jpg",
     imageAlt:
       "Ejecución creativa de publicidad exterior con elementos especiales",
     intro:
       "El soporte puede formar parte de la idea cuando la creatividad considera el espacio y su contexto.",
     paragraphs: [
-      "Una campaña exterior puede explorar elementos que amplíen la superficie convencional: volumetría, salientes, sobrepuestos o iluminación. La decisión creativa empieza por identificar qué recurso ayuda a expresar mejor la idea de la marca.",
-      "El desarrollo requiere coordinar diseño y ejecución. Las características de la ubicación, la visibilidad y las condiciones técnicas deben revisarse antes de definir la propuesta final, para que la pieza pueda leerse con claridad en su entorno.",
-      "Una intervención especial funciona mejor cuando el recurso visual tiene una relación directa con el mensaje. El objetivo es que el formato refuerce la campaña y convierta la atención inicial en reconocimiento de marca.",
+      "La publicidad exterior combina ubicación, formato, contexto y frecuencia. Su capacidad para construir presencia depende de cómo se articulan esas variables alrededor de un objetivo concreto.",
+      "Cada campaña requiere una arquitectura distinta. Publiex acompaña ese proceso con criterio estratégico, conocimiento operativo y soluciones adaptadas a cada marca.",
     ],
     quote:
       "Una ejecución memorable conecta la forma del soporte con el mensaje.",

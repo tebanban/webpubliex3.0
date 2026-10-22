@@ -18,7 +18,7 @@ function ArticleCard({ article }: { article: Article }) {
   return (
     <article className="font-raleway" id={article.id}>
       <Link
-        className="block aspect-[497/330] overflow-hidden bg-zinc-300"
+        className="block aspect-497/330 overflow-hidden bg-zinc-300"
         to={`/actualidad/${article.id}`}
         aria-label={article.title}
       >
@@ -79,7 +79,7 @@ export default function ActualidadPage() {
       {/* Section 2, Featured story */}
       <section className="overflow-hidden bg-white px-5 py-[clamp(3rem,5vw,6rem)] md:px-10 lg:px-24">
         <div className="mx-auto grid w-full max-w-393.5 gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.76fr)] lg:items-center xl:gap-12">
-          <div className="relative aspect-[835/788] overflow-hidden bg-zinc-300 lg:aspect-[835/788]">
+          <div className="relative aspect-835/788 overflow-hidden bg-zinc-300 lg:aspect-835/788">
             <img
               alt="Tren en movimiento al atardecer"
               className="size-full object-cover"
