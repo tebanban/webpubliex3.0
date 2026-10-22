@@ -87,15 +87,14 @@ export const articles: Article[] = [
     title:
       "Circuitos urbanos: por qué la repetición convierte un recorrido en una experiencia de marca",
     description:
-      "La continuidad visual ayuda a construir frecuencia y recordación a lo largo de corredores estratégicos.",
-    image: "actualidad-raw-13.jpeg",
+      "Una perspectiva práctica para transformar objetivos de campaña en decisiones de medios.",
+    image: "actualidad-educacion.webp",
     imageAlt: "Publicidad en un corredor urbano",
     intro:
-      "Los circuitos conectan distintos puntos de la ciudad para que un mensaje acompañe los recorridos cotidianos.",
+      "Una perspectiva práctica para transformar objetivos de campaña en decisiones de medios.",
     paragraphs: [
-      "Un circuito urbano organiza varias ubicaciones alrededor de un objetivo de comunicación. Su valor depende de cómo los puntos se relacionan con las rutas de la audiencia y de la coherencia del mensaje entre una pieza y otra.",
-      "La repetición puede ayudar a reconocer una campaña, mientras que pequeñas variaciones creativas permiten desarrollar una misma idea. Mantener la identidad visual y una lectura sencilla facilita que cada contacto forme parte de una historia común.",
-      "Para planificar el circuito, es útil definir las zonas prioritarias, los momentos de contacto y la duración de la campaña. Así, la selección de soportes responde a un recorrido concreto y a la función que cada ubicación debe cumplir.",
+      "La publicidad exterior combina ubicación, formato, contexto y frecuencia. Su capacidad para construir presencia depende de cómo se articulan esas variables alrededor de un objetivo concreto.",
+      "Cada campaña requiere una arquitectura distinta. Publiex acompaña ese proceso con criterio estratégico, conocimiento operativo y soluciones adaptadas a cada marca.",
     ],
     quote: "Cada punto del recorrido debe sumar a la misma historia de marca.",
   },
