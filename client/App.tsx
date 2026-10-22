@@ -10,6 +10,7 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { SiteLayout } from "./components/layout/SiteLayout";
 import AboutPage from "./pages/AboutPage";
 import ActualidadPage from "./pages/ActualidadPage";
+import ArticlePage from "./pages/ArticlePage";
 import AgenciesPage from "./pages/AgenciesPage";
 import CaseStudiesPage from "./pages/CaseStudiesPage";
 import ContactPage from "./pages/ContactPage";
@@ -67,6 +68,7 @@ const App = () => (
             <Route path="/products" element={<ProductsPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/actualidad" element={<ActualidadPage />} />
+            <Route path="/actualidad/:slug" element={<ArticlePage />} />
             <Route path="/agencies" element={<AgenciesPage />} />
             <Route path="/landlords" element={<LandlordsPage />} />
             <Route path="/locations" element={<LocationsPage />} />
@@ -82,6 +84,3 @@ const App = () => (
 );
 
 createRoot(document.getElementById("root")!).render(<App />);
-
-
-

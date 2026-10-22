@@ -1,5 +1,6 @@
 ﻿import { Link } from "react-router-dom";
 
+import { articles, type Article } from "@/content/articles";
 import { publiexAsset } from "@/lib/assets";
 
 const articleFilters = [
@@ -13,89 +14,38 @@ const articleFilters = [
   "Prensa",
 ];
 
-const articles = [
-  {
-    id: "publicidad-en-movimiento",
-    category: "Innovación",
-    date: "5 agosto 2026",
-    title:
-      "Publicidad en movimiento: cómo acompañar a la audiencia durante su recorrido",
-    description:
-      "Una mirada a las posibilidades de integrar presencia exterior, experiencias interiores y frecuencia urbana.",
-    image: "actualidad-raw-02.jpeg",
-  },
-  {
-    id: "dominacion-visual",
-    category: "Insights OOH",
-    date: "30 julio 2026",
-    title:
-      "De visibilidad a dominación visual: cuándo una ubicación se convierte en territorio de marca",
-    description:
-      "Escala, contexto, continuidad y creatividad: cuatro variables para planificar gran formato con intención.",
-    image: "actualidad-raw-03.jpeg",
-  },
-  {
-    id: "medir-antes-de-comunicar",
-    category: "Sostenibilidad",
-    date: "24 julio 2026",
-    title:
-      "Medir antes de comunicar: una ruta responsable para la sostenibilidad en OOH",
-    description:
-      "Qué información debe documentar una empresa de publicidad exterior para construir indicadores verificables.",
-    image: "actualidad-raw-05.jpeg",
-  },
-  {
-    id: "circuitos-urbanos",
-    category: "Educación OOH",
-    date: "18 julio 2026",
-    title:
-      "Circuitos urbanos: por qué la repetición convierte un recorrido en una experiencia de marca",
-    description:
-      "La continuidad visual ayuda a construir frecuencia y recordación a lo largo de corredores estratégicos.",
-    image: "actualidad-raw-13.jpeg",
-  },
-  {
-    id: "creatividad-transforma-formato",
-    category: "Casos y campañas",
-    date: "10 julio 2026",
-    title: "Cuando la creatividad transforma el formato",
-    description:
-      "Volumetría, iluminación y elementos salientes pueden convertir el medio en parte de la idea.",
-    image: "actualidad-raw-15.png",
-  },
-  {
-    id: "dooh-flexibilidad-creativa",
-    category: "Innovación",
-    date: "2 julio 2026",
-    title: "DOOH: flexibilidad creativa para una ciudad que cambia",
-    description:
-      "Contenido dinámico, iluminación y actualización ágil para campañas con mayor capacidad de adaptación.",
-    image: "actualidad-raw-16.jpeg",
-  },
-];
-
-function ArticleCard({ article }: { article: (typeof articles)[number] }) {
+function ArticleCard({ article }: { article: Article }) {
   return (
     <article className="font-raleway" id={article.id}>
-      <div className="aspect-[497/330] overflow-hidden bg-zinc-300">
+      <Link
+        className="block aspect-[497/330] overflow-hidden bg-zinc-300"
+        to={`/actualidad/${article.id}`}
+        aria-label={article.title}
+      >
         <img
-          alt={article.title}
+          alt={article.imageAlt}
           className="size-full object-cover"
           src={publiexAsset(article.image)}
         />
-      </div>
+      </Link>
       <p className="mt-5 text-[clamp(0.7rem,0.78vw,0.9375rem)] font-bold uppercase leading-tight text-publiex-blue">
         {article.category} · {article.date}
       </p>
       <h3 className="mt-4 min-h-[5.7rem] text-[clamp(1.45rem,1.9vw,2.25rem)] font-normal leading-[0.95] text-black">
-        {article.title}
+        <Link
+          className="transition hover:text-publiex-blue"
+          to={`/actualidad/${article.id}`}
+        >
+          {article.title}
+        </Link>
       </h3>
       <p className="mt-4 min-h-[3.8rem] text-[clamp(0.95rem,1.1vw,1.375rem)] leading-tight text-black">
         {article.description}
       </p>
       <Link
         className="mt-6 block border-b border-zinc-300 pb-5 text-[clamp(0.7rem,0.78vw,0.9375rem)] font-bold uppercase text-publiex-blue transition hover:text-publiex-blue-light"
-        to="/contact"
+        to={`/actualidad/${article.id}`}
+        aria-label={`Leer más: ${article.title}`}
       >
         Leer más
       </Link>
@@ -141,12 +91,15 @@ export default function ActualidadPage() {
           </div>
           <div className="font-raleway">
             <h2 className="max-w-162 font-raleway text-[clamp(2.2rem,4vw,4.85rem)] font-semibold leading-[0.996]">
-              Publicidad en movimiento: cómo acompañar a la audiencia durante su
-              recorrido
+              <Link
+                className="transition hover:text-publiex-blue"
+                to={`/actualidad/${articles[0].id}`}
+              >
+                {articles[0].title}
+              </Link>
             </h2>
             <p className="mt-8 max-w-143 text-[clamp(1.05rem,1.43vw,1.715rem)] leading-tight">
-              Una mirada a las posibilidades de integrar presencia exterior,
-              experiencias interiores y frecuencia urbana.
+              {articles[0].description}
             </p>
           </div>
         </div>
