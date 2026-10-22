@@ -125,15 +125,14 @@ export const articles: Article[] = [
     publishedAt: "2026-07-02",
     title: "DOOH: flexibilidad creativa para una ciudad que cambia",
     description:
-      "Contenido dinámico, iluminación y actualización ágil para campañas con mayor capacidad de adaptación.",
+      "Una perspectiva práctica para transformar objetivos de campaña en decisiones de medios.",
     image: "actualidad-raw-16.jpeg",
     imageAlt: "Pantalla digital de publicidad exterior",
     intro:
-      "Las pantallas digitales permiten adaptar el contenido y explorar nuevas formas de comunicar en el exterior.",
+      "Una perspectiva práctica para transformar objetivos de campaña en decisiones de medios.",
     paragraphs: [
-      "DOOH incorpora contenido digital a la publicidad exterior. Una pantalla puede alternar piezas y actualizar mensajes durante una campaña, según las condiciones acordadas para cada soporte.",
-      "La flexibilidad creativa necesita una planificación clara. Conviene definir qué mensajes se alternarán, cómo se reconocerá la marca y qué papel tendrá el movimiento, sin perder de vista que la audiencia puede disponer de pocos segundos para leer.",
-      "La selección del formato debe considerar la ubicación, el contexto y el objetivo. Una propuesta eficaz combina una idea sencilla con recursos digitales que aporten al mensaje y una revisión previa de las posibilidades de ejecución.",
+      "La publicidad exterior combina ubicación, formato, contexto y frecuencia. Su capacidad para construir presencia depende de cómo se articulan esas variables alrededor de un objetivo concreto.",
+      "Cada campaña requiere una arquitectura distinta. Publiex acompaña ese proceso con criterio estratégico, conocimiento operativo y soluciones adaptadas a cada marca.",
     ],
     quote:
       "La flexibilidad del medio aporta valor cuando cada cambio tiene un propósito.",
