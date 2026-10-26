@@ -12,6 +12,7 @@ const navItems = [
   ["Analítica", "/#analitica"],
   ["Actualidad", "/actualidad"],
   ["Casos", "/case-studies"],
+  ["Postular Propiedad", "/landlords"],
 ];
 
 const transparentHeroPaths = new Set(["/", "/products", "/case-studies"]);
