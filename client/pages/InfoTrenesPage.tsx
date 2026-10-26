@@ -95,10 +95,10 @@ export default function InfoTrenesPage() {
       <section className="relative overflow-hidden bg-publiex-blue-deep text-white">
         <img
           alt="Tren Publiex con publicidad exterior"
-          className="absolute inset-0 size-full object-cover object-[64%_center] opacity-90"
+          className="absolute inset-0 size-full object-contain object-center opacity-90"
           src={publiexAsset("info-trenes-hero.jpeg")}
         />
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.88)_0%,rgba(0,0,0,0.72)_32%,rgba(0,0,0,0)_58%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.98)_0%,rgba(0,0,0,0.72)_32%,rgba(0,0,0,0)_58%)]" />
         <div className="relative mx-auto flex min-h-[clamp(38rem,39.6vw,47rem)] w-full max-w-480 flex-col justify-center px-5 py-20 md:px-10 lg:px-24 xl:px-47.5">
           <p className="font-raleway text-sm font-bold uppercase md:text-xl">
             El nuevo ecosistema de publicidad en movimiento
@@ -209,7 +209,7 @@ export default function InfoTrenesPage() {
       >
         <div className="mx-auto w-full max-w-393.5">
           <p className="font-raleway text-sm font-bold uppercase md:text-xl">
-            Mi formatos
+            Mis formatos
           </p>
           <h2 className="mt-8 max-w-312 font-raleway text-[clamp(2.6rem,5vw,4.965rem)] font-semibold leading-[1.04]">
             Una plataforma para cada

@@ -25,7 +25,7 @@
       "lat": 10.0013315,
       "lng": -84.1845632
     },
-    "address": "Autopista General Cañas 200 mts oeste del peaje de Río Segundo",
+    "address": "Autopista General Cañas 200 m oeste del peaje de Río Segundo",
     "faceDirection": "San José - Alajuela",
     "backDirection": "Alajuela - San José",
     "dimensions": "12.60 x 5.00 m",
@@ -153,7 +153,7 @@
       "lat": 9.8882785,
       "lng": -84.568162
     },
-    "address": "100 mts este del peaje de Orotina",
+    "address": "100 m este del peaje de Orotina",
     "faceDirection": "San José - Caldera",
     "backDirection": "Caldera - San José",
     "dimensions": "12.60 x 5.00 m",
@@ -249,7 +249,7 @@
       "lat": 10.0084448,
       "lng": -84.2130884
     },
-    "address": "Radial Alajuela 500 mts norte de City Mall",
+    "address": "Radial Alajuela 500 m norte de City Mall",
     "faceDirection": "Aeropuerto - Alajuela",
     "backDirection": "Alajuela - Aeropuerto",
     "dimensions": "7.20 x 9.00 m",
@@ -265,7 +265,7 @@
       "lat": 10.0090682,
       "lng": -84.2133003
     },
-    "address": "Radial Alajuela 600 mts norte de City Mall",
+    "address": "Radial Alajuela 600 m norte de City Mall",
     "faceDirection": "Aeropuerto - Alajuela",
     "backDirection": "Alajuela - Aeropuerto",
     "dimensions": "7.20 x 9.00 m",
@@ -282,7 +282,7 @@
       "lat": 9.9001826,
       "lng": -83.9984125
     },
-    "address": "500 mts oeste de Terramall",
+    "address": "500 m oeste de Terramall",
     "faceDirection": "San José - Cartago",
     "backDirection": "Cartago - San José",
     "dimensions": "14.40 x 5.00 m",
@@ -298,7 +298,7 @@
       "lat": 9.9001483,
       "lng": -84.0025055
     },
-    "address": "800 mts oeste de Terramall",
+    "address": "800 m oeste de Terramall",
     "faceDirection": "Cartago - San José",
     "backDirection": "San José - Cartago",
     "dimensions": "14.40 x 5.00 m",
@@ -323,7 +323,7 @@
   {
     "id": "ct4",
     "code": "CT4",
-    "name": "CT4. Paseo Metropoli",
+    "name": "CT4. Paseo Metrópoli",
     "province": "Cartago",
     "wkt": "POINT (-83.9422095 9.867763)",
     "position": {
@@ -346,7 +346,7 @@
       "lat": 10.5576792,
       "lng": -85.5915481
     },
-    "address": "500 mts al este del Doit Center",
+    "address": "500 m al este del Doit Center",
     "faceDirection": "Liberia - Santa Cruz",
     "backDirection": "Santa Cruz - Liberia",
     "dimensions": "12.60 x 5.00 m",
@@ -378,7 +378,7 @@
       "lat": 9.9776262,
       "lng": -84.1113389
     },
-    "address": "400 mts al sur de Pricemart",
+    "address": "400 m al sur de PriceSmart",
     "faceDirection": "San José - Heredia",
     "backDirection": "Heredia - San José",
     "dimensions": "14.40 x 5.00 m",
@@ -387,14 +387,14 @@
   {
     "id": "hd2",
     "code": "HD2",
-    "name": "HD2 Puente Rio Virilla",
+    "name": "HD2 Puente Río Virilla",
     "province": "Heredia",
     "wkt": "POINT (-84.1105127 9.9620534)",
     "position": {
       "lat": 9.9620534,
       "lng": -84.1105127
     },
-    "address": "200 mts sur de Jardines del Recuerdo",
+    "address": "200 m sur de Jardines del Recuerdo",
     "faceDirection": "Heredia - San José",
     "backDirection": "San José - Heredia",
     "dimensions": "14.40 x 5.00 m",
@@ -410,7 +410,7 @@
       "lat": 9.9770504,
       "lng": -84.1114032
     },
-    "address": "600 mts al sur de Pricemart",
+    "address": "600 m al sur de PriceSmart",
     "faceDirection": "Heredia - San José",
     "backDirection": "San José - Heredia",
     "dimensions": "14.40 x 6.00 m",
@@ -426,7 +426,7 @@
       "lat": 9.9884569,
       "lng": -84.164967
     },
-    "address": "Autopista General Cañas 400 mts sur de la Firestone.",
+    "address": "Autopista General Cañas 400 m sur de la Firestone.",
     "faceDirection": "Alajuela - San José",
     "backDirection": "San José - Alajuela",
     "dimensions": "14.40 x 6.00 m",
@@ -474,7 +474,7 @@
       "lat": 9.9934876,
       "lng": -84.1300982
     },
-    "address": "Costado sur de Oxìgeno.",
+    "address": "Costado sur de Oxígeno.",
     "faceDirection": "La Aurora - Heredia",
     "backDirection": "Heredia - La Aurora",
     "dimensions": "8.50 x 11.00 m",
@@ -538,7 +538,7 @@
       "lat": 9.970013,
       "lng": -84.0862548
     },
-    "address": "100 mts al este del Cementerio de Santo Domingo",
+    "address": "100 m al este del Cementerio de Santo Domingo",
     "faceDirection": "Tibás - Santo Domingo",
     "backDirection": "Santo Domingo - Tibás",
     "dimensions": "7.20 x 9.00 m",
@@ -659,7 +659,7 @@
   {
     "id": "hd20",
     "code": "HD20",
-    "name": "HD20 San Joaquin Cervecería",
+    "name": "HD20 San Joaquín Cervecería",
     "province": "Heredia",
     "wkt": "POINT (-84.1694382 10.0036771)",
     "position": {
@@ -762,7 +762,7 @@
       "lat": 9.996524,
       "lng": -84.1357148
     },
-    "address": "San Francisco de Heredia 200 mts oeste de Oxígeno",
+    "address": "San Francisco de Heredia 200 m oeste de Oxígeno",
     "faceDirection": "Alajuela - Heredia",
     "backDirection": "Heredia - Alajuela",
     "dimensions": "7.20 x 9.00 m",
@@ -794,7 +794,7 @@
       "lat": 9.9626203,
       "lng": -84.1106945
     },
-    "address": "200 mts sur de Jardines del Recuerdo",
+    "address": "200 m sur de Jardines del Recuerdo",
     "faceDirection": "Heredia - San José",
     "backDirection": "San José - Heredia",
     "dimensions": "8.50 x 11.00 m",
@@ -842,7 +842,7 @@
       "lat": 9.7129276,
       "lng": -84.635582
     },
-    "address": "400 mts norte de la entrada a Punta Leona",
+    "address": "400 m norte de la entrada a Punta Leona",
     "faceDirection": "Orotina - Jacó",
     "backDirection": "Jacó - Orotina",
     "dimensions": "12.60 x 5.00 m",
@@ -922,7 +922,7 @@
       "lat": 9.9113249,
       "lng": -84.0581936
     },
-    "address": "200 mts este de la Iglesia Católica de San Francisco",
+    "address": "200 m este de la Iglesia Católica de San Francisco",
     "faceDirection": "San José - San Francisco",
     "backDirection": "San Francisco - San José",
     "dimensions": "14.40 x 5.00 m",
@@ -938,7 +938,7 @@
       "lat": 9.9434575,
       "lng": -84.1923845
     },
-    "address": "Autopista Próspero Fernández 300 mts este de Fórum 1",
+    "address": "Autopista Próspero Fernández 300 m este de Fórum 1",
     "faceDirection": "Santa Ana - San José",
     "backDirection": "San José - Santa Ana",
     "dimensions": "14.40 x 5.00 m",
@@ -954,7 +954,7 @@
       "lat": 9.9466172,
       "lng": -84.0741098
     },
-    "address": "800 mts norte de la República",
+    "address": "800 m norte de la República",
     "faceDirection": "Tibás - San José",
     "backDirection": "San José - Tibás",
     "dimensions": "14.40 x 5.00 m",
@@ -1034,7 +1034,7 @@
       "lat": 9.9449686,
       "lng": -84.0614337
     },
-    "address": "300 mts oeste de la rotonda de Guadalupe.",
+    "address": "300 m oeste de la rotonda de Guadalupe.",
     "faceDirection": "Calle Blancos - San Pedro",
     "backDirection": "San Pedro - Calle Blancos",
     "dimensions": "14.40 x 5.00 m",
@@ -1066,7 +1066,7 @@
       "lat": 9.9480465,
       "lng": -84.1596803
     },
-    "address": "600 mts oeste de Multipplaza Escazú",
+    "address": "600 m oeste de Multiplaza Escazú",
     "faceDirection": "Santa Ana - Escazú",
     "backDirection": "Escazú - Santa Ana",
     "dimensions": "14.40 x 5.00 m",
@@ -1098,7 +1098,7 @@
       "lat": 9.9481019,
       "lng": -84.1041505
     },
-    "address": "300 mts norte del San José Palacio.",
+    "address": "300 m norte del San José Palacio.",
     "faceDirection": "Los Hatillos - La Uruca",
     "backDirection": "La Uruca - Los Hatillos",
     "dimensions": "14.40 x 5.00 m",
@@ -1146,7 +1146,7 @@
       "lat": 9.9647401,
       "lng": -84.0862119
     },
-    "address": "25 mts sur de la Neón Nieto",
+    "address": "25 m sur de la Neón Nieto",
     "faceDirection": "Tibás - Heredia",
     "backDirection": "Heredia - Tibás",
     "dimensions": "14.40 x 5.00 m",
@@ -1227,7 +1227,7 @@
       "lng": -84.0823066
     },
     "address": "San Sebastián",
-    "faceDirection": "300 mts oeste de la rotonda de San Sebastián.",
+    "faceDirection": "300 m oeste de la rotonda de San Sebastián.",
     "backDirection": "Los Hatillos - Zapote",
     "dimensions": "Zapote - Los Hatillos",
     "area": "12.60 x 5.00 m"
@@ -1274,7 +1274,7 @@
       "lat": 9.9620455,
       "lng": -84.0678495
     },
-    "address": "900 mts al oeste de la Iglesia Católica de Tibás.",
+    "address": "900 m al oeste de la Iglesia Católica de Tibás.",
     "faceDirection": "Moravia - Tibás",
     "backDirection": "Tibás - Moravia",
     "dimensions": "12.60 x 5.00 m",
@@ -1386,7 +1386,7 @@
       "lat": 9.9567725,
       "lng": -84.0483016
     },
-    "address": "50 mts sur de la Princesa Marina",
+    "address": "50 m sur de la Princesa Marina",
     "faceDirection": "Moravia - Guadalupe",
     "backDirection": "Guadalupe - Moravia",
     "dimensions": "12.60 x 5.00 m",
@@ -1466,7 +1466,7 @@
       "lat": 9.9361552,
       "lng": -84.1114676
     },
-    "address": "La Sabana 150 mts al oeste de Canal 7",
+    "address": "La Sabana 150 m al oeste de Canal 7",
     "faceDirection": "Pavas - La Sabana",
     "backDirection": "La Sabana - Pavas",
     "dimensions": "7.20 x 9.00 m",
@@ -1658,7 +1658,7 @@
       "lat": 9.9475418,
       "lng": -84.1599781
     },
-    "address": "600 mts oeste de Multiplaza",
+    "address": "600 m oeste de Multiplaza",
     "faceDirection": "Santa Ana - Escazú",
     "backDirection": "Escazú - Santa Ana",
     "dimensions": "12.60 x 5.00 m",
@@ -1674,7 +1674,7 @@
       "lat": 9.9350983,
       "lng": -84.1200883
     },
-    "address": "400 mts oeste del cruce de Escazú.",
+    "address": "400 m oeste del cruce de Escazú.",
     "faceDirection": "Escazú - San José",
     "backDirection": "San José - Escazú",
     "dimensions": "8.50 x 11.00 m",
@@ -1786,7 +1786,7 @@
       "lat": 9.9101154,
       "lng": -84.0903163
     },
-    "address": "500 mts oeste de la Rotonda",
+    "address": "500 m oeste de la Rotonda",
     "faceDirection": "Los Hatillos - Zapote",
     "backDirection": "Zapote - Los Hatillos",
     "dimensions": "8.50 x 11.00 m",
@@ -1818,7 +1818,7 @@
       "lat": 9.9475299,
       "lng": -84.2320071
     },
-    "address": "500 mts este del peaje de San Rafael",
+    "address": "500 m este del peaje de San Rafael",
     "faceDirection": "Caldera - San José",
     "backDirection": "",
     "dimensions": "8.50 x 33.30 m",

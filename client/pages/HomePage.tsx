@@ -341,11 +341,16 @@ export default function HomePage() {
       <section className="overflow-hidden border-t border-zinc-300">
         <div className="mx-auto grid w-full max-w-480 gap-10 px-5 pb-[clamp(2.5rem,3vw,3.5rem)] pt-[clamp(4rem,4vw,4.75rem)] md:px-10 lg:grid-cols-2 lg:px-24 xl:gap-53.25 xl:px-23.25">
           <article className="flex h-full flex-col">
-            <img
-              alt="Pantalla digital Publiex con contenido dinámico"
-              className="aspect-756/518 w-full object-cover"
-              src={publiexAsset("figma-dooh-raw-1.jpeg")}
-            />
+            <video
+              aria-label="Pantalla digital Publiex con contenido dinámico"
+              autoPlay
+              className="aspect-756/518 w-full object-cover object-left"
+              loop
+              muted
+              playsInline
+            >
+              <source src={publiexAsset("homepage-pantallasdigitales.mp4")} type="video/mp4" />
+            </video>
             <SectionLabel dark>Pantallas digitales y DOOH</SectionLabel>
             <h2 className="font-raleway text-[clamp(1.8rem,3.7vw,3.9rem)] font-semibold leading-[1.04]">
               Mensajes que se mueven al ritmo de la ciudad.

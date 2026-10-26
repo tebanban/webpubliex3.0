@@ -66,11 +66,11 @@ export const articles: Article[] = [
     title:
       "Medir antes de comunicar: una ruta responsable para la sostenibilidad en OOH",
     description:
-      "La credibilidad comienza con una línea base, una metodología y evidencia que pueda explicarse",
+      "La credibilidad comienza con una línea base, una metodología y evidencia que pueda explicarse.",
     image: "actualidad-sostenibilidad.webp",
     imageAlt: "Soporte de publicidad exterior integrado a su entorno",
     intro:
-      "La credibilidad comienza con una línea base, una metodología y evidencia que pueda explicarse",
+      "La credibilidad comienza con una línea base, una metodología y evidencia que pueda explicarse.",
     paragraphs: [
       "Los compromisos ambientales y sociales adquieren valor cuando pueden demostrarse. Antes de publicar porcentajes o metas, una empresa debe definir qué mide, durante qué periodo, con qué fuente y quién valida el resultado.",
       "En publicidad exterior, una línea base puede incluir materiales utilizados y recuperados, destino final, consumo energético, mantenimiento, seguridad ocupacional, empleo, compras nacionales y participación comunitaria.",

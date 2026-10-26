@@ -9,7 +9,7 @@ const agencyBenefits = [
   {
     number: "02",
     title: "Propuestas más rápidas",
-    copy: "Genere selecciones, fichas técnicas y presentaciones co-brandeadas.",
+    copy: "Genere selecciones, fichas técnicas y presentaciones con marca compartida.",
   },
   {
     number: "03",

@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] === "OPTIONS") {
 
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {
     http_response_code(405);
-    echo json_encode(["sent" => false, "message" => "Metodo no permitido."]);
+    echo json_encode(["sent" => false, "message" => "Método no permitido."]);
     exit();
 }
 
@@ -21,7 +21,7 @@ $data = json_decode($request_body, true);
 
 if (!is_array($data)) {
     http_response_code(400);
-    echo json_encode(["sent" => false, "message" => "Solicitud invalida."]);
+    echo json_encode(["sent" => false, "message" => "Solicitud inválida."]);
     exit();
 }
 
@@ -42,7 +42,7 @@ foreach ($required_fields as $field) {
 
 if (!filter_var($data["correo"], FILTER_VALIDATE_EMAIL)) {
     http_response_code(400);
-    echo json_encode(["sent" => false, "message" => "Correo invalido."]);
+    echo json_encode(["sent" => false, "message" => "Correo inválido."]);
     exit();
 }
 
@@ -77,7 +77,7 @@ $email_content = "
     <h3>Nueva solicitud desde el sitio web de Publiex</h3>
     <p><strong>Nombre:</strong> {$safe_name}</p>
     <p><strong>Correo:</strong> {$safe_email}</p>
-    <p><strong>Telefono:</strong> {$phone}</p>
+    <p><strong>Teléfono:</strong> {$phone}</p>
     <p><strong>Empresa:</strong> {$company}</p>
     <p><strong>Objetivo:</strong> {$goal}</p>
     <p><strong>Zona de interés:</strong> {$zone}</p>
@@ -100,9 +100,9 @@ $confirmation_content = "
     <p>Hola {$safe_name},</p>
     <p>Recibimos su solicitud y nuestro equipo le dará seguimiento de inmediato.</p>
     <p><strong>Empresa:</strong> {$company}</p>
-    <p><strong>Telefono:</strong> {$phone}</p>
+    <p><strong>Teléfono:</strong> {$phone}</p>
     <p><strong>Objetivo:</strong> {$goal}</p>
-    <p><strong>Zona de interes:</strong> {$zone}</p>
+    <p><strong>Zona de interés:</strong> {$zone}</p>
     <p><strong>Nivel de cobertura:</strong> {$coverage}</p>
     <p>Este correo confirma que su mensaje fue recibido correctamente.</p>
 </body>

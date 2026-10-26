@@ -3,17 +3,6 @@
 import { articles, type Article } from "@/content/articles";
 import { publiexAsset } from "@/lib/assets";
 
-const articleFilters = [
-  "Todo",
-  "Corporativo",
-  "Innovación",
-  "Casos y campañas",
-  "Sostenibilidad",
-  "Insights OOH",
-  "Educación OOH",
-  "Prensa",
-];
-
 function ArticleCard({ article }: { article: Article }) {
   return (
     <article className="font-raleway" id={article.id}>
@@ -108,23 +97,7 @@ export default function ActualidadPage() {
       {/* Section 3, Editorial grid */}
       <section className="overflow-hidden bg-publiex-muted-section px-5 py-[clamp(3rem,5vw,6rem)] md:px-10 lg:px-24">
         <div className="mx-auto w-full max-w-393.5">
-          <div className="flex flex-wrap justify-center gap-2 font-raleway text-sm font-semibold">
-            {articleFilters.map((filter, index) => (
-              <button
-                className={
-                  index === 0
-                    ? "border border-publiex-blue bg-publiex-blue px-5 py-2 text-white"
-                    : "border border-publiex-blue bg-transparent px-5 py-2 text-publiex-blue transition hover:bg-white"
-                }
-                key={filter}
-                type="button"
-              >
-                {filter}
-              </button>
-            ))}
-          </div>
-
-          <div className="mt-12 grid gap-x-10 gap-y-16 md:grid-cols-2 xl:grid-cols-3">
+          <div className="grid gap-x-10 gap-y-16 md:grid-cols-2 xl:grid-cols-3">
             {articles.map((article) => (
               <ArticleCard article={article} key={article.title} />
             ))}
