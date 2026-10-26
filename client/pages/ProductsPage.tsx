@@ -160,7 +160,7 @@ const productGroups = [
           "Consumo masivo, entretenimiento, educación, tecnología, retail y campañas de alto alcance.",
         difference:
           "La marca viaja con la audiencia y permanece visible tanto en estaciones como durante el recorrido.",
-        overlayTitle: "Acompaña a la ciudad mientras avanza.",
+        overlayTitle: "Acompañe a la ciudad mientras avanza.",
         overlayCopy:
           "El transporte permite presencia móvil, repetida y cercana a rutinas reales de movilidad.",
         tags: ["Marca en movimiento", "Contexto urbano", "Diversidad de flota"],
@@ -275,6 +275,36 @@ const productFeatureImages: Record<string, string[]> = {
   ],
 };
 
+// Titles follow the same selector order as each product's image sequence.
+const productFeatureTitles: Record<string, string[]> = {
+  "vallas-unipolares": [
+    "Presencia que acompaña el tránsito real.",
+    "Su marca donde se toman decisiones.",
+    "Impacto más allá del centro urbano.",
+    "La visibilidad continúa cuando cambia la ciudad.",
+  ],
+  "mega-landmarks": [
+    "Una ejecución que modifica el paisaje.",
+    "Una ubicación capaz de apropiarse del recorrido.",
+    "Escala para comunicar en segundos.",
+  ],
+  "circuitos-rotativos": [
+    "Una campaña que reaparece durante el recorrido.",
+    "Varias piezas. Una sola historia de marca.",
+    "Presencia en distintos momentos del trayecto.",
+  ],
+  trenes: [
+    "Acompañe a la ciudad mientras avanza.",
+    "Presencia dentro de la vida real de la ciudad.",
+    "Formatos adaptables a distintas unidades.",
+  ],
+  "innovaciones-a-la-medida": [
+    "Cuando la creatividad sale del plano.",
+    "El soporte se adapta a la idea.",
+    "Contraste que permanece después del atardecer.",
+  ],
+};
+
 // Descriptive copy follows the active image feature in each product carousel.
 const productFeatureDescriptions: Record<string, string[]> = {
   "vallas-unipolares": [
@@ -311,6 +341,8 @@ function ProductCard({ product }: { product: Product }) {
   const [activeTagIndex, setActiveTagIndex] = useState(0);
   const activeImage =
     productFeatureImages[product.id]?.[activeTagIndex] ?? product.image;
+  const activeTitle =
+    productFeatureTitles[product.id]?.[activeTagIndex] ?? product.overlayTitle;
   const activeDescription =
     productFeatureDescriptions[product.id]?.[activeTagIndex] ??
     product.overlayCopy;
@@ -323,10 +355,10 @@ function ProductCard({ product }: { product: Product }) {
       {/* Product summary */}
       <div className="grid gap-[clamp(1.5rem,3vw,3rem)] lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)_minmax(0,1fr)]">
         <div>
-          <p className="font-raleway text-[clamp(0.875rem,1.05vw,1.25rem)] font-bold uppercase text-publiex-red">
+          <p className="font-raleway text-[clamp(0.8rem,0.95vw,1.1rem)] font-bold uppercase text-publiex-red">
             {product.badge}
           </p>
-          <h3 className="mt-5 font-raleway text-[clamp(2.1rem,4.2vw,4.85rem)] font-semibold leading-[0.996]">
+          <h3 className="mt-5 font-raleway text-[clamp(2.0rem,4.0vw,4.5rem)] font-semibold leading-[0.996]">
             {product.title}
           </h3>
           <p className="mt-6 max-w-157 font-raleway text-[clamp(1rem,1.2vw,1.25rem)] leading-tight">
@@ -393,7 +425,7 @@ function ProductCard({ product }: { product: Product }) {
             {product.tags[activeTagIndex]}
           </p>
           <h4 className="mt-8 max-w-265 font-raleway text-[clamp(2rem,5vw,4.85rem)] font-semibold leading-[0.996]">
-            {product.overlayTitle}
+            {activeTitle}
           </h4>
           <p className="mt-8 max-w-157 font-raleway text-lg leading-tight md:text-xl">
             {activeDescription}
