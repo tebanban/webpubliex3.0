@@ -85,7 +85,7 @@ export default function HomePage() {
               <span className="block text-[clamp(2.4rem,5.4vw,3.85rem)]">
                 Hacemos que su marca sea
               </span>
-              <span className="block text-[clamp(3rem,7vw,5.66rem)] text-publiex-red">
+              <span className="block text-[clamp(3rem,7vw,5.66rem)]">
                 imposible de ignorar
               </span>
             </h1>

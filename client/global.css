@@ -222,8 +222,8 @@
   .bg-publiex-hero-overlay {
     background-image: linear-gradient(
       to bottom,
-      color-mix(in srgb, var(--publiex-blue) 65%, transparent),
-      color-mix(in srgb, var(--publiex-blue) 15%, transparent),
+      color-mix(in srgb, var(--publiex-blue) 3%, transparent),
+      color-mix(in srgb, var(--publiex-blue) 1%, transparent),
       rgb(0 0 0 / 75%)
     );
   }
