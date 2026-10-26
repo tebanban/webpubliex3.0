@@ -421,10 +421,10 @@ function ProductCard({ product }: { product: Product }) {
         )}
         <div className="absolute inset-0 bg-linear-to-b from-transparent via-black/35 to-black/85" />
         <div className="relative flex min-h-[clamp(30rem,42.8vw,51.375rem)] flex-col justify-end px-[clamp(1.5rem,2.7vw,3.25rem)] pb-[clamp(1rem,1.5vw,1.75rem)] pt-[clamp(1.5rem,2.7vw,3.25rem)]">
-          <p className="font-raleway text-xl font-extrabold uppercase">
+          <p className="font-raleway text-[clamp(0.6rem,0.9vw,1.6525rem)] font-extrabold uppercase">
             {product.tags[activeTagIndex]}
           </p>
-          <h4 className="mt-8 max-w-265 font-raleway text-[clamp(2rem,5vw,4.85rem)] font-semibold leading-[0.996]">
+          <h4 className="mt-8 max-w-265 font-raleway text-[clamp(1.8rem,4.8vw,4.5rem)] font-semibold leading-[0.996]">
             {activeTitle}
           </h4>
           <p className="mt-8 max-w-157 font-raleway text-lg leading-tight md:text-xl">
@@ -465,7 +465,7 @@ function ProductCard({ product }: { product: Product }) {
                   return tag ? (
                     <button
                       aria-pressed={index === activeTagIndex}
-                      className={`text-center leading-tight transition hover:text-white/75 ${
+                      className={`text-center uppercase leading-tight transition hover:text-white/75 ${
                         index === activeTagIndex
                           ? "text-white"
                           : "text-white/75"
