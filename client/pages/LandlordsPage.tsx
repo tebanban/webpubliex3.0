@@ -79,7 +79,7 @@ export default function LandlordsPage() {
         />
         <div className="absolute inset-x-0 bottom-0 px-5 pb-[clamp(2rem,3vw,3.75rem)] md:px-10 lg:px-24">
           <div className="mx-auto w-full max-w-393.5">
-            <h2 className="max-w-250 font-raleway text-[clamp(2.75rem,5vw,4.85rem)] font-semibold leading-none lowercase">
+            <h2 className="max-w-250 font-raleway text-[clamp(2.75rem,5vw,4.85rem)] font-semibold leading-none">
               Una buena ubicación
               <span className="block">
                 puede{" "}
