@@ -198,7 +198,7 @@ export function PropertySubmissionForm() {
                 <iframe
                   title="Mapa de Costa Rica"
                   className="h-64 w-full border border-zinc-300 bg-emerald-100 xl:h-80"
-                  src="https://maps.google.com/maps?q=Costa%20Rica&output=embed"
+                  src="https://maps.google.com/maps?q=Costa%20Rica&z=8&output=embed"
                   loading="lazy"
                   referrerPolicy="no-referrer"
                 />
