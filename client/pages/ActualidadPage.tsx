@@ -70,9 +70,9 @@ export default function ActualidadPage() {
         <div className="mx-auto grid w-full max-w-393.5 gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.76fr)] lg:items-center xl:gap-12">
           <div className="relative aspect-835/788 overflow-hidden bg-zinc-300 lg:aspect-835/788">
             <img
-              alt="Tren en movimiento al atardecer"
+              alt={articles[0].imageAlt}
               className="size-full object-cover"
-              src={publiexAsset("actualidad-raw-01.jpeg")}
+              src={publiexAsset(articles[0].image)}
             />
             <p className="absolute bottom-4 left-4 font-raleway text-xs font-bold uppercase text-white">
               Historia destacada

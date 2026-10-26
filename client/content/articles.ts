@@ -24,8 +24,8 @@ export const articles: Article[] = [
       "Publicidad en movimiento: cómo acompañar a la audiencia durante su recorrido",
     description:
       "Una mirada a las posibilidades de integrar presencia exterior, experiencias interiores y frecuencia urbana.",
-    image: "article-publicidad-en-movimiento.png",
-    heroImage: "article-publicidad-en-movimiento.png",
+    image: "actualidad-innovacion-tren.jpg",
+    heroImage: "actualidad-innovacion-tren2.png",
     imageAlt: "Tren con publicidad exterior al atardecer",
     intro:
       "La movilidad permite que una marca conecte con la audiencia en distintos momentos, dentro y fuera del trayecto.",

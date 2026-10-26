@@ -41,15 +41,11 @@ export default function ArticlePage() {
           </p>
         </header>
 
-        {/* Editorial image; the train crop matches the Figma frame. */}
+        {/* Article imagery can differ from the listing preview. */}
         <div className="relative mx-5 aspect-[1753/940] overflow-hidden bg-zinc-200 md:mx-10 xl:mx-[4.35%]">
           <img
             alt={article.imageAlt}
-            className={
-              article.heroImage
-                ? "absolute top-[-19.19%] left-[-17.06%] h-[121.79%] w-[117.08%] max-w-none"
-                : "size-full object-cover"
-            }
+            className="size-full object-cover"
             fetchPriority="high"
             src={publiexAsset(article.heroImage ?? article.image)}
           />
