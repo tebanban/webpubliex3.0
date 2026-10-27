@@ -42,7 +42,7 @@ describe("Actualidad article navigation", () => {
     expect(html).toContain(article.paragraphs[0]);
     expect(html).toContain(article.quote);
     expect(html).toContain(
-      `/images/publiex/${article.heroImage ?? article.image}`,
+      `/images/publiex/${article.heroVideo ?? article.heroImage ?? article.image}`,
     );
     expect(html).toContain(`dateTime="${article.publishedAt}"`);
     expect(html).toContain('href="/contact"');

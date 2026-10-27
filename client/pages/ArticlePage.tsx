@@ -43,12 +43,27 @@ export default function ArticlePage() {
 
         {/* Article imagery can differ from the listing preview. */}
         <div className="relative mx-5 aspect-[1753/940] overflow-hidden bg-zinc-200 md:mx-10 xl:mx-[4.35%]">
-          <img
-            alt={article.imageAlt}
-            className="size-full object-cover"
-            fetchPriority="high"
-            src={publiexAsset(article.heroImage ?? article.image)}
-          />
+          {article.heroVideo ? (
+            <video
+              aria-label={article.imageAlt}
+              autoPlay
+              className="size-full object-cover"
+              loop
+              muted
+              playsInline
+              poster={publiexAsset(article.heroImage ?? article.image)}
+              preload="metadata"
+            >
+              <source src={publiexAsset(article.heroVideo)} type="video/mp4" />
+            </video>
+          ) : (
+            <img
+              alt={article.imageAlt}
+              className="size-full object-cover"
+              fetchPriority="high"
+              src={publiexAsset(article.heroImage ?? article.image)}
+            />
+          )}
         </div>
 
         {/* Offset reading column, quote, and campaign enquiry */}

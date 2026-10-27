@@ -11,11 +11,26 @@ function ArticleCard({ article }: { article: Article }) {
         to={`/actualidad/${article.id}`}
         aria-label={article.title}
       >
-        <img
-          alt={article.imageAlt}
-          className="size-full object-cover"
-          src={publiexAsset(article.image)}
-        />
+        {article.previewVideo ? (
+          <video
+            aria-label={article.imageAlt}
+            autoPlay
+            className="size-full object-cover"
+            loop
+            muted
+            playsInline
+            poster={publiexAsset(article.image)}
+            preload="metadata"
+          >
+            <source src={publiexAsset(article.previewVideo)} type="video/mp4" />
+          </video>
+        ) : (
+          <img
+            alt={article.imageAlt}
+            className="size-full object-cover"
+            src={publiexAsset(article.image)}
+          />
+        )}
       </Link>
       <p className="mt-5 text-[clamp(0.7rem,0.78vw,0.9375rem)] font-bold uppercase leading-tight text-publiex-blue">
         {article.category} · {article.date}

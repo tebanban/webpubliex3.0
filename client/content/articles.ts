@@ -7,7 +7,9 @@ export interface Article {
   title: string;
   description: string;
   image: string;
+  previewVideo?: string;
   heroImage?: string;
+  heroVideo?: string;
   imageAlt: string;
   intro: string;
   paragraphs: string[];
@@ -67,7 +69,7 @@ export const articles: Article[] = [
       "Medir antes de comunicar: una ruta responsable para la sostenibilidad en OOH",
     description:
       "La credibilidad comienza con una línea base, una metodología y evidencia que pueda explicarse.",
-    image: "actualidad-sostenibilidad.webp",
+    image: "actualidad-article3-sostenibilidad.png",
     imageAlt: "Soporte de publicidad exterior integrado a su entorno",
     intro:
       "La credibilidad comienza con una línea base, una metodología y evidencia que pueda explicarse.",
@@ -127,6 +129,8 @@ export const articles: Article[] = [
     description:
       "Una perspectiva práctica para transformar objetivos de campaña en decisiones de medios.",
     image: "actualidad-innovacion.jpeg",
+    previewVideo: "actualidad-innovacion6.mp4",
+    heroVideo: "actualidad-innovacion6.mp4",
     imageAlt: "Pantalla digital de publicidad exterior",
     intro:
       "Una perspectiva práctica para transformar objetivos de campaña en decisiones de medios.",
