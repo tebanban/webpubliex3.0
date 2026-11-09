@@ -322,7 +322,7 @@ export default function HomePage() {
               muted
               playsInline
             >
-              <source src={publiexAsset("homepage-pantallasdigitales.mp4")} type="video/mp4" />
+              <source src={publiexAsset("home-dooh.mp4")} type="video/mp4" />
             </video>
             <SectionLabel dark>Pantallas digitales y DOOH</SectionLabel>
             <h2 className="font-raleway text-[clamp(1.8rem,3.7vw,3.9rem)] font-semibold leading-[1.04]">
