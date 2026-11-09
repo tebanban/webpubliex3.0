@@ -19,12 +19,6 @@
     href: "/products#circuitos-rotativos",
   },
   {
-    title: "Banner posts",
-    description: "Una avenida completa hablando de su marca.",
-    image: "figma-card-banner-posts.jpeg",
-    href: "/products#banner-posts",
-  },
-  {
     title: "Pantallas digitales",
     description: "Contenido que responde al ritmo de la ciudad.",
     image: "figma-card-digital.png",

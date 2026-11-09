@@ -101,24 +101,6 @@ const productGroups = [
         link: "Diseñar circuito",
       },
       {
-        id: "banner-posts",
-        title: "Banner Posts",
-        image: "products-bannerpost.png",
-        badge: "Presencia secuencial",
-        description:
-          "Piezas de alto recorrido visual instaladas en avenidas, rotondas y rutas urbanas estratégicas.",
-        benefits: ["Frecuencia"],
-        bestFor:
-          "Marcas que necesitan repetición visible en recorridos cotidianos y corredores comerciales.",
-        difference:
-          "Transforma una ruta completa en una secuencia de marca, no en un único impacto aislado.",
-        overlayTitle: "Una avenida completa hablando de su marca.",
-        overlayCopy:
-          "La acumulación de caras crea repetición visual y acompaña a peatones y vehículos durante el recorrido.",
-        tags: ["Continuidad urbana"],
-        link: "Explorar banner posts",
-      },
-      {
         id: "puentes-formatos-urbanos",
         title: "Puentes y formatos urbanos",
         image: "products-puentes-formatos-urbanos.png",
@@ -237,7 +219,7 @@ const campaignSystems = [
   },
   {
     title: "Dominio de corredor",
-    copy: "Landmark + vallas de aproximación + banner posts para construir una secuencia completa.",
+    copy: "Landmark + vallas de aproximación + circuitos rotativos para construir una secuencia completa.",
   },
   {
     title: "Movilidad cotidiana",
@@ -347,8 +329,7 @@ function ProductCard({ product }: { product: Product }) {
     productFeatureDescriptions[product.id]?.[activeTagIndex] ??
     product.overlayCopy;
   const isVideo = activeImage.endsWith(".mp4");
-  const showFeatureControls =
-    product.id !== "banner-posts" && product.id !== "puentes-formatos-urbanos";
+  const showFeatureControls = product.id !== "puentes-formatos-urbanos";
 
   return (
     <article className="bg-white p-2 shadow-sm md:p-8 xl:p-16" id={product.id}>

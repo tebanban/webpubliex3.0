@@ -8,7 +8,6 @@ const footerGroups = [
     links: [
       ["Vallas y unipolares", "/products#vallas-unipolares"],
       ["Mega Landmarks", "/products#mega-landmarks"],
-      ["Banner posts", "/products#banner-posts"],
       ["DOOH", "/products#pantallas-digitales"],
       ["Trenes", "/products#trenes"],
     ],

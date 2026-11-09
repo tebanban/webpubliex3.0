@@ -280,34 +280,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Section 7, Format highlights */}
-      <section className="overflow-hidden">
-        <div className="mx-auto grid min-h-[clamp(36.25rem,40vw,52.1875rem)] w-full max-w-480 gap-0 lg:grid-cols-2">
-          <div className="px-5 py-[clamp(4.625rem,4.2vw,5rem)] md:px-10 lg:px-24 xl:pl-43.25 xl:pr-15">
-            <SectionLabel dark>Mobiliario urbano</SectionLabel>
-            <h2 className="max-w-186 font-raleway text-[clamp(2.3rem,5vw,6.4rem)] font-semibold leading-[0.97]">
-              Convierta una ruta completa en una secuencia de marca.
-            </h2>
-            <p className="mt-7 max-w-2xl text-[clamp(1.25rem,1.4vw,1.6875rem)] leading-tight">
-              Los banner posts construyen frecuencia y continuidad visual
-              mediante múltiples puntos de contacto a lo largo de avenidas,
-              rotondas y rutas estratégicas.
-            </p>
-            <div className="mt-9">
-              <PrimaryLink href="/products#banner-posts">
-                Explorar banner posts
-              </PrimaryLink>
-            </div>
-          </div>
-          <img
-            alt="Banner posts Publiex instalados en una carretera"
-            className="h-full min-h-130 w-full object-cover"
-            src={publiexAsset("figma-urban-furniture.jpeg")}
-          />
-        </div>
-      </section>
-
-      {/* Section 8, Transport and special projects */}
+      {/* Section 7, Transport and special projects */}
       <section
         className="overflow-hidden bg-publiex-sports-gradient text-white"
         id="analitica"
@@ -337,7 +310,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Section 9, Digital and special formats */}
+      {/* Section 8, Digital and special formats */}
       <section className="overflow-hidden border-t border-zinc-300">
         <div className="mx-auto grid w-full max-w-480 gap-10 px-5 pb-[clamp(2.5rem,3vw,3.5rem)] pt-[clamp(4rem,4vw,4.75rem)] md:px-10 lg:grid-cols-2 lg:px-24 xl:gap-53.25 xl:px-23.25">
           <article className="flex h-full flex-col">
@@ -389,7 +362,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Section 10, Audience analytics */}
+      {/* Section 9, Audience analytics */}
       <section className="overflow-hidden bg-publiex-audience-gradient">
         <div className="mx-auto grid w-full max-w-480 gap-10 px-5 py-[clamp(4rem,4.2vw,5.0625rem)] md:px-10 lg:px-24 xl:grid-cols-[minmax(0,630fr)_minmax(0,630fr)_minmax(230px,280fr)] xl:items-start xl:gap-x-4.5">
           <div className="@container xl:pt-11.5">
@@ -489,7 +462,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Section 11, Work and insights */}
+      {/* Section 10, Work and insights */}
       <section
         className="overflow-hidden bg-publiex-blue-deep text-white"
         id="casos"
@@ -540,7 +513,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Section 12, Actualidad e insights */}
+      {/* Section 11, Actualidad e insights */}
       <section
         className="overflow-hidden bg-publiex-muted-section"
         id="actualidad"
@@ -584,7 +557,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Section 13, Proposal paths */}
+      {/* Section 12, Proposal paths */}
       <section className="overflow-hidden">
         <div className="mx-auto w-full max-w-480 py-[clamp(0rem,4.4vw,5.3125rem)]">
           <div className="mx-auto grid w-full max-w-393.5 gap-[clamp(1.25rem,3.6vw,5.25rem)] px-5 md:grid-cols-2 md:px-10 lg:px-0">
@@ -624,7 +597,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Section 14, Campaign CTA */}
+      {/* Section 13, Campaign CTA */}
       <CampaignCta />
     </main>
   );
