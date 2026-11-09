@@ -23,7 +23,7 @@ const caseStudies = [
     id: "trenes",
     category: "Trenes",
     title: "Un lanzamiento que recorrió la GAM",
-    image: "casestudies-tren.png",
+    image: "cases-trenes.png",
     layout: "imageRight",
     body: [
       "La publicidad en movimiento permite que una marca acompañe a las personas durante el trayecto. En este lanzamiento, el tren funcionó como una plataforma móvil capaz de multiplicar puntos de contacto y reforzar presencia en distintos momentos del día.",
