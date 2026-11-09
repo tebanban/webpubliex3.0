@@ -60,9 +60,9 @@ export default function HomePage() {
 
   return (
     <main className="bg-white text-black">
-      {/* Section 1, Hero */}
+      {/* Section 1, Hero: fit the viewport while allowing room for wrapped copy. */}
       <section
-        className="relative h-[clamp(40rem,54vw,64rem)] overflow-hidden text-white"
+        className="relative min-h-[min(90svh,clamp(32rem,44vw,50rem))] overflow-hidden text-white"
         id="inicio"
         ref={heroRef}
       >
@@ -79,7 +79,7 @@ export default function HomePage() {
           <source src={publiexAsset("hero_home.mp4")} type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-publiex-hero-overlay" />
-        <div className="relative mx-auto flex h-full w-full max-w-480 items-end px-5 pb-6 pt-28 md:px-10 md:pb-10">
+        <div className="relative mx-auto flex min-h-[inherit] w-full max-w-480 items-end px-5 pb-6 pt-28 md:px-10 md:pb-10">
           <div className="mx-auto w-full max-w-295 text-center">
             <h1 className="font-raleway font-black uppercase leading-[0.996]">
               <span className="block text-[clamp(2.4rem,5.4vw,3.85rem)]">
