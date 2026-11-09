@@ -65,8 +65,9 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="relative min-h-112 overflow-hidden bg-publiex-gradient px-5 py-8 text-white md:px-10 lg:px-24 xl:py-8">
-      <div className="relative mx-auto grid min-h-96 max-w-393.5 grid-rows-[auto_1fr_auto]">
+    <footer className="relative overflow-hidden bg-publiex-gradient px-5 py-6 text-white md:px-10 lg:px-24">
+      {/* Content-driven rows keep the footer compact at every screen size. */}
+      <div className="relative mx-auto grid max-w-393.5">
         {/* Footer top */}
         <div className="relative flex min-h-20.5 items-start justify-center">
           <Link
@@ -95,13 +96,13 @@ export function Footer() {
         </div>
 
         {/* Footer menu columns */}
-        <div className="grid gap-8 pt-5 pb-2 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-[220px_220px_180px_220px] xl:justify-between">
+        <div className="grid gap-x-8 gap-y-5 pt-3 pb-5 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-[220px_220px_180px_220px] xl:justify-between">
           {footerGroups.map((group) => (
             <nav aria-label={group.title} key={group.title}>
-              <h3 className="font-uni text-base  uppercase leading-9 text-publiex-footer-heading">
+              <h3 className="font-uni text-base uppercase leading-8 text-publiex-footer-heading">
                 {group.title}
               </h3>
-              <ul className="text-base font-normal uppercase leading-9">
+              <ul className="text-base font-normal uppercase leading-8">
                 {group.links.map(([label, href]) => (
                   <li key={label}>
                     <a
@@ -118,11 +119,11 @@ export function Footer() {
         </div>
 
         {/* Social links */}
-        <div className="flex justify-center gap-11 border-t border-white/25  pt-7">
+        <div className="flex justify-center gap-11 border-t border-white/25 pt-4">
           {socialLinks.map((item) => (
             <a
               aria-label={item.label}
-              className="block size-13.5 transition hover:opacity-80"
+              className="block size-11 transition hover:opacity-80"
               href={item.href}
               key={item.label}
               rel="noreferrer"
