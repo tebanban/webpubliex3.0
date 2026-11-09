@@ -176,7 +176,7 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-black/35" />
         <div className="relative mx-auto flex min-h-[clamp(43.75rem,55.3vw,66.375rem)] w-full max-w-480 items-center justify-end px-5 py-[clamp(5rem,8vw,9.5rem)] md:px-10 lg:px-24">
           <div className="max-w-177.5 text-right xl:mr-16.25 xl:mt-30">
-            <SectionLabel>Quiénes somos</SectionLabel>
+            <SectionLabel>¿Quiénes somos?</SectionLabel>
             <p className="font-raleway text-[clamp(4rem,14vw,16rem)] font-black leading-none text-publiex-red">
               27{" "}
               <span className="align-middle text-[0.42em] text-white">
