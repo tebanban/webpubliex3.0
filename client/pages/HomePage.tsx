@@ -289,7 +289,7 @@ export default function HomePage() {
           <img
             alt="Publicidad exterior en tren"
             className="h-full min-h-130 w-full object-cover"
-            src={publiexAsset("figma-transport.jpeg")}
+            src={publiexAsset("home-transporte.png")}
           />
           <div className="px-5 py-[clamp(5rem,6.8vw,8.125rem)] md:px-10 lg:px-24 xl:pl-20.5">
             <SectionLabel>Publicidad en transporte</SectionLabel>

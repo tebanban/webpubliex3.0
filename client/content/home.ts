@@ -27,7 +27,7 @@
   {
     title: "Publicidad en transporte",
     description: "Su marca viaja con Costa Rica.",
-    image: "figma-card-transport.jpeg",
+    image: "home-soluciones-train.png",
     href: "/products#trenes",
   },
   {
@@ -73,7 +73,7 @@ export const cases = [
     tag: "Movilidad",
     type: "Trenes",
     title: "Un lanzamiento que recorrió la GAM.",
-    image: "figma-case-train.jpeg",
+    image: "home-cases-train.png",
     href: "/case-studies#trenes",
   },
   {
