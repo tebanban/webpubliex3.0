@@ -99,10 +99,10 @@ export function Footer() {
         <div className="grid gap-x-8 gap-y-5 pt-3 pb-5 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-[220px_220px_180px_220px] xl:justify-between">
           {footerGroups.map((group) => (
             <nav aria-label={group.title} key={group.title}>
-              <h3 className="font-uni text-base uppercase leading-8 text-publiex-footer-heading">
+              <h3 className="font-uni text-sm uppercase leading-8 text-publiex-footer-heading">
                 {group.title}
               </h3>
-              <ul className="text-base font-normal uppercase leading-8">
+              <ul className="text-sm font-normal uppercase leading-8">
                 {group.links.map(([label, href]) => (
                   <li key={label}>
                     <a
