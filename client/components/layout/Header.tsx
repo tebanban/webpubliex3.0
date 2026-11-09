@@ -116,7 +116,7 @@ export function Header() {
         {/* Desktop navigation */}
         <nav
           className={cn(
-            "font-uni ml-10 hidden items-stretch divide-x border-x text-sm font-normal uppercase leading-tight tracking-normal transition duration-300 lg:flex xl:ml-16",
+            "font-uni ml-10 hidden items-stretch divide-x border-x text-xs font-normal uppercase leading-tight tracking-normal transition duration-300 lg:flex xl:ml-16",
             isHeaderHidden && "pointer-events-none opacity-0",
             isPastHero
               ? "divide-zinc-300 border-zinc-300"
