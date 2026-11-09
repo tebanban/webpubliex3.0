@@ -62,7 +62,7 @@ export default function HomePage() {
     <main className="bg-white text-black">
       {/* Section 1, Hero: fit the viewport while allowing room for wrapped copy. */}
       <section
-        className="relative min-h-[min(90svh,clamp(35rem,50vw,55rem))] overflow-hidden text-white"
+        className="relative min-h-[min(100svh,clamp(35rem,50vw,55rem))] overflow-hidden text-white"
         id="inicio"
         ref={heroRef}
       >
