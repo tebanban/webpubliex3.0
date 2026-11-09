@@ -159,7 +159,7 @@ const productGroups = [
       {
         id: "pantallas-digitales",
         title: "Pantallas Digitales",
-        image: "products-digitalscreen.gif",
+        image: "products-pantallas.mp4",
         badge: "Agilidad + iluminación",
         description:
           "Pantallas de alta visibilidad que permiten alternar piezas, actualizar mensajes y aprovechar el movimiento creativo.",
