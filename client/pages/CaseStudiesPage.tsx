@@ -35,7 +35,7 @@ const caseStudies = [
     id: "dooh",
     category: "DOOH",
     title: "Una pantalla que cambió con la ciudad",
-    image: "casestudies-dooh.mp4",
+    image: "cases-dooh.mp4",
     mediaType: "video",
     layout: "imageTop",
     body: [
