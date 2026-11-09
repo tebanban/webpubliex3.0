@@ -3,6 +3,11 @@
 import { articles, type Article } from "@/content/articles";
 import { publiexAsset } from "@/lib/assets";
 
+// Keep the urban circuits article accessible without showing its preview card.
+const articlePreviews = articles.filter(
+  (article) => article.id !== "circuitos-urbanos",
+);
+
 function ArticleCard({ article }: { article: Article }) {
   return (
     <article className="font-raleway" id={article.id}>
@@ -113,7 +118,7 @@ export default function ActualidadPage() {
       <section className="overflow-hidden bg-publiex-muted-section px-5 py-[clamp(3rem,5vw,6rem)] md:px-10 lg:px-24">
         <div className="mx-auto w-full max-w-393.5">
           <div className="grid gap-x-10 gap-y-16 md:grid-cols-2 xl:grid-cols-3">
-            {articles.map((article) => (
+            {articlePreviews.map((article) => (
               <ArticleCard article={article} key={article.title} />
             ))}
           </div>

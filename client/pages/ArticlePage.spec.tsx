@@ -26,9 +26,11 @@ describe("Actualidad article navigation", () => {
     );
 
     for (const article of articles) {
+      if (article.id === "circuitos-urbanos") continue;
       expect(html).toContain(`href="/actualidad/${article.id}"`);
       expect(html).toContain(`aria-label="Leer más: ${article.title}"`);
     }
+    expect(html).not.toContain('href="/actualidad/circuitos-urbanos"');
     expect(new Set(articles.map((article) => article.id)).size).toBe(
       articles.length,
     );
