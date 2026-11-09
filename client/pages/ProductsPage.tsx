@@ -246,7 +246,7 @@ const productFeatureImages: Record<string, string[]> = {
     "products-cobertura-progresiva.png",
   ],
   trenes: [
-    "products-trenes.png",
+    "products-trenes-marca.png",
     "products-contexto-urbano.JPG",
     "products-diversidad-flota.JPG",
   ],
