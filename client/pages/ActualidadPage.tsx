@@ -38,7 +38,11 @@ function ArticleCard({ article }: { article: Article }) {
         )}
       </Link>
       <p className="mt-5 text-[clamp(0.7rem,0.78vw,0.9375rem)] font-bold uppercase leading-tight text-publiex-blue">
-        {article.category} · {article.date}
+        {article.category} ·{" "}
+        {/* Capitalize the month independently of the uppercase category. */}
+        <time className="capitalize" dateTime={article.publishedAt}>
+          {article.date}
+        </time>
       </p>
       <h3 className="mt-4 min-h-[5.7rem] text-[clamp(1.45rem,1.9vw,2.25rem)] font-normal leading-[0.95] text-black">
         <Link
