@@ -92,7 +92,7 @@ export const insights = [
       "Publicidad en movimiento: cómo acompañar a la audiencia durante su recorrido.",
     description:
       "Una mirada a las posibilidades de integrar presencia exterior, experiencias interiores y frecuencia urbana.",
-    image: "figma-insight-innovation.jpeg",
+    image: "home-actualidad-innovacion.png",
     href: "/actualidad#publicidad-en-movimiento",
   },
   {
