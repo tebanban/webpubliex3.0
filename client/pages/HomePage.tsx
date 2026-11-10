@@ -495,6 +495,7 @@ export default function HomePage() {
                 >
                   <ImagePanel
                     image={item.image}
+                    video={item.video}
                     title={item.title}
                     variant="case"
                   >

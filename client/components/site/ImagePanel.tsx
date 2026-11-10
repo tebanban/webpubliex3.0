@@ -22,11 +22,13 @@ const panelPadding = {
 
 export function ImagePanel({
   image,
+  video,
   title,
   children,
   variant = "solution",
 }: {
   image: string;
+  video?: string;
   title: string;
   children: ReactNode;
   variant?: keyof typeof panelShape;
@@ -35,11 +37,27 @@ export function ImagePanel({
     <article
       className={`group relative overflow-hidden bg-zinc-900 [container-type:inline-size] ${panelHeight[variant]} ${panelShape[variant]}`}
     >
-      <img
-        alt={title}
-        className="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
-        src={publiexAsset(image)}
-      />
+      {/* Video panels retain the image as a poster while media loads. */}
+      {video ? (
+        <video
+          aria-label={title}
+          autoPlay
+          className="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
+          loop
+          muted
+          playsInline
+          poster={publiexAsset(image)}
+          preload="metadata"
+        >
+          <source src={publiexAsset(video)} type="video/mp4" />
+        </video>
+      ) : (
+        <img
+          alt={title}
+          className="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-105"
+          src={publiexAsset(image)}
+        />
+      )}
       <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-black/10 to-black/80" />
       <div
         className={`relative flex h-full min-h-0 flex-col justify-end text-white ${panelPadding[variant]}`}

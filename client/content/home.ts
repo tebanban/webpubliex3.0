@@ -81,6 +81,7 @@ export const cases = [
     type: "DOOH",
     title: "Una pantalla que cambió con la ciudad.",
     image: "case-screen.png",
+    video: "home-cases-contexto.mp4",
     href: "/case-studies#dooh",
   },
 ];
