@@ -27,7 +27,7 @@ export const articles: Article[] = [
     description:
       "Una mirada a las posibilidades de integrar presencia exterior, experiencias interiores y frecuencia urbana.",
     image: "actualidad-trenes-preview.jpg",
-    heroImage: "actualidad-trenes-hero.png",
+    heroImage: "actualidad-publicidad-en-movimiento.png",
     imageAlt: "Tren con publicidad exterior al atardecer",
     intro:
       "La movilidad permite que una marca conecte con la audiencia en distintos momentos, dentro y fuera del trayecto.",
