@@ -129,7 +129,7 @@ const productGroups = [
       {
         id: "trenes",
         title: "Trenes",
-        image: "products-trenes.png",
+        image: "products-trenes-marca.png",
         badge: "Movimiento + permanencia",
         description:
           "Dominación exterior e interior para acompañar recorridos urbanos con múltiples momentos de contacto.",
@@ -247,7 +247,7 @@ const productFeatureImages: Record<string, string[]> = {
   ],
   trenes: [
     "products-trenes-marca.png",
-    "products-contexto-urbano.JPG",
+    "products-trenes-contexto.jpg",
     "products-trenes-diversidad.jpg",
   ],
   "innovaciones-a-la-medida": [

@@ -8,7 +8,8 @@
     "start": "vite preview --host 0.0.0.0",
     "test": "vitest --run",
     "format.fix": "prettier --write .",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "check:assets": "node scripts/check-assets.mjs"
   },
   "dependencies": {
     "@react-google-maps/api": "^2.20.8"

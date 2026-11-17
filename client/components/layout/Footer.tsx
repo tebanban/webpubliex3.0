@@ -43,22 +43,22 @@ const footerGroups = [
 const socialLinks = [
   {
     label: "Instagram",
-    icon: "footer-social-4.svg",
+    icon: "footer-instagram.svg",
     href: "https://www.instagram.com/publiex_cr/",
   },
   {
     label: "Facebook",
-    icon: "footer-social-5.svg",
+    icon: "footer-facebook.svg",
     href: "https://www.facebook.com/PubliexCR/?locale=es_LA",
   },
   {
     label: "LinkedIn",
-    icon: "footer-social-3.svg",
+    icon: "footer-linkedin.svg",
     href: "https://cr.linkedin.com/company/publiex",
   },
   {
     label: "YouTube",
-    icon: "footer-social-2.svg",
+    icon: "footer-youtube.svg",
     href: "https://www.youtube.com/",
   },
 ];
@@ -90,7 +90,7 @@ export function Footer() {
               alt=""
               aria-hidden="true"
               className="h-4.75 w-5.25 object-contain"
-              src={publiexAsset("footer-arrow.svg")}
+              src={publiexAsset("footer-back-to-top.svg")}
             />
           </a>
         </div>

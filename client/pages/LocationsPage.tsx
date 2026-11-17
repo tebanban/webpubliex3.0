@@ -191,7 +191,7 @@ function GoogleLocationsMap({
     const height = selected ? 46 : 37;
 
     return {
-      url: publiexAsset("marker2.svg"),
+      url: publiexAsset("locations-marker.svg"),
       scaledSize: new google.maps.Size(width, height),
       anchor: new google.maps.Point(width / 2, height),
     };
@@ -260,7 +260,7 @@ function StaticMapFallback({ locations }: { locations: PubliexLocation[] }) {
       <img
         alt="Mapa comercial de muestra con ubicaciones Publiex"
         className="absolute inset-0 size-full object-cover"
-        src={publiexAsset("Locations-map.png")}
+        src={publiexAsset("locations-coverage-map.png")}
       />
       <div className="absolute left-[2.5%] top-6 font-raleway text-sm font-semibold uppercase tracking-[0.14em] text-slate-500">
         Océano Pacífico

@@ -74,9 +74,9 @@ export default function HomePage() {
           loop
           muted
           playsInline
-          poster={publiexAsset("figma-home-hero.jpeg")}
+          poster={publiexAsset("home-hero.jpeg")}
         >
-          <source src={publiexAsset("hero_home.mp4")} type="video/mp4" />
+          <source src={publiexAsset("home-hero.mp4")} type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-publiex-hero-overlay" />
         <div className="relative mx-auto flex min-h-[inherit] w-full max-w-480 items-end px-5 pb-6 pt-28 md:px-10 md:pb-10">
@@ -136,7 +136,7 @@ export default function HomePage() {
           <img
             alt="Pantalla digital Publiex en una zona urbana nocturna"
             className="h-full min-h-90 w-full object-cover"
-            src={publiexAsset("figma-location.jpeg")}
+            src={publiexAsset("home-locations.jpeg")}
           />
         </div>
       </section>
@@ -146,7 +146,7 @@ export default function HomePage() {
         <img
           alt="Valla iluminada en una carretera de Costa Rica durante la noche"
           className="absolute inset-0 size-full object-cover"
-          src={publiexAsset("figma-skip-ad.jpeg")}
+          src={publiexAsset("home-impact.jpeg")}
         />
         <div className="absolute inset-0 bg-black/30" />
         <div className="relative mx-auto flex min-h-[clamp(45rem,59.2vw,71.0625rem)] w-full max-w-480 items-center justify-end px-5 py-[clamp(5rem,9.2vw,11.0625rem)] md:px-10 lg:px-24 xl:items-start">
@@ -171,7 +171,7 @@ export default function HomePage() {
         <img
           alt="Estructura de publicidad exterior Publiex"
           className="absolute inset-0 size-full object-cover"
-          src={publiexAsset("figma-about.jpg")}
+          src={publiexAsset("home-about.jpg")}
         />
         <div className="absolute inset-0 bg-black/35" />
         <div className="relative mx-auto flex min-h-[clamp(43.75rem,55.3vw,66.375rem)] w-full max-w-480 items-center justify-end px-5 py-[clamp(5rem,8vw,9.5rem)] md:px-10 lg:px-24">
@@ -261,7 +261,7 @@ export default function HomePage() {
           <img
             alt="Mega formato Publiex en una vía principal"
             className="h-full min-h-130 w-full object-cover"
-            src={publiexAsset("figma-large-format.jpeg")}
+            src={publiexAsset("home-large-format.jpeg")}
           />
           <div className="flex flex-col justify-center px-5 py-[clamp(5rem,4.25vw,5.0625rem)] md:px-10 lg:px-15">
             <SectionLabel dark>Gran formato</SectionLabel>
@@ -289,7 +289,7 @@ export default function HomePage() {
           <img
             alt="Publicidad exterior en tren"
             className="h-full min-h-130 w-full object-cover"
-            src={publiexAsset("home-transporte.png")}
+            src={publiexAsset("home-transport.png")}
           />
           <div className="px-5 py-[clamp(5rem,6.8vw,8.125rem)] md:px-10 lg:px-24 xl:pl-20.5">
             <SectionLabel>Publicidad en transporte</SectionLabel>
@@ -342,7 +342,7 @@ export default function HomePage() {
             <img
               alt="Proyecto especial de publicidad exterior Publiex"
               className="aspect-756/518 w-full object-cover"
-              src={publiexAsset("figma-special-projects.jpeg")}
+              src={publiexAsset("home-special-projects.jpeg")}
             />
             <SectionLabel dark>Proyectos especiales</SectionLabel>
             <h2 className="font-raleway text-[clamp(1.8rem,3.7vw,3.9rem)] font-semibold leading-[1.04]">

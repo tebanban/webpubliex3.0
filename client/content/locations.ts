@@ -80,7 +80,7 @@ export const publiexLocations: PubliexLocation[] = (
   const image =
     category === "Mega landmark"
       ? publiexAsset("locations-selection-thumb.png")
-      : publiexAsset("Locations-campaign2.png");
+      : publiexAsset("locations-campaign.png");
 
   return {
     id: location.id,

@@ -5,32 +5,32 @@ const networkStats = [
   {
     value: "+3,5M",
     label: "pasajeros al año",
-    icon: "tren-1.svg",
+    icon: "info-trenes-passengers.svg",
   },
   {
     value: "14",
     label: "trenes en operación activa",
-    icon: "tren-2.svg",
+    icon: "info-trenes-fleet.svg",
   },
   {
     value: "96",
     label: "servicios por día",
-    icon: "tren-3.svg",
+    icon: "info-trenes-services.svg",
   },
   {
     value: "33",
     label: "paradas en la red",
-    icon: "tren-4.svg",
+    icon: "info-trenes-stops.svg",
   },
   {
     value: "14",
     label: "cantones de influencia",
-    icon: "tren-5.svg",
+    icon: "info-trenes-coverage.svg",
   },
   {
     value: "+2M",
     label: "impresiones exteriores\nmensuales GAM",
-    icon: "tren-6.svg",
+    icon: "info-trenes-impressions.svg",
   },
 ];
 
@@ -273,7 +273,7 @@ export default function InfoTrenesPage() {
             <img
               alt="Tren Publiex con campaña exterior en movimiento"
               className="size-full object-cover object-center"
-              src={publiexAsset("infotren-reach.png")}
+              src={publiexAsset("info-trenes-reach.png")}
             />
           </div>
         </div>

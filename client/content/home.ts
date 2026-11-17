@@ -2,38 +2,38 @@
   {
     title: "Vallas unipolares",
     description: "Una presencia que se convirtió en punto de referencia.",
-    image: "figma-card-vallas.jpeg",
+    image: "home-solutions-billboards.jpeg",
     href: "/products#vallas-unipolares",
   },
   {
     title: "Mega landmarks",
     description: "Ocupe el paisaje. Conviértase en referencia.",
-    image: "figma-card-mega-landmarks.jpeg",
+    image: "home-solutions-landmarks.jpeg",
     href: "/products#mega-landmarks",
   },
   {
     title: "Circuitos rotativos",
     description:
       "Más recorridos. Más frecuencia. Más oportunidades de ser visto.",
-    image: "figma-card-circuitos.jpeg",
+    image: "home-solutions-circuits.jpeg",
     href: "/products#circuitos-rotativos",
   },
   {
     title: "Pantallas digitales",
     description: "Contenido que responde al ritmo de la ciudad.",
-    image: "figma-card-digital.png",
+    image: "home-solutions-dooh.png",
     href: "/products#pantallas-digitales",
   },
   {
     title: "Publicidad en transporte",
     description: "Su marca viaja con Costa Rica.",
-    image: "home-soluciones-train.png",
+    image: "home-solutions-trains.png",
     href: "/products#trenes",
   },
   {
     title: "Proyectos especiales",
     description: "Ideas que convierten el medio en experiencia.",
-    image: "figma-card-special-projects.jpeg",
+    image: "home-solutions-special-projects.jpeg",
     href: "/products#innovaciones-a-la-medida",
   },
 ];
@@ -66,22 +66,22 @@ export const cases = [
     tag: "Gran formato",
     type: "Landmark",
     title: "Una presencia que se convirtió en punto de referencia.",
-    image: "figma-case-landmark.jpeg",
+    image: "home-cases-landmark.jpeg",
     href: "/case-studies#landmark",
   },
   {
     tag: "Movilidad",
     type: "Trenes",
     title: "Un lanzamiento que recorrió la GAM.",
-    image: "home-cases-train.png",
+    image: "home-cases-trains.png",
     href: "/case-studies#trenes",
   },
   {
     tag: "Contexto",
     type: "DOOH",
     title: "Una pantalla que cambió con la ciudad.",
-    image: "case-screen.png",
-    video: "home-cases-contexto.mp4",
+    image: "shared-dooh-screen.png",
+    video: "home-cases-dooh.mp4",
     href: "/case-studies#dooh",
   },
 ];
@@ -93,7 +93,7 @@ export const insights = [
       "Publicidad en movimiento: cómo acompañar a la audiencia durante su recorrido.",
     description:
       "Una mirada a las posibilidades de integrar presencia exterior, experiencias interiores y frecuencia urbana.",
-    image: "home-actualidad-innovacion.png",
+    image: "home-insights-innovation.png",
     href: "/actualidad#publicidad-en-movimiento",
   },
   {
@@ -101,7 +101,7 @@ export const insights = [
     title: "De visibilidad a dominación visual.",
     description:""
       ,
-    image: "figma-insight-sustainability.jpeg",
+    image: "home-insights-ooh.jpeg",
     href: "/actualidad#dominacion-visual",
   },
   {
@@ -109,7 +109,7 @@ export const insights = [
     title: "Medir antes de comunicar.",
     description:
       "",
-    image: "figma-insight-ooh.jpeg",
+    image: "home-insights-sustainability.jpeg",
     href: "/actualidad#medir-antes-de-comunicar",
   },
 ];

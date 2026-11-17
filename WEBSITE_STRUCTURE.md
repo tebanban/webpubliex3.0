@@ -101,7 +101,7 @@ Purpose:
 
 Main elements:
 
-- Background image: `figma-home-hero.jpeg`.
+- Background image: `home-hero.jpeg`.
 - Blue/black overlay gradient.
 - Main headline.
 - Supporting text.
@@ -120,7 +120,7 @@ Main elements:
 - Blue gradient background.
 - Left text block.
 - "Buscar" link.
-- Right image: `figma-location.jpeg`.
+- Right image: `home-locations.jpeg`.
 
 ### 4. Impact Statement
 
@@ -130,7 +130,7 @@ Purpose:
 
 Main elements:
 
-- Background image: `figma-skip-ad.jpeg`.
+- Background image: `home-impact.jpeg`.
 - Dark overlay.
 - Right-aligned label, headline, and supporting copy.
 
@@ -142,7 +142,7 @@ Purpose:
 
 Main elements:
 
-- Background image: `figma-about.jpeg`.
+- Background image: `home-about.jpg`.
 - Dark overlay.
 - "27 anos" emphasis.
 - Right-aligned company copy.
@@ -169,7 +169,7 @@ Purpose:
 
 Main elements:
 
-- Image: `figma-large-format.jpeg`.
+- Image: `home-large-format.jpeg`.
 - Text column.
 - Section label.
 - Headline.
@@ -178,15 +178,7 @@ Main elements:
 
 ### 8. Urban Furniture / Banner Posts
 
-Purpose:
-
-- Explains route-based repeated visibility.
-
-Main elements:
-
-- Text column.
-- Image: `figma-urban-furniture.jpeg`.
-- CTA link.
+This former section was removed. Its unused media has been deleted.
 
 ### 9. Transport Advertising
 
@@ -196,7 +188,7 @@ Purpose:
 
 Main elements:
 
-- Image: `figma-transport.jpeg`.
+- Image: `home-transport.png`.
 - Navy text area.
 - CTA link.
 
@@ -209,8 +201,8 @@ Purpose:
 Main elements:
 
 - Two-column layout.
-- DOOH image: `figma-dooh-raw-1.jpeg`.
-- Special projects image: `figma-special-projects.jpeg`.
+- DOOH video: `home-dooh.mp4`.
+- Special projects image: `home-special-projects.jpeg`.
 - CTA links for both formats.
 
 ### 11. Audience Analytics
@@ -373,14 +365,14 @@ Current sections:
 
 2. Featured Story
    - Two-column feature story layout.
-   - Left image: `actualidad-raw-01.jpeg`.
+   - Left image: `actualidad-trenes-preview.jpg`.
    - Right headline and summary for the featured story about advertising in movement.
 
 3. Editorial Grid
    - Gray background.
    - Category filter chips.
    - Six article cards driven by the local `articles` array.
-   - Article assets are stored locally as `actualidad-raw-*` files in `public/images/publiex`.
+   - Article assets use lowercase kebab-case names with the `actualidad-` prefix in `public/images/publiex`.
 
 4. Press Room
    - Red background.
@@ -406,7 +398,7 @@ Current sections:
    - Two-column section.
    - Left text block about turning coverage into campaign decisions.
    - CTA: "Solicitar ubicaciones".
-   - Right image: `figma-location.jpeg`.
+   - Right image: `home-locations.jpeg`.
 
 ## Case Studies Page
 
@@ -415,7 +407,7 @@ File: `client/pages/CaseStudiesPage.tsx`
 Current sections:
 
 1. Hero
-   - Full-width photographic hero using `casestudies-hero.png`.
+   - Full-width photographic hero using `cases-hero.png`.
    - Transparent header behavior is preserved for this route.
    - Large centered title: "Casos de éxito".
 
@@ -424,9 +416,9 @@ Current sections:
    - Eyebrow: Noticias.
    - Headline: "Campañas que se volvieron parte del viaje".
    - Three large white case blocks:
-     - Landmark: image-top layout using `casestudies-landmark.png`.
-     - Trenes: alternating image-right layout using `casestudies-tren.png`.
-     - DOOH: image-top layout using `casestudies-dooh.mp4`.
+     - Landmark: image-top layout using `cases-landmark.png`.
+     - Trenes: alternating image-right layout using `cases-trenes.png`.
+     - DOOH: image-top layout using `cases-dooh.mp4`.
    - Case content is driven by the local `caseStudies` array.
 
 ## Info Trenes Page
@@ -454,7 +446,7 @@ Current sections:
    - Each row includes a consultation CTA.
 
 5. Campaign Ecosystem CTA
-   - Red text block paired with train image `infotren-reach.png`.
+   - Red text block paired with train image `info-trenes-reach.png`.
    - CTA links to `/contact`.
 
 ## Contact Page
