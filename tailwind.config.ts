@@ -64,6 +64,11 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        // Expand audience rings from the blue circle to the outer boundary.
+        "audience-ripple": {
+          "0%": { transform: "scale(0.663)", opacity: "0.65" },
+          "100%": { transform: "scale(1)", opacity: "0" },
+        },
         "accordion-down": {
           from: {
             height: "0",
@@ -82,6 +87,7 @@ export default {
         },
       },
       animation: {
+        "audience-ripple": "audience-ripple 3.1s ease-out infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },

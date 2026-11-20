@@ -390,13 +390,20 @@ export default function HomePage() {
           </div>
 
           <div className="relative mx-auto flex aspect-square w-full max-w-164.75 items-center justify-center xl:mt-18.25">
-            <div className="absolute inset-0 rounded-full border border-publiex-blue" />
-            <div className="absolute inset-12.5 rounded-full border border-publiex-blue" />
-            <div className="flex aspect-square w-[66.3%] flex-col items-center justify-center rounded-full bg-publiex-blue px-10 text-center text-white">
+            {/* Staggered ripples keep the original static rings for reduced motion. */}
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-0 rounded-full border border-publiex-blue motion-safe:animate-audience-ripple"
+            />
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-12.5 rounded-full border border-publiex-blue motion-safe:inset-0 motion-safe:animate-audience-ripple motion-safe:[animation-delay:-2s]"
+            />
+            <div className="relative flex aspect-square w-[66.3%] flex-col items-center justify-center rounded-full bg-publiex-blue px-10 text-center text-white">
               <p className="font-raleway text-[clamp(0.75rem,0.9vw,1.201rem)] font-semibold uppercase">
                 Audiencia única estimada
               </p>
-              <p className="mt-4 font-raleway text-[clamp(2.7rem,3.9vw,4.7rem)] font-black leading-none text-publiex-red">
+              <p className="mt-4 whitespace-nowrap font-raleway text-[clamp(2.7rem,3.9vw,4.7rem)] font-black leading-none text-publiex-red">
                 1.578.841
               </p>
               <p className="mt-4 max-w-86.25 font-raleway text-[clamp(0.8rem,1vw,1.201rem)] font-normal leading-tight">
