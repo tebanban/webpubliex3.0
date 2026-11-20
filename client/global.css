@@ -1,5 +1,5 @@
 ﻿/** @import must precede all other statements */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Raleway:wght@400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&family=Raleway:wght@300;400;600;700;800;900&display=swap");
 
 @import "tailwindcss";
 
@@ -122,6 +122,11 @@
       BlinkMacSystemFont,
       "Segoe UI",
       sans-serif;
+  }
+
+  /* Light body copy across pages; explicit label and metric weights take priority. */
+  main p {
+    @apply font-light;
   }
 
   :where(p, span, li, h1, h2, h3, h4, h5, h6, a, button, label, td, th) {

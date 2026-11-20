@@ -245,7 +245,7 @@ export default function HomePage() {
                     {solution.title}
                   </h3>
                   <div className="w-full text-left">
-                    <p className="font-raleway text-[clamp(1rem,6.5cqw,2.0rem)] font-normal leading-tight">
+                    <p className="font-raleway text-[clamp(1rem,6.5cqw,2.0rem)] font-light leading-tight">
                       {solution.description}
                     </p>
                     <div className="mt-[clamp(0.2rem,1.2cqw,0.50rem)] w-full border-t border-white pt-[clamp(0.35rem,2.2cqw,0.85rem)]">
@@ -415,7 +415,7 @@ export default function HomePage() {
               <p className="mt-4 whitespace-nowrap font-raleway text-[clamp(2.7rem,3.9vw,4.7rem)] font-black leading-none text-publiex-red">
                 1.578.841
               </p>
-              <p className="mt-4 max-w-86.25 font-raleway text-[clamp(0.8rem,1vw,1.201rem)] font-normal leading-tight">
+              <p className="mt-4 max-w-86.25 font-raleway text-[clamp(0.8rem,1vw,1.201rem)] font-light leading-tight">
                 estimación basada en dispositivos móviles únicos detectados
                 frente a los activos
               </p>
@@ -434,7 +434,7 @@ export default function HomePage() {
                 impactos estimados con oportunidad efectiva de visualización de
                 la campaña
               </p>
-              <p className="mt-2.5 border-t border-publiex-blue pt-2.5 font-raleway text-[12px] font-normal leading-3.75 text-publiex-blue">
+              <p className="mt-2.5 border-t border-publiex-blue pt-2.5 font-raleway text-[12px] font-light leading-3.75 text-publiex-blue">
                 ESTIMACIÓN · 100% SOT
               </p>
             </article>
@@ -450,7 +450,7 @@ export default function HomePage() {
                 tiempo promedio detectado frente a las pantallas, una ventana
                 real para generar atención
               </p>
-              <p className="mt-2 border-t border-publiex-blue pt-2.5 font-raleway text-[12px] font-normal leading-[15px] text-publiex-blue">
+              <p className="mt-2 border-t border-publiex-blue pt-2.5 font-raleway text-[12px] font-light leading-[15px] text-publiex-blue">
                 MEDICIÓN TECNOLÓGICA
               </p>
             </article>
@@ -464,13 +464,13 @@ export default function HomePage() {
                   <div className="absolute inset-y-0 left-0 w-[46%] rounded-l-full bg-publiex-blue" />
                 </div>
                 <div className="font-raleway font-bold lowercase leading-none">
-                  <p className="text-[29px] text-publiex-red">51,6%</p>
-                  <p className="mt-1 text-[14px] font-normal text-[#959595]">mujeres</p>
-                  <p className="mt-3.5 text-[29px] text-publiex-blue">48,4%</p>
-                  <p className="mt-1 text-[14px] font-normal text-[#959595]">hombres</p>
+                  <p className="text-[29px] font-bold text-publiex-red">51,6%</p>
+                  <p className="mt-1 text-[14px] font-light text-[#959595]">mujeres</p>
+                  <p className="mt-3.5 text-[29px] font-bold text-publiex-blue">48,4%</p>
+                  <p className="mt-1 text-[14px] font-light text-[#959595]">hombres</p>
                 </div>
               </div>
-              <p className="mt-3.5 border-t border-publiex-blue pt-2.5 font-raleway text-[12px] font-normal uppercase leading-[15px] text-publiex-blue">
+              <p className="mt-3.5 border-t border-publiex-blue pt-2.5 font-raleway text-[12px] font-light uppercase leading-[15px] text-publiex-blue">
                 Perfil demográfico modelado
               </p>
             </article>

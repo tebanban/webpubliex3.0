@@ -152,7 +152,7 @@ export default function InfoTrenesPage() {
                     {value}
                   </p>
                 </div>
-                <p className="mt-3 whitespace-pre-line text-[clamp(1rem,1.25vw,1.5rem)] font-normal leading-tight">
+                <p className="mt-3 whitespace-pre-line text-[clamp(1rem,1.25vw,1.5rem)] font-light leading-tight">
                   {label}
                 </p>
               </article>
@@ -190,7 +190,7 @@ export default function InfoTrenesPage() {
                 <h3 className="mt-7 min-h-20 text-[clamp(1.4rem,1.85vw,2.1875rem)] font-semibold leading-[1.18]">
                   {route.title}
                 </h3>
-                <p className="mt-10 text-[clamp(1rem,1.25vw,1.5rem)] font-normal leading-loose">
+                <p className="mt-10 text-[clamp(1rem,1.25vw,1.5rem)] font-light leading-loose">
                   {route.detail}
                 </p>
                 <p className="whitespace-pre-line text-[clamp(1rem,1.25vw,1.5rem)] leading-loose">
@@ -239,7 +239,7 @@ export default function InfoTrenesPage() {
                   >
                     Consultar
                   </Link>
-                  <p className="mt-3 whitespace-nowrap font-normal">Disponibilidad y recomendación</p>
+                  <p className="mt-3 whitespace-nowrap font-light">Disponibilidad y recomendación</p>
                 </div>
               </article>
             ))}
