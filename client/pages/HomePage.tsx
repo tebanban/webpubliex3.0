@@ -317,7 +317,7 @@ export default function HomePage() {
             <video
               aria-label="Pantalla digital Publiex con contenido dinámico"
               autoPlay
-              className="aspect-756/518 w-full object-cover object-left"
+              className="aspect-756/518 w-full object-cover object-center"
               loop
               muted
               playsInline
