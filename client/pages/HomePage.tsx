@@ -193,10 +193,15 @@ export default function HomePage() {
               sus necesidades para hacer crecer sus marcas.
             </p>
             <a
-              className="relative mt-8 inline-block pb-1 font-raleway text-sm font-bold uppercase text-white transition after:absolute after:bottom-0 after:left-0 after:h-px after:w-screen after:bg-publiex-red after:content-[''] hover:text-white/75"
+              className="relative mt-8 inline-block pb-1 font-raleway text-sm font-bold uppercase text-white transition hover:text-white/75"
               href="/about"
             >
               Ver más
+              {/* The section clips this light red rule at the viewport edge. */}
+              <span
+                aria-hidden="true"
+                className="pointer-events-none absolute bottom-0 left-0 h-px w-screen bg-[var(--publiex-red)] opacity-60"
+              />
             </a>
           </div>
         </div>
@@ -476,8 +481,11 @@ export default function HomePage() {
       >
         <div className="mx-auto w-full max-w-480 px-5 py-[clamp(4.5rem,5vw,6rem)] md:px-10 lg:px-24">
           <div className="mx-auto max-w-393.5">
-            <div className="relative">
-              <SectionLabel>Casos de éxito</SectionLabel>
+            {/* Reserve a separate column so the link never overlaps the title. */}
+            <div className="xl:grid xl:grid-cols-[minmax(0,1fr)_20rem] xl:items-end xl:gap-x-12">
+              <div className="xl:col-span-2">
+                <SectionLabel>Casos de éxito</SectionLabel>
+              </div>
               <h2 className="mt-14.5 max-w-273 font-raleway text-[clamp(2.4rem,5.5vw,4.965rem)] font-semibold leading-tight md:leading-20.5">
                 Campañas que se
                 <span className="block">
@@ -486,11 +494,14 @@ export default function HomePage() {
                 </span>
               </h2>
               <a
-                className="mt-8 block w-full max-w-114.75 font-inter text-[16.45px] uppercase leading-normal text-white xl:absolute xl:right-0 xl:bottom-2 xl:mt-0"
+                className="mt-8 block w-full max-w-114.75 font-inter text-[16.45px] uppercase leading-normal text-white xl:mb-2 xl:mt-0"
                 href="/case-studies"
               >
                 Ver todos los casos
-                <span className="mt-2 block border-t border-publiex-red" />
+                <span
+                  aria-hidden="true"
+                  className="mt-2 block h-px bg-[var(--publiex-red)]"
+                />
               </a>
             </div>
             <div className="mt-16 grid gap-5 md:grid-cols-3 xl:mt-28 xl:grid-cols-[486px_486px_483px] xl:gap-10">
