@@ -224,10 +224,14 @@ export default function HomePage() {
                 </span>
               </h2>
               <a
-                className="relative pb-1 font-raleway text-sm font-extrabold uppercase after:absolute after:bottom-0 after:left-0 after:h-px after:w-screen after:bg-publiex-red after:content-['']"
+                className="relative inline-block shrink-0 self-start pb-1 font-raleway text-sm font-bold uppercase text-white transition hover:text-white/75 lg:self-auto"
                 href="/products"
               >
                 Ver todas las soluciones
+                <span
+                  aria-hidden="true"
+                  className="pointer-events-none absolute bottom-0 left-0 h-px w-screen bg-[var(--publiex-red)] opacity-60"
+                />
               </a>
             </div>
             <div className="mt-21.5 grid grid-cols-1 gap-x-5 gap-y-5 md:grid-cols-2 xl:grid-cols-3">
@@ -494,13 +498,13 @@ export default function HomePage() {
                 </span>
               </h2>
               <a
-                className="mt-8 block w-full max-w-114.75 font-inter text-[16.45px] uppercase leading-normal text-white xl:mb-2 xl:mt-0"
+                className="relative mt-8 inline-block justify-self-start pb-1 font-raleway text-sm font-bold uppercase text-white transition hover:text-white/75 xl:mb-2 xl:mt-0"
                 href="/case-studies"
               >
                 Ver todos los casos
                 <span
                   aria-hidden="true"
-                  className="mt-2 block h-px bg-[var(--publiex-red)]"
+                  className="pointer-events-none absolute bottom-0 left-0 h-px w-screen bg-[var(--publiex-red)] opacity-60"
                 />
               </a>
             </div>
