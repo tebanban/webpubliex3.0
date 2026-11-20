@@ -84,7 +84,7 @@ export default function ArticlePage() {
                 src={publiexAsset("article-quote-accent.svg")}
               />
             </div>
-            <p className="text-[clamp(1.5rem,2.42vw,2.9025rem)] font-semibold leading-[1.27]">
+            <p className="text-[clamp(1.5rem,2.42vw,2.9025rem)] font-normal leading-[1.27]">
               {article.quote}
             </p>
           </blockquote>

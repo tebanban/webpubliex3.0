@@ -279,12 +279,12 @@ export default function ContactPage() {
 
             {/* Submission status */}
             {status === "success" && (
-              <p className="font-uni text-sm font-semibold text-emerald-700 md:col-span-2">
+              <p className="font-uni text-sm font-normal text-emerald-700 md:col-span-2">
                 ¡Correo enviado con éxito! Pronto le contactaremos.
               </p>
             )}
             {status === "error" && (
-              <p className="font-uni text-sm font-semibold text-publiex-red md:col-span-2">
+              <p className="font-uni text-sm font-normal text-publiex-red md:col-span-2">
                 Error al enviar la solicitud. Por favor, intente de
                 nuevo.
               </p>
