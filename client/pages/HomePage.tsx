@@ -521,10 +521,11 @@ export default function HomePage() {
                 />
               </a>
             </div>
-            <div className="mt-16 grid gap-5 md:grid-cols-3 xl:mt-28 xl:grid-cols-[486px_486px_483px] xl:gap-10">
+            {/* Proportional columns preserve the desktop ratios without overflow. */}
+            <div className="mt-16 grid gap-5 md:grid-cols-3 xl:mt-28 xl:grid-cols-[minmax(0,486fr)_minmax(0,486fr)_minmax(0,483fr)] xl:gap-10">
               {cases.map((item) => (
                 <a
-                  className="block transition hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+                  className="block min-w-0 transition hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
                   href={item.href}
                   key={item.title}
                 >
@@ -564,10 +565,10 @@ export default function HomePage() {
                 <span className="text-publiex-red">Lo que sigue.</span>
               </span>
             </h2>
-            <div className="mt-12 grid gap-5 md:grid-cols-3 xl:grid-cols-[573px_481px_481px] xl:gap-4.75">
+            <div className="mt-12 grid gap-5 md:grid-cols-3 xl:grid-cols-[minmax(0,573fr)_minmax(0,481fr)_minmax(0,481fr)] xl:gap-4.75">
               {insights.map((item) => (
                 <a
-                  className="block transition hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-publiex-blue"
+                  className="block min-w-0 transition hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-publiex-blue"
                   href={item.href}
                   key={item.title}
                 >
@@ -597,7 +598,7 @@ export default function HomePage() {
       <section className="overflow-hidden">
         <div className="mx-auto w-full max-w-480 px-5 py-[clamp(0rem,4.4vw,5.3125rem)] md:px-10 lg:px-24">
           <div className="mx-auto grid w-full max-w-393.5 gap-[clamp(1.25rem,3.6vw,5.25rem)] md:grid-cols-2">
-            <div className="flex h-full flex-col bg-publiex-gradient px-[clamp(1.25rem,2.25vw,2.6875rem)] py-[clamp(3rem,4.4vw,5.3125rem)] text-white">
+            <div className="flex h-full min-w-0 flex-col bg-publiex-gradient px-[clamp(1.25rem,2.25vw,2.6875rem)] py-[clamp(3rem,4.4vw,5.3125rem)] text-white">
               <SectionLabel>Para agencias</SectionLabel>
               <h2 className="font-raleway text-[clamp(1.75rem,3vw,3.375rem)] font-semibold leading-tight md:leading-[0.98]">
                 Más velocidad para planificar. Más impacto para presentar.
@@ -613,7 +614,7 @@ export default function HomePage() {
                 </PrimaryLink>
               </div>
             </div>
-            <div className="flex h-full flex-col bg-zinc-200 px-[clamp(1.25rem,2.25vw,2.6875rem)] py-[clamp(3rem,4.4vw,5.3125rem)]">
+            <div className="flex h-full min-w-0 flex-col bg-zinc-200 px-[clamp(1.25rem,2.25vw,2.6875rem)] py-[clamp(3rem,4.4vw,5.3125rem)]">
               <SectionLabel dark>Para propietarios</SectionLabel>
               <h2 className="font-raleway text-[clamp(1.75rem,3vw,3.375rem)] font-semibold leading-tight md:leading-[0.98]">
                 Su espacio puede convertirse en un nuevo punto de referencia.
