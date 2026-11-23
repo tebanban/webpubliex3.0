@@ -89,7 +89,7 @@ export default function HomePage() {
                 imposible de ignorar
               </span>
             </h1>
-            <p className="mx-auto mt-4 max-w-237.5 font-raleway text-[clamp(1.1rem,2.3vw,1.965rem)] leading-tight">
+            <p className="mx-auto mt-4 max-w-237.5 font-raleway text-[clamp(1.0rem,1.35vw,1.6rem)] leading-tight">
               Grandes formatos, movilidad, tecnología y creatividad para hacer
               que su marca sea parte del paisaje y de la conversación.
             </p>
@@ -121,7 +121,7 @@ export default function HomePage() {
                 donde su marca debe estar.
               </span>
             </h2>
-            <p className="font-uni mt-7 max-w-167.5 text-[clamp(1.20rem,1.4vw,1.765rem)] leading-tight">
+            <p className="font-uni mt-7 max-w-167.5 text-[clamp(1.0rem,1.35vw,1.6rem)] leading-tight">
               Explore una muestra de cobertura por formato y provincia. Cada
               consulta puede convertirse en una selección curada con ficha
               técnica, métricas y disponibilidad confirmada.
@@ -156,7 +156,7 @@ export default function HomePage() {
               <span className="block">Afuera no</span>
               <span className="block text-publiex-red">hay skip ad</span>
             </h2>
-            <p className="mt-8 max-w-165 text-[clamp(1.25rem,1.65vw,1.965rem)] leading-tight">
+            <p className="mt-8 max-w-165 text-[clamp(1.0rem,1.35vw,1.6rem)] leading-tight">
               Creamos presencia real para marcas que no quieren pasar
               desapercibidas. Combinamos ubicaciones estratégicas, creatividad,
               tecnología y datos para convertir cada recorrido en una
@@ -186,7 +186,7 @@ export default function HomePage() {
             <h2 className="font-raleway text-[clamp(2.5rem,6vw,4.965rem)] font-bold lowercase leading-[1.04]">
               viendo hacia adelante.
             </h2>
-            <p className="font-uni mt-8 text-[clamp(1.25rem,1.65vw,1.965rem)] leading-tight">
+            <p className="font-uni mt-8 text-[clamp(1.0rem,1.35vw,1.6rem)] leading-tight">
               Somos una empresa especializada desde 1999 en el campo de la
               publicidad exterior (Out of Home Media) con más de 27 años de
               trayectoria en Costa Rica, dándole a cada cliente la solución a
@@ -245,7 +245,7 @@ export default function HomePage() {
                     {solution.title}
                   </h3>
                   <div className="w-full text-left">
-                    <p className="font-raleway text-[clamp(1rem,6.5cqw,2.0rem)] font-light leading-tight">
+                    <p className="font-raleway text-[clamp(1.0rem,1.35vw,1.6rem)] font-light leading-tight">
                       {solution.description}
                     </p>
                     <div className="mt-[clamp(0.2rem,1.2cqw,0.50rem)] w-full border-t border-white pt-[clamp(0.35rem,2.2cqw,0.85rem)]">
@@ -278,7 +278,7 @@ export default function HomePage() {
               Cuando una marca necesita dominar, el espacio debe estar a su
               altura.
             </h2>
-            <p className="mt-7 max-w-2xl text-[clamp(1.25rem,1.4vw,1.6875rem)] leading-tight">
+            <p className="mt-7 max-w-2xl text-[clamp(1.0rem,1.35vw,1.6rem)] leading-tight">
               Vallas unipolares y mega landmarks construyen presencia de alto
               impacto en rutas, intersecciones y puntos urbanos estratégicos.
             </p>
@@ -305,7 +305,7 @@ export default function HomePage() {
             <h2 className="max-w-183 font-raleway text-[clamp(2.1rem,5.3vw,6.0rem)] font-semibold leading-[0.97]">
               Una marca que acompaña el recorrido se vuelve parte del día a día.
             </h2>
-            <p className="mt-7 max-w-2xl text-[clamp(1.25rem,1.3vw,1.5625rem)] leading-tight">
+            <p className="mt-7 max-w-2xl text-[clamp(1.0rem,1.35vw,1.6rem)] leading-tight">
               Desde la dominación exterior hasta las experiencias interiores, el
               tren combina alcance urbano, permanencia y múltiples momentos de
               contacto.
@@ -339,7 +339,7 @@ export default function HomePage() {
               <h2 className="font-raleway text-[clamp(1.8rem,3.7vw,3.9rem)] font-semibold leading-[1.04]">
                 Mensajes que se mueven al ritmo de la ciudad.
               </h2>
-              <p className="mt-5 max-w-2xl text-lg leading-tight md:text-xl">
+              <p className="mt-5 max-w-2xl text-[clamp(1.0rem,1.35vw,1.6rem)] leading-tight">
                 Contenido flexible y de alto impacto para activar campañas
                 relevantes en los momentos que importan.
               </p>
@@ -359,7 +359,7 @@ export default function HomePage() {
               <h2 className="font-raleway text-[clamp(1.8rem,3.7vw,3.9rem)] font-semibold leading-[1.04]">
                 Cuando la idea sale del formato, empieza la conversación.
               </h2>
-              <p className="mt-5 max-w-2xl text-lg leading-tight md:text-xl">
+              <p className="mt-5 max-w-2xl text-[clamp(1.0rem,1.35vw,1.6rem)] leading-tight">
                 Salientes, volumétricos, sobrepuestos e iluminación LED
                 convierten una ubicación en una ejecución que la audiencia
                 recuerda y comparte.
@@ -389,7 +389,7 @@ export default function HomePage() {
                   <span className="block lowercase">audiencias.</span>
                 </span>
               </h2>
-              <p className="font-uni mt-8 max-w-164 text-[clamp(1.1rem,4.4cqw,1.8rem)] leading-tight">
+              <p className="font-uni mt-8 max-w-164 text-[clamp(1.0rem,1.35vw,1.6rem)] leading-tight">
                 Traducimos ubicaciones, movilidad, rutas y exposición en
                 decisiones de campaña más claras. La información operativa
                 permite comprender el alcance de un ecosistema que conecta
@@ -588,7 +588,7 @@ export default function HomePage() {
                     <h3 className="mt-4 font-raleway text-[clamp(1.5rem,2.16vw,2.59rem)] font-semibold leading-[1.05]">
                       {item.title}
                     </h3>
-                    <p className="mt-4 text-sm leading-snug md:text-base">
+                    <p className="mt-4 text-[clamp(1.0rem,1.35vw,1.6rem)] leading-snug">
                       {item.description}
                     </p>
                   </ImagePanel>
@@ -608,7 +608,7 @@ export default function HomePage() {
               <h2 className="font-raleway text-[clamp(1.75rem,3vw,3.375rem)] font-semibold leading-tight md:leading-[0.98]">
                 Más velocidad para planificar. Más impacto para presentar.
               </h2>
-              <p className="mt-[clamp(1rem,1.4vw,1.25rem)] max-w-2xl text-[clamp(0.95rem,1.2vw,1.125rem)] leading-tight">
+              <p className="mt-[clamp(1rem,1.4vw,1.25rem)] max-w-2xl text-[clamp(1.0rem,1.35vw,1.6rem)] leading-tight">
                 Una experiencia diseñada para planners, compradores de medios y
                 equipos comerciales que necesitan pasar de la búsqueda a la
                 propuesta sin fricción.
@@ -624,7 +624,7 @@ export default function HomePage() {
               <h2 className="font-raleway text-[clamp(1.75rem,3vw,3.375rem)] font-semibold leading-tight md:leading-[0.98]">
                 Su espacio puede convertirse en un nuevo punto de referencia.
               </h2>
-              <p className="mt-[clamp(1rem,1.4vw,1.25rem)] max-w-2xl text-[clamp(0.95rem,1.2vw,1.125rem)] leading-tight">
+              <p className="mt-[clamp(1rem,1.4vw,1.25rem)] max-w-2xl text-[clamp(1.0rem,1.35vw,1.6rem)] leading-tight">
                 Una experiencia diseñada para planners, compradores de medios y
                 equipos comerciales que necesitan pasar de la búsqueda a la
                 propuesta sin fricción.
