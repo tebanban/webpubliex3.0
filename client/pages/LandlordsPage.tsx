@@ -68,7 +68,7 @@ export default function LandlordsPage() {
           <img
             alt="Valla publicitaria Publiex sobre una ruta principal"
             className="absolute top-[-73.19%] left-[-11.18%] h-[215.24%] w-[137.63%] max-w-none"
-            src={publiexAsset("landlords-location.png")}
+            src={publiexAsset("landlords-location.webp")}
           />
         </div>
         <img

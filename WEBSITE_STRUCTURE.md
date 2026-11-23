@@ -188,7 +188,7 @@ Purpose:
 
 Main elements:
 
-- Image: `home-transport.png`.
+- Image: `home-transport.webp`.
 - Navy text area.
 - CTA link.
 
@@ -202,7 +202,7 @@ Main elements:
 
 - Two-column layout.
 - DOOH video: `home-dooh.mp4`.
-- Special projects image: `home-special-projects.jpeg`.
+- Special projects image: `home-special-projects.webp`.
 - CTA links for both formats.
 
 ### 11. Audience Analytics
@@ -407,7 +407,7 @@ File: `client/pages/CaseStudiesPage.tsx`
 Current sections:
 
 1. Hero
-   - Full-width photographic hero using `cases-hero.png`.
+   - Full-width photographic hero using `cases-hero.webp`.
    - Transparent header behavior is preserved for this route.
    - Large centered title: "Casos de éxito".
 
@@ -416,8 +416,8 @@ Current sections:
    - Eyebrow: Noticias.
    - Headline: "Campañas que se volvieron parte del viaje".
    - Three large white case blocks:
-     - Landmark: image-top layout using `cases-landmark.png`.
-     - Trenes: alternating image-right layout using `cases-trenes.png`.
+     - Landmark: image-top layout using `cases-landmark.webp`.
+     - Trenes: alternating image-right layout using `cases-trenes.webp`.
      - DOOH: image-top layout using `cases-dooh.mp4`.
    - Case content is driven by the local `caseStudies` array.
 
@@ -428,7 +428,7 @@ File: `client/pages/InfoTrenesPage.tsx`
 Current sections:
 
 1. Hero
-   - Deep-blue image hero using `info-trenes-hero.jpeg`.
+   - Deep-blue image hero using `info-trenes-hero.webp`.
    - Headline: "Su marca viaja con Costa Rica".
    - CTAs to `/contact` and `#formatos`.
 
@@ -446,7 +446,7 @@ Current sections:
    - Each row includes a consultation CTA.
 
 5. Campaign Ecosystem CTA
-   - Red text block paired with train image `info-trenes-reach.png`.
+   - Red text block paired with train image `info-trenes-reach.webp`.
    - CTA links to `/contact`.
 
 ## Contact Page

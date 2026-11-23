@@ -27,7 +27,7 @@ export const articles: Article[] = [
     description:
       "Una mirada a las posibilidades de integrar presencia exterior, experiencias interiores y frecuencia urbana.",
     image: "actualidad-trenes-preview.jpg",
-    heroImage: "actualidad-publicidad-en-movimiento.png",
+    heroImage: "actualidad-publicidad-en-movimiento.webp",
     imageAlt: "Tren con publicidad exterior al atardecer",
     intro:
       "La movilidad permite que una marca conecte con la audiencia en distintos momentos, dentro y fuera del trayecto.",
@@ -90,7 +90,7 @@ export const articles: Article[] = [
       "Circuitos urbanos: por qué la repetición convierte un recorrido en una experiencia de marca",
     description:
       "Una perspectiva práctica para transformar objetivos de campaña en decisiones de medios.",
-    image: "actualidad-educacion.png",
+    image: "actualidad-educacion.webp",
     imageAlt: "Publicidad en un corredor urbano",
     intro:
       "Una perspectiva práctica para transformar objetivos de campaña en decisiones de medios.",
@@ -108,7 +108,7 @@ export const articles: Article[] = [
     title: "Cuando la creatividad transforma el formato",
     description:
       "El soporte puede formar parte de la idea cuando la creatividad considera el espacio y su contexto.",
-    image: "actualidad-casos.jpg",
+    image: "actualidad-casos.webp",
     imageAlt:
       "Ejecución creativa de publicidad exterior con elementos especiales",
     intro:
@@ -128,7 +128,7 @@ export const articles: Article[] = [
     title: "DOOH: flexibilidad creativa para una ciudad que cambia",
     description:
       "Una perspectiva práctica para transformar objetivos de campaña en decisiones de medios.",
-    image: "shared-dooh-screen.png",
+    image: "shared-dooh-screen.webp",
     previewVideo: "actualidad-dooh.mp4",
     heroVideo: "actualidad-dooh.mp4",
     imageAlt: "Pantalla digital de publicidad exterior",

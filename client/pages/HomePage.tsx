@@ -298,7 +298,7 @@ export default function HomePage() {
           <img
             alt="Publicidad exterior en tren"
             className="h-full min-h-130 w-full object-cover"
-            src={publiexAsset("home-transport.png")}
+            src={publiexAsset("home-transport.webp")}
           />
           <div className="px-5 py-[clamp(5rem,6.8vw,8.125rem)] md:px-10 lg:px-24 xl:pl-20.5">
             <SectionLabel>Publicidad en transporte</SectionLabel>
@@ -351,7 +351,7 @@ export default function HomePage() {
             <img
               alt="Proyecto especial de publicidad exterior Publiex"
               className="aspect-756/518 w-full object-cover"
-              src={publiexAsset("home-special-projects.jpeg")}
+              src={publiexAsset("home-special-projects.webp")}
             />
             <SectionLabel dark>Proyectos especiales</SectionLabel>
             <h2 className="font-raleway text-[clamp(1.8rem,3.7vw,3.9rem)] font-semibold leading-[1.04]">

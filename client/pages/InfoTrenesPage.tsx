@@ -96,7 +96,7 @@ export default function InfoTrenesPage() {
         <img
           alt="Tren Publiex con publicidad exterior"
           className="absolute inset-0 size-full object-contain object-center opacity-90"
-          src={publiexAsset("info-trenes-hero.jpeg")}
+          src={publiexAsset("info-trenes-hero.webp")}
         />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.98)_0%,rgba(0,0,0,0.72)_32%,rgba(0,0,0,0)_58%)]" />
         <div className="relative mx-auto flex min-h-[clamp(38rem,39.6vw,47rem)] w-full max-w-480 flex-col justify-center px-5 py-20 md:px-10 lg:px-24 xl:px-47.5">
@@ -273,7 +273,7 @@ export default function InfoTrenesPage() {
             <img
               alt="Tren Publiex con campaña exterior en movimiento"
               className="size-full object-cover object-center"
-              src={publiexAsset("info-trenes-reach.png")}
+              src={publiexAsset("info-trenes-reach.webp")}
             />
           </div>
         </div>

@@ -434,7 +434,7 @@ export default function LocationsPage() {
             <img
               alt="Valla Publiex ubicada en un corredor urbano de Costa Rica"
               className="size-full object-cover object-center"
-              src={publiexAsset("locations-hero.png")}
+              src={publiexAsset("locations-hero.webp")}
             />
           </div>
         </div>

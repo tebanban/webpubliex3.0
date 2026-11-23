@@ -11,7 +11,7 @@ const caseStudies = [
       "en punto de",
       "referencia",
     ],
-    image: "cases-landmark.png",
+    image: "cases-landmark.webp",
     layout: "imageTop",
     body: [
       "Una ubicación dominante puede cambiar la forma en que una marca aparece en la ciudad. Este caso muestra cómo un formato de gran escala ayuda a construir recordación, lectura inmediata y presencia sostenida en un corredor de alto tránsito.",
@@ -23,7 +23,7 @@ const caseStudies = [
     id: "trenes",
     category: "Trenes",
     title: "Un lanzamiento que recorrió la GAM",
-    image: "cases-trenes.png",
+    image: "cases-trenes.webp",
     layout: "imageRight",
     body: [
       "La publicidad en movimiento permite que una marca acompañe a las personas durante el trayecto. En este lanzamiento, el tren funcionó como una plataforma móvil capaz de multiplicar puntos de contacto y reforzar presencia en distintos momentos del día.",
@@ -170,7 +170,7 @@ export default function CaseStudiesPage() {
         <img
           alt="Campaña Publiex iluminada sobre una ruta nocturna"
           className="absolute inset-0 size-full object-cover object-center"
-          src={publiexAsset("cases-hero.png")}
+          src={publiexAsset("cases-hero.webp")}
         />
         <div className="absolute inset-0 bg-linear-to-b from-black/5 via-black/15 to-black/65" />
         <div className="relative mx-auto flex min-h-[clamp(24rem,36vw,48rem)] w-full max-w-480 items-end justify-center px-5 pb-[clamp(1.5rem,2.25vw,2.75rem)] text-center md:px-10">

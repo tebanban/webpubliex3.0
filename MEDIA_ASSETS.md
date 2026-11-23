@@ -12,7 +12,7 @@ image formats.
 - Page prefixes: `home`, `about`, `products`, `locations`, `cases`, `actualidad`,
   `article`, `info-trenes`, and `landlords`.
 - Shared assets use `shared`, `publiex`, or `footer` as their prefix.
-- Examples: `about-hero.png`, `home-cases-trains.png`, `home-hero.mp4`, and
+- Examples: `about-hero.webp`, `home-cases-trains.webp`, `home-hero.mp4`, and
   `footer-instagram.svg`.
 - Prefer descriptive names. For an ordered series, use a hyphen before the number,
   such as `home-cases-1.png`.

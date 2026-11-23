@@ -20,7 +20,7 @@ const productGroups = [
       {
         id: "vallas-unipolares",
         title: "Vallas Unipolares",
-        image: "products-vallas-unipolares.png",
+        image: "products-vallas-unipolares.webp",
         badge: "Presencia permanente",
         description:
           "Activos de gran formato ubicados en rutas de alto tránsito para mantener a la marca visible de forma sostenida.",
@@ -47,7 +47,7 @@ const productGroups = [
       {
         id: "mega-landmarks",
         title: "Mega Landmarks",
-        image: "products-mega-landmarks.png",
+        image: "products-mega-landmarks.webp",
         badge: "Dominación visual",
         description:
           "Superficies excepcionales que transforman una ubicación premium en un territorio exclusivo para la marca.",
@@ -77,7 +77,7 @@ const productGroups = [
       {
         id: "circuitos-rotativos",
         title: "Circuitos Rotativos",
-        image: "products-circuitos-rotativos.png",
+        image: "products-circuitos-rotativos.webp",
         badge: "Cobertura multiplicada",
         description:
           "Redes de ubicaciones que conectan distintos momentos del recorrido para construir frecuencia y alcance.",
@@ -103,7 +103,7 @@ const productGroups = [
       {
         id: "puentes-formatos-urbanos",
         title: "Puentes y formatos urbanos",
-        image: "products-puentes-formatos-urbanos.png",
+        image: "products-puentes-formatos-urbanos.webp",
         badge: "Integración urbana",
         description:
           "Formatos que aprovechan infraestructura de alto tránsito para integrarse al paisaje cotidiano.",
@@ -129,7 +129,7 @@ const productGroups = [
       {
         id: "trenes",
         title: "Trenes",
-        image: "products-trenes-marca.png",
+        image: "products-trenes-marca.webp",
         badge: "Movimiento + permanencia",
         description:
           "Dominación exterior e interior para acompañar recorridos urbanos con múltiples momentos de contacto.",
@@ -189,7 +189,7 @@ const productGroups = [
       {
         id: "innovaciones-a-la-medida",
         title: "Innovaciones a la medida",
-        image: "products-proyectos-especiales.png",
+        image: "products-proyectos-especiales.webp",
         badge: "Movimiento + permanencia",
         description:
           "Salientes, volumétricos, sobrepuestos, iluminación LED y desarrollos creativos que modifican el soporte para amplificar una idea.",
@@ -230,30 +230,30 @@ const campaignSystems = [
 // Product-specific image sequences controlled by the feature tags.
 const productFeatureImages: Record<string, string[]> = {
   "vallas-unipolares": [
-    "products-vallas-unipolares.png",
-    "products-cobertura-estrategica.png",
-    "products-alcance-territorial.png",
-    "products-presencia-nocturna.png",
+    "products-vallas-unipolares.webp",
+    "products-cobertura-estrategica.webp",
+    "products-alcance-territorial.webp",
+    "products-presencia-nocturna.webp",
   ],
   "mega-landmarks": [
-    "products-escala-iconica.png",
-    "products-dominacion-zona.png",
-    "products-mega-landmarks.png",
+    "products-escala-iconica.webp",
+    "products-dominacion-zona.webp",
+    "products-mega-landmarks.webp",
   ],
   "circuitos-rotativos": [
-    "products-frecuencia-secuencial.png",
-    "products-circuitos-rotativos.png",
-    "products-cobertura-progresiva.png",
+    "products-frecuencia-secuencial.webp",
+    "products-circuitos-rotativos.webp",
+    "products-cobertura-progresiva.webp",
   ],
   trenes: [
-    "products-trenes-marca.png",
-    "products-trenes-contexto.jpg",
+    "products-trenes-marca.webp",
+    "products-trenes-contexto.webp",
     "products-trenes-diversidad.jpg",
   ],
   "innovaciones-a-la-medida": [
-    "products-ruptura-visual.png",
-    "products-proyectos-especiales.png",
-    "products-impacto-luminico.png",
+    "products-ruptura-visual.webp",
+    "products-proyectos-especiales.webp",
+    "products-impacto-luminico.webp",
   ],
 };
 
@@ -487,7 +487,7 @@ export default function ProductsPage() {
         <img
           alt="Valla Publiex en carretera"
           className="absolute inset-0 size-full object-cover"
-          src={publiexAsset("products-hero.png")}
+          src={publiexAsset("products-hero.webp")}
         />
         <div className="absolute inset-0 bg-linear-to-b from-black/20 via-black/35 to-black/80" />
         <div className="relative mx-auto flex min-h-[clamp(40rem,54vw,64rem)] w-full max-w-480 flex-col items-center justify-end px-5 pb-[clamp(5rem,5.2vw,6.25rem)] text-center md:px-10">
