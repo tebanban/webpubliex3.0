@@ -442,8 +442,9 @@ export default function LocationsPage() {
 
       {/* Section 2, Interactive inventory map */}
       <section className="overflow-hidden bg-publiex-muted-section px-5 py-[clamp(3rem,5vw,6rem)] md:px-10 lg:px-24">
-        <div className="mx-auto w-full max-w-480">
-          <div className="grid min-h-[clamp(42rem,46.9vw,56.25rem)] overflow-hidden bg-white shadow-sm lg:grid-cols-[14rem_minmax(0,1fr)_20rem] xl:grid-cols-[18rem_minmax(0,1fr)_24rem]">
+        <div className="mx-auto w-full max-w-393.5">
+          {/* Stack results below the map until three usable columns fit. */}
+          <div className="grid min-h-[clamp(42rem,46.9vw,56.25rem)] overflow-hidden bg-white shadow-sm lg:grid-cols-[14rem_minmax(0,1fr)] xl:grid-cols-[minmax(0,0.8fr)_minmax(0,1.5fr)_minmax(0,1fr)]">
             <aside className="flex flex-col border-b border-zinc-200 bg-zinc-50 px-4 py-7 font-raleway xl:px-5 lg:border-b-0 lg:border-r">
               <h2 className="text-[clamp(1.25rem,1.25vw,1.55rem)] font-extrabold uppercase tracking-wide">
                 Refinar búsqueda
@@ -519,7 +520,7 @@ export default function LocationsPage() {
               />
             </div>
 
-            <aside className="border-t border-zinc-200 bg-white font-raleway lg:border-l lg:border-t-0">
+            <aside className="min-w-0 border-t border-zinc-200 bg-white font-raleway lg:col-span-2 xl:col-span-1 xl:border-l xl:border-t-0">
               <div className="flex items-center justify-between gap-4 border-b border-zinc-200 px-4 py-5 text-sm text-zinc-500 xl:px-5">
                 <p className="text-base font-extrabold text-black">
                   {filteredLocations.length} medios encontrados
@@ -556,7 +557,7 @@ export default function LocationsPage() {
             Encuentre el lugar donde su marca puede{" "}
             <span className="text-publiex-red">generar impacto.</span>
           </h2>
-          <div className="mt-14 grid gap-10 lg:grid-cols-[1.35fr_0.65fr] lg:items-center">
+          <div className="mt-14 grid gap-10 lg:grid-cols-[minmax(0,1.35fr)_minmax(0,0.65fr)] lg:items-center">
             <div className="relative min-h-[clamp(30rem,33.3vw,40rem)] overflow-hidden bg-black">
               <img
                 alt={selectedLocation.imageAlt}
@@ -610,7 +611,7 @@ export default function LocationsPage() {
               deje que Publiex haga el resto.
             </span>
           </h2>
-          <div className="mt-14 grid gap-8 lg:grid-cols-[0.55fr_1.45fr] lg:items-start xl:px-40">
+          <div className="mt-14 grid gap-8 lg:grid-cols-[minmax(0,0.55fr)_minmax(0,1.45fr)] lg:items-start">
             <article className="bg-white shadow-sm">
               <img
                 alt={selectedLocation.imageAlt}

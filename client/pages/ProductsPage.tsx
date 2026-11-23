@@ -501,7 +501,8 @@ export default function ProductsPage() {
           </p>
         </div>
         <nav className="absolute inset-x-0 bottom-0 flex min-h-19.75 items-center bg-publiex-blue px-5 md:px-10">
-          <div className="mx-auto flex w-full max-w-380 flex-nowrap items-center justify-between gap-x-[clamp(0.75rem,2.5vw,4.375rem)] overflow-hidden font-raleway text-[clamp(0.6rem,0.9vw,1.6525rem)] font-semibold uppercase">
+          {/* Keep every format reachable when the navigation exceeds the viewport. */}
+          <div className="mx-auto flex w-full max-w-393.5 flex-nowrap items-center justify-between gap-x-[clamp(0.75rem,2.5vw,4.375rem)] overflow-x-auto py-3 font-raleway text-[clamp(0.6rem,0.9vw,1.6525rem)] font-semibold uppercase">
             {formatTabs.map(([label, href]) => (
               <a
                 className="shrink-0 whitespace-nowrap transition hover:text-white/70"
@@ -568,7 +569,7 @@ export default function ProductsPage() {
             Un formato genera presencia.
             <span className="block">Un sistema genera dominio.</span>
           </h2>
-          <div className="mt-16 grid gap-6 md:grid-cols-3 xl:gap-36">
+          <div className="mt-16 grid gap-6 md:grid-cols-3 xl:gap-12">
             {campaignSystems.map((system) => (
               <article
                 className="flex min-h-91.5 flex-col items-center justify-center border-4 border-white p-8 text-center"

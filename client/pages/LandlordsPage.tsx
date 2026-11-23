@@ -39,9 +39,9 @@ export default function LandlordsPage() {
       <section
         id="postular-ubicacion"
         aria-labelledby="property-form-title"
-        className="scroll-mt-20 bg-[#f8f8f8] px-5 py-[clamp(4rem,6vw,7.2rem)] md:px-10 lg:px-24 xl:pl-43.25 xl:pr-22.75"
+        className="scroll-mt-20 bg-[#f8f8f8] px-5 py-[clamp(4rem,6vw,7.2rem)] md:px-10 lg:px-24"
       >
-        <div className="mx-auto grid max-w-393.5 items-start gap-12 lg:grid-cols-[minmax(0,0.667fr)_minmax(0,1fr)] xl:max-w-none xl:gap-18.5">
+        <div className="mx-auto grid max-w-393.5 items-start gap-12 lg:grid-cols-[minmax(0,0.667fr)_minmax(0,1fr)] xl:gap-18.5">
           <div>
             <p className="font-raleway text-sm font-bold uppercase text-publiex-blue md:text-xl">
               Postule su ubicación

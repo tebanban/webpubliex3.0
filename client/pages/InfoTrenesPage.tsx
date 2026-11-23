@@ -99,7 +99,7 @@ export default function InfoTrenesPage() {
           src={publiexAsset("info-trenes-hero.webp")}
         />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.98)_0%,rgba(0,0,0,0.72)_32%,rgba(0,0,0,0)_58%)]" />
-        <div className="relative mx-auto flex min-h-[clamp(38rem,39.6vw,47rem)] w-full max-w-480 flex-col justify-center px-5 py-20 md:px-10 lg:px-24 xl:px-47.5">
+        <div className="relative mx-auto flex min-h-[clamp(38rem,39.6vw,47rem)] w-full max-w-441.5 flex-col justify-center px-5 py-20 md:px-10 lg:px-24">
           <p className="font-raleway text-sm font-bold uppercase md:text-xl">
             El nuevo ecosistema de publicidad en movimiento
           </p>
@@ -218,7 +218,7 @@ export default function InfoTrenesPage() {
           <div className="mt-16 divide-y divide-white/25 border-y border-white/25">
             {formats.map((format) => (
               <article
-                className="grid gap-5 py-7 font-raleway lg:grid-cols-[minmax(220px,0.85fr)_minmax(0,1.45fr)_230px] lg:items-center"
+                className="grid gap-5 py-7 font-raleway lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.45fr)_minmax(0,0.8fr)] lg:items-center"
                 key={format.title}
               >
                 <div>
@@ -239,7 +239,7 @@ export default function InfoTrenesPage() {
                   >
                     Consultar
                   </Link>
-                  <p className="mt-3 whitespace-nowrap font-light">Disponibilidad y recomendación</p>
+                  <p className="mt-3 font-light">Disponibilidad y recomendación</p>
                 </div>
               </article>
             ))}

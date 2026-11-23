@@ -124,7 +124,7 @@ export function PropertySubmissionForm() {
   return (
     <form
       onSubmit={submit}
-      className="border-t-4 border-publiex-blue bg-white p-5 font-raleway text-slate-950 shadow-[-8px_9px_68px_0_rgba(0,0,0,0.2)] md:p-10 xl:min-h-[clamp(60rem,67.8vw,81.375rem)] xl:p-12"
+      className="min-w-0 border-t-4 border-publiex-blue bg-white p-5 font-raleway text-slate-950 shadow-[-8px_9px_68px_0_rgba(0,0,0,0.2)] md:p-10 xl:min-h-[clamp(60rem,67.8vw,81.375rem)] xl:p-12"
       aria-label="Postular su ubicación"
       aria-busy={status === "submitting"}
     >

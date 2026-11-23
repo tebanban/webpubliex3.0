@@ -71,7 +71,7 @@ export default function ActualidadPage() {
     <main className="bg-white pt-14 text-black md:pt-16 xl:pt-20">
       {/* Section 1, Hero */}
       <section className="overflow-hidden bg-publiex-blue-deep text-white">
-        <div className="mx-auto w-full max-w-480 px-5 py-[clamp(5rem,8vw,10rem)] md:px-10 lg:px-24 xl:px-43.25">
+        <div className="mx-auto w-full max-w-441.5 px-5 py-[clamp(5rem,8vw,10rem)] md:px-10 lg:px-24">
           <p className="font-raleway text-sm font-bold uppercase md:text-xl">
             Actualidad e insights
           </p>

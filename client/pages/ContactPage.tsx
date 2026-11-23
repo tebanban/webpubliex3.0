@@ -29,7 +29,7 @@ const initialFormData: ContactFormData = {
 };
 
 const inputClassName =
-  "min-h-12 border border-zinc-300 px-4 font-uni text-base font-normal normal-case disabled:cursor-not-allowed disabled:bg-zinc-100 disabled:text-zinc-500";
+  "min-h-12 min-w-0 w-full border border-zinc-300 px-4 font-uni text-base font-normal normal-case disabled:cursor-not-allowed disabled:bg-zinc-100 disabled:text-zinc-500";
 
 const selectClassName = `${inputClassName} bg-white text-black`;
 const errorClassName = "border-publiex-red ring-1 ring-publiex-red";
@@ -113,7 +113,7 @@ export default function ContactPage() {
     <main className="bg-white text-black">
       {/* Section 1, Contact form */}
       <section className="overflow-hidden bg-publiex-gradient text-white">
-        <div className="mx-auto grid min-h-screen w-full max-w-480 items-center gap-12 px-5 pb-[clamp(5rem,8vw,9.5rem)] pt-[clamp(9rem,11vw,13rem)] md:px-10 lg:grid-cols-[0.95fr_1.05fr] lg:px-24 xl:px-43.25">
+        <div className="mx-auto grid min-h-screen w-full max-w-441.5 items-center gap-12 px-5 pb-[clamp(5rem,8vw,9.5rem)] pt-[clamp(9rem,11vw,13rem)] md:px-10 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:px-24">
           <div>
             <SectionLabel>Solicitar propuesta</SectionLabel>
             <h1 className="max-w-160 font-raleway text-[clamp(2.5rem,5.6vw,5rem)] font-semibold leading-tight md:leading-20.5">
@@ -131,7 +131,7 @@ export default function ContactPage() {
 
           {/* Proposal form */}
           <form
-            className="grid gap-5 bg-white p-6 text-black shadow-2xl md:grid-cols-2 md:p-10 xl:p-12"
+            className="grid min-w-0 gap-5 bg-white p-6 text-black shadow-2xl md:grid-cols-2 md:p-10 xl:p-12 [&>label]:min-w-0"
             onSubmit={handleSubmit}
             noValidate
           >

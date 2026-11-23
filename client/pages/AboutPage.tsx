@@ -65,7 +65,7 @@ export default function AboutPage() {
 
       {/* Section 2, History overview */}
       <section className="overflow-hidden bg-white" id="historia">
-        <div className="mx-auto flex w-full max-w-480 flex-col items-center px-5 py-[clamp(4rem,4.2vw,5rem)] text-center md:px-10 lg:px-24 xl:justify-center">
+        <div className="mx-auto flex w-full max-w-441.5 flex-col items-center px-5 py-[clamp(4rem,4.2vw,5rem)] text-center md:px-10 lg:px-24 xl:justify-center">
           <p className="self-start font-raleway text-sm font-bold uppercase md:text-xl">
             Nuestra historia
           </p>
@@ -117,7 +117,7 @@ export default function AboutPage() {
 
       {/* Section 4, Commitments */}
       <section className="overflow-hidden bg-white">
-        <div className="mx-auto grid w-full max-w-480 gap-10 px-5 py-[clamp(4rem,5.6vw,6.75rem)] md:px-10 lg:grid-cols-[1fr_1fr] lg:px-24 xl:px-43.25">
+        <div className="mx-auto grid w-full max-w-441.5 gap-10 px-5 py-[clamp(4rem,5.6vw,6.75rem)] md:px-10 lg:grid-cols-2 lg:px-24">
           <div>
             <p className="font-raleway text-sm font-bold uppercase md:text-xl">
               Responsabilidad empresarial
@@ -138,7 +138,7 @@ export default function AboutPage() {
 
       {/* Section 5, Trust CTA */}
       <section className="overflow-hidden bg-publiex-red text-white">
-        <div className="mx-auto flex w-full max-w-480 flex-col justify-center px-5 py-[clamp(4rem,5.4vw,6.5rem)] md:px-10 lg:px-24 xl:px-43.25">
+        <div className="mx-auto flex w-full max-w-441.5 flex-col justify-center px-5 py-[clamp(4rem,5.4vw,6.5rem)] md:px-10 lg:px-24">
           <p className="font-raleway text-sm font-bold uppercase md:text-xl">
             Construyamos confianza
           </p>

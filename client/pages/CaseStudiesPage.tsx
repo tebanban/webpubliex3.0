@@ -67,7 +67,7 @@ function CaseTitle({ study }: { study: CaseStudy }) {
       <h3 className="mt-4 max-w-165 font-raleway text-[clamp(2.25rem,4.55vw,5.45rem)] font-semibold leading-[1.05] text-black">
         {"titleLines" in study
           ? study.titleLines.map((line) => (
-              <span className="block whitespace-nowrap" key={line}>
+              <span className="block" key={line}>
                 {line}
               </span>
             ))
@@ -112,7 +112,7 @@ function CaseStudyCard({ study }: { study: CaseStudy }) {
   if (study.layout === "imageRight") {
     return (
       <article
-        className="grid overflow-hidden bg-white lg:grid-cols-[minmax(0,0.98fr)_minmax(320px,0.82fr)]"
+        className="grid overflow-hidden bg-white lg:grid-cols-[minmax(0,0.98fr)_minmax(0,0.82fr)]"
         id={study.id}
       >
         {/* Case copy */}
@@ -187,10 +187,10 @@ export default function CaseStudiesPage() {
             Noticias
           </p>
           <h2 className="mt-8 max-w-300 font-raleway text-[clamp(2.2rem,5.2vw,4.7rem)] font-semibold leading-[1.04]">
-            <span className="block md:whitespace-nowrap">
+            <span className="block">
               Campañas que se volvieron
             </span>
-            <span className="block text-publiex-red md:whitespace-nowrap">
+            <span className="block text-publiex-red">
               parte del viaje
             </span>
           </h2>
