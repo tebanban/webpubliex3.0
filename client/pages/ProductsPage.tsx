@@ -102,24 +102,6 @@ const productGroups = [
         ],
         link: "Diseñar circuito",
       },
-      {
-        id: "puentes-formatos-urbanos",
-        title: "Puentes y formatos urbanos",
-        image: "products-puentes-formatos-urbanos.webp",
-        badge: "Integración urbana",
-        description:
-          "Formatos que aprovechan infraestructura de alto tránsito para integrarse al paisaje cotidiano.",
-        benefits: ["Puntos de paso", "Lectura frontal", "Presencia diaria"],
-        bestFor:
-          "Retail, servicios, educación, tecnología, consumo masivo y comunicación institucional.",
-        difference:
-          "Aprovecha estructuras urbanas existentes para aparecer en momentos naturales del recorrido.",
-        overlayTitle: "Presencia integrada al trayecto cotidiano.",
-        overlayCopy:
-          "Los formatos urbanos aparecen dentro del flujo natural y refuerzan otros activos cercanos.",
-        tags: ["Visibilidad Transversal"],
-        link: "Ver formatos urbanos",
-      },
     ],
   },
   {
