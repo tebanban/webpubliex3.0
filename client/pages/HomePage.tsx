@@ -7,13 +7,6 @@ import { SectionLabel } from "@/components/site/SectionLabel";
 import { cases, insights, solutions } from "@/content/home";
 import { publiexAsset } from "@/lib/assets";
 
-// CSS dots travel with each ripple; the solid center keeps the copy unobstructed.
-const audienceRipplePattern = {
-  backgroundImage:
-    "radial-gradient(circle, color-mix(in srgb, var(--publiex-blue) 45%, transparent) 1px, transparent 1.5px)",
-  backgroundSize: "8px 8px",
-};
-
 export default function HomePage() {
   const heroRef = useRef<HTMLElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -414,14 +407,17 @@ export default function HomePage() {
               <div
                 aria-hidden="true"
                 className="pointer-events-none absolute inset-0 rounded-full border border-publiex-blue motion-safe:animate-audience-ripple"
-                style={audienceRipplePattern}
               />
               <div
                 aria-hidden="true"
-                className="pointer-events-none absolute inset-12.5 rounded-full border border-publiex-blue motion-safe:inset-0 motion-safe:animate-audience-ripple motion-safe:[animation-delay:-2s]"
-                style={audienceRipplePattern}
+                className="pointer-events-none absolute inset-12.5 rounded-full border border-publiex-blue motion-safe:inset-0 motion-safe:animate-audience-ripple motion-safe:[animation-delay:-1.55s]"
               />
-              <div className="relative flex aspect-square w-[66.3%] flex-col items-center justify-center rounded-full bg-publiex-blue px-10 text-center text-white">
+              <div className="relative isolate flex aspect-square w-[66.3%] flex-col items-center justify-center rounded-full px-10 text-center text-white">
+                {/* Pulse the background with each wave while keeping the text steady. */}
+                <div
+                  aria-hidden="true"
+                  className="pointer-events-none absolute inset-0 -z-10 rounded-full bg-publiex-blue motion-safe:animate-audience-pulse"
+                />
                 <p className="font-raleway text-[clamp(0.75rem,0.9vw,1.201rem)] font-semibold uppercase">
                   Audiencia única estimada
                 </p>

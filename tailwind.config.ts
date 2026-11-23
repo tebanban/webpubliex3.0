@@ -70,6 +70,11 @@ export default {
           "0%": { transform: "scale(0.663)", opacity: "0.65" },
           "100%": { transform: "scale(1)", opacity: "0" },
         },
+        // Two gentle pulses match the rings staggered by half a ripple cycle.
+        "audience-pulse": {
+          "0%, 50%, 100%": { transform: "scale(1.025)" },
+          "25%, 75%": { transform: "scale(1)" },
+        },
         "accordion-down": {
           from: {
             height: "0",
@@ -89,6 +94,7 @@ export default {
       },
       animation: {
         "audience-ripple": "audience-ripple 3.1s ease-out infinite",
+        "audience-pulse": "audience-pulse 3.1s ease-in-out infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
