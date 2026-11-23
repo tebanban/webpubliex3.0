@@ -1,4 +1,5 @@
-﻿import { useState } from "react";
+import { Pause, Play } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 
 import { publiexAsset } from "@/lib/assets";
 
@@ -319,8 +320,19 @@ const productFeatureDescriptions: Record<string, string[]> = {
 
 type Product = (typeof productGroups)[number]["products"][number];
 
+const CAROUSEL_INTERVAL_MS = 6_000;
+
 function ProductCard({ product }: { product: Product }) {
   const [activeTagIndex, setActiveTagIndex] = useState(0);
+  const carouselRef = useRef<HTMLDivElement>(null);
+  const [isAutoplayPaused, setIsAutoplayPaused] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+  const [hasFocus, setHasFocus] = useState(false);
+  const [canAutoplay, setCanAutoplay] = useState(false);
+  const slideCount = Math.min(
+    product.tags.length,
+    productFeatureImages[product.id]?.length ?? 1,
+  );
   const activeImage =
     productFeatureImages[product.id]?.[activeTagIndex] ?? product.image;
   const activeTitle =
@@ -329,7 +341,53 @@ function ProductCard({ product }: { product: Product }) {
     productFeatureDescriptions[product.id]?.[activeTagIndex] ??
     product.overlayCopy;
   const isVideo = activeImage.endsWith(".mp4");
-  const showFeatureControls = product.id !== "puentes-formatos-urbanos";
+  const showFeatureControls = slideCount > 1;
+
+  // Rotate only visible carousels, and respect changes to reduced-motion settings.
+  useEffect(() => {
+    const carousel = carouselRef.current;
+    if (!carousel || slideCount < 2) return;
+
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    let isInView = false;
+    const updateAvailability = () => {
+      setCanAutoplay(isInView && !document.hidden && !reducedMotion.matches);
+    };
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        isInView = entry.isIntersecting && entry.intersectionRatio >= 0.25;
+        updateAvailability();
+      },
+      { threshold: 0.25 },
+    );
+    observer.observe(carousel);
+    document.addEventListener("visibilitychange", updateAvailability);
+    reducedMotion.addEventListener("change", updateAvailability);
+
+    return () => {
+      observer.disconnect();
+      document.removeEventListener("visibilitychange", updateAvailability);
+      reducedMotion.removeEventListener("change", updateAvailability);
+    };
+  }, [slideCount]);
+
+  // Manual selection and each pause restart the full reading interval.
+  useEffect(() => {
+    if (!canAutoplay || isAutoplayPaused || isHovered || hasFocus) return;
+
+    const timeout = window.setTimeout(() => {
+      setActiveTagIndex((index) => (index + 1) % slideCount);
+    }, CAROUSEL_INTERVAL_MS);
+
+    return () => window.clearTimeout(timeout);
+  }, [
+    activeTagIndex,
+    canAutoplay,
+    hasFocus,
+    isAutoplayPaused,
+    isHovered,
+    slideCount,
+  ]);
 
   return (
     <article className="bg-white p-2 shadow-sm md:p-8 xl:p-16" id={product.id}>
@@ -378,7 +436,20 @@ function ProductCard({ product }: { product: Product }) {
       </div>
 
       {/* Product image feature */}
-      <div className="relative mt-6 min-h-[clamp(30rem,42.8vw,51.375rem)] overflow-hidden text-white">
+      <div
+        aria-label={`Imágenes de ${product.title}`}
+        aria-roledescription={showFeatureControls ? "carrusel" : undefined}
+        className="relative mt-6 min-h-[clamp(30rem,42.8vw,51.375rem)] overflow-hidden text-white"
+        onBlurCapture={(event) => {
+          if (!event.currentTarget.contains(event.relatedTarget))
+            setHasFocus(false);
+        }}
+        onFocusCapture={() => setHasFocus(true)}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        ref={carouselRef}
+        role="region"
+      >
         {isVideo ? (
           <video
             aria-label={product.title}
@@ -401,6 +472,23 @@ function ProductCard({ product }: { product: Product }) {
           />
         )}
         <div className="absolute inset-0 bg-linear-to-b from-transparent via-black/35 to-black/85" />
+        {showFeatureControls && (
+          <button
+            aria-label={
+              isAutoplayPaused ? "Reanudar carrusel" : "Pausar carrusel"
+            }
+            className="absolute right-4 top-4 z-10 inline-flex min-h-11 items-center gap-2 rounded bg-black/60 px-3 text-sm text-white transition hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+            onClick={() => setIsAutoplayPaused((paused) => !paused)}
+            type="button"
+          >
+            {isAutoplayPaused ? (
+              <Play aria-hidden className="size-4" />
+            ) : (
+              <Pause aria-hidden className="size-4" />
+            )}
+            {isAutoplayPaused ? "Reanudar" : "Pausar"}
+          </button>
+        )}
         <div className="relative flex min-h-[clamp(30rem,42.8vw,51.375rem)] flex-col justify-end px-[clamp(1.5rem,2.7vw,3.25rem)] pb-[clamp(1rem,1.5vw,1.75rem)] pt-[clamp(1.5rem,2.7vw,3.25rem)]">
           <p className="font-raleway text-[clamp(0.6rem,0.9vw,1.6525rem)] font-extrabold uppercase">
             {product.tags[activeTagIndex]}
@@ -411,7 +499,7 @@ function ProductCard({ product }: { product: Product }) {
           <p className="mt-8 max-w-157 font-raleway text-lg leading-tight md:text-xl">
             {activeDescription}
           </p>
-          {/* Hide carousel controls for these static product features. */}
+          {/* Static product features do not need rotation controls. */}
           {showFeatureControls && (
             <>
               <div
