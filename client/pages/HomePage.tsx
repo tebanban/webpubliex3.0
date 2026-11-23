@@ -321,159 +321,172 @@ export default function HomePage() {
 
       {/* Section 8, Digital and special formats */}
       <section className="overflow-hidden border-t border-zinc-300">
-        <div className="mx-auto grid w-full max-w-480 gap-10 px-5 pb-[clamp(2.5rem,3vw,3.5rem)] pt-[clamp(4rem,4vw,4.75rem)] md:px-10 lg:grid-cols-2 lg:px-24 xl:gap-53.25 xl:px-23.25">
-          <article className="flex h-full flex-col">
-            <video
-              aria-label="Pantalla digital Publiex con contenido dinámico"
-              autoPlay
-              className="aspect-756/518 w-full object-cover object-center"
-              loop
-              muted
-              playsInline
-            >
-              <source src={publiexAsset("home-dooh.mp4")} type="video/mp4" />
-            </video>
-            <SectionLabel dark>Pantallas digitales y DOOH</SectionLabel>
-            <h2 className="font-raleway text-[clamp(1.8rem,3.7vw,3.9rem)] font-semibold leading-[1.04]">
-              Mensajes que se mueven al ritmo de la ciudad.
-            </h2>
-            <p className="mt-5 max-w-2xl text-lg leading-tight md:text-xl">
-              Contenido flexible y de alto impacto para activar campañas
-              relevantes en los momentos que importan.
-            </p>
-            <div className="mt-auto pt-8">
-              <PrimaryLink href="/products#pantallas-digitales">
-                Explorar DOOH
-              </PrimaryLink>
-            </div>
-          </article>
-          <article className="flex h-full flex-col">
-            <img
-              alt="Proyecto especial de publicidad exterior Publiex"
-              className="aspect-756/518 w-full object-cover"
-              src={publiexAsset("home-special-projects.webp")}
-            />
-            <SectionLabel dark>Proyectos especiales</SectionLabel>
-            <h2 className="font-raleway text-[clamp(1.8rem,3.7vw,3.9rem)] font-semibold leading-[1.04]">
-              Cuando la idea sale del formato, empieza la conversación.
-            </h2>
-            <p className="mt-5 max-w-2xl text-lg leading-tight md:text-xl">
-              Salientes, volumétricos, sobrepuestos e iluminación LED convierten
-              una ubicación en una ejecución que la audiencia recuerda y
-              comparte.
-            </p>
-            <div className="mt-auto pt-8">
-              <PrimaryLink href="/products#innovaciones-a-la-medida">
-                Explorar proyectos especiales
-              </PrimaryLink>
-            </div>
-          </article>
+        <div className="mx-auto w-full max-w-480 px-5 pb-[clamp(2.5rem,3vw,3.5rem)] pt-[clamp(4rem,4vw,4.75rem)] md:px-10 lg:px-24">
+          {/* Match the content bounds of the solutions, cases, and insights sections. */}
+          <div className="mx-auto grid w-full max-w-393.5 gap-10 lg:grid-cols-2 xl:gap-53.25">
+            <article className="flex h-full flex-col">
+              <video
+                aria-label="Pantalla digital Publiex con contenido dinámico"
+                autoPlay
+                className="aspect-756/518 w-full object-cover object-center"
+                loop
+                muted
+                playsInline
+              >
+                <source src={publiexAsset("home-dooh.mp4")} type="video/mp4" />
+              </video>
+              <SectionLabel dark>Pantallas digitales y DOOH</SectionLabel>
+              <h2 className="font-raleway text-[clamp(1.8rem,3.7vw,3.9rem)] font-semibold leading-[1.04]">
+                Mensajes que se mueven al ritmo de la ciudad.
+              </h2>
+              <p className="mt-5 max-w-2xl text-lg leading-tight md:text-xl">
+                Contenido flexible y de alto impacto para activar campañas
+                relevantes en los momentos que importan.
+              </p>
+              <div className="mt-auto pt-8">
+                <PrimaryLink href="/products#pantallas-digitales">
+                  Explorar DOOH
+                </PrimaryLink>
+              </div>
+            </article>
+            <article className="flex h-full flex-col">
+              <img
+                alt="Proyecto especial de publicidad exterior Publiex"
+                className="aspect-756/518 w-full object-cover"
+                src={publiexAsset("home-special-projects.webp")}
+              />
+              <SectionLabel dark>Proyectos especiales</SectionLabel>
+              <h2 className="font-raleway text-[clamp(1.8rem,3.7vw,3.9rem)] font-semibold leading-[1.04]">
+                Cuando la idea sale del formato, empieza la conversación.
+              </h2>
+              <p className="mt-5 max-w-2xl text-lg leading-tight md:text-xl">
+                Salientes, volumétricos, sobrepuestos e iluminación LED
+                convierten una ubicación en una ejecución que la audiencia
+                recuerda y comparte.
+              </p>
+              <div className="mt-auto pt-8">
+                <PrimaryLink href="/products#innovaciones-a-la-medida">
+                  Explorar proyectos especiales
+                </PrimaryLink>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
       {/* Section 9, Audience analytics */}
       <section className="overflow-hidden bg-publiex-audience-gradient">
-        <div className="mx-auto grid w-full max-w-480 gap-10 px-5 py-[clamp(4rem,4.2vw,5.0625rem)] md:px-10 lg:px-24 xl:grid-cols-[minmax(0,630fr)_minmax(0,630fr)_minmax(230px,280fr)] xl:items-start xl:gap-x-4.5">
-          <div className="@container xl:pt-11.5">
-            <SectionLabel dark>Datos y audiencias</SectionLabel>
-            <h2 className="mt-8 font-raleway font-bold leading-none xl:mt-8.5">
-              <span className="block whitespace-nowrap font-uni text-[clamp(2.0rem,8.2cqw,3.7rem)] font-semibold leading-normal text-publiex-red">
-                No compre espacios.
-              </span>
-              <span className="mt-1 block text-[clamp(4.5rem,18.3cqw,7rem)] leading-[0.94]">
-                Conquiste
-                <span className="block lowercase">audiencias.</span>
-              </span>
-            </h2>
-            <p className="font-uni mt-8 max-w-164 text-[clamp(1.1rem,4.4cqw,1.8rem)] leading-tight">
-              Traducimos ubicaciones, movilidad, rutas y exposición en
-              decisiones de campaña más claras. La información operativa permite
-              comprender el alcance de un ecosistema que conecta trabajo,
-              estudio y actividad económica.
-            </p>
-            <div className="mt-6.75">
-              <PrimaryLink href="/contact" tone="blue">
-                Planificar con datos
-              </PrimaryLink>
-            </div>
-          </div>
-
-          <div className="relative mx-auto flex aspect-square w-full max-w-164.75 items-center justify-center xl:mt-18.25">
-            {/* Staggered ripples keep the original static rings for reduced motion. */}
-            <div
-              aria-hidden="true"
-              className="pointer-events-none absolute inset-0 rounded-full border border-publiex-blue motion-safe:animate-audience-ripple"
-            />
-            <div
-              aria-hidden="true"
-              className="pointer-events-none absolute inset-12.5 rounded-full border border-publiex-blue motion-safe:inset-0 motion-safe:animate-audience-ripple motion-safe:[animation-delay:-2s]"
-            />
-            <div className="relative flex aspect-square w-[66.3%] flex-col items-center justify-center rounded-full bg-publiex-blue px-10 text-center text-white">
-              <p className="font-raleway text-[clamp(0.75rem,0.9vw,1.201rem)] font-semibold uppercase">
-                Audiencia única estimada
+        <div className="mx-auto w-full max-w-480 px-5 py-[clamp(4rem,4.2vw,5.0625rem)] md:px-10 lg:px-24">
+          <div className="mx-auto grid w-full max-w-393.5 gap-10 xl:grid-cols-[minmax(0,630fr)_minmax(0,630fr)_minmax(230px,280fr)] xl:items-start xl:gap-x-4.5">
+            <div className="@container xl:pt-11.5">
+              <SectionLabel dark>Datos y audiencias</SectionLabel>
+              <h2 className="mt-8 font-raleway font-bold leading-none xl:mt-8.5">
+                <span className="block whitespace-nowrap font-uni text-[clamp(2.0rem,8.2cqw,3.7rem)] font-semibold leading-normal text-publiex-red">
+                  No compre espacios.
+                </span>
+                <span className="mt-1 block text-[clamp(4.5rem,18.3cqw,7rem)] leading-[0.94]">
+                  Conquiste
+                  <span className="block lowercase">audiencias.</span>
+                </span>
+              </h2>
+              <p className="font-uni mt-8 max-w-164 text-[clamp(1.1rem,4.4cqw,1.8rem)] leading-tight">
+                Traducimos ubicaciones, movilidad, rutas y exposición en
+                decisiones de campaña más claras. La información operativa
+                permite comprender el alcance de un ecosistema que conecta
+                trabajo, estudio y actividad económica.
               </p>
-              <p className="mt-4 whitespace-nowrap font-raleway text-[clamp(2.7rem,3.9vw,4.7rem)] font-black leading-none text-publiex-red">
-                1.578.841
-              </p>
-              <p className="mt-4 max-w-86.25 font-raleway text-[clamp(0.8rem,1vw,1.201rem)] font-light leading-tight">
-                estimación basada en dispositivos móviles únicos detectados
-                frente a los activos
-              </p>
-            </div>
-          </div>
-
-          <div className="grid gap-3 md:grid-cols-3 xl:mt-0 xl:grid-cols-1">
-            <article className="bg-white px-5.5 pb-5.5 pt-4">
-              <h3 className="font-raleway text-[18px] font-semibold uppercase leading-5.5">
-                Impresiones vistas
-              </h3>
-              <p className="mt-1 font-raleway text-[45px] font-bold leading-13">
-                339,3 M
-              </p>
-              <p className="mt-4 max-w-51.25 font-raleway text-[17px] leading-5.25">
-                impactos estimados con oportunidad efectiva de visualización de
-                la campaña
-              </p>
-              <p className="mt-2.5 border-t border-publiex-blue pt-2.5 font-raleway text-[12px] font-light leading-3.75 text-publiex-blue">
-                ESTIMACIÓN · 100% SOT
-              </p>
-            </article>
-
-            <article className="bg-white px-5.5 pb-3.5 pt-4">
-              <h3 className="font-raleway text-[18px] font-semibold uppercase leading-5.5">
-                Permanencia media
-              </h3>
-              <p className="mt-1 font-raleway text-[60px] font-bold leading-13.25">
-                22 <span className="text-[38px]">s</span>
-              </p>
-              <p className="mt-3.5 max-w-50 font-raleway text-[17px] lowercase leading-[21px]">
-                tiempo promedio detectado frente a las pantallas, una ventana
-                real para generar atención
-              </p>
-              <p className="mt-2 border-t border-publiex-blue pt-2.5 font-raleway text-[12px] font-light leading-[15px] text-publiex-blue">
-                MEDICIÓN TECNOLÓGICA
-              </p>
-            </article>
-
-            <article className="bg-white px-5.5 pb-5 pt-4">
-              <h3 className="font-raleway text-[18px] font-semibold uppercase leading-5.5">
-                Distribución por género
-              </h3>
-              <div className="mt-5 grid grid-cols-[96px_1fr] items-center gap-4">
-                <div className="relative aspect-square w-24 overflow-hidden rounded-full bg-publiex-red">
-                  <div className="absolute inset-y-0 left-0 w-[46%] rounded-l-full bg-publiex-blue" />
-                </div>
-                <div className="font-raleway font-bold lowercase leading-none">
-                  <p className="text-[29px] font-bold text-publiex-red">51,6%</p>
-                  <p className="mt-1 text-[14px] font-light text-[#959595]">mujeres</p>
-                  <p className="mt-3.5 text-[29px] font-bold text-publiex-blue">48,4%</p>
-                  <p className="mt-1 text-[14px] font-light text-[#959595]">hombres</p>
-                </div>
+              <div className="mt-6.75">
+                <PrimaryLink href="/contact" tone="blue">
+                  Planificar con datos
+                </PrimaryLink>
               </div>
-              <p className="mt-3.5 border-t border-publiex-blue pt-2.5 font-raleway text-[12px] font-light uppercase leading-[15px] text-publiex-blue">
-                Perfil demográfico modelado
-              </p>
-            </article>
+            </div>
+
+            <div className="relative mx-auto flex aspect-square w-full max-w-164.75 items-center justify-center xl:mt-18.25">
+              {/* Staggered ripples keep the original static rings for reduced motion. */}
+              <div
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-0 rounded-full border border-publiex-blue motion-safe:animate-audience-ripple"
+              />
+              <div
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-12.5 rounded-full border border-publiex-blue motion-safe:inset-0 motion-safe:animate-audience-ripple motion-safe:[animation-delay:-2s]"
+              />
+              <div className="relative flex aspect-square w-[66.3%] flex-col items-center justify-center rounded-full bg-publiex-blue px-10 text-center text-white">
+                <p className="font-raleway text-[clamp(0.75rem,0.9vw,1.201rem)] font-semibold uppercase">
+                  Audiencia única estimada
+                </p>
+                <p className="mt-4 whitespace-nowrap font-raleway text-[clamp(2.7rem,3.9vw,4.7rem)] font-black leading-none text-publiex-red">
+                  1.578.841
+                </p>
+                <p className="mt-4 max-w-86.25 font-raleway text-[clamp(0.8rem,1vw,1.201rem)] font-light leading-tight">
+                  estimación basada en dispositivos móviles únicos detectados
+                  frente a los activos
+                </p>
+              </div>
+            </div>
+
+            <div className="grid gap-3 md:grid-cols-3 xl:mt-0 xl:grid-cols-1">
+              <article className="bg-white px-5.5 pb-5.5 pt-4">
+                <h3 className="font-raleway text-[18px] font-semibold uppercase leading-5.5">
+                  Impresiones vistas
+                </h3>
+                <p className="mt-1 font-raleway text-[45px] font-bold leading-13">
+                  339,3 M
+                </p>
+                <p className="mt-4 max-w-51.25 font-raleway text-[17px] leading-5.25">
+                  impactos estimados con oportunidad efectiva de visualización
+                  de la campaña
+                </p>
+                <p className="mt-2.5 border-t border-publiex-blue pt-2.5 font-raleway text-[12px] font-light leading-3.75 text-publiex-blue">
+                  ESTIMACIÓN · 100% SOT
+                </p>
+              </article>
+
+              <article className="bg-white px-5.5 pb-3.5 pt-4">
+                <h3 className="font-raleway text-[18px] font-semibold uppercase leading-5.5">
+                  Permanencia media
+                </h3>
+                <p className="mt-1 font-raleway text-[60px] font-bold leading-13.25">
+                  22 <span className="text-[38px]">s</span>
+                </p>
+                <p className="mt-3.5 max-w-50 font-raleway text-[17px] lowercase leading-[21px]">
+                  tiempo promedio detectado frente a las pantallas, una ventana
+                  real para generar atención
+                </p>
+                <p className="mt-2 border-t border-publiex-blue pt-2.5 font-raleway text-[12px] font-light leading-[15px] text-publiex-blue">
+                  MEDICIÓN TECNOLÓGICA
+                </p>
+              </article>
+
+              <article className="bg-white px-5.5 pb-5 pt-4">
+                <h3 className="font-raleway text-[18px] font-semibold uppercase leading-5.5">
+                  Distribución por género
+                </h3>
+                <div className="mt-5 grid grid-cols-[96px_1fr] items-center gap-4">
+                  <div className="relative aspect-square w-24 overflow-hidden rounded-full bg-publiex-red">
+                    <div className="absolute inset-y-0 left-0 w-[46%] rounded-l-full bg-publiex-blue" />
+                  </div>
+                  <div className="font-raleway font-bold lowercase leading-none">
+                    <p className="text-[29px] font-bold text-publiex-red">
+                      51,6%
+                    </p>
+                    <p className="mt-1 text-[14px] font-light text-[#959595]">
+                      mujeres
+                    </p>
+                    <p className="mt-3.5 text-[29px] font-bold text-publiex-blue">
+                      48,4%
+                    </p>
+                    <p className="mt-1 text-[14px] font-light text-[#959595]">
+                      hombres
+                    </p>
+                  </div>
+                </div>
+                <p className="mt-3.5 border-t border-publiex-blue pt-2.5 font-raleway text-[12px] font-light uppercase leading-[15px] text-publiex-blue">
+                  Perfil demográfico modelado
+                </p>
+              </article>
+            </div>
           </div>
         </div>
       </section>
@@ -582,8 +595,8 @@ export default function HomePage() {
 
       {/* Section 12, Proposal paths */}
       <section className="overflow-hidden">
-        <div className="mx-auto w-full max-w-480 py-[clamp(0rem,4.4vw,5.3125rem)]">
-          <div className="mx-auto grid w-full max-w-393.5 gap-[clamp(1.25rem,3.6vw,5.25rem)] px-5 md:grid-cols-2 md:px-10 lg:px-0">
+        <div className="mx-auto w-full max-w-480 px-5 py-[clamp(0rem,4.4vw,5.3125rem)] md:px-10 lg:px-24">
+          <div className="mx-auto grid w-full max-w-393.5 gap-[clamp(1.25rem,3.6vw,5.25rem)] md:grid-cols-2">
             <div className="flex h-full flex-col bg-publiex-gradient px-[clamp(1.25rem,2.25vw,2.6875rem)] py-[clamp(3rem,4.4vw,5.3125rem)] text-white">
               <SectionLabel>Para agencias</SectionLabel>
               <h2 className="font-raleway text-[clamp(1.75rem,3vw,3.375rem)] font-semibold leading-tight md:leading-[0.98]">
