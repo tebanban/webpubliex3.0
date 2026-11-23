@@ -435,7 +435,7 @@ export default function HomePage() {
                   339,3 M
                 </p>
                 <p className="mt-4 max-w-51.25 font-raleway text-[17px] leading-5.25">
-                  impactos estimados con oportunidad efectiva de visualización
+                  Impactos estimados con oportunidad efectiva de visualización
                   de la campaña
                 </p>
                 <p className="mt-2.5 border-t border-publiex-blue pt-2.5 font-raleway text-[12px] font-light leading-3.75 text-publiex-blue">
@@ -451,7 +451,7 @@ export default function HomePage() {
                   22 <span className="text-[38px]">s</span>
                 </p>
                 <p className="mt-3.5 max-w-50 font-raleway text-[17px] lowercase leading-[21px]">
-                  tiempo promedio detectado frente a las pantallas, una ventana
+                  Tiempo promedio detectado frente a las pantallas, una ventana
                   real para generar atención
                 </p>
                 <p className="mt-2 border-t border-publiex-blue pt-2.5 font-raleway text-[12px] font-light leading-[15px] text-publiex-blue">

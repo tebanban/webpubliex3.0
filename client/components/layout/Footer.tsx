@@ -102,7 +102,7 @@ export function Footer() {
               <h3 className="font-uni text-sm uppercase leading-8 text-publiex-footer-heading">
                 {group.title}
               </h3>
-              <ul className="text-sm font-normal uppercase leading-8">
+              <ul className="text-[12px] font-light uppercase leading-8">
                 {group.links.map(([label, href]) => (
                   <li key={label}>
                     <a
