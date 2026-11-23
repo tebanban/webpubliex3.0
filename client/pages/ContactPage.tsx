@@ -122,7 +122,7 @@ export default function ContactPage() {
                 Nosotros encontramos dónde.
               </span>
             </h1>
-            <p className="mt-7 max-w-162.75 text-[clamp(1.25rem,1.4vw,1.6875rem)] leading-tight">
+            <p className="mt-7 max-w-162.75 text-[clamp(1rem,1.35vw,1.6rem)] leading-tight">
               Un formulario breve y útil para que el equipo comercial reciba el
               contexto correcto y responda con una recomendación construida para
               su marca.

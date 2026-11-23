@@ -393,7 +393,7 @@ function ProductCard({ product }: { product: Product }) {
           <h3 className="mt-5 font-raleway text-[clamp(2.0rem,4.0vw,4.5rem)] font-semibold leading-[0.996]">
             {product.title}
           </h3>
-          <p className="mt-6 max-w-157 font-raleway text-[clamp(1rem,1.2vw,1.25rem)] leading-tight">
+          <p className="mt-6 max-w-157 font-raleway text-[clamp(1rem,1.35vw,1.6rem)] leading-tight">
             {product.description}
           </p>
         </div>
@@ -420,11 +420,11 @@ function ProductCard({ product }: { product: Product }) {
           <p className="text-[clamp(0.75rem,0.95vw,0.875rem)] font-extrabold uppercase">
             Funciona mejor para
           </p>
-          <p className="mt-4">{product.bestFor}</p>
+          <p className="mt-4 text-[clamp(1rem,1.35vw,1.6rem)]">{product.bestFor}</p>
           <p className="mt-8 text-[clamp(0.75rem,0.95vw,0.875rem)] font-extrabold uppercase">
             Qué lo diferencia
           </p>
-          <p className="mt-4">{product.difference}</p>
+          <p className="mt-4 text-[clamp(1rem,1.35vw,1.6rem)]">{product.difference}</p>
         </div>
       </div>
 
@@ -503,7 +503,7 @@ function ProductCard({ product }: { product: Product }) {
           <h4 className="mt-8 max-w-265 font-raleway text-[clamp(1.8rem,4.8vw,4.5rem)] font-semibold leading-[0.996]">
             {activeTitle}
           </h4>
-          <p className="mt-8 max-w-157 font-raleway text-lg leading-tight md:text-xl">
+          <p className="mt-8 max-w-157 font-raleway text-[clamp(1rem,1.35vw,1.6rem)] leading-tight">
             {activeDescription}
           </p>
           {/* Static product features do not need rotation controls. */}
@@ -593,7 +593,7 @@ export default function ProductsPage() {
             No elija un formato.
             <span className="block">Elija lo que quiere lograr.</span>
           </h1>
-          <p className="mt-8 max-w-240 font-raleway text-[clamp(1.25rem,1.65vw,1.965rem)] leading-tight">
+          <p className="mt-8 max-w-240 font-raleway text-[clamp(1rem,1.35vw,1.6rem)] leading-tight">
             Publiex integra escala, frecuencia, movimiento, tecnología y
             creatividad para construir la presencia que necesita cada marca.
           </p>
@@ -676,7 +676,7 @@ export default function ProductsPage() {
                 <h3 className="font-raleway text-[clamp(1.8rem,3vw,2.85rem)] font-black leading-none">
                   {system.title}
                 </h3>
-                <p className="mt-10 font-raleway text-[clamp(1.25rem,1.56vw,1.875rem)] leading-tight">
+                <p className="mt-10 font-raleway text-[clamp(1rem,1.35vw,1.6rem)] leading-tight">
                   {system.copy}
                 </p>
               </article>

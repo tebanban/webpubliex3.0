@@ -17,7 +17,7 @@ export function PageIntro({ eyebrow, title, description }: PageIntroProps) {
         <h1 className="max-w-275 font-raleway text-[clamp(2.6rem,6vw,5.965rem)] font-semibold uppercase leading-[1.03]">
           {title}
         </h1>
-        <p className="mt-8 max-w-205 text-[clamp(1.25rem,1.65vw,1.965rem)] leading-tight">
+        <p className="mt-8 max-w-205 text-[clamp(1rem,1.35vw,1.6rem)] leading-tight">
           {description}
         </p>
       </div>

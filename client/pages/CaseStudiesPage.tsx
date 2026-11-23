@@ -50,7 +50,7 @@ type CaseStudy = (typeof caseStudies)[number];
 
 function CaseBody({ study }: { study: CaseStudy }) {
   return (
-    <div className="grid gap-4 font-raleway text-[clamp(0.85rem,0.85vw,1rem)] leading-[1.08] text-black">
+    <div className="grid gap-4 font-raleway text-[clamp(1rem,1.35vw,1.6rem)] leading-[1.08] text-black">
       {study.body.map((paragraph) => (
         <p key={paragraph}>{paragraph}</p>
       ))}

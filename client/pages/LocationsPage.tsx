@@ -272,7 +272,7 @@ function StaticMapFallback({ locations }: { locations: PubliexLocation[] }) {
         <p className="text-base font-extrabold uppercase tracking-[0.08em]">
           {locations.length} medios filtrados
         </p>
-        <p className="mt-2 text-sm leading-tight text-zinc-600 md:text-base">
+        <p className="mt-2 text-[clamp(1rem,1.35vw,1.6rem)] leading-tight text-zinc-600">
           Configure VITE_GOOGLE_MAPS_API_KEY para activar el mapa interactivo de
           Google Maps.
         </p>
@@ -317,7 +317,7 @@ function LocationCard({
           <h3 className="mt-4 text-[clamp(1.4rem,1.6vw,2rem)] font-semibold leading-tight">
             {location.title}
           </h3>
-          <p className="mt-3 text-base leading-tight text-zinc-600">
+          <p className="mt-3 text-[clamp(1rem,1.35vw,1.6rem)] leading-tight text-zinc-600">
             {location.description}
           </p>
         </div>
@@ -424,7 +424,7 @@ export default function LocationsPage() {
                 justo donde Costa Rica se mueve.
               </span>
             </h1>
-            <p className="mt-10 max-w-184 font-raleway text-[clamp(1.125rem,1.43vw,1.715rem)] leading-tight">
+            <p className="mt-10 max-w-184 font-raleway text-[clamp(1rem,1.35vw,1.6rem)] leading-tight">
               Explore una muestra del inventario de Publiex, descubra qué puede
               lograr cada formato y construya una selección preliminar para su
               campaña.
@@ -569,7 +569,7 @@ export default function LocationsPage() {
                 <p className="font-raleway text-[clamp(1.8rem,3.5vw,2.75rem)] font-bold">
                   Su campaña aparecerá aquí
                 </p>
-                <p className="mt-3 font-raleway text-base opacity-80 md:text-lg">
+                <p className="mt-3 font-raleway text-[clamp(1rem,1.35vw,1.6rem)] opacity-80">
                   Previsualización conceptual para evaluar presencia y lectura.
                 </p>
               </div>
@@ -625,7 +625,7 @@ export default function LocationsPage() {
                 <h3 className="mt-2 text-xl font-bold leading-tight">
                   {selectedLocation.title}
                 </h3>
-                <p className="mt-2 text-base leading-tight text-zinc-600">
+                <p className="mt-2 text-[clamp(1rem,1.35vw,1.6rem)] leading-tight text-zinc-600">
                   {selectedLocation.category} para revisión preliminar.
                 </p>
               </div>

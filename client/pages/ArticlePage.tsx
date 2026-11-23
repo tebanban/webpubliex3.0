@@ -36,7 +36,7 @@ export default function ArticlePage() {
           >
             {article.title}
           </h1>
-          <p className="mt-12 max-w-273.5 text-[clamp(1.125rem,1.43vw,1.715rem)] leading-[1.17]">
+          <p className="mt-12 max-w-273.5 text-[clamp(1rem,1.35vw,1.6rem)] leading-[1.17]">
             {article.intro}
           </p>
         </header>
@@ -68,7 +68,7 @@ export default function ArticlePage() {
 
         {/* Offset reading column, quote, and campaign enquiry */}
         <div className="px-5 pt-[clamp(3rem,5.2vw,6.25rem)] pb-[clamp(4rem,5vw,6rem)] md:px-10 lg:ml-[31.61%] lg:pr-[12.29%] lg:pl-0">
-          <div className="space-y-8 text-[clamp(1.0625rem,1.43vw,1.715rem)] leading-[1.57]">
+          <div className="space-y-8 text-[clamp(1rem,1.35vw,1.6rem)] leading-[1.57]">
             {article.paragraphs.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
             ))}
@@ -84,7 +84,7 @@ export default function ArticlePage() {
                 src={publiexAsset("article-quote-accent.svg")}
               />
             </div>
-            <p className="text-[clamp(1.5rem,2.42vw,2.9025rem)] font-light leading-[1.27]">
+            <p className="text-[clamp(1rem,1.35vw,1.6rem)] font-light leading-[1.27]">
               {article.quote}
             </p>
           </blockquote>
@@ -95,7 +95,7 @@ export default function ArticlePage() {
             >
               ¿Qué puede lograr su marca?
             </h2>
-            <p className="mt-8 text-[clamp(1.0625rem,1.43vw,1.715rem)] leading-[1.57]">
+            <p className="mt-8 text-[clamp(1rem,1.35vw,1.6rem)] leading-[1.57]">
               El equipo de Publiex puede convertir este enfoque en una
               recomendación de formatos, zonas y nivel de cobertura, sin
               publicar tarifas ni disponibilidad no confirmada.

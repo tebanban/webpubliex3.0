@@ -52,7 +52,7 @@ function ArticleCard({ article }: { article: Article }) {
           {article.title}
         </Link>
       </h3>
-      <p className="mt-4 min-h-[3.8rem] text-[clamp(0.95rem,1.1vw,1.375rem)] leading-tight text-black">
+      <p className="mt-4 min-h-[3.8rem] text-[clamp(1rem,1.35vw,1.6rem)] leading-tight text-black">
         {article.description}
       </p>
       <Link
@@ -81,7 +81,7 @@ export default function ActualidadPage() {
               que mueven el exterior.
             </span>
           </h1>
-          <p className="mt-8 max-w-275 font-raleway text-[clamp(1rem,1.3vw,1.5625rem)] leading-tight">
+          <p className="mt-8 max-w-275 font-raleway text-[clamp(1rem,1.35vw,1.6rem)] leading-tight">
             La plataforma editorial de Publiex: noticias corporativas, casos,
             innovación, sostenibilidad y conocimiento para planificar mejor OOH
             y DOOH.
@@ -111,7 +111,7 @@ export default function ActualidadPage() {
                 {articles[0].title}
               </Link>
             </h2>
-            <p className="mt-8 max-w-143 text-[clamp(1.05rem,1.43vw,1.715rem)] leading-tight">
+            <p className="mt-8 max-w-143 text-[clamp(1rem,1.35vw,1.6rem)] leading-tight">
               {articles[0].description}
             </p>
           </div>
@@ -139,7 +139,7 @@ export default function ActualidadPage() {
             <h2 className="mt-8 max-w-260 font-raleway text-[clamp(2.2rem,4.1vw,4.85rem)] font-semibold leading-[0.996] text-black">
               Información corporativa lista para medios y aliados.
             </h2>
-            <p className="mt-7 max-w-190 font-raleway text-[clamp(1rem,1.3vw,1.5625rem)] leading-tight">
+            <p className="mt-7 max-w-190 font-raleway text-[clamp(1rem,1.35vw,1.6rem)] leading-tight">
               Comunicados, recursos gráficos, perfiles institucionales y
               contacto para solicitudes de prensa.
             </p>
