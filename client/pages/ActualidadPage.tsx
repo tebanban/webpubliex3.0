@@ -96,7 +96,7 @@ export default function ActualidadPage() {
             <img
               alt={articles[0].imageAlt}
               className="size-full object-cover"
-              src={publiexAsset(articles[0].image)}
+              src={publiexAsset("actualidad-hero-1.webp")}
             />
             <p className="absolute bottom-4 left-4 font-raleway text-xs font-bold uppercase text-white">
               Historia destacada
