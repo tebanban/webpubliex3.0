@@ -1,3 +1,4 @@
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { Pause, Play } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
@@ -320,10 +321,19 @@ const productFeatureDescriptions: Record<string, string[]> = {
 
 type Product = (typeof productGroups)[number]["products"][number];
 
-const CAROUSEL_INTERVAL_MS = 6_000;
+const CAROUSEL_INTERVAL_MS = 4_000;
+
+// Incoming and outgoing media move together, including the last-to-first change.
+const carouselSlideVariants = {
+  enter: (direction: number) => ({ x: direction > 0 ? "100%" : "-100%" }),
+  center: { x: 0 },
+  exit: (direction: number) => ({ x: direction > 0 ? "-100%" : "100%" }),
+};
 
 function ProductCard({ product }: { product: Product }) {
   const [activeTagIndex, setActiveTagIndex] = useState(0);
+  const [slideDirection, setSlideDirection] = useState(1);
+  const reduceMotion = useReducedMotion();
   const carouselRef = useRef<HTMLDivElement>(null);
   const [isAutoplayPaused, setIsAutoplayPaused] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
@@ -376,6 +386,7 @@ function ProductCard({ product }: { product: Product }) {
     if (!canAutoplay || isAutoplayPaused || isHovered || hasFocus) return;
 
     const timeout = window.setTimeout(() => {
+      setSlideDirection(1);
       setActiveTagIndex((index) => (index + 1) % slideCount);
     }, CAROUSEL_INTERVAL_MS);
 
@@ -450,27 +461,41 @@ function ProductCard({ product }: { product: Product }) {
         ref={carouselRef}
         role="region"
       >
-        {isVideo ? (
-          <video
-            aria-label={product.title}
-            autoPlay
-            className="absolute inset-0 size-full object-cover"
+        <AnimatePresence initial={false} custom={slideDirection}>
+          <motion.div
+            animate="center"
+            className="absolute inset-0"
+            custom={slideDirection}
+            exit={reduceMotion ? "center" : "exit"}
+            initial={reduceMotion ? false : "enter"}
             key={activeImage}
-            loop
-            muted
-            playsInline
+            transition={{
+              duration: reduceMotion ? 0 : 0.55,
+              ease: [0.22, 1, 0.36, 1],
+            }}
+            variants={carouselSlideVariants}
           >
-            <source src={publiexAsset(activeImage)} type="video/mp4" />
-          </video>
-        ) : (
-          <img
-            alt={product.title}
-            className="absolute inset-0 size-full object-cover"
-            key={activeImage}
-            loading="eager"
-            src={publiexAsset(activeImage)}
-          />
-        )}
+            {isVideo ? (
+              <video
+                aria-label={product.title}
+                autoPlay
+                className="size-full object-cover"
+                loop
+                muted
+                playsInline
+              >
+                <source src={publiexAsset(activeImage)} type="video/mp4" />
+              </video>
+            ) : (
+              <img
+                alt={product.title}
+                className="size-full object-cover"
+                loading="eager"
+                src={publiexAsset(activeImage)}
+              />
+            )}
+          </motion.div>
+        </AnimatePresence>
         <div className="absolute inset-0 bg-linear-to-b from-transparent via-black/35 to-black/85" />
         {showFeatureControls && (
           <button
@@ -540,7 +565,10 @@ function ProductCard({ product }: { product: Product }) {
                           : "text-white/75"
                       }`}
                       key={tag}
-                      onClick={() => setActiveTagIndex(index)}
+                      onClick={() => {
+                        setSlideDirection(index > activeTagIndex ? 1 : -1);
+                        setActiveTagIndex(index);
+                      }}
                       type="button"
                     >
                       {tag}
