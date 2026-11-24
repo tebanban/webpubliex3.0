@@ -303,18 +303,18 @@ function LocationCard({
             className="size-full object-cover"
             src={location.image}
           />
-          <p className="absolute left-4 top-4 text-sm font-extrabold uppercase text-white">
+          <p className="absolute left-4 top-4 text-xs font-extrabold uppercase text-white">
             {location.code}
           </p>
-          <span className="absolute right-4 top-4 flex size-10 items-center justify-center rounded-full bg-white text-2xl font-black text-publiex-blue">
+          <span className="absolute right-4 top-4 flex size-10 items-center justify-center rounded-full bg-white text-xl font-black text-publiex-blue">
             {selected ? "✓" : "+"}
           </span>
         </div>
         <div className="p-5">
-          <p className="text-sm font-extrabold uppercase text-publiex-blue">
+          <p className="text-xs font-extrabold uppercase text-publiex-blue">
             {location.category} · {location.province}
           </p>
-          <h3 className="mt-4 text-[clamp(1.4rem,1.6vw,2rem)] font-semibold leading-tight">
+          <h3 className="mt-4 text-[clamp(1.125rem,1.15vw,1.375rem)] font-semibold leading-tight">
             {location.title}
           </h3>
           <p className="mt-3 leading-tight text-zinc-600">
@@ -323,7 +323,7 @@ function LocationCard({
         </div>
       </button>
       {selected ? (
-        <div className="grid grid-cols-2 gap-3 px-5 pb-5 text-sm font-extrabold uppercase">
+        <div className="grid grid-cols-2 gap-3 px-5 pb-5 text-xs font-extrabold uppercase">
           <a
             className="flex items-center justify-between border-t border-zinc-300 pt-5 text-publiex-blue"
             href="/contact"
@@ -444,20 +444,21 @@ export default function LocationsPage() {
       <section className="overflow-hidden bg-publiex-muted-section px-5 py-[clamp(3rem,5vw,6rem)] md:px-10 lg:px-24">
         <div className="mx-auto w-full max-w-393.5">
           {/* Stack results below the map until three usable columns fit. */}
-          <div className="grid min-h-[clamp(42rem,46.9vw,56.25rem)] overflow-hidden bg-white shadow-sm lg:grid-cols-[14rem_minmax(0,1fr)] xl:grid-cols-[minmax(0,0.8fr)_minmax(0,1.5fr)_minmax(0,1fr)]">
-            <aside className="flex flex-col border-b border-zinc-200 bg-zinc-50 px-4 py-7 font-raleway xl:px-5 lg:border-b-0 lg:border-r">
-              <h2 className="text-[clamp(1.25rem,1.25vw,1.55rem)] font-extrabold uppercase tracking-wide">
+          <div className="grid min-h-[clamp(42rem,46.9vw,56.25rem)] overflow-hidden bg-white shadow-sm lg:grid-cols-[12rem_minmax(0,1fr)] xl:grid-cols-[clamp(12rem,14vw,14rem)_minmax(0,1fr)_clamp(17rem,20vw,19rem)]">
+            {/* Compact sidebar typography uses a local override of the shared paragraph token. */}
+            <aside className="flex min-w-0 flex-col border-b border-zinc-200 bg-zinc-50 px-4 py-7 font-raleway text-sm [--publiex-paragraph-font-size:0.875rem] lg:border-b-0 lg:border-r">
+              <h2 className="text-base font-extrabold uppercase tracking-wide">
                 Refinar búsqueda
               </h2>
 
               <div className="mt-8 space-y-6">
                 {filterGroups.map((filter) => (
                   <label className="block" key={filter.label}>
-                    <span className="block text-sm font-extrabold uppercase tracking-[0.12em] text-zinc-600">
+                    <span className="block text-xs font-extrabold uppercase tracking-[0.08em] text-zinc-600">
                       {filter.label}
                     </span>
                     <select
-                      className="mt-3 h-10 w-full border border-zinc-300 bg-white px-3 text-sm font-bold text-black shadow-inner"
+                      className="mt-3 h-10 min-w-0 w-full border border-zinc-300 bg-white px-2 text-xs font-bold text-black shadow-inner"
                       onChange={(event) =>
                         setFilters((currentFilters) => ({
                           ...currentFilters,
@@ -474,10 +475,10 @@ export default function LocationsPage() {
                 ))}
               </div>
 
-              <label className="mt-7 flex items-center gap-3 border-y border-zinc-300 py-5 text-sm font-extrabold uppercase tracking-[0.1em] text-zinc-700">
+              <label className="mt-7 flex items-center gap-3 border-y border-zinc-300 py-5 text-xs font-extrabold uppercase tracking-[0.06em] text-zinc-700">
                 <input
                   checked={filters.illuminated}
-                  className="size-4"
+                  className="size-4 shrink-0"
                   onChange={(event) =>
                     setFilters((currentFilters) => ({
                       ...currentFilters,
@@ -490,13 +491,13 @@ export default function LocationsPage() {
               </label>
 
               <div className="mt-8">
-                <p className="text-sm font-extrabold uppercase tracking-[0.12em] text-zinc-600">
+                <p className="text-xs font-extrabold uppercase tracking-[0.08em] text-zinc-600">
                   Categorías
                 </p>
-                <div className="mt-6 space-y-5 text-base text-zinc-800 xl:text-lg">
+                <div className="mt-6 space-y-5 text-sm text-zinc-800">
                   {Object.entries(categoryStyles).map(([label, color]) => (
                     <div className="flex items-center gap-4" key={label}>
-                      <span className={`size-3 rounded-full ${color}`} />
+                      <span className={`size-3 shrink-0 rounded-full ${color}`} />
                       <span>{label}</span>
                     </div>
                   ))}
@@ -504,7 +505,7 @@ export default function LocationsPage() {
               </div>
 
               <button
-                className="mt-auto w-fit border-b border-black pb-3 pt-12 text-sm font-extrabold uppercase tracking-[0.1em] text-zinc-700"
+                className="mt-auto w-fit border-b border-black pb-3 pt-12 text-xs font-extrabold uppercase tracking-[0.06em] text-zinc-700"
                 onClick={() => setFilters(defaultFilters)}
                 type="button"
               >
@@ -520,12 +521,12 @@ export default function LocationsPage() {
               />
             </div>
 
-            <aside className="min-w-0 border-t border-zinc-200 bg-white font-raleway lg:col-span-2 xl:col-span-1 xl:border-l xl:border-t-0">
-              <div className="flex items-center justify-between gap-4 border-b border-zinc-200 px-4 py-5 text-sm text-zinc-500 xl:px-5">
-                <p className="text-base font-extrabold text-black">
+            <aside className="min-w-0 border-t border-zinc-200 bg-white font-raleway text-sm [--publiex-paragraph-font-size:0.875rem] lg:col-span-2 xl:col-span-1 xl:border-l xl:border-t-0">
+              <div className="flex items-center justify-between gap-3 border-b border-zinc-200 px-4 py-5 text-xs text-zinc-500 xl:px-5">
+                <p className="text-sm font-extrabold text-black">
                   {filteredLocations.length} medios encontrados
                 </p>
-                <p>Muestra pública · Costa Rica</p>
+                <p className="text-xs">Muestra pública · Costa Rica</p>
               </div>
 
               <div className="max-h-[clamp(36rem,44vw,53rem)] space-y-5 overflow-y-auto p-4 xl:p-5">
@@ -539,7 +540,7 @@ export default function LocationsPage() {
                     />
                   ))
                 ) : (
-                  <div className="border border-dashed border-zinc-300 p-5 text-base leading-tight text-zinc-600">
+                  <div className="border border-dashed border-zinc-300 p-5 text-sm leading-tight text-zinc-600">
                     No hay medios para estos filtros. Ajuste la búsqueda o limpie
                     los filtros para ver más opciones.
                   </div>
