@@ -13,7 +13,7 @@ export default function LandlordsPage() {
         id="inicio"
       >
         <div className="mx-auto w-full max-w-393.5">
-          <p className="font-raleway text-sm font-bold uppercase text-publiex-blue md:text-xl">
+          <p className="text-sm font-bold uppercase text-publiex-blue md:text-xl">
             Publiex para propietarios de terreno
           </p>
           <h1 className="mt-10 max-w-393.5 font-raleway text-[clamp(2.5rem,4.05vw,4.85rem)] font-semibold leading-[0.996]">
@@ -21,7 +21,7 @@ export default function LandlordsPage() {
             <br className="hidden lg:block" /> en un nuevo{" "}
             <span className="text-publiex-red">punto de referencia.</span>
           </h1>
-          <p className="mt-8 max-w-273.5 font-raleway text-[clamp(1rem,1.35vw,1.6rem)] leading-tight">
+          <p className="mt-8 max-w-273.5 leading-tight">
             Desarrollamos oportunidades publicitarias en terrenos, edificios y
             espacios estratégicos con un proceso profesional, seguro y orientado
             al largo plazo.
@@ -43,7 +43,7 @@ export default function LandlordsPage() {
       >
         <div className="mx-auto grid max-w-393.5 items-start gap-12 lg:grid-cols-[minmax(0,0.667fr)_minmax(0,1fr)] xl:gap-18.5">
           <div>
-            <p className="font-raleway text-sm font-bold uppercase text-publiex-blue md:text-xl">
+            <p className="text-sm font-bold uppercase text-publiex-blue md:text-xl">
               Postule su ubicación
             </p>
             <h2
@@ -53,7 +53,7 @@ export default function LandlordsPage() {
               <span className="text-publiex-red">Primero,</span> veamos el
               potencial del lugar.
             </h2>
-            <p className="mt-12 max-w-160.75 font-raleway text-[clamp(1rem,1.35vw,1.6rem)] leading-tight">
+            <p className="mt-12 max-w-160.75 leading-tight">
               Complete tres pasos sencillos. La evaluación inicial toma menos de
               cinco minutos y no requiere documentos legales.
             </p>
@@ -104,7 +104,7 @@ export default function LandlordsPage() {
               <h2 className="mt-[clamp(2.25rem,3vw,3.75rem)] max-w-70 text-[clamp(1.6rem,1.83vw,2.1875rem)] font-semibold leading-[1.05]">
                 {step.title}
               </h2>
-              <p className="mt-8 max-w-82 text-[clamp(1rem,1.35vw,1.6rem)] leading-none">
+              <p className="mt-8 max-w-82 leading-none">
                 {step.copy}
               </p>
             </article>

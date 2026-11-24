@@ -100,14 +100,14 @@ export default function InfoTrenesPage() {
         />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.98)_0%,rgba(0,0,0,0.72)_32%,rgba(0,0,0,0)_58%)]" />
         <div className="relative mx-auto flex min-h-[clamp(38rem,39.6vw,47rem)] w-full max-w-441.5 flex-col justify-center px-5 py-20 md:px-10 lg:px-24">
-          <p className="font-raleway text-sm font-bold uppercase md:text-xl">
+          <p className="text-sm font-bold uppercase md:text-xl">
             El nuevo ecosistema de publicidad en movimiento
           </p>
           <h1 className="mt-8 max-w-178 font-raleway text-[clamp(2.6rem,5vw,4.965rem)] font-semibold leading-[1.04]">
             Su marca viaja
             <span className="block text-publiex-red">con Costa Rica</span>
           </h1>
-          <p className="mt-8 max-w-183 font-raleway text-[clamp(1rem,1.35vw,1.6rem)] leading-tight">
+          <p className="mt-8 max-w-183 leading-tight">
             El único medio que puede acompañar a su audiencia por dentro,
             proyectarse hacia la ciudad y estar presente en los principales
             puntos de conexión ferroviaria.
@@ -132,7 +132,7 @@ export default function InfoTrenesPage() {
       {/* Section 2, Network scale */}
       <section className="overflow-hidden bg-publiex-muted-section px-5 py-[clamp(4rem,5.6vw,6.75rem)] md:px-10 lg:px-24">
         <div className="mx-auto w-full max-w-393.5">
-          <p className="font-raleway text-sm font-bold uppercase md:text-xl">
+          <p className="text-sm font-bold uppercase md:text-xl">
             La escala de la red
           </p>
           <div className="mt-12 grid gap-px bg-zinc-300 md:grid-cols-2 xl:grid-cols-3">
@@ -152,13 +152,13 @@ export default function InfoTrenesPage() {
                     {value}
                   </p>
                 </div>
-                <p className="mt-3 whitespace-pre-line text-[clamp(1rem,1.35vw,1.6rem)] font-light leading-tight">
+                <p className="mt-3 whitespace-pre-line font-light leading-tight">
                   {label}
                 </p>
               </article>
             ))}
           </div>
-          <p className="mt-8 max-w-220 font-raleway text-[clamp(1rem,1.35vw,1.6rem)] leading-tight text-zinc-700">
+          <p className="mt-8 max-w-220 leading-tight text-zinc-700">
             Pasajeros, servicios y cobertura: Informe Anual de Estadísticas
             Operativas INCOFER 2025. Impresiones exteriores: AllUnite®. Datos
             sujetos a variaciones operativas.
@@ -169,7 +169,7 @@ export default function InfoTrenesPage() {
       {/* Section 3, Routes */}
       <section className="overflow-hidden bg-white px-5 py-[clamp(4rem,5.6vw,6.75rem)] md:px-10 lg:px-24">
         <div className="mx-auto w-full max-w-393.5">
-          <p className="font-raleway text-sm font-bold uppercase md:text-xl">
+          <p className="text-sm font-bold uppercase md:text-xl">
             Rutas
           </p>
           <h2 className="mt-8 max-w-267 font-raleway text-[clamp(2.6rem,5vw,4.965rem)] font-semibold leading-[1.04]">
@@ -190,10 +190,10 @@ export default function InfoTrenesPage() {
                 <h3 className="mt-7 min-h-20 text-[clamp(1.4rem,1.85vw,2.1875rem)] font-semibold leading-[1.18]">
                   {route.title}
                 </h3>
-                <p className="mt-10 text-[clamp(1rem,1.35vw,1.6rem)] font-light leading-loose">
+                <p className="mt-10 font-light leading-loose">
                   {route.detail}
                 </p>
-                <p className="whitespace-pre-line text-[clamp(1rem,1.35vw,1.6rem)] leading-loose">
+                <p className="whitespace-pre-line leading-loose">
                   {route.meta}
                 </p>
               </article>
@@ -208,7 +208,7 @@ export default function InfoTrenesPage() {
         className="overflow-hidden bg-publiex-blue-deep px-5 py-[clamp(4.5rem,6.5vw,7.75rem)] text-white md:px-10 lg:px-24"
       >
         <div className="mx-auto w-full max-w-393.5">
-          <p className="font-raleway text-sm font-bold uppercase md:text-xl">
+          <p className="text-sm font-bold uppercase md:text-xl">
             Mis formatos
           </p>
           <h2 className="mt-8 max-w-312 font-raleway text-[clamp(2.6rem,5vw,4.965rem)] font-semibold leading-[1.04]">
@@ -229,7 +229,7 @@ export default function InfoTrenesPage() {
                     {format.title}
                   </h3>
                 </div>
-                <p className="max-w-190 text-[clamp(1rem,1.35vw,1.6rem)] leading-tight">
+                <p className="max-w-190 leading-tight">
                   {format.copy}
                 </p>
                 <div className="font-raleway text-xs font-semibold uppercase tracking-[0.08em] text-[#8db8ff] lg:text-right">
@@ -257,7 +257,7 @@ export default function InfoTrenesPage() {
                 Frecuencia en cada viaje.
               </span>
             </h2>
-            <p className="mt-8 max-w-165 font-raleway text-[clamp(1rem,1.35vw,1.6rem)] leading-tight">
+            <p className="mt-8 max-w-165 leading-tight">
               Una campaña puede combinar Dominio Total para impactar la ciudad,
               Experiencia Total para profundizar la conexión y presencia en
               estaciones para reforzar el contacto.

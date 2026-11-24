@@ -32,7 +32,7 @@ export default function AgenciesPage() {
         id="inicio"
       >
         <div className="mx-auto w-full max-w-393.5">
-          <p className="font-raleway text-sm font-bold uppercase md:text-xl">
+          <p className="text-sm font-bold uppercase md:text-xl">
             Publiex para agencias
           </p>
           <h1 className="mt-8 max-w-310 font-raleway text-[clamp(2.75rem,5vw,4.85rem)] font-semibold leading-none">
@@ -41,7 +41,7 @@ export default function AgenciesPage() {
               Más impacto para presentar.
             </span>
           </h1>
-          <p className="mt-8 max-w-206 font-raleway text-[clamp(1rem,1.35vw,1.6rem)] leading-tight">
+          <p className="mt-8 max-w-206 leading-tight">
             Una experiencia diseñada para planners, compradores de medios y
             equipos comerciales que necesitan pasar de la búsqueda a la
             propuesta sin fricción.
@@ -69,7 +69,7 @@ export default function AgenciesPage() {
               <h2 className="mt-[clamp(2.25rem,3vw,3.75rem)] max-w-70 text-[clamp(1.6rem,1.83vw,2.1875rem)] font-semibold leading-[1.05]">
                 {benefit.title}
               </h2>
-              <p className="mt-8 max-w-78 text-[clamp(1rem,1.35vw,1.6rem)] leading-none">
+              <p className="mt-8 max-w-78 leading-none">
                 {benefit.copy}
               </p>
             </article>

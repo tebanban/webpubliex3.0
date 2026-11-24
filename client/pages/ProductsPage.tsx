@@ -387,18 +387,18 @@ function ProductCard({ product }: { product: Product }) {
       {/* Product summary */}
       <div className="grid gap-[clamp(1.5rem,3vw,3rem)] lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)_minmax(0,1fr)]">
         <div>
-          <p className="font-raleway text-[clamp(0.8rem,0.95vw,1.1rem)] font-bold uppercase text-publiex-red">
+          <p className="text-[clamp(0.8rem,0.95vw,1.1rem)] font-bold uppercase text-publiex-red">
             {product.badge}
           </p>
           <h3 className="mt-5 font-raleway text-[clamp(2.0rem,4.0vw,4.5rem)] font-semibold leading-[0.996]">
             {product.title}
           </h3>
-          <p className="mt-6 max-w-157 font-raleway text-[clamp(1rem,1.35vw,1.6rem)] leading-tight">
+          <p className="mt-6 max-w-157 leading-tight">
             {product.description}
           </p>
         </div>
         <div>
-          <p className="font-raleway text-[clamp(0.75rem,0.95vw,0.875rem)] font-extrabold uppercase">
+          <p className="text-[clamp(0.75rem,0.95vw,0.875rem)] font-extrabold uppercase">
             Beneficios principales
           </p>
           <ul className="mt-3 font-raleway text-[clamp(1rem,1.2vw,1.25rem)] leading-[1.8]">
@@ -420,11 +420,11 @@ function ProductCard({ product }: { product: Product }) {
           <p className="text-[clamp(0.75rem,0.95vw,0.875rem)] font-extrabold uppercase">
             Funciona mejor para
           </p>
-          <p className="mt-4 text-[clamp(1rem,1.35vw,1.6rem)]">{product.bestFor}</p>
+          <p className="mt-4">{product.bestFor}</p>
           <p className="mt-8 text-[clamp(0.75rem,0.95vw,0.875rem)] font-extrabold uppercase">
             Qué lo diferencia
           </p>
-          <p className="mt-4 text-[clamp(1rem,1.35vw,1.6rem)]">{product.difference}</p>
+          <p className="mt-4">{product.difference}</p>
         </div>
       </div>
 
@@ -497,13 +497,13 @@ function ProductCard({ product }: { product: Product }) {
           </button>
         )}
         <div className="relative flex min-h-[clamp(30rem,42.8vw,51.375rem)] flex-col justify-end px-[clamp(1.5rem,2.7vw,3.25rem)] pb-[clamp(1rem,1.5vw,1.75rem)] pt-[clamp(1.5rem,2.7vw,3.25rem)]">
-          <p className="font-raleway text-[clamp(0.6rem,0.9vw,1.6525rem)] font-extrabold uppercase">
+          <p className="text-[clamp(0.6rem,0.9vw,1.6525rem)] font-extrabold uppercase">
             {product.tags[activeTagIndex]}
           </p>
           <h4 className="mt-8 max-w-265 font-raleway text-[clamp(1.8rem,4.8vw,4.5rem)] font-semibold leading-[0.996]">
             {activeTitle}
           </h4>
-          <p className="mt-8 max-w-157 font-raleway text-[clamp(1rem,1.35vw,1.6rem)] leading-tight">
+          <p className="mt-8 max-w-157 leading-tight">
             {activeDescription}
           </p>
           {/* Static product features do not need rotation controls. */}
@@ -593,7 +593,7 @@ export default function ProductsPage() {
             No elija un formato.
             <span className="block">Elija lo que quiere lograr.</span>
           </h1>
-          <p className="mt-8 max-w-240 font-raleway text-[clamp(1rem,1.35vw,1.6rem)] leading-tight">
+          <p className="mt-8 max-w-240 leading-tight">
             Publiex integra escala, frecuencia, movimiento, tecnología y
             creatividad para construir la presencia que necesita cada marca.
           </p>
@@ -622,7 +622,7 @@ export default function ProductsPage() {
           key={group.id}
         >
           <div className="mx-auto max-w-393.5">
-            <p className="font-raleway text-sm font-bold uppercase md:text-xl">
+            <p className="text-sm font-bold uppercase md:text-xl">
               {group.eyebrow}
             </p>
             <h2 className="mt-8 max-w-300 font-raleway text-[clamp(2.4rem,5.4vw,4.85rem)] font-semibold leading-[0.996]">
@@ -660,7 +660,7 @@ export default function ProductsPage() {
       {/* Section 3, Campaign architecture */}
       <section className="overflow-hidden bg-publiex-gradient px-5 py-[clamp(4rem,6.25vw,7.5rem)] text-white md:px-10 lg:px-24">
         <div className="mx-auto max-w-393.5">
-          <p className="font-raleway text-sm font-bold uppercase md:text-xl">
+          <p className="text-sm font-bold uppercase md:text-xl">
             Arquitectura de campaña
           </p>
           <h2 className="mt-8 max-w-295 font-raleway text-[clamp(2.4rem,5.4vw,4.85rem)] font-semibold leading-[0.996]">
@@ -676,7 +676,7 @@ export default function ProductsPage() {
                 <h3 className="font-raleway text-[clamp(1.8rem,3vw,2.85rem)] font-black leading-none">
                   {system.title}
                 </h3>
-                <p className="mt-10 font-raleway text-[clamp(1rem,1.35vw,1.6rem)] leading-tight">
+                <p className="mt-10 leading-tight">
                   {system.copy}
                 </p>
               </article>

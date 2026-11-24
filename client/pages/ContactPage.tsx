@@ -122,7 +122,7 @@ export default function ContactPage() {
                 Nosotros encontramos dónde.
               </span>
             </h1>
-            <p className="mt-7 max-w-162.75 text-[clamp(1rem,1.35vw,1.6rem)] leading-tight">
+            <p className="mt-7 max-w-162.75 leading-tight">
               Un formulario breve y útil para que el equipo comercial reciba el
               contexto correcto y responda con una recomendación construida para
               su marca.
@@ -279,12 +279,12 @@ export default function ContactPage() {
 
             {/* Submission status */}
             {status === "success" && (
-              <p className="font-uni text-sm font-light text-emerald-700 md:col-span-2">
+              <p className="text-sm font-light text-emerald-700 md:col-span-2">
                 ¡Correo enviado con éxito! Pronto le contactaremos.
               </p>
             )}
             {status === "error" && (
-              <p className="font-uni text-sm font-light text-publiex-red md:col-span-2">
+              <p className="text-sm font-light text-publiex-red md:col-span-2">
                 Error al enviar la solicitud. Por favor, intente de
                 nuevo.
               </p>

@@ -50,7 +50,7 @@ type CaseStudy = (typeof caseStudies)[number];
 
 function CaseBody({ study }: { study: CaseStudy }) {
   return (
-    <div className="grid gap-4 font-raleway text-[clamp(1rem,1.35vw,1.6rem)] leading-[1.08] text-black">
+    <div className="grid gap-4 font-raleway leading-[1.08] text-black">
       {study.body.map((paragraph) => (
         <p key={paragraph}>{paragraph}</p>
       ))}
@@ -61,7 +61,7 @@ function CaseBody({ study }: { study: CaseStudy }) {
 function CaseTitle({ study }: { study: CaseStudy }) {
   return (
     <div>
-      <p className="font-raleway text-sm font-bold uppercase text-publiex-red md:text-xl">
+      <p className="text-sm font-bold uppercase text-publiex-red md:text-xl">
         {study.category}
       </p>
       <h3 className="mt-4 max-w-165 font-raleway text-[clamp(2.25rem,4.55vw,5.45rem)] font-semibold leading-[1.05] text-black">
@@ -183,7 +183,7 @@ export default function CaseStudiesPage() {
       {/* Section 2, Case list */}
       <section className="overflow-hidden bg-publiex-blue-deep px-5 py-[clamp(3rem,5vw,6rem)] md:px-10 lg:px-24">
         <div className="mx-auto max-w-393.5">
-          <p className="font-raleway text-sm font-bold uppercase md:text-2xl">
+          <p className="text-sm font-bold uppercase md:text-2xl">
             Noticias
           </p>
           <h2 className="mt-8 max-w-300 font-raleway text-[clamp(2.2rem,5.2vw,4.7rem)] font-semibold leading-[1.04]">

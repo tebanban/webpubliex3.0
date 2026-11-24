@@ -7,7 +7,7 @@ export function SectionLabel({
 }) {
   return (
     <p
-      className={`mb-5 font-raleway text-sm font-extrabold uppercase tracking-normal md:mb-6 md:text-2xl ${
+      className={`mb-5 text-sm font-extrabold uppercase tracking-normal md:mb-6 md:text-2xl ${
         dark ? "text-black" : "text-white"
       }`}
     >

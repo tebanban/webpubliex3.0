@@ -52,7 +52,7 @@ function ArticleCard({ article }: { article: Article }) {
           {article.title}
         </Link>
       </h3>
-      <p className="mt-4 min-h-[3.8rem] text-[clamp(1rem,1.35vw,1.6rem)] leading-tight text-black">
+      <p className="mt-4 min-h-[3.8rem] leading-tight text-black">
         {article.description}
       </p>
       <Link
@@ -72,7 +72,7 @@ export default function ActualidadPage() {
       {/* Section 1, Hero */}
       <section className="overflow-hidden bg-publiex-blue-deep text-white">
         <div className="mx-auto w-full max-w-441.5 px-5 py-[clamp(5rem,8vw,10rem)] md:px-10 lg:px-24">
-          <p className="font-raleway text-sm font-bold uppercase md:text-xl">
+          <p className="text-sm font-bold uppercase md:text-xl">
             Actualidad e insights
           </p>
           <h1 className="mt-8 max-w-350 font-raleway text-[clamp(2.7rem,5.2vw,4.965rem)] font-bold leading-[1.04]">
@@ -81,7 +81,7 @@ export default function ActualidadPage() {
               que mueven el exterior.
             </span>
           </h1>
-          <p className="mt-8 max-w-275 font-raleway text-[clamp(1rem,1.35vw,1.6rem)] leading-tight">
+          <p className="mt-8 max-w-275 leading-tight">
             La plataforma editorial de Publiex: noticias corporativas, casos,
             innovación, sostenibilidad y conocimiento para planificar mejor OOH
             y DOOH.
@@ -98,7 +98,7 @@ export default function ActualidadPage() {
               className="size-full object-cover"
               src={publiexAsset("actualidad-hero-1.webp")}
             />
-            <p className="absolute bottom-4 left-4 font-raleway text-xs font-bold uppercase text-white">
+            <p className="absolute bottom-4 left-4 text-xs font-bold uppercase text-white">
               Historia destacada
             </p>
           </div>
@@ -111,7 +111,7 @@ export default function ActualidadPage() {
                 {articles[0].title}
               </Link>
             </h2>
-            <p className="mt-8 max-w-143 text-[clamp(1rem,1.35vw,1.6rem)] leading-tight">
+            <p className="mt-8 max-w-143 leading-tight">
               {articles[0].description}
             </p>
           </div>
@@ -133,13 +133,13 @@ export default function ActualidadPage() {
       <section className="overflow-hidden bg-publiex-red px-5 py-[clamp(4rem,5.6vw,6.75rem)] text-white md:px-10 lg:px-24">
         <div className="mx-auto grid w-full max-w-393.5 gap-10 lg:grid-cols-[1fr_0.8fr] lg:items-center">
           <div>
-            <p className="font-raleway text-sm font-bold uppercase md:text-xl">
+            <p className="text-sm font-bold uppercase md:text-xl">
               Sala de prensa
             </p>
             <h2 className="mt-8 max-w-260 font-raleway text-[clamp(2.2rem,4.1vw,4.85rem)] font-semibold leading-[0.996] text-black">
               Información corporativa lista para medios y aliados.
             </h2>
-            <p className="mt-7 max-w-190 font-raleway text-[clamp(1rem,1.35vw,1.6rem)] leading-tight">
+            <p className="mt-7 max-w-190 leading-tight">
               Comunicados, recursos gráficos, perfiles institucionales y
               contacto para solicitudes de prensa.
             </p>
@@ -165,7 +165,7 @@ export default function ActualidadPage() {
       <section className="overflow-hidden bg-publiex-blue-deep px-5 py-[clamp(4rem,5.6vw,6.75rem)] text-white md:px-10 lg:px-24">
         <div className="mx-auto grid w-full max-w-393.5 gap-10 lg:grid-cols-[1fr_0.72fr] lg:items-center">
           <div>
-            <p className="font-raleway text-sm font-bold uppercase md:text-xl">
+            <p className="text-sm font-bold uppercase md:text-xl">
               Sala de prensa
             </p>
             <h2 className="mt-8 max-w-230 font-raleway text-[clamp(2.2rem,4.1vw,4.85rem)] font-semibold leading-[0.996]">

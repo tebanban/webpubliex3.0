@@ -272,7 +272,7 @@ function StaticMapFallback({ locations }: { locations: PubliexLocation[] }) {
         <p className="text-base font-extrabold uppercase tracking-[0.08em]">
           {locations.length} medios filtrados
         </p>
-        <p className="mt-2 text-[clamp(1rem,1.35vw,1.6rem)] leading-tight text-zinc-600">
+        <p className="mt-2 leading-tight text-zinc-600">
           Configure VITE_GOOGLE_MAPS_API_KEY para activar el mapa interactivo de
           Google Maps.
         </p>
@@ -317,7 +317,7 @@ function LocationCard({
           <h3 className="mt-4 text-[clamp(1.4rem,1.6vw,2rem)] font-semibold leading-tight">
             {location.title}
           </h3>
-          <p className="mt-3 text-[clamp(1rem,1.35vw,1.6rem)] leading-tight text-zinc-600">
+          <p className="mt-3 leading-tight text-zinc-600">
             {location.description}
           </p>
         </div>
@@ -415,7 +415,7 @@ export default function LocationsPage() {
       <section className="overflow-hidden bg-white text-white">
         <div className="mx-auto grid w-full max-w-480 lg:grid-cols-[51%_49%]">
           <div className="flex flex-col justify-center bg-publiex-blue-deep px-5 py-[clamp(5rem,7vw,8rem)] md:px-10 lg:px-24 xl:pl-47.5 xl:pr-18">
-            <p className="font-raleway text-sm font-bold uppercase md:text-2xl">
+            <p className="text-sm font-bold uppercase md:text-2xl">
               Publiex explora
             </p>
             <h1 className="mt-9 max-w-178 font-raleway text-[clamp(2.7rem,5.4vw,4.965rem)] font-bold leading-[1.04]">
@@ -424,7 +424,7 @@ export default function LocationsPage() {
                 justo donde Costa Rica se mueve.
               </span>
             </h1>
-            <p className="mt-10 max-w-184 font-raleway text-[clamp(1rem,1.35vw,1.6rem)] leading-tight">
+            <p className="mt-10 max-w-184 leading-tight">
               Explore una muestra del inventario de Publiex, descubra qué puede
               lograr cada formato y construya una selección preliminar para su
               campaña.
@@ -566,16 +566,16 @@ export default function LocationsPage() {
               />
               <div className="absolute inset-0 bg-black/45" />
               <div className="relative flex min-h-[clamp(30rem,33.3vw,40rem)] flex-col items-center justify-center px-6 text-center">
-                <p className="font-raleway text-[clamp(1.8rem,3.5vw,2.75rem)] font-bold">
+                <p className="text-[clamp(1.8rem,3.5vw,2.75rem)] font-bold">
                   Su campaña aparecerá aquí
                 </p>
-                <p className="mt-3 font-raleway text-[clamp(1rem,1.35vw,1.6rem)] opacity-80">
+                <p className="mt-3 opacity-80">
                   Previsualización conceptual para evaluar presencia y lectura.
                 </p>
               </div>
             </div>
             <aside>
-              <p className="font-raleway text-sm font-bold uppercase text-publiex-blue md:text-2xl">
+              <p className="text-sm font-bold uppercase text-publiex-blue md:text-2xl">
                 {selectedLocation.code} · {selectedLocation.category}
               </p>
               <h3 className="mt-4 font-raleway text-[clamp(2.7rem,5.4vw,4.965rem)] font-bold leading-[1.04]">
@@ -602,7 +602,7 @@ export default function LocationsPage() {
       {/* Section 4, Selection summary */}
       <section className="overflow-hidden bg-publiex-muted-section px-5 py-[clamp(4rem,6.25vw,7.5rem)] md:px-10 lg:px-24">
         <div className="mx-auto max-w-393.5">
-          <p className="font-raleway text-sm font-bold uppercase md:text-2xl">
+          <p className="text-sm font-bold uppercase md:text-2xl">
             Mi selección
           </p>
           <h2 className="mt-8 max-w-313 font-raleway text-[clamp(2.4rem,5.4vw,4.965rem)] font-semibold leading-[1.04]">
@@ -625,7 +625,7 @@ export default function LocationsPage() {
                 <h3 className="mt-2 text-xl font-bold leading-tight">
                   {selectedLocation.title}
                 </h3>
-                <p className="mt-2 text-[clamp(1rem,1.35vw,1.6rem)] leading-tight text-zinc-600">
+                <p className="mt-2 leading-tight text-zinc-600">
                   {selectedLocation.category} para revisión preliminar.
                 </p>
               </div>

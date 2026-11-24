@@ -68,6 +68,10 @@
     --publiex-light-panel: #e9e9e9;
     --publiex-audience-gradient-end: #bbd1f3;
     --publiex-footer-heading-blue: #3e88bd;
+
+    /* Shared paragraph typography; update these tokens to restyle body copy. */
+    --publiex-paragraph-font-family: "Raleway", "Inter", sans-serif;
+    --publiex-paragraph-font-size: clamp(1.0rem, 1.35vw, 1.6rem);
   }
 
   .dark {
@@ -122,6 +126,12 @@
       BlinkMacSystemFont,
       "Segoe UI",
       sans-serif;
+  }
+
+  /* Paragraph defaults; labels and metrics retain their explicit size utilities. */
+  p {
+    font-family: var(--publiex-paragraph-font-family);
+    font-size: var(--publiex-paragraph-font-size);
   }
 
   /* Light body copy across pages; explicit label and metric weights take priority. */
