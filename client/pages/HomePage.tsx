@@ -121,7 +121,7 @@ export default function HomePage() {
                 donde su marca debe estar.
               </span>
             </h2>
-            <p className="font-uni mt-7 max-w-167.5 text-[clamp(1.0rem,1.35vw,1.6rem)] leading-tight">
+            <p className="font-raleway mt-7 max-w-167.5 text-[clamp(1.0rem,1.35vw,1.6rem)] leading-tight">
               Explore una muestra de cobertura por formato y provincia. Cada
               consulta puede convertirse en una selección curada con ficha
               técnica, métricas y disponibilidad confirmada.
@@ -156,7 +156,7 @@ export default function HomePage() {
               <span className="block">Afuera no</span>
               <span className="block text-publiex-red">hay skip ad</span>
             </h2>
-            <p className="mt-8 max-w-165 text-[clamp(1.0rem,1.35vw,1.6rem)] leading-tight">
+            <p className="mt-8 max-w-165 font-raleway text-[clamp(1.0rem,1.35vw,1.6rem)] leading-tight">
               Creamos presencia real para marcas que no quieren pasar
               desapercibidas. Combinamos ubicaciones estratégicas, creatividad,
               tecnología y datos para convertir cada recorrido en una
@@ -186,7 +186,7 @@ export default function HomePage() {
             <h2 className="font-raleway text-[clamp(2.5rem,6vw,4.965rem)] font-bold lowercase leading-[1.04]">
               viendo hacia adelante.
             </h2>
-            <p className="font-uni mt-8 text-[clamp(1.0rem,1.35vw,1.6rem)] leading-tight">
+            <p className="font-raleway mt-8 text-[clamp(1.0rem,1.35vw,1.6rem)] leading-tight">
               Somos una empresa especializada desde 1999 en el campo de la
               publicidad exterior (Out of Home Media) con más de 27 años de
               trayectoria en Costa Rica, dándole a cada cliente la solución a
@@ -278,7 +278,7 @@ export default function HomePage() {
               Cuando una marca necesita dominar, el espacio debe estar a su
               altura.
             </h2>
-            <p className="mt-7 max-w-2xl text-[clamp(1.0rem,1.35vw,1.6rem)] leading-tight">
+            <p className="mt-7 font-raleway max-w-2xl text-[clamp(1.0rem,1.35vw,1.6rem)] leading-tight">
               Vallas unipolares y mega landmarks construyen presencia de alto
               impacto en rutas, intersecciones y puntos urbanos estratégicos.
             </p>
@@ -305,7 +305,7 @@ export default function HomePage() {
             <h2 className="max-w-183 font-raleway text-[clamp(2.1rem,5.3vw,6.0rem)] font-semibold leading-[0.97]">
               Una marca que acompaña el recorrido se vuelve parte del día a día.
             </h2>
-            <p className="mt-7 max-w-2xl text-[clamp(1.0rem,1.35vw,1.6rem)] leading-tight">
+            <p className="mt-7 max-w-2xl font-raleway text-[clamp(1.0rem,1.35vw,1.6rem)] leading-tight">
               Desde la dominación exterior hasta las experiencias interiores, el
               tren combina alcance urbano, permanencia y múltiples momentos de
               contacto.
@@ -339,7 +339,7 @@ export default function HomePage() {
               <h2 className="font-raleway text-[clamp(1.8rem,3.7vw,3.9rem)] font-semibold leading-[1.04]">
                 Mensajes que se mueven al ritmo de la ciudad.
               </h2>
-              <p className="mt-5 max-w-2xl text-[clamp(1.0rem,1.35vw,1.6rem)] leading-tight">
+              <p className="mt-5 max-w-2xl font-raleway text-[clamp(1.0rem,1.35vw,1.6rem)] leading-tight">
                 Contenido flexible y de alto impacto para activar campañas
                 relevantes en los momentos que importan.
               </p>
@@ -359,7 +359,7 @@ export default function HomePage() {
               <h2 className="font-raleway text-[clamp(1.8rem,3.7vw,3.9rem)] font-semibold leading-[1.04]">
                 Cuando la idea sale del formato, empieza la conversación.
               </h2>
-              <p className="mt-5 max-w-2xl text-[clamp(1.0rem,1.35vw,1.6rem)] leading-tight">
+              <p className="mt-5 max-w-2xl font-raleway text-[clamp(1.0rem,1.35vw,1.6rem)] leading-tight">
                 Salientes, volumétricos, sobrepuestos e iluminación LED
                 convierten una ubicación en una ejecución que la audiencia
                 recuerda y comparte.
@@ -381,7 +381,7 @@ export default function HomePage() {
             <div className="@container xl:pt-11.5">
               <SectionLabel dark>Datos y audiencias</SectionLabel>
               <h2 className="mt-8 font-raleway font-bold leading-none xl:mt-8.5">
-                <span className="block whitespace-nowrap font-uni text-[clamp(2.0rem,8.2cqw,3.7rem)] font-semibold leading-normal text-publiex-red">
+                <span className="block whitespace-nowrap font-raleway text-[clamp(2.0rem,8.2cqw,3.7rem)] font-semibold leading-normal text-publiex-red">
                   No compre espacios.
                 </span>
                 <span className="mt-1 block text-[clamp(4.5rem,18.3cqw,7rem)] leading-[0.94]">
@@ -389,7 +389,7 @@ export default function HomePage() {
                   <span className="block lowercase">audiencias.</span>
                 </span>
               </h2>
-              <p className="font-uni mt-8 max-w-164 text-[clamp(1.0rem,1.35vw,1.6rem)] leading-tight">
+              <p className="font-raleway mt-8 max-w-164 text-[clamp(1.0rem,1.35vw,1.6rem)] leading-tight">
                 Traducimos ubicaciones, movilidad, rutas y exposición en
                 decisiones de campaña más claras. La información operativa
                 permite comprender el alcance de un ecosistema que conecta
@@ -455,7 +455,7 @@ export default function HomePage() {
                 <p className="mt-1 font-raleway text-[60px] font-bold leading-13.25">
                   22 <span className="text-[38px]">s</span>
                 </p>
-                <p className="mt-3.5 max-w-50 font-raleway text-[17px] lowercase leading-[21px]">
+                <p className="mt-3.5 max-w-50 font-raleway text-[17px] lowercase leading-5.25">
                   Tiempo promedio detectado frente a las pantallas, una ventana
                   real para generar atención
                 </p>
@@ -530,7 +530,7 @@ export default function HomePage() {
             <div className="mt-16 grid gap-5 md:grid-cols-3 xl:mt-28 xl:grid-cols-[minmax(0,486fr)_minmax(0,486fr)_minmax(0,483fr)] xl:gap-10">
               {cases.map((item) => (
                 <a
-                  className="block min-w-0 transition hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+                  className="block min-w-0 transition hover:opacity-90 focus-visible:outline  focus-visible:outline-offset-4 focus-visible:outline-white"
                   href={item.href}
                   key={item.title}
                 >
@@ -573,7 +573,7 @@ export default function HomePage() {
             <div className="mt-12 grid gap-5 md:grid-cols-3 xl:grid-cols-[minmax(0,573fr)_minmax(0,481fr)_minmax(0,481fr)] xl:gap-4.75">
               {insights.map((item) => (
                 <a
-                  className="block min-w-0 transition hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-publiex-blue"
+                  className="block min-w-0 transition hover:opacity-90 focus-visible:outline  focus-visible:outline-offset-4 focus-visible:outline-publiex-blue"
                   href={item.href}
                   key={item.title}
                 >
@@ -608,7 +608,7 @@ export default function HomePage() {
               <h2 className="font-raleway text-[clamp(1.75rem,3vw,3.375rem)] font-semibold leading-tight md:leading-[0.98]">
                 Más velocidad para planificar. Más impacto para presentar.
               </h2>
-              <p className="mt-[clamp(1rem,1.4vw,1.25rem)] max-w-2xl text-[clamp(1.0rem,1.35vw,1.6rem)] leading-tight">
+              <p className="mt-[clamp(1rem,1.4vw,1.25rem)] font-raleway max-w-2xl text-[clamp(1.0rem,1.35vw,1.6rem)] leading-tight">
                 Una experiencia diseñada para planners, compradores de medios y
                 equipos comerciales que necesitan pasar de la búsqueda a la
                 propuesta sin fricción.
@@ -624,7 +624,7 @@ export default function HomePage() {
               <h2 className="font-raleway text-[clamp(1.75rem,3vw,3.375rem)] font-semibold leading-tight md:leading-[0.98]">
                 Su espacio puede convertirse en un nuevo punto de referencia.
               </h2>
-              <p className="mt-[clamp(1rem,1.4vw,1.25rem)] max-w-2xl text-[clamp(1.0rem,1.35vw,1.6rem)] leading-tight">
+              <p className="mt-[clamp(1rem,1.4vw,1.25rem)] font-raleway max-w-2xl text-[clamp(1.0rem,1.35vw,1.6rem)] leading-tight">
                 Una experiencia diseñada para planners, compradores de medios y
                 equipos comerciales que necesitan pasar de la búsqueda a la
                 propuesta sin fricción.
