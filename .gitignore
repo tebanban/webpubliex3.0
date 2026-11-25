@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Raw billboard exports contain internal inventory and reservation information.
+/data/source/traffic-billboard-catalog-*.json
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
