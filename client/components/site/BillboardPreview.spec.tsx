@@ -24,7 +24,7 @@ describe("billboard face preview", () => {
     expect(html).toContain(face.direction);
     expect(html).toContain('aria-pressed="true"');
     expect(html).toContain('aria-pressed="false"');
-    expect(html).toContain("Agregar a mi selección");
+    expect(html).toContain("Añadir a cotización");
   });
   it("offers a placeholder without an unrelated image", () => {
     const html = renderToStaticMarkup(

@@ -73,7 +73,7 @@ export function BillboardPreview({
         onClick={() => onAdd(face.id)}
         className="min-h-11 w-full rounded bg-publiex-red px-3 py-3 font-semibold text-white disabled:bg-slate-200 disabled:text-slate-600"
       >
-        {saved ? "Agregada a mi selección" : "Agregar a mi selección"}
+        {saved ? "Añadida a cotización" : "Añadir a cotización"}
       </button>
       {atLimit && !saved && (
         <p>Puede solicitar hasta 50 caras por propuesta.</p>

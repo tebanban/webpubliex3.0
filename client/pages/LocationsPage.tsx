@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import { Trash2 } from "lucide-react";
 import {
   GoogleMap,
   MarkerClustererF,
@@ -513,7 +514,7 @@ export default function LocationsPage() {
             >
               <DialogTitle>Vista previa de la ubicación</DialogTitle>
               <DialogDescription>
-                Elija la cara y agréguela a su selección.
+              Elija la cara y añádala a su cotización.
               </DialogDescription>
               {preview}
             </DialogContent>
@@ -531,15 +532,6 @@ export default function LocationsPage() {
             <h2 className="font-raleway text-3xl font-semibold">
               Mi selección · {shortlist.ids.length}
             </h2>
-            {shortlist.ids.length > 0 && (
-              <button
-                type="button"
-                className="min-h-11 text-sm underline"
-                onClick={shortlist.clear}
-              >
-                Vaciar selección
-              </button>
-            )}
           </div>
           <p className="mt-4">
             Guarde las caras que le interesan y solicite una propuesta. La
@@ -561,15 +553,16 @@ export default function LocationsPage() {
                     <div className="min-w-0 flex-1">
                       <p className="text-sm font-bold">{face.code}</p>
                       <p className="text-sm">{face.title}</p>
-                      <button
-                        type="button"
-                        aria-label={"Quitar " + face.code}
-                        onClick={() => shortlist.remove(face.id)}
-                        className="mt-2 min-h-11 text-sm text-publiex-blue underline"
-                      >
-                        Quitar
-                      </button>
                     </div>
+                    <button
+                      type="button"
+                      aria-label={"Quitar " + face.code + " de la cotización"}
+                      title="Quitar de la cotización"
+                      onClick={() => shortlist.remove(face.id)}
+                      className="inline-flex size-11 shrink-0 items-center justify-center rounded text-slate-500 transition hover:bg-red-50 hover:text-red-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-publiex-blue"
+                    >
+                      <Trash2 aria-hidden="true" className="size-5" />
+                    </button>
                   </li>
                 ))}
               </ul>
