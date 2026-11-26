@@ -1,3 +1,9 @@
+// Confirmed shared photos keep face IDs and viewing directions independent.
+const faceImageOverrides = new Map([
+  ["GC7-A", "GC7-AB.webp"],
+  ["GC7-B", "GC7-AB.webp"],
+]);
+
 // Only these public fields can cross the source-export boundary.
 export function getPosition(record) {
   let position = record.position;
@@ -61,7 +67,7 @@ export function createPublicCatalog(source, imageFiles) {
         throw new Error(`Conflicting face coordinates: ${structure.id}`);
       }
       positions.set(structure.id, position);
-      const filename = `${record.code}.webp`;
+      const filename = faceImageOverrides.get(record.code.toUpperCase()) ?? `${record.code}.webp`;
       const text = (value) => (typeof value === "string" ? value.trim() : "");
       const dimension = (value) =>
         typeof value === "number" && Number.isFinite(value) && value > 0

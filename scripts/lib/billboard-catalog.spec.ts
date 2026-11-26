@@ -55,6 +55,18 @@ describe("public billboard catalog", () => {
     expect(result.faces[0].image).not.toBe(result.faces[1].image);
     expect(result.faces[0].direction).not.toBe(result.faces[1].direction);
   });
+  it("uses the confirmed shared GC7 photo without merging the faces", () => {
+    const result = createPublicCatalog(
+      { data: [face("GC7-A", "ACT-1"), face("GC7-B", "ACT-2")] },
+      new Set(["GC7-AB.webp"]),
+    );
+    expect(result.faces.map((item) => item.image)).toEqual([
+      "/images/locations/GC7-AB.webp",
+      "/images/locations/GC7-AB.webp",
+    ]);
+    expect(result.faces.map((item) => item.code)).toEqual(["GC7-A", "GC7-B"]);
+    expect(result.faces.map((item) => item.id)).toEqual(["ACT-1", "ACT-2"]);
+  });
   it("supports faces B and D, spaces, and combined faces", () => {
     expect(getStructure("GC7-B")).toEqual({ id: "GC7", face: "B" });
     expect(getStructure("SJ14-D").id).toBe("SJ14");

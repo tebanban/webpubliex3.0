@@ -85,11 +85,13 @@ load failures show a branded neutral placeholder with **Imagen no disponible**.
 No unrelated billboard image is substituted. Preview and shortlist images load
 lazily.
 
-Eleven faces currently need exact images or confirmed mapping corrections:
+GC7-A and GC7-B are confirmed to share `GC7-AB.webp`: both faces serve the same
+traffic direction. They retain separate selectable IDs, codes, and source details.
+
+Nine faces currently need exact images or confirmed mapping corrections:
 
 | Face codes                                                 | Candidate or action                                                       |
 | ---------------------------------------------------------- | ------------------------------------------------------------------------- |
-| `GC7-A`, `GC7-B`                                           | Review `GC7-AB.webp` before assigning it to individual faces.             |
 | `PZ1-A`, `PZ1-B`                                           | Review `pz1-ab.webp`; preserve its exact casing if a mapping is approved. |
 | `SJ58`                                                     | Review `SJ58-A.webp` before changing the source code or mapping.          |
 | `SJ61 - A y C (Completo)`                                  | Review `SJ61-AC.webp` before assigning it.                                |
