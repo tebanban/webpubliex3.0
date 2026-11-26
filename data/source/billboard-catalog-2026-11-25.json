@@ -955,7 +955,7 @@
       "direction": "De Liberia hacia Santa Cruz",
       "district": "Palmira",
       "imageUrl": "",
-      "mapUrl": "https://www.google.com/maps?q=10.5644862,-85.590065",
+      "mapUrl": "https://www.google.com/maps?q=10.564615857564979,-85.59018206234717",
       "jiraKey": "ACT-59",
       "widthM": 12.6,
       "heightM": 5
@@ -974,7 +974,7 @@
       "direction": "De Santa Cruz hacia Liberia",
       "district": "Palmira",
       "imageUrl": "",
-      "mapUrl": "https://www.google.com/maps?q=10.5576792,-85.5915481",
+      "mapUrl": "https://www.google.com/maps?q=10.564615857564979,-85.59018206234717",
       "jiraKey": "ACT-60",
       "widthM": 12.6,
       "heightM": 5
@@ -4456,7 +4456,7 @@
       "direction": "De Santa Ana hacia San José",
       "district": "Pozos",
       "imageUrl": "",
-      "mapUrl": "https://www.google.com/maps?q=9.943704394632546,-84.16813650457152",
+      "mapUrl": "https://www.google.com/maps?q=9.94344724691694,-84.16879809159005",
       "jiraKey": "ACT-240",
       "widthM": 34.8,
       "heightM": 9
@@ -4475,7 +4475,7 @@
       "direction": "De San José hacia Santa Ana",
       "district": "Pozos",
       "imageUrl": "",
-      "mapUrl": "https://www.google.com/maps?q=9.943727340231387,-84.16844936441751",
+      "mapUrl": "https://www.google.com/maps?q=9.94344724691694,-84.16879809159005",
       "jiraKey": "ACT-250",
       "widthM": 34.8,
       "heightM": 9,
@@ -4498,7 +4498,7 @@
       "direction": "De Santa Ana hacia San José",
       "district": "Pozos",
       "imageUrl": "",
-      "mapUrl": "https://www.google.com/maps?q=9.944227015079674,-84.16708164599964",
+      "mapUrl": "https://www.google.com/maps?q=9.944292659788339,-84.16687763000736",
       "jiraKey": "ACT-316",
       "widthM": 33.3,
       "heightM": 8.5
