@@ -14,10 +14,10 @@ matching, selection persistence, and integration with the existing contact flow.
 
 Inputs supplied on November 25, 2026:
 
-- Source export: `data/source/traffic-billboard-catalog-2026-11-25.json`.
+- Source export: `data/source/billboard-catalog-2026-11-25.json`.
 - Catalog images: `public/images/locations/`.
-- The export contains a metadata object and a `data` array, rather than a plain
-  array. It has 240 records: 235 marked visible and 5 marked hidden.
+- The original export contained a metadata object and a `data` array, rather than
+  a plain array: 240 records, with 235 marked visible and 5 marked hidden.
 - The image folder contains 230 files. Matching the exact filename
   `<code>.webp` finds images for 224 of the 235 visible records.
 - Exported IDs and codes are unique. Records identify billboard faces separately,
@@ -27,17 +27,56 @@ These inputs have been inspected; the running finder still uses the earlier
 `client/content/publiex-locations.json` inventory. The catalog migration and
 individual-image previews are not implemented yet.
 
+The working source has since been cleaned to 235 records. Records marked
+`visible: false` were removed, followed by the `slideBlueTop`, `slideBlueBottom`,
+`slideWhiteTop`, `slideWhiteBottom`, `reservations`, and `visible` fields on the
+remaining records. Totals were updated, and the original status aggregate was
+removed because the records do not provide individual statuses to recompute it.
+
 ### Source adapter requirements
 
 Map `location` to province, `alias` to the display name, `direction` to the viewing
 direction, and `widthM` / `heightM` to dimensions. Preserve the exported face IDs
 and public codes. Read coordinates from both numeric `q=lat,lng` URLs and numeric
-`/maps/dir//lat,lng` URLs. Ten visible records instead use shortened Google Maps
-links; resolve and store explicit coordinates during catalog preparation rather
-than resolving redirects in the visitor's browser.
+`/maps/dir//lat,lng` URLs. Ten remaining records originally relied on shortened
+Google Maps links. Seven now have explicit `position` coordinates copied from
+`client/content/publiex-locations.json` using these structure-code matches:
 
-Most paired faces share coordinates. The map must offer a way to choose each face
-at an overlapping position, rather than allowing one marker to hide another.
+| Face codes | Existing structure code |
+| --- | --- |
+| `SJ3-A`, `SJ3-C` | `SJ3` |
+| `SJ32-A`, `SJ32-C` | `SJ32` |
+| `SJ57-A`, `SJ57-C` | `SJ57` |
+| `SJ62-C` | `SJ62` |
+
+Prefer an explicit `position` when present, then parse numeric map URLs. The
+November 26 audit found usable coordinates for all 235 records, including the
+three previously unresolved codes. Do not substitute coordinates from a nearby
+or similarly named billboard.
+
+### Structures and faces
+
+Each catalog record represents a face, rather than necessarily a separate physical
+billboard. For example, `SJ14-A` and `SJ14-C` share coordinates
+`9.9481019, -84.1041505`, have opposite viewing directions, and match separate
+images `SJ14-A.webp` and `SJ14-C.webp`.
+
+Use one map marker per physical structure, with a face selector in its preview.
+Changing the face updates the image, full face code, direction, and face-specific
+information. Saving a selection saves that face's ID; users may save both faces
+of the same billboard, but may not save the same face twice.
+
+Derive a structure key such as `SJ14` from standard codes and provide explicit
+grouping overrides for nonstandard codes. Support the face suffixes actually
+present in the data: `A`, `B`, `C`, and `D`. Do not assume every structure has
+exactly two faces or generate a reverse direction automatically; display the
+catalog's `direction` text for the chosen face.
+
+The audit found differing coordinates within the `GC6` and `SJ62` face groups.
+`SJ62-C` currently uses coordinates copied from the older inventory. Review these
+differences before assigning a shared marker position. Keep the source coordinates
+unchanged until the canonical structure position is verified. Different physical
+structures at the same position must also remain individually reachable.
 
 The export does not provide an explicit format category or lighting flag. Do not
 infer these attributes from image names, image appearance, or missing values.
@@ -68,9 +107,12 @@ silently guessing a face or changing uploaded filenames.
 
 ### Public export preparation
 
-The raw export includes hidden records, internal source metadata, and reservation
-notes on 34 records. It has been moved out of `public/` into `data/source/`, and
-`/data/source/traffic-billboard-catalog-*.json` is excluded from Git. Keep this raw
+The original export included hidden records and reservation notes on 34 records;
+those records and notes have been removed from the working source. Internal
+source metadata remains. The file has been moved out of `public/` into `data/source/`, and
+`/data/source/*billboard-catalog-*.json` is excluded from Git for untracked exports.
+An export already staged or tracked must be removed from the Git index separately
+to exclude it from commits. Keep this raw
 export available locally for catalog generation; fresh checkouts need a separate
 copy supplied outside Git.
 
@@ -97,7 +139,7 @@ been generated yet. Deploy only the production build, not the raw source folder.
 
 1. Open the map and see all locations that match the current filters.
 2. Filter by province, format, and other verified catalog attributes.
-3. Click a marker to highlight it and open that billboard's preview.
+3. Click a structure marker and choose the face to inspect in its preview.
 4. Review its image and information, then choose **Agregar a mi selección**.
 5. Continue browsing and save additional billboards.
 6. Review the shortlist, remove unwanted locations, and choose **Solicitar propuesta**.
@@ -107,7 +149,8 @@ been generated yet. Deploy only the production build, not the raw source folder.
 
 | Action | Result |
 | --- | --- |
-| Click a marker | Update the active preview and highlight that marker. |
+| Click a marker | Open the structure preview with its last inspected face, or its first available face. |
+| Change the preview face | Update the image, full code, direction, and details without changing saved faces. |
 | Add the active billboard | Save its ID once; keep the preview open. |
 | Click another marker | Change the preview without changing the shortlist. |
 | Apply filters | Update visible locations without clearing saved IDs. |
@@ -195,9 +238,10 @@ AL1-A -> /images/locations/AL1-A.webp
 AL1-C -> /images/locations/AL1-C.webp
 ```
 
-The marker supplies the selected record's ID. The application finds that record,
-reads its code, and constructs the image URL. It does not scan the public folder
-or use image recognition in the browser.
+The marker identifies the structure. Its face selector supplies the selected face
+record's ID. The application finds that record, reads its full code, and constructs
+the image URL. It does not scan the public folder or use image recognition in the
+browser.
 
 Support an optional `imageFile` override for exceptions, restricted to catalog
 filenames. Match exact filenames and casing so the feature also works on Linux
@@ -211,10 +255,10 @@ If the image is missing or fails to load, show a branded placeholder and
 **Imagen no disponible**. Keep the billboard details and save action usable.
 Never show an unrelated billboard as its image fallback.
 
-For the first version, use one primary image per selectable code. If faces are
-sold or selected independently, assign each face a distinct code and record.
-Shared coordinates are allowed; overlapping markers must remain individually
-reachable through a cluster/list interaction or a marker chooser.
+For the first version, use one primary image per selectable face code. Retain each
+face's existing ID and code. Group faces at a structure marker, and keep separate
+structures at shared coordinates reachable through a cluster/list interaction or
+a marker chooser.
 
 ## Map and preview interface
 
@@ -226,7 +270,7 @@ filtered-result count visible independently of the preview.
 
 The preview contains:
 
-- Billboard image, code, and name.
+- Face selector, billboard image, full face code, and name.
 - Province and address.
 - Format, dimensions, viewing direction, and lighting when confirmed.
 - **Agregar a mi selección**, changing to **Agregada a mi selección** after saving.
@@ -311,7 +355,10 @@ be reported as unused simply because their URLs are generated from codes.
 
 - Every supported code resolves to its matching catalog image or the placeholder.
 - A marker click opens the correct record and never changes the shortlist.
-- Different billboard faces or records at shared coordinates remain reachable.
+- Every face remains reachable through the structure's face selector and shows
+  the image and direction matching its complete code.
+- Different structures at shared coordinates remain reachable; coordinate
+  discrepancies within a structure require a verified resolution.
 - Adding the same billboard twice does not create duplicates.
 - Filters preserve saved locations and clear an active preview that no longer matches.
 - Empty results clear the active preview without falling back to an unrelated record.
@@ -328,8 +375,8 @@ be reported as unused simply because their URLs are generated from codes.
 
 ## Catalog preparation before implementation
 
-Prepare the images using the agreed code-based filenames. Confirm whether codes
-represent complete structures or individually selectable faces, identify who owns
+Prepare the images using the agreed face-code filenames. Codes identify individual
+faces. Verify structure grouping and coordinate discrepancies, identify who owns
 catalog updates, and verify category, lighting, dimensions, and viewing directions.
 These decisions determine the migration and image matching; they do not require a
 database for the first version.
