@@ -4,10 +4,12 @@ export function BillboardImage({
   src,
   alt,
   className = "",
+  fit = "cover",
 }: {
   src: string | null;
   alt: string;
   className?: string;
+  fit?: "cover" | "contain";
 }) {
   const [failedSource, setFailedSource] = useState<string | null>(null);
   if (!src || failedSource === src) {
@@ -25,7 +27,7 @@ export function BillboardImage({
     <img
       src={src}
       alt={alt}
-      className={`object-cover ${className}`}
+      className={`${fit === "contain" ? "object-contain bg-slate-100" : "object-cover"} ${className}`}
       loading="lazy"
       onError={() => setFailedSource(src)}
     />
