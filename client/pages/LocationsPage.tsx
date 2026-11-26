@@ -1,31 +1,27 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import {
   GoogleMap,
   MarkerClustererF,
   MarkerF,
   useJsApiLoader,
 } from "@react-google-maps/api";
-
 import {
-  categoryStyles,
+  filterBillboardFaces,
+  groupBillboardFaces,
   publiexLocations,
-  type PubliexLocation,
+  type BillboardStructure,
 } from "@/content/locations";
+import { useLocationShortlist } from "@/hooks/use-location-shortlist";
+import { BillboardImage } from "@/components/site/BillboardImage";
+import { BillboardPreview } from "@/components/site/BillboardPreview";
+import {
+  Dialog,
+  DialogContent,
+  DialogTitle,
+  DialogDescription,
+} from "@/components/ui/dialog";
 import { publiexAsset } from "@/lib/assets";
-
-type LocationFilters = {
-  province: string;
-  solution: string;
-  objective: string;
-  illuminated: boolean;
-};
-
-const defaultFilters: LocationFilters = {
-  province: "Todas",
-  solution: "Todas",
-  objective: "Todos",
-  illuminated: false,
-};
 
 const mapCenter = { lat: 9.96, lng: -84.05 };
 const defaultMapZoom = 9;
@@ -109,142 +105,161 @@ const clusterCalculator = (markers: google.maps.Marker[]) => {
   };
 };
 
-function LocationButton({
-  children,
-  href,
-  variant = "red",
+function LocationsMap({
+  structures,
+  active,
+  onSelect,
+  savedStructures,
 }: {
-  children: string;
-  href: string;
-  variant?: "red" | "underline";
+  structures: BillboardStructure[];
+  active: BillboardStructure | null;
+  onSelect: (structure: BillboardStructure) => void;
+  savedStructures: Set<string>;
 }) {
-  const styles = {
-    red: "bg-publiex-red px-5 text-white hover:bg-red-600",
-    underline: "text-white underline-offset-4 hover:underline",
-  };
-
-  return (
-    <a
-      className={`inline-flex min-h-12.5 items-center justify-center font-raleway text-[clamp(0.875rem,1.04vw,1.25rem)] font-bold uppercase leading-8 transition ${styles[variant]}`}
-      href={href}
-    >
-      {children}
-    </a>
+  const key = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
+  return key ? (
+    <GoogleLocationsMap
+      apiKey={key}
+      structures={structures}
+      active={active}
+      onSelect={onSelect}
+      savedStructures={savedStructures}
+    />
+  ) : (
+    <MapFallback />
   );
 }
 
-function getUniqueOptions(key: "province" | "solution" | "objective") {
-  return Array.from(new Set(publiexLocations.map((location) => location[key])));
-}
-
-function LocationsMap({
-  locations,
-  selectedLocation,
-  onSelectLocation,
-}: {
-  locations: PubliexLocation[];
-  selectedLocation: PubliexLocation;
-  onSelectLocation: (location: PubliexLocation) => void;
-}) {
-  const googleMapsApiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
-
-  if (!googleMapsApiKey) {
-    return <StaticMapFallback locations={locations} />;
-  }
-
+function MapFallback() {
   return (
-    <GoogleLocationsMap
-      googleMapsApiKey={googleMapsApiKey}
-      locations={locations}
-      onSelectLocation={onSelectLocation}
-      selectedLocation={selectedLocation}
-    />
+    <div className="flex min-h-[32rem] items-center justify-center bg-slate-100 p-8 text-center">
+      <div>
+        <h3 className="font-raleway text-xl font-semibold">
+          Explore las ubicaciones
+        </h3>
+        <p className="mt-3">
+          El mapa no está disponible en este momento. Use la lista de
+          ubicaciones para explorar las caras y crear su selección.
+        </p>
+      </div>
+    </div>
   );
 }
 
 function GoogleLocationsMap({
-  googleMapsApiKey,
-  locations,
-  selectedLocation,
-  onSelectLocation,
+  apiKey,
+  structures,
+  active,
+  onSelect,
+  savedStructures,
 }: {
-  googleMapsApiKey: string;
-  locations: PubliexLocation[];
-  selectedLocation: PubliexLocation;
-  onSelectLocation: (location: PubliexLocation) => void;
+  apiKey: string;
+  structures: BillboardStructure[];
+  active: BillboardStructure | null;
+  onSelect: (structure: BillboardStructure) => void;
+  savedStructures: Set<string>;
 }) {
   const mapRef = useRef<google.maps.Map | null>(null);
   const [mapZoom, setMapZoom] = useState(defaultMapZoom);
-  const { isLoaded, loadError } = useJsApiLoader({
-    googleMapsApiKey,
-  });
-
+  const { isLoaded, loadError } = useJsApiLoader({ googleMapsApiKey: apiKey });
+  // A face change does not recenter the map; only the active structure does.
   useEffect(() => {
-    if (!mapRef.current || !selectedLocation) return;
-
-    mapRef.current.panTo(selectedLocation.position);
+    if (!mapRef.current || !active) return;
+    mapRef.current.panTo(active.position);
     mapRef.current.setZoom(markerCodeZoom);
-  }, [selectedLocation]);
-
-  const getMarkerIcon = (selected: boolean): google.maps.Icon => {
-    const width = selected ? 42 : 34;
-    const height = selected ? 46 : 37;
-
-    return {
-      url: publiexAsset("locations-marker.svg"),
-      scaledSize: new google.maps.Size(width, height),
-      anchor: new google.maps.Point(width / 2, height),
-    };
-  };
-
-  if (loadError) {
-    return <StaticMapFallback locations={locations} />;
-  }
-
-  if (!isLoaded) {
+  }, [active?.id, isLoaded]);
+  useEffect(() => {
+    if (!mapRef.current || !structures.length) return;
+    const bounds = new google.maps.LatLngBounds();
+    structures.forEach((structure) => bounds.extend(structure.position));
+    mapRef.current.fitBounds(bounds, 35);
+  }, [structures, isLoaded]);
+  if (loadError) return <MapFallback />;
+  if (!isLoaded)
     return (
-      <div className="flex size-full min-h-[32rem] items-center justify-center bg-[#d9e8ed] font-raleway text-sm font-extrabold uppercase tracking-[0.16em] text-slate-600">
-        Cargando mapa
+      <div
+        role="status"
+        className="flex min-h-[32rem] items-center justify-center"
+      >
+        Cargando mapa…
       </div>
     );
-  }
-
   return (
     <GoogleMap
-      center={selectedLocation?.position ?? mapCenter}
+      center={mapCenter}
+      zoom={defaultMapZoom}
+      options={mapOptions}
       mapContainerClassName="size-full min-h-[32rem]"
       onLoad={(map) => {
         mapRef.current = map;
-        setMapZoom(map.getZoom() ?? defaultMapZoom);
+        if (structures.length) {
+          const bounds = new google.maps.LatLngBounds();
+          structures.forEach((structure) => bounds.extend(structure.position));
+          map.fitBounds(bounds, 35);
+        }
       }}
-      onZoomChanged={() => {
-        if (!mapRef.current) return;
-
-        setMapZoom(mapRef.current.getZoom() ?? defaultMapZoom);
+      onUnmount={() => {
+        mapRef.current = null;
       }}
-      options={mapOptions}
-      zoom={defaultMapZoom}
+      onZoomChanged={() =>
+        setMapZoom(mapRef.current?.getZoom() ?? defaultMapZoom)
+      }
     >
       <MarkerClustererF
         averageCenter
         calculator={clusterCalculator}
         gridSize={56}
         maxZoom={clusterMaxZoom}
-        minimumClusterSize={3}
+        minimumClusterSize={2}
         styles={clusterStyles}
-        title="Zona de ubicaciones Publiex"
       >
         {(clusterer) => (
           <>
-            {locations.map((location) => (
+            {structures.map((structure) => (
               <MarkerF
+                key={structure.id}
                 clusterer={clusterer}
-                icon={getMarkerIcon(selectedLocation?.id === location.id)}
-                key={location.id}
-                onClick={() => onSelectLocation(location)}
-                position={location.position}
-                title={location.title}
-                zIndex={selectedLocation?.id === location.id ? 20 : 10}
+                position={structure.position}
+                title={
+                  structure.id +
+                  " · " +
+                  structure.title +
+                  " · " +
+                  structure.faces.length +
+                  " caras"
+                }
+                onClick={() => onSelect(structure)}
+                zIndex={
+                  active?.id === structure.id
+                    ? 30
+                    : savedStructures.has(structure.id)
+                      ? 20
+                      : 10
+                }
+                icon={{
+                  path: google.maps.SymbolPath.CIRCLE,
+                  scale: active?.id === structure.id ? 14 : 10,
+                  fillColor:
+                    active?.id === structure.id
+                      ? "#f5333f"
+                      : savedStructures.has(structure.id)
+                        ? "#15803d"
+                        : "#0047ba",
+                  fillOpacity: 1,
+                  strokeColor: "#ffffff",
+                  strokeWeight: 2,
+                }}
+                label={
+                  mapZoom >= markerCodeZoom
+                    ? {
+                        text: structure.id,
+                        color: "#111827",
+                        fontSize: "11px",
+                        fontWeight: "700",
+                        className: "translate-y-7 rounded bg-white px-1",
+                      }
+                    : undefined
+                }
               />
             ))}
           </>
@@ -254,160 +269,79 @@ function GoogleLocationsMap({
   );
 }
 
-function StaticMapFallback({ locations }: { locations: PubliexLocation[] }) {
-  return (
-    <div className="relative min-h-[32rem] overflow-hidden bg-[#d9e8ed]">
-      <img
-        alt="Mapa comercial de muestra con ubicaciones Publiex"
-        className="absolute inset-0 size-full object-cover"
-        src={publiexAsset("locations-coverage-map.png")}
-      />
-      <div className="absolute left-[2.5%] top-6 font-raleway text-sm font-semibold uppercase tracking-[0.14em] text-slate-500">
-        Océano Pacífico
-      </div>
-      <div className="absolute right-[2.5%] top-6 font-raleway text-sm font-semibold uppercase tracking-[0.14em] text-slate-500">
-        Mar Caribe
-      </div>
-      <div className="absolute inset-x-[3%] bottom-7 bg-white/95 px-6 py-5 font-raleway shadow-sm">
-        <p className="text-base font-extrabold uppercase tracking-[0.08em]">
-          {locations.length} medios filtrados
-        </p>
-        <p className="mt-2 leading-tight text-zinc-600">
-          Configure VITE_GOOGLE_MAPS_API_KEY para activar el mapa interactivo de
-          Google Maps.
-        </p>
-      </div>
-    </div>
-  );
-}
-
-function LocationCard({
-  location,
-  selected,
-  onSelect,
-}: {
-  location: PubliexLocation;
-  selected: boolean;
-  onSelect: () => void;
-}) {
-  return (
-    <article
-      className={`border bg-white transition ${
-        selected ? "border-publiex-blue" : "border-zinc-200 hover:border-zinc-400"
-      }`}
-    >
-      <button className="block w-full text-left" onClick={onSelect} type="button">
-        <div className="relative h-[clamp(10rem,11.8vw,14.2rem)] overflow-hidden bg-black">
-          <img
-            alt={location.imageAlt}
-            className="size-full object-cover"
-            src={location.image}
-          />
-          <p className="absolute left-4 top-4 text-xs font-extrabold uppercase text-white">
-            {location.code}
-          </p>
-          <span className="absolute right-4 top-4 flex size-10 items-center justify-center rounded-full bg-white text-xl font-black text-publiex-blue">
-            {selected ? "✓" : "+"}
-          </span>
-        </div>
-        <div className="p-5">
-          <p className="text-xs font-extrabold uppercase text-publiex-blue">
-            {location.category} · {location.province}
-          </p>
-          <h3 className="mt-4 text-[clamp(1.125rem,1.15vw,1.375rem)] font-semibold leading-tight">
-            {location.title}
-          </h3>
-          <p className="mt-3 leading-tight text-zinc-600">
-            {location.description}
-          </p>
-        </div>
-      </button>
-      {selected ? (
-        <div className="grid grid-cols-2 gap-3 px-5 pb-5 text-xs font-extrabold uppercase">
-          <a
-            className="flex items-center justify-between border-t border-zinc-300 pt-5 text-publiex-blue"
-            href="/contact"
-          >
-            Ver ubicación <span aria-hidden="true">↗</span>
-          </a>
-          <a
-            className="flex items-center justify-between bg-publiex-red px-4 py-5 text-white"
-            href="/contact"
-          >
-            Ver mi campaña aquí <span aria-hidden="true">→</span>
-          </a>
-        </div>
-      ) : (
-        <span className="mx-5 mb-5 block h-1 bg-publiex-red" />
-      )}
-    </article>
-  );
-}
-
 export default function LocationsPage() {
-  const [filters, setFilters] = useState<LocationFilters>(defaultFilters);
-  const [selectedLocationId, setSelectedLocationId] = useState(
-    publiexLocations[0].id,
-  );
-
-  const filterGroups = useMemo(
-    () => [
-      {
-        key: "province" as const,
-        label: "Provincia",
-        options: ["Todas", ...getUniqueOptions("province")],
-      },
-      {
-        key: "solution" as const,
-        label: "Solución",
-        options: ["Todas", ...getUniqueOptions("solution")],
-      },
-      {
-        key: "objective" as const,
-        label: "Objetivo",
-        options: ["Todos", ...getUniqueOptions("objective")],
-      },
-    ],
+  const [province, setProvince] = useState("");
+  const [search, setSearch] = useState("");
+  const [activeFaceId, setActiveFaceId] = useState<string | null>(null);
+  const [previewOpen, setPreviewOpen] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
+  const shortlist = useLocationShortlist();
+  const lastFaces = useRef(new Map<string, string>());
+  const previewReturnFocus = useRef<HTMLElement | null>(null);
+  const provinces = useMemo(
+    () => [...new Set(publiexLocations.map((face) => face.province))].sort(),
     [],
   );
-
-  const filteredLocations = useMemo(
-    () =>
-      publiexLocations.filter((location) => {
-        const matchesProvince =
-          filters.province === "Todas" || location.province === filters.province;
-        const matchesSolution =
-          filters.solution === "Todas" || location.solution === filters.solution;
-        const matchesObjective =
-          filters.objective === "Todos" || location.objective === filters.objective;
-        const matchesLighting = !filters.illuminated || location.illuminated;
-
-        return (
-          matchesProvince &&
-          matchesSolution &&
-          matchesObjective &&
-          matchesLighting
-        );
-      }),
-    [filters],
+  const filtered = useMemo(
+    () => filterBillboardFaces(publiexLocations, province, search),
+    [province, search],
   );
-
-  const selectedLocation =
-    filteredLocations.find((location) => location.id === selectedLocationId) ??
-    filteredLocations[0] ??
-    publiexLocations[0];
-
+  const structures = useMemo(() => groupBillboardFaces(filtered), [filtered]);
+  const selected = filtered.find((face) => face.id === activeFaceId) ?? null;
+  const activeStructure =
+    structures.find((structure) => structure.id === selected?.structureId) ??
+    null;
+  const savedStructures = new Set(
+    shortlist.faces.map((face) => face.structureId),
+  );
   useEffect(() => {
-    if (!filteredLocations.length) return;
-
-    const selectedStillVisible = filteredLocations.some(
-      (location) => location.id === selectedLocationId,
-    );
-
-    if (!selectedStillVisible) {
-      setSelectedLocationId(filteredLocations[0].id);
+    const media = window.matchMedia("(min-width: 1280px)");
+    const update = () => setIsDesktop(media.matches);
+    update();
+    media.addEventListener("change", update);
+    return () => media.removeEventListener("change", update);
+  }, []);
+  // Filtering affects browsing only; saved faces persist independently.
+  useEffect(() => {
+    if (activeFaceId && !filtered.some((face) => face.id === activeFaceId)) {
+      setActiveFaceId(null);
+      setPreviewOpen(false);
     }
-  }, [filteredLocations, selectedLocationId]);
+  }, [activeFaceId, filtered]);
+  const selectFace = (id: string) => {
+    const face = filtered.find((item) => item.id === id);
+    if (!face) return;
+    if (!previewOpen && document.activeElement instanceof HTMLElement) {
+      previewReturnFocus.current = document.activeElement;
+    }
+    lastFaces.current.set(face.structureId, id);
+    setActiveFaceId(id);
+    setPreviewOpen(true);
+  };
+  const selectStructure = (structure: BillboardStructure) => {
+    const last = lastFaces.current.get(structure.id);
+    selectFace(
+      structure.faces.find((face) => face.id === last)?.id ??
+        structure.faces[0].id,
+    );
+  };
+  const preview =
+    selected && activeStructure ? (
+      <BillboardPreview
+        face={selected}
+        faces={activeStructure.faces}
+        onSelect={selectFace}
+        onAdd={shortlist.add}
+        saved={shortlist.ids.includes(selected.id)}
+        atLimit={shortlist.ids.length >= shortlist.limit}
+      />
+    ) : null;
+  const emptyPreview = (
+    <p className="p-5 text-sm text-slate-500">
+      Seleccione una ubicación en el mapa o en la lista para ver sus caras y
+      detalles.
+    </p>
+  );
 
   return (
     <main className="bg-white pt-14 text-black md:pt-16 xl:pt-20">
@@ -440,208 +374,220 @@ export default function LocationsPage() {
         </div>
       </section>
 
-      {/* Section 2, Interactive inventory map */}
-      <section className="overflow-hidden bg-publiex-muted-section px-5 py-[clamp(3rem,5vw,6rem)] md:px-10 lg:px-24">
-        <div className="mx-auto w-full max-w-393.5">
-          {/* Stack results below the map until three usable columns fit. */}
-          <div className="grid min-h-[clamp(42rem,46.9vw,56.25rem)] overflow-hidden bg-white shadow-sm lg:grid-cols-[12rem_minmax(0,1fr)] xl:grid-cols-[clamp(12rem,14vw,14rem)_minmax(0,1fr)_clamp(17rem,20vw,19rem)]">
-            {/* Compact sidebar typography uses a local override of the shared paragraph token. */}
-            <aside className="flex min-w-0 flex-col border-b border-zinc-200 bg-zinc-50 px-4 py-7 font-raleway text-sm [--publiex-paragraph-font-size:0.875rem] lg:border-b-0 lg:border-r">
-              <h2 className="text-base font-extrabold uppercase tracking-wide">
-                Refinar búsqueda
-              </h2>
-
-              <div className="mt-8 space-y-6">
-                {filterGroups.map((filter) => (
-                  <label className="block" key={filter.label}>
-                    <span className="block text-xs font-extrabold uppercase tracking-[0.08em] text-zinc-600">
-                      {filter.label}
-                    </span>
+      {/* Verified catalog filters and accessible list remain usable without the map. */}
+      <section
+        id="explorar"
+        className="bg-publiex-muted-section px-5 py-12 md:px-10 lg:px-24"
+      >
+        <div className="mx-auto max-w-393.5">
+          <div className="mb-5 flex flex-wrap items-center justify-between gap-4">
+            <h2 className="font-raleway text-2xl font-semibold">
+              Encuentre su próxima ubicación
+            </h2>
+            <a
+              href="#mi-seleccion"
+              className="rounded bg-publiex-blue px-4 py-3 text-sm font-semibold text-white"
+            >
+              Mi selección · {shortlist.ids.length}
+            </a>
+          </div>
+          <div className="grid overflow-hidden rounded bg-white shadow-sm lg:grid-cols-[12rem_minmax(0,1fr)] xl:grid-cols-[clamp(12rem,14vw,14rem)_minmax(0,1fr)_clamp(17rem,20vw,19rem)]">
+            <aside className="min-w-0 border-b bg-zinc-50 p-4 text-sm [--publiex-paragraph-font-size:0.875rem] lg:border-r">
+              <details open={isDesktop || undefined} className="group">
+                <summary className="cursor-pointer py-2 font-semibold">
+                  Refinar búsqueda
+                </summary>
+                <div className="mt-5 space-y-5">
+                  <label className="block">
+                    Provincia
                     <select
-                      className="mt-3 h-10 min-w-0 w-full border border-zinc-300 bg-white px-2 text-xs font-bold text-black shadow-inner"
-                      onChange={(event) =>
-                        setFilters((currentFilters) => ({
-                          ...currentFilters,
-                          [filter.key]: event.target.value,
-                        }))
-                      }
-                      value={filters[filter.key]}
+                      value={province}
+                      onChange={(event) => setProvince(event.target.value)}
+                      className="mt-2 min-h-11 w-full rounded border bg-white px-2 text-sm"
                     >
-                      {filter.options.map((option) => (
-                        <option key={option}>{option}</option>
+                      <option value="">Todas</option>
+                      {provinces.map((value) => (
+                        <option key={value}>{value}</option>
                       ))}
                     </select>
                   </label>
-                ))}
-              </div>
-
-              <label className="mt-7 flex items-center gap-3 border-y border-zinc-300 py-5 text-xs font-extrabold uppercase tracking-[0.06em] text-zinc-700">
-                <input
-                  checked={filters.illuminated}
-                  className="size-4 shrink-0"
-                  onChange={(event) =>
-                    setFilters((currentFilters) => ({
-                      ...currentFilters,
-                      illuminated: event.target.checked,
-                    }))
-                  }
-                  type="checkbox"
-                />
-                Impacto nocturno o iluminado
-              </label>
-
-              <div className="mt-8">
-                <p className="text-xs font-extrabold uppercase tracking-[0.08em] text-zinc-600">
-                  Categorías
-                </p>
-                <div className="mt-6 space-y-5 text-sm text-zinc-800">
-                  {Object.entries(categoryStyles).map(([label, color]) => (
-                    <div className="flex items-center gap-4" key={label}>
-                      <span className={`size-3 shrink-0 rounded-full ${color}`} />
-                      <span>{label}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <button
-                className="mt-auto w-fit border-b border-black pb-3 pt-12 text-xs font-extrabold uppercase tracking-[0.06em] text-zinc-700"
-                onClick={() => setFilters(defaultFilters)}
-                type="button"
-              >
-                Limpiar filtros
-              </button>
-            </aside>
-
-            <div className="relative min-h-[32rem] overflow-hidden bg-[#d9e8ed]">
-              <LocationsMap
-                locations={filteredLocations}
-                onSelectLocation={(location) => setSelectedLocationId(location.id)}
-                selectedLocation={selectedLocation}
-              />
-            </div>
-
-            <aside className="min-w-0 border-t border-zinc-200 bg-white font-raleway text-sm [--publiex-paragraph-font-size:0.875rem] lg:col-span-2 xl:col-span-1 xl:border-l xl:border-t-0">
-              <div className="flex items-center justify-between gap-3 border-b border-zinc-200 px-4 py-5 text-xs text-zinc-500 xl:px-5">
-                <p className="text-sm font-extrabold text-black">
-                  {filteredLocations.length} medios encontrados
-                </p>
-                <p className="text-xs">Muestra pública · Costa Rica</p>
-              </div>
-
-              <div className="max-h-[clamp(36rem,44vw,53rem)] space-y-5 overflow-y-auto p-4 xl:p-5">
-                {filteredLocations.length ? (
-                  filteredLocations.map((location) => (
-                    <LocationCard
-                      key={location.id}
-                      location={location}
-                      onSelect={() => setSelectedLocationId(location.id)}
-                      selected={selectedLocation.id === location.id}
+                  <label className="block">
+                    Código o ubicación
+                    <input
+                      value={search}
+                      onChange={(event) => setSearch(event.target.value)}
+                      type="search"
+                      placeholder="Ej. SJ14 o Santa Ana"
+                      className="mt-2 min-h-11 w-full min-w-0 rounded border px-2 text-sm"
                     />
-                  ))
-                ) : (
-                  <div className="border border-dashed border-zinc-300 p-5 text-sm leading-tight text-zinc-600">
-                    No hay medios para estos filtros. Ajuste la búsqueda o limpie
-                    los filtros para ver más opciones.
-                  </div>
-                )}
-              </div>
-            </aside>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 3, Featured location */}
-      <section className="overflow-hidden bg-publiex-blue-deep px-5 py-[clamp(4rem,6.25vw,7.5rem)] text-white md:px-10 lg:px-24">
-        <div className="mx-auto max-w-393.5">
-          <h2 className="max-w-300 font-raleway text-[clamp(2.4rem,5.4vw,4.965rem)] font-semibold leading-[1.04]">
-            Encuentre el lugar donde su marca puede{" "}
-            <span className="text-publiex-red">generar impacto.</span>
-          </h2>
-          <div className="mt-14 grid gap-10 lg:grid-cols-[minmax(0,1.35fr)_minmax(0,0.65fr)] lg:items-center">
-            <div className="relative min-h-[clamp(30rem,33.3vw,40rem)] overflow-hidden bg-black">
-              <img
-                alt={selectedLocation.imageAlt}
-                className="absolute inset-0 size-full object-cover opacity-65"
-                src={selectedLocation.image}
-              />
-              <div className="absolute inset-0 bg-black/45" />
-              <div className="relative flex min-h-[clamp(30rem,33.3vw,40rem)] flex-col items-center justify-center px-6 text-center">
-                <p className="text-[clamp(1.8rem,3.5vw,2.75rem)] font-bold">
-                  Su campaña aparecerá aquí
-                </p>
-                <p className="mt-3 opacity-80">
-                  Previsualización conceptual para evaluar presencia y lectura.
-                </p>
-              </div>
-            </div>
-            <aside>
-              <p className="text-sm font-bold uppercase text-publiex-blue md:text-2xl">
-                {selectedLocation.code} · {selectedLocation.category}
+                  </label>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setProvince("");
+                      setSearch("");
+                    }}
+                    className="min-h-11 underline"
+                  >
+                    Limpiar filtros
+                  </button>
+                </div>
+              </details>
+              <p role="status" className="mt-6">
+                {structures.length} vallas · {filtered.length} caras
               </p>
-              <h3 className="mt-4 font-raleway text-[clamp(2.7rem,5.4vw,4.965rem)] font-bold leading-[1.04]">
-                {selectedLocation.title}
-              </h3>
-              <div className="mt-8 border-y border-white/35 py-5 font-raleway text-base uppercase leading-8 md:text-lg">
-                <p>Formato: {selectedLocation.category.toLowerCase()}</p>
-                <p>Contexto: {selectedLocation.context}</p>
-                <p>Lectura: {selectedLocation.reading}</p>
-              </div>
-              <div className="mt-8 flex flex-col items-start gap-5">
-                <LocationButton href="/contact">
-                  Agregar y solicitar propuestas
-                </LocationButton>
-                <LocationButton href="/contact" variant="underline">
-                  Solicitar apoyo creativo
-                </LocationButton>
+              <label className="mt-5 block font-semibold">
+                Explorar desde la lista
+                <select
+                  value={selected?.id ?? ""}
+                  onChange={(event) => selectFace(event.target.value)}
+                  className="mt-2 min-h-11 w-full min-w-0 rounded border bg-white px-2 text-xs"
+                >
+                  <option value="">Seleccione una cara</option>
+                  {structures.flatMap((structure) =>
+                    structure.faces.map((face) => (
+                      <option key={face.id} value={face.id}>
+                        {face.code} · {face.title}
+                      </option>
+                    )),
+                  )}
+                </select>
+              </label>
+              <p className="mt-6 text-xs text-slate-500">
+                Azul: ubicación · Rojo: vista actual · Verde: incluye caras
+                guardadas.
+              </p>
+            </aside>
+            <div className="min-h-[32rem] min-w-0">
+              {structures.length ? (
+                <LocationsMap
+                  structures={structures}
+                  active={activeStructure}
+                  onSelect={selectStructure}
+                  savedStructures={savedStructures}
+                />
+              ) : (
+                <div
+                  role="status"
+                  className="flex min-h-[32rem] items-center justify-center p-6 text-center"
+                >
+                  No hay ubicaciones para esta búsqueda. Pruebe otra provincia o
+                  limpie los filtros.
+                </div>
+              )}
+            </div>
+            <aside
+              aria-label="Vista previa de la ubicación"
+              className="hidden min-w-0 border-l p-4 xl:block"
+            >
+              <h2 className="mb-4 font-raleway text-lg font-semibold">
+                Vista previa
+              </h2>
+              <div className="max-h-[48rem] overflow-y-auto">
+                {preview ?? emptyPreview}
               </div>
             </aside>
           </div>
+          {selected && (
+            <button
+              type="button"
+              className="mt-4 min-h-11 w-full rounded border border-publiex-blue bg-white text-sm text-publiex-blue xl:hidden"
+              onClick={(event) => {
+                previewReturnFocus.current = event.currentTarget;
+                setPreviewOpen(true);
+              }}
+            >
+              Ver cara {selected.code}
+            </button>
+          )}
+          <Dialog
+            open={previewOpen && !isDesktop && !!selected}
+            onOpenChange={setPreviewOpen}
+          >
+            <DialogContent
+              className="bottom-0 left-0 top-auto max-h-[85svh] w-full max-w-none translate-x-0 translate-y-0 overflow-y-auto rounded-t-2xl sm:max-w-none"
+              onCloseAutoFocus={(event) => {
+                event.preventDefault();
+                previewReturnFocus.current?.focus();
+              }}
+            >
+              <DialogTitle>Vista previa de la ubicación</DialogTitle>
+              <DialogDescription>
+                Elija la cara y agréguela a su selección.
+              </DialogDescription>
+              {preview}
+            </DialogContent>
+          </Dialog>
         </div>
       </section>
 
-      {/* Section 4, Selection summary */}
-      <section className="overflow-hidden bg-publiex-muted-section px-5 py-[clamp(4rem,6.25vw,7.5rem)] md:px-10 lg:px-24">
+      {/* Saving faces is independent of the active marker and current filters. */}
+      <section
+        id="mi-seleccion"
+        className="scroll-mt-24 px-5 py-14 md:px-10 lg:px-24"
+      >
         <div className="mx-auto max-w-393.5">
-          <p className="text-sm font-bold uppercase md:text-2xl">
-            Mi selección
-          </p>
-          <h2 className="mt-8 max-w-313 font-raleway text-[clamp(2.4rem,5.4vw,4.965rem)] font-semibold leading-[1.04]">
-            Construya un plan preliminar y{" "}
-            <span className="text-publiex-red">
-              deje que Publiex haga el resto.
-            </span>
-          </h2>
-          <div className="mt-14 grid gap-8 lg:grid-cols-[minmax(0,0.55fr)_minmax(0,1.45fr)] lg:items-start">
-            <article className="bg-white shadow-sm">
-              <img
-                alt={selectedLocation.imageAlt}
-                className="h-37 w-full object-cover object-center"
-                src={selectedLocation.image}
-              />
-              <div className="p-4 font-raleway">
-                <p className="text-sm font-bold uppercase text-publiex-blue">
-                  {selectedLocation.code}
-                </p>
-                <h3 className="mt-2 text-xl font-bold leading-tight">
-                  {selectedLocation.title}
-                </h3>
-                <p className="mt-2 leading-tight text-zinc-600">
-                  {selectedLocation.category} para revisión preliminar.
-                </p>
-              </div>
-            </article>
-            <div className="overflow-hidden bg-white shadow-sm">
-              <img
-                alt="Formulario preliminar para solicitar propuesta Publiex"
-                className="w-full object-cover"
-                src={publiexAsset("locations-selection-form.png")}
-              />
-            </div>
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <h2 className="font-raleway text-3xl font-semibold">
+              Mi selección · {shortlist.ids.length}
+            </h2>
+            {shortlist.ids.length > 0 && (
+              <button
+                type="button"
+                className="min-h-11 text-sm underline"
+                onClick={shortlist.clear}
+              >
+                Vaciar selección
+              </button>
+            )}
           </div>
+          <p className="mt-4">
+            Guarde las caras que le interesan y solicite una propuesta. La
+            disponibilidad se confirma con nuestro equipo.
+          </p>
+          {shortlist.faces.length ? (
+            <>
+              <ul className="mt-8 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+                {shortlist.faces.map((face) => (
+                  <li
+                    key={face.id}
+                    className="flex min-w-0 items-center gap-4 rounded border p-4"
+                  >
+                    <BillboardImage
+                      src={face.image}
+                      alt={face.imageAlt}
+                      className="h-20 w-24 shrink-0 rounded"
+                    />
+                    <div className="min-w-0 flex-1">
+                      <p className="text-sm font-bold">{face.code}</p>
+                      <p className="text-sm">{face.title}</p>
+                      <button
+                        type="button"
+                        aria-label={"Quitar " + face.code}
+                        onClick={() => shortlist.remove(face.id)}
+                        className="mt-2 min-h-11 text-sm text-publiex-blue underline"
+                      >
+                        Quitar
+                      </button>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+              <Link
+                to="/contact?from=locations"
+                className="mt-8 inline-flex min-h-12 items-center rounded bg-publiex-red px-6 font-semibold text-white"
+              >
+                Solicitar propuesta · {shortlist.ids.length} caras
+              </Link>
+            </>
+          ) : (
+            <p className="mt-8 rounded border border-dashed p-6 text-slate-500">
+              Aún no ha guardado ubicaciones. Explore el mapa o la lista y
+              agregue una cara para comenzar.
+            </p>
+          )}
         </div>
       </section>
     </main>
   );
 }
-

@@ -1,0 +1,4470 @@
+{
+  "schemaVersion": 1,
+  "faces": [
+    {
+      "id": "ACT-14",
+      "code": "AL1-A",
+      "structureId": "AL1",
+      "face": "A",
+      "title": "Villa Bonita",
+      "province": "Alajuela",
+      "address": "1 kilómetro oeste del Aeropuerto Internacional Juan Santamaría",
+      "district": "San Antonio",
+      "direction": "De San José hacia la Garita o Coyol",
+      "position": {
+        "lat": 9.9978448,
+        "lng": -84.2237502
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/AL1-A.webp",
+      "imageAlt": "Cara AL1-A · Villa Bonita"
+    },
+    {
+      "id": "ACT-15",
+      "code": "AL1-C",
+      "structureId": "AL1",
+      "face": "C",
+      "title": "Villa Bonita",
+      "province": "Alajuela",
+      "address": "1 kilómetro oeste del Aeropuerto Internacional Juan Santamaría",
+      "district": "San Antonio",
+      "direction": "De La Garita o Coyol hacia San José",
+      "position": {
+        "lat": 9.9978448,
+        "lng": -84.2237502
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/AL1-C.webp",
+      "imageAlt": "Cara AL1-C · Villa Bonita"
+    },
+    {
+      "id": "ACT-16",
+      "code": "AL2-A",
+      "structureId": "AL2",
+      "face": "A",
+      "title": "Rio Segundo",
+      "province": "Alajuela",
+      "address": "Río Segundo de Alajuela, 200 metros al oeste del antiguo peaje de la autopista General Cañas",
+      "district": "Río Segundo",
+      "direction": "De San José hacia Alajuela",
+      "position": {
+        "lat": 10.0013315,
+        "lng": -84.1845632
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/AL2-A.webp",
+      "imageAlt": "Cara AL2-A · Rio Segundo"
+    },
+    {
+      "id": "ACT-17",
+      "code": "AL2-C",
+      "structureId": "AL2",
+      "face": "C",
+      "title": "Rio Segundo",
+      "province": "Alajuela",
+      "address": "Río Segundo de Alajuela, 200 metros al oeste del antiguo peaje de la autopista General Cañas",
+      "district": "Río Segundo",
+      "direction": "De Alajuela hacia San José",
+      "position": {
+        "lat": 10.0013315,
+        "lng": -84.1845632
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/AL2-C.webp",
+      "imageAlt": "Cara AL2-C · Rio Segundo"
+    },
+    {
+      "id": "ACT-18",
+      "code": "AL3-A",
+      "structureId": "AL3",
+      "face": "A",
+      "title": "Starbucks Holiday AL3-A - 720 x 900",
+      "province": "Alajuela",
+      "address": "Costado norte de la Panasonic",
+      "district": "San Rafael",
+      "direction": "De Belén hacia Santa Ana",
+      "position": {
+        "lat": 9.9789788,
+        "lng": -84.1966868
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/AL3-A.webp",
+      "imageAlt": "Cara AL3-A · Starbucks Holiday AL3-A - 720 x 900"
+    },
+    {
+      "id": "ACT-19",
+      "code": "AL3-C",
+      "structureId": "AL3",
+      "face": "C",
+      "title": "AL3-C - 720 x 900 ⚠️⚠️⚠️",
+      "province": "Alajuela",
+      "address": "Costado norte de la Panasonic",
+      "district": "San Rafael",
+      "direction": "De Santa Ana hacia Belén",
+      "position": {
+        "lat": 9.9789788,
+        "lng": -84.1966868
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/AL3-C.webp",
+      "imageAlt": "Cara AL3-C · AL3-C - 720 x 900 ⚠️⚠️⚠️"
+    },
+    {
+      "id": "ACT-20",
+      "code": "AL4-A",
+      "structureId": "AL4",
+      "face": "A",
+      "title": "DOS PINOS Té melocotón NAVIDAD AL4-A - 1440 x 600",
+      "province": "Alajuela",
+      "address": "Costado norte del Mall Internacional",
+      "district": "Alajuela",
+      "direction": "De Alajuela hacia San José",
+      "position": {
+        "lat": 10.0076393,
+        "lng": -84.2127156
+      },
+      "widthM": 14.4,
+      "heightM": 6,
+      "image": "/images/locations/AL4-A.webp",
+      "imageAlt": "Cara AL4-A · DOS PINOS Té melocotón NAVIDAD AL4-A - 1440 x 600"
+    },
+    {
+      "id": "ACT-21",
+      "code": "AL4-C",
+      "structureId": "AL4",
+      "face": "C",
+      "title": "BANCO POPULAR AL4-C - 1440 x 600",
+      "province": "Alajuela",
+      "address": "Costado norte del Mall Internacional",
+      "district": "Alajuela",
+      "direction": "De San José hacia Alajuela",
+      "position": {
+        "lat": 10.0076393,
+        "lng": -84.2127156
+      },
+      "widthM": 14.4,
+      "heightM": 6,
+      "image": "/images/locations/AL4-C.webp",
+      "imageAlt": "Cara AL4-C · BANCO POPULAR AL4-C - 1440 x 600"
+    },
+    {
+      "id": "ACT-22",
+      "code": "AL5-A",
+      "structureId": "AL5",
+      "face": "A",
+      "title": "Juan Carlos",
+      "province": "Alajuela",
+      "address": "Costado norte de la Panasonic",
+      "district": "San Rafael",
+      "direction": "De Belén hacia Santa Ana",
+      "position": {
+        "lat": 9.9787463,
+        "lng": -84.1979474
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/AL5-A.webp",
+      "imageAlt": "Cara AL5-A · Juan Carlos"
+    },
+    {
+      "id": "ACT-23",
+      "code": "AL5-C",
+      "structureId": "AL5",
+      "face": "C",
+      "title": "Juan Carlos",
+      "province": "Alajuela",
+      "address": "Costado norte de la Panasonic",
+      "district": "San Rafael",
+      "direction": "De Santa Ana hacia Belén",
+      "position": {
+        "lat": 9.9787463,
+        "lng": -84.1979474
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/AL5-C.webp",
+      "imageAlt": "Cara AL5-C · Juan Carlos"
+    },
+    {
+      "id": "ACT-24",
+      "code": "AL6-A",
+      "structureId": "AL6",
+      "face": "A",
+      "title": "Orotina Centro La Señora / Palos del Coyol /",
+      "province": "Alajuela",
+      "address": "De la intersección principal de Orotina, 500 metros al este",
+      "district": "Orotina",
+      "direction": "De San José hacia Caldera",
+      "position": {
+        "lat": 9.9115098,
+        "lng": -84.5104837
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/AL6-A.webp",
+      "imageAlt": "Cara AL6-A · Orotina Centro La Señora / Palos del Coyol /"
+    },
+    {
+      "id": "ACT-25",
+      "code": "AL6-C",
+      "structureId": "AL6",
+      "face": "C",
+      "title": "Orotina Centro La Señora / Palos del Coyol /",
+      "province": "Alajuela",
+      "address": "De la intersección principal de Orotina, 500 metros al este",
+      "district": "Orotina",
+      "direction": "De Caldera hacia San José",
+      "position": {
+        "lat": 9.9115098,
+        "lng": -84.5104837
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/AL6-C.webp",
+      "imageAlt": "Cara AL6-C · Orotina Centro La Señora / Palos del Coyol /"
+    },
+    {
+      "id": "ACT-26",
+      "code": "AL7-A",
+      "structureId": "AL7",
+      "face": "A",
+      "title": "Los Viejitos -- CAR Alajuela",
+      "province": "Alajuela",
+      "address": "Contiguo a la intersección de la rotonda Turrúcares y La Garita",
+      "district": "Turrúcares",
+      "direction": "De San José hacia Caldera",
+      "position": {
+        "lat": 9.9649937,
+        "lng": -84.3153691
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/AL7-A.webp",
+      "imageAlt": "Cara AL7-A · Los Viejitos -- CAR Alajuela"
+    },
+    {
+      "id": "ACT-27",
+      "code": "AL7-C",
+      "structureId": "AL7",
+      "face": "C",
+      "title": "Los Viejitos  -- CAR Alajuela",
+      "province": "Alajuela",
+      "address": "Contiguo a la intersección de la rotonda Turrúcares y La Garita",
+      "district": "Turrúcares",
+      "direction": "De Caldera hacia San José",
+      "position": {
+        "lat": 9.9649937,
+        "lng": -84.3153691
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/AL7-C.webp",
+      "imageAlt": "Cara AL7-C · Los Viejitos  -- CAR Alajuela"
+    },
+    {
+      "id": "ACT-28",
+      "code": "AL8-A",
+      "structureId": "AL8",
+      "face": "A",
+      "title": "Peaje Atenas, Balsa de Atenas, Jorge Bolaños, PRECOVENSA",
+      "province": "Alajuela",
+      "address": "Del peaje de Atenas, 400 metros oeste",
+      "district": "Concepción",
+      "direction": "De San José hacia Caldera",
+      "position": {
+        "lat": 9.9516314,
+        "lng": -84.3611598
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/AL8-A.webp",
+      "imageAlt": "Cara AL8-A · Peaje Atenas, Balsa de Atenas, Jorge Bolaños, PRECOVENSA"
+    },
+    {
+      "id": "ACT-29",
+      "code": "AL8-C",
+      "structureId": "AL8",
+      "face": "C",
+      "title": "Peaje Atenas, PRECOVENSA",
+      "province": "Alajuela",
+      "address": "Del peaje de Atenas, 400 metros oeste",
+      "district": "Concepción",
+      "direction": "De Caldera hacia San José",
+      "position": {
+        "lat": 9.9516314,
+        "lng": -84.3611598
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/AL8-C.webp",
+      "imageAlt": "Cara AL8-C · Peaje Atenas, PRECOVENSA"
+    },
+    {
+      "id": "ACT-30",
+      "code": "AL9-A",
+      "structureId": "AL9",
+      "face": "A",
+      "title": "Balsa Atenas",
+      "province": "Alajuela",
+      "address": "Del peaje de Atenas, 2 kilómetros oeste",
+      "district": "Concepción",
+      "direction": "De San José hacia Caldera",
+      "position": {
+        "lat": 9.94369,
+        "lng": -84.3737448
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/AL9-A.webp",
+      "imageAlt": "Cara AL9-A · Balsa Atenas"
+    },
+    {
+      "id": "ACT-31",
+      "code": "AL9-C",
+      "structureId": "AL9",
+      "face": "C",
+      "title": "Balsa Atenas",
+      "province": "Alajuela",
+      "address": "Del peaje de Atenas, 2 kilómetros oeste",
+      "district": "Concepción",
+      "direction": "De Caldera hacia San José",
+      "position": {
+        "lat": 9.94369,
+        "lng": -84.3737448
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/AL9-C.webp",
+      "imageAlt": "Cara AL9-C · Balsa Atenas"
+    },
+    {
+      "id": "ACT-32",
+      "code": "AL10-A",
+      "structureId": "AL10",
+      "face": "A",
+      "title": "Peaje Orotina",
+      "province": "Alajuela",
+      "address": "Del peaje de Orotina, 100 metros al este",
+      "district": "Coyolar",
+      "direction": "De San José hacia Caldera",
+      "position": {
+        "lat": 9.8882785,
+        "lng": -84.568162
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/AL10-A.webp",
+      "imageAlt": "Cara AL10-A · Peaje Orotina"
+    },
+    {
+      "id": "ACT-33",
+      "code": "AL10-C",
+      "structureId": "AL10",
+      "face": "C",
+      "title": "Peaje Orotina",
+      "province": "Alajuela",
+      "address": "Del peaje de Orotina, 100 metros al este",
+      "district": "Coyolar",
+      "direction": "De Caldera hacia San José",
+      "position": {
+        "lat": 9.8882785,
+        "lng": -84.568162
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/AL10-C.webp",
+      "imageAlt": "Cara AL10-C · Peaje Orotina"
+    },
+    {
+      "id": "ACT-315",
+      "code": "AL11-A",
+      "structureId": "AL11",
+      "face": "A",
+      "title": "Turrúcares",
+      "province": "Alajuela",
+      "address": "Zona de conexión de El Coyol - Guácima - Oeste del GAM",
+      "district": "Turrúcares",
+      "direction": "De Turrúcares hacia San José",
+      "position": {
+        "lat": 9.966281537017185,
+        "lng": -84.308984520776
+      },
+      "widthM": 33.3,
+      "heightM": 8.5,
+      "image": "/images/locations/AL11-A.webp",
+      "imageAlt": "Cara AL11-A · Turrúcares"
+    },
+    {
+      "id": "ACT-34",
+      "code": "AL12-A",
+      "structureId": "AL12",
+      "face": "A",
+      "title": "LOS SUEÑOS RESORT AND MARINA  AL12-A - 1260 x 500",
+      "province": "Alajuela",
+      "address": "Costado sur del Centro de Alto Rendimiento (CAR)",
+      "district": "San Antonio",
+      "direction": "De San José hacia Caldera",
+      "position": {
+        "lat": 9.9657545,
+        "lng": -84.2805541
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/AL12-A.webp",
+      "imageAlt": "Cara AL12-A · LOS SUEÑOS RESORT AND MARINA  AL12-A - 1260 x 500"
+    },
+    {
+      "id": "ACT-35",
+      "code": "AL12-C",
+      "structureId": "AL12",
+      "face": "C",
+      "title": "LOS SUEÑOS RESORT AND MARINA AL12-C - 1260 x 500",
+      "province": "Alajuela",
+      "address": "Costado sur del Centro de Alto Rendimiento (CAR)",
+      "district": "San Antonio",
+      "direction": "De Caldera hacia San José",
+      "position": {
+        "lat": 9.9657545,
+        "lng": -84.2805541
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/AL12-C.webp",
+      "imageAlt": "Cara AL12-C · LOS SUEÑOS RESORT AND MARINA AL12-C - 1260 x 500"
+    },
+    {
+      "id": "ACT-36",
+      "code": "AL13-A",
+      "structureId": "AL13",
+      "face": "A",
+      "title": "Proyecto Gol",
+      "province": "Alajuela",
+      "address": "Instalaciones de Proyecto Goal",
+      "district": "San Rafael",
+      "direction": "De Belén hacia Santa Ana",
+      "position": {
+        "lat": 9.9735581,
+        "lng": -84.2000932
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/AL13-A.webp",
+      "imageAlt": "Cara AL13-A · Proyecto Gol"
+    },
+    {
+      "id": "ACT-37",
+      "code": "AL13-C",
+      "structureId": "AL13",
+      "face": "C",
+      "title": "Proyecto Gol",
+      "province": "Alajuela",
+      "address": "Instalaciones de Proyecto Goal",
+      "district": "San Rafael",
+      "direction": "De Santa Ana hacia Belén",
+      "position": {
+        "lat": 9.9735581,
+        "lng": -84.2000932
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/AL13-C.webp",
+      "imageAlt": "Cara AL13-C · Proyecto Gol"
+    },
+    {
+      "id": "ACT-38",
+      "code": "AL14-A",
+      "structureId": "AL14",
+      "face": "A",
+      "title": "El Rodeo",
+      "province": "Alajuela",
+      "address": "Costado sur del Restaurante El Rodeo",
+      "district": "San Antonio",
+      "direction": "De Belén hacia Santa Ana",
+      "position": {
+        "lat": 9.9758088,
+        "lng": -84.1999483
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/AL14-A.webp",
+      "imageAlt": "Cara AL14-A · El Rodeo"
+    },
+    {
+      "id": "ACT-39",
+      "code": "AL14-C",
+      "structureId": "AL14",
+      "face": "C",
+      "title": "El Rodeo",
+      "province": "Alajuela",
+      "address": "Costado sur del Restaurante El Rodeo",
+      "district": "San Antonio",
+      "direction": "De Santa Ana hacia Belén",
+      "position": {
+        "lat": 9.9758088,
+        "lng": -84.1999483
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/AL14-C.webp",
+      "imageAlt": "Cara AL14-C · El Rodeo"
+    },
+    {
+      "id": "ACT-40",
+      "code": "AL15-A",
+      "structureId": "AL15",
+      "face": "A",
+      "title": "Linea del tren - Coyol",
+      "province": "Alajuela",
+      "address": "600 metros al este de Dos Pinos",
+      "district": "San Jose",
+      "direction": "Del Aeropuerto Internacional Juan Santamaría hacia Puntarenas",
+      "position": {
+        "lat": 9.9941361,
+        "lng": -84.2527235
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/AL15-A.webp",
+      "imageAlt": "Cara AL15-A · Linea del tren - Coyol"
+    },
+    {
+      "id": "ACT-41",
+      "code": "AL15-C",
+      "structureId": "AL15",
+      "face": "C",
+      "title": "Linea del tren - Coyol",
+      "province": "Alajuela",
+      "address": "600 metros al este de Dos Pinos",
+      "district": "San Jose",
+      "direction": "De Puntarenas hacia el Aeropuerto Internacional Juan Santamaría",
+      "position": {
+        "lat": 9.9941361,
+        "lng": -84.2527235
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/AL15-C.webp",
+      "imageAlt": "Cara AL15-C · Linea del tren - Coyol"
+    },
+    {
+      "id": "ACT-42",
+      "code": "AL16-A",
+      "structureId": "AL16",
+      "face": "A",
+      "title": "Proyecto gol",
+      "province": "Alajuela",
+      "address": "Instalaciones de Proyecto Goal",
+      "district": "San Rafael",
+      "direction": "De Belén hacia Santa Ana",
+      "position": {
+        "lat": 9.9746465,
+        "lng": -84.2000234
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/AL16-A.webp",
+      "imageAlt": "Cara AL16-A · Proyecto gol"
+    },
+    {
+      "id": "ACT-43",
+      "code": "AL16-C",
+      "structureId": "AL16",
+      "face": "C",
+      "title": "Proyecto gol",
+      "province": "Alajuela",
+      "address": "Instalaciones de Proyecto Goal",
+      "district": "San Rafael",
+      "direction": "De Santa Ana hacia Belén",
+      "position": {
+        "lat": 9.9746465,
+        "lng": -84.2000234
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/AL16-C.webp",
+      "imageAlt": "Cara AL16-C · Proyecto gol"
+    },
+    {
+      "id": "ACT-44",
+      "code": "AL17-A",
+      "structureId": "AL17",
+      "face": "A",
+      "title": "Little Caesars AL17-A - 720 x 900",
+      "province": "Alajuela",
+      "address": "500 metros al norte de Mall Internacional",
+      "district": "Alajuela",
+      "direction": "Del Aeropuerto Internacional Juan Santamaría hacia Alajuela",
+      "position": {
+        "lat": 10.0084448,
+        "lng": -84.2130884
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/AL17-A.webp",
+      "imageAlt": "Cara AL17-A · Little Caesars AL17-A - 720 x 900"
+    },
+    {
+      "id": "ACT-45",
+      "code": "AL17-C",
+      "structureId": "AL17",
+      "face": "C",
+      "title": "CIRCUITO LAB. RAVEN DEKOFEN AL17-C - 720 x 900",
+      "province": "Alajuela",
+      "address": "500 metros al norte de Mall Internacional",
+      "district": "Alajuela",
+      "direction": "De Alajuela hacia el Aeropuerto Internacional Juan Santamaría",
+      "position": {
+        "lat": 10.0084448,
+        "lng": -84.2130884
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/AL17-C.webp",
+      "imageAlt": "Cara AL17-C · CIRCUITO LAB. RAVEN DEKOFEN AL17-C - 720 x 900"
+    },
+    {
+      "id": "ACT-46",
+      "code": "AL18-A",
+      "structureId": "AL18",
+      "face": "A",
+      "title": "Épica producciones AL18-A - 720 x 900",
+      "province": "Alajuela",
+      "address": "500 metros norte de Mall Internacional",
+      "district": "Alajuela",
+      "direction": "Del Aeropuerto Internacional Juan Santamaría hacia Alajuela",
+      "position": {
+        "lat": 10.0090682,
+        "lng": -84.2133003
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/AL18-A.webp",
+      "imageAlt": "Cara AL18-A · Épica producciones AL18-A - 720 x 900"
+    },
+    {
+      "id": "ACT-47",
+      "code": "AL18-C",
+      "structureId": "AL18",
+      "face": "C",
+      "title": "DENNYS AL18-C - 720 x 900",
+      "province": "Alajuela",
+      "address": "500 metros norte de Mall Internacional",
+      "district": "Alajuela",
+      "direction": "De Alajuela hacia Aeropuerto Internacional Juan Santamaría",
+      "position": {
+        "lat": 10.0090682,
+        "lng": -84.2133003
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/AL18-C.webp",
+      "imageAlt": "Cara AL18-C · DENNYS AL18-C - 720 x 900"
+    },
+    {
+      "id": "ACT-48",
+      "code": "AL19-A",
+      "structureId": "AL19",
+      "face": "A",
+      "title": "LOS SUEÑOS RESORT AND MARINA   AL19-A - 1260 x 500",
+      "province": "Alajuela",
+      "address": "Costado norte del Centro de Alto Rendimiento (CAR)",
+      "district": "Turrúcares",
+      "direction": "De San José hacia Caldera",
+      "position": {
+        "lat": 9.9647903,
+        "lng": -84.2806596
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/AL19-A.webp",
+      "imageAlt": "Cara AL19-A · LOS SUEÑOS RESORT AND MARINA   AL19-A - 1260 x 500"
+    },
+    {
+      "id": "ACT-49",
+      "code": "AL19-C",
+      "structureId": "AL19",
+      "face": "C",
+      "title": "LOS SUEÑOS RESORT AND MARINA   AL19-C - 1260 x 500",
+      "province": "Alajuela",
+      "address": "Costado norte del Centro de Alto Rendimiento (CAR)",
+      "district": "Turrúcares",
+      "direction": "De Caldera hacia San José",
+      "position": {
+        "lat": 9.9647903,
+        "lng": -84.2806596
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/AL19-C.webp",
+      "imageAlt": "Cara AL19-C · LOS SUEÑOS RESORT AND MARINA   AL19-C - 1260 x 500"
+    },
+    {
+      "id": "ACT-304",
+      "code": "AL22-A",
+      "structureId": "AL22",
+      "face": "A",
+      "title": "Doña Sady/ Aeropuerto",
+      "province": "Alajuela",
+      "address": "Frente al Aeropuerto calle sentido San José Alajuela",
+      "district": "Río Segundo",
+      "direction": "San José- Alajuela",
+      "position": {
+        "lat": 10.000431165353604,
+        "lng": -84.20279609325259
+      },
+      "widthM": 27.9,
+      "heightM": 7.1,
+      "image": "/images/locations/AL22-A.webp",
+      "imageAlt": "Cara AL22-A · Doña Sady/ Aeropuerto"
+    },
+    {
+      "id": "ACT-51",
+      "code": "CT1-A",
+      "structureId": "CT1",
+      "face": "A",
+      "title": "BCR ANUAL 2027 CT1-A - 1440 x 500",
+      "province": "Cartago",
+      "address": "San Diego de Tres Ríos – 500 metros al oeste de Terramall",
+      "district": "San Diego",
+      "direction": "De San José hacia Cartago",
+      "position": {
+        "lat": 9.9001826,
+        "lng": -83.9984125
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/CT1-A.webp",
+      "imageAlt": "Cara CT1-A · BCR ANUAL 2027 CT1-A - 1440 x 500"
+    },
+    {
+      "id": "ACT-52",
+      "code": "CT1-C",
+      "structureId": "CT1",
+      "face": "C",
+      "title": "LAB RAVEN TIOFLEX LA FARMA CT1-C - 1440 x 500",
+      "province": "Cartago",
+      "address": "San Diego de Tres Ríos – 500 metros al oeste de Terramall",
+      "district": "San Diego",
+      "direction": "De Cartago hacia San José",
+      "position": {
+        "lat": 9.9001826,
+        "lng": -83.9984125
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/CT1-C.webp",
+      "imageAlt": "Cara CT1-C · LAB RAVEN TIOFLEX LA FARMA CT1-C - 1440 x 500"
+    },
+    {
+      "id": "ACT-53",
+      "code": "CT2-A",
+      "structureId": "CT2",
+      "face": "A",
+      "title": "Doña Maritza",
+      "province": "Cartago",
+      "address": "San Diego de Tres Ríos – 800 metros al oeste de Terramall",
+      "district": "San Diego",
+      "direction": "De Cartago hacia San José",
+      "position": {
+        "lat": 9.9001483,
+        "lng": -84.0025055
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/CT2-A.webp",
+      "imageAlt": "Cara CT2-A · Doña Maritza"
+    },
+    {
+      "id": "ACT-54",
+      "code": "CT2-C",
+      "structureId": "CT2",
+      "face": "C",
+      "title": "Doña Maritza",
+      "province": "Cartago",
+      "address": "San Diego de Tres Ríos – 800 metros al oeste de Terramall",
+      "district": "San Diego",
+      "direction": "De San José hacia Cartago",
+      "position": {
+        "lat": 9.9001483,
+        "lng": -84.0025055
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/CT2-C.webp",
+      "imageAlt": "Cara CT2-C · Doña Maritza"
+    },
+    {
+      "id": "ACT-55",
+      "code": "CT3-A",
+      "structureId": "CT3",
+      "face": "A",
+      "title": "La Lima - Cartago",
+      "province": "Cartago",
+      "address": "Costado sur de Laboratorios Stein",
+      "district": "San Nicolas",
+      "direction": "De San José hacia Cartago",
+      "position": {
+        "lat": 9.8816625,
+        "lng": -83.9407933
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/CT3-A.webp",
+      "imageAlt": "Cara CT3-A · La Lima - Cartago"
+    },
+    {
+      "id": "ACT-56",
+      "code": "CT3-C",
+      "structureId": "CT3",
+      "face": "C",
+      "title": "La Lima - Cartago",
+      "province": "Cartago",
+      "address": "Costado sur de Laboratorios Stein",
+      "district": "San Nicolas",
+      "direction": "De Cartago hacia San José",
+      "position": {
+        "lat": 9.8816625,
+        "lng": -83.9407933
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/CT3-C.webp",
+      "imageAlt": "Cara CT3-C · La Lima - Cartago"
+    },
+    {
+      "id": "ACT-57",
+      "code": "CT4-A",
+      "structureId": "CT4",
+      "face": "A",
+      "title": "CT4-A - 1260 x 500",
+      "province": "Cartago",
+      "address": "Ruta Nacional 1",
+      "district": "San Nicolas",
+      "direction": "De Cartago hacia San José",
+      "position": {
+        "lat": 9.867763,
+        "lng": -83.9422095
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/CT4-A.webp",
+      "imageAlt": "Cara CT4-A · CT4-A - 1260 x 500"
+    },
+    {
+      "id": "ACT-58",
+      "code": "CT4-C",
+      "structureId": "CT4",
+      "face": "C",
+      "title": "CHILLIS GUACAMOLE CT4-C - 1260 x 500",
+      "province": "Cartago",
+      "address": "Ruta Nacional 1",
+      "district": "San Nicolas",
+      "direction": "De San José hacia Cartago",
+      "position": {
+        "lat": 9.867763,
+        "lng": -83.9422095
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/CT4-C.webp",
+      "imageAlt": "Cara CT4-C · CHILLIS GUACAMOLE CT4-C - 1260 x 500"
+    },
+    {
+      "id": "ACT-254",
+      "code": "CT5-A",
+      "structureId": "CT5",
+      "face": "A",
+      "title": "Landmark Terramal",
+      "province": "Cartago",
+      "address": "Diagonal al Centro Comercial Terramall",
+      "district": "La Unión",
+      "direction": "De San José hacia Cartago",
+      "position": {
+        "lat": 9.900564145075911,
+        "lng": -83.99639066773683
+      },
+      "widthM": 34.3,
+      "heightM": 8.7,
+      "image": "/images/locations/CT5-A.webp",
+      "imageAlt": "Cara CT5-A · Landmark Terramal"
+    },
+    {
+      "id": "ACT-314",
+      "code": "CT5-C",
+      "structureId": "CT5",
+      "face": "C",
+      "title": "Especial Landmark Terramal",
+      "province": "Cartago",
+      "address": "Autopista Florencio del Castillo, frente a Terramall",
+      "district": "La Unión",
+      "direction": "De Cartago hacia San José",
+      "position": {
+        "lat": 9.900564145075911,
+        "lng": -83.99639066773683
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/CT5-C.webp",
+      "imageAlt": "Cara CT5-C · Especial Landmark Terramal"
+    },
+    {
+      "id": "ACT-317",
+      "code": "CT6-A",
+      "structureId": "CT6",
+      "face": "A",
+      "title": "Pricesmart",
+      "province": "Cartago",
+      "address": "200 metros al este del peaje, contiguo a PriceSmart",
+      "district": "Tres Rios",
+      "direction": "De San José hacia Cartago",
+      "position": {
+        "lat": 9.9019632,
+        "lng": -83.9920502
+      },
+      "widthM": 33.1,
+      "heightM": 8.5,
+      "image": "/images/locations/CT6-A.webp",
+      "imageAlt": "Cara CT6-A · Pricesmart"
+    },
+    {
+      "id": "ACT-59",
+      "code": "GC6-A",
+      "structureId": "GC6",
+      "face": "A",
+      "title": "Liberia",
+      "province": "Guanacaste",
+      "address": "Del Centro Comercial Do It Center, 500 metros al este",
+      "district": "Palmira",
+      "direction": "De Liberia hacia Santa Cruz",
+      "position": {
+        "lat": 10.564615857564979,
+        "lng": -85.59018206234717
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/GC6-A.webp",
+      "imageAlt": "Cara GC6-A · Liberia"
+    },
+    {
+      "id": "ACT-60",
+      "code": "GC6-C",
+      "structureId": "GC6",
+      "face": "C",
+      "title": "Liberia",
+      "province": "Guanacaste",
+      "address": "Del Centro Comercial Do It Center, 500 metros al este",
+      "district": "Palmira",
+      "direction": "De Santa Cruz hacia Liberia",
+      "position": {
+        "lat": 10.564615857564979,
+        "lng": -85.59018206234717
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/GC6-C.webp",
+      "imageAlt": "Cara GC6-C · Liberia"
+    },
+    {
+      "id": "ACT-246",
+      "code": "GC7-A",
+      "structureId": "GC7",
+      "face": "A",
+      "title": "\"EL MAYOR RIESGO EN LOS NEGOCIOS ES NO TOMAR NINGUNO\" GC7-A - 1080 x 360",
+      "province": "Guanacaste",
+      "address": "Del cruce del Puente de la Amistad, 500 metros al este, contiguo a la estación de servicio Total",
+      "district": "Las Juntas",
+      "direction": "De San José hacia Liberia, Nicoya y\nSanta Cruz",
+      "position": {
+        "lat": 10.2582896,
+        "lng": -85.0155329
+      },
+      "widthM": 10.8,
+      "heightM": 3.6,
+      "image": null,
+      "imageAlt": "Cara GC7-A · \"EL MAYOR RIESGO EN LOS NEGOCIOS ES NO TOMAR NINGUNO\" GC7-A - 1080 x 360"
+    },
+    {
+      "id": "ACT-61",
+      "code": "GC7-B",
+      "structureId": "GC7",
+      "face": "B",
+      "title": "\"EL MAYOR RIESGO EN LOS NEGOCIOS ES NO TOMAR NINGUNO\" GC7-B - 1080 x 360",
+      "province": "Guanacaste",
+      "address": "Del cruce del Puente de la Amistad, 500 metros al este, contiguo a la estación de servicio Total",
+      "district": "Las Juntas",
+      "direction": "De San José hacia Liberia, Nicoya y\nSanta Cruz",
+      "position": {
+        "lat": 10.2582896,
+        "lng": -85.0155329
+      },
+      "widthM": 10.8,
+      "heightM": 3.6,
+      "image": null,
+      "imageAlt": "Cara GC7-B · \"EL MAYOR RIESGO EN LOS NEGOCIOS ES NO TOMAR NINGUNO\" GC7-B - 1080 x 360"
+    },
+    {
+      "id": "ACT-62",
+      "code": "HD1-A",
+      "structureId": "HD1",
+      "face": "A",
+      "title": "BCR Traslado de Hipoteca (Papá y Niña) HD1-A - 1440 x 500 ⚠️⚠️⚠️",
+      "province": "Heredia",
+      "address": "De PriceSmart 400 metros  Sur-oeste",
+      "district": "San Francisco",
+      "direction": "De San José hacia Heredia",
+      "position": {
+        "lat": 9.9776262,
+        "lng": -84.1113389
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/HD1-A.webp",
+      "imageAlt": "Cara HD1-A · BCR Traslado de Hipoteca (Papá y Niña) HD1-A - 1440 x 500 ⚠️⚠️⚠️"
+    },
+    {
+      "id": "ACT-63",
+      "code": "HD1-C",
+      "structureId": "HD1",
+      "face": "C",
+      "title": "BANCO POPULAR HD1-C - 1440 x 500",
+      "province": "Heredia",
+      "address": "De PriceSmart 400 metros  Sur-oeste",
+      "district": "San Francisco",
+      "direction": "De Heredia hacia San José",
+      "position": {
+        "lat": 9.9776262,
+        "lng": -84.1113389
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/HD1-C.webp",
+      "imageAlt": "Cara HD1-C · BANCO POPULAR HD1-C - 1440 x 500"
+    },
+    {
+      "id": "ACT-64",
+      "code": "HD2-A",
+      "structureId": "HD2",
+      "face": "A",
+      "title": "Hacienda Rio Monte",
+      "province": "Heredia",
+      "address": "De Jardines del Recuerdo, 200 metros al este",
+      "district": "Ulloa",
+      "direction": "De Heredia hacia San José",
+      "position": {
+        "lat": 9.9620534,
+        "lng": -84.1105127
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/HD2-A.webp",
+      "imageAlt": "Cara HD2-A · Hacienda Rio Monte"
+    },
+    {
+      "id": "ACT-65",
+      "code": "HD2-C",
+      "structureId": "HD2",
+      "face": "C",
+      "title": "Hacienda Rio Monte",
+      "province": "Heredia",
+      "address": "De Jardines del Recuerdo, 200 metros al este",
+      "district": "Ulloa",
+      "direction": "De San José hacia Heredia",
+      "position": {
+        "lat": 9.9620534,
+        "lng": -84.1105127
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/HD2-C.webp",
+      "imageAlt": "Cara HD2-C · Hacienda Rio Monte"
+    },
+    {
+      "id": "ACT-288",
+      "code": "HD3-A",
+      "structureId": "HD3",
+      "face": "A",
+      "title": "El shampoo",
+      "province": "Heredia",
+      "address": "Costado este de Bridgestone de Costa Rica",
+      "district": "La Rivera",
+      "direction": "De San José hacia Alajuela",
+      "position": {
+        "lat": 9.991578241785367,
+        "lng": -84.16617353479754
+      },
+      "widthM": 14.4,
+      "heightM": 6,
+      "image": "/images/locations/HD3-A.webp",
+      "imageAlt": "Cara HD3-A · El shampoo"
+    },
+    {
+      "id": "ACT-289",
+      "code": "HD3-C",
+      "structureId": "HD3",
+      "face": "C",
+      "title": "El shampoo",
+      "province": "Heredia",
+      "address": "Costado este de Bridgestone de Costa Rica",
+      "district": "La Rivera",
+      "direction": "De Alajuela hacia San José",
+      "position": {
+        "lat": 9.991578241785367,
+        "lng": -84.16617353479754
+      },
+      "widthM": 14.4,
+      "heightM": 6,
+      "image": "/images/locations/HD3-C.webp",
+      "imageAlt": "Cara HD3-C · El shampoo"
+    },
+    {
+      "id": "ACT-66",
+      "code": "HD4-A",
+      "structureId": "HD4",
+      "face": "A",
+      "title": "Heredia 2000",
+      "province": "Heredia",
+      "address": "De PriceSmart, 600 metros al suroeste",
+      "district": "No Disponible",
+      "direction": "De Heredia hacia San José",
+      "position": {
+        "lat": 9.9770504,
+        "lng": -84.1114032
+      },
+      "widthM": 14.4,
+      "heightM": 6,
+      "image": "/images/locations/HD4-A.webp",
+      "imageAlt": "Cara HD4-A · Heredia 2000"
+    },
+    {
+      "id": "ACT-67",
+      "code": "HD4-C",
+      "structureId": "HD4",
+      "face": "C",
+      "title": "Heredia 2000",
+      "province": "Heredia",
+      "address": "De PriceSmart, 600 metros al suroeste",
+      "district": "No Disponible",
+      "direction": "De San José hacia Heredia",
+      "position": {
+        "lat": 9.9770504,
+        "lng": -84.1114032
+      },
+      "widthM": 14.4,
+      "heightM": 6,
+      "image": "/images/locations/HD4-C.webp",
+      "imageAlt": "Cara HD4-C · Heredia 2000"
+    },
+    {
+      "id": "ACT-70",
+      "code": "HD6-A",
+      "structureId": "HD6",
+      "face": "A",
+      "title": "Lagunilla",
+      "province": "Heredia",
+      "address": "De Jardines del Recuerdo, 600 metros al oeste",
+      "district": "Ulloa",
+      "direction": "De Dekra hacia Jardines del Recuerdo",
+      "position": {
+        "lat": 9.967181,
+        "lng": -84.1187954
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/HD6-A.webp",
+      "imageAlt": "Cara HD6-A · Lagunilla"
+    },
+    {
+      "id": "ACT-71",
+      "code": "HD6-C",
+      "structureId": "HD6",
+      "face": "C",
+      "title": "Lagunilla- Virilla",
+      "province": "Heredia",
+      "address": "De Jardines del Recuerdo, 600 metros al oeste",
+      "district": "Ulloa",
+      "direction": "De Jardines del Recuerdo hacia Dekra",
+      "position": {
+        "lat": 9.967181,
+        "lng": -84.1187954
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/HD6-C.webp",
+      "imageAlt": "Cara HD6-C · Lagunilla- Virilla"
+    },
+    {
+      "id": "ACT-72",
+      "code": "HD7-A",
+      "structureId": "HD7",
+      "face": "A",
+      "title": "BANCO POPULAR Avengers Doomsday   HD7-A - 850 x 1100",
+      "province": "Heredia",
+      "address": "Contiguo al Centro Comercial Oxígeno",
+      "district": "San Francisco",
+      "direction": "De La Aurora hacia Heredia Centro",
+      "position": {
+        "lat": 9.9934876,
+        "lng": -84.1300982
+      },
+      "widthM": 8.5,
+      "heightM": 11,
+      "image": "/images/locations/HD7-A.webp",
+      "imageAlt": "Cara HD7-A · BANCO POPULAR Avengers Doomsday   HD7-A - 850 x 1100"
+    },
+    {
+      "id": "ACT-73",
+      "code": "HD7-C",
+      "structureId": "HD7",
+      "face": "C",
+      "title": "ICON  HD7-C - 850 x 1100",
+      "province": "Heredia",
+      "address": "Contiguo al Centro Comercial Oxígeno",
+      "district": "San Francisco",
+      "direction": "De Heredia Centro hacia La Aurora",
+      "position": {
+        "lat": 9.9934876,
+        "lng": -84.1300982
+      },
+      "widthM": 8.5,
+      "heightM": 11,
+      "image": "/images/locations/HD7-C.webp",
+      "imageAlt": "Cara HD7-C · ICON  HD7-C - 850 x 1100"
+    },
+    {
+      "id": "ACT-74",
+      "code": "HD8-A",
+      "structureId": "HD8",
+      "face": "A",
+      "title": "HD8-A - 1440 x 600",
+      "province": "Heredia",
+      "address": "Del Cariari Corporate Center, 300 metros sobre carretera hacia Alajuela",
+      "district": "Llorente",
+      "direction": "De Alajuela hacia San José",
+      "position": {
+        "lat": 9.9838869,
+        "lng": -84.1632611
+      },
+      "widthM": 14.4,
+      "heightM": 6,
+      "image": "/images/locations/HD8-A.webp",
+      "imageAlt": "Cara HD8-A · HD8-A - 1440 x 600"
+    },
+    {
+      "id": "ACT-75",
+      "code": "HD8-C",
+      "structureId": "HD8",
+      "face": "C",
+      "title": "ICT Turísticos HD8-C - 1440 x 600",
+      "province": "Heredia",
+      "address": "Del Cariari Corporate Center, 300 metros sobre carretera hacia Alajuela",
+      "district": "Llorente",
+      "direction": "De San José hacia Alajuela",
+      "position": {
+        "lat": 9.9838869,
+        "lng": -84.1632611
+      },
+      "widthM": 14.4,
+      "heightM": 6,
+      "image": "/images/locations/HD8-C.webp",
+      "imageAlt": "Cara HD8-C · ICT Turísticos HD8-C - 1440 x 600"
+    },
+    {
+      "id": "ACT-76",
+      "code": "HD9-A",
+      "structureId": "HD9",
+      "face": "A",
+      "title": "Los Arcos",
+      "province": "Heredia",
+      "address": "Del Cariari Corporate Center, 1 kilómetro al este, ubicada en Plaza Los Arcos",
+      "district": "Ulloa",
+      "direction": "De Alajuela hacia San José",
+      "position": {
+        "lat": 9.9738857,
+        "lng": -84.1501236
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/HD9-A.webp",
+      "imageAlt": "Cara HD9-A · Los Arcos"
+    },
+    {
+      "id": "ACT-77",
+      "code": "HD9-C",
+      "structureId": "HD9",
+      "face": "C",
+      "title": "Los Arcos",
+      "province": "Heredia",
+      "address": "Del Cariari Corporate Center, 1 kilómetro al este, ubicada en Plaza Los Arcos",
+      "district": "Ulloa",
+      "direction": "De San José hacia Alajuela",
+      "position": {
+        "lat": 9.9738857,
+        "lng": -84.1501236
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/HD9-C.webp",
+      "imageAlt": "Cara HD9-C · Los Arcos"
+    },
+    {
+      "id": "ACT-78",
+      "code": "HD10-A",
+      "structureId": "HD10",
+      "face": "A",
+      "title": "Cervecería",
+      "province": "Heredia",
+      "address": "Cruce de la Cervecería de Costa Rica",
+      "district": "Llorente",
+      "direction": "De Alajuela hacia Heredia",
+      "position": {
+        "lat": 10.0038884,
+        "lng": -84.1711736
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/HD10-A.webp",
+      "imageAlt": "Cara HD10-A · Cervecería"
+    },
+    {
+      "id": "ACT-79",
+      "code": "HD10-C",
+      "structureId": "HD10",
+      "face": "C",
+      "title": "Cervecería",
+      "province": "Heredia",
+      "address": "Cruce de la Cervecería de Costa Rica",
+      "district": "Llorente",
+      "direction": "De Heredia hacia Alajuela",
+      "position": {
+        "lat": 10.0038884,
+        "lng": -84.1711736
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/HD10-C.webp",
+      "imageAlt": "Cara HD10-C · Cervecería"
+    },
+    {
+      "id": "ACT-80",
+      "code": "HD11-A",
+      "structureId": "HD11",
+      "face": "A",
+      "title": "El Virilla",
+      "province": "Heredia",
+      "address": "Diagonal al Beneficio Volcafé, Puente Río Virilla",
+      "district": "Ulloa",
+      "direction": "De Heredia hacia la Uruca",
+      "position": {
+        "lat": 9.9615145,
+        "lng": -84.1101292
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/HD11-A.webp",
+      "imageAlt": "Cara HD11-A · El Virilla"
+    },
+    {
+      "id": "ACT-81",
+      "code": "HD11-C",
+      "structureId": "HD11",
+      "face": "C",
+      "title": "El Virilla",
+      "province": "Heredia",
+      "address": "Diagonal al Beneficio Volcafé, Puente Río Virilla",
+      "district": "Ulloa",
+      "direction": "De La Uruca hacia Heredia",
+      "position": {
+        "lat": 9.9615145,
+        "lng": -84.1101292
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/HD11-C.webp",
+      "imageAlt": "Cara HD11-C · El Virilla"
+    },
+    {
+      "id": "ACT-82",
+      "code": "HD12-A",
+      "structureId": "HD12",
+      "face": "A",
+      "title": "Star Cars",
+      "province": "Heredia",
+      "address": "Del cementerio, 100 metros al este, costado norte del plantel del MOPT",
+      "district": "Santa Rosa",
+      "direction": "De Tibás hacia Santo Domingo",
+      "position": {
+        "lat": 9.970013,
+        "lng": -84.0862548
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/HD12-A.webp",
+      "imageAlt": "Cara HD12-A · Star Cars"
+    },
+    {
+      "id": "ACT-83",
+      "code": "HD12-C",
+      "structureId": "HD12",
+      "face": "C",
+      "title": "Star Cars",
+      "province": "Heredia",
+      "address": "Del cementerio, 100 metros al este, costado norte del plantel del MOPT",
+      "district": "Santa Rosa",
+      "direction": "De Santo Domingo hacia Tibás",
+      "position": {
+        "lat": 9.970013,
+        "lng": -84.0862548
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/HD12-C.webp",
+      "imageAlt": "Cara HD12-C · Star Cars"
+    },
+    {
+      "id": "ACT-84",
+      "code": "HD13-A",
+      "structureId": "HD13",
+      "face": "A",
+      "title": "HD13-A - 720 x 900",
+      "province": "Heredia",
+      "address": "Diagonal al Centro Comercial Santa Verde",
+      "district": "Ulloa",
+      "direction": "De Heredia hacia Cariari Corporate Center y Autopista General Cañas",
+      "position": {
+        "lat": 9.9888055,
+        "lng": -84.1488522
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/HD13-A.webp",
+      "imageAlt": "Cara HD13-A · HD13-A - 720 x 900"
+    },
+    {
+      "id": "ACT-85",
+      "code": "HD13-C",
+      "structureId": "HD13",
+      "face": "C",
+      "title": "UNIVERSIDAD LATINA  HD13-C - 720 x 900",
+      "province": "Heredia",
+      "address": "Diagonal al Centro Comercial Santa Verde",
+      "district": "Ulloa",
+      "direction": "Del CENADA o Barreal de Heredia hacia Cariari Corporate Center y Heredia",
+      "position": {
+        "lat": 9.9888055,
+        "lng": -84.1488522
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/HD13-C.webp",
+      "imageAlt": "Cara HD13-C · UNIVERSIDAD LATINA  HD13-C - 720 x 900"
+    },
+    {
+      "id": "ACT-86",
+      "code": "HD14-A",
+      "structureId": "HD14",
+      "face": "A",
+      "title": "Star Cars",
+      "province": "Heredia",
+      "address": "Del cementerio, 300 metros al este",
+      "district": "Santa Rosa",
+      "direction": "De Santo Domingo hacia Tibás",
+      "position": {
+        "lat": 9.9694318,
+        "lng": -84.0857667
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/HD14-A.webp",
+      "imageAlt": "Cara HD14-A · Star Cars"
+    },
+    {
+      "id": "ACT-87",
+      "code": "HD14-C",
+      "structureId": "HD14",
+      "face": "C",
+      "title": "Star Cars",
+      "province": "Heredia",
+      "address": "Del cementerio, 300 metros al este",
+      "district": "Santa Rosa",
+      "direction": "De Tibás hacia Santo Domingo",
+      "position": {
+        "lat": 9.9694318,
+        "lng": -84.0857667
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/HD14-C.webp",
+      "imageAlt": "Cara HD14-C · Star Cars"
+    },
+    {
+      "id": "ACT-88",
+      "code": "HD15-A",
+      "structureId": "HD15",
+      "face": "A",
+      "title": "La seguidilla",
+      "province": "Heredia",
+      "address": "Del Cariari Corporate Center, 300 metros al este",
+      "district": "Ulloa",
+      "direction": "De San José hacia Alajuela",
+      "position": {
+        "lat": 9.977959,
+        "lng": -84.1565502
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/HD15-A.webp",
+      "imageAlt": "Cara HD15-A · La seguidilla"
+    },
+    {
+      "id": "ACT-89",
+      "code": "HD15-C",
+      "structureId": "HD15",
+      "face": "C",
+      "title": "La seguidilla",
+      "province": "Heredia",
+      "address": "Del Cariari Corporate Center, 300 metros al este",
+      "district": "Ulloa",
+      "direction": "De Alajuela hacia San José",
+      "position": {
+        "lat": 9.977959,
+        "lng": -84.1565502
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/HD15-C.webp",
+      "imageAlt": "Cara HD15-C · La seguidilla"
+    },
+    {
+      "id": "ACT-90",
+      "code": "HD16-A",
+      "structureId": "HD16",
+      "face": "A",
+      "title": "La seguidilla",
+      "province": "Heredia",
+      "address": "Del Cariari Corporate Center, 400 metros al este",
+      "district": "Ulloa",
+      "direction": "De San José hacia Alajuela",
+      "position": {
+        "lat": 9.9776844,
+        "lng": -84.1558957
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/HD16-A.webp",
+      "imageAlt": "Cara HD16-A · La seguidilla"
+    },
+    {
+      "id": "ACT-91",
+      "code": "HD16-C",
+      "structureId": "HD16",
+      "face": "C",
+      "title": "La seguidilla",
+      "province": "Heredia",
+      "address": "Del Cariari Corporate Center, 400 metros al este",
+      "district": "Ulloa",
+      "direction": "De Alajuela hacia San José",
+      "position": {
+        "lat": 9.9776844,
+        "lng": -84.1558957
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/HD16-C.webp",
+      "imageAlt": "Cara HD16-C · La seguidilla"
+    },
+    {
+      "id": "ACT-92",
+      "code": "HD17-A",
+      "structureId": "HD17",
+      "face": "A",
+      "title": "La seguidilla",
+      "province": "Heredia",
+      "address": "Del Cariari Corporate Center, 500 metros al este",
+      "district": "Ulloa",
+      "direction": "De San José hacia Alajuela",
+      "position": {
+        "lat": 9.977452,
+        "lng": -84.1553486
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/HD17-A.webp",
+      "imageAlt": "Cara HD17-A · La seguidilla"
+    },
+    {
+      "id": "ACT-93",
+      "code": "HD17-C",
+      "structureId": "HD17",
+      "face": "C",
+      "title": "La seguidilla",
+      "province": "Heredia",
+      "address": "Del Cariari Corporate Center, 500 metros al este",
+      "district": "Ulloa",
+      "direction": "De Alajuela hacia San José",
+      "position": {
+        "lat": 9.977452,
+        "lng": -84.1553486
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/HD17-C.webp",
+      "imageAlt": "Cara HD17-C · La seguidilla"
+    },
+    {
+      "id": "ACT-94",
+      "code": "HD18-A",
+      "structureId": "HD18",
+      "face": "A",
+      "title": "La seguidilla",
+      "province": "Heredia",
+      "address": "Del Cariari Corporate Center, 600 metros al este",
+      "district": "Ulloa",
+      "direction": "De San José hacia Alajuela",
+      "position": {
+        "lat": 9.9770927,
+        "lng": -84.1547585
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/HD18-A.webp",
+      "imageAlt": "Cara HD18-A · La seguidilla"
+    },
+    {
+      "id": "ACT-95",
+      "code": "HD18-C",
+      "structureId": "HD18",
+      "face": "C",
+      "title": "La seguidilla",
+      "province": "Heredia",
+      "address": "Del Cariari Corporate Center, 600 metros al este",
+      "district": "Ulloa",
+      "direction": "De Alajuela hacia San José",
+      "position": {
+        "lat": 9.9770927,
+        "lng": -84.1547585
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/HD18-C.webp",
+      "imageAlt": "Cara HD18-C · La seguidilla"
+    },
+    {
+      "id": "ACT-96",
+      "code": "HD19-A",
+      "structureId": "HD19",
+      "face": "A",
+      "title": "La seguidilla",
+      "province": "Heredia",
+      "address": "Del Cariari Corporate Center, 700 metros al este",
+      "district": "Ulloa",
+      "direction": "De San José hacia Alajuela",
+      "position": {
+        "lat": 9.9766806,
+        "lng": -84.1540611
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/HD19-A.webp",
+      "imageAlt": "Cara HD19-A · La seguidilla"
+    },
+    {
+      "id": "ACT-97",
+      "code": "HD19-C",
+      "structureId": "HD19",
+      "face": "C",
+      "title": "La seguidilla",
+      "province": "Heredia",
+      "address": "Del Cariari Corporate Center, 700 metros al este",
+      "district": "Ulloa",
+      "direction": "De Alajuela hacia San José",
+      "position": {
+        "lat": 9.9766806,
+        "lng": -84.1540611
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/HD19-C.webp",
+      "imageAlt": "Cara HD19-C · La seguidilla"
+    },
+    {
+      "id": "ACT-98",
+      "code": "HD20-A",
+      "structureId": "HD20",
+      "face": "A",
+      "title": "FIFCO CAMPAÑA TROPICAL CERO SABORES FRAMBUESA, TE NEGRO Y TE BLANCO  HD20-A - 720 x 900",
+      "province": "Heredia",
+      "address": "200 metros de la Cervecería de Costa Rica",
+      "district": "San Joaquín",
+      "direction": "De Alajuela hacia Heredia",
+      "position": {
+        "lat": 10.0036771,
+        "lng": -84.1694382
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/HD20-A.webp",
+      "imageAlt": "Cara HD20-A · FIFCO CAMPAÑA TROPICAL CERO SABORES FRAMBUESA, TE NEGRO Y TE BLANCO  HD20-A - 720 x 900"
+    },
+    {
+      "id": "ACT-99",
+      "code": "HD20-C",
+      "structureId": "HD20",
+      "face": "C",
+      "title": "FIFCO CAMPAÑA BEBIDA VIDA HD20-C - 720 x 900",
+      "province": "Heredia",
+      "address": "200 metros de la Cervecería de Costa Rica",
+      "district": "Llorente",
+      "direction": "De Heredia hacia Alajuela",
+      "position": {
+        "lat": 10.0036771,
+        "lng": -84.1694382
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/HD20-C.webp",
+      "imageAlt": "Cara HD20-C · FIFCO CAMPAÑA BEBIDA VIDA HD20-C - 720 x 900"
+    },
+    {
+      "id": "ACT-100",
+      "code": "HD21-A",
+      "structureId": "HD21",
+      "face": "A",
+      "title": "Navidad Publiex 2026 HD21-A - 1260 x 500",
+      "province": "Heredia",
+      "address": "Frente a la Zona Franca Metropolitana",
+      "district": "Ulloa",
+      "direction": "De Cariari Corporate Center hacia Heredia, Barreal, Lagunilla y La Uruca",
+      "position": {
+        "lat": 9.9800407,
+        "lng": -84.148981
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/HD21-A.webp",
+      "imageAlt": "Cara HD21-A · Navidad Publiex 2026 HD21-A - 1260 x 500"
+    },
+    {
+      "id": "ACT-101",
+      "code": "HD21-C",
+      "structureId": "HD21",
+      "face": "C",
+      "title": "CIRCUITO  HD21-C - 1260 x 500",
+      "province": "Heredia",
+      "address": "Frente a la Zona Franca Metropolitana",
+      "district": "Ulloa",
+      "direction": "De Heredia, Barreal, Lagunilla y La Uruca a Cariari Corporate Center",
+      "position": {
+        "lat": 9.9800407,
+        "lng": -84.148981
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/HD21-C.webp",
+      "imageAlt": "Cara HD21-C · CIRCUITO  HD21-C - 1260 x 500"
+    },
+    {
+      "id": "ACT-102",
+      "code": "HD22-A",
+      "structureId": "HD22",
+      "face": "A",
+      "title": "Cenada",
+      "province": "Heredia",
+      "address": "Frente al Centro Corporativo Eurocenter",
+      "district": "Ulloa",
+      "direction": "De Cariari Corporate Center hacia Heredia, Barreal, Lagunilla y La Uruca",
+      "position": {
+        "lat": 9.98208,
+        "lng": -84.1539216
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/HD22-A.webp",
+      "imageAlt": "Cara HD22-A · Cenada"
+    },
+    {
+      "id": "ACT-103",
+      "code": "HD22-C",
+      "structureId": "HD22",
+      "face": "C",
+      "title": "Cenada",
+      "province": "Heredia",
+      "address": "Frente al Centro Corporativo Eurocenter",
+      "district": "Ulloa",
+      "direction": "De Heredia, Barreal, Lagunilla y La Uruca a Cariari Corporate Center",
+      "position": {
+        "lat": 9.98208,
+        "lng": -84.1539216
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/HD22-C.webp",
+      "imageAlt": "Cara HD22-C · Cenada"
+    },
+    {
+      "id": "ACT-104",
+      "code": "HD23-A",
+      "structureId": "HD23",
+      "face": "A",
+      "title": "Pirro",
+      "province": "Heredia",
+      "address": "Contiguo al centro de servicio Autopits",
+      "district": "Heredia",
+      "direction": "De Heredia hacia San José",
+      "position": {
+        "lat": 9.9941097,
+        "lng": -84.1134042
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/HD23-A.webp",
+      "imageAlt": "Cara HD23-A · Pirro"
+    },
+    {
+      "id": "ACT-105",
+      "code": "HD24-A",
+      "structureId": "HD24",
+      "face": "A",
+      "title": "CUMMINS HD24-A - 720 x 900",
+      "province": "Heredia",
+      "address": "Contiguo al Bodegón de la Cerámica",
+      "district": "Heredia",
+      "direction": "De Heredia hacia San José",
+      "position": {
+        "lat": 9.994189,
+        "lng": -84.1131681
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/HD24-A.webp",
+      "imageAlt": "Cara HD24-A · CUMMINS HD24-A - 720 x 900"
+    },
+    {
+      "id": "ACT-106",
+      "code": "HD25-A",
+      "structureId": "HD25",
+      "face": "A",
+      "title": "La Iglesia",
+      "province": "Heredia",
+      "address": "Contiguo a McDonald’s",
+      "district": "Ulloa",
+      "direction": "De Heredia hacia La Uruca, Santo Domingo y Lagunilla.",
+      "position": {
+        "lat": 9.9681638,
+        "lng": -84.1137099
+      },
+      "widthM": 8.5,
+      "heightM": 11,
+      "image": "/images/locations/HD25-A.webp",
+      "imageAlt": "Cara HD25-A · La Iglesia"
+    },
+    {
+      "id": "ACT-107",
+      "code": "HD25-C",
+      "structureId": "HD25",
+      "face": "C",
+      "title": "La Iglesia",
+      "province": "Heredia",
+      "address": "Contiguo a McDonald’s",
+      "district": "Ulloa",
+      "direction": "De La Uruca, hacia Heredia, Santo Domingo y Lagunilla.",
+      "position": {
+        "lat": 9.9681638,
+        "lng": -84.1137099
+      },
+      "widthM": 8.5,
+      "heightM": 11,
+      "image": "/images/locations/HD25-C.webp",
+      "imageAlt": "Cara HD25-C · La Iglesia"
+    },
+    {
+      "id": "ACT-108",
+      "code": "HD26-A",
+      "structureId": "HD26",
+      "face": "A",
+      "title": "SUPER BATERIAS  HD26-A - 720 x 900 ⚠️⚠️⚠️",
+      "province": "Heredia",
+      "address": "Del Centro Comercial Oxígeno, 200 metros al oeste",
+      "district": "San Francisco",
+      "direction": "De Alajuela hacia Heredia",
+      "position": {
+        "lat": 9.996524,
+        "lng": -84.1357148
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/HD26-A.webp",
+      "imageAlt": "Cara HD26-A · SUPER BATERIAS  HD26-A - 720 x 900 ⚠️⚠️⚠️"
+    },
+    {
+      "id": "ACT-109",
+      "code": "HD26-C",
+      "structureId": "HD26",
+      "face": "C",
+      "title": "NOVEX HD26-C - 720 x 900",
+      "province": "Heredia",
+      "address": "Del Centro Comercial Oxígeno, 200 metros al oeste",
+      "district": "San Francisco",
+      "direction": "De Heredia hacia Alajuela",
+      "position": {
+        "lat": 9.996524,
+        "lng": -84.1357148
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/HD26-C.webp",
+      "imageAlt": "Cara HD26-C · NOVEX HD26-C - 720 x 900"
+    },
+    {
+      "id": "ACT-110",
+      "code": "HD27-A",
+      "structureId": "HD27",
+      "face": "A",
+      "title": "Skate Park",
+      "province": "Heredia",
+      "address": "En el Skate Park, contiguo a Walmart",
+      "district": "San Francisco",
+      "direction": "De San Joaquín hacia Heredia",
+      "position": {
+        "lat": 9.9959508,
+        "lng": -84.1283923
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/HD27-A.webp",
+      "imageAlt": "Cara HD27-A · Skate Park"
+    },
+    {
+      "id": "ACT-111",
+      "code": "HD27-C",
+      "structureId": "HD27",
+      "face": "C",
+      "title": "Skate Park",
+      "province": "Heredia",
+      "address": "En el Skate Park, contiguo a Walmart",
+      "district": "San Francisco",
+      "direction": "De Heredia hacia San Joaquín",
+      "position": {
+        "lat": 9.9959508,
+        "lng": -84.1283923
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/HD27-C.webp",
+      "imageAlt": "Cara HD27-C · Skate Park"
+    },
+    {
+      "id": "ACT-112",
+      "code": "HD28-A",
+      "structureId": "HD28",
+      "face": "A",
+      "title": "El Virilla",
+      "province": "Heredia",
+      "address": "De Jardines del Recuerdo, 200 metros al este, carretera a San José",
+      "district": "Ulloa",
+      "direction": "De Heredia hacia la Uruca",
+      "position": {
+        "lat": 9.9626203,
+        "lng": -84.1106945
+      },
+      "widthM": 8.5,
+      "heightM": 11,
+      "image": "/images/locations/HD28-A.webp",
+      "imageAlt": "Cara HD28-A · El Virilla"
+    },
+    {
+      "id": "ACT-113",
+      "code": "HD28-C",
+      "structureId": "HD28",
+      "face": "C",
+      "title": "El Virilla, Repuestos Gigante",
+      "province": "Heredia",
+      "address": "De Jardines del Recuerdo, 200 metros al este, carretera a San José",
+      "district": "Ulloa",
+      "direction": "De Uruca hacia Heredia",
+      "position": {
+        "lat": 9.9626203,
+        "lng": -84.1106945
+      },
+      "widthM": 8.5,
+      "heightM": 11,
+      "image": "/images/locations/HD28-C.webp",
+      "imageAlt": "Cara HD28-C · El Virilla, Repuestos Gigante"
+    },
+    {
+      "id": "ACT-114",
+      "code": "HD29-A",
+      "structureId": "HD29",
+      "face": "A",
+      "title": "La Puebla",
+      "province": "Heredia",
+      "address": "En la Plaza de Deportes de La Puebla",
+      "district": "Heredia",
+      "direction": "De Heredia hacia Santo Domingo y Tibás",
+      "position": {
+        "lat": 9.9935427,
+        "lng": -84.1094645
+      },
+      "widthM": 8.5,
+      "heightM": 11,
+      "image": "/images/locations/HD29-A.webp",
+      "imageAlt": "Cara HD29-A · La Puebla"
+    },
+    {
+      "id": "ACT-116",
+      "code": "HD30-A",
+      "structureId": "HD30",
+      "face": "A",
+      "title": "HD30-A - 540 x 720",
+      "province": "Heredia",
+      "address": "Contiguo a Walmart",
+      "district": "San Francisco",
+      "direction": "De Heredia hacia Centro Comercial Oxígeno",
+      "position": {
+        "lat": 9.9953492,
+        "lng": -84.12908039999999
+      },
+      "widthM": 5.4,
+      "heightM": 7.2,
+      "image": "/images/locations/HD30-A.webp",
+      "imageAlt": "Cara HD30-A · HD30-A - 540 x 720"
+    },
+    {
+      "id": "ACT-117",
+      "code": "HD30-C",
+      "structureId": "HD30",
+      "face": "C",
+      "title": "HD30-C - 540 x 720",
+      "province": "Heredia",
+      "address": "Contiguo a Walmart",
+      "district": "San Francisco",
+      "direction": "De Centro Comercial Oxígeno hacia Heredia",
+      "position": {
+        "lat": 9.9953492,
+        "lng": -84.12908039999999
+      },
+      "widthM": 5.4,
+      "heightM": 7.2,
+      "image": "/images/locations/HD30-C.webp",
+      "imageAlt": "Cara HD30-C · HD30-C - 540 x 720"
+    },
+    {
+      "id": "ACT-318",
+      "code": "Macayas - A",
+      "structureId": "MACAYAS",
+      "face": "A",
+      "title": "Macayas",
+      "province": "San José",
+      "address": "400 metros este de la entrada al Condominio Villa Rea",
+      "district": "Pozos",
+      "direction": "Santa Ana - San José",
+      "position": {
+        "lat": 9.943484253537754,
+        "lng": -84.16875877706298
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": null,
+      "imageAlt": "Cara Macayas - A · Macayas"
+    },
+    {
+      "id": "ACT-350",
+      "code": "Macayas - C",
+      "structureId": "MACAYAS",
+      "face": "C",
+      "title": "Macayas",
+      "province": "San José",
+      "address": "400 metros este de la entrada al Condominio Villa Rea",
+      "district": "Pozos",
+      "direction": "Santa Ana - San José",
+      "position": {
+        "lat": 9.943484253537754,
+        "lng": -84.16875877706298
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": null,
+      "imageAlt": "Cara Macayas - C · Macayas"
+    },
+    {
+      "id": "ACT-118",
+      "code": "PT2-A",
+      "structureId": "PT2",
+      "face": "A",
+      "title": "Punta Leona - A la par del hotel LUCIA",
+      "province": "Puntarenas",
+      "address": "400 metros al norte de la entrada principal del Hotel Punta Leona",
+      "district": "Tárcoles",
+      "direction": "De Orotina hacia Jacó",
+      "position": {
+        "lat": 9.7129276,
+        "lng": -84.635582
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/PT2-A.webp",
+      "imageAlt": "Cara PT2-A · Punta Leona - A la par del hotel LUCIA"
+    },
+    {
+      "id": "ACT-119",
+      "code": "PT2-C",
+      "structureId": "PT2",
+      "face": "C",
+      "title": "Punta Leona - A la par del hotel LUCIA",
+      "province": "Puntarenas",
+      "address": "400 metros al norte de la entrada principal del Hotel Punta Leona",
+      "district": "Tárcoles",
+      "direction": "De Jacó hacia Orotina",
+      "position": {
+        "lat": 9.7129276,
+        "lng": -84.635582
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/PT2-C.webp",
+      "imageAlt": "Cara PT2-C · Punta Leona - A la par del hotel LUCIA"
+    },
+    {
+      "id": "ACT-120",
+      "code": "PT4-A",
+      "structureId": "PT4",
+      "face": "A",
+      "title": "El Quebrador El Quebrador / Potrerillos / Hotel de Lucía/Quebrada Ganado",
+      "province": "Puntarenas",
+      "address": "600 metros al norte de la entrada principal a Jacó, Centro Comercial FYM",
+      "district": "Jacó",
+      "direction": "De Orotina hacia Jacó",
+      "position": {
+        "lat": 9.6410096,
+        "lng": -84.6271062
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/PT4-A.webp",
+      "imageAlt": "Cara PT4-A · El Quebrador El Quebrador / Potrerillos / Hotel de Lucía/Quebrada Ganado"
+    },
+    {
+      "id": "ACT-121",
+      "code": "PT4-C",
+      "structureId": "PT4",
+      "face": "C",
+      "title": "El Quebrador / Potrerillos / Hotel de Lucía/ Quebrada ganado/ Urbanización oasis",
+      "province": "Puntarenas",
+      "address": "600 metros al norte de la entrada principal a Jacó, Centro Comercial FYM",
+      "district": "Jacó",
+      "direction": "De Jacó hacia Orotina",
+      "position": {
+        "lat": 9.6410096,
+        "lng": -84.6271062
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/PT4-C.webp",
+      "imageAlt": "Cara PT4-C · El Quebrador / Potrerillos / Hotel de Lucía/ Quebrada ganado/ Urbanización oasis"
+    },
+    {
+      "id": "ACT-122",
+      "code": "PT5-A",
+      "structureId": "PT5",
+      "face": "A",
+      "title": "Potrerillo",
+      "province": "Puntarenas",
+      "address": "200 metros al norte de la entrada principal al Hotel Punta Leona, contiguo a Urbanización Oasis",
+      "district": "Tárcoles",
+      "direction": "De Orotina hacia Jacó",
+      "position": {
+        "lat": 9.7104107,
+        "lng": -84.6363223
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/PT5-A.webp",
+      "imageAlt": "Cara PT5-A · Potrerillo"
+    },
+    {
+      "id": "ACT-123",
+      "code": "PT5-C",
+      "structureId": "PT5",
+      "face": "C",
+      "title": "Potrerillo",
+      "province": "Puntarenas",
+      "address": "200 metros al norte de la entrada principal al Hotel Punta Leona, contiguo a Urbanización Oasis",
+      "district": "Tárcoles",
+      "direction": "De Jacó hacia Orotina",
+      "position": {
+        "lat": 9.7104107,
+        "lng": -84.6363223
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/PT5-C.webp",
+      "imageAlt": "Cara PT5-C · Potrerillo"
+    },
+    {
+      "id": "ACT-124",
+      "code": "PT9-A",
+      "structureId": "PT9",
+      "face": "A",
+      "title": "El Potrerito-Restaurante la OSTRA",
+      "province": "Puntarenas",
+      "address": "300 metros al sur de la entrada principal al Hotel Punta Leona, contiguo a Urbanización Pez Vela",
+      "district": "Tárcoles",
+      "direction": "De Orotina hacia Jacó",
+      "position": {
+        "lat": 9.7057576,
+        "lng": -84.6349168
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/PT9-A.webp",
+      "imageAlt": "Cara PT9-A · El Potrerito-Restaurante la OSTRA"
+    },
+    {
+      "id": "ACT-125",
+      "code": "PT9-C",
+      "structureId": "PT9",
+      "face": "C",
+      "title": "El Potrerito- Restaurante la OSTRA",
+      "province": "Puntarenas",
+      "address": "300 metros al sur de la entrada principal al Hotel Punta Leona, contiguo a Urbanización Pez Vela",
+      "district": "Tárcoles",
+      "direction": "De Jaco Hacia Orotina",
+      "position": {
+        "lat": 9.7057576,
+        "lng": -84.6349168
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/PT9-C.webp",
+      "imageAlt": "Cara PT9-C · El Potrerito- Restaurante la OSTRA"
+    },
+    {
+      "id": "ACT-243",
+      "code": "PZ1-A",
+      "structureId": "PZ1",
+      "face": "A",
+      "title": "TELECABLE TU VIDA FLUYE PZ1-A - 1440 x 500",
+      "province": "San José",
+      "address": "Entrada principal, contiguo a Gasótica",
+      "district": "San Isidro del General",
+      "direction": "De San José hacia Pérez Zeledón",
+      "position": {
+        "lat": 9.3845508,
+        "lng": -83.7069583
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": null,
+      "imageAlt": "Cara PZ1-A · TELECABLE TU VIDA FLUYE PZ1-A - 1440 x 500"
+    },
+    {
+      "id": "ACT-126",
+      "code": "PZ1-B",
+      "structureId": "PZ1",
+      "face": "B",
+      "title": "UNIVERSIDAD LATINA  PZ1-B - 1440 x 450",
+      "province": "San José",
+      "address": "Entrada principal, contiguo a Gasótica",
+      "district": "San Isidro del General",
+      "direction": "De San José hacia Pérez Zeledón",
+      "position": {
+        "lat": 9.3845508,
+        "lng": -83.7069583
+      },
+      "widthM": 14.4,
+      "heightM": 4.5,
+      "image": null,
+      "imageAlt": "Cara PZ1-B · UNIVERSIDAD LATINA  PZ1-B - 1440 x 450"
+    },
+    {
+      "id": "ACT-127",
+      "code": "SJ1-A",
+      "structureId": "SJ1",
+      "face": "A",
+      "title": "Plaza Cupido",
+      "province": "San José",
+      "address": "200 metros al este de la Iglesia Católica de San Francisco",
+      "district": "San Francisco de Dos Ríos",
+      "direction": "De San José hacia San Francisco de Dos Ríos",
+      "position": {
+        "lat": 9.91124035029658,
+        "lng": -84.0597224296387
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/SJ1-A.webp",
+      "imageAlt": "Cara SJ1-A · Plaza Cupido"
+    },
+    {
+      "id": "ACT-128",
+      "code": "SJ1-C",
+      "structureId": "SJ1",
+      "face": "C",
+      "title": "Plaza Cupido",
+      "province": "San José",
+      "address": "200 metros al este de la Iglesia Católica de San Francisco",
+      "district": "San Francisco de Dos Ríos",
+      "direction": "De San Francisco de Dos Ríos hacia San José",
+      "position": {
+        "lat": 9.91124035029658,
+        "lng": -84.0597224296387
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/SJ1-C.webp",
+      "imageAlt": "Cara SJ1-C · Plaza Cupido"
+    },
+    {
+      "id": "ACT-129",
+      "code": "SJ3-A",
+      "structureId": "SJ3",
+      "face": "A",
+      "title": "Hermanos Agustinos Recolectos",
+      "province": "San José",
+      "address": "300 metros al este de Forum 1, contiguo a la intersección hacia la Radial Santa Ana - Belén",
+      "district": "Pozos",
+      "direction": "De Santa Ana hacia San José",
+      "position": {
+        "lat": 9.9434575,
+        "lng": -84.1923845
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/SJ3-A.webp",
+      "imageAlt": "Cara SJ3-A · Hermanos Agustinos Recolectos"
+    },
+    {
+      "id": "ACT-130",
+      "code": "SJ3-C",
+      "structureId": "SJ3",
+      "face": "C",
+      "title": "Hermanos Agustinos Recolectos",
+      "province": "San José",
+      "address": "300 metros al este de Forum 1, contiguo a la intersección hacia la Radial Santa Ana - Belén",
+      "district": "Pozos",
+      "direction": "De San José hacia Santa Ana",
+      "position": {
+        "lat": 9.9434575,
+        "lng": -84.1923845
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/SJ3-C.webp",
+      "imageAlt": "Cara SJ3-C · Hermanos Agustinos Recolectos"
+    },
+    {
+      "id": "ACT-131",
+      "code": "SJ4-A",
+      "structureId": "SJ4",
+      "face": "A",
+      "title": "LAB. RAVEN DEKOFÉN SJ4-A - 1440 x 500",
+      "province": "San José",
+      "address": "Del Centro Comercial Expreso Tibás, 800 metros al norte",
+      "district": "Calle Blancos",
+      "direction": "De Tibás hacia San José",
+      "position": {
+        "lat": 9.9466172,
+        "lng": -84.0741098
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/SJ4-A.webp",
+      "imageAlt": "Cara SJ4-A · LAB. RAVEN DEKOFÉN SJ4-A - 1440 x 500"
+    },
+    {
+      "id": "ACT-242",
+      "code": "SJ4-B",
+      "structureId": "SJ4",
+      "face": "B",
+      "title": "SJ4-B - 1440 x 500",
+      "province": "San José",
+      "address": "Del Centro Comercial Expreso Tibás, 800 metros al norte",
+      "district": "Calle Blancos",
+      "direction": "De Tibás hacia San José",
+      "position": {
+        "lat": 9.9466172,
+        "lng": -84.0741098
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/SJ4-B.webp",
+      "imageAlt": "Cara SJ4-B · SJ4-B - 1440 x 500"
+    },
+    {
+      "id": "ACT-132",
+      "code": "SJ4-C",
+      "structureId": "SJ4",
+      "face": "C",
+      "title": "Por Motel El Éden",
+      "province": "San José",
+      "address": "Del Centro Comercial Expreso Tibás, 800 metros al norte",
+      "district": "Calle Blancos",
+      "direction": "De San José hacia Tibás",
+      "position": {
+        "lat": 9.9466172,
+        "lng": -84.0741098
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/SJ4-C.webp",
+      "imageAlt": "Cara SJ4-C · Por Motel El Éden"
+    },
+    {
+      "id": "ACT-241",
+      "code": "SJ4-D",
+      "structureId": "SJ4",
+      "face": "D",
+      "title": "\"EL MUNDO ES NUESTRO HOGAR LAPA ROJA\" SJ4-D - 1440 x 500",
+      "province": "San José",
+      "address": "Del Centro Comercial Expreso Tibás, 800 metros al norte",
+      "district": "Calle Blancos",
+      "direction": "De San José hacia Tibás",
+      "position": {
+        "lat": 9.9466172,
+        "lng": -84.0741098
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/SJ4-D.webp",
+      "imageAlt": "Cara SJ4-D · \"EL MUNDO ES NUESTRO HOGAR LAPA ROJA\" SJ4-D - 1440 x 500"
+    },
+    {
+      "id": "ACT-133",
+      "code": "SJ5-A",
+      "structureId": "SJ5",
+      "face": "A",
+      "title": "HONDA LEAPMOTOR  SJ5-A - 1440 x 500",
+      "province": "San José",
+      "address": "Costado sur de la Fábrica Pozuelo",
+      "district": "Uruca",
+      "direction": "De la Uruca hacia Heredia y la Autopista General Cañas",
+      "position": {
+        "lat": 9.9523765,
+        "lng": -84.1090107
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/SJ5-A.webp",
+      "imageAlt": "Cara SJ5-A · HONDA LEAPMOTOR  SJ5-A - 1440 x 500"
+    },
+    {
+      "id": "ACT-134",
+      "code": "SJ5-C",
+      "structureId": "SJ5",
+      "face": "C",
+      "title": "SJ5-C - 1440 x 500 ⚠️⚠️⚠️",
+      "province": "San José",
+      "address": "Costado sur de la Fábrica Pozuelo",
+      "district": "Uruca",
+      "direction": "De Heredia hacia la Uruca, San José y Circunvalación",
+      "position": {
+        "lat": 9.9523765,
+        "lng": -84.1090107
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/SJ5-C.webp",
+      "imageAlt": "Cara SJ5-C · SJ5-C - 1440 x 500 ⚠️⚠️⚠️"
+    },
+    {
+      "id": "ACT-135",
+      "code": "SJ6-A",
+      "structureId": "SJ6",
+      "face": "A",
+      "title": "El Parqueo",
+      "province": "San José",
+      "address": "Contiguo a Radio Monumental, costado sur del Puente Juan Pablo II",
+      "district": "Uruca",
+      "direction": "De San José hacia Alajuela",
+      "position": {
+        "lat": 9.9505906,
+        "lng": -84.1124868
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/SJ6-A.webp",
+      "imageAlt": "Cara SJ6-A · El Parqueo"
+    },
+    {
+      "id": "ACT-136",
+      "code": "SJ6-C",
+      "structureId": "SJ6",
+      "face": "C",
+      "title": "El Parqueo",
+      "province": "San José",
+      "address": "Contiguo a Radio Monumental, costado sur del Puente Juan Pablo II",
+      "district": "Uruca",
+      "direction": "De Alajuela hacia San José",
+      "position": {
+        "lat": 9.9505906,
+        "lng": -84.1124868
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/SJ6-C.webp",
+      "imageAlt": "Cara SJ6-C · El Parqueo"
+    },
+    {
+      "id": "ACT-137",
+      "code": "SJ8-A",
+      "structureId": "SJ8",
+      "face": "A",
+      "title": "Don Lorenzo",
+      "province": "San José",
+      "address": "Costado este de la Iglesia Católica",
+      "district": "Zapote",
+      "direction": "De Cartago o Curridabat hacia San José",
+      "position": {
+        "lat": 9.9197375,
+        "lng": -84.0527862
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/SJ8-A.webp",
+      "imageAlt": "Cara SJ8-A · Don Lorenzo"
+    },
+    {
+      "id": "ACT-138",
+      "code": "SJ8-C",
+      "structureId": "SJ8",
+      "face": "C",
+      "title": "Don Lorenzo",
+      "province": "San José",
+      "address": "Costado este de la Iglesia Católica",
+      "district": "Zapote",
+      "direction": "De San José hacia Cartago o Curridabat",
+      "position": {
+        "lat": 9.9197375,
+        "lng": -84.0527862
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/SJ8-C.webp",
+      "imageAlt": "Cara SJ8-C · Don Lorenzo"
+    },
+    {
+      "id": "ACT-139",
+      "code": "SJ9-A",
+      "structureId": "SJ9",
+      "face": "A",
+      "title": "Los Caballos",
+      "province": "San José",
+      "address": "400 metros al este del cruce a Escazú",
+      "district": "Mata Redonda",
+      "direction": "De San José hacia Escazú y Multiplaza",
+      "position": {
+        "lat": 9.9350772,
+        "lng": -84.1204155
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/SJ9-A.webp",
+      "imageAlt": "Cara SJ9-A · Los Caballos"
+    },
+    {
+      "id": "ACT-140",
+      "code": "SJ9-C",
+      "structureId": "SJ9",
+      "face": "C",
+      "title": "Los Caballos",
+      "province": "San José",
+      "address": "400 metros al este del cruce a Escazú",
+      "district": "Mata Redonda",
+      "direction": "De Escazú y Multiplaza hacia San José",
+      "position": {
+        "lat": 9.9350772,
+        "lng": -84.1204155
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/SJ9-C.webp",
+      "imageAlt": "Cara SJ9-C · Los Caballos"
+    },
+    {
+      "id": "ACT-141",
+      "code": "SJ10-A",
+      "structureId": "SJ10",
+      "face": "A",
+      "title": "El Colegio",
+      "province": "San José",
+      "address": "Carretera de Circunvalación, 300 metros al norte de la antigua rotonda de La Gallito, contiguo al Liceo Napoleón Quesada",
+      "district": "Calle Blancos",
+      "direction": "De Calle Blancos hacia San Pedro",
+      "position": {
+        "lat": 9.9449686,
+        "lng": -84.0614337
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/SJ10-A.webp",
+      "imageAlt": "Cara SJ10-A · El Colegio"
+    },
+    {
+      "id": "ACT-142",
+      "code": "SJ10-C",
+      "structureId": "SJ10",
+      "face": "C",
+      "title": "El Colegio",
+      "province": "San José",
+      "address": "Carretera de Circunvalación, 300 metros al norte de la antigua rotonda de La Gallito, contiguo al Liceo Napoleón Quesada",
+      "district": "Calle Blancos",
+      "direction": "De San Pedro hacia Calle Blancos",
+      "position": {
+        "lat": 9.9449686,
+        "lng": -84.0614337
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/SJ10-C.webp",
+      "imageAlt": "Cara SJ10-C · El Colegio"
+    },
+    {
+      "id": "ACT-143",
+      "code": "SJ11-A",
+      "structureId": "SJ11",
+      "face": "A",
+      "title": "Yori",
+      "province": "San José",
+      "address": "Costado este del Banco Davivienda",
+      "district": "Pozos",
+      "direction": "De Belén hacia Santa Ana",
+      "position": {
+        "lat": 9.9496923,
+        "lng": -84.1928029
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/SJ11-A.webp",
+      "imageAlt": "Cara SJ11-A · Yori"
+    },
+    {
+      "id": "ACT-144",
+      "code": "SJ11-C",
+      "structureId": "SJ11",
+      "face": "C",
+      "title": "Yori",
+      "province": "San José",
+      "address": "Costado este del Banco Davivienda",
+      "district": "Pozos",
+      "direction": "De Santa Ana hacia Belén",
+      "position": {
+        "lat": 9.9496923,
+        "lng": -84.1928029
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/SJ11-C.webp",
+      "imageAlt": "Cara SJ11-C · Yori"
+    },
+    {
+      "id": "ACT-145",
+      "code": "SJ12-A",
+      "structureId": "SJ12",
+      "face": "A",
+      "title": "Portón Bonito",
+      "province": "San José",
+      "address": "De Multiplaza Escazú, 600 metros al oeste",
+      "district": "San Rafael",
+      "direction": "De Santa Ana hacia Escazú",
+      "position": {
+        "lat": 9.9480465,
+        "lng": -84.1596803
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/SJ12-A.webp",
+      "imageAlt": "Cara SJ12-A · Portón Bonito"
+    },
+    {
+      "id": "ACT-146",
+      "code": "SJ12-C",
+      "structureId": "SJ12",
+      "face": "C",
+      "title": "Portón Bonito",
+      "province": "San José",
+      "address": "De Multiplaza Escazú, 600 metros al oeste",
+      "district": "San Rafael",
+      "direction": "De Escazú hacia Santa Ana",
+      "position": {
+        "lat": 9.9480465,
+        "lng": -84.1596803
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/SJ12-C.webp",
+      "imageAlt": "Cara SJ12-C · Portón Bonito"
+    },
+    {
+      "id": "ACT-147",
+      "code": "SJ13-A",
+      "structureId": "SJ13",
+      "face": "A",
+      "title": "Tecnosagot - Autogas",
+      "province": "San José",
+      "address": "Costado sureste del Puente Juan Pablo II, contiguo al edificio Tecnosagot",
+      "district": "Uruca",
+      "direction": "De Alajuela hacia San José",
+      "position": {
+        "lat": 9.9484454,
+        "lng": -84.1102767
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/SJ13-A.webp",
+      "imageAlt": "Cara SJ13-A · Tecnosagot - Autogas"
+    },
+    {
+      "id": "ACT-148",
+      "code": "SJ13-C",
+      "structureId": "SJ13",
+      "face": "C",
+      "title": "Tecnosagot - Autogas",
+      "province": "San José",
+      "address": "Costado sureste del Puente Juan Pablo II, contiguo al edificio Tecnosagot",
+      "district": "Uruca",
+      "direction": "De San José hacia Alajuela",
+      "position": {
+        "lat": 9.9484454,
+        "lng": -84.1102767
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/SJ13-C.webp",
+      "imageAlt": "Cara SJ13-C · Tecnosagot - Autogas"
+    },
+    {
+      "id": "ACT-149",
+      "code": "SJ14-A",
+      "structureId": "SJ14",
+      "face": "A",
+      "title": "San José Palacio",
+      "province": "San José",
+      "address": "300 metros al norte del Hotel San José Palacio",
+      "district": "Uruca",
+      "direction": "De los Hatillos o Parque de la Paz hacia La Uruca",
+      "position": {
+        "lat": 9.9481019,
+        "lng": -84.1041505
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/SJ14-A.webp",
+      "imageAlt": "Cara SJ14-A · San José Palacio"
+    },
+    {
+      "id": "ACT-150",
+      "code": "SJ14-C",
+      "structureId": "SJ14",
+      "face": "C",
+      "title": "San José Palacio",
+      "province": "San José",
+      "address": "300 metros al norte del Hotel San José Palacio",
+      "district": "Uruca",
+      "direction": "De La Uruca hacia Los Hatillos o Parque de la Paz",
+      "position": {
+        "lat": 9.9481019,
+        "lng": -84.1041505
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/SJ14-C.webp",
+      "imageAlt": "Cara SJ14-C · San José Palacio"
+    },
+    {
+      "id": "ACT-151",
+      "code": "SJ15-A",
+      "structureId": "SJ15",
+      "face": "A",
+      "title": "Registro-Zapote",
+      "province": "San José",
+      "address": "Frente al Registro Nacional",
+      "district": "Curridabat",
+      "direction": "De Cartago o Curridabat hacia San José",
+      "position": {
+        "lat": 9.918818,
+        "lng": -84.049648
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/SJ15-A.webp",
+      "imageAlt": "Cara SJ15-A · Registro-Zapote"
+    },
+    {
+      "id": "ACT-152",
+      "code": "SJ15-C",
+      "structureId": "SJ15",
+      "face": "C",
+      "title": "Registro-Zapote",
+      "province": "San José",
+      "address": "Frente a Construplaza",
+      "district": "Curridabat",
+      "direction": "De San José hacia Cartago o Curridabat",
+      "position": {
+        "lat": 9.918818,
+        "lng": -84.049648
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": null,
+      "imageAlt": "Cara SJ15-C · Registro-Zapote"
+    },
+    {
+      "id": "ACT-153",
+      "code": "SJ16-A",
+      "structureId": "SJ16",
+      "face": "A",
+      "title": "HYUNDAI  SJ16-A - 720 x 900",
+      "province": "San José",
+      "address": "Contiguo a Autopits o Diagonal a El Lagar",
+      "district": "Pozos",
+      "direction": "De Belén hacia Santa Ana",
+      "position": {
+        "lat": 9.9472618,
+        "lng": -84.1920251
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/SJ16-A.webp",
+      "imageAlt": "Cara SJ16-A · HYUNDAI  SJ16-A - 720 x 900"
+    },
+    {
+      "id": "ACT-154",
+      "code": "SJ16-C",
+      "structureId": "SJ16",
+      "face": "C",
+      "title": "HYUNDAI  SJ16-C - 720 x 900",
+      "province": "San José",
+      "address": "Contiguo a Autopits o Diagonal a El Lagar",
+      "district": "Pozos",
+      "direction": "De Santa Ana hacia Belén",
+      "position": {
+        "lat": 9.9472618,
+        "lng": -84.1920251
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/SJ16-C.webp",
+      "imageAlt": "Cara SJ16-C · HYUNDAI  SJ16-C - 720 x 900"
+    },
+    {
+      "id": "ACT-157",
+      "code": "SJ18-A",
+      "structureId": "SJ18",
+      "face": "A",
+      "title": "TELECABLE TU VIDA FLUYE SJ18-A - 1260 x 500",
+      "province": "San José",
+      "address": "Costado norte del cementerio",
+      "district": "Desamparados",
+      "direction": "De San José hacia Desamparados",
+      "position": {
+        "lat": 9.9041856,
+        "lng": -84.0693891
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ18-A.webp",
+      "imageAlt": "Cara SJ18-A · TELECABLE TU VIDA FLUYE SJ18-A - 1260 x 500"
+    },
+    {
+      "id": "ACT-158",
+      "code": "SJ18-C",
+      "structureId": "SJ18",
+      "face": "C",
+      "title": "LANCO SJ18-C - 1260 x 500",
+      "province": "San José",
+      "address": "Costado norte del cementerio",
+      "district": "Desamparados",
+      "direction": "De Desamparados hacia San José",
+      "position": {
+        "lat": 9.9041856,
+        "lng": -84.0693891
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ18-C.webp",
+      "imageAlt": "Cara SJ18-C · LANCO SJ18-C - 1260 x 500"
+    },
+    {
+      "id": "ACT-159",
+      "code": "SJ19-A",
+      "structureId": "SJ19",
+      "face": "A",
+      "title": "La Radio",
+      "province": "San José",
+      "address": "Rotonda de las Garantías Sociales",
+      "district": "Zapote",
+      "direction": "De San José hacia Zapote, Curridabat y Cartago",
+      "position": {
+        "lat": 9.9215421,
+        "lng": -84.0590384
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ19-A.webp",
+      "imageAlt": "Cara SJ19-A · La Radio"
+    },
+    {
+      "id": "ACT-160",
+      "code": "SJ19-C",
+      "structureId": "SJ19",
+      "face": "C",
+      "title": "La Radio",
+      "province": "San José",
+      "address": "Rotonda de las Garantías Sociales",
+      "district": "Zapote",
+      "direction": "De Zapote o Curridabat hacia San José",
+      "position": {
+        "lat": 9.9215421,
+        "lng": -84.0590384
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ19-C.webp",
+      "imageAlt": "Cara SJ19-C · La Radio"
+    },
+    {
+      "id": "ACT-161",
+      "code": "SJ20-A",
+      "structureId": "SJ20",
+      "face": "A",
+      "title": "Tractaco",
+      "province": "San José",
+      "address": "100 metros al este de Ciudad Toyota",
+      "district": "La Uruca",
+      "direction": "De la Uruca hacia Pozuelo",
+      "position": {
+        "lat": 9.9520278,
+        "lng": -84.1068703
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ20-A.webp",
+      "imageAlt": "Cara SJ20-A · Tractaco"
+    },
+    {
+      "id": "ACT-162",
+      "code": "SJ20-C",
+      "structureId": "SJ20",
+      "face": "C",
+      "title": "Tractaco",
+      "province": "San José",
+      "address": "100 metros al este de Ciudad Toyota",
+      "district": "La Uruca",
+      "direction": "De la Pozuelo hacia La Uruca",
+      "position": {
+        "lat": 9.9520278,
+        "lng": -84.1068703
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ20-C.webp",
+      "imageAlt": "Cara SJ20-C · Tractaco"
+    },
+    {
+      "id": "ACT-163",
+      "code": "SJ21-A",
+      "structureId": "SJ21",
+      "face": "A",
+      "title": "Los aceite",
+      "province": "San José",
+      "address": "200 metros al oeste de la Universidad UCIMED",
+      "district": "Mata Redonda",
+      "direction": "De Sabana, Pavas y La Uruca hacia Los Hatillos",
+      "position": {
+        "lat": 9.9343533,
+        "lng": -84.1165853
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ21-A.webp",
+      "imageAlt": "Cara SJ21-A · Los aceite"
+    },
+    {
+      "id": "ACT-164",
+      "code": "SJ21-C",
+      "structureId": "SJ21",
+      "face": "C",
+      "title": "Los aceite",
+      "province": "San José",
+      "address": "200 metros al oeste de la Universidad UCIMED",
+      "district": "Mata Redonda",
+      "direction": "De La Uruca hacia los Hatillos o Parque de la Paz",
+      "position": {
+        "lat": 9.9343533,
+        "lng": -84.1165853
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ21-C.webp",
+      "imageAlt": "Cara SJ21-C · Los aceite"
+    },
+    {
+      "id": "ACT-165",
+      "code": "SJ22-A",
+      "structureId": "SJ22",
+      "face": "A",
+      "title": "Liberty SJ22-A - 1260 x 500",
+      "province": "San José",
+      "address": "300 metros al este de la Rotonda de San Sebastián",
+      "district": "San Sebastián",
+      "direction": "De los Hatillos o La Uruca hacia el Parque de la Paz, Zapote y San Pedro",
+      "position": {
+        "lat": 9.91077,
+        "lng": -84.0823066
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ22-A.webp",
+      "imageAlt": "Cara SJ22-A · Liberty SJ22-A - 1260 x 500"
+    },
+    {
+      "id": "ACT-166",
+      "code": "SJ22-C",
+      "structureId": "SJ22",
+      "face": "C",
+      "title": "CIRCUITO CUMMINS SJ22-C - 1260 x 500",
+      "province": "San José",
+      "address": "300 metros al este de la Rotonda de San Sebastián",
+      "district": "San Sebastián",
+      "direction": "Del Parque de la Paz hacia los Hatillos o La Uruca",
+      "position": {
+        "lat": 9.91077,
+        "lng": -84.0823066
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ22-C.webp",
+      "imageAlt": "Cara SJ22-C · CIRCUITO CUMMINS SJ22-C - 1260 x 500"
+    },
+    {
+      "id": "ACT-167",
+      "code": "SJ23-A",
+      "structureId": "SJ23",
+      "face": "A",
+      "title": "Plaza Obelisco",
+      "province": "San José",
+      "address": "2 kilómetros al oeste de Forum 1",
+      "district": "Uruca",
+      "direction": "De San José hacia Caldera",
+      "position": {
+        "lat": 9.9396795,
+        "lng": -84.2022121
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ23-A.webp",
+      "imageAlt": "Cara SJ23-A · Plaza Obelisco"
+    },
+    {
+      "id": "ACT-168",
+      "code": "SJ23-C",
+      "structureId": "SJ23",
+      "face": "C",
+      "title": "Plaza Obelisco",
+      "province": "San José",
+      "address": "2 kilómetros al oeste de Forum 1",
+      "district": "Uruca",
+      "direction": "De Caldera hacia San José",
+      "position": {
+        "lat": 9.9396795,
+        "lng": -84.2022121
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ23-C.webp",
+      "imageAlt": "Cara SJ23-C · Plaza Obelisco"
+    },
+    {
+      "id": "ACT-169",
+      "code": "SJ24-A",
+      "structureId": "SJ24",
+      "face": "A",
+      "title": "Romanas Ballar",
+      "province": "San José",
+      "address": "Contiguo a Romanas Ballar",
+      "district": "San Vicente",
+      "direction": "De Lincoln Plaza hacia Guadalupe o Calle Blancos",
+      "position": {
+        "lat": 9.9559799,
+        "lng": -84.0548462
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ24-A.webp",
+      "imageAlt": "Cara SJ24-A · Romanas Ballar"
+    },
+    {
+      "id": "ACT-170",
+      "code": "SJ24-C",
+      "structureId": "SJ24",
+      "face": "C",
+      "title": "Romanas Ballar",
+      "province": "San José",
+      "address": "Contiguo a Romanas Ballar",
+      "district": "San Vicente",
+      "direction": "De Guadalupe o Calle Blancos haca Lincoln Plaza",
+      "position": {
+        "lat": 9.9559799,
+        "lng": -84.0548462
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ24-C.webp",
+      "imageAlt": "Cara SJ24-C · Romanas Ballar"
+    },
+    {
+      "id": "ACT-171",
+      "code": "SJ25-A",
+      "structureId": "SJ25",
+      "face": "A",
+      "title": "Los enanos",
+      "province": "San José",
+      "address": "Diagonal al ICE",
+      "district": "San Juan",
+      "direction": "De Lincoln Plaza hacia el parque de Tibás",
+      "position": {
+        "lat": 9.9620455,
+        "lng": -84.0678495
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ25-A.webp",
+      "imageAlt": "Cara SJ25-A · Los enanos"
+    },
+    {
+      "id": "ACT-172",
+      "code": "SJ25-C",
+      "structureId": "SJ25",
+      "face": "C",
+      "title": "Los enanos",
+      "province": "San José",
+      "address": "Diagonal al ICE",
+      "district": "San Juan",
+      "direction": "Del parque de Tibás hacia Lincoln Plaza",
+      "position": {
+        "lat": 9.9620455,
+        "lng": -84.0678495
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ25-C.webp",
+      "imageAlt": "Cara SJ25-C · Los enanos"
+    },
+    {
+      "id": "ACT-173",
+      "code": "SJ26-A",
+      "structureId": "SJ26",
+      "face": "A",
+      "title": "La farmacia",
+      "province": "San José",
+      "address": "Frente al Colegio Saint Francis",
+      "district": "San Vicente",
+      "direction": "De Lincoln Plaza hacia Guadalupe o Calle Blancos",
+      "position": {
+        "lat": 9.960323,
+        "lng": -84.0549964
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ26-A.webp",
+      "imageAlt": "Cara SJ26-A · La farmacia"
+    },
+    {
+      "id": "ACT-174",
+      "code": "SJ26-C",
+      "structureId": "SJ26",
+      "face": "C",
+      "title": "La farmacia",
+      "province": "San José",
+      "address": "Frente al Colegio Saint Francis",
+      "district": "San Vicente",
+      "direction": "De Guadalupe o Calle Blancos hacia Lincoln Plaza",
+      "position": {
+        "lat": 9.960323,
+        "lng": -84.0549964
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ26-C.webp",
+      "imageAlt": "Cara SJ26-C · La farmacia"
+    },
+    {
+      "id": "ACT-175",
+      "code": "SJ27-A",
+      "structureId": "SJ27",
+      "face": "A",
+      "title": "La Galera ó doña Gabriela",
+      "province": "San José",
+      "address": "Cruce de la Antigua Galera - Cartago",
+      "district": "Curridabat",
+      "direction": "De San Pedro hacia Cartago",
+      "position": {
+        "lat": 9.9143687,
+        "lng": -84.0302181
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ27-A.webp",
+      "imageAlt": "Cara SJ27-A · La Galera ó doña Gabriela"
+    },
+    {
+      "id": "ACT-176",
+      "code": "SJ27-C",
+      "structureId": "SJ27",
+      "face": "C",
+      "title": "La Galera ó doña Gabriela",
+      "province": "San José",
+      "address": "Cruce de la Antigua Galera - Cartago",
+      "district": "Curridabat",
+      "direction": "De Cartago hacia San Pedro",
+      "position": {
+        "lat": 9.9143687,
+        "lng": -84.0302181
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ27-C.webp",
+      "imageAlt": "Cara SJ27-C · La Galera ó doña Gabriela"
+    },
+    {
+      "id": "ACT-177",
+      "code": "SJ28-A",
+      "structureId": "SJ28",
+      "face": "A",
+      "title": "Moravia Autopits - Plaza Lincoln",
+      "province": "San José",
+      "address": "Diagonal a Lincoln Plaza",
+      "district": "San Vicente",
+      "direction": "De Tibás hacia Lincoln Plaza o Guadalupe",
+      "position": {
+        "lat": 9.9627006,
+        "lng": -84.0580809
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ28-A.webp",
+      "imageAlt": "Cara SJ28-A · Moravia Autopits - Plaza Lincoln"
+    },
+    {
+      "id": "ACT-178",
+      "code": "SJ28-C",
+      "structureId": "SJ28",
+      "face": "C",
+      "title": "Moravia Autopits - Plaza Lincoln",
+      "province": "San José",
+      "address": "Diagonal a Lincoln Plaza",
+      "district": "San Vicente",
+      "direction": "De Lincoln Plaza o Guadalupe hacia Tibás",
+      "position": {
+        "lat": 9.9627006,
+        "lng": -84.0580809
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ28-C.webp",
+      "imageAlt": "Cara SJ28-C · Moravia Autopits - Plaza Lincoln"
+    },
+    {
+      "id": "ACT-179",
+      "code": "SJ29-A",
+      "structureId": "SJ29",
+      "face": "A",
+      "title": "CHEVROLET SJ29-A - 720 x 900",
+      "province": "San José",
+      "address": "Contiguo a Grupo Q o Diagonal a El Lagar",
+      "district": "Pozos",
+      "direction": "De Belén hacia Santa Ana",
+      "position": {
+        "lat": 9.9475154,
+        "lng": -84.1921431
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/SJ29-A.webp",
+      "imageAlt": "Cara SJ29-A · CHEVROLET SJ29-A - 720 x 900"
+    },
+    {
+      "id": "ACT-180",
+      "code": "SJ29-C",
+      "structureId": "SJ29",
+      "face": "C",
+      "title": "Grupo Q",
+      "province": "San José",
+      "address": "Contiguo a Grupo Q o Diagonal a El Lagar",
+      "district": "Pozos",
+      "direction": "De Santa Ana hacia Belén",
+      "position": {
+        "lat": 9.9475154,
+        "lng": -84.1921431
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/SJ29-C.webp",
+      "imageAlt": "Cara SJ29-C · Grupo Q"
+    },
+    {
+      "id": "ACT-181",
+      "code": "SJ30-A",
+      "structureId": "SJ30",
+      "face": "A",
+      "title": "El Colegio",
+      "province": "San José",
+      "address": "Antigua Rotonda de La Gallito, frente a Walmart",
+      "district": "Guadalupe",
+      "direction": "De Calle Blancos hacia San Pedro",
+      "position": {
+        "lat": 9.9433941,
+        "lng": -84.0608811
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ30-A.webp",
+      "imageAlt": "Cara SJ30-A · El Colegio"
+    },
+    {
+      "id": "ACT-182",
+      "code": "SJ30-C",
+      "structureId": "SJ30",
+      "face": "C",
+      "title": "El Colegio",
+      "province": "San José",
+      "address": "Antigua Rotonda de La Gallito, frente a Walmart",
+      "district": "Guadalupe",
+      "direction": "De San Pedro hacia Calle Blancos",
+      "position": {
+        "lat": 9.9433941,
+        "lng": -84.0608811
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ30-C.webp",
+      "imageAlt": "Cara SJ30-C · El Colegio"
+    },
+    {
+      "id": "ACT-183",
+      "code": "SJ31-A",
+      "structureId": "SJ31",
+      "face": "A",
+      "title": "El Colegio",
+      "province": "San José",
+      "address": "Antigua Rotonda de La Gallito, frente a Walmart",
+      "district": "Guadalupe",
+      "direction": "De Guadalupe hacia San José, Barrio La California, otros.",
+      "position": {
+        "lat": 9.943064773817614,
+        "lng": -84.06100589867249
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": null,
+      "imageAlt": "Cara SJ31-A · El Colegio"
+    },
+    {
+      "id": "ACT-184",
+      "code": "SJ31-C",
+      "structureId": "SJ31",
+      "face": "C",
+      "title": "El Colegio",
+      "province": "San José",
+      "address": "Antigua Rotonda de La Gallito, frente a Walmart",
+      "district": "Guadalupe",
+      "direction": "De San José o Barrio La California hacia Guadalupe",
+      "position": {
+        "lat": 9.943064773817614,
+        "lng": -84.06100589867249
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ31-C.webp",
+      "imageAlt": "Cara SJ31-C · El Colegio"
+    },
+    {
+      "id": "ACT-185",
+      "code": "SJ32-A",
+      "structureId": "SJ32",
+      "face": "A",
+      "title": "El Abandonado",
+      "province": "San José",
+      "address": "50 metros al sur de la Princesa Marina",
+      "district": "San Vicente",
+      "direction": "De Moravia hacia Guadalupe",
+      "position": {
+        "lat": 9.9567725,
+        "lng": -84.0483016
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ32-A.webp",
+      "imageAlt": "Cara SJ32-A · El Abandonado"
+    },
+    {
+      "id": "ACT-186",
+      "code": "SJ32-C",
+      "structureId": "SJ32",
+      "face": "C",
+      "title": "El Abandonado",
+      "province": "San José",
+      "address": "50 metros al sur de la Princesa Marina",
+      "district": "San Vicente",
+      "direction": "De Guadalupe hacia Moravia",
+      "position": {
+        "lat": 9.9567725,
+        "lng": -84.0483016
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ32-C.webp",
+      "imageAlt": "Cara SJ32-C · El Abandonado"
+    },
+    {
+      "id": "ACT-187",
+      "code": "SJ33-A",
+      "structureId": "SJ33",
+      "face": "A",
+      "title": "Las Embarazadas",
+      "province": "San José",
+      "address": "Frente a Lincoln Plaza, costado norte",
+      "district": "San Vicente",
+      "direction": "De Tibás hacia Lincoln Plaza o Guadalupe",
+      "position": {
+        "lat": 9.9633612,
+        "lng": -84.0559191
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ33-A.webp",
+      "imageAlt": "Cara SJ33-A · Las Embarazadas"
+    },
+    {
+      "id": "ACT-188",
+      "code": "SJ33-C",
+      "structureId": "SJ33",
+      "face": "C",
+      "title": "Las Embarazadas",
+      "province": "San José",
+      "address": "Frente a Lincoln Plaza, costado norte",
+      "district": "San Vicente",
+      "direction": "De Lincoln Plaza o Guadalupe hacia Tibás",
+      "position": {
+        "lat": 9.9633612,
+        "lng": -84.0559191
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ33-C.webp",
+      "imageAlt": "Cara SJ33-C · Las Embarazadas"
+    },
+    {
+      "id": "ACT-189",
+      "code": "SJ34-A",
+      "structureId": "SJ34",
+      "face": "A",
+      "title": "Liberty SJ34-A - 1260 x 500",
+      "province": "San José",
+      "address": "Cruce de la Antigua Galera",
+      "district": "Curridabat",
+      "direction": "De Tres Ríos o Cartago hacia San Pedro",
+      "position": {
+        "lat": 9.9153515,
+        "lng": -84.0311435
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ34-A.webp",
+      "imageAlt": "Cara SJ34-A · Liberty SJ34-A - 1260 x 500"
+    },
+    {
+      "id": "ACT-190",
+      "code": "SJ34-C",
+      "structureId": "SJ34",
+      "face": "C",
+      "title": "HYUNDAI  SJ34-C - 1260 x 500",
+      "province": "San José",
+      "address": "Cruce de la Antigua Galera",
+      "district": "Curridabat",
+      "direction": "De San Pedro hacia Tres Ríos o Cartago",
+      "position": {
+        "lat": 9.9153515,
+        "lng": -84.0311435
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": null,
+      "imageAlt": "Cara SJ34-C · HYUNDAI  SJ34-C - 1260 x 500"
+    },
+    {
+      "id": "ACT-191",
+      "code": "SJ35-A",
+      "structureId": "SJ35",
+      "face": "A",
+      "title": "Los colegios",
+      "province": "San José",
+      "address": "En las actuales instalaciones del Liceo Napoleón Quesada",
+      "district": "Guadalupe",
+      "direction": "De Guadalupe hacia San José",
+      "position": {
+        "lat": 9.9427441,
+        "lng": -84.0620505
+      },
+      "widthM": 8.5,
+      "heightM": 11,
+      "image": "/images/locations/SJ35-A.webp",
+      "imageAlt": "Cara SJ35-A · Los colegios"
+    },
+    {
+      "id": "ACT-192",
+      "code": "SJ35-C",
+      "structureId": "SJ35",
+      "face": "C",
+      "title": "Los colegios",
+      "province": "San José",
+      "address": "En las actuales instalaciones del Liceo Napoleón Quesada",
+      "district": "Guadalupe",
+      "direction": "De San José hacia Guadalupe",
+      "position": {
+        "lat": 9.9427441,
+        "lng": -84.0620505
+      },
+      "widthM": 8.5,
+      "heightM": 11,
+      "image": "/images/locations/SJ35-C.webp",
+      "imageAlt": "Cara SJ35-C · Los colegios"
+    },
+    {
+      "id": "ACT-193",
+      "code": "SJ36-A",
+      "structureId": "SJ36",
+      "face": "A",
+      "title": "Parabrisas",
+      "province": "San José",
+      "address": "Rotonda de las Garantías Sociales",
+      "district": "Zapote",
+      "direction": "De San José hacia Zapote, Curridabat y Cartago",
+      "position": {
+        "lat": 9.9207428,
+        "lng": -84.0590145
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ36-A.webp",
+      "imageAlt": "Cara SJ36-A · Parabrisas"
+    },
+    {
+      "id": "ACT-194",
+      "code": "SJ36-C",
+      "structureId": "SJ36",
+      "face": "C",
+      "title": "Parabrisas",
+      "province": "San José",
+      "address": "Rotonda de las Garantías Sociales",
+      "district": "Zapote",
+      "direction": "De Zapote o Curridabat hacia San José",
+      "position": {
+        "lat": 9.9207428,
+        "lng": -84.0590145
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ36-C.webp",
+      "imageAlt": "Cara SJ36-C · Parabrisas"
+    },
+    {
+      "id": "ACT-195",
+      "code": "SJ37-A",
+      "structureId": "SJ37",
+      "face": "A",
+      "title": "DIEGO ELLIOT  SJ37-A - 720 x 900",
+      "province": "San José",
+      "address": "150 metros al oeste de Canal 7",
+      "district": "Mata Redonda",
+      "direction": "De Pavas hacia La Sabana",
+      "position": {
+        "lat": 9.9361552,
+        "lng": -84.1114676
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/SJ37-A.webp",
+      "imageAlt": "Cara SJ37-A · DIEGO ELLIOT  SJ37-A - 720 x 900"
+    },
+    {
+      "id": "ACT-196",
+      "code": "SJ37-C",
+      "structureId": "SJ37",
+      "face": "C",
+      "title": "CIRCUITO  SJ37-C - 720 x 900",
+      "province": "San José",
+      "address": "150 metros al oeste de Canal 7",
+      "district": "Mata Redonda",
+      "direction": "De La Sabana hacia Pavas",
+      "position": {
+        "lat": 9.9361552,
+        "lng": -84.1114676
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/SJ37-C.webp",
+      "imageAlt": "Cara SJ37-C · CIRCUITO  SJ37-C - 720 x 900"
+    },
+    {
+      "id": "ACT-197",
+      "code": "SJ38-A",
+      "structureId": "SJ38",
+      "face": "A",
+      "title": "Forum",
+      "province": "San José",
+      "address": "Contiguo a Plaza Forum 1 o Diagonal a Mall Santa Ana",
+      "district": "Pozos",
+      "direction": "De San José hacia Caldera",
+      "position": {
+        "lat": 9.943468,
+        "lng": -84.1941226
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/SJ38-A.webp",
+      "imageAlt": "Cara SJ38-A · Forum"
+    },
+    {
+      "id": "ACT-198",
+      "code": "SJ38-C",
+      "structureId": "SJ38",
+      "face": "C",
+      "title": "Forum",
+      "province": "San José",
+      "address": "Contiguo a Plaza Forum 1 o Diagonal a Mall Santa Ana",
+      "district": "Pozos",
+      "direction": "De Caldera hacia San José",
+      "position": {
+        "lat": 9.943468,
+        "lng": -84.1941226
+      },
+      "widthM": 14.4,
+      "heightM": 5,
+      "image": "/images/locations/SJ38-C.webp",
+      "imageAlt": "Cara SJ38-C · Forum"
+    },
+    {
+      "id": "ACT-199",
+      "code": "SJ39-A",
+      "structureId": "SJ39",
+      "face": "A",
+      "title": "Yamuni",
+      "province": "San José",
+      "address": "De McDonald’s, 100 metros al este",
+      "district": "Hospital",
+      "direction": "De San José o de la Municipalidad hacia La Sabana",
+      "position": {
+        "lat": 9.9318751,
+        "lng": -84.0967208
+      },
+      "widthM": 7.2,
+      "heightM": 5.4,
+      "image": "/images/locations/SJ39-A.webp",
+      "imageAlt": "Cara SJ39-A · Yamuni"
+    },
+    {
+      "id": "ACT-200",
+      "code": "SJ39-C",
+      "structureId": "SJ39",
+      "face": "C",
+      "title": "Frase DG \"hasta que el aliento abandone el cuerpo, la derrota es solo un rumor\" SJ39-C - 720 x 540",
+      "province": "San José",
+      "address": "De McDonald’s, 100 metros al este",
+      "district": "Hospital",
+      "direction": "De La Sabana hacia San José",
+      "position": {
+        "lat": 9.9318751,
+        "lng": -84.0967208
+      },
+      "widthM": 7.2,
+      "heightM": 5.4,
+      "image": "/images/locations/SJ39-C.webp",
+      "imageAlt": "Cara SJ39-C · Frase DG \"hasta que el aliento abandone el cuerpo, la derrota es solo un rumor\" SJ39-C - 720 x 540"
+    },
+    {
+      "id": "ACT-201",
+      "code": "SJ40-A",
+      "structureId": "SJ40",
+      "face": "A",
+      "title": "\"SALUD MENTAL\" SJ40-A - 720 x 540",
+      "province": "San José",
+      "address": "De McDonald’s, 100 metros al este",
+      "district": "Hospital",
+      "direction": "De San José o de la Municipalidad hacia La Sabana",
+      "position": {
+        "lat": 9.9317166,
+        "lng": -84.096356
+      },
+      "widthM": 7.2,
+      "heightM": 5.4,
+      "image": "/images/locations/SJ40-A.webp",
+      "imageAlt": "Cara SJ40-A · \"SALUD MENTAL\" SJ40-A - 720 x 540"
+    },
+    {
+      "id": "ACT-202",
+      "code": "SJ40-C",
+      "structureId": "SJ40",
+      "face": "C",
+      "title": "SJ40-C - 720 x 540 ⚠️⚠️⚠️",
+      "province": "San José",
+      "address": "De McDonald’s, 100 metros al este",
+      "district": "Hospital",
+      "direction": "De la Sabana hacia San José",
+      "position": {
+        "lat": 9.9317166,
+        "lng": -84.096356
+      },
+      "widthM": 7.2,
+      "heightM": 5.4,
+      "image": "/images/locations/SJ40-C.webp",
+      "imageAlt": "Cara SJ40-C · SJ40-C - 720 x 540 ⚠️⚠️⚠️"
+    },
+    {
+      "id": "ACT-313",
+      "code": "SJ41-A",
+      "structureId": "SJ41",
+      "face": "A",
+      "title": "Sabana Sur",
+      "province": "San José",
+      "address": "Frente a Torre Universal y al Gimnasio Nacional",
+      "district": "Mata Redonda",
+      "direction": "De San José hacia Escazú",
+      "position": {
+        "lat": 9.9324299,
+        "lng": -84.0988237
+      },
+      "widthM": 5.4,
+      "heightM": 7.2,
+      "image": "/images/locations/SJ41-A.webp",
+      "imageAlt": "Cara SJ41-A · Sabana Sur"
+    },
+    {
+      "id": "ACT-204",
+      "code": "SJ41-C",
+      "structureId": "SJ41",
+      "face": "C",
+      "title": "Sabana Sur",
+      "province": "San José",
+      "address": "Frente a Torre Universal y al Gimnasio Nacional",
+      "district": "Mata Redonda",
+      "direction": "De Escazú hacia San José",
+      "position": {
+        "lat": 9.9324299,
+        "lng": -84.0988237
+      },
+      "widthM": 5.4,
+      "heightM": 7.2,
+      "image": "/images/locations/SJ41-C.webp",
+      "imageAlt": "Cara SJ41-C · Sabana Sur"
+    },
+    {
+      "id": "ACT-205",
+      "code": "SJ42-A",
+      "structureId": "SJ42",
+      "face": "A",
+      "title": "Sabana Sur",
+      "province": "San José",
+      "address": "Costado norte del Colegio de Médicos",
+      "district": "Mata Redonda",
+      "direction": "De Escazú, Canal 7, Rohrmoser y Pavas hacia San José",
+      "position": {
+        "lat": 9.9334233,
+        "lng": -84.1092092
+      },
+      "widthM": 5.4,
+      "heightM": 7.2,
+      "image": "/images/locations/SJ42-A.webp",
+      "imageAlt": "Cara SJ42-A · Sabana Sur"
+    },
+    {
+      "id": "ACT-206",
+      "code": "SJ42-C",
+      "structureId": "SJ42",
+      "face": "C",
+      "title": "Sabana Sur",
+      "province": "San José",
+      "address": "Costado norte del Colegio de Médicos",
+      "district": "Mata Redonda",
+      "direction": "De San José hacia Escazú, Canal 7, Rohrmoser y Pavas",
+      "position": {
+        "lat": 9.9334233,
+        "lng": -84.1092092
+      },
+      "widthM": 5.4,
+      "heightM": 7.2,
+      "image": "/images/locations/SJ42-C.webp",
+      "imageAlt": "Cara SJ42-C · Sabana Sur"
+    },
+    {
+      "id": "ACT-207",
+      "code": "SJ43-A",
+      "structureId": "SJ43",
+      "face": "A",
+      "title": "Sabana Sur - UCIMED",
+      "province": "San José",
+      "address": "Costado norte del MAG",
+      "district": "Mata Redonda",
+      "direction": "De La Sabana hacia Escazú, sobre Ruta 27",
+      "position": {
+        "lat": 9.9335316,
+        "lng": -84.1099602
+      },
+      "widthM": 5.4,
+      "heightM": 7.2,
+      "image": "/images/locations/SJ43-A.webp",
+      "imageAlt": "Cara SJ43-A · Sabana Sur - UCIMED"
+    },
+    {
+      "id": "ACT-208",
+      "code": "SJ43-C",
+      "structureId": "SJ43",
+      "face": "C",
+      "title": "Sabana Sur - UCIMED",
+      "province": "San José",
+      "address": "Costado norte del MAG",
+      "district": "Mata Redonda",
+      "direction": "De Escazú hacia La Sabana, sobre la ruta 27",
+      "position": {
+        "lat": 9.9335316,
+        "lng": -84.1099602
+      },
+      "widthM": 5.4,
+      "heightM": 7.2,
+      "image": "/images/locations/SJ43-C.webp",
+      "imageAlt": "Cara SJ43-C · Sabana Sur - UCIMED"
+    },
+    {
+      "id": "ACT-209",
+      "code": "SJ44-A",
+      "structureId": "SJ44",
+      "face": "A",
+      "title": "INCHCAPE  SJ44-A - 540 x 720",
+      "province": "San José",
+      "address": "Frente a la Contraloría General de la República",
+      "district": "Mata Redonda",
+      "direction": "De San José hacia Escazú",
+      "position": {
+        "lat": 9.9326782,
+        "lng": -84.1020745
+      },
+      "widthM": 5.4,
+      "heightM": 7.2,
+      "image": "/images/locations/SJ44-A.webp",
+      "imageAlt": "Cara SJ44-A · INCHCAPE  SJ44-A - 540 x 720"
+    },
+    {
+      "id": "ACT-210",
+      "code": "SJ44-C",
+      "structureId": "SJ44",
+      "face": "C",
+      "title": "CLINICA BIBLICA SJ44-C - 540 x 720 ⚠️⚠️⚠️",
+      "province": "San José",
+      "address": "Frente a la Contraloría General de la República",
+      "district": "Mata Redonda",
+      "direction": "De Escazú hacia San José",
+      "position": {
+        "lat": 9.9326782,
+        "lng": -84.1020745
+      },
+      "widthM": 5.4,
+      "heightM": 7.2,
+      "image": "/images/locations/SJ44-C.webp",
+      "imageAlt": "Cara SJ44-C · CLINICA BIBLICA SJ44-C - 540 x 720 ⚠️⚠️⚠️"
+    },
+    {
+      "id": "ACT-211",
+      "code": "SJ45-A",
+      "structureId": "SJ45",
+      "face": "A",
+      "title": "ATE FRENOS",
+      "province": "San José",
+      "address": "500 metros al oeste de Canal 7 o Costado oeste de La Artística",
+      "district": "Pavas",
+      "direction": "De La Sabana hacia Pavas",
+      "position": {
+        "lat": 9.9387073,
+        "lng": -84.1163975
+      },
+      "widthM": 8.5,
+      "heightM": 11,
+      "image": "/images/locations/SJ45-A.webp",
+      "imageAlt": "Cara SJ45-A · ATE FRENOS"
+    },
+    {
+      "id": "ACT-212",
+      "code": "SJ45-C",
+      "structureId": "SJ45",
+      "face": "C",
+      "title": "ATE FRENOS",
+      "province": "San José",
+      "address": "500 metros al oeste de Canal 7 o Costado oeste de La Artística",
+      "district": "Pavas",
+      "direction": "De pavas hacia La Sabana",
+      "position": {
+        "lat": 9.9387073,
+        "lng": -84.1163975
+      },
+      "widthM": 8.5,
+      "heightM": 11,
+      "image": "/images/locations/SJ45-C.webp",
+      "imageAlt": "Cara SJ45-C · ATE FRENOS"
+    },
+    {
+      "id": "ACT-213",
+      "code": "SJ46-A",
+      "structureId": "SJ46",
+      "face": "A",
+      "title": "BANCO POPULAR SJ46-A - 720 x 900",
+      "province": "San José",
+      "address": "Diagonal al restaurante KFC",
+      "district": "Catedral",
+      "direction": "De San José hacia San Pedro",
+      "position": {
+        "lat": 9.931854,
+        "lng": -84.0657842
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/SJ46-A.webp",
+      "imageAlt": "Cara SJ46-A · BANCO POPULAR SJ46-A - 720 x 900"
+    },
+    {
+      "id": "ACT-214",
+      "code": "SJ46-C",
+      "structureId": "SJ46",
+      "face": "C",
+      "title": "SJ46-C - 720 x 900 ⚠️⚠️⚠️",
+      "province": "San José",
+      "address": "Diagonal al restaurante KFC",
+      "district": "Catedral",
+      "direction": "De San Pedro hacia San José",
+      "position": {
+        "lat": 9.931854,
+        "lng": -84.0657842
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/SJ46-C.webp",
+      "imageAlt": "Cara SJ46-C · SJ46-C - 720 x 900 ⚠️⚠️⚠️"
+    },
+    {
+      "id": "ACT-215",
+      "code": "SJ47-A",
+      "structureId": "SJ47",
+      "face": "A",
+      "title": "El Colombiano",
+      "province": "San José",
+      "address": "Del Auto Mercado, 300 metros al oeste",
+      "district": "El Carmen",
+      "direction": "De San José hacia San Pedro",
+      "position": {
+        "lat": 9.9318857,
+        "lng": -84.0629518
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/SJ47-A.webp",
+      "imageAlt": "Cara SJ47-A · El Colombiano"
+    },
+    {
+      "id": "ACT-216",
+      "code": "SJ47-C",
+      "structureId": "SJ47",
+      "face": "C",
+      "title": "El Colombiano",
+      "province": "San José",
+      "address": "Del Auto Mercado, 300 metros al oeste",
+      "district": "El Carmen",
+      "direction": "De San José hacia San Pedro",
+      "position": {
+        "lat": 9.9318857,
+        "lng": -84.0629518
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/SJ47-C.webp",
+      "imageAlt": "Cara SJ47-C · El Colombiano"
+    },
+    {
+      "id": "ACT-217",
+      "code": "SJ48-A",
+      "structureId": "SJ48",
+      "face": "A",
+      "title": "Los Conejos",
+      "province": "San José",
+      "address": "De Multiplaza Escazú, 600 metros al oeste",
+      "district": "San Rafael",
+      "direction": "De Santa Ana hacia Escazú",
+      "position": {
+        "lat": 9.9475418,
+        "lng": -84.1599781
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ48-A.webp",
+      "imageAlt": "Cara SJ48-A · Los Conejos"
+    },
+    {
+      "id": "ACT-218",
+      "code": "SJ48-C",
+      "structureId": "SJ48",
+      "face": "C",
+      "title": "Los Conejos",
+      "province": "San José",
+      "address": "De Multiplaza Escazú, 600 metros al oeste",
+      "district": "San Rafael",
+      "direction": "De Escazú hacia Santa Ana",
+      "position": {
+        "lat": 9.9475418,
+        "lng": -84.1599781
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ48-C.webp",
+      "imageAlt": "Cara SJ48-C · Los Conejos"
+    },
+    {
+      "id": "ACT-219",
+      "code": "SJ49-A",
+      "structureId": "SJ49",
+      "face": "A",
+      "title": "Contraloría",
+      "province": "San José",
+      "address": "Frente a la Contraloría General de la República",
+      "district": "Mata Redonda",
+      "direction": "De San José hacia Escazú",
+      "position": {
+        "lat": 9.9326202,
+        "lng": -84.1012753
+      },
+      "widthM": 5.4,
+      "heightM": 7.2,
+      "image": "/images/locations/SJ49-A.webp",
+      "imageAlt": "Cara SJ49-A · Contraloría"
+    },
+    {
+      "id": "ACT-220",
+      "code": "SJ49-C",
+      "structureId": "SJ49",
+      "face": "C",
+      "title": "Contraloría",
+      "province": "San José",
+      "address": "Frente a la Contraloría General de la República",
+      "district": "Mata Redonda",
+      "direction": "De Escazú hacia San José",
+      "position": {
+        "lat": 9.9326202,
+        "lng": -84.1012753
+      },
+      "widthM": 5.4,
+      "heightM": 7.2,
+      "image": "/images/locations/SJ49-C.webp",
+      "imageAlt": "Cara SJ49-C · Contraloría"
+    },
+    {
+      "id": "ACT-249",
+      "code": "SJ50-A",
+      "structureId": "SJ50",
+      "face": "A",
+      "title": "AR Holding - Campaña Crate & Barrel SJ50-A - 850 x 1100",
+      "province": "San José",
+      "address": "400 metros este del cruce a Escazú",
+      "district": "Mata Redonda",
+      "direction": "De San José hacia Escazú y Multiplaza",
+      "position": {
+        "lat": 9.9350983,
+        "lng": -84.1200883
+      },
+      "widthM": 8.5,
+      "heightM": 11,
+      "image": "/images/locations/SJ50-A.webp",
+      "imageAlt": "Cara SJ50-A · AR Holding - Campaña Crate & Barrel SJ50-A - 850 x 1100"
+    },
+    {
+      "id": "ACT-221",
+      "code": "SJ50-C",
+      "structureId": "SJ50",
+      "face": "C",
+      "title": "OSTER SJ50-C - 850 x 1100",
+      "province": "San José",
+      "address": "400 metros este del cruce a Escazú",
+      "district": "Mata Redonda",
+      "direction": "De Escazú y Multiplaza a San José",
+      "position": {
+        "lat": 9.9350983,
+        "lng": -84.1200883
+      },
+      "widthM": 8.5,
+      "heightM": 11,
+      "image": "/images/locations/SJ50-C.webp",
+      "imageAlt": "Cara SJ50-C · OSTER SJ50-C - 850 x 1100"
+    },
+    {
+      "id": "ACT-222",
+      "code": "SJ51-A",
+      "structureId": "SJ51",
+      "face": "A",
+      "title": "Doña Nidia",
+      "province": "San José",
+      "address": "Frente a Construplaza",
+      "district": "San Rafael",
+      "direction": "De Escazú hacia Guachipelin",
+      "position": {
+        "lat": 9.9480544,
+        "lng": -84.1621292
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ51-A.webp",
+      "imageAlt": "Cara SJ51-A · Doña Nidia"
+    },
+    {
+      "id": "ACT-223",
+      "code": "SJ51-C",
+      "structureId": "SJ51",
+      "face": "C",
+      "title": "Doña Nidia",
+      "province": "San José",
+      "address": "Frente a Construplaza",
+      "district": "San Rafael",
+      "direction": "De Guachipelín hacia Escazú",
+      "position": {
+        "lat": 9.9480544,
+        "lng": -84.1621292
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ51-C.webp",
+      "imageAlt": "Cara SJ51-C · Doña Nidia"
+    },
+    {
+      "id": "ACT-224",
+      "code": "SJ52-A",
+      "structureId": "SJ52",
+      "face": "A",
+      "title": "La Casita / Distrito Cuatro",
+      "province": "San José",
+      "address": "Frente al Centro Comercial Distrito Cuatro",
+      "district": "San Rafael",
+      "direction": "De Escazú hacia Guachipelín",
+      "position": {
+        "lat": 9.9406105,
+        "lng": -84.1552983
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/SJ52-A.webp",
+      "imageAlt": "Cara SJ52-A · La Casita / Distrito Cuatro"
+    },
+    {
+      "id": "ACT-225",
+      "code": "SJ52-C",
+      "structureId": "SJ52",
+      "face": "C",
+      "title": "La Casita / Distrito Cuatro",
+      "province": "San José",
+      "address": "Frente al Centro Comercial Distrito Cuatro",
+      "district": "San Rafael",
+      "direction": "De Guachipelín hacia Escazú",
+      "position": {
+        "lat": 9.9406105,
+        "lng": -84.1552983
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/SJ52-C.webp",
+      "imageAlt": "Cara SJ52-C · La Casita / Distrito Cuatro"
+    },
+    {
+      "id": "ACT-226",
+      "code": "SJ53-A",
+      "structureId": "SJ53",
+      "face": "A",
+      "title": "El Precario",
+      "province": "San José",
+      "address": "Frente a Construplaza o de Multiplaza Escazú, 700 metros al oeste",
+      "district": "San Rafael",
+      "direction": "De Santa Ana hacia Escazú",
+      "position": {
+        "lat": 9.9477166,
+        "lng": -84.1590098
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ53-A.webp",
+      "imageAlt": "Cara SJ53-A · El Precario"
+    },
+    {
+      "id": "ACT-227",
+      "code": "SJ53-C",
+      "structureId": "SJ53",
+      "face": "C",
+      "title": "El Precario",
+      "province": "San José",
+      "address": "Frente a Construplaza o de Multiplaza Escazú, 700 metros al oeste",
+      "district": "San Rafael",
+      "direction": "De Escazú hacia Santa Ana",
+      "position": {
+        "lat": 9.9477166,
+        "lng": -84.1590098
+      },
+      "widthM": 12.6,
+      "heightM": 5,
+      "image": "/images/locations/SJ53-C.webp",
+      "imageAlt": "Cara SJ53-C · El Precario"
+    },
+    {
+      "id": "ACT-228",
+      "code": "SJ54-A",
+      "structureId": "SJ54",
+      "face": "A",
+      "title": "El Codo - Distrito 4",
+      "province": "San José",
+      "address": "100 metros al este del Centro Comercial Distrito Cuatro",
+      "district": "San Rafael",
+      "direction": "De McDonald’s o AMPM en sentido hacia Centro Comercial Distrito Cuatro, Guachipelín de Escazú",
+      "position": {
+        "lat": 9.93868,
+        "lng": -84.1533911
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/SJ54-A.webp",
+      "imageAlt": "Cara SJ54-A · El Codo - Distrito 4"
+    },
+    {
+      "id": "ACT-229",
+      "code": "SJ54-C",
+      "structureId": "SJ54",
+      "face": "C",
+      "title": "El Codo - Distrito 4",
+      "province": "San José",
+      "address": "100 metros al este del Centro Comercial Distrito Cuatro",
+      "district": "San Rafael",
+      "direction": "Del Centro comercial Distrito cuatro en sentido hacia la McDonald’s o AMPM,Guachipelin de Escazú",
+      "position": {
+        "lat": 9.93868,
+        "lng": -84.1533911
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/SJ54-C.webp",
+      "imageAlt": "Cara SJ54-C · El Codo - Distrito 4"
+    },
+    {
+      "id": "ACT-230",
+      "code": "SJ55-A",
+      "structureId": "SJ55",
+      "face": "A",
+      "title": "UNIVERSIDAD LATINA  SJ55-A - 720 x 900",
+      "province": "San José",
+      "address": "Costado oeste de la Universidad Latina",
+      "district": "San Pedro",
+      "direction": "De la Universidad Latina hacia San Pedro",
+      "position": {
+        "lat": 9.9325605,
+        "lng": -84.0451302
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/SJ55-A.webp",
+      "imageAlt": "Cara SJ55-A · UNIVERSIDAD LATINA  SJ55-A - 720 x 900"
+    },
+    {
+      "id": "ACT-231",
+      "code": "SJ55-C",
+      "structureId": "SJ55",
+      "face": "C",
+      "title": "INCHCAPE   SJ55-C - 720 x 900",
+      "province": "San José",
+      "address": "Costado oeste de la Universidad Latina",
+      "district": "San Pedro",
+      "direction": "De San Pedro hacia Vargas Ayara - URC",
+      "position": {
+        "lat": 9.9325605,
+        "lng": -84.0451302
+      },
+      "widthM": 7.2,
+      "heightM": 9,
+      "image": "/images/locations/SJ55-C.webp",
+      "imageAlt": "Cara SJ55-C · INCHCAPE   SJ55-C - 720 x 900"
+    },
+    {
+      "id": "ACT-232",
+      "code": "SJ56-A",
+      "structureId": "SJ56",
+      "face": "A",
+      "title": "CLARO NAVIDAD SJ56-A - 3340 x 850",
+      "province": "San José",
+      "address": "Rotonda de las Garantías Sociales",
+      "district": "Zapote",
+      "direction": "Curridabat, Zapote, Tres Ríos, entre otros.",
+      "position": {
+        "lat": 9.9205895,
+        "lng": -84.0596796
+      },
+      "widthM": 33.4,
+      "heightM": 8.5,
+      "image": "/images/locations/SJ56-A.webp",
+      "imageAlt": "Cara SJ56-A · CLARO NAVIDAD SJ56-A - 3340 x 850"
+    },
+    {
+      "id": "ACT-233",
+      "code": "SJ57-A",
+      "structureId": "SJ57",
+      "face": "A",
+      "title": "Taller de Germán",
+      "province": "San José",
+      "address": "500 metros al oeste de la Rotonda de San Sebastián",
+      "district": "San Sebastián",
+      "direction": "De San Sebastián hacia Los Hatillos, La Uruca, Escazú y Ruta 27",
+      "position": {
+        "lat": 9.9101154,
+        "lng": -84.0903163
+      },
+      "widthM": 8.5,
+      "heightM": 11,
+      "image": "/images/locations/SJ57-A.webp",
+      "imageAlt": "Cara SJ57-A · Taller de Germán"
+    },
+    {
+      "id": "ACT-234",
+      "code": "SJ57-C",
+      "structureId": "SJ57",
+      "face": "C",
+      "title": "Taller de Germán",
+      "province": "San José",
+      "address": "500 metros al oeste de la Rotonda de San Sebastián",
+      "district": "San Sebastián",
+      "direction": "De Los Hatillos, La Uruca hacia San Sebastian,Zapote, San Pedro entre otros",
+      "position": {
+        "lat": 9.9101154,
+        "lng": -84.0903163
+      },
+      "widthM": 8.5,
+      "heightM": 11,
+      "image": "/images/locations/SJ57-C.webp",
+      "imageAlt": "Cara SJ57-C · Taller de Germán"
+    },
+    {
+      "id": "ACT-235",
+      "code": "SJ58",
+      "structureId": "SJ58",
+      "face": "Única",
+      "title": "Hacienda Vieja",
+      "province": "San José",
+      "address": "Hacienda Vieja de Curridabat, costado norte del Más x Menos",
+      "district": "Curridabat",
+      "direction": "De Cartago hacia San José",
+      "position": {
+        "lat": 9.910915,
+        "lng": -84.0371553
+      },
+      "widthM": 33,
+      "heightM": 8.5,
+      "image": null,
+      "imageAlt": "Cara SJ58 · Hacienda Vieja"
+    },
+    {
+      "id": "ACT-236",
+      "code": "SJ59-A",
+      "structureId": "SJ59",
+      "face": "A",
+      "title": "Liberty SJ59-A - 3330 x 850",
+      "province": "San José",
+      "address": "Del peaje de San Rafael de Alajuela, 500 metros al este",
+      "district": "San Rafael",
+      "direction": "De Ruta 27 del peaje hacia San Rafael de Alajuela",
+      "position": {
+        "lat": 9.9475299,
+        "lng": -84.2320071
+      },
+      "widthM": 33.3,
+      "heightM": 8.5,
+      "image": "/images/locations/SJ59-A.webp",
+      "imageAlt": "Cara SJ59-A · Liberty SJ59-A - 3330 x 850"
+    },
+    {
+      "id": "ACT-307",
+      "code": "SJ61 - A y C (Completo)",
+      "structureId": "SJ61",
+      "face": "A y C · Completo",
+      "title": "Matra",
+      "province": "San José",
+      "address": "Radial Belen - Santa Ana antiguas instalaciones Matra",
+      "district": "Pozos",
+      "direction": "Radial Belén - Santa Ana",
+      "position": {
+        "lat": 9.9514187,
+        "lng": -84.1934351
+      },
+      "widthM": 71.1,
+      "heightM": 4.9,
+      "image": null,
+      "imageAlt": "Cara SJ61 - A y C (Completo) · Matra"
+    },
+    {
+      "id": "ACT-240",
+      "code": "SJ62-A",
+      "structureId": "SJ62",
+      "face": "A",
+      "title": "Alto de las Palomas",
+      "province": "San José",
+      "address": "400 metros al este de la entrada al Condominio Villarreal",
+      "district": "Pozos",
+      "direction": "De Santa Ana hacia San José",
+      "position": {
+        "lat": 9.94344724691694,
+        "lng": -84.16879809159005
+      },
+      "widthM": 34.8,
+      "heightM": 9,
+      "image": "/images/locations/SJ62-A.webp",
+      "imageAlt": "Cara SJ62-A · Alto de las Palomas"
+    },
+    {
+      "id": "ACT-250",
+      "code": "SJ62-C",
+      "structureId": "SJ62",
+      "face": "C",
+      "title": "Alto de las Palomas",
+      "province": "San José",
+      "address": "400 metros al este de la entrada al Condominio Villarreal",
+      "district": "Pozos",
+      "direction": "De San José hacia Santa Ana",
+      "position": {
+        "lat": 9.94344724691694,
+        "lng": -84.16879809159005
+      },
+      "widthM": 34.8,
+      "heightM": 9,
+      "image": "/images/locations/SJ62-C.webp",
+      "imageAlt": "Cara SJ62-C · Alto de las Palomas"
+    },
+    {
+      "id": "ACT-316",
+      "code": "SJ63-A",
+      "structureId": "SJ63",
+      "face": "A",
+      "title": "Alto de las Palomas",
+      "province": "San José",
+      "address": "600 metros este de la entrada al Condominio Villa Real",
+      "district": "Pozos",
+      "direction": "De Santa Ana hacia San José",
+      "position": {
+        "lat": 9.944292659788339,
+        "lng": -84.16687763000736
+      },
+      "widthM": 33.3,
+      "heightM": 8.5,
+      "image": "/images/locations/SJ63-A.webp",
+      "imageAlt": "Cara SJ63-A · Alto de las Palomas"
+    }
+  ]
+}

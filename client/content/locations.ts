@@ -1,102 +1,69 @@
-﻿import rawLocations from "@/content/publiex-locations.json";
-import { publiexAsset } from "@/lib/assets";
-
-export type LocationCategory =
-  | "Valla unipolar"
-  | "Mega landmark"
-  | "Circuito rotativo"
-  | "DOOH"
-  | "Trenes";
+import catalog from "./billboards.generated.json";
 
 export type PubliexLocation = {
   id: string;
   code: string;
+  structureId: string;
+  face: string;
   title: string;
   province: string;
-  solution: string;
-  objective: string;
-  category: LocationCategory;
-  description: string;
-  context: string;
-  reading: string;
-  image: string;
-  imageAlt: string;
-  position: google.maps.LatLngLiteral;
-  illuminated: boolean;
-};
-
-type RawPubliexLocation = {
-  id: string;
-  code: string;
-  name: string;
-  province: string;
-  position: google.maps.LatLngLiteral;
   address: string;
-  faceDirection: string;
-  backDirection: string;
-  dimensions: string;
-  area: string;
+  district: string;
+  direction: string;
+  position: { lat: number; lng: number };
+  widthM: number | null;
+  heightM: number | null;
+  image: string | null;
+  imageAlt: string;
 };
 
-export const categoryStyles: Record<LocationCategory, string> = {
-  "Valla unipolar": "bg-[#2859c7]",
-  "Mega landmark": "bg-publiex-red",
-  "Circuito rotativo": "bg-[#3f2b78]",
-  DOOH: "bg-[#4597bf]",
-  Trenes: "bg-[#3d8b62]",
+export type BillboardStructure = {
+  id: string;
+  title: string;
+  position: PubliexLocation["position"];
+  faces: PubliexLocation[];
 };
 
-function getLocationCategory(location: RawPubliexLocation): LocationCategory {
-  return location.name.toLowerCase().includes("landmark")
-    ? "Mega landmark"
-    : "Valla unipolar";
-}
+export const publiexLocations: PubliexLocation[] = catalog.faces;
 
-function getLocationTitle(location: RawPubliexLocation) {
-  const codePattern = new RegExp(`^${location.code}\\.?\\s*`, "i");
-
-  return location.name.replace(codePattern, "").trim() || location.name;
-}
-
-function getLocationContext(location: RawPubliexLocation) {
-  const details = [location.dimensions, location.area].filter(Boolean);
-
-  return details.length ? details.join(" · ") : "Formato exterior";
-}
-
-function getLocationReading(location: RawPubliexLocation) {
-  const directions = [location.faceDirection, location.backDirection].filter(
-    Boolean,
+// Faces remain separate saleable records; the map gets one marker per structure.
+export function groupBillboardFaces(
+  faces: PubliexLocation[],
+): BillboardStructure[] {
+  const groups = new Map<string, BillboardStructure>();
+  for (const face of faces) {
+    const group = groups.get(face.structureId);
+    if (group) group.faces.push(face);
+    else
+      groups.set(face.structureId, {
+        id: face.structureId,
+        title: face.title,
+        position: face.position,
+        faces: [face],
+      });
+  }
+  return [...groups.values()].sort((a, b) =>
+    a.id.localeCompare(b.id, "es", { numeric: true }),
   );
-
-  return directions.length ? directions.join(" / ") : "Lectura vehicular";
 }
 
-// Excel inventory mapped into the UI and Google Maps data model.
-export const publiexLocations: PubliexLocation[] = (
-  rawLocations as RawPubliexLocation[]
-).map((location) => {
-  const category = getLocationCategory(location);
-  const image =
-    category === "Mega landmark"
-      ? publiexAsset("locations-selection-thumb.webp")
-      : publiexAsset("locations-campaign.webp");
-
-  return {
-    id: location.id,
-    code: location.code,
-    title: getLocationTitle(location),
-    province: location.province,
-    solution: category === "Mega landmark" ? "Mega Landmarks" : "Vallas Unipolares",
-    objective: "Cobertura exterior",
-    category,
-    description: location.address || location.name,
-    context: getLocationContext(location),
-    reading: getLocationReading(location),
-    image,
-    imageAlt: `${category} Publiex ${location.code}`,
-    position: location.position,
-    illuminated: false,
-  };
-});
-
+export function filterBillboardFaces(
+  faces: PubliexLocation[],
+  province: string,
+  search: string,
+) {
+  const normalize = (value: string) =>
+    value
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase();
+  const query = normalize(search.trim());
+  return faces.filter(
+    (face) =>
+      (!province || face.province === province) &&
+      (!query ||
+        normalize(
+          `${face.code} ${face.title} ${face.address} ${face.district}`,
+        ).includes(query)),
+  );
+}

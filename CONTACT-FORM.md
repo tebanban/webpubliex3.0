@@ -29,6 +29,17 @@ https://your-domain.com/send-mail.php
 
 ## Submitted Fields
 
+The Location Finder also attaches `locationIds`, an optional list of up to 50
+unique saved face IDs. The form shows these faces before sending. The PHP endpoint
+resolves their codes and directions from the generated `public/catalog/billboards.json`
+and includes them in both emails. It rejects unknown or duplicate IDs and malformed
+lists. Empty selections continue to support ordinary contact requests.
+
+Run `pnpm catalog:generate` after updating the source catalog or its images. Vite
+also generates the sanitized client and server catalogs when starting development
+or building. Deploy the generated `catalog/billboards.json` beside `send-mail.php`.
+Keep the raw source export outside `public/`.
+
 The React form currently sends:
 
 - `objetivo`: campaign objective. Required.

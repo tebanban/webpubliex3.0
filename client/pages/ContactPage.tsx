@@ -1,6 +1,7 @@
 import { type ChangeEvent, type FormEvent, useState } from "react";
 
 import { SectionLabel } from "@/components/site/SectionLabel";
+import { useLocationShortlist } from "@/hooks/use-location-shortlist";
 
 type ContactFormData = {
   objetivo: string;
@@ -35,6 +36,7 @@ const selectClassName = `${inputClassName} bg-white text-black`;
 const errorClassName = "border-publiex-red ring-1 ring-publiex-red";
 
 export default function ContactPage() {
+  const shortlist = useLocationShortlist();
   const [formData, setFormData] = useState<ContactFormData>(initialFormData);
   const [errors, setErrors] = useState<Partial<ContactFormData>>({});
   const [status, setStatus] = useState<SubmitStatus>("idle");
@@ -65,7 +67,9 @@ export default function ContactPage() {
   };
 
   const handleChange = (
-    event: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>,
+    event: ChangeEvent<
+      HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
+    >,
   ) => {
     const { name, value } = event.target;
 
@@ -89,7 +93,7 @@ export default function ContactPage() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, locationIds: shortlist.ids }),
       });
       const result = await response.json();
 
@@ -135,6 +139,48 @@ export default function ContactPage() {
             onSubmit={handleSubmit}
             noValidate
           >
+            {/* Attach verified face IDs; the server resolves their public codes. */}
+            {shortlist.faces.length > 0 && (
+              <section
+                aria-label="Ubicaciones seleccionadas"
+                className="rounded border bg-slate-50 p-4 md:col-span-2 [--publiex-paragraph-font-size:0.875rem]"
+              >
+                <h2 className="font-raleway text-lg font-semibold">
+                  Ubicaciones para su propuesta
+                </h2>
+                <ul className="mt-3 space-y-2 text-sm">
+                  {shortlist.faces.map((face) => (
+                    <li
+                      key={face.id}
+                      className="flex items-center justify-between gap-3"
+                    >
+                      <span>
+                        <strong>{face.code}</strong> · {face.title}
+                      </span>
+                      <button
+                        type="button"
+                        aria-label={`Quitar ${face.code}`}
+                        disabled={status === "submitting"}
+                        onClick={() => shortlist.remove(face.id)}
+                        className="min-h-11 underline"
+                      >
+                        Quitar
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+                <p>La disponibilidad será confirmada por nuestro equipo.</p>
+                {status === "success" && (
+                  <button
+                    type="button"
+                    onClick={shortlist.clear}
+                    className="mt-3 min-h-11 underline"
+                  >
+                    Vaciar selección enviada
+                  </button>
+                )}
+              </section>
+            )}
             {/* Hidden spam trap */}
             <label className="hidden" aria-hidden="true">
               Website
@@ -285,8 +331,7 @@ export default function ContactPage() {
             )}
             {status === "error" && (
               <p className="text-sm font-light text-publiex-red md:col-span-2">
-                Error al enviar la solicitud. Por favor, intente de
-                nuevo.
+                Error al enviar la solicitud. Por favor, intente de nuevo.
               </p>
             )}
             <button

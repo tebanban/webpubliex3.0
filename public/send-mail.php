@@ -46,6 +46,42 @@ if (!filter_var($data["correo"], FILTER_VALIDATE_EMAIL)) {
     exit();
 }
 
+// Validate shortlist IDs against the public catalog generated from the source.
+$selected_ids = $data["locationIds"] ?? [];
+if (!is_array($selected_ids) || array_values($selected_ids) !== $selected_ids || count($selected_ids) > 50) {
+    http_response_code(400);
+    echo json_encode(["sent" => false, "message" => "Selección de ubicaciones inválida."]);
+    exit();
+}
+$selected_locations_html = "";
+if (count($selected_ids) > 0) {
+    $catalog_path = __DIR__ . "/catalog/billboards.json";
+    $catalog = is_file($catalog_path) ? json_decode(file_get_contents($catalog_path), true) : null;
+    if (!is_array($catalog) || !isset($catalog["faces"]) || !is_array($catalog["faces"])) {
+        http_response_code(503);
+        echo json_encode(["sent" => false, "message" => "No se pudo verificar la selección. Intente nuevamente."]);
+        exit();
+    }
+    $faces_by_id = [];
+    foreach ($catalog["faces"] as $face) {
+        $faces_by_id[$face["id"]] = $face;
+    }
+    $seen_ids = [];
+    $items = "";
+    foreach ($selected_ids as $id) {
+        if (!is_string($id) || !isset($faces_by_id[$id]) || isset($seen_ids[$id])) {
+            http_response_code(400);
+            echo json_encode(["sent" => false, "message" => "Una ubicación seleccionada no es válida."]);
+            exit();
+        }
+        $seen_ids[$id] = true;
+        $face = $faces_by_id[$id];
+        $description = $face["code"] . " · " . $face["title"] . " · " . $face["direction"];
+        $items .= "<li>" . htmlspecialchars($description, ENT_QUOTES, "UTF-8") . "</li>";
+    }
+    $selected_locations_html = "<h4>Caras seleccionadas para propuesta</h4><ul>" . $items . "</ul>";
+}
+
 // Mailbox configuration. The sender should exist in the hosting control panel.
 $to = "trafico1@publiexcr.com";
 $from_email = "website@publiexcr.com";
@@ -83,6 +119,7 @@ $email_content = "
     <p><strong>Zona de interés:</strong> {$zone}</p>
     <p><strong>Nivel de cobertura:</strong> {$coverage}</p>
     <p><strong>Nota:</strong><br>" . nl2br($note) . "</p>
+    {$selected_locations_html}
 </body>
 </html>
 ";
@@ -104,6 +141,7 @@ $confirmation_content = "
     <p><strong>Objetivo:</strong> {$goal}</p>
     <p><strong>Zona de interés:</strong> {$zone}</p>
     <p><strong>Nivel de cobertura:</strong> {$coverage}</p>
+    {$selected_locations_html}
     <p>Este correo confirma que su mensaje fue recibido correctamente.</p>
 </body>
 </html>

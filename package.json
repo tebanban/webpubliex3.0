@@ -9,7 +9,8 @@
     "test": "vitest --run",
     "format.fix": "prettier --write .",
     "typecheck": "tsc",
-    "check:assets": "node scripts/check-assets.mjs"
+    "check:assets": "node scripts/check-assets.mjs",
+    "catalog:generate": "node scripts/generate-billboard-catalog.mjs"
   },
   "dependencies": {
     "@react-google-maps/api": "^2.20.8"
