@@ -22,7 +22,7 @@ export function BillboardPreview({
       <BillboardImage
         src={face.image}
         alt={face.imageAlt}
-        className="aspect-video w-full rounded"
+        className="aspect-[1458/923] w-full rounded"
         fit="contain"
       />
       <p className="font-bold text-publiex-blue">{face.code}</p>
