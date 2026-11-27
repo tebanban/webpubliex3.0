@@ -48,6 +48,7 @@ record into a public object. The allowlisted fields are:
 - Stable face ID, full code, structure ID, and face label.
 - Public face code as the title, province, address, district, and viewing direction.
 - Latitude/longitude and numeric dimensions when available.
+- Size category from the source `sizeCategory` field.
 - Exact image URL or `null`, plus alternative text.
 
 Internal aliases are excluded from titles, image descriptions, search, previews,
@@ -106,8 +107,11 @@ regenerate the catalog to replace their placeholders.
 
 ## Browsing and preview behavior
 
-Visitors filter by province or search by code, province, address, or district. Search
-ignores case and accents. Counts distinguish structures from faces.
+Visitors filter by province and size category, or search by code, province, address, or district. Search
+ignores case and accents. Size options are populated from the catalog's
+`sizeCategory` values (currently small, medium, large, and landmark), and combine
+with province and search using AND. Resetting filters clears size as well. Counts
+distinguish structures from faces; saved selections remain unchanged by filtering.
 
 A marker opens the structure's last inspected face, or its first available face.
 The preview contains face controls, image, full code as its main title, address, direction,

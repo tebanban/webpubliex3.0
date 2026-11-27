@@ -41,6 +41,18 @@ describe("public billboard catalog", () => {
       /private|internal|reservations|jiraKey|slideBlueTop|secret|visible/,
     );
   });
+  it("exports the source size category without inferring missing categories", () => {
+    const result = createPublicCatalog(
+      {
+        data: [{ ...face(), sizeCategory: " Large " }, face("SJ15-A", "ACT-2")],
+      },
+      new Set(),
+    );
+    expect(result.faces.map((item) => item.sizeCategory)).toEqual([
+      "large",
+      "",
+    ]);
+  });
   it("keeps opposite faces distinct within the same structure", () => {
     const result = createPublicCatalog(
       {

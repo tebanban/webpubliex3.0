@@ -14,6 +14,10 @@ describe("location finder without Google Maps", () => {
     );
     expect(html).toContain("El mapa no está disponible");
     expect(html).toContain("Explorar desde la lista");
+    expect(html).toContain("Todos los tamaños");
+    for (const category of ["small", "medium", "large", "landmark"]) {
+      expect(html).toContain(`value="${category}"`);
+    }
     expect(html).toContain("SJ14-A");
     expect(html).toContain("SJ14-C");
     expect(html).toContain("Aún no ha guardado ubicaciones");

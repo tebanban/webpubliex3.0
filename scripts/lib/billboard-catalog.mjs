@@ -67,7 +67,9 @@ export function createPublicCatalog(source, imageFiles) {
         throw new Error(`Conflicting face coordinates: ${structure.id}`);
       }
       positions.set(structure.id, position);
-      const filename = faceImageOverrides.get(record.code.toUpperCase()) ?? `${record.code}.webp`;
+      const filename =
+        faceImageOverrides.get(record.code.toUpperCase()) ??
+        `${record.code}.webp`;
       const text = (value) => (typeof value === "string" ? value.trim() : "");
       const dimension = (value) =>
         typeof value === "number" && Number.isFinite(value) && value > 0
@@ -81,6 +83,8 @@ export function createPublicCatalog(source, imageFiles) {
         face: structure.face,
         // Alias is internal: the public identity is always the full face code.
         title: record.code,
+        sizeCategory: text(record.sizeCategory).toLowerCase(),
+        sizeCategory: text(record.sizeCategory).toLowerCase(),
         province: text(record.location),
         address: text(record.address),
         district: text(record.district),

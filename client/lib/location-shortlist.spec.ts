@@ -50,6 +50,48 @@ describe("location finder data and selections", () => {
       [],
     );
   });
+  it("combines size, province and search while allowing all sizes by default", () => {
+    const faces = [
+      {
+        ...publiexLocations[0],
+        id: "one",
+        code: "TEST-A",
+        province: "Alajuela",
+        sizeCategory: "medium",
+      },
+      {
+        ...publiexLocations[0],
+        id: "two",
+        code: "TEST-C",
+        province: "Alajuela",
+        sizeCategory: "large",
+      },
+      {
+        ...publiexLocations[0],
+        id: "three",
+        code: "OTHER-A",
+        province: "San José",
+        sizeCategory: "medium",
+      },
+    ];
+    expect(
+      filterBillboardFaces(faces, "Alajuela", "TEST", "medium").map(
+        (face) => face.id,
+      ),
+    ).toEqual(["one"]);
+    expect(
+      filterBillboardFaces(faces, "Alajuela", "TEST", "large").map(
+        (face) => face.id,
+      ),
+    ).toEqual(["two"]);
+    expect(filterBillboardFaces(faces, "Alajuela", "TEST")).toHaveLength(2);
+    expect(filterBillboardFaces(faces, "Alajuela", "TEST", "landmark")).toEqual(
+      [],
+    );
+    expect(filterBillboardFaces(faces, "San José", "TEST", "medium")).toEqual(
+      [],
+    );
+  });
   it("does not mutate the inventory while filtering or grouping", () => {
     const snapshot = JSON.stringify(publiexLocations);
     groupBillboardFaces(filterBillboardFaces(publiexLocations, "San José", ""));

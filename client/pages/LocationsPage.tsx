@@ -28,6 +28,12 @@ const mapCenter = { lat: 9.96, lng: -84.05 };
 const defaultMapZoom = 9;
 const markerCodeZoom = 16;
 const clusterMaxZoom = markerCodeZoom - 1;
+const sizeCategoryOrder: Record<string, number> = {
+  small: 0,
+  medium: 1,
+  large: 2,
+  landmark: 3,
+};
 
 const mapOptions: google.maps.MapOptions = {
   clickableIcons: false,
@@ -273,6 +279,7 @@ function GoogleLocationsMap({
 export default function LocationsPage() {
   const [province, setProvince] = useState("");
   const [search, setSearch] = useState("");
+  const [sizeCategory, setSizeCategory] = useState("");
   const [activeFaceId, setActiveFaceId] = useState<string | null>(null);
   const [previewOpen, setPreviewOpen] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
@@ -283,9 +290,23 @@ export default function LocationsPage() {
     () => [...new Set(publiexLocations.map((face) => face.province))].sort(),
     [],
   );
+  const sizeCategories = useMemo(
+    () =>
+      [
+        ...new Set(
+          publiexLocations.map((face) => face.sizeCategory).filter(Boolean),
+        ),
+      ].sort(
+        (a, b) =>
+          (sizeCategoryOrder[a] ?? 4) - (sizeCategoryOrder[b] ?? 4) ||
+          a.localeCompare(b),
+      ),
+    [],
+  );
   const filtered = useMemo(
-    () => filterBillboardFaces(publiexLocations, province, search),
-    [province, search],
+    () =>
+      filterBillboardFaces(publiexLocations, province, search, sizeCategory),
+    [province, search, sizeCategory],
   );
   const structures = useMemo(() => groupBillboardFaces(filtered), [filtered]);
   const selected = filtered.find((face) => face.id === activeFaceId) ?? null;
@@ -409,6 +430,21 @@ export default function LocationsPage() {
                     </select>
                   </label>
                   <label className="block">
+                    Tamaño
+                    <select
+                      value={sizeCategory}
+                      onChange={(event) => setSizeCategory(event.target.value)}
+                      className="mt-2 min-h-11 w-full rounded border bg-white px-2 text-sm"
+                    >
+                      <option value="">Todos los tamaños</option>
+                      {sizeCategories.map((value) => (
+                        <option key={value} value={value}>
+                          {value.charAt(0).toUpperCase() + value.slice(1)}
+                        </option>
+                      ))}
+                    </select>
+                  </label>
+                  <label className="block">
                     Código o ubicación
                     <input
                       value={search}
@@ -423,6 +459,7 @@ export default function LocationsPage() {
                     onClick={() => {
                       setProvince("");
                       setSearch("");
+                      setSizeCategory("");
                     }}
                     className="min-h-11 underline"
                   >

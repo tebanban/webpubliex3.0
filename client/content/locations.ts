@@ -6,6 +6,7 @@ export type PubliexLocation = {
   structureId: string;
   face: string;
   title: string;
+  sizeCategory: string;
   province: string;
   address: string;
   district: string;
@@ -51,6 +52,7 @@ export function filterBillboardFaces(
   faces: PubliexLocation[],
   province: string,
   search: string,
+  sizeCategory = "",
 ) {
   const normalize = (value: string) =>
     value
@@ -61,6 +63,7 @@ export function filterBillboardFaces(
   return faces.filter(
     (face) =>
       (!province || face.province === province) &&
+      (!sizeCategory || face.sizeCategory === sizeCategory) &&
       (!query ||
         normalize(
           `${face.code} ${face.province} ${face.address} ${face.district}`,
