@@ -11,7 +11,7 @@ const caseStudies = [
       "en punto de",
       "referencia",
     ],
-    image: "cases-landmark.webp",
+    image: "cases-landmark-v2.webp",
     layout: "imageTop",
     body: [
       "Una ubicación dominante puede cambiar la forma en que una marca aparece en la ciudad. Este caso muestra cómo un formato de gran escala ayuda a construir recordación, lectura inmediata y presencia sostenida en un corredor de alto tránsito.",

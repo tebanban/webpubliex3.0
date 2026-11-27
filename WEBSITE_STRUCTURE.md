@@ -416,7 +416,7 @@ Current sections:
    - Eyebrow: Noticias.
    - Headline: "Campañas que se volvieron parte del viaje".
    - Three large white case blocks:
-     - Landmark: image-top layout using `cases-landmark.webp`.
+     - Landmark: image-top layout using `cases-landmark-v2.webp`.
      - Trenes: alternating image-right layout using `cases-trenes.webp`.
      - DOOH: image-top layout using `cases-dooh.mp4`.
    - Case content is driven by the local `caseStudies` array.
