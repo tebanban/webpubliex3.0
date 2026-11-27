@@ -22,28 +22,30 @@ export function BillboardPreview({
       <BillboardImage
         src={face.image}
         alt={face.imageAlt}
-        className="aspect-[1458/923] w-full rounded"
+        className="aspect-1458/923 w-full rounded"
         fit="contain"
       />
-      <h3 className="font-raleway text-2xl font-bold text-publiex-blue">
-        {face.code}
-      </h3>
-      <fieldset>
-        <legend className="mb-2 font-semibold">Cara de la valla</legend>
-        <div className="flex flex-wrap gap-2">
+      {/* Keep the face controls beside the code, wrapping for longer codes or more faces. */}
+      <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-2">
+        <h3 className="max-w-full font-raleway text-2xl font-bold text-publiex-blue">
+          {face.code}
+        </h3>
+        <div role="group" aria-label="Seleccionar cara" className="flex flex-wrap items-center gap-1">
+          <span className="mr-1 font-semibold">Cara:</span>
           {faces.map((item) => (
             <button
               key={item.id}
               type="button"
+              aria-label={`Seleccionar cara ${item.face}`}
               aria-pressed={item.id === face.id}
-              className={`min-h-11 rounded border px-3 ${item.id === face.id ? "bg-publiex-blue text-white" : "bg-white text-slate-700"}`}
+              className={`min-h-11 min-w-11 rounded border px-2 ${item.id === face.id ? "bg-publiex-blue text-white" : "bg-white text-slate-700"}`}
               onClick={() => onSelect(item.id)}
             >
               {item.face}
             </button>
           ))}
         </div>
-      </fieldset>
+      </div>
       <dl className="space-y-3 leading-relaxed">
         <div>
           <dt className="font-semibold">Ubicación</dt>
