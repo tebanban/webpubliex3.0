@@ -76,7 +76,7 @@ if (count($selected_ids) > 0) {
         }
         $seen_ids[$id] = true;
         $face = $faces_by_id[$id];
-        $description = $face["code"] . " · " . $face["title"] . " · " . $face["direction"];
+        $description = $face["code"] . " · " . $face["province"] . " · " . $face["direction"];
         $items .= "<li>" . htmlspecialchars($description, ENT_QUOTES, "UTF-8") . "</li>";
     }
     $selected_locations_html = "<h4>Caras seleccionadas para propuesta</h4><ul>" . $items . "</ul>";

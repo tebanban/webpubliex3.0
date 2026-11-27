@@ -37,7 +37,7 @@ export function groupBillboardFaces(
     else
       groups.set(face.structureId, {
         id: face.structureId,
-        title: face.title,
+        title: face.province,
         position: face.position,
         faces: [face],
       });
@@ -63,7 +63,7 @@ export function filterBillboardFaces(
       (!province || face.province === province) &&
       (!query ||
         normalize(
-          `${face.code} ${face.title} ${face.address} ${face.district}`,
+          `${face.code} ${face.province} ${face.address} ${face.district}`,
         ).includes(query)),
   );
 }

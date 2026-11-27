@@ -155,7 +155,7 @@ export default function ContactPage() {
                       className="flex items-center justify-between gap-3"
                     >
                       <span>
-                        <strong>{face.code}</strong> · {face.title}
+                        <strong>{face.code}</strong> · {face.province}
                       </span>
                       <button
                         type="button"

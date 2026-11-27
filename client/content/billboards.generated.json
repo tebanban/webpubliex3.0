@@ -6,7 +6,7 @@
       "code": "AL1-A",
       "structureId": "AL1",
       "face": "A",
-      "title": "Villa Bonita",
+      "title": "AL1-A",
       "province": "Alajuela",
       "address": "1 kilómetro oeste del Aeropuerto Internacional Juan Santamaría",
       "district": "San Antonio",
@@ -18,14 +18,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/AL1-A.webp",
-      "imageAlt": "Cara AL1-A · Villa Bonita"
+      "imageAlt": "Valla Publiex · Cara AL1-A"
     },
     {
       "id": "ACT-15",
       "code": "AL1-C",
       "structureId": "AL1",
       "face": "C",
-      "title": "Villa Bonita",
+      "title": "AL1-C",
       "province": "Alajuela",
       "address": "1 kilómetro oeste del Aeropuerto Internacional Juan Santamaría",
       "district": "San Antonio",
@@ -37,14 +37,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/AL1-C.webp",
-      "imageAlt": "Cara AL1-C · Villa Bonita"
+      "imageAlt": "Valla Publiex · Cara AL1-C"
     },
     {
       "id": "ACT-16",
       "code": "AL2-A",
       "structureId": "AL2",
       "face": "A",
-      "title": "Rio Segundo",
+      "title": "AL2-A",
       "province": "Alajuela",
       "address": "Río Segundo de Alajuela, 200 metros al oeste del antiguo peaje de la autopista General Cañas",
       "district": "Río Segundo",
@@ -56,14 +56,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/AL2-A.webp",
-      "imageAlt": "Cara AL2-A · Rio Segundo"
+      "imageAlt": "Valla Publiex · Cara AL2-A"
     },
     {
       "id": "ACT-17",
       "code": "AL2-C",
       "structureId": "AL2",
       "face": "C",
-      "title": "Rio Segundo",
+      "title": "AL2-C",
       "province": "Alajuela",
       "address": "Río Segundo de Alajuela, 200 metros al oeste del antiguo peaje de la autopista General Cañas",
       "district": "Río Segundo",
@@ -75,14 +75,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/AL2-C.webp",
-      "imageAlt": "Cara AL2-C · Rio Segundo"
+      "imageAlt": "Valla Publiex · Cara AL2-C"
     },
     {
       "id": "ACT-18",
       "code": "AL3-A",
       "structureId": "AL3",
       "face": "A",
-      "title": "Starbucks Holiday AL3-A - 720 x 900",
+      "title": "AL3-A",
       "province": "Alajuela",
       "address": "Costado norte de la Panasonic",
       "district": "San Rafael",
@@ -94,14 +94,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/AL3-A.webp",
-      "imageAlt": "Cara AL3-A · Starbucks Holiday AL3-A - 720 x 900"
+      "imageAlt": "Valla Publiex · Cara AL3-A"
     },
     {
       "id": "ACT-19",
       "code": "AL3-C",
       "structureId": "AL3",
       "face": "C",
-      "title": "AL3-C - 720 x 900 ⚠️⚠️⚠️",
+      "title": "AL3-C",
       "province": "Alajuela",
       "address": "Costado norte de la Panasonic",
       "district": "San Rafael",
@@ -113,14 +113,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/AL3-C.webp",
-      "imageAlt": "Cara AL3-C · AL3-C - 720 x 900 ⚠️⚠️⚠️"
+      "imageAlt": "Valla Publiex · Cara AL3-C"
     },
     {
       "id": "ACT-20",
       "code": "AL4-A",
       "structureId": "AL4",
       "face": "A",
-      "title": "DOS PINOS Té melocotón NAVIDAD AL4-A - 1440 x 600",
+      "title": "AL4-A",
       "province": "Alajuela",
       "address": "Costado norte del Mall Internacional",
       "district": "Alajuela",
@@ -132,14 +132,14 @@
       "widthM": 14.4,
       "heightM": 6,
       "image": "/images/locations/AL4-A.webp",
-      "imageAlt": "Cara AL4-A · DOS PINOS Té melocotón NAVIDAD AL4-A - 1440 x 600"
+      "imageAlt": "Valla Publiex · Cara AL4-A"
     },
     {
       "id": "ACT-21",
       "code": "AL4-C",
       "structureId": "AL4",
       "face": "C",
-      "title": "BANCO POPULAR AL4-C - 1440 x 600",
+      "title": "AL4-C",
       "province": "Alajuela",
       "address": "Costado norte del Mall Internacional",
       "district": "Alajuela",
@@ -151,14 +151,14 @@
       "widthM": 14.4,
       "heightM": 6,
       "image": "/images/locations/AL4-C.webp",
-      "imageAlt": "Cara AL4-C · BANCO POPULAR AL4-C - 1440 x 600"
+      "imageAlt": "Valla Publiex · Cara AL4-C"
     },
     {
       "id": "ACT-22",
       "code": "AL5-A",
       "structureId": "AL5",
       "face": "A",
-      "title": "Juan Carlos",
+      "title": "AL5-A",
       "province": "Alajuela",
       "address": "Costado norte de la Panasonic",
       "district": "San Rafael",
@@ -170,14 +170,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/AL5-A.webp",
-      "imageAlt": "Cara AL5-A · Juan Carlos"
+      "imageAlt": "Valla Publiex · Cara AL5-A"
     },
     {
       "id": "ACT-23",
       "code": "AL5-C",
       "structureId": "AL5",
       "face": "C",
-      "title": "Juan Carlos",
+      "title": "AL5-C",
       "province": "Alajuela",
       "address": "Costado norte de la Panasonic",
       "district": "San Rafael",
@@ -189,14 +189,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/AL5-C.webp",
-      "imageAlt": "Cara AL5-C · Juan Carlos"
+      "imageAlt": "Valla Publiex · Cara AL5-C"
     },
     {
       "id": "ACT-24",
       "code": "AL6-A",
       "structureId": "AL6",
       "face": "A",
-      "title": "Orotina Centro La Señora / Palos del Coyol /",
+      "title": "AL6-A",
       "province": "Alajuela",
       "address": "De la intersección principal de Orotina, 500 metros al este",
       "district": "Orotina",
@@ -208,14 +208,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/AL6-A.webp",
-      "imageAlt": "Cara AL6-A · Orotina Centro La Señora / Palos del Coyol /"
+      "imageAlt": "Valla Publiex · Cara AL6-A"
     },
     {
       "id": "ACT-25",
       "code": "AL6-C",
       "structureId": "AL6",
       "face": "C",
-      "title": "Orotina Centro La Señora / Palos del Coyol /",
+      "title": "AL6-C",
       "province": "Alajuela",
       "address": "De la intersección principal de Orotina, 500 metros al este",
       "district": "Orotina",
@@ -227,14 +227,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/AL6-C.webp",
-      "imageAlt": "Cara AL6-C · Orotina Centro La Señora / Palos del Coyol /"
+      "imageAlt": "Valla Publiex · Cara AL6-C"
     },
     {
       "id": "ACT-26",
       "code": "AL7-A",
       "structureId": "AL7",
       "face": "A",
-      "title": "Los Viejitos -- CAR Alajuela",
+      "title": "AL7-A",
       "province": "Alajuela",
       "address": "Contiguo a la intersección de la rotonda Turrúcares y La Garita",
       "district": "Turrúcares",
@@ -246,14 +246,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/AL7-A.webp",
-      "imageAlt": "Cara AL7-A · Los Viejitos -- CAR Alajuela"
+      "imageAlt": "Valla Publiex · Cara AL7-A"
     },
     {
       "id": "ACT-27",
       "code": "AL7-C",
       "structureId": "AL7",
       "face": "C",
-      "title": "Los Viejitos  -- CAR Alajuela",
+      "title": "AL7-C",
       "province": "Alajuela",
       "address": "Contiguo a la intersección de la rotonda Turrúcares y La Garita",
       "district": "Turrúcares",
@@ -265,14 +265,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/AL7-C.webp",
-      "imageAlt": "Cara AL7-C · Los Viejitos  -- CAR Alajuela"
+      "imageAlt": "Valla Publiex · Cara AL7-C"
     },
     {
       "id": "ACT-28",
       "code": "AL8-A",
       "structureId": "AL8",
       "face": "A",
-      "title": "Peaje Atenas, Balsa de Atenas, Jorge Bolaños, PRECOVENSA",
+      "title": "AL8-A",
       "province": "Alajuela",
       "address": "Del peaje de Atenas, 400 metros oeste",
       "district": "Concepción",
@@ -284,14 +284,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/AL8-A.webp",
-      "imageAlt": "Cara AL8-A · Peaje Atenas, Balsa de Atenas, Jorge Bolaños, PRECOVENSA"
+      "imageAlt": "Valla Publiex · Cara AL8-A"
     },
     {
       "id": "ACT-29",
       "code": "AL8-C",
       "structureId": "AL8",
       "face": "C",
-      "title": "Peaje Atenas, PRECOVENSA",
+      "title": "AL8-C",
       "province": "Alajuela",
       "address": "Del peaje de Atenas, 400 metros oeste",
       "district": "Concepción",
@@ -303,14 +303,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/AL8-C.webp",
-      "imageAlt": "Cara AL8-C · Peaje Atenas, PRECOVENSA"
+      "imageAlt": "Valla Publiex · Cara AL8-C"
     },
     {
       "id": "ACT-30",
       "code": "AL9-A",
       "structureId": "AL9",
       "face": "A",
-      "title": "Balsa Atenas",
+      "title": "AL9-A",
       "province": "Alajuela",
       "address": "Del peaje de Atenas, 2 kilómetros oeste",
       "district": "Concepción",
@@ -322,14 +322,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/AL9-A.webp",
-      "imageAlt": "Cara AL9-A · Balsa Atenas"
+      "imageAlt": "Valla Publiex · Cara AL9-A"
     },
     {
       "id": "ACT-31",
       "code": "AL9-C",
       "structureId": "AL9",
       "face": "C",
-      "title": "Balsa Atenas",
+      "title": "AL9-C",
       "province": "Alajuela",
       "address": "Del peaje de Atenas, 2 kilómetros oeste",
       "district": "Concepción",
@@ -341,14 +341,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/AL9-C.webp",
-      "imageAlt": "Cara AL9-C · Balsa Atenas"
+      "imageAlt": "Valla Publiex · Cara AL9-C"
     },
     {
       "id": "ACT-32",
       "code": "AL10-A",
       "structureId": "AL10",
       "face": "A",
-      "title": "Peaje Orotina",
+      "title": "AL10-A",
       "province": "Alajuela",
       "address": "Del peaje de Orotina, 100 metros al este",
       "district": "Coyolar",
@@ -360,14 +360,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/AL10-A.webp",
-      "imageAlt": "Cara AL10-A · Peaje Orotina"
+      "imageAlt": "Valla Publiex · Cara AL10-A"
     },
     {
       "id": "ACT-33",
       "code": "AL10-C",
       "structureId": "AL10",
       "face": "C",
-      "title": "Peaje Orotina",
+      "title": "AL10-C",
       "province": "Alajuela",
       "address": "Del peaje de Orotina, 100 metros al este",
       "district": "Coyolar",
@@ -379,14 +379,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/AL10-C.webp",
-      "imageAlt": "Cara AL10-C · Peaje Orotina"
+      "imageAlt": "Valla Publiex · Cara AL10-C"
     },
     {
       "id": "ACT-315",
       "code": "AL11-A",
       "structureId": "AL11",
       "face": "A",
-      "title": "Turrúcares",
+      "title": "AL11-A",
       "province": "Alajuela",
       "address": "Zona de conexión de El Coyol - Guácima - Oeste del GAM",
       "district": "Turrúcares",
@@ -398,14 +398,14 @@
       "widthM": 33.3,
       "heightM": 8.5,
       "image": "/images/locations/AL11-A.webp",
-      "imageAlt": "Cara AL11-A · Turrúcares"
+      "imageAlt": "Valla Publiex · Cara AL11-A"
     },
     {
       "id": "ACT-34",
       "code": "AL12-A",
       "structureId": "AL12",
       "face": "A",
-      "title": "LOS SUEÑOS RESORT AND MARINA  AL12-A - 1260 x 500",
+      "title": "AL12-A",
       "province": "Alajuela",
       "address": "Costado sur del Centro de Alto Rendimiento (CAR)",
       "district": "San Antonio",
@@ -417,14 +417,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/AL12-A.webp",
-      "imageAlt": "Cara AL12-A · LOS SUEÑOS RESORT AND MARINA  AL12-A - 1260 x 500"
+      "imageAlt": "Valla Publiex · Cara AL12-A"
     },
     {
       "id": "ACT-35",
       "code": "AL12-C",
       "structureId": "AL12",
       "face": "C",
-      "title": "LOS SUEÑOS RESORT AND MARINA AL12-C - 1260 x 500",
+      "title": "AL12-C",
       "province": "Alajuela",
       "address": "Costado sur del Centro de Alto Rendimiento (CAR)",
       "district": "San Antonio",
@@ -436,14 +436,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/AL12-C.webp",
-      "imageAlt": "Cara AL12-C · LOS SUEÑOS RESORT AND MARINA AL12-C - 1260 x 500"
+      "imageAlt": "Valla Publiex · Cara AL12-C"
     },
     {
       "id": "ACT-36",
       "code": "AL13-A",
       "structureId": "AL13",
       "face": "A",
-      "title": "Proyecto Gol",
+      "title": "AL13-A",
       "province": "Alajuela",
       "address": "Instalaciones de Proyecto Goal",
       "district": "San Rafael",
@@ -455,14 +455,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/AL13-A.webp",
-      "imageAlt": "Cara AL13-A · Proyecto Gol"
+      "imageAlt": "Valla Publiex · Cara AL13-A"
     },
     {
       "id": "ACT-37",
       "code": "AL13-C",
       "structureId": "AL13",
       "face": "C",
-      "title": "Proyecto Gol",
+      "title": "AL13-C",
       "province": "Alajuela",
       "address": "Instalaciones de Proyecto Goal",
       "district": "San Rafael",
@@ -474,14 +474,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/AL13-C.webp",
-      "imageAlt": "Cara AL13-C · Proyecto Gol"
+      "imageAlt": "Valla Publiex · Cara AL13-C"
     },
     {
       "id": "ACT-38",
       "code": "AL14-A",
       "structureId": "AL14",
       "face": "A",
-      "title": "El Rodeo",
+      "title": "AL14-A",
       "province": "Alajuela",
       "address": "Costado sur del Restaurante El Rodeo",
       "district": "San Antonio",
@@ -493,14 +493,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/AL14-A.webp",
-      "imageAlt": "Cara AL14-A · El Rodeo"
+      "imageAlt": "Valla Publiex · Cara AL14-A"
     },
     {
       "id": "ACT-39",
       "code": "AL14-C",
       "structureId": "AL14",
       "face": "C",
-      "title": "El Rodeo",
+      "title": "AL14-C",
       "province": "Alajuela",
       "address": "Costado sur del Restaurante El Rodeo",
       "district": "San Antonio",
@@ -512,14 +512,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/AL14-C.webp",
-      "imageAlt": "Cara AL14-C · El Rodeo"
+      "imageAlt": "Valla Publiex · Cara AL14-C"
     },
     {
       "id": "ACT-40",
       "code": "AL15-A",
       "structureId": "AL15",
       "face": "A",
-      "title": "Linea del tren - Coyol",
+      "title": "AL15-A",
       "province": "Alajuela",
       "address": "600 metros al este de Dos Pinos",
       "district": "San Jose",
@@ -531,14 +531,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/AL15-A.webp",
-      "imageAlt": "Cara AL15-A · Linea del tren - Coyol"
+      "imageAlt": "Valla Publiex · Cara AL15-A"
     },
     {
       "id": "ACT-41",
       "code": "AL15-C",
       "structureId": "AL15",
       "face": "C",
-      "title": "Linea del tren - Coyol",
+      "title": "AL15-C",
       "province": "Alajuela",
       "address": "600 metros al este de Dos Pinos",
       "district": "San Jose",
@@ -550,14 +550,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/AL15-C.webp",
-      "imageAlt": "Cara AL15-C · Linea del tren - Coyol"
+      "imageAlt": "Valla Publiex · Cara AL15-C"
     },
     {
       "id": "ACT-42",
       "code": "AL16-A",
       "structureId": "AL16",
       "face": "A",
-      "title": "Proyecto gol",
+      "title": "AL16-A",
       "province": "Alajuela",
       "address": "Instalaciones de Proyecto Goal",
       "district": "San Rafael",
@@ -569,14 +569,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/AL16-A.webp",
-      "imageAlt": "Cara AL16-A · Proyecto gol"
+      "imageAlt": "Valla Publiex · Cara AL16-A"
     },
     {
       "id": "ACT-43",
       "code": "AL16-C",
       "structureId": "AL16",
       "face": "C",
-      "title": "Proyecto gol",
+      "title": "AL16-C",
       "province": "Alajuela",
       "address": "Instalaciones de Proyecto Goal",
       "district": "San Rafael",
@@ -588,14 +588,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/AL16-C.webp",
-      "imageAlt": "Cara AL16-C · Proyecto gol"
+      "imageAlt": "Valla Publiex · Cara AL16-C"
     },
     {
       "id": "ACT-44",
       "code": "AL17-A",
       "structureId": "AL17",
       "face": "A",
-      "title": "Little Caesars AL17-A - 720 x 900",
+      "title": "AL17-A",
       "province": "Alajuela",
       "address": "500 metros al norte de Mall Internacional",
       "district": "Alajuela",
@@ -607,14 +607,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/AL17-A.webp",
-      "imageAlt": "Cara AL17-A · Little Caesars AL17-A - 720 x 900"
+      "imageAlt": "Valla Publiex · Cara AL17-A"
     },
     {
       "id": "ACT-45",
       "code": "AL17-C",
       "structureId": "AL17",
       "face": "C",
-      "title": "CIRCUITO LAB. RAVEN DEKOFEN AL17-C - 720 x 900",
+      "title": "AL17-C",
       "province": "Alajuela",
       "address": "500 metros al norte de Mall Internacional",
       "district": "Alajuela",
@@ -626,14 +626,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/AL17-C.webp",
-      "imageAlt": "Cara AL17-C · CIRCUITO LAB. RAVEN DEKOFEN AL17-C - 720 x 900"
+      "imageAlt": "Valla Publiex · Cara AL17-C"
     },
     {
       "id": "ACT-46",
       "code": "AL18-A",
       "structureId": "AL18",
       "face": "A",
-      "title": "Épica producciones AL18-A - 720 x 900",
+      "title": "AL18-A",
       "province": "Alajuela",
       "address": "500 metros norte de Mall Internacional",
       "district": "Alajuela",
@@ -645,14 +645,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/AL18-A.webp",
-      "imageAlt": "Cara AL18-A · Épica producciones AL18-A - 720 x 900"
+      "imageAlt": "Valla Publiex · Cara AL18-A"
     },
     {
       "id": "ACT-47",
       "code": "AL18-C",
       "structureId": "AL18",
       "face": "C",
-      "title": "DENNYS AL18-C - 720 x 900",
+      "title": "AL18-C",
       "province": "Alajuela",
       "address": "500 metros norte de Mall Internacional",
       "district": "Alajuela",
@@ -664,14 +664,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/AL18-C.webp",
-      "imageAlt": "Cara AL18-C · DENNYS AL18-C - 720 x 900"
+      "imageAlt": "Valla Publiex · Cara AL18-C"
     },
     {
       "id": "ACT-48",
       "code": "AL19-A",
       "structureId": "AL19",
       "face": "A",
-      "title": "LOS SUEÑOS RESORT AND MARINA   AL19-A - 1260 x 500",
+      "title": "AL19-A",
       "province": "Alajuela",
       "address": "Costado norte del Centro de Alto Rendimiento (CAR)",
       "district": "Turrúcares",
@@ -683,14 +683,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/AL19-A.webp",
-      "imageAlt": "Cara AL19-A · LOS SUEÑOS RESORT AND MARINA   AL19-A - 1260 x 500"
+      "imageAlt": "Valla Publiex · Cara AL19-A"
     },
     {
       "id": "ACT-49",
       "code": "AL19-C",
       "structureId": "AL19",
       "face": "C",
-      "title": "LOS SUEÑOS RESORT AND MARINA   AL19-C - 1260 x 500",
+      "title": "AL19-C",
       "province": "Alajuela",
       "address": "Costado norte del Centro de Alto Rendimiento (CAR)",
       "district": "Turrúcares",
@@ -702,14 +702,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/AL19-C.webp",
-      "imageAlt": "Cara AL19-C · LOS SUEÑOS RESORT AND MARINA   AL19-C - 1260 x 500"
+      "imageAlt": "Valla Publiex · Cara AL19-C"
     },
     {
       "id": "ACT-304",
       "code": "AL22-A",
       "structureId": "AL22",
       "face": "A",
-      "title": "Doña Sady/ Aeropuerto",
+      "title": "AL22-A",
       "province": "Alajuela",
       "address": "Frente al Aeropuerto calle sentido San José Alajuela",
       "district": "Río Segundo",
@@ -721,14 +721,14 @@
       "widthM": 27.9,
       "heightM": 7.1,
       "image": "/images/locations/AL22-A.webp",
-      "imageAlt": "Cara AL22-A · Doña Sady/ Aeropuerto"
+      "imageAlt": "Valla Publiex · Cara AL22-A"
     },
     {
       "id": "ACT-51",
       "code": "CT1-A",
       "structureId": "CT1",
       "face": "A",
-      "title": "BCR ANUAL 2027 CT1-A - 1440 x 500",
+      "title": "CT1-A",
       "province": "Cartago",
       "address": "San Diego de Tres Ríos – 500 metros al oeste de Terramall",
       "district": "San Diego",
@@ -740,14 +740,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/CT1-A.webp",
-      "imageAlt": "Cara CT1-A · BCR ANUAL 2027 CT1-A - 1440 x 500"
+      "imageAlt": "Valla Publiex · Cara CT1-A"
     },
     {
       "id": "ACT-52",
       "code": "CT1-C",
       "structureId": "CT1",
       "face": "C",
-      "title": "LAB RAVEN TIOFLEX LA FARMA CT1-C - 1440 x 500",
+      "title": "CT1-C",
       "province": "Cartago",
       "address": "San Diego de Tres Ríos – 500 metros al oeste de Terramall",
       "district": "San Diego",
@@ -759,14 +759,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/CT1-C.webp",
-      "imageAlt": "Cara CT1-C · LAB RAVEN TIOFLEX LA FARMA CT1-C - 1440 x 500"
+      "imageAlt": "Valla Publiex · Cara CT1-C"
     },
     {
       "id": "ACT-53",
       "code": "CT2-A",
       "structureId": "CT2",
       "face": "A",
-      "title": "Doña Maritza",
+      "title": "CT2-A",
       "province": "Cartago",
       "address": "San Diego de Tres Ríos – 800 metros al oeste de Terramall",
       "district": "San Diego",
@@ -778,14 +778,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/CT2-A.webp",
-      "imageAlt": "Cara CT2-A · Doña Maritza"
+      "imageAlt": "Valla Publiex · Cara CT2-A"
     },
     {
       "id": "ACT-54",
       "code": "CT2-C",
       "structureId": "CT2",
       "face": "C",
-      "title": "Doña Maritza",
+      "title": "CT2-C",
       "province": "Cartago",
       "address": "San Diego de Tres Ríos – 800 metros al oeste de Terramall",
       "district": "San Diego",
@@ -797,14 +797,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/CT2-C.webp",
-      "imageAlt": "Cara CT2-C · Doña Maritza"
+      "imageAlt": "Valla Publiex · Cara CT2-C"
     },
     {
       "id": "ACT-55",
       "code": "CT3-A",
       "structureId": "CT3",
       "face": "A",
-      "title": "La Lima - Cartago",
+      "title": "CT3-A",
       "province": "Cartago",
       "address": "Costado sur de Laboratorios Stein",
       "district": "San Nicolas",
@@ -816,14 +816,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/CT3-A.webp",
-      "imageAlt": "Cara CT3-A · La Lima - Cartago"
+      "imageAlt": "Valla Publiex · Cara CT3-A"
     },
     {
       "id": "ACT-56",
       "code": "CT3-C",
       "structureId": "CT3",
       "face": "C",
-      "title": "La Lima - Cartago",
+      "title": "CT3-C",
       "province": "Cartago",
       "address": "Costado sur de Laboratorios Stein",
       "district": "San Nicolas",
@@ -835,14 +835,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/CT3-C.webp",
-      "imageAlt": "Cara CT3-C · La Lima - Cartago"
+      "imageAlt": "Valla Publiex · Cara CT3-C"
     },
     {
       "id": "ACT-57",
       "code": "CT4-A",
       "structureId": "CT4",
       "face": "A",
-      "title": "CT4-A - 1260 x 500",
+      "title": "CT4-A",
       "province": "Cartago",
       "address": "Ruta Nacional 1",
       "district": "San Nicolas",
@@ -854,14 +854,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/CT4-A.webp",
-      "imageAlt": "Cara CT4-A · CT4-A - 1260 x 500"
+      "imageAlt": "Valla Publiex · Cara CT4-A"
     },
     {
       "id": "ACT-58",
       "code": "CT4-C",
       "structureId": "CT4",
       "face": "C",
-      "title": "CHILLIS GUACAMOLE CT4-C - 1260 x 500",
+      "title": "CT4-C",
       "province": "Cartago",
       "address": "Ruta Nacional 1",
       "district": "San Nicolas",
@@ -873,14 +873,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/CT4-C.webp",
-      "imageAlt": "Cara CT4-C · CHILLIS GUACAMOLE CT4-C - 1260 x 500"
+      "imageAlt": "Valla Publiex · Cara CT4-C"
     },
     {
       "id": "ACT-254",
       "code": "CT5-A",
       "structureId": "CT5",
       "face": "A",
-      "title": "Landmark Terramal",
+      "title": "CT5-A",
       "province": "Cartago",
       "address": "Diagonal al Centro Comercial Terramall",
       "district": "La Unión",
@@ -892,14 +892,14 @@
       "widthM": 34.3,
       "heightM": 8.7,
       "image": "/images/locations/CT5-A.webp",
-      "imageAlt": "Cara CT5-A · Landmark Terramal"
+      "imageAlt": "Valla Publiex · Cara CT5-A"
     },
     {
       "id": "ACT-314",
       "code": "CT5-C",
       "structureId": "CT5",
       "face": "C",
-      "title": "Especial Landmark Terramal",
+      "title": "CT5-C",
       "province": "Cartago",
       "address": "Autopista Florencio del Castillo, frente a Terramall",
       "district": "La Unión",
@@ -911,14 +911,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/CT5-C.webp",
-      "imageAlt": "Cara CT5-C · Especial Landmark Terramal"
+      "imageAlt": "Valla Publiex · Cara CT5-C"
     },
     {
       "id": "ACT-317",
       "code": "CT6-A",
       "structureId": "CT6",
       "face": "A",
-      "title": "Pricesmart",
+      "title": "CT6-A",
       "province": "Cartago",
       "address": "200 metros al este del peaje, contiguo a PriceSmart",
       "district": "Tres Rios",
@@ -930,14 +930,14 @@
       "widthM": 33.1,
       "heightM": 8.5,
       "image": "/images/locations/CT6-A.webp",
-      "imageAlt": "Cara CT6-A · Pricesmart"
+      "imageAlt": "Valla Publiex · Cara CT6-A"
     },
     {
       "id": "ACT-59",
       "code": "GC6-A",
       "structureId": "GC6",
       "face": "A",
-      "title": "Liberia",
+      "title": "GC6-A",
       "province": "Guanacaste",
       "address": "Del Centro Comercial Do It Center, 500 metros al este",
       "district": "Palmira",
@@ -949,14 +949,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/GC6-A.webp",
-      "imageAlt": "Cara GC6-A · Liberia"
+      "imageAlt": "Valla Publiex · Cara GC6-A"
     },
     {
       "id": "ACT-60",
       "code": "GC6-C",
       "structureId": "GC6",
       "face": "C",
-      "title": "Liberia",
+      "title": "GC6-C",
       "province": "Guanacaste",
       "address": "Del Centro Comercial Do It Center, 500 metros al este",
       "district": "Palmira",
@@ -968,14 +968,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/GC6-C.webp",
-      "imageAlt": "Cara GC6-C · Liberia"
+      "imageAlt": "Valla Publiex · Cara GC6-C"
     },
     {
       "id": "ACT-246",
       "code": "GC7-A",
       "structureId": "GC7",
       "face": "A",
-      "title": "\"EL MAYOR RIESGO EN LOS NEGOCIOS ES NO TOMAR NINGUNO\" GC7-A - 1080 x 360",
+      "title": "GC7-A",
       "province": "Guanacaste",
       "address": "Del cruce del Puente de la Amistad, 500 metros al este, contiguo a la estación de servicio Total",
       "district": "Las Juntas",
@@ -987,14 +987,14 @@
       "widthM": 10.8,
       "heightM": 3.6,
       "image": "/images/locations/GC7-AB.webp",
-      "imageAlt": "Cara GC7-A · \"EL MAYOR RIESGO EN LOS NEGOCIOS ES NO TOMAR NINGUNO\" GC7-A - 1080 x 360"
+      "imageAlt": "Valla Publiex · Cara GC7-A"
     },
     {
       "id": "ACT-61",
       "code": "GC7-B",
       "structureId": "GC7",
       "face": "B",
-      "title": "\"EL MAYOR RIESGO EN LOS NEGOCIOS ES NO TOMAR NINGUNO\" GC7-B - 1080 x 360",
+      "title": "GC7-B",
       "province": "Guanacaste",
       "address": "Del cruce del Puente de la Amistad, 500 metros al este, contiguo a la estación de servicio Total",
       "district": "Las Juntas",
@@ -1006,14 +1006,14 @@
       "widthM": 10.8,
       "heightM": 3.6,
       "image": "/images/locations/GC7-AB.webp",
-      "imageAlt": "Cara GC7-B · \"EL MAYOR RIESGO EN LOS NEGOCIOS ES NO TOMAR NINGUNO\" GC7-B - 1080 x 360"
+      "imageAlt": "Valla Publiex · Cara GC7-B"
     },
     {
       "id": "ACT-62",
       "code": "HD1-A",
       "structureId": "HD1",
       "face": "A",
-      "title": "BCR Traslado de Hipoteca (Papá y Niña) HD1-A - 1440 x 500 ⚠️⚠️⚠️",
+      "title": "HD1-A",
       "province": "Heredia",
       "address": "De PriceSmart 400 metros  Sur-oeste",
       "district": "San Francisco",
@@ -1025,14 +1025,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/HD1-A.webp",
-      "imageAlt": "Cara HD1-A · BCR Traslado de Hipoteca (Papá y Niña) HD1-A - 1440 x 500 ⚠️⚠️⚠️"
+      "imageAlt": "Valla Publiex · Cara HD1-A"
     },
     {
       "id": "ACT-63",
       "code": "HD1-C",
       "structureId": "HD1",
       "face": "C",
-      "title": "BANCO POPULAR HD1-C - 1440 x 500",
+      "title": "HD1-C",
       "province": "Heredia",
       "address": "De PriceSmart 400 metros  Sur-oeste",
       "district": "San Francisco",
@@ -1044,14 +1044,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/HD1-C.webp",
-      "imageAlt": "Cara HD1-C · BANCO POPULAR HD1-C - 1440 x 500"
+      "imageAlt": "Valla Publiex · Cara HD1-C"
     },
     {
       "id": "ACT-64",
       "code": "HD2-A",
       "structureId": "HD2",
       "face": "A",
-      "title": "Hacienda Rio Monte",
+      "title": "HD2-A",
       "province": "Heredia",
       "address": "De Jardines del Recuerdo, 200 metros al este",
       "district": "Ulloa",
@@ -1063,14 +1063,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/HD2-A.webp",
-      "imageAlt": "Cara HD2-A · Hacienda Rio Monte"
+      "imageAlt": "Valla Publiex · Cara HD2-A"
     },
     {
       "id": "ACT-65",
       "code": "HD2-C",
       "structureId": "HD2",
       "face": "C",
-      "title": "Hacienda Rio Monte",
+      "title": "HD2-C",
       "province": "Heredia",
       "address": "De Jardines del Recuerdo, 200 metros al este",
       "district": "Ulloa",
@@ -1082,14 +1082,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/HD2-C.webp",
-      "imageAlt": "Cara HD2-C · Hacienda Rio Monte"
+      "imageAlt": "Valla Publiex · Cara HD2-C"
     },
     {
       "id": "ACT-288",
       "code": "HD3-A",
       "structureId": "HD3",
       "face": "A",
-      "title": "El shampoo",
+      "title": "HD3-A",
       "province": "Heredia",
       "address": "Costado este de Bridgestone de Costa Rica",
       "district": "La Rivera",
@@ -1101,14 +1101,14 @@
       "widthM": 14.4,
       "heightM": 6,
       "image": "/images/locations/HD3-A.webp",
-      "imageAlt": "Cara HD3-A · El shampoo"
+      "imageAlt": "Valla Publiex · Cara HD3-A"
     },
     {
       "id": "ACT-289",
       "code": "HD3-C",
       "structureId": "HD3",
       "face": "C",
-      "title": "El shampoo",
+      "title": "HD3-C",
       "province": "Heredia",
       "address": "Costado este de Bridgestone de Costa Rica",
       "district": "La Rivera",
@@ -1120,14 +1120,14 @@
       "widthM": 14.4,
       "heightM": 6,
       "image": "/images/locations/HD3-C.webp",
-      "imageAlt": "Cara HD3-C · El shampoo"
+      "imageAlt": "Valla Publiex · Cara HD3-C"
     },
     {
       "id": "ACT-66",
       "code": "HD4-A",
       "structureId": "HD4",
       "face": "A",
-      "title": "Heredia 2000",
+      "title": "HD4-A",
       "province": "Heredia",
       "address": "De PriceSmart, 600 metros al suroeste",
       "district": "No Disponible",
@@ -1139,14 +1139,14 @@
       "widthM": 14.4,
       "heightM": 6,
       "image": "/images/locations/HD4-A.webp",
-      "imageAlt": "Cara HD4-A · Heredia 2000"
+      "imageAlt": "Valla Publiex · Cara HD4-A"
     },
     {
       "id": "ACT-67",
       "code": "HD4-C",
       "structureId": "HD4",
       "face": "C",
-      "title": "Heredia 2000",
+      "title": "HD4-C",
       "province": "Heredia",
       "address": "De PriceSmart, 600 metros al suroeste",
       "district": "No Disponible",
@@ -1158,14 +1158,14 @@
       "widthM": 14.4,
       "heightM": 6,
       "image": "/images/locations/HD4-C.webp",
-      "imageAlt": "Cara HD4-C · Heredia 2000"
+      "imageAlt": "Valla Publiex · Cara HD4-C"
     },
     {
       "id": "ACT-70",
       "code": "HD6-A",
       "structureId": "HD6",
       "face": "A",
-      "title": "Lagunilla",
+      "title": "HD6-A",
       "province": "Heredia",
       "address": "De Jardines del Recuerdo, 600 metros al oeste",
       "district": "Ulloa",
@@ -1177,14 +1177,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/HD6-A.webp",
-      "imageAlt": "Cara HD6-A · Lagunilla"
+      "imageAlt": "Valla Publiex · Cara HD6-A"
     },
     {
       "id": "ACT-71",
       "code": "HD6-C",
       "structureId": "HD6",
       "face": "C",
-      "title": "Lagunilla- Virilla",
+      "title": "HD6-C",
       "province": "Heredia",
       "address": "De Jardines del Recuerdo, 600 metros al oeste",
       "district": "Ulloa",
@@ -1196,14 +1196,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/HD6-C.webp",
-      "imageAlt": "Cara HD6-C · Lagunilla- Virilla"
+      "imageAlt": "Valla Publiex · Cara HD6-C"
     },
     {
       "id": "ACT-72",
       "code": "HD7-A",
       "structureId": "HD7",
       "face": "A",
-      "title": "BANCO POPULAR Avengers Doomsday   HD7-A - 850 x 1100",
+      "title": "HD7-A",
       "province": "Heredia",
       "address": "Contiguo al Centro Comercial Oxígeno",
       "district": "San Francisco",
@@ -1215,14 +1215,14 @@
       "widthM": 8.5,
       "heightM": 11,
       "image": "/images/locations/HD7-A.webp",
-      "imageAlt": "Cara HD7-A · BANCO POPULAR Avengers Doomsday   HD7-A - 850 x 1100"
+      "imageAlt": "Valla Publiex · Cara HD7-A"
     },
     {
       "id": "ACT-73",
       "code": "HD7-C",
       "structureId": "HD7",
       "face": "C",
-      "title": "ICON  HD7-C - 850 x 1100",
+      "title": "HD7-C",
       "province": "Heredia",
       "address": "Contiguo al Centro Comercial Oxígeno",
       "district": "San Francisco",
@@ -1234,14 +1234,14 @@
       "widthM": 8.5,
       "heightM": 11,
       "image": "/images/locations/HD7-C.webp",
-      "imageAlt": "Cara HD7-C · ICON  HD7-C - 850 x 1100"
+      "imageAlt": "Valla Publiex · Cara HD7-C"
     },
     {
       "id": "ACT-74",
       "code": "HD8-A",
       "structureId": "HD8",
       "face": "A",
-      "title": "HD8-A - 1440 x 600",
+      "title": "HD8-A",
       "province": "Heredia",
       "address": "Del Cariari Corporate Center, 300 metros sobre carretera hacia Alajuela",
       "district": "Llorente",
@@ -1253,14 +1253,14 @@
       "widthM": 14.4,
       "heightM": 6,
       "image": "/images/locations/HD8-A.webp",
-      "imageAlt": "Cara HD8-A · HD8-A - 1440 x 600"
+      "imageAlt": "Valla Publiex · Cara HD8-A"
     },
     {
       "id": "ACT-75",
       "code": "HD8-C",
       "structureId": "HD8",
       "face": "C",
-      "title": "ICT Turísticos HD8-C - 1440 x 600",
+      "title": "HD8-C",
       "province": "Heredia",
       "address": "Del Cariari Corporate Center, 300 metros sobre carretera hacia Alajuela",
       "district": "Llorente",
@@ -1272,14 +1272,14 @@
       "widthM": 14.4,
       "heightM": 6,
       "image": "/images/locations/HD8-C.webp",
-      "imageAlt": "Cara HD8-C · ICT Turísticos HD8-C - 1440 x 600"
+      "imageAlt": "Valla Publiex · Cara HD8-C"
     },
     {
       "id": "ACT-76",
       "code": "HD9-A",
       "structureId": "HD9",
       "face": "A",
-      "title": "Los Arcos",
+      "title": "HD9-A",
       "province": "Heredia",
       "address": "Del Cariari Corporate Center, 1 kilómetro al este, ubicada en Plaza Los Arcos",
       "district": "Ulloa",
@@ -1291,14 +1291,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/HD9-A.webp",
-      "imageAlt": "Cara HD9-A · Los Arcos"
+      "imageAlt": "Valla Publiex · Cara HD9-A"
     },
     {
       "id": "ACT-77",
       "code": "HD9-C",
       "structureId": "HD9",
       "face": "C",
-      "title": "Los Arcos",
+      "title": "HD9-C",
       "province": "Heredia",
       "address": "Del Cariari Corporate Center, 1 kilómetro al este, ubicada en Plaza Los Arcos",
       "district": "Ulloa",
@@ -1310,14 +1310,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/HD9-C.webp",
-      "imageAlt": "Cara HD9-C · Los Arcos"
+      "imageAlt": "Valla Publiex · Cara HD9-C"
     },
     {
       "id": "ACT-78",
       "code": "HD10-A",
       "structureId": "HD10",
       "face": "A",
-      "title": "Cervecería",
+      "title": "HD10-A",
       "province": "Heredia",
       "address": "Cruce de la Cervecería de Costa Rica",
       "district": "Llorente",
@@ -1329,14 +1329,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/HD10-A.webp",
-      "imageAlt": "Cara HD10-A · Cervecería"
+      "imageAlt": "Valla Publiex · Cara HD10-A"
     },
     {
       "id": "ACT-79",
       "code": "HD10-C",
       "structureId": "HD10",
       "face": "C",
-      "title": "Cervecería",
+      "title": "HD10-C",
       "province": "Heredia",
       "address": "Cruce de la Cervecería de Costa Rica",
       "district": "Llorente",
@@ -1348,14 +1348,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/HD10-C.webp",
-      "imageAlt": "Cara HD10-C · Cervecería"
+      "imageAlt": "Valla Publiex · Cara HD10-C"
     },
     {
       "id": "ACT-80",
       "code": "HD11-A",
       "structureId": "HD11",
       "face": "A",
-      "title": "El Virilla",
+      "title": "HD11-A",
       "province": "Heredia",
       "address": "Diagonal al Beneficio Volcafé, Puente Río Virilla",
       "district": "Ulloa",
@@ -1367,14 +1367,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/HD11-A.webp",
-      "imageAlt": "Cara HD11-A · El Virilla"
+      "imageAlt": "Valla Publiex · Cara HD11-A"
     },
     {
       "id": "ACT-81",
       "code": "HD11-C",
       "structureId": "HD11",
       "face": "C",
-      "title": "El Virilla",
+      "title": "HD11-C",
       "province": "Heredia",
       "address": "Diagonal al Beneficio Volcafé, Puente Río Virilla",
       "district": "Ulloa",
@@ -1386,14 +1386,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/HD11-C.webp",
-      "imageAlt": "Cara HD11-C · El Virilla"
+      "imageAlt": "Valla Publiex · Cara HD11-C"
     },
     {
       "id": "ACT-82",
       "code": "HD12-A",
       "structureId": "HD12",
       "face": "A",
-      "title": "Star Cars",
+      "title": "HD12-A",
       "province": "Heredia",
       "address": "Del cementerio, 100 metros al este, costado norte del plantel del MOPT",
       "district": "Santa Rosa",
@@ -1405,14 +1405,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/HD12-A.webp",
-      "imageAlt": "Cara HD12-A · Star Cars"
+      "imageAlt": "Valla Publiex · Cara HD12-A"
     },
     {
       "id": "ACT-83",
       "code": "HD12-C",
       "structureId": "HD12",
       "face": "C",
-      "title": "Star Cars",
+      "title": "HD12-C",
       "province": "Heredia",
       "address": "Del cementerio, 100 metros al este, costado norte del plantel del MOPT",
       "district": "Santa Rosa",
@@ -1424,14 +1424,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/HD12-C.webp",
-      "imageAlt": "Cara HD12-C · Star Cars"
+      "imageAlt": "Valla Publiex · Cara HD12-C"
     },
     {
       "id": "ACT-84",
       "code": "HD13-A",
       "structureId": "HD13",
       "face": "A",
-      "title": "HD13-A - 720 x 900",
+      "title": "HD13-A",
       "province": "Heredia",
       "address": "Diagonal al Centro Comercial Santa Verde",
       "district": "Ulloa",
@@ -1443,14 +1443,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/HD13-A.webp",
-      "imageAlt": "Cara HD13-A · HD13-A - 720 x 900"
+      "imageAlt": "Valla Publiex · Cara HD13-A"
     },
     {
       "id": "ACT-85",
       "code": "HD13-C",
       "structureId": "HD13",
       "face": "C",
-      "title": "UNIVERSIDAD LATINA  HD13-C - 720 x 900",
+      "title": "HD13-C",
       "province": "Heredia",
       "address": "Diagonal al Centro Comercial Santa Verde",
       "district": "Ulloa",
@@ -1462,14 +1462,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/HD13-C.webp",
-      "imageAlt": "Cara HD13-C · UNIVERSIDAD LATINA  HD13-C - 720 x 900"
+      "imageAlt": "Valla Publiex · Cara HD13-C"
     },
     {
       "id": "ACT-86",
       "code": "HD14-A",
       "structureId": "HD14",
       "face": "A",
-      "title": "Star Cars",
+      "title": "HD14-A",
       "province": "Heredia",
       "address": "Del cementerio, 300 metros al este",
       "district": "Santa Rosa",
@@ -1481,14 +1481,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/HD14-A.webp",
-      "imageAlt": "Cara HD14-A · Star Cars"
+      "imageAlt": "Valla Publiex · Cara HD14-A"
     },
     {
       "id": "ACT-87",
       "code": "HD14-C",
       "structureId": "HD14",
       "face": "C",
-      "title": "Star Cars",
+      "title": "HD14-C",
       "province": "Heredia",
       "address": "Del cementerio, 300 metros al este",
       "district": "Santa Rosa",
@@ -1500,14 +1500,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/HD14-C.webp",
-      "imageAlt": "Cara HD14-C · Star Cars"
+      "imageAlt": "Valla Publiex · Cara HD14-C"
     },
     {
       "id": "ACT-88",
       "code": "HD15-A",
       "structureId": "HD15",
       "face": "A",
-      "title": "La seguidilla",
+      "title": "HD15-A",
       "province": "Heredia",
       "address": "Del Cariari Corporate Center, 300 metros al este",
       "district": "Ulloa",
@@ -1519,14 +1519,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/HD15-A.webp",
-      "imageAlt": "Cara HD15-A · La seguidilla"
+      "imageAlt": "Valla Publiex · Cara HD15-A"
     },
     {
       "id": "ACT-89",
       "code": "HD15-C",
       "structureId": "HD15",
       "face": "C",
-      "title": "La seguidilla",
+      "title": "HD15-C",
       "province": "Heredia",
       "address": "Del Cariari Corporate Center, 300 metros al este",
       "district": "Ulloa",
@@ -1538,14 +1538,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/HD15-C.webp",
-      "imageAlt": "Cara HD15-C · La seguidilla"
+      "imageAlt": "Valla Publiex · Cara HD15-C"
     },
     {
       "id": "ACT-90",
       "code": "HD16-A",
       "structureId": "HD16",
       "face": "A",
-      "title": "La seguidilla",
+      "title": "HD16-A",
       "province": "Heredia",
       "address": "Del Cariari Corporate Center, 400 metros al este",
       "district": "Ulloa",
@@ -1557,14 +1557,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/HD16-A.webp",
-      "imageAlt": "Cara HD16-A · La seguidilla"
+      "imageAlt": "Valla Publiex · Cara HD16-A"
     },
     {
       "id": "ACT-91",
       "code": "HD16-C",
       "structureId": "HD16",
       "face": "C",
-      "title": "La seguidilla",
+      "title": "HD16-C",
       "province": "Heredia",
       "address": "Del Cariari Corporate Center, 400 metros al este",
       "district": "Ulloa",
@@ -1576,14 +1576,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/HD16-C.webp",
-      "imageAlt": "Cara HD16-C · La seguidilla"
+      "imageAlt": "Valla Publiex · Cara HD16-C"
     },
     {
       "id": "ACT-92",
       "code": "HD17-A",
       "structureId": "HD17",
       "face": "A",
-      "title": "La seguidilla",
+      "title": "HD17-A",
       "province": "Heredia",
       "address": "Del Cariari Corporate Center, 500 metros al este",
       "district": "Ulloa",
@@ -1595,14 +1595,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/HD17-A.webp",
-      "imageAlt": "Cara HD17-A · La seguidilla"
+      "imageAlt": "Valla Publiex · Cara HD17-A"
     },
     {
       "id": "ACT-93",
       "code": "HD17-C",
       "structureId": "HD17",
       "face": "C",
-      "title": "La seguidilla",
+      "title": "HD17-C",
       "province": "Heredia",
       "address": "Del Cariari Corporate Center, 500 metros al este",
       "district": "Ulloa",
@@ -1614,14 +1614,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/HD17-C.webp",
-      "imageAlt": "Cara HD17-C · La seguidilla"
+      "imageAlt": "Valla Publiex · Cara HD17-C"
     },
     {
       "id": "ACT-94",
       "code": "HD18-A",
       "structureId": "HD18",
       "face": "A",
-      "title": "La seguidilla",
+      "title": "HD18-A",
       "province": "Heredia",
       "address": "Del Cariari Corporate Center, 600 metros al este",
       "district": "Ulloa",
@@ -1633,14 +1633,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/HD18-A.webp",
-      "imageAlt": "Cara HD18-A · La seguidilla"
+      "imageAlt": "Valla Publiex · Cara HD18-A"
     },
     {
       "id": "ACT-95",
       "code": "HD18-C",
       "structureId": "HD18",
       "face": "C",
-      "title": "La seguidilla",
+      "title": "HD18-C",
       "province": "Heredia",
       "address": "Del Cariari Corporate Center, 600 metros al este",
       "district": "Ulloa",
@@ -1652,14 +1652,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/HD18-C.webp",
-      "imageAlt": "Cara HD18-C · La seguidilla"
+      "imageAlt": "Valla Publiex · Cara HD18-C"
     },
     {
       "id": "ACT-96",
       "code": "HD19-A",
       "structureId": "HD19",
       "face": "A",
-      "title": "La seguidilla",
+      "title": "HD19-A",
       "province": "Heredia",
       "address": "Del Cariari Corporate Center, 700 metros al este",
       "district": "Ulloa",
@@ -1671,14 +1671,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/HD19-A.webp",
-      "imageAlt": "Cara HD19-A · La seguidilla"
+      "imageAlt": "Valla Publiex · Cara HD19-A"
     },
     {
       "id": "ACT-97",
       "code": "HD19-C",
       "structureId": "HD19",
       "face": "C",
-      "title": "La seguidilla",
+      "title": "HD19-C",
       "province": "Heredia",
       "address": "Del Cariari Corporate Center, 700 metros al este",
       "district": "Ulloa",
@@ -1690,14 +1690,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/HD19-C.webp",
-      "imageAlt": "Cara HD19-C · La seguidilla"
+      "imageAlt": "Valla Publiex · Cara HD19-C"
     },
     {
       "id": "ACT-98",
       "code": "HD20-A",
       "structureId": "HD20",
       "face": "A",
-      "title": "FIFCO CAMPAÑA TROPICAL CERO SABORES FRAMBUESA, TE NEGRO Y TE BLANCO  HD20-A - 720 x 900",
+      "title": "HD20-A",
       "province": "Heredia",
       "address": "200 metros de la Cervecería de Costa Rica",
       "district": "San Joaquín",
@@ -1709,14 +1709,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/HD20-A.webp",
-      "imageAlt": "Cara HD20-A · FIFCO CAMPAÑA TROPICAL CERO SABORES FRAMBUESA, TE NEGRO Y TE BLANCO  HD20-A - 720 x 900"
+      "imageAlt": "Valla Publiex · Cara HD20-A"
     },
     {
       "id": "ACT-99",
       "code": "HD20-C",
       "structureId": "HD20",
       "face": "C",
-      "title": "FIFCO CAMPAÑA BEBIDA VIDA HD20-C - 720 x 900",
+      "title": "HD20-C",
       "province": "Heredia",
       "address": "200 metros de la Cervecería de Costa Rica",
       "district": "Llorente",
@@ -1728,14 +1728,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/HD20-C.webp",
-      "imageAlt": "Cara HD20-C · FIFCO CAMPAÑA BEBIDA VIDA HD20-C - 720 x 900"
+      "imageAlt": "Valla Publiex · Cara HD20-C"
     },
     {
       "id": "ACT-100",
       "code": "HD21-A",
       "structureId": "HD21",
       "face": "A",
-      "title": "Navidad Publiex 2026 HD21-A - 1260 x 500",
+      "title": "HD21-A",
       "province": "Heredia",
       "address": "Frente a la Zona Franca Metropolitana",
       "district": "Ulloa",
@@ -1747,14 +1747,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/HD21-A.webp",
-      "imageAlt": "Cara HD21-A · Navidad Publiex 2026 HD21-A - 1260 x 500"
+      "imageAlt": "Valla Publiex · Cara HD21-A"
     },
     {
       "id": "ACT-101",
       "code": "HD21-C",
       "structureId": "HD21",
       "face": "C",
-      "title": "CIRCUITO  HD21-C - 1260 x 500",
+      "title": "HD21-C",
       "province": "Heredia",
       "address": "Frente a la Zona Franca Metropolitana",
       "district": "Ulloa",
@@ -1766,14 +1766,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/HD21-C.webp",
-      "imageAlt": "Cara HD21-C · CIRCUITO  HD21-C - 1260 x 500"
+      "imageAlt": "Valla Publiex · Cara HD21-C"
     },
     {
       "id": "ACT-102",
       "code": "HD22-A",
       "structureId": "HD22",
       "face": "A",
-      "title": "Cenada",
+      "title": "HD22-A",
       "province": "Heredia",
       "address": "Frente al Centro Corporativo Eurocenter",
       "district": "Ulloa",
@@ -1785,14 +1785,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/HD22-A.webp",
-      "imageAlt": "Cara HD22-A · Cenada"
+      "imageAlt": "Valla Publiex · Cara HD22-A"
     },
     {
       "id": "ACT-103",
       "code": "HD22-C",
       "structureId": "HD22",
       "face": "C",
-      "title": "Cenada",
+      "title": "HD22-C",
       "province": "Heredia",
       "address": "Frente al Centro Corporativo Eurocenter",
       "district": "Ulloa",
@@ -1804,14 +1804,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/HD22-C.webp",
-      "imageAlt": "Cara HD22-C · Cenada"
+      "imageAlt": "Valla Publiex · Cara HD22-C"
     },
     {
       "id": "ACT-104",
       "code": "HD23-A",
       "structureId": "HD23",
       "face": "A",
-      "title": "Pirro",
+      "title": "HD23-A",
       "province": "Heredia",
       "address": "Contiguo al centro de servicio Autopits",
       "district": "Heredia",
@@ -1823,14 +1823,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/HD23-A.webp",
-      "imageAlt": "Cara HD23-A · Pirro"
+      "imageAlt": "Valla Publiex · Cara HD23-A"
     },
     {
       "id": "ACT-105",
       "code": "HD24-A",
       "structureId": "HD24",
       "face": "A",
-      "title": "CUMMINS HD24-A - 720 x 900",
+      "title": "HD24-A",
       "province": "Heredia",
       "address": "Contiguo al Bodegón de la Cerámica",
       "district": "Heredia",
@@ -1842,14 +1842,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/HD24-A.webp",
-      "imageAlt": "Cara HD24-A · CUMMINS HD24-A - 720 x 900"
+      "imageAlt": "Valla Publiex · Cara HD24-A"
     },
     {
       "id": "ACT-106",
       "code": "HD25-A",
       "structureId": "HD25",
       "face": "A",
-      "title": "La Iglesia",
+      "title": "HD25-A",
       "province": "Heredia",
       "address": "Contiguo a McDonald’s",
       "district": "Ulloa",
@@ -1861,14 +1861,14 @@
       "widthM": 8.5,
       "heightM": 11,
       "image": "/images/locations/HD25-A.webp",
-      "imageAlt": "Cara HD25-A · La Iglesia"
+      "imageAlt": "Valla Publiex · Cara HD25-A"
     },
     {
       "id": "ACT-107",
       "code": "HD25-C",
       "structureId": "HD25",
       "face": "C",
-      "title": "La Iglesia",
+      "title": "HD25-C",
       "province": "Heredia",
       "address": "Contiguo a McDonald’s",
       "district": "Ulloa",
@@ -1880,14 +1880,14 @@
       "widthM": 8.5,
       "heightM": 11,
       "image": "/images/locations/HD25-C.webp",
-      "imageAlt": "Cara HD25-C · La Iglesia"
+      "imageAlt": "Valla Publiex · Cara HD25-C"
     },
     {
       "id": "ACT-108",
       "code": "HD26-A",
       "structureId": "HD26",
       "face": "A",
-      "title": "SUPER BATERIAS  HD26-A - 720 x 900 ⚠️⚠️⚠️",
+      "title": "HD26-A",
       "province": "Heredia",
       "address": "Del Centro Comercial Oxígeno, 200 metros al oeste",
       "district": "San Francisco",
@@ -1899,14 +1899,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/HD26-A.webp",
-      "imageAlt": "Cara HD26-A · SUPER BATERIAS  HD26-A - 720 x 900 ⚠️⚠️⚠️"
+      "imageAlt": "Valla Publiex · Cara HD26-A"
     },
     {
       "id": "ACT-109",
       "code": "HD26-C",
       "structureId": "HD26",
       "face": "C",
-      "title": "NOVEX HD26-C - 720 x 900",
+      "title": "HD26-C",
       "province": "Heredia",
       "address": "Del Centro Comercial Oxígeno, 200 metros al oeste",
       "district": "San Francisco",
@@ -1918,14 +1918,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/HD26-C.webp",
-      "imageAlt": "Cara HD26-C · NOVEX HD26-C - 720 x 900"
+      "imageAlt": "Valla Publiex · Cara HD26-C"
     },
     {
       "id": "ACT-110",
       "code": "HD27-A",
       "structureId": "HD27",
       "face": "A",
-      "title": "Skate Park",
+      "title": "HD27-A",
       "province": "Heredia",
       "address": "En el Skate Park, contiguo a Walmart",
       "district": "San Francisco",
@@ -1937,14 +1937,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/HD27-A.webp",
-      "imageAlt": "Cara HD27-A · Skate Park"
+      "imageAlt": "Valla Publiex · Cara HD27-A"
     },
     {
       "id": "ACT-111",
       "code": "HD27-C",
       "structureId": "HD27",
       "face": "C",
-      "title": "Skate Park",
+      "title": "HD27-C",
       "province": "Heredia",
       "address": "En el Skate Park, contiguo a Walmart",
       "district": "San Francisco",
@@ -1956,14 +1956,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/HD27-C.webp",
-      "imageAlt": "Cara HD27-C · Skate Park"
+      "imageAlt": "Valla Publiex · Cara HD27-C"
     },
     {
       "id": "ACT-112",
       "code": "HD28-A",
       "structureId": "HD28",
       "face": "A",
-      "title": "El Virilla",
+      "title": "HD28-A",
       "province": "Heredia",
       "address": "De Jardines del Recuerdo, 200 metros al este, carretera a San José",
       "district": "Ulloa",
@@ -1975,14 +1975,14 @@
       "widthM": 8.5,
       "heightM": 11,
       "image": "/images/locations/HD28-A.webp",
-      "imageAlt": "Cara HD28-A · El Virilla"
+      "imageAlt": "Valla Publiex · Cara HD28-A"
     },
     {
       "id": "ACT-113",
       "code": "HD28-C",
       "structureId": "HD28",
       "face": "C",
-      "title": "El Virilla, Repuestos Gigante",
+      "title": "HD28-C",
       "province": "Heredia",
       "address": "De Jardines del Recuerdo, 200 metros al este, carretera a San José",
       "district": "Ulloa",
@@ -1994,14 +1994,14 @@
       "widthM": 8.5,
       "heightM": 11,
       "image": "/images/locations/HD28-C.webp",
-      "imageAlt": "Cara HD28-C · El Virilla, Repuestos Gigante"
+      "imageAlt": "Valla Publiex · Cara HD28-C"
     },
     {
       "id": "ACT-114",
       "code": "HD29-A",
       "structureId": "HD29",
       "face": "A",
-      "title": "La Puebla",
+      "title": "HD29-A",
       "province": "Heredia",
       "address": "En la Plaza de Deportes de La Puebla",
       "district": "Heredia",
@@ -2013,14 +2013,14 @@
       "widthM": 8.5,
       "heightM": 11,
       "image": "/images/locations/HD29-A.webp",
-      "imageAlt": "Cara HD29-A · La Puebla"
+      "imageAlt": "Valla Publiex · Cara HD29-A"
     },
     {
       "id": "ACT-116",
       "code": "HD30-A",
       "structureId": "HD30",
       "face": "A",
-      "title": "HD30-A - 540 x 720",
+      "title": "HD30-A",
       "province": "Heredia",
       "address": "Contiguo a Walmart",
       "district": "San Francisco",
@@ -2032,14 +2032,14 @@
       "widthM": 5.4,
       "heightM": 7.2,
       "image": "/images/locations/HD30-A.webp",
-      "imageAlt": "Cara HD30-A · HD30-A - 540 x 720"
+      "imageAlt": "Valla Publiex · Cara HD30-A"
     },
     {
       "id": "ACT-117",
       "code": "HD30-C",
       "structureId": "HD30",
       "face": "C",
-      "title": "HD30-C - 540 x 720",
+      "title": "HD30-C",
       "province": "Heredia",
       "address": "Contiguo a Walmart",
       "district": "San Francisco",
@@ -2051,14 +2051,14 @@
       "widthM": 5.4,
       "heightM": 7.2,
       "image": "/images/locations/HD30-C.webp",
-      "imageAlt": "Cara HD30-C · HD30-C - 540 x 720"
+      "imageAlt": "Valla Publiex · Cara HD30-C"
     },
     {
       "id": "ACT-318",
       "code": "Macayas - A",
       "structureId": "MACAYAS",
       "face": "A",
-      "title": "Macayas",
+      "title": "Macayas - A",
       "province": "San José",
       "address": "400 metros este de la entrada al Condominio Villa Rea",
       "district": "Pozos",
@@ -2070,14 +2070,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": null,
-      "imageAlt": "Cara Macayas - A · Macayas"
+      "imageAlt": "Valla Publiex · Cara Macayas - A"
     },
     {
       "id": "ACT-350",
       "code": "Macayas - C",
       "structureId": "MACAYAS",
       "face": "C",
-      "title": "Macayas",
+      "title": "Macayas - C",
       "province": "San José",
       "address": "400 metros este de la entrada al Condominio Villa Rea",
       "district": "Pozos",
@@ -2089,14 +2089,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": null,
-      "imageAlt": "Cara Macayas - C · Macayas"
+      "imageAlt": "Valla Publiex · Cara Macayas - C"
     },
     {
       "id": "ACT-118",
       "code": "PT2-A",
       "structureId": "PT2",
       "face": "A",
-      "title": "Punta Leona - A la par del hotel LUCIA",
+      "title": "PT2-A",
       "province": "Puntarenas",
       "address": "400 metros al norte de la entrada principal del Hotel Punta Leona",
       "district": "Tárcoles",
@@ -2108,14 +2108,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/PT2-A.webp",
-      "imageAlt": "Cara PT2-A · Punta Leona - A la par del hotel LUCIA"
+      "imageAlt": "Valla Publiex · Cara PT2-A"
     },
     {
       "id": "ACT-119",
       "code": "PT2-C",
       "structureId": "PT2",
       "face": "C",
-      "title": "Punta Leona - A la par del hotel LUCIA",
+      "title": "PT2-C",
       "province": "Puntarenas",
       "address": "400 metros al norte de la entrada principal del Hotel Punta Leona",
       "district": "Tárcoles",
@@ -2127,14 +2127,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/PT2-C.webp",
-      "imageAlt": "Cara PT2-C · Punta Leona - A la par del hotel LUCIA"
+      "imageAlt": "Valla Publiex · Cara PT2-C"
     },
     {
       "id": "ACT-120",
       "code": "PT4-A",
       "structureId": "PT4",
       "face": "A",
-      "title": "El Quebrador El Quebrador / Potrerillos / Hotel de Lucía/Quebrada Ganado",
+      "title": "PT4-A",
       "province": "Puntarenas",
       "address": "600 metros al norte de la entrada principal a Jacó, Centro Comercial FYM",
       "district": "Jacó",
@@ -2146,14 +2146,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/PT4-A.webp",
-      "imageAlt": "Cara PT4-A · El Quebrador El Quebrador / Potrerillos / Hotel de Lucía/Quebrada Ganado"
+      "imageAlt": "Valla Publiex · Cara PT4-A"
     },
     {
       "id": "ACT-121",
       "code": "PT4-C",
       "structureId": "PT4",
       "face": "C",
-      "title": "El Quebrador / Potrerillos / Hotel de Lucía/ Quebrada ganado/ Urbanización oasis",
+      "title": "PT4-C",
       "province": "Puntarenas",
       "address": "600 metros al norte de la entrada principal a Jacó, Centro Comercial FYM",
       "district": "Jacó",
@@ -2165,14 +2165,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/PT4-C.webp",
-      "imageAlt": "Cara PT4-C · El Quebrador / Potrerillos / Hotel de Lucía/ Quebrada ganado/ Urbanización oasis"
+      "imageAlt": "Valla Publiex · Cara PT4-C"
     },
     {
       "id": "ACT-122",
       "code": "PT5-A",
       "structureId": "PT5",
       "face": "A",
-      "title": "Potrerillo",
+      "title": "PT5-A",
       "province": "Puntarenas",
       "address": "200 metros al norte de la entrada principal al Hotel Punta Leona, contiguo a Urbanización Oasis",
       "district": "Tárcoles",
@@ -2184,14 +2184,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/PT5-A.webp",
-      "imageAlt": "Cara PT5-A · Potrerillo"
+      "imageAlt": "Valla Publiex · Cara PT5-A"
     },
     {
       "id": "ACT-123",
       "code": "PT5-C",
       "structureId": "PT5",
       "face": "C",
-      "title": "Potrerillo",
+      "title": "PT5-C",
       "province": "Puntarenas",
       "address": "200 metros al norte de la entrada principal al Hotel Punta Leona, contiguo a Urbanización Oasis",
       "district": "Tárcoles",
@@ -2203,14 +2203,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/PT5-C.webp",
-      "imageAlt": "Cara PT5-C · Potrerillo"
+      "imageAlt": "Valla Publiex · Cara PT5-C"
     },
     {
       "id": "ACT-124",
       "code": "PT9-A",
       "structureId": "PT9",
       "face": "A",
-      "title": "El Potrerito-Restaurante la OSTRA",
+      "title": "PT9-A",
       "province": "Puntarenas",
       "address": "300 metros al sur de la entrada principal al Hotel Punta Leona, contiguo a Urbanización Pez Vela",
       "district": "Tárcoles",
@@ -2222,14 +2222,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/PT9-A.webp",
-      "imageAlt": "Cara PT9-A · El Potrerito-Restaurante la OSTRA"
+      "imageAlt": "Valla Publiex · Cara PT9-A"
     },
     {
       "id": "ACT-125",
       "code": "PT9-C",
       "structureId": "PT9",
       "face": "C",
-      "title": "El Potrerito- Restaurante la OSTRA",
+      "title": "PT9-C",
       "province": "Puntarenas",
       "address": "300 metros al sur de la entrada principal al Hotel Punta Leona, contiguo a Urbanización Pez Vela",
       "district": "Tárcoles",
@@ -2241,14 +2241,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/PT9-C.webp",
-      "imageAlt": "Cara PT9-C · El Potrerito- Restaurante la OSTRA"
+      "imageAlt": "Valla Publiex · Cara PT9-C"
     },
     {
       "id": "ACT-243",
       "code": "PZ1-A",
       "structureId": "PZ1",
       "face": "A",
-      "title": "TELECABLE TU VIDA FLUYE PZ1-A - 1440 x 500",
+      "title": "PZ1-A",
       "province": "San José",
       "address": "Entrada principal, contiguo a Gasótica",
       "district": "San Isidro del General",
@@ -2260,14 +2260,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": null,
-      "imageAlt": "Cara PZ1-A · TELECABLE TU VIDA FLUYE PZ1-A - 1440 x 500"
+      "imageAlt": "Valla Publiex · Cara PZ1-A"
     },
     {
       "id": "ACT-126",
       "code": "PZ1-B",
       "structureId": "PZ1",
       "face": "B",
-      "title": "UNIVERSIDAD LATINA  PZ1-B - 1440 x 450",
+      "title": "PZ1-B",
       "province": "San José",
       "address": "Entrada principal, contiguo a Gasótica",
       "district": "San Isidro del General",
@@ -2279,14 +2279,14 @@
       "widthM": 14.4,
       "heightM": 4.5,
       "image": null,
-      "imageAlt": "Cara PZ1-B · UNIVERSIDAD LATINA  PZ1-B - 1440 x 450"
+      "imageAlt": "Valla Publiex · Cara PZ1-B"
     },
     {
       "id": "ACT-127",
       "code": "SJ1-A",
       "structureId": "SJ1",
       "face": "A",
-      "title": "Plaza Cupido",
+      "title": "SJ1-A",
       "province": "San José",
       "address": "200 metros al este de la Iglesia Católica de San Francisco",
       "district": "San Francisco de Dos Ríos",
@@ -2298,14 +2298,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/SJ1-A.webp",
-      "imageAlt": "Cara SJ1-A · Plaza Cupido"
+      "imageAlt": "Valla Publiex · Cara SJ1-A"
     },
     {
       "id": "ACT-128",
       "code": "SJ1-C",
       "structureId": "SJ1",
       "face": "C",
-      "title": "Plaza Cupido",
+      "title": "SJ1-C",
       "province": "San José",
       "address": "200 metros al este de la Iglesia Católica de San Francisco",
       "district": "San Francisco de Dos Ríos",
@@ -2317,14 +2317,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/SJ1-C.webp",
-      "imageAlt": "Cara SJ1-C · Plaza Cupido"
+      "imageAlt": "Valla Publiex · Cara SJ1-C"
     },
     {
       "id": "ACT-129",
       "code": "SJ3-A",
       "structureId": "SJ3",
       "face": "A",
-      "title": "Hermanos Agustinos Recolectos",
+      "title": "SJ3-A",
       "province": "San José",
       "address": "300 metros al este de Forum 1, contiguo a la intersección hacia la Radial Santa Ana - Belén",
       "district": "Pozos",
@@ -2336,14 +2336,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/SJ3-A.webp",
-      "imageAlt": "Cara SJ3-A · Hermanos Agustinos Recolectos"
+      "imageAlt": "Valla Publiex · Cara SJ3-A"
     },
     {
       "id": "ACT-130",
       "code": "SJ3-C",
       "structureId": "SJ3",
       "face": "C",
-      "title": "Hermanos Agustinos Recolectos",
+      "title": "SJ3-C",
       "province": "San José",
       "address": "300 metros al este de Forum 1, contiguo a la intersección hacia la Radial Santa Ana - Belén",
       "district": "Pozos",
@@ -2355,14 +2355,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/SJ3-C.webp",
-      "imageAlt": "Cara SJ3-C · Hermanos Agustinos Recolectos"
+      "imageAlt": "Valla Publiex · Cara SJ3-C"
     },
     {
       "id": "ACT-131",
       "code": "SJ4-A",
       "structureId": "SJ4",
       "face": "A",
-      "title": "LAB. RAVEN DEKOFÉN SJ4-A - 1440 x 500",
+      "title": "SJ4-A",
       "province": "San José",
       "address": "Del Centro Comercial Expreso Tibás, 800 metros al norte",
       "district": "Calle Blancos",
@@ -2374,14 +2374,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/SJ4-A.webp",
-      "imageAlt": "Cara SJ4-A · LAB. RAVEN DEKOFÉN SJ4-A - 1440 x 500"
+      "imageAlt": "Valla Publiex · Cara SJ4-A"
     },
     {
       "id": "ACT-242",
       "code": "SJ4-B",
       "structureId": "SJ4",
       "face": "B",
-      "title": "SJ4-B - 1440 x 500",
+      "title": "SJ4-B",
       "province": "San José",
       "address": "Del Centro Comercial Expreso Tibás, 800 metros al norte",
       "district": "Calle Blancos",
@@ -2393,14 +2393,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/SJ4-B.webp",
-      "imageAlt": "Cara SJ4-B · SJ4-B - 1440 x 500"
+      "imageAlt": "Valla Publiex · Cara SJ4-B"
     },
     {
       "id": "ACT-132",
       "code": "SJ4-C",
       "structureId": "SJ4",
       "face": "C",
-      "title": "Por Motel El Éden",
+      "title": "SJ4-C",
       "province": "San José",
       "address": "Del Centro Comercial Expreso Tibás, 800 metros al norte",
       "district": "Calle Blancos",
@@ -2412,14 +2412,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/SJ4-C.webp",
-      "imageAlt": "Cara SJ4-C · Por Motel El Éden"
+      "imageAlt": "Valla Publiex · Cara SJ4-C"
     },
     {
       "id": "ACT-241",
       "code": "SJ4-D",
       "structureId": "SJ4",
       "face": "D",
-      "title": "\"EL MUNDO ES NUESTRO HOGAR LAPA ROJA\" SJ4-D - 1440 x 500",
+      "title": "SJ4-D",
       "province": "San José",
       "address": "Del Centro Comercial Expreso Tibás, 800 metros al norte",
       "district": "Calle Blancos",
@@ -2431,14 +2431,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/SJ4-D.webp",
-      "imageAlt": "Cara SJ4-D · \"EL MUNDO ES NUESTRO HOGAR LAPA ROJA\" SJ4-D - 1440 x 500"
+      "imageAlt": "Valla Publiex · Cara SJ4-D"
     },
     {
       "id": "ACT-133",
       "code": "SJ5-A",
       "structureId": "SJ5",
       "face": "A",
-      "title": "HONDA LEAPMOTOR  SJ5-A - 1440 x 500",
+      "title": "SJ5-A",
       "province": "San José",
       "address": "Costado sur de la Fábrica Pozuelo",
       "district": "Uruca",
@@ -2450,14 +2450,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/SJ5-A.webp",
-      "imageAlt": "Cara SJ5-A · HONDA LEAPMOTOR  SJ5-A - 1440 x 500"
+      "imageAlt": "Valla Publiex · Cara SJ5-A"
     },
     {
       "id": "ACT-134",
       "code": "SJ5-C",
       "structureId": "SJ5",
       "face": "C",
-      "title": "SJ5-C - 1440 x 500 ⚠️⚠️⚠️",
+      "title": "SJ5-C",
       "province": "San José",
       "address": "Costado sur de la Fábrica Pozuelo",
       "district": "Uruca",
@@ -2469,14 +2469,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/SJ5-C.webp",
-      "imageAlt": "Cara SJ5-C · SJ5-C - 1440 x 500 ⚠️⚠️⚠️"
+      "imageAlt": "Valla Publiex · Cara SJ5-C"
     },
     {
       "id": "ACT-135",
       "code": "SJ6-A",
       "structureId": "SJ6",
       "face": "A",
-      "title": "El Parqueo",
+      "title": "SJ6-A",
       "province": "San José",
       "address": "Contiguo a Radio Monumental, costado sur del Puente Juan Pablo II",
       "district": "Uruca",
@@ -2488,14 +2488,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/SJ6-A.webp",
-      "imageAlt": "Cara SJ6-A · El Parqueo"
+      "imageAlt": "Valla Publiex · Cara SJ6-A"
     },
     {
       "id": "ACT-136",
       "code": "SJ6-C",
       "structureId": "SJ6",
       "face": "C",
-      "title": "El Parqueo",
+      "title": "SJ6-C",
       "province": "San José",
       "address": "Contiguo a Radio Monumental, costado sur del Puente Juan Pablo II",
       "district": "Uruca",
@@ -2507,14 +2507,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/SJ6-C.webp",
-      "imageAlt": "Cara SJ6-C · El Parqueo"
+      "imageAlt": "Valla Publiex · Cara SJ6-C"
     },
     {
       "id": "ACT-137",
       "code": "SJ8-A",
       "structureId": "SJ8",
       "face": "A",
-      "title": "Don Lorenzo",
+      "title": "SJ8-A",
       "province": "San José",
       "address": "Costado este de la Iglesia Católica",
       "district": "Zapote",
@@ -2526,14 +2526,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/SJ8-A.webp",
-      "imageAlt": "Cara SJ8-A · Don Lorenzo"
+      "imageAlt": "Valla Publiex · Cara SJ8-A"
     },
     {
       "id": "ACT-138",
       "code": "SJ8-C",
       "structureId": "SJ8",
       "face": "C",
-      "title": "Don Lorenzo",
+      "title": "SJ8-C",
       "province": "San José",
       "address": "Costado este de la Iglesia Católica",
       "district": "Zapote",
@@ -2545,14 +2545,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/SJ8-C.webp",
-      "imageAlt": "Cara SJ8-C · Don Lorenzo"
+      "imageAlt": "Valla Publiex · Cara SJ8-C"
     },
     {
       "id": "ACT-139",
       "code": "SJ9-A",
       "structureId": "SJ9",
       "face": "A",
-      "title": "Los Caballos",
+      "title": "SJ9-A",
       "province": "San José",
       "address": "400 metros al este del cruce a Escazú",
       "district": "Mata Redonda",
@@ -2564,14 +2564,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/SJ9-A.webp",
-      "imageAlt": "Cara SJ9-A · Los Caballos"
+      "imageAlt": "Valla Publiex · Cara SJ9-A"
     },
     {
       "id": "ACT-140",
       "code": "SJ9-C",
       "structureId": "SJ9",
       "face": "C",
-      "title": "Los Caballos",
+      "title": "SJ9-C",
       "province": "San José",
       "address": "400 metros al este del cruce a Escazú",
       "district": "Mata Redonda",
@@ -2583,14 +2583,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/SJ9-C.webp",
-      "imageAlt": "Cara SJ9-C · Los Caballos"
+      "imageAlt": "Valla Publiex · Cara SJ9-C"
     },
     {
       "id": "ACT-141",
       "code": "SJ10-A",
       "structureId": "SJ10",
       "face": "A",
-      "title": "El Colegio",
+      "title": "SJ10-A",
       "province": "San José",
       "address": "Carretera de Circunvalación, 300 metros al norte de la antigua rotonda de La Gallito, contiguo al Liceo Napoleón Quesada",
       "district": "Calle Blancos",
@@ -2602,14 +2602,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/SJ10-A.webp",
-      "imageAlt": "Cara SJ10-A · El Colegio"
+      "imageAlt": "Valla Publiex · Cara SJ10-A"
     },
     {
       "id": "ACT-142",
       "code": "SJ10-C",
       "structureId": "SJ10",
       "face": "C",
-      "title": "El Colegio",
+      "title": "SJ10-C",
       "province": "San José",
       "address": "Carretera de Circunvalación, 300 metros al norte de la antigua rotonda de La Gallito, contiguo al Liceo Napoleón Quesada",
       "district": "Calle Blancos",
@@ -2621,14 +2621,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/SJ10-C.webp",
-      "imageAlt": "Cara SJ10-C · El Colegio"
+      "imageAlt": "Valla Publiex · Cara SJ10-C"
     },
     {
       "id": "ACT-143",
       "code": "SJ11-A",
       "structureId": "SJ11",
       "face": "A",
-      "title": "Yori",
+      "title": "SJ11-A",
       "province": "San José",
       "address": "Costado este del Banco Davivienda",
       "district": "Pozos",
@@ -2640,14 +2640,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/SJ11-A.webp",
-      "imageAlt": "Cara SJ11-A · Yori"
+      "imageAlt": "Valla Publiex · Cara SJ11-A"
     },
     {
       "id": "ACT-144",
       "code": "SJ11-C",
       "structureId": "SJ11",
       "face": "C",
-      "title": "Yori",
+      "title": "SJ11-C",
       "province": "San José",
       "address": "Costado este del Banco Davivienda",
       "district": "Pozos",
@@ -2659,14 +2659,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/SJ11-C.webp",
-      "imageAlt": "Cara SJ11-C · Yori"
+      "imageAlt": "Valla Publiex · Cara SJ11-C"
     },
     {
       "id": "ACT-145",
       "code": "SJ12-A",
       "structureId": "SJ12",
       "face": "A",
-      "title": "Portón Bonito",
+      "title": "SJ12-A",
       "province": "San José",
       "address": "De Multiplaza Escazú, 600 metros al oeste",
       "district": "San Rafael",
@@ -2678,14 +2678,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/SJ12-A.webp",
-      "imageAlt": "Cara SJ12-A · Portón Bonito"
+      "imageAlt": "Valla Publiex · Cara SJ12-A"
     },
     {
       "id": "ACT-146",
       "code": "SJ12-C",
       "structureId": "SJ12",
       "face": "C",
-      "title": "Portón Bonito",
+      "title": "SJ12-C",
       "province": "San José",
       "address": "De Multiplaza Escazú, 600 metros al oeste",
       "district": "San Rafael",
@@ -2697,14 +2697,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/SJ12-C.webp",
-      "imageAlt": "Cara SJ12-C · Portón Bonito"
+      "imageAlt": "Valla Publiex · Cara SJ12-C"
     },
     {
       "id": "ACT-147",
       "code": "SJ13-A",
       "structureId": "SJ13",
       "face": "A",
-      "title": "Tecnosagot - Autogas",
+      "title": "SJ13-A",
       "province": "San José",
       "address": "Costado sureste del Puente Juan Pablo II, contiguo al edificio Tecnosagot",
       "district": "Uruca",
@@ -2716,14 +2716,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/SJ13-A.webp",
-      "imageAlt": "Cara SJ13-A · Tecnosagot - Autogas"
+      "imageAlt": "Valla Publiex · Cara SJ13-A"
     },
     {
       "id": "ACT-148",
       "code": "SJ13-C",
       "structureId": "SJ13",
       "face": "C",
-      "title": "Tecnosagot - Autogas",
+      "title": "SJ13-C",
       "province": "San José",
       "address": "Costado sureste del Puente Juan Pablo II, contiguo al edificio Tecnosagot",
       "district": "Uruca",
@@ -2735,14 +2735,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/SJ13-C.webp",
-      "imageAlt": "Cara SJ13-C · Tecnosagot - Autogas"
+      "imageAlt": "Valla Publiex · Cara SJ13-C"
     },
     {
       "id": "ACT-149",
       "code": "SJ14-A",
       "structureId": "SJ14",
       "face": "A",
-      "title": "San José Palacio",
+      "title": "SJ14-A",
       "province": "San José",
       "address": "300 metros al norte del Hotel San José Palacio",
       "district": "Uruca",
@@ -2754,14 +2754,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/SJ14-A.webp",
-      "imageAlt": "Cara SJ14-A · San José Palacio"
+      "imageAlt": "Valla Publiex · Cara SJ14-A"
     },
     {
       "id": "ACT-150",
       "code": "SJ14-C",
       "structureId": "SJ14",
       "face": "C",
-      "title": "San José Palacio",
+      "title": "SJ14-C",
       "province": "San José",
       "address": "300 metros al norte del Hotel San José Palacio",
       "district": "Uruca",
@@ -2773,14 +2773,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/SJ14-C.webp",
-      "imageAlt": "Cara SJ14-C · San José Palacio"
+      "imageAlt": "Valla Publiex · Cara SJ14-C"
     },
     {
       "id": "ACT-151",
       "code": "SJ15-A",
       "structureId": "SJ15",
       "face": "A",
-      "title": "Registro-Zapote",
+      "title": "SJ15-A",
       "province": "San José",
       "address": "Frente al Registro Nacional",
       "district": "Curridabat",
@@ -2792,14 +2792,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/SJ15-A.webp",
-      "imageAlt": "Cara SJ15-A · Registro-Zapote"
+      "imageAlt": "Valla Publiex · Cara SJ15-A"
     },
     {
       "id": "ACT-152",
       "code": "SJ15-C",
       "structureId": "SJ15",
       "face": "C",
-      "title": "Registro-Zapote",
+      "title": "SJ15-C",
       "province": "San José",
       "address": "Frente a Construplaza",
       "district": "Curridabat",
@@ -2811,14 +2811,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": null,
-      "imageAlt": "Cara SJ15-C · Registro-Zapote"
+      "imageAlt": "Valla Publiex · Cara SJ15-C"
     },
     {
       "id": "ACT-153",
       "code": "SJ16-A",
       "structureId": "SJ16",
       "face": "A",
-      "title": "HYUNDAI  SJ16-A - 720 x 900",
+      "title": "SJ16-A",
       "province": "San José",
       "address": "Contiguo a Autopits o Diagonal a El Lagar",
       "district": "Pozos",
@@ -2830,14 +2830,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/SJ16-A.webp",
-      "imageAlt": "Cara SJ16-A · HYUNDAI  SJ16-A - 720 x 900"
+      "imageAlt": "Valla Publiex · Cara SJ16-A"
     },
     {
       "id": "ACT-154",
       "code": "SJ16-C",
       "structureId": "SJ16",
       "face": "C",
-      "title": "HYUNDAI  SJ16-C - 720 x 900",
+      "title": "SJ16-C",
       "province": "San José",
       "address": "Contiguo a Autopits o Diagonal a El Lagar",
       "district": "Pozos",
@@ -2849,14 +2849,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/SJ16-C.webp",
-      "imageAlt": "Cara SJ16-C · HYUNDAI  SJ16-C - 720 x 900"
+      "imageAlt": "Valla Publiex · Cara SJ16-C"
     },
     {
       "id": "ACT-157",
       "code": "SJ18-A",
       "structureId": "SJ18",
       "face": "A",
-      "title": "TELECABLE TU VIDA FLUYE SJ18-A - 1260 x 500",
+      "title": "SJ18-A",
       "province": "San José",
       "address": "Costado norte del cementerio",
       "district": "Desamparados",
@@ -2868,14 +2868,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ18-A.webp",
-      "imageAlt": "Cara SJ18-A · TELECABLE TU VIDA FLUYE SJ18-A - 1260 x 500"
+      "imageAlt": "Valla Publiex · Cara SJ18-A"
     },
     {
       "id": "ACT-158",
       "code": "SJ18-C",
       "structureId": "SJ18",
       "face": "C",
-      "title": "LANCO SJ18-C - 1260 x 500",
+      "title": "SJ18-C",
       "province": "San José",
       "address": "Costado norte del cementerio",
       "district": "Desamparados",
@@ -2887,14 +2887,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ18-C.webp",
-      "imageAlt": "Cara SJ18-C · LANCO SJ18-C - 1260 x 500"
+      "imageAlt": "Valla Publiex · Cara SJ18-C"
     },
     {
       "id": "ACT-159",
       "code": "SJ19-A",
       "structureId": "SJ19",
       "face": "A",
-      "title": "La Radio",
+      "title": "SJ19-A",
       "province": "San José",
       "address": "Rotonda de las Garantías Sociales",
       "district": "Zapote",
@@ -2906,14 +2906,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ19-A.webp",
-      "imageAlt": "Cara SJ19-A · La Radio"
+      "imageAlt": "Valla Publiex · Cara SJ19-A"
     },
     {
       "id": "ACT-160",
       "code": "SJ19-C",
       "structureId": "SJ19",
       "face": "C",
-      "title": "La Radio",
+      "title": "SJ19-C",
       "province": "San José",
       "address": "Rotonda de las Garantías Sociales",
       "district": "Zapote",
@@ -2925,14 +2925,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ19-C.webp",
-      "imageAlt": "Cara SJ19-C · La Radio"
+      "imageAlt": "Valla Publiex · Cara SJ19-C"
     },
     {
       "id": "ACT-161",
       "code": "SJ20-A",
       "structureId": "SJ20",
       "face": "A",
-      "title": "Tractaco",
+      "title": "SJ20-A",
       "province": "San José",
       "address": "100 metros al este de Ciudad Toyota",
       "district": "La Uruca",
@@ -2944,14 +2944,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ20-A.webp",
-      "imageAlt": "Cara SJ20-A · Tractaco"
+      "imageAlt": "Valla Publiex · Cara SJ20-A"
     },
     {
       "id": "ACT-162",
       "code": "SJ20-C",
       "structureId": "SJ20",
       "face": "C",
-      "title": "Tractaco",
+      "title": "SJ20-C",
       "province": "San José",
       "address": "100 metros al este de Ciudad Toyota",
       "district": "La Uruca",
@@ -2963,14 +2963,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ20-C.webp",
-      "imageAlt": "Cara SJ20-C · Tractaco"
+      "imageAlt": "Valla Publiex · Cara SJ20-C"
     },
     {
       "id": "ACT-163",
       "code": "SJ21-A",
       "structureId": "SJ21",
       "face": "A",
-      "title": "Los aceite",
+      "title": "SJ21-A",
       "province": "San José",
       "address": "200 metros al oeste de la Universidad UCIMED",
       "district": "Mata Redonda",
@@ -2982,14 +2982,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ21-A.webp",
-      "imageAlt": "Cara SJ21-A · Los aceite"
+      "imageAlt": "Valla Publiex · Cara SJ21-A"
     },
     {
       "id": "ACT-164",
       "code": "SJ21-C",
       "structureId": "SJ21",
       "face": "C",
-      "title": "Los aceite",
+      "title": "SJ21-C",
       "province": "San José",
       "address": "200 metros al oeste de la Universidad UCIMED",
       "district": "Mata Redonda",
@@ -3001,14 +3001,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ21-C.webp",
-      "imageAlt": "Cara SJ21-C · Los aceite"
+      "imageAlt": "Valla Publiex · Cara SJ21-C"
     },
     {
       "id": "ACT-165",
       "code": "SJ22-A",
       "structureId": "SJ22",
       "face": "A",
-      "title": "Liberty SJ22-A - 1260 x 500",
+      "title": "SJ22-A",
       "province": "San José",
       "address": "300 metros al este de la Rotonda de San Sebastián",
       "district": "San Sebastián",
@@ -3020,14 +3020,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ22-A.webp",
-      "imageAlt": "Cara SJ22-A · Liberty SJ22-A - 1260 x 500"
+      "imageAlt": "Valla Publiex · Cara SJ22-A"
     },
     {
       "id": "ACT-166",
       "code": "SJ22-C",
       "structureId": "SJ22",
       "face": "C",
-      "title": "CIRCUITO CUMMINS SJ22-C - 1260 x 500",
+      "title": "SJ22-C",
       "province": "San José",
       "address": "300 metros al este de la Rotonda de San Sebastián",
       "district": "San Sebastián",
@@ -3039,14 +3039,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ22-C.webp",
-      "imageAlt": "Cara SJ22-C · CIRCUITO CUMMINS SJ22-C - 1260 x 500"
+      "imageAlt": "Valla Publiex · Cara SJ22-C"
     },
     {
       "id": "ACT-167",
       "code": "SJ23-A",
       "structureId": "SJ23",
       "face": "A",
-      "title": "Plaza Obelisco",
+      "title": "SJ23-A",
       "province": "San José",
       "address": "2 kilómetros al oeste de Forum 1",
       "district": "Uruca",
@@ -3058,14 +3058,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ23-A.webp",
-      "imageAlt": "Cara SJ23-A · Plaza Obelisco"
+      "imageAlt": "Valla Publiex · Cara SJ23-A"
     },
     {
       "id": "ACT-168",
       "code": "SJ23-C",
       "structureId": "SJ23",
       "face": "C",
-      "title": "Plaza Obelisco",
+      "title": "SJ23-C",
       "province": "San José",
       "address": "2 kilómetros al oeste de Forum 1",
       "district": "Uruca",
@@ -3077,14 +3077,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ23-C.webp",
-      "imageAlt": "Cara SJ23-C · Plaza Obelisco"
+      "imageAlt": "Valla Publiex · Cara SJ23-C"
     },
     {
       "id": "ACT-169",
       "code": "SJ24-A",
       "structureId": "SJ24",
       "face": "A",
-      "title": "Romanas Ballar",
+      "title": "SJ24-A",
       "province": "San José",
       "address": "Contiguo a Romanas Ballar",
       "district": "San Vicente",
@@ -3096,14 +3096,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ24-A.webp",
-      "imageAlt": "Cara SJ24-A · Romanas Ballar"
+      "imageAlt": "Valla Publiex · Cara SJ24-A"
     },
     {
       "id": "ACT-170",
       "code": "SJ24-C",
       "structureId": "SJ24",
       "face": "C",
-      "title": "Romanas Ballar",
+      "title": "SJ24-C",
       "province": "San José",
       "address": "Contiguo a Romanas Ballar",
       "district": "San Vicente",
@@ -3115,14 +3115,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ24-C.webp",
-      "imageAlt": "Cara SJ24-C · Romanas Ballar"
+      "imageAlt": "Valla Publiex · Cara SJ24-C"
     },
     {
       "id": "ACT-171",
       "code": "SJ25-A",
       "structureId": "SJ25",
       "face": "A",
-      "title": "Los enanos",
+      "title": "SJ25-A",
       "province": "San José",
       "address": "Diagonal al ICE",
       "district": "San Juan",
@@ -3134,14 +3134,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ25-A.webp",
-      "imageAlt": "Cara SJ25-A · Los enanos"
+      "imageAlt": "Valla Publiex · Cara SJ25-A"
     },
     {
       "id": "ACT-172",
       "code": "SJ25-C",
       "structureId": "SJ25",
       "face": "C",
-      "title": "Los enanos",
+      "title": "SJ25-C",
       "province": "San José",
       "address": "Diagonal al ICE",
       "district": "San Juan",
@@ -3153,14 +3153,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ25-C.webp",
-      "imageAlt": "Cara SJ25-C · Los enanos"
+      "imageAlt": "Valla Publiex · Cara SJ25-C"
     },
     {
       "id": "ACT-173",
       "code": "SJ26-A",
       "structureId": "SJ26",
       "face": "A",
-      "title": "La farmacia",
+      "title": "SJ26-A",
       "province": "San José",
       "address": "Frente al Colegio Saint Francis",
       "district": "San Vicente",
@@ -3172,14 +3172,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ26-A.webp",
-      "imageAlt": "Cara SJ26-A · La farmacia"
+      "imageAlt": "Valla Publiex · Cara SJ26-A"
     },
     {
       "id": "ACT-174",
       "code": "SJ26-C",
       "structureId": "SJ26",
       "face": "C",
-      "title": "La farmacia",
+      "title": "SJ26-C",
       "province": "San José",
       "address": "Frente al Colegio Saint Francis",
       "district": "San Vicente",
@@ -3191,14 +3191,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ26-C.webp",
-      "imageAlt": "Cara SJ26-C · La farmacia"
+      "imageAlt": "Valla Publiex · Cara SJ26-C"
     },
     {
       "id": "ACT-175",
       "code": "SJ27-A",
       "structureId": "SJ27",
       "face": "A",
-      "title": "La Galera ó doña Gabriela",
+      "title": "SJ27-A",
       "province": "San José",
       "address": "Cruce de la Antigua Galera - Cartago",
       "district": "Curridabat",
@@ -3210,14 +3210,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ27-A.webp",
-      "imageAlt": "Cara SJ27-A · La Galera ó doña Gabriela"
+      "imageAlt": "Valla Publiex · Cara SJ27-A"
     },
     {
       "id": "ACT-176",
       "code": "SJ27-C",
       "structureId": "SJ27",
       "face": "C",
-      "title": "La Galera ó doña Gabriela",
+      "title": "SJ27-C",
       "province": "San José",
       "address": "Cruce de la Antigua Galera - Cartago",
       "district": "Curridabat",
@@ -3229,14 +3229,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ27-C.webp",
-      "imageAlt": "Cara SJ27-C · La Galera ó doña Gabriela"
+      "imageAlt": "Valla Publiex · Cara SJ27-C"
     },
     {
       "id": "ACT-177",
       "code": "SJ28-A",
       "structureId": "SJ28",
       "face": "A",
-      "title": "Moravia Autopits - Plaza Lincoln",
+      "title": "SJ28-A",
       "province": "San José",
       "address": "Diagonal a Lincoln Plaza",
       "district": "San Vicente",
@@ -3248,14 +3248,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ28-A.webp",
-      "imageAlt": "Cara SJ28-A · Moravia Autopits - Plaza Lincoln"
+      "imageAlt": "Valla Publiex · Cara SJ28-A"
     },
     {
       "id": "ACT-178",
       "code": "SJ28-C",
       "structureId": "SJ28",
       "face": "C",
-      "title": "Moravia Autopits - Plaza Lincoln",
+      "title": "SJ28-C",
       "province": "San José",
       "address": "Diagonal a Lincoln Plaza",
       "district": "San Vicente",
@@ -3267,14 +3267,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ28-C.webp",
-      "imageAlt": "Cara SJ28-C · Moravia Autopits - Plaza Lincoln"
+      "imageAlt": "Valla Publiex · Cara SJ28-C"
     },
     {
       "id": "ACT-179",
       "code": "SJ29-A",
       "structureId": "SJ29",
       "face": "A",
-      "title": "CHEVROLET SJ29-A - 720 x 900",
+      "title": "SJ29-A",
       "province": "San José",
       "address": "Contiguo a Grupo Q o Diagonal a El Lagar",
       "district": "Pozos",
@@ -3286,14 +3286,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/SJ29-A.webp",
-      "imageAlt": "Cara SJ29-A · CHEVROLET SJ29-A - 720 x 900"
+      "imageAlt": "Valla Publiex · Cara SJ29-A"
     },
     {
       "id": "ACT-180",
       "code": "SJ29-C",
       "structureId": "SJ29",
       "face": "C",
-      "title": "Grupo Q",
+      "title": "SJ29-C",
       "province": "San José",
       "address": "Contiguo a Grupo Q o Diagonal a El Lagar",
       "district": "Pozos",
@@ -3305,14 +3305,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/SJ29-C.webp",
-      "imageAlt": "Cara SJ29-C · Grupo Q"
+      "imageAlt": "Valla Publiex · Cara SJ29-C"
     },
     {
       "id": "ACT-181",
       "code": "SJ30-A",
       "structureId": "SJ30",
       "face": "A",
-      "title": "El Colegio",
+      "title": "SJ30-A",
       "province": "San José",
       "address": "Antigua Rotonda de La Gallito, frente a Walmart",
       "district": "Guadalupe",
@@ -3324,14 +3324,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ30-A.webp",
-      "imageAlt": "Cara SJ30-A · El Colegio"
+      "imageAlt": "Valla Publiex · Cara SJ30-A"
     },
     {
       "id": "ACT-182",
       "code": "SJ30-C",
       "structureId": "SJ30",
       "face": "C",
-      "title": "El Colegio",
+      "title": "SJ30-C",
       "province": "San José",
       "address": "Antigua Rotonda de La Gallito, frente a Walmart",
       "district": "Guadalupe",
@@ -3343,14 +3343,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ30-C.webp",
-      "imageAlt": "Cara SJ30-C · El Colegio"
+      "imageAlt": "Valla Publiex · Cara SJ30-C"
     },
     {
       "id": "ACT-183",
       "code": "SJ31-A",
       "structureId": "SJ31",
       "face": "A",
-      "title": "El Colegio",
+      "title": "SJ31-A",
       "province": "San José",
       "address": "Antigua Rotonda de La Gallito, frente a Walmart",
       "district": "Guadalupe",
@@ -3362,14 +3362,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": null,
-      "imageAlt": "Cara SJ31-A · El Colegio"
+      "imageAlt": "Valla Publiex · Cara SJ31-A"
     },
     {
       "id": "ACT-184",
       "code": "SJ31-C",
       "structureId": "SJ31",
       "face": "C",
-      "title": "El Colegio",
+      "title": "SJ31-C",
       "province": "San José",
       "address": "Antigua Rotonda de La Gallito, frente a Walmart",
       "district": "Guadalupe",
@@ -3381,14 +3381,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ31-C.webp",
-      "imageAlt": "Cara SJ31-C · El Colegio"
+      "imageAlt": "Valla Publiex · Cara SJ31-C"
     },
     {
       "id": "ACT-185",
       "code": "SJ32-A",
       "structureId": "SJ32",
       "face": "A",
-      "title": "El Abandonado",
+      "title": "SJ32-A",
       "province": "San José",
       "address": "50 metros al sur de la Princesa Marina",
       "district": "San Vicente",
@@ -3400,14 +3400,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ32-A.webp",
-      "imageAlt": "Cara SJ32-A · El Abandonado"
+      "imageAlt": "Valla Publiex · Cara SJ32-A"
     },
     {
       "id": "ACT-186",
       "code": "SJ32-C",
       "structureId": "SJ32",
       "face": "C",
-      "title": "El Abandonado",
+      "title": "SJ32-C",
       "province": "San José",
       "address": "50 metros al sur de la Princesa Marina",
       "district": "San Vicente",
@@ -3419,14 +3419,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ32-C.webp",
-      "imageAlt": "Cara SJ32-C · El Abandonado"
+      "imageAlt": "Valla Publiex · Cara SJ32-C"
     },
     {
       "id": "ACT-187",
       "code": "SJ33-A",
       "structureId": "SJ33",
       "face": "A",
-      "title": "Las Embarazadas",
+      "title": "SJ33-A",
       "province": "San José",
       "address": "Frente a Lincoln Plaza, costado norte",
       "district": "San Vicente",
@@ -3438,14 +3438,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ33-A.webp",
-      "imageAlt": "Cara SJ33-A · Las Embarazadas"
+      "imageAlt": "Valla Publiex · Cara SJ33-A"
     },
     {
       "id": "ACT-188",
       "code": "SJ33-C",
       "structureId": "SJ33",
       "face": "C",
-      "title": "Las Embarazadas",
+      "title": "SJ33-C",
       "province": "San José",
       "address": "Frente a Lincoln Plaza, costado norte",
       "district": "San Vicente",
@@ -3457,14 +3457,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ33-C.webp",
-      "imageAlt": "Cara SJ33-C · Las Embarazadas"
+      "imageAlt": "Valla Publiex · Cara SJ33-C"
     },
     {
       "id": "ACT-189",
       "code": "SJ34-A",
       "structureId": "SJ34",
       "face": "A",
-      "title": "Liberty SJ34-A - 1260 x 500",
+      "title": "SJ34-A",
       "province": "San José",
       "address": "Cruce de la Antigua Galera",
       "district": "Curridabat",
@@ -3476,14 +3476,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ34-A.webp",
-      "imageAlt": "Cara SJ34-A · Liberty SJ34-A - 1260 x 500"
+      "imageAlt": "Valla Publiex · Cara SJ34-A"
     },
     {
       "id": "ACT-190",
       "code": "SJ34-C",
       "structureId": "SJ34",
       "face": "C",
-      "title": "HYUNDAI  SJ34-C - 1260 x 500",
+      "title": "SJ34-C",
       "province": "San José",
       "address": "Cruce de la Antigua Galera",
       "district": "Curridabat",
@@ -3495,14 +3495,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": null,
-      "imageAlt": "Cara SJ34-C · HYUNDAI  SJ34-C - 1260 x 500"
+      "imageAlt": "Valla Publiex · Cara SJ34-C"
     },
     {
       "id": "ACT-191",
       "code": "SJ35-A",
       "structureId": "SJ35",
       "face": "A",
-      "title": "Los colegios",
+      "title": "SJ35-A",
       "province": "San José",
       "address": "En las actuales instalaciones del Liceo Napoleón Quesada",
       "district": "Guadalupe",
@@ -3514,14 +3514,14 @@
       "widthM": 8.5,
       "heightM": 11,
       "image": "/images/locations/SJ35-A.webp",
-      "imageAlt": "Cara SJ35-A · Los colegios"
+      "imageAlt": "Valla Publiex · Cara SJ35-A"
     },
     {
       "id": "ACT-192",
       "code": "SJ35-C",
       "structureId": "SJ35",
       "face": "C",
-      "title": "Los colegios",
+      "title": "SJ35-C",
       "province": "San José",
       "address": "En las actuales instalaciones del Liceo Napoleón Quesada",
       "district": "Guadalupe",
@@ -3533,14 +3533,14 @@
       "widthM": 8.5,
       "heightM": 11,
       "image": "/images/locations/SJ35-C.webp",
-      "imageAlt": "Cara SJ35-C · Los colegios"
+      "imageAlt": "Valla Publiex · Cara SJ35-C"
     },
     {
       "id": "ACT-193",
       "code": "SJ36-A",
       "structureId": "SJ36",
       "face": "A",
-      "title": "Parabrisas",
+      "title": "SJ36-A",
       "province": "San José",
       "address": "Rotonda de las Garantías Sociales",
       "district": "Zapote",
@@ -3552,14 +3552,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ36-A.webp",
-      "imageAlt": "Cara SJ36-A · Parabrisas"
+      "imageAlt": "Valla Publiex · Cara SJ36-A"
     },
     {
       "id": "ACT-194",
       "code": "SJ36-C",
       "structureId": "SJ36",
       "face": "C",
-      "title": "Parabrisas",
+      "title": "SJ36-C",
       "province": "San José",
       "address": "Rotonda de las Garantías Sociales",
       "district": "Zapote",
@@ -3571,14 +3571,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ36-C.webp",
-      "imageAlt": "Cara SJ36-C · Parabrisas"
+      "imageAlt": "Valla Publiex · Cara SJ36-C"
     },
     {
       "id": "ACT-195",
       "code": "SJ37-A",
       "structureId": "SJ37",
       "face": "A",
-      "title": "DIEGO ELLIOT  SJ37-A - 720 x 900",
+      "title": "SJ37-A",
       "province": "San José",
       "address": "150 metros al oeste de Canal 7",
       "district": "Mata Redonda",
@@ -3590,14 +3590,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/SJ37-A.webp",
-      "imageAlt": "Cara SJ37-A · DIEGO ELLIOT  SJ37-A - 720 x 900"
+      "imageAlt": "Valla Publiex · Cara SJ37-A"
     },
     {
       "id": "ACT-196",
       "code": "SJ37-C",
       "structureId": "SJ37",
       "face": "C",
-      "title": "CIRCUITO  SJ37-C - 720 x 900",
+      "title": "SJ37-C",
       "province": "San José",
       "address": "150 metros al oeste de Canal 7",
       "district": "Mata Redonda",
@@ -3609,14 +3609,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/SJ37-C.webp",
-      "imageAlt": "Cara SJ37-C · CIRCUITO  SJ37-C - 720 x 900"
+      "imageAlt": "Valla Publiex · Cara SJ37-C"
     },
     {
       "id": "ACT-197",
       "code": "SJ38-A",
       "structureId": "SJ38",
       "face": "A",
-      "title": "Forum",
+      "title": "SJ38-A",
       "province": "San José",
       "address": "Contiguo a Plaza Forum 1 o Diagonal a Mall Santa Ana",
       "district": "Pozos",
@@ -3628,14 +3628,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/SJ38-A.webp",
-      "imageAlt": "Cara SJ38-A · Forum"
+      "imageAlt": "Valla Publiex · Cara SJ38-A"
     },
     {
       "id": "ACT-198",
       "code": "SJ38-C",
       "structureId": "SJ38",
       "face": "C",
-      "title": "Forum",
+      "title": "SJ38-C",
       "province": "San José",
       "address": "Contiguo a Plaza Forum 1 o Diagonal a Mall Santa Ana",
       "district": "Pozos",
@@ -3647,14 +3647,14 @@
       "widthM": 14.4,
       "heightM": 5,
       "image": "/images/locations/SJ38-C.webp",
-      "imageAlt": "Cara SJ38-C · Forum"
+      "imageAlt": "Valla Publiex · Cara SJ38-C"
     },
     {
       "id": "ACT-199",
       "code": "SJ39-A",
       "structureId": "SJ39",
       "face": "A",
-      "title": "Yamuni",
+      "title": "SJ39-A",
       "province": "San José",
       "address": "De McDonald’s, 100 metros al este",
       "district": "Hospital",
@@ -3666,14 +3666,14 @@
       "widthM": 7.2,
       "heightM": 5.4,
       "image": "/images/locations/SJ39-A.webp",
-      "imageAlt": "Cara SJ39-A · Yamuni"
+      "imageAlt": "Valla Publiex · Cara SJ39-A"
     },
     {
       "id": "ACT-200",
       "code": "SJ39-C",
       "structureId": "SJ39",
       "face": "C",
-      "title": "Frase DG \"hasta que el aliento abandone el cuerpo, la derrota es solo un rumor\" SJ39-C - 720 x 540",
+      "title": "SJ39-C",
       "province": "San José",
       "address": "De McDonald’s, 100 metros al este",
       "district": "Hospital",
@@ -3685,14 +3685,14 @@
       "widthM": 7.2,
       "heightM": 5.4,
       "image": "/images/locations/SJ39-C.webp",
-      "imageAlt": "Cara SJ39-C · Frase DG \"hasta que el aliento abandone el cuerpo, la derrota es solo un rumor\" SJ39-C - 720 x 540"
+      "imageAlt": "Valla Publiex · Cara SJ39-C"
     },
     {
       "id": "ACT-201",
       "code": "SJ40-A",
       "structureId": "SJ40",
       "face": "A",
-      "title": "\"SALUD MENTAL\" SJ40-A - 720 x 540",
+      "title": "SJ40-A",
       "province": "San José",
       "address": "De McDonald’s, 100 metros al este",
       "district": "Hospital",
@@ -3704,14 +3704,14 @@
       "widthM": 7.2,
       "heightM": 5.4,
       "image": "/images/locations/SJ40-A.webp",
-      "imageAlt": "Cara SJ40-A · \"SALUD MENTAL\" SJ40-A - 720 x 540"
+      "imageAlt": "Valla Publiex · Cara SJ40-A"
     },
     {
       "id": "ACT-202",
       "code": "SJ40-C",
       "structureId": "SJ40",
       "face": "C",
-      "title": "SJ40-C - 720 x 540 ⚠️⚠️⚠️",
+      "title": "SJ40-C",
       "province": "San José",
       "address": "De McDonald’s, 100 metros al este",
       "district": "Hospital",
@@ -3723,14 +3723,14 @@
       "widthM": 7.2,
       "heightM": 5.4,
       "image": "/images/locations/SJ40-C.webp",
-      "imageAlt": "Cara SJ40-C · SJ40-C - 720 x 540 ⚠️⚠️⚠️"
+      "imageAlt": "Valla Publiex · Cara SJ40-C"
     },
     {
       "id": "ACT-313",
       "code": "SJ41-A",
       "structureId": "SJ41",
       "face": "A",
-      "title": "Sabana Sur",
+      "title": "SJ41-A",
       "province": "San José",
       "address": "Frente a Torre Universal y al Gimnasio Nacional",
       "district": "Mata Redonda",
@@ -3742,14 +3742,14 @@
       "widthM": 5.4,
       "heightM": 7.2,
       "image": "/images/locations/SJ41-A.webp",
-      "imageAlt": "Cara SJ41-A · Sabana Sur"
+      "imageAlt": "Valla Publiex · Cara SJ41-A"
     },
     {
       "id": "ACT-204",
       "code": "SJ41-C",
       "structureId": "SJ41",
       "face": "C",
-      "title": "Sabana Sur",
+      "title": "SJ41-C",
       "province": "San José",
       "address": "Frente a Torre Universal y al Gimnasio Nacional",
       "district": "Mata Redonda",
@@ -3761,14 +3761,14 @@
       "widthM": 5.4,
       "heightM": 7.2,
       "image": "/images/locations/SJ41-C.webp",
-      "imageAlt": "Cara SJ41-C · Sabana Sur"
+      "imageAlt": "Valla Publiex · Cara SJ41-C"
     },
     {
       "id": "ACT-205",
       "code": "SJ42-A",
       "structureId": "SJ42",
       "face": "A",
-      "title": "Sabana Sur",
+      "title": "SJ42-A",
       "province": "San José",
       "address": "Costado norte del Colegio de Médicos",
       "district": "Mata Redonda",
@@ -3780,14 +3780,14 @@
       "widthM": 5.4,
       "heightM": 7.2,
       "image": "/images/locations/SJ42-A.webp",
-      "imageAlt": "Cara SJ42-A · Sabana Sur"
+      "imageAlt": "Valla Publiex · Cara SJ42-A"
     },
     {
       "id": "ACT-206",
       "code": "SJ42-C",
       "structureId": "SJ42",
       "face": "C",
-      "title": "Sabana Sur",
+      "title": "SJ42-C",
       "province": "San José",
       "address": "Costado norte del Colegio de Médicos",
       "district": "Mata Redonda",
@@ -3799,14 +3799,14 @@
       "widthM": 5.4,
       "heightM": 7.2,
       "image": "/images/locations/SJ42-C.webp",
-      "imageAlt": "Cara SJ42-C · Sabana Sur"
+      "imageAlt": "Valla Publiex · Cara SJ42-C"
     },
     {
       "id": "ACT-207",
       "code": "SJ43-A",
       "structureId": "SJ43",
       "face": "A",
-      "title": "Sabana Sur - UCIMED",
+      "title": "SJ43-A",
       "province": "San José",
       "address": "Costado norte del MAG",
       "district": "Mata Redonda",
@@ -3818,14 +3818,14 @@
       "widthM": 5.4,
       "heightM": 7.2,
       "image": "/images/locations/SJ43-A.webp",
-      "imageAlt": "Cara SJ43-A · Sabana Sur - UCIMED"
+      "imageAlt": "Valla Publiex · Cara SJ43-A"
     },
     {
       "id": "ACT-208",
       "code": "SJ43-C",
       "structureId": "SJ43",
       "face": "C",
-      "title": "Sabana Sur - UCIMED",
+      "title": "SJ43-C",
       "province": "San José",
       "address": "Costado norte del MAG",
       "district": "Mata Redonda",
@@ -3837,14 +3837,14 @@
       "widthM": 5.4,
       "heightM": 7.2,
       "image": "/images/locations/SJ43-C.webp",
-      "imageAlt": "Cara SJ43-C · Sabana Sur - UCIMED"
+      "imageAlt": "Valla Publiex · Cara SJ43-C"
     },
     {
       "id": "ACT-209",
       "code": "SJ44-A",
       "structureId": "SJ44",
       "face": "A",
-      "title": "INCHCAPE  SJ44-A - 540 x 720",
+      "title": "SJ44-A",
       "province": "San José",
       "address": "Frente a la Contraloría General de la República",
       "district": "Mata Redonda",
@@ -3856,14 +3856,14 @@
       "widthM": 5.4,
       "heightM": 7.2,
       "image": "/images/locations/SJ44-A.webp",
-      "imageAlt": "Cara SJ44-A · INCHCAPE  SJ44-A - 540 x 720"
+      "imageAlt": "Valla Publiex · Cara SJ44-A"
     },
     {
       "id": "ACT-210",
       "code": "SJ44-C",
       "structureId": "SJ44",
       "face": "C",
-      "title": "CLINICA BIBLICA SJ44-C - 540 x 720 ⚠️⚠️⚠️",
+      "title": "SJ44-C",
       "province": "San José",
       "address": "Frente a la Contraloría General de la República",
       "district": "Mata Redonda",
@@ -3875,14 +3875,14 @@
       "widthM": 5.4,
       "heightM": 7.2,
       "image": "/images/locations/SJ44-C.webp",
-      "imageAlt": "Cara SJ44-C · CLINICA BIBLICA SJ44-C - 540 x 720 ⚠️⚠️⚠️"
+      "imageAlt": "Valla Publiex · Cara SJ44-C"
     },
     {
       "id": "ACT-211",
       "code": "SJ45-A",
       "structureId": "SJ45",
       "face": "A",
-      "title": "ATE FRENOS",
+      "title": "SJ45-A",
       "province": "San José",
       "address": "500 metros al oeste de Canal 7 o Costado oeste de La Artística",
       "district": "Pavas",
@@ -3894,14 +3894,14 @@
       "widthM": 8.5,
       "heightM": 11,
       "image": "/images/locations/SJ45-A.webp",
-      "imageAlt": "Cara SJ45-A · ATE FRENOS"
+      "imageAlt": "Valla Publiex · Cara SJ45-A"
     },
     {
       "id": "ACT-212",
       "code": "SJ45-C",
       "structureId": "SJ45",
       "face": "C",
-      "title": "ATE FRENOS",
+      "title": "SJ45-C",
       "province": "San José",
       "address": "500 metros al oeste de Canal 7 o Costado oeste de La Artística",
       "district": "Pavas",
@@ -3913,14 +3913,14 @@
       "widthM": 8.5,
       "heightM": 11,
       "image": "/images/locations/SJ45-C.webp",
-      "imageAlt": "Cara SJ45-C · ATE FRENOS"
+      "imageAlt": "Valla Publiex · Cara SJ45-C"
     },
     {
       "id": "ACT-213",
       "code": "SJ46-A",
       "structureId": "SJ46",
       "face": "A",
-      "title": "BANCO POPULAR SJ46-A - 720 x 900",
+      "title": "SJ46-A",
       "province": "San José",
       "address": "Diagonal al restaurante KFC",
       "district": "Catedral",
@@ -3932,14 +3932,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/SJ46-A.webp",
-      "imageAlt": "Cara SJ46-A · BANCO POPULAR SJ46-A - 720 x 900"
+      "imageAlt": "Valla Publiex · Cara SJ46-A"
     },
     {
       "id": "ACT-214",
       "code": "SJ46-C",
       "structureId": "SJ46",
       "face": "C",
-      "title": "SJ46-C - 720 x 900 ⚠️⚠️⚠️",
+      "title": "SJ46-C",
       "province": "San José",
       "address": "Diagonal al restaurante KFC",
       "district": "Catedral",
@@ -3951,14 +3951,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/SJ46-C.webp",
-      "imageAlt": "Cara SJ46-C · SJ46-C - 720 x 900 ⚠️⚠️⚠️"
+      "imageAlt": "Valla Publiex · Cara SJ46-C"
     },
     {
       "id": "ACT-215",
       "code": "SJ47-A",
       "structureId": "SJ47",
       "face": "A",
-      "title": "El Colombiano",
+      "title": "SJ47-A",
       "province": "San José",
       "address": "Del Auto Mercado, 300 metros al oeste",
       "district": "El Carmen",
@@ -3970,14 +3970,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/SJ47-A.webp",
-      "imageAlt": "Cara SJ47-A · El Colombiano"
+      "imageAlt": "Valla Publiex · Cara SJ47-A"
     },
     {
       "id": "ACT-216",
       "code": "SJ47-C",
       "structureId": "SJ47",
       "face": "C",
-      "title": "El Colombiano",
+      "title": "SJ47-C",
       "province": "San José",
       "address": "Del Auto Mercado, 300 metros al oeste",
       "district": "El Carmen",
@@ -3989,14 +3989,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/SJ47-C.webp",
-      "imageAlt": "Cara SJ47-C · El Colombiano"
+      "imageAlt": "Valla Publiex · Cara SJ47-C"
     },
     {
       "id": "ACT-217",
       "code": "SJ48-A",
       "structureId": "SJ48",
       "face": "A",
-      "title": "Los Conejos",
+      "title": "SJ48-A",
       "province": "San José",
       "address": "De Multiplaza Escazú, 600 metros al oeste",
       "district": "San Rafael",
@@ -4008,14 +4008,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ48-A.webp",
-      "imageAlt": "Cara SJ48-A · Los Conejos"
+      "imageAlt": "Valla Publiex · Cara SJ48-A"
     },
     {
       "id": "ACT-218",
       "code": "SJ48-C",
       "structureId": "SJ48",
       "face": "C",
-      "title": "Los Conejos",
+      "title": "SJ48-C",
       "province": "San José",
       "address": "De Multiplaza Escazú, 600 metros al oeste",
       "district": "San Rafael",
@@ -4027,14 +4027,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ48-C.webp",
-      "imageAlt": "Cara SJ48-C · Los Conejos"
+      "imageAlt": "Valla Publiex · Cara SJ48-C"
     },
     {
       "id": "ACT-219",
       "code": "SJ49-A",
       "structureId": "SJ49",
       "face": "A",
-      "title": "Contraloría",
+      "title": "SJ49-A",
       "province": "San José",
       "address": "Frente a la Contraloría General de la República",
       "district": "Mata Redonda",
@@ -4046,14 +4046,14 @@
       "widthM": 5.4,
       "heightM": 7.2,
       "image": "/images/locations/SJ49-A.webp",
-      "imageAlt": "Cara SJ49-A · Contraloría"
+      "imageAlt": "Valla Publiex · Cara SJ49-A"
     },
     {
       "id": "ACT-220",
       "code": "SJ49-C",
       "structureId": "SJ49",
       "face": "C",
-      "title": "Contraloría",
+      "title": "SJ49-C",
       "province": "San José",
       "address": "Frente a la Contraloría General de la República",
       "district": "Mata Redonda",
@@ -4065,14 +4065,14 @@
       "widthM": 5.4,
       "heightM": 7.2,
       "image": "/images/locations/SJ49-C.webp",
-      "imageAlt": "Cara SJ49-C · Contraloría"
+      "imageAlt": "Valla Publiex · Cara SJ49-C"
     },
     {
       "id": "ACT-249",
       "code": "SJ50-A",
       "structureId": "SJ50",
       "face": "A",
-      "title": "AR Holding - Campaña Crate & Barrel SJ50-A - 850 x 1100",
+      "title": "SJ50-A",
       "province": "San José",
       "address": "400 metros este del cruce a Escazú",
       "district": "Mata Redonda",
@@ -4084,14 +4084,14 @@
       "widthM": 8.5,
       "heightM": 11,
       "image": "/images/locations/SJ50-A.webp",
-      "imageAlt": "Cara SJ50-A · AR Holding - Campaña Crate & Barrel SJ50-A - 850 x 1100"
+      "imageAlt": "Valla Publiex · Cara SJ50-A"
     },
     {
       "id": "ACT-221",
       "code": "SJ50-C",
       "structureId": "SJ50",
       "face": "C",
-      "title": "OSTER SJ50-C - 850 x 1100",
+      "title": "SJ50-C",
       "province": "San José",
       "address": "400 metros este del cruce a Escazú",
       "district": "Mata Redonda",
@@ -4103,14 +4103,14 @@
       "widthM": 8.5,
       "heightM": 11,
       "image": "/images/locations/SJ50-C.webp",
-      "imageAlt": "Cara SJ50-C · OSTER SJ50-C - 850 x 1100"
+      "imageAlt": "Valla Publiex · Cara SJ50-C"
     },
     {
       "id": "ACT-222",
       "code": "SJ51-A",
       "structureId": "SJ51",
       "face": "A",
-      "title": "Doña Nidia",
+      "title": "SJ51-A",
       "province": "San José",
       "address": "Frente a Construplaza",
       "district": "San Rafael",
@@ -4122,14 +4122,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ51-A.webp",
-      "imageAlt": "Cara SJ51-A · Doña Nidia"
+      "imageAlt": "Valla Publiex · Cara SJ51-A"
     },
     {
       "id": "ACT-223",
       "code": "SJ51-C",
       "structureId": "SJ51",
       "face": "C",
-      "title": "Doña Nidia",
+      "title": "SJ51-C",
       "province": "San José",
       "address": "Frente a Construplaza",
       "district": "San Rafael",
@@ -4141,14 +4141,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ51-C.webp",
-      "imageAlt": "Cara SJ51-C · Doña Nidia"
+      "imageAlt": "Valla Publiex · Cara SJ51-C"
     },
     {
       "id": "ACT-224",
       "code": "SJ52-A",
       "structureId": "SJ52",
       "face": "A",
-      "title": "La Casita / Distrito Cuatro",
+      "title": "SJ52-A",
       "province": "San José",
       "address": "Frente al Centro Comercial Distrito Cuatro",
       "district": "San Rafael",
@@ -4160,14 +4160,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/SJ52-A.webp",
-      "imageAlt": "Cara SJ52-A · La Casita / Distrito Cuatro"
+      "imageAlt": "Valla Publiex · Cara SJ52-A"
     },
     {
       "id": "ACT-225",
       "code": "SJ52-C",
       "structureId": "SJ52",
       "face": "C",
-      "title": "La Casita / Distrito Cuatro",
+      "title": "SJ52-C",
       "province": "San José",
       "address": "Frente al Centro Comercial Distrito Cuatro",
       "district": "San Rafael",
@@ -4179,14 +4179,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/SJ52-C.webp",
-      "imageAlt": "Cara SJ52-C · La Casita / Distrito Cuatro"
+      "imageAlt": "Valla Publiex · Cara SJ52-C"
     },
     {
       "id": "ACT-226",
       "code": "SJ53-A",
       "structureId": "SJ53",
       "face": "A",
-      "title": "El Precario",
+      "title": "SJ53-A",
       "province": "San José",
       "address": "Frente a Construplaza o de Multiplaza Escazú, 700 metros al oeste",
       "district": "San Rafael",
@@ -4198,14 +4198,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ53-A.webp",
-      "imageAlt": "Cara SJ53-A · El Precario"
+      "imageAlt": "Valla Publiex · Cara SJ53-A"
     },
     {
       "id": "ACT-227",
       "code": "SJ53-C",
       "structureId": "SJ53",
       "face": "C",
-      "title": "El Precario",
+      "title": "SJ53-C",
       "province": "San José",
       "address": "Frente a Construplaza o de Multiplaza Escazú, 700 metros al oeste",
       "district": "San Rafael",
@@ -4217,14 +4217,14 @@
       "widthM": 12.6,
       "heightM": 5,
       "image": "/images/locations/SJ53-C.webp",
-      "imageAlt": "Cara SJ53-C · El Precario"
+      "imageAlt": "Valla Publiex · Cara SJ53-C"
     },
     {
       "id": "ACT-228",
       "code": "SJ54-A",
       "structureId": "SJ54",
       "face": "A",
-      "title": "El Codo - Distrito 4",
+      "title": "SJ54-A",
       "province": "San José",
       "address": "100 metros al este del Centro Comercial Distrito Cuatro",
       "district": "San Rafael",
@@ -4236,14 +4236,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/SJ54-A.webp",
-      "imageAlt": "Cara SJ54-A · El Codo - Distrito 4"
+      "imageAlt": "Valla Publiex · Cara SJ54-A"
     },
     {
       "id": "ACT-229",
       "code": "SJ54-C",
       "structureId": "SJ54",
       "face": "C",
-      "title": "El Codo - Distrito 4",
+      "title": "SJ54-C",
       "province": "San José",
       "address": "100 metros al este del Centro Comercial Distrito Cuatro",
       "district": "San Rafael",
@@ -4255,14 +4255,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/SJ54-C.webp",
-      "imageAlt": "Cara SJ54-C · El Codo - Distrito 4"
+      "imageAlt": "Valla Publiex · Cara SJ54-C"
     },
     {
       "id": "ACT-230",
       "code": "SJ55-A",
       "structureId": "SJ55",
       "face": "A",
-      "title": "UNIVERSIDAD LATINA  SJ55-A - 720 x 900",
+      "title": "SJ55-A",
       "province": "San José",
       "address": "Costado oeste de la Universidad Latina",
       "district": "San Pedro",
@@ -4274,14 +4274,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/SJ55-A.webp",
-      "imageAlt": "Cara SJ55-A · UNIVERSIDAD LATINA  SJ55-A - 720 x 900"
+      "imageAlt": "Valla Publiex · Cara SJ55-A"
     },
     {
       "id": "ACT-231",
       "code": "SJ55-C",
       "structureId": "SJ55",
       "face": "C",
-      "title": "INCHCAPE   SJ55-C - 720 x 900",
+      "title": "SJ55-C",
       "province": "San José",
       "address": "Costado oeste de la Universidad Latina",
       "district": "San Pedro",
@@ -4293,14 +4293,14 @@
       "widthM": 7.2,
       "heightM": 9,
       "image": "/images/locations/SJ55-C.webp",
-      "imageAlt": "Cara SJ55-C · INCHCAPE   SJ55-C - 720 x 900"
+      "imageAlt": "Valla Publiex · Cara SJ55-C"
     },
     {
       "id": "ACT-232",
       "code": "SJ56-A",
       "structureId": "SJ56",
       "face": "A",
-      "title": "CLARO NAVIDAD SJ56-A - 3340 x 850",
+      "title": "SJ56-A",
       "province": "San José",
       "address": "Rotonda de las Garantías Sociales",
       "district": "Zapote",
@@ -4312,14 +4312,14 @@
       "widthM": 33.4,
       "heightM": 8.5,
       "image": "/images/locations/SJ56-A.webp",
-      "imageAlt": "Cara SJ56-A · CLARO NAVIDAD SJ56-A - 3340 x 850"
+      "imageAlt": "Valla Publiex · Cara SJ56-A"
     },
     {
       "id": "ACT-233",
       "code": "SJ57-A",
       "structureId": "SJ57",
       "face": "A",
-      "title": "Taller de Germán",
+      "title": "SJ57-A",
       "province": "San José",
       "address": "500 metros al oeste de la Rotonda de San Sebastián",
       "district": "San Sebastián",
@@ -4331,14 +4331,14 @@
       "widthM": 8.5,
       "heightM": 11,
       "image": "/images/locations/SJ57-A.webp",
-      "imageAlt": "Cara SJ57-A · Taller de Germán"
+      "imageAlt": "Valla Publiex · Cara SJ57-A"
     },
     {
       "id": "ACT-234",
       "code": "SJ57-C",
       "structureId": "SJ57",
       "face": "C",
-      "title": "Taller de Germán",
+      "title": "SJ57-C",
       "province": "San José",
       "address": "500 metros al oeste de la Rotonda de San Sebastián",
       "district": "San Sebastián",
@@ -4350,14 +4350,14 @@
       "widthM": 8.5,
       "heightM": 11,
       "image": "/images/locations/SJ57-C.webp",
-      "imageAlt": "Cara SJ57-C · Taller de Germán"
+      "imageAlt": "Valla Publiex · Cara SJ57-C"
     },
     {
       "id": "ACT-235",
       "code": "SJ58",
       "structureId": "SJ58",
       "face": "Única",
-      "title": "Hacienda Vieja",
+      "title": "SJ58",
       "province": "San José",
       "address": "Hacienda Vieja de Curridabat, costado norte del Más x Menos",
       "district": "Curridabat",
@@ -4369,14 +4369,14 @@
       "widthM": 33,
       "heightM": 8.5,
       "image": null,
-      "imageAlt": "Cara SJ58 · Hacienda Vieja"
+      "imageAlt": "Valla Publiex · Cara SJ58"
     },
     {
       "id": "ACT-236",
       "code": "SJ59-A",
       "structureId": "SJ59",
       "face": "A",
-      "title": "Liberty SJ59-A - 3330 x 850",
+      "title": "SJ59-A",
       "province": "San José",
       "address": "Del peaje de San Rafael de Alajuela, 500 metros al este",
       "district": "San Rafael",
@@ -4388,14 +4388,14 @@
       "widthM": 33.3,
       "heightM": 8.5,
       "image": "/images/locations/SJ59-A.webp",
-      "imageAlt": "Cara SJ59-A · Liberty SJ59-A - 3330 x 850"
+      "imageAlt": "Valla Publiex · Cara SJ59-A"
     },
     {
       "id": "ACT-307",
       "code": "SJ61 - A y C (Completo)",
       "structureId": "SJ61",
       "face": "A y C · Completo",
-      "title": "Matra",
+      "title": "SJ61 - A y C (Completo)",
       "province": "San José",
       "address": "Radial Belen - Santa Ana antiguas instalaciones Matra",
       "district": "Pozos",
@@ -4407,14 +4407,14 @@
       "widthM": 71.1,
       "heightM": 4.9,
       "image": null,
-      "imageAlt": "Cara SJ61 - A y C (Completo) · Matra"
+      "imageAlt": "Valla Publiex · Cara SJ61 - A y C (Completo)"
     },
     {
       "id": "ACT-240",
       "code": "SJ62-A",
       "structureId": "SJ62",
       "face": "A",
-      "title": "Alto de las Palomas",
+      "title": "SJ62-A",
       "province": "San José",
       "address": "400 metros al este de la entrada al Condominio Villarreal",
       "district": "Pozos",
@@ -4426,14 +4426,14 @@
       "widthM": 34.8,
       "heightM": 9,
       "image": "/images/locations/SJ62-A.webp",
-      "imageAlt": "Cara SJ62-A · Alto de las Palomas"
+      "imageAlt": "Valla Publiex · Cara SJ62-A"
     },
     {
       "id": "ACT-250",
       "code": "SJ62-C",
       "structureId": "SJ62",
       "face": "C",
-      "title": "Alto de las Palomas",
+      "title": "SJ62-C",
       "province": "San José",
       "address": "400 metros al este de la entrada al Condominio Villarreal",
       "district": "Pozos",
@@ -4445,14 +4445,14 @@
       "widthM": 34.8,
       "heightM": 9,
       "image": "/images/locations/SJ62-C.webp",
-      "imageAlt": "Cara SJ62-C · Alto de las Palomas"
+      "imageAlt": "Valla Publiex · Cara SJ62-C"
     },
     {
       "id": "ACT-316",
       "code": "SJ63-A",
       "structureId": "SJ63",
       "face": "A",
-      "title": "Alto de las Palomas",
+      "title": "SJ63-A",
       "province": "San José",
       "address": "600 metros este de la entrada al Condominio Villa Real",
       "district": "Pozos",
@@ -4464,7 +4464,7 @@
       "widthM": 33.3,
       "heightM": 8.5,
       "image": "/images/locations/SJ63-A.webp",
-      "imageAlt": "Cara SJ63-A · Alto de las Palomas"
+      "imageAlt": "Valla Publiex · Cara SJ63-A"
     }
   ]
 }

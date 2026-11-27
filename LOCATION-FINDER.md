@@ -46,9 +46,13 @@ Generation constructs every public face explicitly. It does not spread the sourc
 record into a public object. The allowlisted fields are:
 
 - Stable face ID, full code, structure ID, and face label.
-- Name, province, address, district, and viewing direction.
+- Public face code as the title, province, address, district, and viewing direction.
 - Latitude/longitude and numeric dimensions when available.
 - Exact image URL or `null`, plus alternative text.
+
+Internal aliases are excluded from titles, image descriptions, search, previews,
+saved-location labels, and proposal emails. The full face code is the public
+identity; province and district provide public location context.
 
 Reservation notes, Jira metadata, export queries, presentation fields, and
 unqualified impression figures are not included. The source lacks verified format,
@@ -102,11 +106,11 @@ regenerate the catalog to replace their placeholders.
 
 ## Browsing and preview behavior
 
-Visitors filter by province or search by code, name, address, or district. Search
+Visitors filter by province or search by code, province, address, or district. Search
 ignores case and accents. Counts distinguish structures from faces.
 
 A marker opens the structure's last inspected face, or its first available face.
-The preview contains face controls, image, full code, name, address, direction,
+The preview contains face controls, image, full code as its main title, address, direction,
 dimensions, and **Agregar a mi selección**. Changing faces keeps the same map
 structure active. Adding a face does not change the active marker.
 
@@ -148,7 +152,7 @@ duplicates, preserves order, and handles malformed data. Storage failures fall
 back to in-memory selection for the current tab. Changes synchronize across
 page navigation and through browser storage events.
 
-**Mi selección** displays thumbnails, codes, names, per-face remove controls,
+**Mi selección** displays thumbnails, codes, public location context, per-face remove controls,
 and a clear-all action. A visible count links back to the shortlist. Proposal
 navigation appears only when faces have been saved. Contact details are not
 stored with the shortlist.

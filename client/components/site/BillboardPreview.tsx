@@ -25,8 +25,9 @@ export function BillboardPreview({
         className="aspect-[1458/923] w-full rounded"
         fit="contain"
       />
-      <p className="font-bold text-publiex-blue">{face.code}</p>
-      <h3 className="font-raleway text-xl font-semibold">{face.title}</h3>
+      <h3 className="font-raleway text-2xl font-bold text-publiex-blue">
+        {face.code}
+      </h3>
       <fieldset>
         <legend className="mb-2 font-semibold">Cara de la valla</legend>
         <div className="flex flex-wrap gap-2">

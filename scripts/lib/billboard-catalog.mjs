@@ -79,7 +79,8 @@ export function createPublicCatalog(source, imageFiles) {
         code: record.code,
         structureId: structure.id,
         face: structure.face,
-        title: text(record.alias) || record.code,
+        // Alias is internal: the public identity is always the full face code.
+        title: record.code,
         province: text(record.location),
         address: text(record.address),
         district: text(record.district),
@@ -90,7 +91,7 @@ export function createPublicCatalog(source, imageFiles) {
         image: imageFiles.has(filename)
           ? `/images/locations/${encodeURIComponent(filename)}`
           : null,
-        imageAlt: `Cara ${record.code} · ${text(record.alias) || "Valla Publiex"}`,
+        imageAlt: `Valla Publiex · Cara ${record.code}`,
       };
     });
   return { schemaVersion: 1, faces };

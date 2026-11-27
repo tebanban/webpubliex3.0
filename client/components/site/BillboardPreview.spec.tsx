@@ -9,7 +9,10 @@ describe("billboard face preview", () => {
     const faces = publiexLocations.filter(
       (face) => face.structureId === "SJ14",
     );
-    const face = faces.find((item) => item.code === "SJ14-C")!;
+    const face = {
+      ...faces.find((item) => item.code === "SJ14-C")!,
+      title: "internal-only-owner",
+    };
     const html = renderToStaticMarkup(
       <BillboardPreview
         face={face}
@@ -25,6 +28,8 @@ describe("billboard face preview", () => {
     expect(html).toContain('aria-pressed="true"');
     expect(html).toContain('aria-pressed="false"');
     expect(html).toContain("Añadir a cotización");
+    expect(html).not.toContain("internal-only-owner");
+    expect(html).toMatch(/<h3[^>]*>SJ14-C<\/h3>/);
   });
   it("offers a placeholder without an unrelated image", () => {
     const html = renderToStaticMarkup(

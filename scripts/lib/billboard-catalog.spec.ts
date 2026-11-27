@@ -23,6 +23,7 @@ describe("public billboard catalog", () => {
       data: [
         {
           ...face(),
+          alias: "internal-only-owner",
           reservations: ["private"],
           jiraKey: "internal",
           slideBlueTop: "internal",
@@ -34,6 +35,8 @@ describe("public billboard catalog", () => {
     const result = createPublicCatalog(source, new Set(["SJ14-A.webp"]));
     expect(result.faces).toHaveLength(1);
     expect(result.faces[0].image).toBe("/images/locations/SJ14-A.webp");
+    expect(result.faces[0].title).toBe("SJ14-A");
+    expect(result.faces[0].imageAlt).toBe("Valla Publiex · Cara SJ14-A");
     expect(JSON.stringify(result)).not.toMatch(
       /private|internal|reservations|jiraKey|slideBlueTop|secret|visible/,
     );

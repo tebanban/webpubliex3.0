@@ -448,7 +448,7 @@ export default function LocationsPage() {
                   {structures.flatMap((structure) =>
                     structure.faces.map((face) => (
                       <option key={face.id} value={face.id}>
-                        {face.code} · {face.title}
+                        {face.code} · {face.district || face.province}
                       </option>
                     )),
                   )}
@@ -552,7 +552,7 @@ export default function LocationsPage() {
                     />
                     <div className="min-w-0 flex-1">
                       <p className="text-sm font-bold">{face.code}</p>
-                      <p className="text-sm">{face.title}</p>
+                      <p className="text-sm">{face.district || face.province}</p>
                     </div>
                     <button
                       type="button"
