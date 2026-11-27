@@ -115,11 +115,13 @@ const clusterCalculator = (markers: google.maps.Marker[]) => {
 function LocationsMap({
   structures,
   active,
+  focusRequest,
   onSelect,
   savedStructures,
 }: {
   structures: BillboardStructure[];
   active: BillboardStructure | null;
+  focusRequest: number;
   onSelect: (structure: BillboardStructure) => void;
   savedStructures: Set<string>;
 }) {
@@ -129,6 +131,7 @@ function LocationsMap({
       apiKey={key}
       structures={structures}
       active={active}
+      focusRequest={focusRequest}
       onSelect={onSelect}
       savedStructures={savedStructures}
     />
@@ -157,30 +160,32 @@ function GoogleLocationsMap({
   apiKey,
   structures,
   active,
+  focusRequest,
   onSelect,
   savedStructures,
 }: {
   apiKey: string;
   structures: BillboardStructure[];
   active: BillboardStructure | null;
+  focusRequest: number;
   onSelect: (structure: BillboardStructure) => void;
   savedStructures: Set<string>;
 }) {
   const mapRef = useRef<google.maps.Map | null>(null);
   const [mapZoom, setMapZoom] = useState(defaultMapZoom);
   const { isLoaded, loadError } = useJsApiLoader({ googleMapsApiKey: apiKey });
-  // A face change does not recenter the map; only the active structure does.
-  useEffect(() => {
-    if (!mapRef.current || !active) return;
-    mapRef.current.panTo(active.position);
-    mapRef.current.setZoom(markerCodeZoom);
-  }, [active?.id, isLoaded]);
   useEffect(() => {
     if (!mapRef.current || !structures.length) return;
     const bounds = new google.maps.LatLngBounds();
     structures.forEach((structure) => bounds.extend(structure.position));
     mapRef.current.fitBounds(bounds, 35);
   }, [structures, isLoaded]);
+  // List selections refocus even when another face shares the same structure.
+  useEffect(() => {
+    if (!mapRef.current || !active) return;
+    mapRef.current.panTo(active.position);
+    mapRef.current.setZoom(markerCodeZoom);
+  }, [active?.id, focusRequest, isLoaded]);
   if (loadError) return <MapFallback />;
   if (!isLoaded)
     return (
@@ -199,7 +204,10 @@ function GoogleLocationsMap({
       mapContainerClassName="size-full min-h-[32rem]"
       onLoad={(map) => {
         mapRef.current = map;
-        if (structures.length) {
+        if (active) {
+          map.panTo(active.position);
+          map.setZoom(markerCodeZoom);
+        } else if (structures.length) {
           const bounds = new google.maps.LatLngBounds();
           structures.forEach((structure) => bounds.extend(structure.position));
           map.fitBounds(bounds, 35);
@@ -282,6 +290,7 @@ export default function LocationsPage() {
   const [sizeCategory, setSizeCategory] = useState("");
   const [activeFaceId, setActiveFaceId] = useState<string | null>(null);
   const [previewOpen, setPreviewOpen] = useState(false);
+  const [mapFocusRequest, setMapFocusRequest] = useState(0);
   const [isDesktop, setIsDesktop] = useState(false);
   const shortlist = useLocationShortlist();
   const lastFaces = useRef(new Map<string, string>());
@@ -330,15 +339,20 @@ export default function LocationsPage() {
       setPreviewOpen(false);
     }
   }, [activeFaceId, filtered]);
-  const selectFace = (id: string) => {
+  const selectFace = (id: string, openPreview = true) => {
     const face = filtered.find((item) => item.id === id);
     if (!face) return;
-    if (!previewOpen && document.activeElement instanceof HTMLElement) {
+    if (
+      openPreview &&
+      !previewOpen &&
+      document.activeElement instanceof HTMLElement
+    ) {
       previewReturnFocus.current = document.activeElement;
     }
     lastFaces.current.set(face.structureId, id);
     setActiveFaceId(id);
-    setPreviewOpen(true);
+    setPreviewOpen(openPreview);
+    if (!openPreview) setMapFocusRequest((request) => request + 1);
   };
   const selectStructure = (structure: BillboardStructure) => {
     const last = lastFaces.current.get(structure.id);
@@ -467,14 +481,12 @@ export default function LocationsPage() {
                   </button>
                 </div>
               </details>
-              <p role="status" className="mt-6">
-                {structures.length} vallas · {filtered.length} caras
-              </p>
+
               <label className="mt-5 block font-semibold">
-                Explorar desde la lista
+                Explorar por código
                 <select
                   value={selected?.id ?? ""}
-                  onChange={(event) => selectFace(event.target.value)}
+                  onChange={(event) => selectFace(event.target.value, false)}
                   className="mt-2 min-h-11 w-full min-w-0 rounded border bg-white px-2 text-xs"
                 >
                   <option value="">Seleccione una cara</option>
@@ -497,6 +509,7 @@ export default function LocationsPage() {
                 <LocationsMap
                   structures={structures}
                   active={activeStructure}
+                  focusRequest={mapFocusRequest}
                   onSelect={selectStructure}
                   savedStructures={savedStructures}
                 />

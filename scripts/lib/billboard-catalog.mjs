@@ -2,6 +2,8 @@
 const faceImageOverrides = new Map([
   ["GC7-A", "GC7-AB.webp"],
   ["GC7-B", "GC7-AB.webp"],
+  ["PZ1-A", "PZ1-AB.webp"],
+  ["PZ1-B", "PZ1-AB.webp"],
 ]);
 
 // Only these public fields can cross the source-export boundary.

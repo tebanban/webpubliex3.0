@@ -13,7 +13,7 @@ describe("location finder without Google Maps", () => {
       </MemoryRouter>,
     );
     expect(html).toContain("El mapa no está disponible");
-    expect(html).toContain("Explorar desde la lista");
+    expect(html).toContain("Explorar por código");
     expect(html).toContain("Todos los tamaños");
     for (const category of ["small", "medium", "large", "landmark"]) {
       expect(html).toContain(`value="${category}"`);

@@ -125,8 +125,9 @@ Marker colors distinguish:
 - Green: a structure containing one or more saved faces.
 
 Desktop uses compact filters on the left and the map fills the remaining width.
-Selecting a marker or list entry opens its preview in an accessible centered
-popup on every screen size. No preview column reserves map space. Smaller screens
+Selecting a list entry highlights its marker and zooms to its location without
+opening the preview. Selecting a marker or the preview button opens an accessible
+centered popup on every screen size. No preview column reserves map space. Smaller screens
 retain collapsible filters; the popup fits the viewport and scrolls when needed.
 Closing it preserves the current face and shortlist, returns keyboard focus, and
 leaves a button to reopen the preview.
