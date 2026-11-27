@@ -525,11 +525,11 @@ export default function LocationsPage() {
       {/* Saving faces is independent of the active marker and current filters. */}
       <section
         id="mi-seleccion"
-        className="scroll-mt-24 px-5 py-14 md:px-10 lg:px-24"
+        className="scroll-mt-24 px-5 py-14 [--publiex-paragraph-font-size:0.875rem] md:px-10 lg:px-24"
       >
         <div className="mx-auto max-w-393.5">
           <div className="flex flex-wrap items-center justify-between gap-4">
-            <h2 className="font-raleway text-3xl font-semibold">
+            <h2 className="font-raleway text-xl font-semibold">
               Mi selección · {shortlist.ids.length}
             </h2>
           </div>
