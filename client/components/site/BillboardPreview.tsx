@@ -46,9 +46,9 @@ export function BillboardPreview({
           ))}
         </div>
       </div>
-      <dl className="space-y-3 leading-relaxed">
+      <dl className="space-y-2 text-sm leading-snug">
         <div>
-          <dt className="font-semibold">Ubicación</dt>
+          <dt className="font-bold">Ubicación</dt>
           <dd>
             {face.province}
             {face.district ? ` · ${face.district}` : ""}
@@ -57,13 +57,13 @@ export function BillboardPreview({
         </div>
         {face.direction && (
           <div>
-            <dt className="font-semibold">Sentido de circulación</dt>
+            <dt className="font-bold">Sentido de circulación</dt>
             <dd>{face.direction}</dd>
           </div>
         )}
         {face.widthM && face.heightM && (
           <div>
-            <dt className="font-semibold">Dimensiones</dt>
+            <dt className="font-bold">Dimensiones</dt>
             <dd>
               {face.widthM} × {face.heightM} m
             </dd>
