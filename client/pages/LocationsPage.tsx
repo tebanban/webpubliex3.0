@@ -142,7 +142,7 @@ function LocationsMap({
 
 function MapFallback() {
   return (
-    <div className="flex min-h-[32rem] items-center justify-center bg-slate-100 p-8 text-center">
+    <div className="flex min-h-128 items-center justify-center bg-slate-100 p-8 text-center">
       <div>
         <h3 className="font-raleway text-xl font-semibold">
           Explore las ubicaciones
@@ -189,10 +189,7 @@ function GoogleLocationsMap({
   if (loadError) return <MapFallback />;
   if (!isLoaded)
     return (
-      <div
-        role="status"
-        className="flex min-h-[32rem] items-center justify-center"
-      >
+      <div role="status" className="flex min-h-128 items-center justify-center">
         Cargando mapa…
       </div>
     );
@@ -504,7 +501,7 @@ export default function LocationsPage() {
                 guardadas.
               </p>
             </aside>
-            <div className="min-h-[32rem] min-w-0">
+            <div className="min-h-128 min-w-0">
               {structures.length ? (
                 <LocationsMap
                   structures={structures}
@@ -516,7 +513,7 @@ export default function LocationsPage() {
               ) : (
                 <div
                   role="status"
-                  className="flex min-h-[32rem] items-center justify-center p-6 text-center"
+                  className="flex min-h-128 items-center justify-center p-6 text-center"
                 >
                   No hay ubicaciones para esta búsqueda. Pruebe otra provincia o
                   limpie los filtros.
@@ -596,7 +593,7 @@ export default function LocationsPage() {
                       aria-label={"Quitar " + face.code + " de la cotización"}
                       title="Quitar de la cotización"
                       onClick={() => shortlist.remove(face.id)}
-                      className="inline-flex size-11 shrink-0 items-center justify-center rounded text-slate-500 transition hover:bg-red-50 hover:text-red-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-publiex-blue"
+                      className="inline-flex size-11 shrink-0 items-center justify-center rounded text-slate-500 transition hover:bg-red-50 hover:text-red-600 focus-visible:outline  focus-visible:outline-offset-2 focus-visible:outline-publiex-blue"
                     >
                       <Trash2 aria-hidden="true" className="size-5" />
                     </button>
