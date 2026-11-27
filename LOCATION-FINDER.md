@@ -120,9 +120,12 @@ Marker colors distinguish:
 - Red: the active structure.
 - Green: a structure containing one or more saved faces.
 
-Desktop uses compact filters, a central map, and a narrow preview column. Smaller
-screens use collapsible filters and an accessible bottom-sheet preview. The sheet
-can close without losing the current face or shortlist.
+Desktop uses compact filters on the left and the map fills the remaining width.
+Selecting a marker or list entry opens its preview in an accessible centered
+popup on every screen size. No preview column reserves map space. Smaller screens
+retain collapsible filters; the popup fits the viewport and scrolls when needed.
+Closing it preserves the current face and shortlist, returns keyboard focus, and
+leaves a button to reopen the preview.
 
 A labeled native list allows visitors to select any filtered face without using
 map markers. It remains available if the Google Maps key is absent, loading fails,

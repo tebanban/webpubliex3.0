@@ -332,17 +332,14 @@ export default function LocationsPage() {
         face={selected}
         faces={activeStructure.faces}
         onSelect={selectFace}
-        onAdd={shortlist.add}
+        onAdd={(id) => {
+          shortlist.add(id);
+          setPreviewOpen(false);
+        }}
         saved={shortlist.ids.includes(selected.id)}
         atLimit={shortlist.ids.length >= shortlist.limit}
       />
     ) : null;
-  const emptyPreview = (
-    <p className="p-5 text-sm text-slate-500">
-      Seleccione una ubicación en el mapa o en la lista para ver sus caras y
-      detalles.
-    </p>
-  );
 
   return (
     <main className="bg-white pt-14 text-black md:pt-16 xl:pt-20">
@@ -385,14 +382,13 @@ export default function LocationsPage() {
             <h2 className="font-raleway text-2xl font-semibold">
               Encuentre su próxima ubicación
             </h2>
-            <a
-              href="#mi-seleccion"
-              className="rounded bg-publiex-blue px-4 py-3 text-sm font-semibold text-white"
-            >
-              Mi selección · {shortlist.ids.length}
-            </a>
           </div>
-          <div className="grid overflow-hidden rounded bg-white shadow-sm lg:grid-cols-[12rem_minmax(0,1fr)] xl:grid-cols-[clamp(12rem,14vw,14rem)_minmax(0,1fr)_clamp(17rem,20vw,19rem)]">
+          <p className="mb-4 text-sm text-slate-600">
+            Seleccione una ubicación en el mapa o en la lista para ver sus caras
+            y detalles.
+          </p>
+          {/* The popup overlays the page, so no preview column reduces the map width. */}
+          <div className="grid overflow-hidden rounded bg-white shadow-sm lg:grid-cols-[12rem_minmax(0,1fr)] xl:grid-cols-[clamp(12rem,14vw,14rem)_minmax(0,1fr)]">
             <aside className="min-w-0 border-b bg-zinc-50 p-4 text-sm [--publiex-paragraph-font-size:0.875rem] lg:border-r">
               <details open={isDesktop || undefined} className="group">
                 <summary className="cursor-pointer py-2 font-semibold">
@@ -477,22 +473,11 @@ export default function LocationsPage() {
                 </div>
               )}
             </div>
-            <aside
-              aria-label="Vista previa de la ubicación"
-              className="hidden min-w-0 border-l p-4 xl:block"
-            >
-              <h2 className="mb-4 font-raleway text-lg font-semibold">
-                Vista previa
-              </h2>
-              <div className="max-h-[48rem] overflow-y-auto">
-                {preview ?? emptyPreview}
-              </div>
-            </aside>
           </div>
           {selected && (
             <button
               type="button"
-              className="mt-4 min-h-11 w-full rounded border border-publiex-blue bg-white text-sm text-publiex-blue xl:hidden"
+              className="mt-4 min-h-11 w-full rounded border border-publiex-blue bg-white text-sm text-publiex-blue"
               onClick={(event) => {
                 previewReturnFocus.current = event.currentTarget;
                 setPreviewOpen(true);
@@ -502,11 +487,11 @@ export default function LocationsPage() {
             </button>
           )}
           <Dialog
-            open={previewOpen && !isDesktop && !!selected}
+            open={previewOpen && !!selected}
             onOpenChange={setPreviewOpen}
           >
             <DialogContent
-              className="bottom-0 left-0 top-auto max-h-[85svh] w-full max-w-none translate-x-0 translate-y-0 overflow-y-auto rounded-t-2xl sm:max-w-none"
+              className="max-h-[90svh] w-[calc(100vw-2rem)] max-w-md overflow-y-auto"
               onCloseAutoFocus={(event) => {
                 event.preventDefault();
                 previewReturnFocus.current?.focus();
@@ -514,7 +499,7 @@ export default function LocationsPage() {
             >
               <DialogTitle>Vista previa de la ubicación</DialogTitle>
               <DialogDescription>
-              Elija la cara y añádala a su cotización.
+                Elija la cara y añádala a su cotización.
               </DialogDescription>
               {preview}
             </DialogContent>
@@ -525,12 +510,12 @@ export default function LocationsPage() {
       {/* Saving faces is independent of the active marker and current filters. */}
       <section
         id="mi-seleccion"
-        className="scroll-mt-24 px-5 py-14 [--publiex-paragraph-font-size:0.875rem] md:px-10 lg:px-24"
+        className="scroll-mt-24 px-5 py-14 [--publiex-paragraph-font-size:0.95rem] md:px-10 lg:px-24"
       >
         <div className="mx-auto max-w-393.5">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <h2 className="font-raleway text-xl font-semibold">
-              Mi selección · {shortlist.ids.length}
+              Mi selección: {shortlist.ids.length}
             </h2>
           </div>
           <p className="mt-4">
@@ -552,7 +537,9 @@ export default function LocationsPage() {
                     />
                     <div className="min-w-0 flex-1">
                       <p className="text-sm font-bold">{face.code}</p>
-                      <p className="text-sm">{face.district || face.province}</p>
+                      <p className="text-sm">
+                        {face.district || face.province}
+                      </p>
                     </div>
                     <button
                       type="button"
